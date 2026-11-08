@@ -1,0 +1,394 @@
+[
+ {
+  "station": "07",
+  "name": "Kapitel 1 · Morgen über Saas-Almagell",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "morgen",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T22:00+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#morgen",
+  "briefing": "briefing.html?teil=morgen",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Die Sonne steigt beim Laden hinter dem freigestellten Haus; «Bei uns scheint fast immer die Sonne.»; die Gastgeber Esther und Fabian, Personal 9,0; Buchung",
+  "messwert": "Nach Drehbuch: alle Seiten 4× und 6× gedrosselt 120 Bilder/s, p95 9,2 ms, kein langes Bild; Startseite 1,6 MB"
+ },
+ {
+  "station": "07",
+  "name": "Kapitel 2 · Aufwachen im Zimmer",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "zimmer",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T22:00+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#zimmer",
+  "briefing": "briefing.html?teil=zimmer",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Zwei grosse Fotos bündig: das Zimmer unter dem Dach und der Blick vom Balkon; Weg zur Unterseite Zimmer",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Kapitel 3 · Frühstück und der Bon",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "inbegriffen",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T22:00+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#inbegriffen",
+  "briefing": "briefing.html?teil=inbegriffen",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Das Frühstücksbuffet gross, «Mehr erleben, weniger zahlen.», der Bon kommt zügig unter der Messinglinie hervor",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Kapitel 4 · Der Tag im Saastal",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "saastal",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T22:00+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#saastal",
+  "briefing": "briefing.html?teil=saastal",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Flug ins Tal: die Karte zoomt beim Scrollen auf Saas-Almagell, die Fussspuren laufen zu Lift, Bus und Dorf; danach der Rahmen mit drei Bildern",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Kapitel 5 · Nach dem Lift: das Spa nebenan",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "spa",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T22:00+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#spa",
+  "briefing": "briefing.html?teil=spa",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Zwei grosse Fotos bündig, der Satz des Partnerhotels, die Tarife",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Kapitel 6 · Abend im Röstihüs",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "roestihues",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T22:00+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#roestihues",
+  "briefing": "briefing.html?teil=roestihues",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Die Gondeln am Abend und die Stube bündig, die Karte als Heft, Tisch im Anfrage-Fenster",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Kapitel 7 · Die Kinder bis 21 Uhr",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "kinder",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T22:00+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#kinder",
+  "briefing": "briefing.html?teil=kinder",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Das Zählwerk 16:30 / 21:00 (bleibt), ein grosses Bild",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Kapitel 8 · Der Wein von Fabian",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "wein",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T22:00+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#wein",
+  "briefing": "briefing.html?teil=wein",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Das Stübli gross, zwei Gläser als Messinglinie; Schluss: «Und morgen scheint die Sonne wieder.», Buchung, Anreise in einem Satz, Fuss mit Familienband",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Unterseite · Zimmer und Ferienwohnungen",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "seite-zimmer",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T22:00+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/zimmer.html",
+  "briefing": "briefing.html?teil=seite-zimmer",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "zimmer.html",
+  "baustein": "Aufwachen im Monte-Moro: Hotelzimmer, Familienzimmer, Residence Alpenhof, Apollo und Arizona, je mit grossen Fotos bündig",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Unterseite · Preise",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "seite-preise",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T22:00+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/preise.html",
+  "briefing": "briefing.html?teil=seite-preise",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "preise.html",
+  "baustein": "Der Bon, Preisliste, Zuschläge, Kinderpreise ruhig gesetzt",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Unterseite · Saastal",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "seite-saastal",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T22:00+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/saastal.html",
+  "briefing": "briefing.html?teil=seite-saastal",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "saastal.html",
+  "baustein": "Wege ab dem Haus, Sommer und Winter mit Bildpaaren",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Unterseite · Spa nebenan",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "seite-spa",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T22:00+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/spa.html",
+  "briefing": "briefing.html?teil=seite-spa",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "spa.html",
+  "baustein": "Angebot des Partnerhotels in Zeilen, Tarife",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Unterseite · Röstihüs",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "seite-roestihues",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T22:00+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/roestihues.html",
+  "briefing": "briefing.html?teil=seite-roestihues",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "roestihues.html",
+  "baustein": "Die Stube, die Karte mit Hotelwein und Apéro als Heft, Tisch im Anfrage-Fenster",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Unterseite · Anreise und Kontakt",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "seite-anreise",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T22:00+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/anreise.html",
+  "briefing": "briefing.html?teil=seite-anreise",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "anreise.html",
+  "baustein": "Flug mit der Strecke Visp, Stalden, Saas-Grund, Saas-Almagell bis vor das Haus; Abfahrtstafel als lesbares Fallblatt; Zug, Auto, Gratis-Anreise, Ankunft, Anfrage im Fenster",
+  "messwert": ""
+ }
+]

@@ -1,0 +1,91 @@
+{
+  "station": "07",
+  "name": "Website bauen",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "zustand": "liegt vor",
+  "beginn": "2026-10-18T01:08+07:00",
+  "ende": "2026-10-19T16:26+07:00",
+  "verbrauch": {
+    "budget_vorher": null,
+    "budget_nachher": null,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Öffnungszeiten und Ruhetage des Röstihüs",
+      "wo": "Station 03, alle Seiten"
+    },
+    {
+      "punkt": "Welches Zimmerfoto zeigt welche Kategorie (die Zimmerseite trennt Budget- und Standardzimmer nicht)",
+      "wo": "de/hotel/zimmer.html"
+    },
+    {
+      "punkt": "Fotos vom Kidsclub",
+      "wo": "_quelle"
+    },
+    {
+      "punkt": "Übergabe von Datum und Gästen an das Buchungsfenster von seekda (heute ein eingebetteter Shop ohne Adressparameter)",
+      "wo": "de/buchen.html"
+    },
+    {
+      "punkt": "Ob die Gratis-Anreise 2027 weiterläuft",
+      "wo": "de.md"
+    },
+    {
+      "punkt": "Strasse des Hauses (Talstrasse 129, Furusandstrasse 12 oder 10)",
+      "wo": "fakten.json › adresse"
+    },
+    {
+      "punkt": "Storno- und Geschäftsbedingungen",
+      "wo": "alle Seiten"
+    },
+    {
+      "punkt": "Foto des Chalet Rustica",
+      "wo": "Familie Zurbriggen/_quelle/chalet-rustica (nur Grafiken)"
+    },
+    {
+      "punkt": "Tenor Sans für das Familienband kommt wie auf der Familienseite von Google Fonts; lokale Schriftdatei nur mit Roberts Ja zum Herunterladen",
+      "wo": "bau.py › kopf"
+    },
+    {
+      "punkt": "Eigene Bausteine (Kapitel mit Grat, Bildpaar bündig, Rahmen mit drei Bildern, Karte als Heft, Anfrage-Fenster, Familienband) noch nicht im UI-Fundus",
+      "wo": "_UI-Fundus"
+    },
+    {
+      "punkt": "Fotos von Tellern, von Esther und Fabian und vom Röstihüs innen gibt es online nicht vom Haus; zwei Röstihüs-Fotos bei Schweiz Tourismus warten auf Roberts Ja zum Laden",
+      "wo": "_quelle/2026-10-18-bildersuche/herkunft.json"
+    },
+    {
+      "punkt": "Datenschutzerklärung des Hauses nennt Google Analytics und Maps, die die neue Seite nicht nutzt; Anfrage-Fenster und Chat fehlen darin (nur das Haus kann sie anpassen)",
+      "wo": "website/datenschutz.html"
+    },
+    {
+      "punkt": "Vor dem Hochladen: Familienband-Links und Familienseite zeigen auf 127.0.0.1; google.py setzen --adresse; Besuchszählung; echtes iPhone",
+      "wo": "website/bau.py › FAMILIENBAND_HAEUSER, F3_FAM_SEITE"
+    }
+  ],
+  "paket": [
+    "abschnitte.json",
+    "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html",
+  "briefing": "briefing.html",
+  "notiz": "23.10. 19:40: Feinschliff für den Brief – Zimmer-Überdeckung behoben, Röstihüs-Heft am Handy, Gratis-Anreise läuft sauber ab, Impressum/Datenschutz/404/robots/sitemap, Pflicht-Liste _qa/pflicht.md; wartet auf Roberts Durchsicht",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "pausen": [
+    {
+      "von": "2026-10-18T01:37+07:00",
+      "bis": "2026-10-18T01:56+07:00"
+    },
+    {
+      "von": "2026-10-18T02:16+07:00",
+      "bis": "2026-10-18T02:16+07:00"
+    },
+    {
+      "von": "2026-10-18T21:46+07:00",
+      "bis": "2026-10-18T21:48+07:00"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+ "gaeste": [
+  {
+   "sprache": "de",
+   "anzahl": 46,
+   "quelle": "Booking.com, 17.10.2026, https://www.booking.com/hotel/ch/monte-moro.de.html (Filter Sprachen)"
+  },
+  {
+   "sprache": "fr",
+   "anzahl": 29,
+   "quelle": "Booking.com, 17.10.2026"
+  },
+  {
+   "sprache": "nl",
+   "anzahl": 6,
+   "quelle": "Booking.com, 17.10.2026"
+  },
+  {
+   "sprache": "it",
+   "anzahl": 3,
+   "quelle": "Booking.com, 17.10.2026"
+  },
+  {
+   "sprache": "en",
+   "anzahl": 2,
+   "quelle": "Booking.com, 17.10.2026"
+  },
+  {
+   "sprache": "ro",
+   "anzahl": 2,
+   "quelle": "Booking.com, 17.10.2026"
+  },
+  {
+   "sprache": "zh",
+   "anzahl": 1,
+   "quelle": "Booking.com, 17.10.2026"
+  },
+  {
+   "sprache": "ko",
+   "anzahl": 1,
+   "quelle": "Booking.com, 17.10.2026"
+  },
+  {
+   "sprache": "es",
+   "anzahl": 1,
+   "quelle": "Booking.com, 17.10.2026"
+  },
+  {
+   "sprache": "he",
+   "anzahl": 1,
+   "quelle": "Booking.com, 17.10.2026"
+  },
+  {
+   "sprache": "da",
+   "anzahl": 1,
+   "quelle": "Booking.com, 17.10.2026"
+  },
+  {
+   "sprache": "hr",
+   "anzahl": 1,
+   "quelle": "Booking.com, 17.10.2026"
+  }
+ ],
+ "gaeste_offen": [
+  "TripAdvisor: am 17.10.2026 nicht erreichbar (Chrome-Erweiterung nicht verbunden)",
+  "Google: Sprachen der 121 Bewertungen nicht abrufbar"
+ ],
+ "website_heute": [
+  "de",
+  "en",
+  "fr"
+ ],
+ "ort": [
+  "de",
+  "en",
+  "fr"
+ ],
+ "ort_quelle": "Saas-Fee/Saastal Tourismus, https://www.saas-fee.ch (Sprachwahl DE, EN, FR), 17.10.2026; Schweiz Tourismus führt den Eintrag in de, en, fr, it (Sprachlinks der Seite monte-moro-residence, 17.10.2026)",
+ "reihenfolge": [
+  "de",
+  "fr",
+  "en",
+  "nl",
+  "it"
+ ],
+ "reihenfolge_grund": "Gäste auf Booking (de 46, fr 29, nl 6, it 3, en 2), dazu en als Sprache der heutigen Seite und des Ortes. Nichts entschieden, Station 15a."
+}

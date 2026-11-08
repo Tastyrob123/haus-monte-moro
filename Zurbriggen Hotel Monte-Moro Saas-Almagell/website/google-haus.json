@@ -1,0 +1,52 @@
+{
+ "_hinweis": "Jeder Wert aus dem Original des Kunden gelesen, nicht abgetippt (Regel 60d). Was es nicht gibt: leer lassen. OFFEN muss vor der Freigabe weg.",
+ "quelle": "Impressum und Startseite der heutigen Website monte-moro.ch, abgerufen 09.10.2026 (Fuss: Instagram, Facebook; Restaurant Röstihüs). Strasse offen: Talstrasse 129 (Routenplaner der Seite), Furusandstrasse 12 (Google), Furusandstrasse 10 (Handelsregister) – Robert/Haus fragen.",
+ "_quelle_form": "woher die Angaben stammen, mit Datum (z. B. Impressum der heutigen Website, 14.10.2026)",
+ "art": "Hotel",
+ "_art_moeglich": "Hotel · Resort · BedAndBreakfast · Hostel · Restaurant · CafeOrCoffeeShop · BarOrPub · Winery",
+ "name": "Hotel Monte-Moro",
+ "telefon": "+41279571012",
+ "email": "info@monte-moro.ch",
+ "adresse": {
+  "strasse": "OFFEN",
+  "plz": "3905",
+  "ort": "Saas-Almagell",
+  "region": "Wallis",
+  "land": "CH"
+ },
+ "geo": {
+  "breite": "OFFEN",
+  "laenge": "OFFEN"
+ },
+ "sterne": "",
+ "preisrahmen": "",
+ "kueche": [],
+ "oeffnungszeiten": [],
+ "_oeffnungszeiten_form": "z. B. \"Mo-Fr 11:30-14:00\", \"Mo-Sa 18:00-23:00\" (Tage Mo Tu We Th Fr Sa Su)",
+ "checkin": "",
+ "checkout": "",
+ "gegruendet": "",
+ "buchung": "https://www.monte-moro.ch/de/buchen.html",
+ "reservierung": "https://widget.thefork.com/f5623bf8-e9d4-4f54-9280-07152923107a",
+ "profile": [
+  "https://www.instagram.com/hotelmonte_moro",
+  "https://www.facebook.com/profile.php?id=100053255396442"
+ ],
+ "_profile_hinweis": "Google-Maps-Eintrag, Booking, TripAdvisor, Instagram … nur echte Konten des Hauses",
+ "bild": "assets/img/haus-frei-m.webp",
+ "logo": "",
+ "betriebe": [
+  {
+   "art": "Restaurant",
+   "name": "Röstihüs",
+   "seite": "roestihues.html",
+   "kueche": [
+    "Schweizer Spezialitäten"
+   ],
+   "oeffnungszeiten": [],
+   "telefon": "+41279571012",
+   "reservierung": "https://widget.thefork.com/f5623bf8-e9d4-4f54-9280-07152923107a"
+  }
+ ],
+ "_betriebe_form": "[{\"art\": \"Restaurant\", \"name\": \"…\", \"seite\": \"restaurant-x.html\", \"kueche\": [], \"oeffnungszeiten\": [], \"telefon\": \"\", \"reservierung\": \"\"}]"
+}

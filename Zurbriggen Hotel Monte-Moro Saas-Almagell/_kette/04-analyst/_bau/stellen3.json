@@ -1,0 +1,283 @@
+[
+ [
+  "z01",
+  "/de/",
+  {
+   "texte": [
+    [
+     "Mehr erleben, weniger zahlen"
+    ],
+    [
+     "In diesem Sommer"
+    ],
+    [
+     "31. Oktober 2026"
+    ]
+   ],
+   "hoch": 0.25,
+   "desk": true
+  }
+ ],
+ [
+  "z02",
+  "/de/ferienwohnungen/arizona.html",
+  {
+   "texte": [
+    [
+     "Ferienwohnungen Haus Arizona"
+    ],
+    [
+     "2½-Zimmer"
+    ],
+    [
+     "Der Parkplatz befindet sich direkt neben dem Haus"
+    ],
+    [
+     "KONTAKT"
+    ]
+   ],
+   "hoch": 0.25
+  }
+ ],
+ [
+  "z03a",
+  "/de/hotel/zimmer.html",
+  {
+   "texte": [
+    [
+     "Schöne Hotelzimmer"
+    ],
+    [
+     "Familienzimmer",
+     0
+    ],
+    [
+     "ideal für 3 - 6 Personen"
+    ]
+   ],
+   "hoch": 0.25
+  }
+ ],
+ [
+  "z03b",
+  "/de/buchen.html",
+  {
+   "texte": [
+    [
+     "Doppelzimmer",
+     0
+    ],
+    [
+     "Max.: 3 Personen"
+    ],
+    [
+     "Doppelbett (Kingsize)"
+    ]
+   ],
+   "hoch": 0.3,
+   "warte": 8000
+  }
+ ],
+ [
+  "z04",
+  "/de/hotel/preise.html",
+  {
+   "texte": [
+    [
+     "Budgetzimmer",
+     0
+    ],
+    [
+     "Standardzimmer",
+     0
+    ],
+    [
+     "pro Person / Tag",
+     0
+    ]
+   ],
+   "hoch": 0.25
+  }
+ ],
+ [
+  "z05",
+  "/de/restaurant.html",
+  {
+   "texte": [
+    [
+     "Entdecken Sie unsere Speisekarte"
+    ],
+    [
+     "Speisekarte",
+     1
+    ],
+    [
+     "Tischreservation",
+     0
+    ],
+    [
+     "+41 27 957 10 12",
+     0
+    ]
+   ],
+   "hoch": 0.3
+  }
+ ],
+ [
+  "z06",
+  "/de/",
+  {
+   "texte": [
+    [
+     "12 verschiedenen Röstis"
+    ],
+    [
+     "7 verschiedenen Cordon Bleus"
+    ],
+    [
+     "Speisekarte",
+     0
+    ]
+   ],
+   "hoch": 0.35
+  }
+ ],
+ [
+  "z07a",
+  "/de/",
+  {
+   "texte": [
+    [
+     "Monte-Moro",
+     "letzt"
+    ],
+    [
+     "CH-3905 Saas-Almagell",
+     "letzt"
+    ],
+    [
+     "Tel: +41 27 957 10 12",
+     "letzt"
+    ]
+   ],
+   "hoch": 0.35
+  }
+ ],
+ [
+  "z07b",
+  "/de/impressum.html",
+  {
+   "texte": [
+    [
+     "Hotel Monte-Moro",
+     0
+    ],
+    [
+     "Saas-Amagell"
+    ],
+    [
+     "Phone"
+    ]
+   ],
+   "hoch": 0.3
+  }
+ ],
+ [
+  "z08a",
+  "/de/hotel/wellness.html",
+  {
+   "texte": [
+    [
+     "1700m2"
+    ],
+    [
+     "1000m2"
+    ],
+    [
+     "CHF 25.00"
+    ]
+   ],
+   "hoch": 0.3
+  }
+ ],
+ [
+  "z08b",
+  "/de/hotel/aktuelles.html",
+  {
+   "texte": [
+    [
+     "Top Winterzauber"
+    ],
+    [
+     "1100m2"
+    ],
+    [
+     "CHF 999.00"
+    ]
+   ],
+   "hoch": 0.25
+  }
+ ],
+ [
+  "z09",
+  "/de/",
+  {
+   "texte": [
+    [
+     "MENÜ",
+     "letzt"
+    ],
+    [
+     "Impressum",
+     "letzt"
+    ],
+    [
+     "Datenschutz",
+     "letzt"
+    ]
+   ],
+   "hoch": 0.4
+  }
+ ],
+ [
+  "z10",
+  "/de/",
+  {
+   "texte": [
+    [
+     "KONTAKT",
+     "letzt"
+    ],
+    [
+     "Esther & Fabian",
+     "letzt"
+    ],
+    [
+     "CH-3905 Saas-Almagell",
+     "letzt"
+    ]
+   ],
+   "hoch": 0.35
+  }
+ ],
+ [
+  "z12",
+  "/en/restaurant.html",
+  {
+   "texte": [
+    [
+     "Discover our menu"
+    ],
+    [
+     "menu",
+     1
+    ],
+    [
+     "table reservation",
+     0
+    ]
+   ],
+   "hoch": 0.3
+  }
+ ]
+]

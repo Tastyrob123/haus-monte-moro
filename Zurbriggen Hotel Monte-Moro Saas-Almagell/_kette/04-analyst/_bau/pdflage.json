@@ -1,0 +1,37 @@
+{
+ "4.1p": {
+  "pdf": "speisekarte.pdf",
+  "seite": "4–5",
+  "wort": null
+ },
+ "4.3p": {
+  "pdf": "speisekarte.pdf",
+  "seite": "1–2",
+  "wort": null
+ },
+ "7.2p": {
+  "pdf": "speisekarte.pdf",
+  "seite": "2–4",
+  "wort": null
+ },
+ "6.1p": {
+  "pdf": "speisekarte.pdf",
+  "seite": 7,
+  "wort": "Fabian selber kreiert)"
+ },
+ "a.1p": {
+  "pdf": "zerone.ch/agb/agb.pdf",
+  "seite": 2,
+  "wort": "November"
+ },
+ "a.2p": {
+  "pdf": "zerone.ch/agb/agb.pdf",
+  "seite": 3,
+  "wort": "gelöscht."
+ },
+ "a.3p": {
+  "pdf": "zerone.ch/agb/agb.pdf",
+  "seite": 6,
+  "wort": "Immaterialgüterrechte"
+ }
+}

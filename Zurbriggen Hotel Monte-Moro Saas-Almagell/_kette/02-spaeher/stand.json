@@ -1,0 +1,63 @@
+{
+  "station": "02",
+  "name": "Kunden analysieren",
+  "rolle": "Späher",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "zustand": "bestätigt",
+  "beginn": "2026-10-17T02:02+07:00",
+  "ende": "2026-10-17T16:30+07:00",
+  "verbrauch": {
+    "budget_vorher": 22.0,
+    "budget_nachher": 61.0,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Eigentum nicht öffentlich belegt: Register nennt die Resort Monte Moro AG (VR Oliver Wachs), Impressum, Karte und Filme 2026 nennen Esther und Fabian",
+      "wo": "Zefix CHE-167.073.174, SHAB 19.09.2022 und 26.03.2026; monte-moro.ch/de/impressum.html"
+    },
+    {
+      "punkt": "Vertrag des Hauses mit zerone computer gmbh (Preis, Umfang, Pflege, Laufzeit): ungeprüft, im Gespräch zu klären",
+      "wo": "befund.md › Wer hinter der heutigen Seite steht; AGB zerone Stand August 2018"
+    },
+    {
+      "punkt": "TripAdvisor-Note am 17.10.2026 nicht abgelesen, Stand 09.10.2026 übernommen",
+      "wo": "Chrome mit der Claude-Erweiterung nicht verbunden"
+    },
+    {
+      "punkt": "Hausadresse widersprüchlich: Talstrasse 129 (Routenplaner der Seite), Furusandstrasse 12 (Google), Furusandstrasse 10 (Sitz der AG seit März 2026)",
+      "wo": "monte-moro.ch Fuss, Google Maps, Zefix"
+    },
+    {
+      "punkt": "Grösse des Spa im Partnerhotel widersprüchlich: 1700 m² Sommer, 1000 m² Winter, 1100 m²",
+      "wo": "monte-moro.ch/de/ und /de/hotel/aktuelles.html"
+    },
+    {
+      "punkt": "14 Gault-Millau-Punkte für Küchenchef Markus Ries (Partnerhotel): heutiger Stand nicht geprüft",
+      "wo": "monte-moro.ch/de/restaurant.html"
+    },
+    {
+      "punkt": "Herkunft der Region-Bilder (Sommer, Winter, Ausflüge) nicht angegeben",
+      "wo": "website/bilder sommer_*, winter_*, ausflu_*"
+    }
+  ],
+  "paket": [
+    "befund.md",
+    "seitenliste.json",
+    "einordnung.json"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/_kette/02-spaeher/befund.html",
+  "briefing": "briefing.html",
+  "notiz": "Befund liegt vor: passt als Teil der Familie mit zwei Vorbehalten (drei Sterne; Eigentum laut Handelsregister unklar). Verbrauch 22 → 61 % gilt fürs ganze Konto, vier Chats liefen gleichzeitig.",
+  "bestaetigt": {
+    "zeit": "2026-10-17T16:45+07:00",
+    "wort": "passt, gehört zur Familie, die Familie steht über den Sternen (Robert 17.10.2026)"
+  },
+  "rueckgaben": [],
+  "pausen": [
+    {
+      "von": "2026-10-17T02:03+07:00",
+      "bis": "2026-10-17T15:53+07:00"
+    }
+  ]
+}

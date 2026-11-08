@@ -1,0 +1,443 @@
+[
+ {
+  "url": "https://www.monte-moro.ch/de/",
+  "titel": "Aktuelles | Hotel Monte Moro Saas-Almagell",
+  "sprache": "de",
+  "art": "start",
+  "bild_rechner": "_qa/bilder/de-rechner.jpg",
+  "bild_handy": "_qa/bilder/de-handy.jpg",
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/de/8-monte-moro-de/17-wetter-schneebericht.html",
+  "titel": "Wetter / Schneebericht",
+  "sprache": "de",
+  "art": "sonst",
+  "bild_rechner": "_qa/bilder/de__8-monte-moro-de__17-wetter-schneebericht-rechner.jpg",
+  "bild_handy": "_qa/bilder/de__8-monte-moro-de__17-wetter-schneebericht-handy.jpg",
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/de/buchen.html",
+  "titel": "Buchen Sie ihr Hotelzimmer im Hotel Monte-Moro in Saas-Almagell, Wallis, Schweiz",
+  "sprache": "de",
+  "art": "kontakt",
+  "bild_rechner": "_qa/bilder/de__buchen-rechner.jpg",
+  "bild_handy": "_qa/bilder/de__buchen-handy.jpg",
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/de/datenschutz.html",
+  "titel": "Datenschutz",
+  "sprache": "de",
+  "art": "rechtstext",
+  "bild_rechner": "_qa/bilder/de__datenschutz-rechner.jpg",
+  "bild_handy": "_qa/bilder/de__datenschutz-handy.jpg",
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/de/ferienwohnungen/apollo.html",
+  "titel": "Ferienwohnungen Haus Apollo Saas-Almagell",
+  "sprache": "de",
+  "art": "zimmer",
+  "bild_rechner": "_qa/bilder/de__ferienwohnungen__apollo-rechner.jpg",
+  "bild_handy": "_qa/bilder/de__ferienwohnungen__apollo-handy.jpg",
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/de/ferienwohnungen/arizona.html",
+  "titel": "Ferienwohnungen Haus Arizona Saas-Almagell",
+  "sprache": "de",
+  "art": "zimmer",
+  "bild_rechner": "_qa/bilder/de__ferienwohnungen__arizona-rechner.jpg",
+  "bild_handy": "_qa/bilder/de__ferienwohnungen__arizona-handy.jpg",
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/de/hotel/aktuelles.html",
+  "titel": "Akuelles im Hotel Monte Moro Saas-Almagell",
+  "sprache": "de",
+  "art": "angebote",
+  "bild_rechner": "_qa/bilder/de__hotel__aktuelles-rechner.jpg",
+  "bild_handy": "_qa/bilder/de__hotel__aktuelles-handy.jpg",
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/de/hotel/anreise.html",
+  "titel": "Standort Hotel Monte Moro Saas-Almagell",
+  "sprache": "de",
+  "art": "anreise",
+  "bild_rechner": "_qa/bilder/de__hotel__anreise-rechner.jpg",
+  "bild_handy": "_qa/bilder/de__hotel__anreise-handy.jpg",
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/de/hotel/preise.html",
+  "titel": "Preisliste Hotel Monte-Moro in Saas-Almagell",
+  "sprache": "de",
+  "art": "angebote",
+  "bild_rechner": "_qa/bilder/de__hotel__preise-rechner.jpg",
+  "bild_handy": "_qa/bilder/de__hotel__preise-handy.jpg",
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/de/hotel/wellness.html",
+  "titel": "Wellness in Saas-Almagell | Spa im Hotel Pirmin Zurbriggen",
+  "sprache": "de",
+  "art": "sonst",
+  "bild_rechner": "_qa/bilder/de__hotel__wellness-rechner.jpg",
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/de/hotel/zimmer.html",
+  "titel": "Hotelzimmer im Hotel Monte-Moro in Saas-Almagell",
+  "sprache": "de",
+  "art": "zimmer",
+  "bild_rechner": "_qa/bilder/de__hotel__zimmer-rechner.jpg",
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/de/impressum.html",
+  "titel": "Impressum",
+  "sprache": "de",
+  "art": "rechtstext",
+  "bild_rechner": "_qa/bilder/de__impressum-rechner.jpg",
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/de/kontakt/formular.html",
+  "titel": "Kontaktformular Hotel Monte-Moro Saas-Almagell",
+  "sprache": "de",
+  "art": "kontakt",
+  "bild_rechner": "_qa/bilder/de__kontakt__formular-rechner.jpg",
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/de/region/ausfluege.html",
+  "titel": "Tagesausflüge, Saas-Almagell, Saas-Fee, Saas-Grund, Saastal, Wallis",
+  "sprache": "de",
+  "art": "sonst",
+  "bild_rechner": "_qa/bilder/de__region__ausfluege-rechner.jpg",
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/de/region/sommer.html",
+  "titel": "Aktivitäten im Sommer, Saas-Almagell, Saas-Fee, Saas-Grund, Saastal, Wallis",
+  "sprache": "de",
+  "art": "sonst",
+  "bild_rechner": "_qa/bilder/de__region__sommer-rechner.jpg",
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/de/region/winter.html",
+  "titel": "Aktivitäten im Winter, Saas-Almagell, Saas-Fee, Saas-Grund, Saastal, Wallis",
+  "sprache": "de",
+  "art": "sonst",
+  "bild_rechner": "_qa/bilder/de__region__winter-rechner.jpg",
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/de/restaurant.html",
+  "titel": "Restaurant Röstihüs Saas-Almagell",
+  "sprache": "de",
+  "art": "restaurant",
+  "bild_rechner": "_qa/bilder/de__restaurant-rechner.jpg",
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/en/",
+  "titel": "News | Hotel Monte-Moro Saas-Almagell",
+  "sprache": "en",
+  "art": "start",
+  "bild_rechner": "_qa/bilder/en-rechner.jpg",
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/en/apartments/apollo.html",
+  "titel": "Apartment house Apollo Saas-Almagell",
+  "sprache": "en",
+  "art": "zimmer",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/en/apartments/arizona.html",
+  "titel": "Apartment house Arizona Saas-Almagell",
+  "sprache": "en",
+  "art": "zimmer",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/en/contact/form.html",
+  "titel": "Contact form hotel Monte-Moro Saas-Almagell",
+  "sprache": "en",
+  "art": "kontakt",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/en/datenschutz.html",
+  "titel": "Datenschutz",
+  "sprache": "en",
+  "art": "rechtstext",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/en/hotel/arrival.html",
+  "titel": "Hotel and Restaurant Monte-Moro Saas-Almagell",
+  "sprache": "en",
+  "art": "anreise",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/en/hotel/news.html",
+  "titel": "News Hotel Monte Moro Saas-Almagell",
+  "sprache": "en",
+  "art": "angebote",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/en/hotel/prices.html",
+  "titel": "Price list of Hotel Monte-Moro Saas-Almagell",
+  "sprache": "en",
+  "art": "angebote",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/en/hotel/rooms.html",
+  "titel": "Hotel rooms Hotel Monte-Moro Saas-Almagell",
+  "sprache": "en",
+  "art": "zimmer",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/en/hotel/wellness.html",
+  "titel": "Wellness in Saas-Almagell",
+  "sprache": "en",
+  "art": "sonst",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/en/impressum.html",
+  "titel": "Impressum",
+  "sprache": "en",
+  "art": "rechtstext",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/en/region/excursions.html",
+  "titel": "Daily tours starting in Saas-Almagell to ...",
+  "sprache": "en",
+  "art": "sonst",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/en/region/summer.html",
+  "titel": "Activities in Summer - Saas-Almagell - Saas-Fee - Valais - Switzerland",
+  "sprache": "en",
+  "art": "sonst",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/en/region/winter.html",
+  "titel": "Activities in Winter - Saas-Almagell - Saas-Fee - Valais - Switzerland",
+  "sprache": "en",
+  "art": "sonst",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/en/reservation.html",
+  "titel": "Book a holiday in the hotel Monte-Moro Saas-Almagell",
+  "sprache": "en",
+  "art": "kontakt",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/en/restaurant.html",
+  "titel": "Restaurant Röstihüs Saas-Almagell",
+  "sprache": "en",
+  "art": "restaurant",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/fr/",
+  "titel": "Actualité | Hotel Monte-Moro Saas-Almagell",
+  "sprache": "fr",
+  "art": "start",
+  "bild_rechner": "_qa/bilder/fr-rechner.jpg",
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/fr/appartements/apollo.html",
+  "titel": "Appartements résidence Apollo",
+  "sprache": "fr",
+  "art": "zimmer",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/fr/appartements/arizona.html",
+  "titel": "Appartements résidence Arizona",
+  "sprache": "fr",
+  "art": "zimmer",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/fr/contact/forme.html",
+  "titel": "formulaire de contact - Hôtel Monte-Moro Saas-Almagell",
+  "sprache": "fr",
+  "art": "kontakt",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/fr/datenschutz.html",
+  "titel": "Datenschutz",
+  "sprache": "fr",
+  "art": "rechtstext",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/fr/hotel/arriver.html",
+  "titel": "Arriver Monte-Moro Saas-Almagell",
+  "sprache": "fr",
+  "art": "anreise",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/fr/hotel/chambres.html",
+  "titel": "Chambres Hôtel Monte-Moro Saas-Almagell",
+  "sprache": "fr",
+  "art": "zimmer",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/fr/hotel/nouvelles.html",
+  "titel": "Nouvelles Hôtel Monte-Moro Saas-Almagell",
+  "sprache": "fr",
+  "art": "angebote",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/fr/hotel/prix.html",
+  "titel": "Liste de prix du Hôtel Monte-Moro",
+  "sprache": "fr",
+  "art": "angebote",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/fr/hotel/wellness.html",
+  "titel": "Wellness Saas-Almagell",
+  "sprache": "fr",
+  "art": "sonst",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/fr/impressum.html",
+  "titel": "Impressum",
+  "sprache": "fr",
+  "art": "rechtstext",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/fr/region/ete.html",
+  "titel": "Activités estivales - Saas-Almagell -  Vallée de Saas - Valais",
+  "sprache": "fr",
+  "art": "sonst",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/fr/region/excursions.html",
+  "titel": "Excursions d'une journée au départ de Saas-Almagell",
+  "sprache": "fr",
+  "art": "sonst",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/fr/region/hiver.html",
+  "titel": "Activités hivernales - Saas-Almagell -  Vallée de Saas - Valais",
+  "sprache": "fr",
+  "art": "sonst",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/fr/reservation.html",
+  "titel": "Réserver des vacances à l'hôtel Monte-Moro Saas-Almagell",
+  "sprache": "fr",
+  "art": "kontakt",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ },
+ {
+  "url": "https://www.monte-moro.ch/fr/restaurant.html",
+  "titel": "Restaurant Monte-Moro Saas-Almagell",
+  "sprache": "fr",
+  "art": "restaurant",
+  "bild_rechner": null,
+  "bild_handy": null,
+  "antwort": 200
+ }
+]

@@ -1,0 +1,120 @@
+/* Konzept-Board Castell Son Claret · Station 06. Eigenes nur hier; Bauart, Farben, Tapete, Fenster, Kacheln, Knöpfe kommen aus
+   ../05-markenbauer/marke/marke.css (Vorlage Le Livre des Grand Beau-Rivage). Nur transform und opacity, nativer Scroll. */
+
+/* ---------- Szenen-Blätter ---------- */
+.sz .mk{margin-bottom:clamp(34px,4vw,60px)}
+.sz__fotos{display:grid;gap:clamp(14px,1.6vw,24px);margin-bottom:clamp(26px,3vw,44px)}
+.sz__fotos--1{grid-template-columns:minmax(0,1fr)}
+.sz__fotos--1 .k3--karte .k3__b{aspect-ratio:21/9}
+.sz__fotos--2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.sz__fotos--2 .k3--karte .k3__b{aspect-ratio:3/2}
+.sz__fotos--3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.sz__fotos--3 .k3--karte .k3__b{aspect-ratio:4/5}
+.sz__fotos--4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.sz__fotos--4 .k3--karte .k3__b{aspect-ratio:4/5}
+.sz__fotos .k3__b img{display:block;width:100%;height:100%;object-fit:cover}
+.sz__fotos .k3__b img[src$="plan.jpg"]{object-fit:contain;background:#F6F4EE}
+.kb__s{margin-top:12px;font-size:.96rem;line-height:1.5;color:rgba(87,87,86,.78)}
+.marine .kb__s{color:rgba(255,255,255,.72)}
+.sz__alt{margin:-10px 0 clamp(22px,2.6vw,36px);font-size:.9rem;line-height:1.6;color:rgba(87,87,86,.72)}
+.sz__alt b{font-family:var(--serif);font-weight:500;color:var(--tinte);margin-right:8px}
+.marine .sz__alt{color:rgba(255,255,255,.66)} .marine .sz__alt b{color:var(--weiss)}
+.mono{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em}
+
+/* Bauzeile: Baustein · Bewegung · Fläche · Bilder */
+.sz__bau{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) minmax(0,.7fr) minmax(0,1.05fr);gap:clamp(18px,2.4vw,40px);padding:clamp(24px,2.6vw,40px) 0;border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)}
+.marine .sz__bau{border-color:var(--linie-d)}
+.sz__bau>div{opacity:0;transform:translate3d(0,22px,0);transition:opacity 1.1s var(--e2),transform 1.3s var(--e1);transition-delay:calc(var(--i,0)*110ms)}
+.sz__bau>div.da,.sz__bau.da>div{opacity:1;transform:none}
+.sz__bau small{display:block;font-family:var(--caps);font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--taupe-tief);margin-bottom:10px}
+.marine .sz__bau small{color:var(--gold)}
+.sz__bau b{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(1.25rem,1.6vw,1.6rem);line-height:1.15}
+.sz__bau b em{display:inline-block;margin-left:10px;padding:3px 10px;border-radius:999px;font-family:var(--mono);font-style:normal;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;background:var(--marine);color:var(--weiss);vertical-align:middle}
+.marine .sz__bau b em{background:var(--gold);color:var(--marine)}
+.sz__bau p{font-size:.98rem;line-height:1.6;color:rgba(87,87,86,.84)}
+.marine .sz__bau p{color:rgba(255,255,255,.8)}
+.sz__bau p .mono{display:inline-block;max-width:100%;overflow-wrap:anywhere;color:rgba(87,87,86,.7);line-height:1.5}
+.marine .sz__bau p .mono{color:rgba(255,255,255,.62)}
+.sz__z{margin-top:14px;padding:clamp(16px,1.6vw,22px);border-radius:16px;background:var(--weiss);box-shadow:inset 0 0 0 1px var(--linie),0 24px 32px -28px rgba(87,87,86,.5)}
+.marine .sz__z{background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px var(--linie-d)}
+.sz__z b{font-size:.68rem;font-family:var(--caps);letter-spacing:.22em;text-transform:uppercase;color:var(--taupe-tief);margin-bottom:8px;font-weight:400}
+.marine .sz__z b{color:var(--gold)}
+.sz__z p{font-size:.95rem;line-height:1.6}
+.fl{display:inline-block;width:16px;height:16px;border-radius:5px;margin-right:9px;vertical-align:-3px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.14)}
+.fl--hell{background:#ECEAE4} .fl--creme{background:#E4DBCC} .fl--tapete{background:#E4DBCC url(../05-markenbauer/marke/zeichen/tapete-hell.svg) 50% 50%/70px auto}
+.fl--dunkel{background:#0C1F41 url(../05-markenbauer/marke/zeichen/tapete-dunkel.svg) 50% 50%/70px auto} .fl--foto{background:linear-gradient(135deg,#9B9382,#E4DBCC)}
+.vonmir{display:inline-block;margin-left:8px;padding:2px 9px;border-radius:999px;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;background:rgba(192,160,98,.18);color:var(--taupe-tief);vertical-align:middle}
+.marine .vonmir{color:var(--gold);background:rgba(192,160,98,.16)}
+.fenster__u .vonmir{color:#fff;background:rgba(255,255,255,.18)}
+
+/* Nebeneinander: dieses Haus · bisherige Häuser */
+.nb{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(22px,3vw,52px);margin-top:clamp(26px,3vw,44px)}
+.nb>div{opacity:0;transform:translate3d(0,24px,0);transition:opacity 1.1s var(--e2),transform 1.3s var(--e1);transition-delay:calc(var(--i,0)*140ms)}
+.nb>div.da,.nb.da>div{opacity:1;transform:none}
+.nb__a{padding:clamp(22px,2.4vw,34px) clamp(22px,2.4vw,34px) clamp(26px,2.6vw,36px);border-radius:var(--r);background:var(--marine);color:var(--weiss);box-shadow:0 36px 48px -32px rgba(12,31,65,.7)}
+.nb__a .mk__kap b{color:var(--gold)} .nb__a .mk__kap i{background:var(--gold)}
+.nb__t{font-family:var(--serif);font-weight:500;font-size:clamp(1.2rem,1.55vw,1.55rem);line-height:1.3;margin-top:14px}
+.marine .nb__a{background:var(--papier);color:var(--tinte);box-shadow:0 36px 48px -32px rgba(0,0,0,.8)}
+.marine .nb__a .mk__kap b{color:var(--taupe-tief)} .marine .nb__a .mk__kap i{background:var(--taupe-tief)}
+.nb__b{padding:clamp(22px,2.4vw,34px) 0 0}
+.nb__l{list-style:none;margin:10px 0 0;padding:0;border-top:1px solid var(--linie)}
+.marine .nb__l{border-color:var(--linie-d)}
+.nb__l li{display:grid;grid-template-columns:minmax(150px,190px) minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid var(--linie);font-size:.94rem;line-height:1.5;color:rgba(87,87,86,.82)}
+.marine .nb__l li{border-color:var(--linie-d);color:rgba(255,255,255,.78)}
+.nb__l b{font-family:var(--serif);font-weight:500;font-size:1.05rem;color:var(--tinte)}
+.nb__l a{color:inherit;text-decoration:none;position:relative}
+.nb__l a::after{content:'';position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--e1)}
+.nb__l a:hover::after{transform:none}
+.marine .nb__l b{color:var(--weiss)}
+
+/* Lauf der Szenen (Geschichte) */
+.lauf-szenen{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px;margin-top:clamp(36px,4vw,60px);padding-top:clamp(26px,3vw,40px);border-top:1px solid var(--linie)}
+.lauf-szenen a{display:flex;flex-direction:column;gap:6px;padding:14px 12px 16px;border-radius:14px;background:var(--weiss);box-shadow:inset 0 0 0 1px var(--linie),0 24px 32px -28px rgba(87,87,86,.5);text-decoration:none;color:var(--tinte);transition:transform .5s var(--e2),box-shadow .5s var(--e2)}
+.lauf-szenen a:hover{transform:translateY(-2px);box-shadow:inset 0 0 0 1px var(--linie),0 30px 36px -26px rgba(87,87,86,.6)}
+.lauf-szenen b{font-family:var(--serif);font-weight:500;font-size:1.3rem;line-height:1}
+.lauf-szenen span{font-size:.82rem;line-height:1.35;color:rgba(87,87,86,.78)}
+.lauf-szenen .fl{margin:0 0 4px}
+
+/* Unterseiten */
+.us{list-style:none;margin:0;padding:0;border-top:1px solid var(--linie)}
+.us li{display:grid;grid-template-columns:minmax(200px,.34fr) minmax(0,1fr);gap:clamp(18px,3vw,52px);padding:clamp(22px,2.4vw,34px) 0;border-bottom:1px solid var(--linie);opacity:0;transform:translate3d(0,22px,0);transition:opacity 1s var(--e2),transform 1.3s var(--e1);transition-delay:calc(var(--i,0)*90ms)}
+.us.da li,.us li.da{opacity:1;transform:none}
+.us__k b{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(1.3rem,1.8vw,1.75rem);line-height:1.1;margin-bottom:8px}
+.us__k small{display:block;font-size:.84rem;line-height:1.5;color:rgba(87,87,86,.66)}
+.us__k small.mono{color:var(--taupe-tief);margin-bottom:4px}
+.us__t p{font-size:.98rem;line-height:1.62;color:rgba(87,87,86,.86)}
+.us__b{margin-top:10px;font-size:.9rem!important;color:rgba(87,87,86,.7)!important}
+.us__b span{font-family:var(--caps);font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--taupe-tief);margin-right:8px}
+
+/* Gestrichen und Offen */
+.gs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.6vw,22px)}
+.gs li{display:flex;flex-direction:column;gap:8px;padding:clamp(20px,2.2vw,30px);border-radius:var(--r);background:var(--weiss);box-shadow:inset 0 0 0 1px var(--linie),0 30px 40px -32px rgba(87,87,86,.45);opacity:0;transform:translate3d(0,22px,0);transition:opacity 1s var(--e2),transform 1.3s var(--e1);transition-delay:calc(var(--i,0)*90ms)}
+.gs.da li,.gs li.da{opacity:1;transform:none}
+.gs b{font-family:var(--serif);font-weight:500;font-size:1.15rem;line-height:1.2}
+.gs span{font-size:.94rem;line-height:1.55;color:rgba(87,87,86,.8)}
+.gs--rot li{box-shadow:inset 0 0 0 1.5px rgba(138,43,43,.5),0 30px 40px -32px rgba(87,87,86,.45)}
+.gs--rot b{color:#8a2b2b}
+.gs--rot span.mono{overflow-wrap:anywhere}
+
+/* Nummer 10: die Liste .unter aus marke.css, das Castell oben hervorgehoben */
+.unter li:first-child b{color:var(--gold)}
+.unter a{color:inherit;text-decoration:none}
+
+@media (max-width:1100px){
+  .sz__bau{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lauf-szenen{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media (max-width:860px){
+  .sz__fotos--3,.sz__fotos--4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .nb{grid-template-columns:1fr}
+  .us li{grid-template-columns:1fr;gap:10px}
+  .gs{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .sz__fotos--2,.sz__fotos--3,.sz__fotos--4{grid-template-columns:1fr}
+  .sz__fotos--3 .k3--karte .k3__b,.sz__fotos--4 .k3--karte .k3__b{aspect-ratio:3/2}
+  .sz__fotos--1 .k3--karte .k3__b{aspect-ratio:4/3}
+  .sz__bau{grid-template-columns:1fr}
+  .lauf-szenen{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .nb__l li{grid-template-columns:1fr;gap:4px}
+}

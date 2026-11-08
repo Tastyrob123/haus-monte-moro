@@ -1,0 +1,286 @@
+[
+ [
+  "1.1",
+  "/de/",
+  {
+   "text": "31. Oktober 2026",
+   "hoch": 0.5
+  }
+ ],
+ [
+  "1.1b",
+  "/de/hotel/aktuelles.html",
+  {
+   "text": "Top Winterzauber",
+   "hoch": 0.4
+  }
+ ],
+ [
+  "1.2",
+  "/de/hotel/preise.html",
+  {
+   "text": "Zuschläge",
+   "hoch": 0.45
+  }
+ ],
+ [
+  "1.3",
+  "/de/",
+  {
+   "banner": true,
+   "text": "Ablehnen",
+   "hoch": 0.5
+  }
+ ],
+ [
+  "2.1",
+  "/de/hotel/zimmer.html",
+  {
+   "text": "Schöne Hotelzimmer",
+   "hoch": 0.35
+  }
+ ],
+ [
+  "2.1b",
+  "/de/hotel/preise.html",
+  {
+   "text": "Budgetzimmer",
+   "hoch": 0.4
+  }
+ ],
+ [
+  "2.2",
+  "/de/ferienwohnungen/apollo.html",
+  {
+   "text": "Der Parkplatz befindet sich direkt",
+   "hoch": 0.5
+  }
+ ],
+ [
+  "2.2b",
+  "/de/ferienwohnungen/arizona.html",
+  {
+   "text": "Der Parkplatz befindet sich direkt",
+   "hoch": 0.5
+  }
+ ],
+ [
+  "2.3",
+  "/de/hotel/zimmer.html",
+  {
+   "text": "Residence Alpenhof",
+   "nth": 0,
+   "hoch": 0.45
+  }
+ ],
+ [
+  "3.1",
+  "/de/hotel/preise.html",
+  {
+   "text": "pro Person / Tag",
+   "hoch": 0.4
+  }
+ ],
+ [
+  "3.2",
+  "/de/hotel/aktuelles.html",
+  {
+   "text": "999.00",
+   "hoch": 0.5
+  }
+ ],
+ [
+  "3.3",
+  "/de/",
+  {
+   "text": "Datenschutz",
+   "letzt": true,
+   "hoch": 0.55
+  }
+ ],
+ [
+  "4.1",
+  "/de/",
+  {
+   "text": "12 verschiedenen Röstis",
+   "hoch": 0.45
+  }
+ ],
+ [
+  "4.2",
+  "/de/restaurant.html",
+  {
+   "text": "Tischreservation",
+   "nth": 0,
+   "hoch": 0.45
+  }
+ ],
+ [
+  "4.3",
+  "/de/restaurant.html",
+  {
+   "text": "Speisekarte",
+   "nth": 0,
+   "hoch": 0.45
+  }
+ ],
+ [
+  "5.1",
+  "/de/",
+  {
+   "text": "1700m2",
+   "hoch": 0.5
+  }
+ ],
+ [
+  "5.1b",
+  "/de/hotel/aktuelles.html",
+  {
+   "text": "1100m2",
+   "hoch": 0.45
+  }
+ ],
+ [
+  "6.1",
+  "/de/",
+  {
+   "text": "Esther & Fabian",
+   "letzt": true,
+   "hoch": 0.5
+  }
+ ],
+ [
+  "6.2",
+  "/de/",
+  {
+   "text": "Unseren Gästen zufolge",
+   "hoch": 0.45
+  }
+ ],
+ [
+  "6.3",
+  "/de/",
+  {
+   "text": "Im Partnerhotel Pirmin",
+   "hoch": 0.4
+  }
+ ],
+ [
+  "7.1",
+  "/en/datenschutz.html",
+  {
+   "text": "SSL-VERSCHLÜSSELUNG",
+   "hoch": 0.4
+  }
+ ],
+ [
+  "7.1b",
+  "/fr/datenschutz.html",
+  {
+   "text": "SSL-VERSCHLÜSSELUNG",
+   "hoch": 0.4
+  }
+ ],
+ [
+  "7.2",
+  "/en/restaurant.html",
+  {
+   "text": "menu",
+   "nth": 0,
+   "hoch": 0.45
+  }
+ ],
+ [
+  "8.2",
+  "/de/",
+  {
+   "text": "CH-3905 Saas-Almagell",
+   "letzt": true,
+   "hoch": 0.5
+  }
+ ],
+ [
+  "8.2b",
+  "/de/impressum.html",
+  {
+   "text": "Saas-Amagell",
+   "hoch": 0.4
+  }
+ ],
+ [
+  "9.1",
+  "/de/hotel/zimmer.html",
+  {
+   "kein": true
+  }
+ ],
+ [
+  "9.1b",
+  "/de/hotel/zimmer.html",
+  {
+   "desk": true,
+   "kein": true,
+   "warte": 3000
+  }
+ ],
+ [
+  "2.1c",
+  "/de/buchen.html",
+  {
+   "text": [
+    "Max.: 3 Personen",
+    "Max.: 3"
+   ],
+   "hoch": 0.42,
+   "warte": 8000
+  }
+ ],
+ [
+  "d1.1",
+  "/de/",
+  {
+   "desk": true,
+   "text": "31. Oktober 2026",
+   "hoch": 0.5
+  }
+ ],
+ [
+  "d2.1",
+  "/de/buchen.html",
+  {
+   "desk": true,
+   "text": [
+    "Max.: 3 Personen",
+    "Max.: 3"
+   ],
+   "hoch": 0.42,
+   "warte": 8000
+  }
+ ],
+ [
+  "d8.1",
+  "/de/",
+  {
+   "desk": true,
+   "kein": true
+  }
+ ],
+ [
+  "d6.3",
+  "/de/",
+  {
+   "desk": true,
+   "text": "Wellnesshotel Zurbriggen",
+   "nth": 0,
+   "hoch": 0.1
+  }
+ ],
+ [
+  "5.1w",
+  "/de/hotel/wellness.html",
+  {
+   "text": "1700m2",
+   "hoch": 0.5
+  }
+ ]
+]

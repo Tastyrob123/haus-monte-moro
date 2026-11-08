@@ -1,0 +1,77 @@
+{
+  "station": "03",
+  "name": "Recherche",
+  "rolle": "Sammler",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "zustand": "bestätigt",
+  "beginn": "2026-10-17T16:30+07:00",
+  "ende": "2026-10-17T16:43+07:00",
+  "verbrauch": {
+    "budget_vorher": 61.0,
+    "budget_nachher": 62.0,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Adresse widersprüchlich: Talstrasse 129, Furusandstrasse 12, Furusandstrasse 10",
+      "wo": "fakten.json › adresse; Fuss der Seite, Google Maps, Zefix"
+    },
+    {
+      "punkt": "Eigentum und Betrieb unklar: Resort Monte Moro AG (VR Oliver Wachs) gegen Impressum und Filme 2026 mit Esther und Fabian",
+      "wo": "_quelle/presse/handelsregister-2026-10-17.md; Impressum; video/familie"
+    },
+    {
+      "punkt": "Öffnungszeiten und Ruhetage des Röstihüs nirgends veröffentlicht",
+      "wo": "alle 49 Seiten, Schweiz Tourismus (Feld leer), Google"
+    },
+    {
+      "punkt": "Saison und Betriebsferien des Hotels nicht angegeben, Preisliste ohne Saisondaten",
+      "wo": "de/hotel/preise.html, Schweiz Tourismus, Booking"
+    },
+    {
+      "punkt": "Preise und Grössen der Ferienwohnungen Apollo und Arizona fehlen",
+      "wo": "de/ferienwohnungen/apollo.html, arizona.html, Preisliste"
+    },
+    {
+      "punkt": "Röstis und Cordon Bleus: Startseite 12 und 7, Karte 11 und 5",
+      "wo": "de.md gegen website/pdf/speisekarte.pdf"
+    },
+    {
+      "punkt": "Metro Alpin inbegriffen oder nicht: Preisliste und Saastal Tourismus «ohne/ausser», Schweiz Tourismus «auch»",
+      "wo": "de__hotel__preise.html.md; extern/myswitzerland/myswitzerland-seiten-text.md; saas-fee.ch"
+    },
+    {
+      "punkt": "Spa-Grösse des Partnerhotels: 1700/1000 m² oder 1100 m²",
+      "wo": "de.md, de__hotel__aktuelles.html.md"
+    },
+    {
+      "punkt": "Geschichte des Hauses (seit wann, wer) nirgends belegt",
+      "wo": "Seite, Schweiz Tourismus, Websuche, Wikipedia"
+    },
+    {
+      "punkt": "TripAdvisor (Note, Gäste-Sprachen, Restaurant-Eintrag) am 17.10.2026 nicht abgelesen",
+      "wo": "Chrome mit der Claude-Erweiterung nicht verbunden"
+    },
+    {
+      "punkt": "Sprachen der 121 Google-Bewertungen nicht abrufbar",
+      "wo": "Google Maps im eingebauten Browser"
+    },
+    {
+      "punkt": "AGB, Widerruf und Stornobedingungen nicht vorhanden",
+      "wo": "alle Seiten DE/EN/FR"
+    }
+  ],
+  "paket": [
+    "fakten.json",
+    "sprachen.json",
+    "../../_quelle/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/_kette/03-sammler/recherche.html",
+  "briefing": "briefing.html",
+  "notiz": "Material vom 09.10. geprüft und ergänzt: 10 Originale von Schweiz Tourismus, Seite auf Englisch und Französisch, französische Karte, zwei Filme, Handelsregister; Fakten, Sprachen und Bau-Prompt liegen vor. Verbrauch gilt fürs ganze Konto, mehrere Chats liefen gleichzeitig.",
+  "bestaetigt": {
+    "zeit": "2026-10-17T17:01+07:00",
+    "wort": "Material freigegeben (Robert 17.10.2026)"
+  },
+  "rueckgaben": []
+}

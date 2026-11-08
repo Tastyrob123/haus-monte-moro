@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Befund · Hotel Monte-Moro</title>
+<meta name="description" content="Station 2 der Kette: Befund zur heutigen Website des Hotel Monte-Moro, Saas-Almagell, mit Empfehlung.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0b1626">
+<link rel="preload" href="_bau/werkbank/fonts/gelasio-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="_bau/werkbank/werkbank.css?v=1792229343">
+<style>
+.bf-auftakt{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;color:var(--weiss);background:var(--nacht)}
+.bf-auftakt__bild{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background-size:cover}
+.bf-auftakt__in{position:relative;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:clamp(28px,5vw,90px);align-items:end;padding-top:20vh}
+.bf-auftakt .auftakt__fuss{position:relative}
+.bf-urteil{background:var(--papier);color:var(--tinte);border-radius:var(--rund);padding:clamp(24px,2.6vw,38px);box-shadow:0 30px 60px -30px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.7)}
+.bf-urteil .hz{width:46px;height:auto;color:var(--messing);display:block;margin-bottom:14px}
+.bf-urteil small{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--taupe)}
+.bf-urteil b{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(24px,2.2vw,32px);line-height:1.12;margin:8px 0 10px}
+.bf-urteil p{margin:0;font-size:15px;line-height:1.55}
+.bf-zwei{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,6vw,110px);align-items:center}
+.bf-stapel{position:relative;min-height:clamp(380px,40vw,560px)}
+.bf-stapel .abzug{position:absolute;width:62%}
+.bf-a1{left:0;top:0}.bf-a2{right:0;top:22%}.bf-a3{left:14%;bottom:0;width:52%!important}
+.bf-zeilen{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;border-radius:var(--rund);overflow:hidden;margin-top:clamp(30px,3.6vw,52px)}
+.bf-z{background:rgba(255,255,255,.045);padding:clamp(18px,2vw,28px) clamp(20px,2.2vw,32px);box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+.bf-z b{font-family:var(--serif);font-weight:500;font-size:clamp(19px,1.6vw,23px);color:var(--gold)}
+.bf-z p{margin:8px 0 10px;line-height:1.6;color:rgba(253,250,244,.88)}
+.bf-z small{font-size:11px;letter-spacing:.06em;color:rgba(253,250,244,.5)}
+.bf-platten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(18px,2vw,28px);margin-top:clamp(24px,2.6vw,38px)}
+.bf-platte{background:var(--papier);color:var(--tinte);border-radius:var(--rund);padding:clamp(24px,2.6vw,38px);box-shadow:inset 0 2px 10px rgba(21,32,46,.10),0 24px 50px -32px rgba(0,0,0,.55)}
+.bf-platte .hz{width:40px;height:auto;color:var(--messing);display:block;margin-bottom:12px}
+.bf-platte h3{font-family:var(--serif);font-weight:500;font-size:clamp(22px,1.9vw,28px);margin:0 0 10px}
+.bf-platte p,.bf-platte li{line-height:1.6;font-size:15.5px}
+.bf-platte ul{margin:0;padding-left:1.1em}
+.bf-platte li+li{margin-top:6px}
+.bf-liste{list-style:none;padding:0!important}
+.bf-liste li{display:flex;justify-content:space-between;border-bottom:1px solid rgba(21,32,46,.12);padding:7px 0;margin:0!important}
+.bf-liste b{font-family:var(--serif);font-weight:500;font-size:18px}
+.bf-platte p.mono{font-size:11px;letter-spacing:.06em;color:var(--taupe);margin:12px 0 0}
+.bf-fenster{position:relative;height:min(78vh,720px);overflow:hidden;background:var(--nacht)}
+.bf-fenster__b{width:100%;height:100%;object-fit:cover}
+.bf-fenster__s{position:absolute;left:var(--rand);bottom:clamp(28px,5vw,70px);margin:0;max-width:640px;background:var(--papier);color:var(--tinte);border-radius:var(--rund);padding:22px 30px;font-family:var(--serif);font-size:clamp(24px,2.4vw,34px);line-height:1.2}
+.bf-fenster__s small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--taupe);margin-top:8px}
+.bf-fehlt{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,1.8vw,26px);margin-top:clamp(30px,3.4vw,50px)}
+.bf-f{background:var(--weiss);border-radius:var(--rund);padding:clamp(22px,2.2vw,32px);box-shadow:inset 0 2px 10px rgba(21,32,46,.07),0 1px 0 rgba(255,255,255,.8)}
+.bf-f h3{font-family:var(--serif);font-weight:500;font-size:clamp(21px,1.8vw,26px);margin:0 0 8px;color:var(--navy)}
+.bf-f p{margin:0;line-height:1.6}
+.bf-zwei--um{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.fl--nacht .lauf p{color:rgba(253,250,244,.86)}
+.bf-haeuser{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.6vw,24px);margin-top:clamp(30px,3.4vw,50px)}
+.bf-haus{position:relative;display:block;background:var(--weiss);border-radius:var(--rund);overflow:hidden;color:var(--tinte);text-decoration:none;box-shadow:0 24px 50px -34px rgba(21,32,46,.5)}
+.bf-haus__b{display:block;aspect-ratio:4/3;overflow:hidden}
+.bf-haus__b img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--e1)}
+.bf-haus:hover .bf-haus__b img{transform:scale(1.04)}
+.bf-haus__t{display:block;padding:18px 20px 22px}
+.bf-haus__t b{display:block;font-family:var(--serif);font-weight:500;font-size:20px;line-height:1.2;margin-bottom:6px}
+.bf-haus__t small{display:block;font-size:13.5px;line-height:1.5;color:#55606d}
+.bf-haus>i{position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:50%;background:var(--papier);display:grid;place-items:center}
+.bf-haus>i svg{width:14px;height:14px;fill:none;stroke:var(--tinte);stroke-width:1.6}
+.bf-rot{margin-top:clamp(26px,3vw,42px);border-radius:var(--rund);background:var(--weiss);border-left:5px solid var(--rot);padding:clamp(22px,2.4vw,34px) clamp(24px,2.6vw,38px)}
+.bf-rot b{font-family:var(--serif);font-weight:500;font-size:clamp(21px,1.8vw,26px);color:var(--rot)}
+.bf-rot p{margin:10px 0;line-height:1.65;max-width:78ch}
+.bf-rot small{font-size:11px;letter-spacing:.06em;color:var(--taupe)}
+.bf-noten{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,1.8vw,26px);margin-top:clamp(30px,3.4vw,50px)}
+.bf-note{border-radius:var(--rund);background:rgba(255,255,255,.05);padding:clamp(26px,2.8vw,40px);text-align:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.07)}
+.bf-note>b{font-family:var(--serif);font-weight:500;font-size:clamp(64px,7vw,104px);line-height:1;color:var(--gold)}
+.bf-note>small{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(253,250,244,.6);margin-top:6px}
+.bf-note h3{font-family:var(--serif);font-weight:500;font-size:24px;margin:16px 0 4px;color:var(--weiss)}
+.bf-note p{margin:0;font-size:12px;letter-spacing:.05em;color:rgba(253,250,244,.6)}
+.bf-platten--hell .bf-platte{background:rgba(246,241,231,.95)}
+.bf-offen{margin-top:clamp(24px,2.6vw,38px);background:var(--papier);color:var(--tinte);border-radius:var(--rund);padding:clamp(22px,2.4vw,34px) clamp(24px,2.6vw,38px);border-left:5px solid var(--rot);text-align:left}
+.bf-offen h3{font-family:var(--serif);font-weight:500;font-size:24px;margin:0 0 10px;color:var(--rot)}
+.bf-offen ul{margin:0;padding-left:1.1em}
+.bf-offen li{line-height:1.55;margin:8px 0}
+.bf-offen li b{font-weight:500;color:var(--rot)}
+.bf-offen li small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--taupe)}
+.schluss .bf-platten{text-align:left}
+.bf-zeilen--hell .bf-z{background:var(--weiss);box-shadow:inset 0 2px 10px rgba(21,32,46,.06)}
+.bf-zeilen--hell .bf-z b{color:var(--navy)}
+.bf-zeilen--hell .bf-z p{color:var(--tinte)}
+.bf-zeilen--hell .bf-z small{color:var(--taupe)}
+.bf-vgl{margin-top:clamp(24px,2.6vw,38px);border-radius:var(--rund);overflow:hidden;background:var(--navy);color:var(--weiss)}
+.bf-vgl__k,.bf-vgl__z{display:grid;grid-template-columns:1fr 1fr}
+.bf-vgl__k span{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);padding:18px 24px 10px}
+.bf-vgl__z p{margin:0;padding:14px 24px;border-top:1px solid rgba(255,255,255,.08);line-height:1.55}
+.bf-vgl__z p:first-child{color:rgba(253,250,244,.62)}
+.bf-vgl__z p:last-child{background:rgba(207,162,108,.10)}
+@media (max-width:560px){.bf-vgl__z p,.bf-vgl__k span{padding:12px 14px;font-size:14px}}
+@media (max-width:900px){
+ .bf-auftakt__in,.bf-zwei,.bf-zeilen,.bf-platten,.bf-noten{grid-template-columns:1fr}
+ .bf-fehlt{grid-template-columns:1fr 1fr}.bf-haeuser{grid-template-columns:1fr 1fr}
+ .bf-stapel{min-height:clamp(320px,90vw,520px)}
+}
+@media (max-width:560px){.bf-fehlt,.bf-haeuser{grid-template-columns:1fr}.bf-fenster__s{right:var(--rand)}}
+</style>
+</head>
+<body class="haus-monte-moro">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="hz"><g transform="translate(0.000000,222.000000) scale(0.100000,-0.100000)" stroke="none"> <path d="M2100 2099 c-80 -66 -171 -146 -203 -177 -106 -103 -331 -392 -537 -692 -63 -91 -119 -170 -125 -176 -29 -30 -271 -423 -360 -584 -32 -58 -70 -123 -84 -145 -14 -22 -60 -103 -102 -180 l-77 -140 287 -3 c157 -1 295 0 306 3 13 3 116 149 278 393 142 213 268 399 280 414 l22 27 0 -287 c0 -319 8 -366 85 -499 l30 -53 126 0 126 0 141 86 c78 47 169 103 202 123 33 21 92 55 130 76 39 21 124 67 190 103 66 35 136 75 155 87 43 28 633 325 637 321 1 -1 -29 -83 -68 -182 -120 -303 -139 -351 -189 -485 l-48 -129 343 0 342 0 12 27 c16 34 142 261 180 323 15 25 38 65 51 90 44 82 102 180 107 180 8 0 -8 -173 -23 -240 -15 -68 -81 -268 -93 -285 -5 -5 -15 -29 -24 -52 l-17 -43 310 0 c171 0 310 2 310 5 0 52 -58 80 -147 71 l-66 -7 15 23 c17 27 122 204 203 343 32 55 64 107 71 115 6 8 37 62 67 120 l55 105 7 135 c9 183 9 180 16 178 4 -2 40 -46 81 -98 242 -310 346 -440 383 -481 23 -25 48 -56 55 -70 15 -27 81 -112 92 -117 3 -2 30 -35 60 -73 57 -76 89 -99 138 -99 51 0 146 56 230 136 111 106 169 191 455 664 49 80 94 153 100 163 11 15 28 -13 125 -210 62 -125 171 -338 242 -473 71 -135 143 -272 161 -305 17 -33 36 -66 43 -73 7 -6 16 -21 19 -32 6 -19 15 -20 357 -20 329 0 350 1 344 18 -8 19 -130 222 -205 342 -26 41 -60 98 -75 125 -28 51 -213 361 -292 490 -156 254 -224 367 -224 370 0 2 -34 59 -75 127 -122 198 -185 302 -294 485 -73 125 -110 177 -131 188 -65 34 -119 8 -160 -76 -15 -32 -46 -81 -68 -107 -45 -55 -209 -288 -268 -382 -122 -194 -162 -259 -246 -397 -50 -84 -97 -153 -104 -153 -16 0 -261 259 -682 721 -183 201 -344 371 -358 377 -61 29 -103 14 -235 -84 -47 -35 -123 -84 -170 -109 -46 -26 -138 -82 -204 -125 -115 -76 -196 -126 -498 -307 -75 -46 -163 -101 -196 -123 -32 -22 -73 -46 -92 -54 -19 -8 -45 -23 -59 -33 -14 -11 -97 -64 -185 -118 -248 -152 -399 -247 -412 -261 -14 -13 -187 -124 -195 -124 -3 0 -4 10 -2 23 2 12 19 119 38 237 84 523 74 813 -34 1007 -17 29 -44 78 -61 108 l-31 55 -71 0 -72 -1 -145 -120z M8442 65 c-72 -18 -110 -34 -116 -51 -4 -12 22 -14 164 -14 94 0 170 3 170 6 0 61 -99 88 -218 59z M5139 45 c-164 -38 -156 -44 53 -45 l188 0 -11 24 c-24 51 -80 56 -230 21z"/> </g></g></defs></svg>
+<div class="gang-linie" aria-hidden="true"></div>
+<header class="leiste"><div class="insel">
+  <a class="insel__m" href="#oben"><svg class="hz" viewBox="0 0 880 222" aria-hidden="true" fill="currentColor"><use href="#hz"/></svg><span>Befund</span></a>
+  <nav aria-label="Abschnitte"><a href="#haus">Das Haus</a><a href="#seite">Heutige Seite</a><a href="#fehlt">Was fehlt</a><a href="#ausmacht">Was es ausmacht</a><a href="#familie">Familie</a><a href="#noten">Noten</a><a href="#zerone">Wer dahinter steht</a><a href="#empfehlung">Empfehlung</a></nav>
+  <a class="glanz" href="https://www.monte-moro.ch/de/" target="_blank" rel="noopener">Heutige Seite<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></a>
+</div></header>
+<main id="oben">
+
+<section class="auftakt bf-auftakt">
+  <img src="_bau/img/haus.webp" width="2000" height="1500" alt="Das Hotel Monte-Moro im Winter" class="ld bf-auftakt__bild" style="background-image:url(data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAwBgCdASooAB4APulip06pJaMiKqwBIB0JZQDA3BZuZxKgUms8USCQrymvsPBXPx3qNp0XRsMa64YAAP6/Ryrn16QPk424zXuB7D2eSdj7Ka+87cvSbcgnLDB4WcAWsEzAZroL8dW0OIYzW92GkxmsRAqmXKupbpqU7UTmqZ3aUFQfKGyTbHkD+CsUSteQw2gMYjoxGN6d3CGoXngAAA==)">
+  <div class="in bf-auftakt__in">
+    <div class="auftakt__t">
+      <p class="gruss" data-a="auf">Station 2 · Der Späher · 17.10.2026</p>
+      <h1 class="t1 zt"><span class="z"><span>Hotel Monte-Moro,</span></span><span class="z"><span><em>gelesen.</em></span></span></h1>
+      <div class="lauf"><p data-a="worte" style="--vz:1600ms">Das Haus mit dem Röstihüs in Saas-Almagell, drei Sterne, 18 Zimmer, Gastgeber laut Impressum Esther und Fabian Zurbriggen. Was die heutige Seite zeigt, was ihr fehlt und ob es weitergeht.</p></div>
+      <div class="kn-reihe" data-a="auf" style="--i:6"><a class="kn " href="https://www.monte-moro.ch/de/" target="_blank" rel="noopener">Heutige Seite öffnen<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a><a class="kn kn--linie" href="#empfehlung">Zur Empfehlung<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a></div>
+    </div>
+    <aside class="bf-urteil" data-a="kipp" style="--i:4"><svg class="hz" viewBox="0 0 880 222" aria-hidden="true" fill="currentColor"><use href="#hz"/></svg><small>Bestätigt am 17.10.2026</small><b>Passt, gehört zur Familie</b><p>Studie als Teil der Familie Zurbriggen. Die Familie steht über den Sternen. Hinter der Seite steht zerone aus Brig-Glis, kein Hindernis.</p></aside>
+  </div>
+  <div class="in auftakt__fuss mono" data-a="auf" style="--i:9"><span class="runter"><i></i>Einfach nach unten scrollen</span><span>Stand 17.10.2026</span><span>Robert Reff · Tasty Studios</span></div>
+</section>
+<section class="fl fl--papier blatt" id="haus">
+  <div class="in bf-zwei">
+    <div>
+      <p class="kap" data-a="auf"><b>01</b><i></i><span>Das Haus in Kürze</span></p>
+      <h2 class="t2 zt"><span class="z"><span>Drei Sterne,</span></span><span class="z"><span><em>ein Röstihüs.</em></span></span></h2>
+      <div class="lauf">
+        <p data-a="auf" style="--i:1">Hotel und Restaurant in Saas-Almagell, 18 Zimmer, 55 Betten, drei Sterne. So steht es bei Schweiz Tourismus, Booking und Google.</p>
+        <p data-a="auf" style="--i:2">Dazu gehören das Restaurant Röstihüs, die Ferienwohnungen in den Häusern Apollo und Arizona und weitere Zimmer in der Residence Alpenhof, vier Gehminuten entfernt.</p>
+        <p data-a="auf" style="--i:3">Im Impressum steht «Hotel Monte-Moro, Esther und Fabian Zurbriggen-Zurbriggen». Telefon +41 27 957 10 12, info@monte-moro.ch.</p>
+      </div>
+    </div>
+    <div class="bf-stapel">
+      <div class="abzug bf-a1" data-a="schweb" style="--r:-2.2deg;--r0:-6.6000000000000005deg;--i:1"><img src="_bau/img/sommer.webp" width="1400" height="1050" alt="Das Hotel Monte-Moro im Sommer" loading=lazy decoding=async class="ld " style="background-image:url(data:image/webp;base64,UklGRroBAABXRUJQVlA4IK4BAADwCACdASooAB4APtVYok0oJSMiNUgBABqJZgCxHzx2snR0wCBK+62cLKCddEr1uxlCc2lecn9PUYoawk5Rr9+bhza8PBtwu/4PL2aU5U3gAAD+5BcJ6nQ2GS04uXEffSOnjezEVt1xl/up5jNrVUp4Oqw+Fv9iurSgEYDPLDhTpO1tudgZl/ywtRxZtfR5BeNLdDvxXlDaoNBtaiEXpE3MbW+y589C7V0d3G9QBHDcI4FF/DJYRuNHrkji+F7K+NoLiTnLM0Hw2BK6/8ghU12Fca7ggaUCFdwW1hbkVb/YXUXyd5Khe87AY5f599W0BNYyqNLEN/4CWDeNrDLDIlpiRUMzlJmWIjKhl0X98r+tN2stf5jST3wVeonPdOnpDXjNdAuCDll1X063fFBo5SDiz/yLzUYJR+wlDRtM3tChqf42dmZTEPpSBm6UM3KtiZw+aXpRu71ITlEYIMZYFKouAM8RxvgLaizSXI19V93JKns2I7/TOSsAscnIlffPRz9VK9xQj+btHTxnceTvUbVlzQHmMxZ+VdJxn+mLiQykhDjOXQDyCEWLDcchDOAA)"><span>Das Haus im Sommer</span></div>
+      <div class="abzug bf-a2" data-a="schweb" style="--r:2.6deg;--r0:7.800000000000001deg;--i:2"><img src="_bau/img/zimmer.webp" width="1100" height="733" alt="Ein Doppelzimmer" loading=lazy decoding=async class="ld " style="background-image:url(data:image/webp;base64,UklGRh4BAABXRUJQVlA4IBIBAABwBwCdASooABsAPuliqU4pJaOiMBqoASAdCWYAsR7j5cMpzI4jIe6mEi3paXRVNQ7e3YSCzbB3mZh4f+Dq6PZ7k4RBgAD80mFHztY1EHPM4Arir+4uqUs6TIPND0u/chskwnfcENXlP8ukZK3HXJDgdKKddNsL3VAjDltT6AlTmRMcPO3rV6R1yInVTFH7/Su0l6gWPAj/bib4RjG6oRGmhP5/rryM5W9EGbwwuMvElN3Zi200y+Q8+3HEF16GFsioCNw/BnwLuhjFvkutRkXNVmlDYbJrxF/ffYg8uTZNa/IM1lUoMdGjCc3SEYzv1elktZBGaUcyqoij2l8vzU9k4UbGjIKeaftFfJHQG9xNIAAA)"><span>Ein Doppelzimmer</span></div>
+      <div class="abzug bf-a3" data-a="schweb" style="--r:-1.2deg;--r0:-3.5999999999999996deg;--i:3"><img src="_bau/img/balkon.webp" width="1100" height="1100" alt="Blick vom Balkon ins Tal" loading=lazy decoding=async class="ld " style="background-image:url(data:image/webp;base64,UklGRgICAABXRUJQVlA4IPYBAABwCgCdASooACgAPuloq1KpJSOipzgKSSAdCWIAqo+zQdpiG8Z3wdzdepwlpn/k4sQs6VWzfb98rD46hpI/d60j56Ihl88msJGYPJrnPBIS3eFG35UB5wD90IFpwAD+xTU5R18sq/z9ofAwIYTh4JhQnlYinwCNsD/Uyk56BqLYPWaz5Jc4NCzlLHkNnF9HRZogiK9b9QuSJdTMgB4jUGjUEuAysk3mSarRmgNY2HhRi29t4MuWNooSl8BC48H77MXbHC9lMMktvNdjMGQK90y6jNd+w9hecgpmy6O7mw4kHxXB2uBB+7glA7+167+C/eo581b4iTU7bRfuSsMpM2QEvZK39J44RCrGRSqT9lB7KdprgmjwWPOYOxaYEb9ZP8dul1rjd3/zMOQis1nVTmnUH3XmJuhqITFUm35VwqacdWD7qIIRk//+zSsF620Ifp6+eVU2TXR7P5LnQStNC9A4A07gx3jD97xcxFJjW5ADpaNVSeT/BI1+NN7YV7I9fvNCsNuI4Bz3u276lK/pcHoMIeKVRbIoBPyOVeMsI6E04dI6m9bsux3ILtHK/6xv0P7jj86Li0sEWUBCHDNS6NseiriL5cLBrQjC2G627NjwWu8VIGyj8OIGo2hOd8HXtOAGkE/oAFDtnS4hRrgPtFuAbbfIiAAA)"><span>Vom Balkon ins Tal</span></div>
+    </div>
+  </div>
+</section>
+<section class="fl fl--navy tapete blatt" id="seite">
+  <div class="in">
+    <div class="kopfzeile"><div><p class="kap" data-a="auf"><b>02</b><i></i><span>Die heutige Seite</span></p><h2 class="t2 zt"><span class="z"><span>Was monte-moro.ch</span></span><span class="z"><span><em>heute zeigt.</em></span></span></h2></div><div class="lauf"><p data-a="worte">Alle 49 Seiten in drei Sprachen am 17.10.2026 neu abgerufen. Inhaltlich ist alles wie am 09.10.2026. Die Seite selbst sehen Sie über den Knopf, nicht als Bild.</p></div></div>
+    <div class="bf-zeilen"><div class="bf-z" data-a="auf" style="--i:0"><b>Technik</b><p>Joomla, Bauteile der Reihe 3, Aufbau aus Tabellen.</p><small class="mono">Quelltext der Startseite, 17.10.2026</small></div><div class="bf-z" data-a="auf" style="--i:1"><b>Wer dahinter steht</b><p>Vorlage «zerone» von der zerone computer gmbh in Brig-Glis, angelegt am 04.04.2019. Ein laufender Betreuungsvertrag ist nicht belegt. Server bei Webland.</p><small class="mono">templateDetails.xml der Seite, zerone.ch, Namensserver, 17.10.2026</small></div><div class="bf-z" data-a="auf" style="--i:2"><b>Bilder</b><p>88 Bilder, die grössten 1280 px breit. Zimmer, Stube und Haus sind eigene Fotos, die Bilder der Region tragen keine Herkunft, die Wellness-Bilder zeigen das Partnerhotel.</p><small class="mono">_quelle/monte-moro/website/bilder</small></div><div class="bf-z" data-a="auf" style="--i:3"><b>Handy</b><p>Eigene Anordnung mit Menüknopf, der Massstab ist fest auf 0,8 gestellt.</p><small class="mono">Aufnahmen in _qa, Quelltext</small></div><div class="bf-z" data-a="auf" style="--i:4"><b>Ladezeit</b><p>Startseite 4,5 bis 5,3 Sekunden am Rechner, 2,0 MB, davon 1,65 MB Bilder. Am Handy 3,6 Sekunden. Gemessen ungedrosselt aus Koh Phangan.</p><small class="mono">_qa/messung.json, 17.10.2026</small></div><div class="bf-z" data-a="auf" style="--i:5"><b>Sprachen</b><p>Deutsch, Englisch, Französisch mit je 16 bis 17 Seiten. Der Datenschutz bleibt in allen drei Sprachen deutsch. Speisekarte deutsch und französisch.</p><small class="mono">_qa/live, 49 Seiten</small></div><div class="bf-z" data-a="auf" style="--i:6"><b>Buchung</b><p>Zimmer über einen eingebetteten Shop von seekda, Tische über TheFork oder Telefon, Anfragen über ein Formular.</p><small class="mono">monte-moro.ch/de/buchen.html</small></div><div class="bf-z" data-a="auf" style="--i:6"><b>Rechtstexte</b><p>Impressum und Datenschutz vorhanden. AGB, Widerruf und Stornobedingungen nicht gefunden.</p><small class="mono">_qa/live/text</small></div><div class="bf-z" data-a="auf" style="--i:6"><b>Social</b><p>Instagram @hotelmonte_moro (173 Follower, 19 Beiträge am 09.10.2026) und Facebook. Newsletter nur als Auswahl im Kontaktformular.</p><small class="mono">Fuss jeder Seite</small></div><div class="bf-z" data-a="auf" style="--i:6"><b>Auszeichnungen</b><p>Keine eigene. Die Restaurantseite nennt 14 Gault-Millau-Punkte für den Küchenchef des Partnerhotels, Stand nicht geprüft.</p><small class="mono">monte-moro.ch/de/restaurant.html</small></div></div>
+    <div class="bf-platten">
+      <div class="bf-platte" data-a="kipp" style="--i:1"><svg class="hz" viewBox="0 0 880 222" aria-hidden="true" fill="currentColor"><use href="#hz"/></svg><h3>Was die Seite gut macht</h3><p>Sie sagt klar, was im Preis steckt: Bergbahnen und Postautos inklusive, Gratis-Anreise mit dem öffentlichen Verkehr, das Spa nebenan mit Preis je Eintritt. Die Preisliste ist offen und vollständig, bis zum Hund pro Tag. Die Lage steht in Gehminuten auf der Startseite.</p></div>
+      <div class="bf-platte" data-a="kipp" style="--i:2"><svg class="hz" viewBox="0 0 880 222" aria-hidden="true" fill="currentColor"><use href="#hz"/></svg><h3>Was auffällt</h3><ul><li>Die Gratis-Anreise gilt für Buchungen «vom 1. Mai bis 31. Oktober 2026» und steht in zwei Wochen nicht mehr.</li><li>Die Pauschale «Top Winterzauber» (CHF 999.00, sieben Nächte) nennt weder Saison noch Jahr.</li><li>Das Spa des Partnerhotels steht mit 1700 m² im Sommer, 1000 m² im Winter und an anderer Stelle mit 1100 m² da.</li><li>Der Routenplaner der Seite führt zur Talstrasse 129, Google nennt die Furusandstrasse 12.</li><li>Im Browser heisst die Startseite «Aktuelles», die Seite Aktuelles «Akuelles».</li></ul></div>
+    </div>
+    <div class="kn-reihe" data-a="auf" style="justify-content:center;margin-top:clamp(30px,3.4vw,48px)"><a class="kn " href="https://www.monte-moro.ch/de/" target="_blank" rel="noopener">Heutige Seite öffnen<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a></div>
+  </div>
+</section>
+<section class="bf-fenster" aria-label="Die Stube des Röstihüs">
+  <img src="_bau/img/stube.webp" width="1024" height="678" alt="Die Stube des Röstihüs" loading=lazy decoding=async class="ld bf-fenster__b" style="background-image:url(data:image/webp;base64,UklGRiwBAABXRUJQVlA4ICABAADQBgCdASooABoAPulqq1GpJaOipWsxIB0JYgCdMvU730podDrarYgy7cDpWaHFvg7SuQYAwxI51kIMQaHgacAAzj15wB+81xR1L9w9BKIwoIWbiYhIrmm0FbTu09VPqtxnMYM5kb4UrX86ZbOVt3rPA6zKtFUWwESAm99QH8oD2Qb2Ew5KZSOjWCvXt7V1htPfwIE4mjJo3OcVGXsmoWDW30Mm8lSX7alCdrnxD4beCr6TK0L4iWVamSMLFtFM9uUxm6EPYVWMykp1CaOHe07V1lrcTkSKrrIHy4peJMqRJprnnSYnEGJGDGc7N9wjp+z1TTvt9s0gmRuQ6X7yUnD5DrogrkRwzilu9sZKtuz0tKS6fGtmRwE5PkiMoW4AAAA=)">
+  <p class="bf-fenster__s" data-a="auf">«Es lebe die Tradition!» <small>Startseite des Hauses, Abschnitt Röstihüs</small></p>
+</section>
+<section class="fl fl--papier blatt" id="fehlt">
+  <div class="in">
+    <div class="kopfzeile"><div><p class="kap" data-a="auf"><b>03</b><i></i><span>Was fehlt</span></p><h2 class="t2 zt"><span class="z"><span>Was ein Gast</span></span><span class="z"><span><em>nicht findet.</em></span></span></h2></div></div>
+    <div class="bf-fehlt"><div class="bf-f" data-a="auf" style="--i:0"><h3>Die Geschichte</h3><p>Kein Wort dazu, seit wann es das Monte-Moro gibt und wer es führt, ausser dem Impressum.</p></div><div class="bf-f" data-a="auf" style="--i:1"><h3>Die Zimmer</h3><p>Eine Bildreihe und zwei Absätze. Keine Kategorie mit Grösse, Bild und Preis. Die Preisliste kennt Budget- und Standardzimmer, die Zimmerseite nicht.</p></div><div class="bf-f" data-a="auf" style="--i:2"><h3>Die Wohnungen</h3><p>Apollo und Arizona ohne Preis, ohne Grösse, ohne eigenen Buchungsweg.</p></div><div class="bf-f" data-a="auf" style="--i:3"><h3>Das Röstihüs</h3><p>Keine Öffnungszeiten, keine Ruhetage. Die Karte gibt es nur als PDF.</p></div><div class="bf-f" data-a="auf" style="--i:4"><h3>Die Gäste</h3><p>Bewertungen werden nirgends gezeigt, obwohl Personal und Lage auf Booking bei 9,0 stehen.</p></div><div class="bf-f" data-a="auf" style="--i:5"><h3>Das Kleingedruckte</h3><p>Keine AGB, keine Stornobedingungen.</p></div></div>
+  </div>
+</section>
+<section class="fl fl--nacht blatt" id="ausmacht">
+  <div class="in bf-zwei bf-zwei--um">
+    <div class="bf-stapel">
+      <div class="abzug bf-a1" data-a="schweb" style="--r:2deg;--r0:6deg;--i:1"><img src="_bau/img/raclette.webp" width="1200" height="800" alt="Das Raclettestübli" loading=lazy decoding=async class="ld " style="background-image:url(data:image/webp;base64,UklGRsIBAABXRUJQVlA4ILYBAABwCACdASooABsAPulmp0+pJaMiKqoBIB0JZgCpLUFTvi6OC5zk5s5yIIYcr0LF/0yGc6BPvNod3i5tP2SROxpaWLnmgg3WMbUrWOpkAP7Q3PtQGXvWnlRh2dyfTmkIYRfr0gcEcDUf07GExV6Kk3yj+3oIFLgCCDmS+1ElAWA9ZhxW6sTGWe9VAdc7MT/H4xc5ROzch8bwf3LSUBlIYKJtHOoe73OMqonWDTS5mJZat/WHcWNaBf4jmbDNcUsrRaptuV7uPY55iT8d9iPocnIBulbh4viaGlqpPsiVFINsoGq2C+Uumgkac6v5aePYUNkszotuAQj219V58+UNNxzC5n8ispuOdO7Zyg/E0cpRHUPT8tdKIHb5AxeDuQC96PssxXViGjGTBXGSN7vrYz05X1ISPSM8ElPZWWrtoTf4iJ0NTXd3ax9oVRr7s4t3399OJz7bfVEgebrAC88mJIeZA96Y2vCoDaSqmQzxz+ptecdbVnSehgrr4E2FiONmjCU/sBSdRRgXSbem/2c4Ym4hqKcyueqE26Hw5Y68l23Pj0YspqYFLlhCytgkEaJGA+H4onIAAAA=)"><span>Das Raclettestübli</span></div>
+      <div class="abzug bf-a2" data-a="schweb" style="--r:-2.4deg;--r0:-7.199999999999999deg;--i:2"><img src="_bau/img/fruehstueck.webp" width="1100" height="825" alt="Das Frühstücksbuffet" loading=lazy decoding=async class="ld " style="background-image:url(data:image/webp;base64,UklGRlgBAABXRUJQVlA4IEwBAADQBgCdASooAB4APulmrlEpJSQipWsxIB0JQBZwgWk3CJwf9XBu5asZtaY/oM4gc/IHHJonBlfCiddh+5M4r5wA/pXJZ4knSNLvBpz76ALw4WnVyBCMjRvu7r9hwGbViACOxPJ46XIKEtvw52+ggn4TuGO4FNS+IH9rIyE6i7lGH5DycLydjLmiz+7ukxxt3/Jn6oW3+IgxOws0bgWif94zpNx8A3xzz6uTGzYx/v5+9k36T56K4n9kFsloD5iqTn2oF3KutwNsktCNmmT7FFYOPHqUuJHK+zmFHHxh7tQVRZZjGz9BZPrFdFMW2eeBvUfZkPJE4qkOVmT/jlqoSDukWC+fV5Rb6aLJHPlk1wa0I1miutxbNlGndQV4CLNM0/gl5uQaBBEMjF8bSHaZ+Ts5ZaoZqPcfcwMVHKSpyGdUuEEoNwDT4xf6IAAAAA==)"><span>Frühstücksbuffet</span></div>
+    </div>
+    <div>
+      <p class="kap" data-a="auf"><b>04</b><i></i><span>Was das Haus ausmacht</span></p>
+      <h2 class="t2 zt"><span class="z"><span>Mehr erleben,</span></span><span class="z"><span><em>weniger zahlen.</em></span></span></h2>
+      <div class="lauf">
+        <p data-a="auf" style="--i:1">So sagt es das Haus selbst. Bergbahnen und Postautos sind im Sommer und Herbst ab der ersten Nacht inbegriffen, das Skigebiet liegt zwei Gehminuten entfernt, die Busstation drei.</p>
+        <p data-a="auf" style="--i:2">Im Röstihüs gibt es nach eigener Angabe 12 Röstis und 7 Cordon Bleus, Walliser Wein, Appenzeller Bier und eine Sonnenterrasse vor dem Haus. Halbpension heisst einmal die Woche Raclette, Kinder haben ihren Club von Montag bis Samstag, 16:30 bis 21:00 Uhr.</p>
+        <p data-a="auf" style="--i:3">Wer mehr will, geht nebenan ins Spa des Partnerhotels Pirmin Zurbriggen: CHF 25 je Eintritt, sieben Tage CHF 150.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="fl fl--creme blatt" id="familie">
+  <div class="in">
+    <div class="kopfzeile"><div><p class="kap" data-a="auf"><b>05</b><i></i><span>Familie und weitere Häuser</span></p><h2 class="t2 zt"><span class="z"><span>Die anderen Häuser</span></span><span class="z"><span><em>der Familie.</em></span></span></h2></div><div class="lauf"><p data-a="worte">Gleiche Telefonnummer, gleiche Gastgeber im Impressum, «Partnerhotel» auf der Startseite. Gebaut ist von keinem dieser Häuser schon etwas; die drei anderen laufen heute parallel durch Station 2.</p></div></div>
+    <div class="bf-haeuser"><a class="bf-haus" href="https://www.wellnesshotel-zurbriggen.ch" target="_blank" rel="noopener" data-a="kipp" style="--i:0"><span class="bf-haus__b"><img src="_bau/img/wellness.webp" width="900" height="506" alt="Wellness &amp; Spa Pirmin Zurbriggen" loading=lazy decoding=async class="ld " style="background-image:url(data:image/webp;base64,UklGRloBAABXRUJQVlA4IE4BAACQBgCdASooABYAPulmqE+pJaOiKqoBIB0JZACxIBQOgzXAlwpL+uNgaYN4rBRbhpmiUpawuB2gWf45FzgAAP6o3F9BJzcr5BxnL81OjXnXqu3c0is7ggbjeRjM4astAeSkxapRNvlgwkdaAZ3tfrXnnObitSIfQUA3ZFjP+Rpme+c0S2s5E6fkTC2zi7wDk6qZ+vodJ7DYMhn2mfZYEiOutInTlbSVtbJFCN7fyoVMPLGJpW5WpfK4/TVx+ieEbJzDfMh/scc7h7WTmsLQjcQU/j+nwIeAtGsdn2ZI6PNUzqQFZuPSCRdKWjM1yxmpg76nuZ/JliAN0dc+lr/zdF0XXN1t0T+COdOwPywiJQ3WjT4pgq96ThUq7pudGvKOFuNvrhNRKBP611FskKB4XZtvhZ6PpFoASzrQIYROSl3QOmM6AH0zoKTAFSwQEAAA)"></span><span class="bf-haus__t"><b>Wellness &amp; Spa Pirmin Zurbriggen</b><small>Furrusandstrasse 16, Saas-Almagell</small><small>Esther und Fabian Zurbriggen</small></span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a><a class="bf-haus" href="https://www.loftsuite.ch" target="_blank" rel="noopener" data-a="kipp" style="--i:1"><span class="bf-haus__b"><img src="_bau/img/loft.webp" width="900" height="600" alt="Loft-Suite Hotel" loading=lazy decoding=async class="ld " style="background-image:url(data:image/webp;base64,UklGRiYBAABXRUJQVlA4IBoBAAAQBgCdASooABsAPuFYpU0opSOiMAqpEBwJQBfLP/wFyEn6vdyHQlk2DpyCsaTwr9uSJLyw9e6Ak1AA/tysbP5fELyW/0RXt7Zm73CDvLbmgVnnh6yerEzIHmM+HhdFMT3/FvrnKfgVNiCiX6XL9JnrBwgsdFg0Pd/V8Zp+Eyo3+IUGlF1Y066lbLokaNgcTil7YZhKn1IC8EsmRl1jGaf5237/g2m8Mtn382urYdTp6h0Dd+iHuFotIxQ5aRSwnuc2h6nJ2XxWYK/LBmk7HO9Ht1MvhfRrN5YESKpUTVMO1jCQOHJvNISOQ7Vn3AR9EcbXoiBUvCv8koCvKFnBdgUVBbFV4G5ksYMS2KBuUdMgxfqdpn7UGvoAAAA=)"></span><span class="bf-haus__t"><b>Loft-Suite Hotel</b><small>Saas-Almagell</small><small>Esther und Fabian Zurbriggen</small></span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a><a class="bf-haus" href="https://zurbriggen.ch/zermatt" target="_blank" rel="noopener" data-a="kipp" style="--i:2"><span class="bf-haus__b"><img src="_bau/img/zermatt.webp" width="900" height="488" alt="Suitenhotel Zurbriggen, Zermatt" loading=lazy decoding=async class="ld " style="background-image:url(data:image/webp;base64,UklGRigBAABXRUJQVlA4IBwBAAAwBwCdASooABYAPulssFIpJaSipWmZIB0JQBOmaGHNBx7r7H9xMt9hu237rUCaP6svqOalBvdP4/aji61427emUgAA/vKw2I/4GQiE+s4oeyrGhRGLuMwzEqWh0eC/PR3BivcmA3qYuDhRWX1N54HbwKnff7jC8Ik7m/GyT1JrrGH9vXiM90ZuOyzg0O4wgNGcpvpAbbiRE4tJIXgBMewN+mnbgNMKZQ5P3lNA+GKUbDFXSBjDt4Ub3K5F/l3lhtML6UU9p8s7Co3pBl65OBCr3uCZin+cnRE6kCoyFueAeI2GoCN0vPjAWO1ajj/n2pDBAPyr1jIfpaHvXb0qmWlaxp0km7uMaUteFihjGwQz5kxwgqvjOFSsLeIgAA==)"></span><span class="bf-haus__t"><b>Suitenhotel Zurbriggen</b><small>Schluhmattstrasse 68, Zermatt</small><small>Moni und Pirmin Zurbriggen</small></span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a><a class="bf-haus" href="http://www.chalet-rustica.ch" target="_blank" rel="noopener" data-a="kipp" style="--i:3"><span class="bf-haus__b"><img src="_bau/img/rustica.webp" width="533" height="400" alt="Chalet Rustica" loading=lazy decoding=async class="ld " style="background-image:url(data:image/webp;base64,UklGRvwAAABXRUJQVlA4IPAAAAAwBwCdASooAB4APuVgqE0pJaQiMBqqqSAciWMAqmAMYLNemXedSrIs3EpSaIOPQ7ixIu5z419wnGjsB4dLmpyYRAAA4kCeu0e7hG/6DtlZ2L9HqqVyivUP1CcCO+/4x+FawgKp4naljKDxe/NRt3fLZEPBhFfB1YFuqanSCaEuGl8H3XYWXqdA0va/xkDXHmZfhg3MdRC8g/7RWNs4KStf1eqYU7O/TudQCFLTxwXNsHM1WTktz1Tjy07BxkyEyBhGkXigbHLTiL8v2SBwOCewxNSJotv+wZrbTqXLJIJRGTycLDmCxPNeMtcsiYNoMAA=)"></span><span class="bf-haus__t"><b>Chalet Rustica</b><small>Saas-Almagell</small><small>Heidi und Damian Andenmatten-Zurbriggen</small></span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a></div>
+    <div class="bf-rot" data-a="auf"><b>Wem das Monte-Moro gehört, ist nicht belegt.</b><p>Im Handelsregister steht die Resort Monte Moro AG (CHE-167.073.174), gegründet am 22.08.2022 an der Talstrasse 129, Zweck «Betrieb von Hotels und Gastrobetrieben». Einziges Mitglied des Verwaltungsrats ist laut SHAB vom 19.09.2022 Oliver Wachs aus Zürich. Seit März 2026 sitzt die Firma an der Furusandstrasse 10. Die Familie Zurbriggen steht dort nicht, das Impressum nennt weiter Esther und Fabian. Ob die AG das Hotel betreibt, ob es verpachtet oder verkauft ist, bleibt offen.</p><small class="mono">Zefix, Abruf 17.10.2026</small></div>
+  </div>
+</section>
+<section class="fl fl--navy tapete blatt" id="noten">
+  <div class="in">
+    <div class="kopfzeile"><div><p class="kap" data-a="auf"><b>06</b><i></i><span>Noten</span></p><h2 class="t2 zt"><span class="z"><span>Wie Gäste</span></span><span class="z"><span><em>es sehen.</em></span></span></h2></div><div class="lauf"><p data-a="worte">Nur abgelesen. TripAdvisor liess sich heute nicht öffnen, dort gilt der Stand vom 09.10.2026.</p></div></div>
+    <div class="bf-noten"><div class="bf-note" data-a="kipp" style="--i:0"><b>4,5</b><small>von 5</small><h3>Google</h3><p class="mono">121 Bewertungen · 17.10.2026</p></div><div class="bf-note" data-a="kipp" style="--i:1"><b>8,3</b><small>von 10</small><h3>Booking.com</h3><p class="mono">94 Bewertungen · 17.10.2026</p></div><div class="bf-note" data-a="kipp" style="--i:2"><b>3,9</b><small>von 5</small><h3>TripAdvisor</h3><p class="mono">17 Bewertungen · Stand 09.10.2026</p></div></div>
+    <div class="bf-platten">
+      <div class="bf-platte" data-a="kipp" style="--i:1"><svg class="hz" viewBox="0 0 880 222" aria-hidden="true" fill="currentColor"><use href="#hz"/></svg><h3>Booking im Einzelnen</h3><ul class="bf-liste"><li><span>Personal</span><b>9,0</b></li><li><span>Lage</span><b>9,0</b></li><li><span>Sauberkeit</span><b>8,8</b></li><li><span>Komfort</span><b>8,7</b></li><li><span>Preis-Leistung</span><b>8,6</b></li><li><span>Ausstattung</span><b>8,0</b></li></ul></div>
+      <div class="bf-platte" data-a="kipp" style="--i:2"><svg class="hz" viewBox="0 0 880 222" aria-hidden="true" fill="currentColor"><use href="#hz"/></svg><h3>In welcher Sprache Gäste schreiben</h3><ul class="bf-liste"><li><span>Deutsch</span><b>46</b></li><li><span>Französisch</span><b>29</b></li><li><span>Niederländisch</span><b>6</b></li><li><span>Italienisch</span><b>3</b></li><li><span>Englisch</span><b>2</b></li><li><span>Rumänisch</span><b>2</b></li><li><span>Weitere sechs</span><b>6</b></li></ul><p class="mono">Booking, 94 Bewertungen, 17.10.2026</p></div>
+    </div>
+  </div>
+</section>
+<section class="fl fl--papier blatt" id="zerone">
+  <div class="in">
+    <div class="kopfzeile"><div><p class="kap" data-a="auf"><b>07</b><i></i><span>Wer hinter der heutigen Seite steht</span></p><h2 class="t2 zt"><span class="z"><span>zerone aus Brig-Glis,</span></span><span class="z"><span><em>kein Hindernis.</em></span></span></h2></div><div class="lauf"><p data-a="worte">Abgerufen am 17.10.2026. Die Buchung über seekda bleibt, wo sie ist. Alles mit Beleg im Befund als Text.</p></div></div>
+    <div class="bf-zeilen bf-zeilen--hell"><div class="bf-z" data-a="auf" style="--i:0"><b>Die Firma</b><p>Zerone Computer GmbH, Brig-Glis, im Handelsregister seit 1999, Gesellschafter Marc und Daniel Burgener aus Saas-Grund. Programmierung, Fernwartung, Webdesign, Drucksachen. Dieselbe Vorlage tragen vier Hotels in Saas-Fee: La Gorge, Boutique Lodge Spycher, Belmont, Ambiente.</p><small class="mono">Handelsregister Oberwallis, zerone.ch, Quelltext der Seiten</small></div><div class="bf-z" data-a="auf" style="--i:1"><b>Gebaut und geändert</b><p>zerone baut die Seite mindestens seit Mai 2014 (Web-Archiv). Die heutige Fassung ist von 2019, Joomla 3, für das es seit Februar 2025 keine Sicherheits-Updates mehr gibt. Zuletzt geändert im Mai 2026.</p><small class="mono">web.archive.org, templateDetails.xml, Dateidaten des Servers</small></div><div class="bf-z" data-a="auf" style="--i:2"><b>Preise</b><p>Nicht öffentlich. «Die aktuellen Preise können bei zerone computer gmbh erfragt werden.» Abgerechnet wird jährlich im Voraus.</p><small class="mono">AGB Ziffer 2a, 2c, 2d</small></div><div class="bf-z" data-a="auf" style="--i:3"><b>Vertrag laut AGB</b><p>Ein Kalenderjahr, verlängert sich von selbst. Kündigung bis spätestens 15. November. Keine Rückvergütung. Nach Vertragsende werden alle Daten gelöscht, die Sicherung ist Sache des Kunden.</p><small class="mono">AGB «Internet Services», Stand August 2018, Ziffer 3 und 4</small></div><div class="bf-z" data-a="auf" style="--i:4"><b>Nutzungsrechte</b><p>Die Adresse wird auf den Namen des Kunden registriert. Am Hosting erhält das Haus nur ein Nutzungsrecht, die Rechte bleiben beim Anbieter. Ob zerone Vorlage, Code und Datenbank herausgibt, steht nirgends.</p><small class="mono">AGB Ziffer 5e und 8a, templateDetails.xml</small></div><div class="bf-z" data-a="auf" style="--i:5"><b>Ungeprüft</b><p>Der tatsächliche Vertrag der Familie mit zerone: Preis, Umfang, Pflege, Laufzeit. Im Gespräch zu klären, keine Tatsache über das Haus.</p><small class="mono">nicht öffentlich</small></div></div>
+    <div class="bf-vgl" data-a="auf"><div class="bf-vgl__k"><span>Heute bei zerone</span><span>Mit uns</span></div><div class="bf-vgl__z"><p>Joomla 3 ohne Sicherheits-Updates</p><p>statischer Bau ohne Joomla und ohne Datenbank hinter der Seite</p></div><div class="bf-vgl__z"><p>Tabellen-Aufbau, Handy-Massstab fest auf 0,8</p><p>für das Handy zuerst gebaut, flüssig auch auf schwachen Geräten</p></div><div class="bf-vgl__z"><p>2 MB auf der Startseite, Bilder höchstens 1280 px</p><p>Bilder in voller Quellbreite, leicht ausgeliefert</p></div><div class="bf-vgl__z"><p>Datenschutz nur deutsch, keine AGB</p><p>alle Rechtstexte im Wortlaut, Sprachwechsel an derselben Stelle</p></div><div class="bf-vgl__z"><p>Daten werden bei Kündigung gelöscht</p><p>Seite, Server, Adresse und Zugänge auf das Haus, alles zum Mitnehmen</p></div><div class="bf-vgl__z"><p>eine Seite als Einzelstück</p><p>Werkbank mit Karten, Rezeption im Chat, Drucksachen, Besucherbuch</p></div></div>
+    <div class="kn-reihe" data-a="auf" style="justify-content:center;margin-top:clamp(30px,3.4vw,48px)"><a class="kn " href="https://www.zerone.ch/agb/agb.pdf" target="_blank" rel="noopener">AGB von zerone<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a><a class="kn kn--linie" href="https://vo.chregister.ch/cr-portal/auszug/auszug.xhtml?uid=CHE-105.348.623" target="_blank" rel="noopener">Handelsregister<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a></div>
+  </div>
+</section>
+<section class="schluss" id="empfehlung">
+  <img src="_bau/img/haus.webp" width="2000" height="1500" alt="Das Hotel Monte-Moro im Winter" loading=lazy decoding=async class="ld schluss__b" style="background-image:url(data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAwBgCdASooAB4APulip06pJaMiKqwBIB0JZQDA3BZuZxKgUms8USCQrymvsPBXPx3qNp0XRsMa64YAAP6/Ryrn16QPk424zXuB7D2eSdj7Ka+87cvSbcgnLDB4WcAWsEzAZroL8dW0OIYzW92GkxmsRAqmXKupbpqU7UTmqZ3aUFQfKGyTbHkD+CsUSteQw2gMYjoxGN6d3CGoXngAAA==)">
+  <div class="in">
+    <p class="kap" data-a="auf"><b>08</b><i></i><span>Empfehlung</span></p>
+    <h2 class="t1 zt"><span class="z"><span>Passt, gehört</span></span><span class="z"><span><em>zur Familie.</em></span></span></h2>
+    <div class="lauf">
+      <p data-a="worte">Art: Studie, ungefragt, als Teil der Familie Zurbriggen. Die Seite ist sichtbar älter als das Haus, die Geschichte ist unerzählt, echtes Material liegt bereit, ein Relaunch ist nicht zu sehen.</p>
+    </div>
+    <div class="bf-platten bf-platten--hell">
+      <div class="bf-platte" data-a="kipp" style="--i:1"><h3>Drei Sterne</h3><p>Kein Luxushotel, und trotzdem dabei: Die Familie steht über den Sternen (Robert 17.10.2026). Auf der Familienseite steht es weiter unten.</p></div>
+      <div class="bf-platte" data-a="kipp" style="--i:2"><h3>Eigentum nicht öffentlich</h3><p>Das Register führt eine eigene AG mit einem Verwaltungsrat ausserhalb der Familie. Impressum, Karte und Filme 2026 zeigen Esther und Fabian; so stehen sie auch auf jeder Seite.</p></div>
+    </div>
+    <div class="bf-offen" data-a="auf"><h3>Offen</h3><ul><li><b>Eigentum nicht öffentlich belegt: Register nennt die Resort Monte Moro AG (VR Oliver Wachs), Impressum, Karte und Filme 2026 nennen Esther und Fabian</b><small>Zefix CHE-167.073.174, SHAB 19.09.2022 und 26.03.2026; monte-moro.ch/de/impressum.html</small></li><li><b>Vertrag des Hauses mit zerone computer gmbh (Preis, Umfang, Pflege, Laufzeit): ungeprüft, im Gespräch zu klären</b><small>befund.md › Wer hinter der heutigen Seite steht; AGB zerone Stand August 2018</small></li><li><b>TripAdvisor-Note am 17.10.2026 nicht abgelesen, Stand 09.10.2026 übernommen</b><small>Chrome mit der Claude-Erweiterung nicht verbunden</small></li><li><b>Hausadresse widersprüchlich: Talstrasse 129 (Routenplaner der Seite), Furusandstrasse 12 (Google), Furusandstrasse 10 (Sitz der AG seit März 2026)</b><small>monte-moro.ch Fuss, Google Maps, Zefix</small></li><li><b>Grösse des Spa im Partnerhotel widersprüchlich: 1700 m² Sommer, 1000 m² Winter, 1100 m²</b><small>monte-moro.ch/de/ und /de/hotel/aktuelles.html</small></li><li><b>14 Gault-Millau-Punkte für Küchenchef Markus Ries (Partnerhotel): heutiger Stand nicht geprüft</b><small>monte-moro.ch/de/restaurant.html</small></li><li><b>Herkunft der Region-Bilder (Sommer, Winter, Ausflüge) nicht angegeben</b><small>website/bilder sommer_*, winter_*, ausflu_*</small></li></ul></div>
+    <div class="kn-reihe" data-a="auf"><a class="kn " href="https://www.monte-moro.ch/de/" target="_blank" rel="noopener">Heutige Seite öffnen<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a><a class="kn kn--linie" href="befund.md" target="_blank" rel="noopener">Befund als Text<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a></div>
+  </div>
+</section>
+</main>
+<footer class="fuss fuss--kurz"><div class="in">
+  <div><b>Befund zum Entwurf</b><p>Kette, Station 2, Späher. Interne Arbeitsseite von Robert Reff, Tasty Studios, nicht die offizielle Website des Hauses. Fotos gehören dem Hotel Monte-Moro und den jeweiligen Fotografen.</p></div>
+  <div class="r mono"><span>Stand 17.10.2026</span></div>
+</div></footer>
+<script src="_bau/werkbank/werkbank.js?v=1792229343"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* Hotel Monte-Moro · Farben · Markenbauer, Oktober 2026 · jede Zeile mit Fundstelle */
+:root{
+  --logo-blau:#115595;   /* Logo-Blau: allgem_logo.png, häufigste Farbe der Wortmarke (87.674 Bildpunkte, gemessen 17.10.2026) */
+  --seiten-blau:#005794;   /* Seiten-Blau: templates/zerone/css/template.css, Titel und Links; Kanten des Logos (#005793) */
+  --himmelblau:#6BB1DE;   /* Himmelblau: template.css, 11 Fundstellen: Balken, Knöpfe «Speisekarte», Menü */
+  --geschenk-gruen:#268369;   /* Geschenk-Grün: template.css, 2 Fundstellen; Minze #CEF2CB in den Geschenk-Kacheln der Startseite. Wird nicht übernommen */
+  --seiten-grau:#595959;   /* Seiten-Grau: template.css, 4 Fundstellen, Lauftext. Wird nicht übernommen */
+  --nacht:#0A2A4A;   /* Nacht: Logo-Blau, auf 45 Prozent Helligkeit gezogen: die dunkle Fläche der Welt A und der Lesetext */
+  --nachtblau:#0D3F6F;   /* Nachtblau: zwischen Nacht und Logo-Blau: Kuhlen und Platten auf dunklem Grund */
+  --laerche:#C67144;   /* Lärche: myswitzerland-00072098 (Fassade im Sommer, 3734 px), Median der besonnten Balkone, 16 Prozent des Bildes */
+  --laerche-tief:#9A4F2B;   /* Lärche tief: Lärche, dunkler gezogen, damit sie auf Papier als Schrift lesbar ist (Kontrast über 4,5 zu 1) */
+  --fassade:#E7E1DC;   /* Fassade: myswitzerland-00072098, die weisse Wand im Sonnenlicht, Median */
+  --papier:#F5F2EE;   /* Papier: Fassade, aufgehellt: die Grundfläche, auf der gelesen wird */
+  --wandschatten:#D6CCC1;   /* Wandschatten: Fassade im Schatten unter den Balkonen: Kanten, Unterseite der Knöpfe */
+  --himmel:#5381BD;   /* Himmel: myswitzerland-00072098, Himmel über dem Dach, 78 Prozent des oberen Streifens. Bleibt im Bild */
+  --schnee:#E2E2E2;   /* Schnee: myswitzerland-00072097 (Haus im Winter), Schnee vor dem Haus. Bleibt im Bild */
+  --stubenholz:#9A6521;   /* Stubenholz: restau_restaurant.jpg (Röstihüs), Median des Holzes, 23 Prozent */
+  --jute:#AF8343;   /* Jute: restau_3.jpg, die Kartoffelsäcke vor dem Röstihüs, Median, 35 Prozent */
+  --jute-tief:#7E5A2B;   /* Jute tief: Jute, dunkler gezogen für Schrift auf Papier (Welt B) */
+  --butzenglas:#DBAF56;   /* Butzenglas: TripAdvisor «Raclettestübli» (vom Haus, 2017), Butzenscheiben im Licht, 22 Prozent */
+}

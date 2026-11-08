@@ -1,0 +1,34 @@
+{
+ "titel": "Potentialanalyse",
+ "untertitel": "Zurbriggen Hotel Monte-Moro Saas-Almagell · Station 04 · Analyst",
+ "stand": "Fassung 4 liegt vor, lokal: zwölf Punkte, jeder mit Wo (Seite auf einem gerade stehenden, in Blender gerenderten Handy mit leisem Schatten dahinter, am Rechner auf dem Laptop), Was genau (die Stelle gross, aus derselben Ansicht wie das Gerät aufgenommen, jede Zeile bricht wie auf dem Handy, verbunden durch einen feinen Lichtkegel), Warum es stört und Was es bewirkt.",
+ "luecken": [
+  "Farbwelt (Logo-Blau, Lärche der Balkone) und Titelschrift Young Serif abgeleitet, nicht bestätigt: Station 5 legt sie fest",
+  "Welche Strasse gilt (Talstrasse 129 im Routenplaner oder Furusandstrasse 12 bei Google) bleibt offen und steht so auf der Seite",
+  "Eigentum (Resort Monte Moro AG, VR Oliver Wachs) bewusst nicht auf der Analyse: Gastgeber wie im Impressum",
+  "Buchungsfenster (seekda) nicht bis zur Buchung durchgeklickt: ob dort Storno- und Zahlungsbedingungen stehen, ungeprüft",
+  "Vertrag des Hauses mit zerone (Preis, Umfang, Laufzeit) unbekannt, als Frage fürs Gespräch auf der Seite",
+  "14 Gault-Millau-Punkte für Markus Ries (Partnerhotel) und TripAdvisor-Note (Stand 09.10.) nicht an der Quelle geprüft",
+  "Zwei Region-Fotos ohne Herkunftsangabe im Einsatz (winter_1 im Schluss, stando_Saas_Almagell im Register)",
+  "Nur im WebKit-Kern und Chromium geprüft (1440 und 390), echtes Safari auf iPhone nicht",
+  "Punkt 11: die Leiste des Browsers im Laptop ist nachgezeichnet, Titel und Adresse darin sind echt (Master 1b Nr. 2)",
+  "Die Beispiele je Punkt sind ausgedachte Fälle, als «Ein Beispiel» gekennzeichnet und im Fuss erklärt",
+  "Am Handy sind die breiten Vergrösserungen kleiner als der Fliesstext (12 bis 15 px): Robert hat am 17.10. verlangt, dass die Zeilen genau wie im Gerät brechen, das geht auf 390 px nur so (ohne Wischen und ohne angeschnittene Wörter)"
+ ],
+ "bilder": [],
+ "messwerte": [
+  "Schrift in jeder Vergrösserung am Rechner (1440): 18 bis 21 px, Fliesstext 16,3 px (_qa/lesbar.js)",
+  "Am Handy (390) stehen breite Vergrösserungen randlos mit denselben Zeilen wie im Gerät, Schrift 12 bis 15 px; die Speisekarte 10 bis 16 px, ihr Wortlaut steht daneben als Text",
+  "Scrollen gedrosselt (17.10.2026, Fassung 4): 4× bei 1440 p95 9,3 ms, 6× bei 390 p95 17 ms, kein Bild über 50 ms, kein Springen beim Laden (CLS 0). Chromium und WebKit, 1440 und 390: 0 Fehler, 0 leere Bilder, nichts ragt über, Lichtkegel in allen zwölf Punkten."
+ ],
+ "abschnitte": [],
+ "links": [
+  {
+   "name": "Potentialanalyse Hotel Monte-Moro",
+   "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/_kette/04-analyst/potential/"
+  }
+ ],
+ "frage": "",
+ "knopf_ja": "Bestätigen",
+ "knopf_nein": "Zurückschicken"
+}

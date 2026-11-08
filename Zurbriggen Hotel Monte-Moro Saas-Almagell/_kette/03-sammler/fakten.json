@@ -1,0 +1,262 @@
+{
+ "name": {
+  "wert": "Hotel Monte-Moro mit Restaurant Röstihüs (Impressum: «Hotel & Restaurant Monte-Moro»)",
+  "quelle": "_quelle/website/text/de__impressum.html.md; https://www.monte-moro.ch/de/impressum.html, 17.10.2026"
+ },
+ "sterne": {
+  "wert": 3,
+  "quelle": "_quelle/extern/myswitzerland/myswitzerland-seiten-text.md («Dreistern»), 17.10.2026; Booking und Google ebenfalls 3 Sterne, 17.10.2026"
+ },
+ "adresse": {
+  "wert": null,
+  "quelle": "offen",
+  "gesucht": "Ort sicher: CH-3905 Saas-Almagell (Impressum). Strasse widersprüchlich: Talstrasse 129 (Routenplaner im Fuss der Seite, https://www.monte-moro.ch/de/), Furusandstrasse 12 (Google Maps, 17.10.2026), Furusandstrasse 10 (Sitz Resort Monte Moro AG seit 26.03.2026, _quelle/presse/handelsregister-2026-10-17.md)"
+ },
+ "koordinaten": {
+  "wert": "46.0934305, 7.9576044",
+  "quelle": "Routenplaner-Link im Fuss von https://www.monte-moro.ch/de/, 17.10.2026"
+ },
+ "telefon": {
+  "wert": "+41 27 957 10 12",
+  "quelle": "_quelle/website/text/de__impressum.html.md"
+ },
+ "fax": {
+  "wert": "+41 27 957 37 12",
+  "quelle": "_quelle/website/text/de__impressum.html.md"
+ },
+ "mail": {
+  "wert": "info@monte-moro.ch",
+  "quelle": "_quelle/website/text/de__impressum.html.md"
+ },
+ "zimmer": {
+  "wert": {
+   "anzahl": 18,
+   "betten": 55,
+   "kategorien": [
+    "Budgetzimmer",
+    "Standardzimmer",
+    "Familienzimmer und Familienkombinationen für 3 bis 6 Personen"
+   ],
+   "ausstattung": "Dusche/Bad + WC, Haarfön, SAT-TV, Safe, W-LAN, Balkon, Lift",
+   "weitere": "Zimmer in der Residence Alpenhof, 4 Gehminuten entfernt, Frühstück und Abendessen im Hotel Monte-Moro",
+   "ferienwohnungen": [
+    "Haus Apollo: Wohnung im 4. Stock am Dorfeingang, Südbalkon, Fernseher, Geschirrspüler, Kaffeemaschine",
+    "Haus Arizona: 4½-, 3½- und 2½-Zimmer-Wohnungen, TV, Radio, Geschirrspüler, Kaffeemaschine, Mikrowelle"
+   ]
+  },
+  "quelle": "Anzahl und Betten: _quelle/extern/myswitzerland/myswitzerland-seiten-text.md; Kategorien und Ausstattung: _quelle/website/text/de__hotel__preise.html.md, de__hotel__zimmer.html.md; Wohnungen: de__ferienwohnungen__apollo.html.md, de__ferienwohnungen__arizona.html.md (Stand 09.10.2026, am 17.10.2026 unverändert)"
+ },
+ "preise_ab": {
+  "wert": [
+   {
+    "kategorie": "Budgetzimmer mit Frühstück",
+    "preis": 90.0,
+    "einheit": "CHF pro Person und Tag"
+   },
+   {
+    "kategorie": "Standardzimmer mit Frühstück",
+    "preis": 100.0,
+    "einheit": "CHF pro Person und Tag"
+   },
+   {
+    "kategorie": "Budgetzimmer mit Halbpension (4 Gänge)",
+    "preis": 120.0,
+    "einheit": "CHF pro Person und Tag"
+   },
+   {
+    "kategorie": "Standardzimmer mit Halbpension (4 Gänge)",
+    "preis": 130.0,
+    "einheit": "CHF pro Person und Tag"
+   }
+  ],
+  "quelle": "_quelle/website/text/de__hotel__preise.html.md, https://www.monte-moro.ch/de/hotel/preise.html, 17.10.2026",
+  "saison": "auf der Seite nicht angegeben (offen)",
+  "zuschlaege": "Kurtaxe Erwachsene Winter 4.50 / Sommer 7.00, Kinder 6–16 Winter 2.25 / Sommer 3.50, Einzelzimmer 50 %, 1–3 Nächte 5.00 pro Tag, Kinder im Zimmer der Eltern mit HP: bis 5 J. 50.00, 6 J. 60.00, 7 J. 70.00, 8 J. 80.00, 9–16 J. 90.00, Hund 7.00–10.00 pro Tag (gleiche Quelle)"
+ },
+ "preise_ferienwohnungen": {
+  "wert": null,
+  "quelle": "offen",
+  "gesucht": "https://www.monte-moro.ch/de/ferienwohnungen/apollo.html und /arizona.html, Preisliste: keine Preise genannt"
+ },
+ "pauschalen": {
+  "wert": "«Top Winterzauber in Saas-Almagell»: 7 Nächte mit Frühstücksbuffet, 4-Gang-Abendessen, Spa 1100m2, nachmittags Kaffee und Kuchen, 6 Tage Skipass Saas-Almagell | Saas-Grund | Saas-Fee, CHF 999.00 pro Person (ohne Saison und Jahr)",
+  "quelle": "_quelle/website/text/de__hotel__aktuelles.html.md"
+ },
+ "inklusive": {
+  "wert": [
+   "Bergbahnen und Postautos im Sommer und Herbst ab der 1. Übernachtung",
+   "Benutzung Postautos im ganzen Saastal (Sommer/Winter)",
+   "Benutzung aller Bergbahnen im Saastal (ohne Metro Alpin) (Sommer)",
+   "Frühstücksbuffet",
+   "Halbpension: wöchentlicher Racletteabend",
+   "Kidsclub täglich Mo–Sa 16:30 bis 21:00 Uhr",
+   "Hotelparkplatz",
+   "An- und Abreise mit dem öffentlichen Verkehr ab 2 Nächten für Gäste aus der Schweiz, Buchung direkt, Zeitraum 1. Mai bis 31. Oktober 2026"
+  ],
+  "quelle": "_quelle/website/text/de.md, de__hotel__preise.html.md; Widerspruch Metro Alpin: _quelle/extern/myswitzerland/myswitzerland-seiten-text.md"
+ },
+ "restaurants": {
+  "wert": [
+   {
+    "name": "Röstihüs",
+    "art": "hauseigenes Restaurant, Schweizer Spezialitäten aus regionalen Produkten, Sonnenterrasse vor dem Haus, Walliser Weine, Appenzeller Bier, Kinderauswahl",
+    "zeiten": null,
+    "karte": "_quelle/website/pdf/speisekarte.pdf (DE), _quelle/website/nachtrag-2026-10-17/pdf/speisekarte-fr.pdf (FR), beide 18.11.2024",
+    "reservation": "TheFork https://widget.thefork.com/f5623bf8-e9d4-4f54-9280-07152923107a oder +41 27 957 10 12"
+   }
+  ],
+  "quelle": "_quelle/website/text/de__restaurant.html.md, _quelle/website/text/de.md; Karte als PDF",
+  "offen": "Öffnungszeiten nirgends veröffentlicht; Startseite nennt 12 Röstis und 7 Cordon Bleus, die Karte führt 11 Röstis und 5 Cordon Bleus"
+ },
+ "oeffnungszeiten": {
+  "wert": null,
+  "quelle": "offen",
+  "gesucht": "Seite des Hauses (alle 49 Seiten), Schweiz Tourismus Eintrag «Restaurant Röstihüs» (Feld leer), Google Maps"
+ },
+ "saison": {
+  "wert": null,
+  "quelle": "offen",
+  "gesucht": "Seite des Hauses, Schweiz Tourismus, Booking: keine Angabe zu Betriebsferien oder Saisonzeiten"
+ },
+ "wellness": {
+  "wert": "Spa im Partnerhotel Pirmin Zurbriggen ****S: CHF 25.00 pro Person und Eintritt (nicht übertragbar), 7-Tage-Abo CHF 150.00 pro Person, Bademantel, Schuhe, Handtücher inbegriffen. Grösse widersprüchlich: «Sommer 1700m2 Spa – Winter 1000m2 Spa» und «Spa 1100m2»",
+  "quelle": "_quelle/website/text/de__hotel__wellness.html.md, de.md, de__hotel__aktuelles.html.md"
+ },
+ "lage": {
+  "wert": [
+   "2 Gehminuten vom Skigebiet Saas-Almagell",
+   "3 Gehminuten von der Busstation (alle 30 Minuten Bus nach Saas-Grund oder Saas-Fee)",
+   "3 Gehminuten zum Dorfkern",
+   "Parkplätze für Hotelgäste"
+  ],
+  "quelle": "_quelle/website/text/de.md / https://www.monte-moro.ch/de/, 17.10.2026"
+ },
+ "noten": {
+  "wert": [
+   {
+    "portal": "Google Maps",
+    "note": "4,5 von 5",
+    "anzahl": 121,
+    "datum": "17.10.2026",
+    "adresse": "https://www.google.com/maps/place/Hotel+Monte+Moro/@46.0934749,7.9577987,17z"
+   },
+   {
+    "portal": "Booking.com",
+    "note": "8,3 von 10 (Personal 9,0, Lage 9,0, Sauberkeit 8,8, Komfort 8,7, Preis-Leistung 8,6, Ausstattung 8,0, WLAN 8,8)",
+    "anzahl": 94,
+    "datum": "17.10.2026",
+    "adresse": "https://www.booking.com/hotel/ch/monte-moro.de.html"
+   },
+   {
+    "portal": "TripAdvisor",
+    "note": "3,9 von 5, Nr. 8 von 8 Hotels in Saas-Almagell",
+    "anzahl": 17,
+    "datum": "09.10.2026",
+    "adresse": "https://www.tripadvisor.de/Hotel_Review-g1025600-d1050093-Reviews-Hotel_Monte_Moro-Saas_Almagell_Saas_Fee_Canton_of_Valais_Swiss_Alps.html"
+   }
+  ],
+  "quelle": "abgelesen wie angegeben; TripAdvisor am 17.10.2026 nicht erreichbar (Chrome-Erweiterung nicht verbunden), Stand aus _quelle/extern/tripadvisor/tripadvisor-seite-text.md"
+ },
+ "auszeichnungen": {
+  "wert": [],
+  "quelle": "Keine eigene Auszeichnung auf der Seite oder bei Schweiz Tourismus. Die Restaurantseite nennt 14 Gault-Millau-Punkte für Küchenchef Markus Ries im Partnerhotel (betrifft das Wellnesshotel, Stand nicht geprüft)"
+ },
+ "geschichte": {
+  "wert": null,
+  "quelle": "offen",
+  "gesucht": "Seite des Hauses (keine Seite zur Geschichte), Schweiz Tourismus, Websuche, Wikipedia; Register: Resort Monte Moro AG gegründet 22.08.2022 (sagt nichts über das Alter des Hauses)"
+ },
+ "personen": {
+  "wert": [
+   {
+    "name": "Esther und Fabian Zurbriggen-Zurbriggen",
+    "rolle": "Gastgeber laut Impressum und Speisekarte",
+    "quelle": "_quelle/website/text/de__impressum.html.md; _quelle/website/pdf/speisekarte.pdf"
+   },
+   {
+    "name": "Fabian Zurbriggen",
+    "rolle": "hat laut Karte die zwei «Hotelweine» Cuvée Spécial selbst kreiert; singt «Wallis Baby» mit Szenen im Röstihüs (YouTube 09.10.2026)",
+    "quelle": "_quelle/website/pdf/speisekarte.pdf; _quelle/video/familie/"
+   },
+   {
+    "name": "Oliver Wachs, Zürich",
+    "rolle": "einziges Mitglied des Verwaltungsrats der Resort Monte Moro AG (CHE-167.073.174)",
+    "quelle": "_quelle/presse/handelsregister-2026-10-17.md (SHAB 19.09.2022)"
+   }
+  ],
+  "quelle": "siehe je Person",
+  "offen": "Ob die Resort Monte Moro AG das Hotel betreibt oder besitzt, ist nicht belegt"
+ },
+ "anreise": {
+  "wert": "Zug bis Visp, dort Postauto, Umsteigen in Saas-Grund, Visp–Saas-Almagell ca. 45 Min. Auto über Bern/Lötschberg (Autoverlad), Furka oder Simplon, aus der Westschweiz über Lausanne und das Rhonetal nach Visp, dann Saastal, ca. 40 Min. ab Visp",
+  "quelle": "_quelle/website/text/de__hotel__anreise.html.md"
+ },
+ "buchungsweg": {
+  "wert": {
+   "system": "seekda (eingebetteter Shop, hotel:CH_VS_0086)",
+   "link": "https://www.monte-moro.ch/de/buchen.html",
+   "weitere": "Telefon, Mail, Kontaktformular https://www.monte-moro.ch/de/kontakt/formular.html; Schweiz Tourismus verlinkt openbooking.ch"
+  },
+  "quelle": "Quelltext https://www.monte-moro.ch/de/buchen.html, 17.10.2026"
+ },
+ "bezahlung": {
+  "wert": "Bezahlung in EURO möglich (Rückgeld in CHF); Schweiz Tourismus: Maestro, PostFinance Card, Visa",
+  "quelle": "_quelle/website/text/de__hotel__preise.html.md; _quelle/extern/myswitzerland/myswitzerland-seiten-text.md"
+ },
+ "sprachen_website": {
+  "wert": [
+   "de",
+   "en",
+   "fr"
+  ],
+  "quelle": "17 Seiten DE, je 16 Seiten EN und FR, _quelle/website/nachtrag-2026-10-17/text/ und _quelle/website/text/"
+ },
+ "rechtstexte": {
+  "impressum": "_quelle/website/text/de__impressum.html.md",
+  "datenschutz": "_quelle/website/text/de__datenschutz.html.md (EN und FR identisch deutsch: _quelle/website/nachtrag-2026-10-17/text/en__datenschutz.html.md, fr__datenschutz.html.md)",
+  "agb": "offen (auf keiner Seite)",
+  "widerruf": "offen (auf keiner Seite)",
+  "storno": "offen (auf keiner Seite)"
+ },
+ "weitere_haeuser": {
+  "wert": [
+   {
+    "name": "Wellness & Spa Pirmin Zurbriggen",
+    "ort": "Furrusandstrasse 16, 3905 Saas-Almagell",
+    "website": "https://www.wellnesshotel-zurbriggen.ch",
+    "gastgeber": "Esther und Fabian Zurbriggen"
+   },
+   {
+    "name": "Loft-Suite Hotel",
+    "ort": "3905 Saas-Almagell",
+    "website": "https://www.loftsuite.ch",
+    "gastgeber": "Esther und Fabian Zurbriggen"
+   },
+   {
+    "name": "Suitenhotel Zurbriggen",
+    "ort": "Schluhmattstrasse 68, 3920 Zermatt",
+    "website": "https://zurbriggen.ch/zermatt",
+    "gastgeber": "Moni und Pirmin Zurbriggen"
+   },
+   {
+    "name": "Chalet Rustica",
+    "ort": "Saas-Almagell",
+    "website": "chalet-rustica.ch",
+    "gastgeber": "Heidi und Damian Andenmatten-Zurbriggen"
+   }
+  ],
+  "quelle": "../Familie Zurbriggen/_quelle/notizen.md; Adressen: Zefix (Wellness), zermatt/website/text"
+ },
+ "social": {
+  "wert": {
+   "instagram": "https://www.instagram.com/hotelmonte_moro (179 Follower, 19 Beiträge, 17.10.2026)",
+   "facebook": "https://www.facebook.com/profile.php?id=100053255396442",
+   "youtube": "kein Kanal des Hotels; Kanal «Fabian Zurbriggen» https://www.youtube.com/channel/UC6Kcmyz4wiGF6KzbgDUwJJg (ein Film)"
+  },
+  "quelle": "Fuss jeder Seite; Instagram-Profil; YouTube-Suche 17.10.2026"
+ },
+ "messung": {
+  "wert": "seekda-Shop, Google Tag Manager, Facebook-Bestätigung, Cookie-Hinweis mit Ablehnen",
+  "quelle": "Quelltext https://www.monte-moro.ch/de/, 17.10.2026"
+ }
+}

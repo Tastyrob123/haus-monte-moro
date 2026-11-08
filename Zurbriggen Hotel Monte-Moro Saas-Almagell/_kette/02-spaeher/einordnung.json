@@ -1,0 +1,50 @@
+{
+ "art": "studie",
+ "passt": true,
+ "grund": "Passt, als Teil der Familie Zurbriggen (Robert 17.10.2026: «passt, gehört zur Familie, die Familie steht über den Sternen»). Die Seite ist sichtbar älter als das Haus (Joomla 3 ohne Sicherheits-Updates, Vorlage von 2019, Tabellen-Aufbau, Aktionen ohne Datum), Geschichte unerzählt, Zimmer und Wohnungen kaum beschrieben; echtes Material liegt vor; kein Relaunch erkennbar. Drei Sterne sind kein Grund dagegen. Eigentum laut Register nicht öffentlich belegt (Resort Monte Moro AG, VR Oliver Wachs); Gastgeber laut Impressum Esther und Fabian.",
+ "betreuung": "zerone computer gmbh, Polenstrasse 31, 3902 Brig-Glis (CHE-105.348.623, seit 1999, Gesellschafter Marc und Daniel Burgener). Belege: Vorlage templates/zerone/templateDetails.xml (Autor zerone computer gmbh, 04.04.2019), Web-Archiv seit 24.05.2014, AGB «Internet Services» Stand August 2018 (https://www.zerone.ch/agb/agb.pdf): Kalenderjahr, automatische Verlängerung, Kündigung bis 15. November, Daten werden nach Vertragsende gelöscht. Server Webland AG. Kein Plattform-Anbieter. Vertrag des Hauses ungeprüft, im Gespräch zu klären. Details: befund.md › Wer hinter der heutigen Seite steht.",
+ "eigentum": {
+  "wert": "offen",
+  "beleg": "Zefix: Resort Monte Moro AG, CHE-167.073.174, gegründet 22.08.2022 an der Talstrasse 129, einziges VR-Mitglied Oliver Wachs (SHAB 19.09.2022), Sitz seit 26.03.2026 Furusandstrasse 10. Impressum der Seite: Esther und Fabian Zurbriggen-Zurbriggen. Abruf 17.10.2026."
+ },
+ "sterne": {
+  "wert": 3,
+  "quelle": "Schweiz Tourismus, https://www.myswitzerland.com/de-ch/unterkuenfte/monte-moro-residence/, 17.10.2026 («Dreistern», 18 Zimmer, 55 Betten)"
+ },
+ "familie": [
+  {
+   "name": "Wellness & Spa Pirmin Zurbriggen",
+   "ort": "Furrusandstrasse 16, 3905 Saas-Almagell",
+   "website": "https://www.wellnesshotel-zurbriggen.ch",
+   "ordner": "Zurbriggen Wellnesshotel Saas-Almagell"
+  },
+  {
+   "name": "Loft-Suite Hotel",
+   "ort": "3905 Saas-Almagell",
+   "website": "https://www.loftsuite.ch",
+   "ordner": "Zurbriggen Loft-Suite Hotel Saas-Almagell"
+  },
+  {
+   "name": "Suitenhotel Zurbriggen",
+   "ort": "Schluhmattstrasse 68, 3920 Zermatt",
+   "website": "https://zurbriggen.ch/zermatt",
+   "ordner": "Zurbriggen Suitenhotel Zermatt"
+  },
+  {
+   "name": "Chalet Rustica",
+   "ort": "Saas-Almagell",
+   "website": "chalet-rustica.ch",
+   "ordner": null
+  }
+ ],
+ "schon_gebaut": [],
+ "website_ordner": "website/",
+ "buchung": {
+  "system": "seekda (eingebetteter Shop, hotel:CH_VS_0086)",
+  "link": "https://www.monte-moro.ch/de/buchen.html"
+ },
+ "tisch": {
+  "system": "TheFork",
+  "link": "https://widget.thefork.com/f5623bf8-e9d4-4f54-9280-07152923107a"
+ }
+}

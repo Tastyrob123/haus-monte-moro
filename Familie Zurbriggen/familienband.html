@@ -1,0 +1,65 @@
+<!-- Familienband der Familie Zurbriggen, gebaut von Monte-Moro (18.10.2026) nach FAMILIEN-FOOTER.md.
+     Form seit 26.10.2026: Fassung 1 «Vier Scheiben» (Robert wählte «1» aus Wellness _varianten/fuss-15b), auf allen drei Häusern gleich.
+     Reihenfolge im Fuss: Teil des Hauses, darunter dieses Band, ganz unten die Rechtszeile (Designstudie, Impressum, Datenschutz).
+     Übernehmen: HTML unten einsetzen, BILDWEG und ZEICHENWEG auf die eigenen Ordner setzen (Fotos: einstieg/site/bilder, Zeichen: einstieg/site/zeichen),
+     «Sie sind hier» auf das eigene Haus setzen (Klasse fb__haus--hier, ohne Link), nur die drei Farben in .familienband ändern.
+     Schrift: Tenor Sans wie auf der Familienseite (Google Fonts, siehe Link).
+     Links (Kette-Chat 18.10.2026): Kopf auf die Familienseite http://127.0.0.1:8961/; die Häuser auf die neuen Seiten der Kette:
+       Wellness & Spa Pirmin Zurbriggen: http://127.0.0.1:8978/haus/Zurbriggen%20Wellnesshotel%20Saas-Almagell/website/index.html
+       Hotel Monte-Moro: http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html
+       Suitenhotel Zurbriggen: http://127.0.0.1:8978/haus/Zurbriggen%20Suitenhotel%20Zermatt/website/index.html
+       Chalet Rustica: ohne Link und ohne «Zum Haus» (auf chalet-rustica.ch steckt ein fremdes Umleitungsskript), bis der Einseiter steht. -->
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+<style>
+/* ---------- Familienband (gleich auf allen drei Häusern; Farben aus dem Haus: --fb-grund, --fb-text, --fb-akzent) ---------- */
+.familienband{--fb-grund:#071B2E;--fb-text:#F5F2EE;--fb-akzent:#B39867;margin:0 calc(-1 * clamp(22px,6vw,110px));padding:clamp(60px,7vw,110px) clamp(22px,6vw,110px);background:var(--fb-grund);color:var(--fb-text);font-family:'Tenor Sans','Avenir Next',sans-serif}
+.fb__kopf{display:flex;align-items:center;gap:16px;max-width:1280px;margin:0 auto;color:var(--fb-text);text-decoration:none;font-size:clamp(1.1rem,1.5vw,1.4rem);letter-spacing:.04em}
+.fb__kopf img{width:44px;height:auto}
+.fb__haeuser{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(16px,2vw,32px);max-width:1280px;margin:clamp(30px,4vw,50px) auto 0;padding:0;list-style:none}
+.fb__haus a,.fb__haus>div{display:grid;gap:6px;color:var(--fb-text);text-decoration:none}
+.fb__haus figure{margin:0 0 10px;aspect-ratio:4/3;overflow:hidden;background:rgba(255,255,255,.06)}
+.fb__haus img{display:block;width:100%;height:100%;object-fit:cover;transition:transform 2.4s cubic-bezier(.16,1,.3,1)}
+.fb__haus a:hover img{transform:scale(1.03)}
+.fb__name{font-size:clamp(1.05rem,1.3vw,1.25rem);line-height:1.2}
+.fb__zusatz{font-size:.92rem;opacity:.75}
+.fb__ort{font-size:.88rem;opacity:.6}
+.fb__hier,.fb__weiter{margin-top:6px;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--fb-akzent)}
+.fb__haus--hier figure{outline:1px solid var(--fb-akzent);outline-offset:4px}
+@media(max-width:800px){.fb__haeuser{grid-template-columns:1fr 1fr}}
+/* ---------- Form «Vier Scheiben» (Robert 26.10.2026, Fassung 1 aus Wellness _varianten/fuss-15b): vier hohe Scheiben 2:3 Kante an Kante (6px), aussen gerundet,
+   das eigene Haus mit 4px Strich im Akzent unten statt Rahmen; jede Scheibe schwebt deckend herauf (Skript unten), nur transform.
+   Grund wie der Fuss des Hauses, damit es eine Fläche ist. ---------- */
+.familienband{--fbr:clamp(14px,1.4vw,22px);padding-top:clamp(60px,6vw,96px);padding-bottom:clamp(50px,5vw,80px)}
+.familienband .fb__haeuser{gap:6px;max-width:1320px}
+.familienband .fb__kopf{max-width:1320px}
+.familienband .fb__haus figure{position:relative;aspect-ratio:2/3;margin:0 0 18px;border-radius:0}
+.familienband .fb__haus:first-child figure{border-radius:var(--fbr) 0 0 var(--fbr)}
+.familienband .fb__haus:last-child figure{border-radius:0 var(--fbr) var(--fbr) 0}
+.familienband .fb__haus--hier figure{outline:0}
+.familienband .fb__haus--hier figure::after{content:'';position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--fb-akzent)}
+.familienband .fb__haus .fb__name,.familienband .fb__haus .fb__zusatz,.familienband .fb__haus .fb__ort,.familienband .fb__haus .fb__hier,.familienband .fb__haus .fb__weiter{padding-right:14px}
+.familienband .fb__haus{transform:translate3d(0,110px,0) scale(.96);transition:transform 1.2s cubic-bezier(.22,.61,.36,1) calc(var(--n,0) * 70ms)}
+.familienband .fb__haus.da{transform:none}
+@media (max-width:800px){
+  .familienband .fb__haeuser{grid-template-columns:1fr 1fr;row-gap:30px}
+  .familienband .fb__haus figure,.familienband .fb__haus:first-child figure,.familienband .fb__haus:last-child figure{border-radius:var(--fbr)}
+}
+@media (prefers-reduced-motion:reduce){.familienband .fb__haus{transform:none!important;transition:none!important}}
+</style>
+<section class="familienband" aria-label="Familie Zurbriggen">
+  <a class="fb__kopf" href="http://127.0.0.1:8961/"><img src="ZEICHENWEG/pinsel-schnee.svg" alt="" width="44" height="41"><span>Familie Zurbriggen · seit 1967</span></a>
+  <ul class="fb__haeuser"><li class="fb__haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Wellnesshotel%20Saas-Almagell/website/index.html"><figure><img src="BILDWEG/fam-wellness-m.webp" alt="Das Wellness &amp; Spa Pirmin Zurbriggen im Lärchenwald" width="1200" height="675" loading="lazy" decoding="async"></figure><span class="fb__name">Wellness &amp; Spa Pirmin Zurbriggen</span><span class=fb__zusatz>mit dem Loft-Suite Hotel</span><span class="fb__ort">Saas-Almagell · Esther und Fabian</span><span class="fb__weiter">Zum Haus</span></a></li><li class="fb__haus fb__haus--hier"><div><figure><img src="BILDWEG/fam-montemoro-m.webp" alt="Das Hotel Monte-Moro mit seinen Holzbalkonen" width="1200" height="1200" loading="lazy" decoding="async"></figure><span class="fb__name">Hotel Monte-Moro</span><span class="fb__ort">Saas-Almagell · Esther und Fabian</span><span class="fb__hier">Sie sind hier</span></div></li><li class="fb__haus"><a href="http://127.0.0.1:8978/haus/Zurbriggen%20Suitenhotel%20Zermatt/website/index.html"><figure><img src="BILDWEG/fam-zermatt-m.webp" alt="Das Suitenhotel Zurbriggen am Abend" width="1200" height="800" loading="lazy" decoding="async"></figure><span class="fb__name">Suitenhotel Zurbriggen</span><span class="fb__ort">Zermatt · Moni und Pirmin</span><span class="fb__weiter">Zum Haus</span></a></li><li class="fb__haus"><div><figure><img src="BILDWEG/fam-chalet-m.webp" alt="Chalet Rustica, Balkon der Wohnung Nr. 5" width="533" height="400" loading="lazy" decoding="async"></figure><span class="fb__name">Chalet Rustica</span><span class="fb__ort">Saas-Almagell · Heidi und Damian</span></div></li></ul>
+</section>
+<script>
+// Familienband «Vier Scheiben»: jede Scheibe schwebt herauf, sobald ihre Oberkante den unteren Rand erreicht; Fotos werden vorher geladen. Nur transform.
+(function(){
+var L=[].slice.call(document.querySelectorAll('.familienband .fb__haus'));if(!L.length)return;
+L.forEach(function(x,i){x.style.setProperty('--n',i)});
+var g=false,w=0;
+function f(){w=0;var h=innerHeight,b=L[0].getBoundingClientRect();
+ if(!g&&b.top<h*2.5){g=true;L.forEach(function(x){x.querySelectorAll('img').forEach(function(i){i.loading='eager'})})}
+ L.forEach(function(x){if(!x.classList.contains('da')&&x.getBoundingClientRect().top<h*1.02)x.classList.add('da')})}
+addEventListener('scroll',function(){if(!w)w=requestAnimationFrame(f)},{passive:true});
+addEventListener('resize',f);f();
+})();
+</script>

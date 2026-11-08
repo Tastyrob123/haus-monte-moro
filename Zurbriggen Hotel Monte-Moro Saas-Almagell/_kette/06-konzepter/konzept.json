@@ -1,0 +1,906 @@
+{
+ "haus": "Hotel Monte-Moro",
+ "stand": "2026-10-18",
+ "geschichte": "Die Startseite rechnet für den Gast, so wie das Haus es tut: Sie beginnt mit der Fassade in der Jahreszeit, in der man bucht, zeigt auf einem Bon, was alles schon im Preis steckt, misst den Weg zum Lift in Minuten, gibt die Zimmer als Schlüssel vom Brett, führt am Abend an der Gondel vorbei ins Röstihüs mit seinen elf Röstis, ins Stübli zu Raclette und Fabians Wein, über den kurzen Weg ins Spa nebenan und hinaus ins Saastal. Hell und direkt am Tag, dunkel wie der Himmel über dem Dorf am Abend; jede Naht ist ein Bergkamm.",
+ "farbwelt": "A «Bergnacht und Lärche» (Robert 18.10.2026)",
+ "schrift": "Fjalla One (Robert 18.10.2026)",
+ "linie": "Bergkamm an jeder Naht (Robert 18.10.2026)",
+ "seiten": [
+  {
+   "seite": "index.html",
+   "titel": "Startseite: ein Haus, das für seine Gäste rechnet",
+   "szenen": [
+    {
+     "teil": "auftakt",
+     "titel": "Mehr erleben, weniger zahlen.",
+     "satz": "«Mehr erleben, weniger zahlen. Gratis an- und abreisen.»",
+     "bilder": [
+      "_quelle/extern/myswitzerland/myswitzerland-00072098_m.jpg",
+      "_quelle/extern/myswitzerland/myswitzerland-00072097_m.jpg"
+     ],
+     "baustein": "Auftakt «Das Haus in seiner Jahreszeit»",
+     "quelle": "neu",
+     "skizze": "Die Fassade über die volle Breite, ein Bildschirm hoch: von Mai bis Oktober das Sommerfoto, ab November das Winterfoto (beide vom Haus, Schweiz Tourismus, 3734 px); der Stichtag kommt aus der Werkbank, damit im Winter nie mehr der Sommer begrüsst (Potentialanalyse, Punkt 01). Die Wortmarke in Papier steht im Himmel über dem Dach, nie über den Balkonen. Darunter die Ortszeile «Saas-Almagell · Saastal · Wallis» und der Satz des Hauses. Unten die Buchungsleiste als helle Platte mit Kuhlen (Anreise, Abreise, Personen), sie übergibt an das Buchungsfenster von seekda. Die Fläche endet unten nicht gerade, sondern als Grat.",
+     "bewegung": "Die Wortmarke rollt aus dem Schlitz, Ortszeile und Satz kommen gestaffelt, die Platte schwebt von unten; der Grat am unteren Rand zieht sich einmal von links nach rechts. Kein Vorhang, keine Tür, kein Film.",
+     "flaeche": "hell",
+     "flaeche_genau": "foto",
+     "unterschied": "Das Haus in der Jahreszeit, in der man bucht: Sommer oder Winter nach Stichtag, die Wortmarke im Himmel, die Fläche endet als Bergkamm. Kein Tor, keine Tür, kein Dunst, keine Nacht.",
+     "bisher": {
+      "Carlton-Europe": "Türflügel, die sich öffnen; Navy, Gold, Wortmarke mittig über dem Haus; Buchungsleiste unten.",
+      "Grand Beau-Rivage": "Hero mittig über der Aare: Zeichen in Gold über dem Namen, Ortszeile «Interlaken · seit 1874», Buchungsleiste als Platte.",
+      "Hotel Seiler au Lac": "Dunst statt Vorhang, Wortmarke in Gold, Eck-Knöpfe, Seefoto.",
+      "Waldhotel Doldenhorn": "Block unten links, Auszeichnungs-Laufband direkt darunter.",
+      "Landgasthof Ruedihus": "Holzhaus von 1753 als Profil, Satz «Heute Abend Ihr Tisch, heute Nacht Ihr Bett».",
+      "Berghotel Gasterntal": "Hof hinter dem Titel «Herzlich willkommen», Berghütte.",
+      "Salt & Silver": "Hafen bei Nacht, Vorhang mit Zeichen, Antonio-Versalien, Kursblatt.",
+      "Castell Son Claret": "Das Tor im Mittag, der Name steht in der Toröffnung auf dem Weg."
+     },
+     "bisher_links": {
+      "Carlton-Europe": "https://carlton-europe-entwurf.vercel.app/#oben",
+      "Grand Beau-Rivage": "http://127.0.0.1:8940/index.html#oben",
+      "Hotel Seiler au Lac": "http://localhost:8921/index.html#oben",
+      "Waldhotel Doldenhorn": "https://waldhotel-doldenhorn-entwurf.vercel.app/#ankunft",
+      "Landgasthof Ruedihus": "https://landgasthof-ruedihus-entwurf.vercel.app/#ankunft",
+      "Berghotel Gasterntal": "https://berghotel-gasterntal-entwurf.vercel.app/#ankunft",
+      "Salt & Silver": "https://salt-and-silver-studie.vercel.app/#",
+      "Castell Son Claret": ""
+     }
+    },
+    {
+     "teil": "inbegriffen",
+     "titel": "Was im Preis schon drin ist.",
+     "satz": "«Bergbahnen und Postautos im Sommer und Herbst ab der 1. Übernachtung inklusive!»",
+     "bilder": [
+      "_quelle/extern/booking/booking-609882092.jpg",
+      "_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2018-02-17-303351039-fruhstucksbuffet.jpg",
+      "_quelle/extern/myswitzerland/myswitzerland-00072104_m.jpg",
+      "_quelle/website/text/de__hotel__preise.html.md («Inklusive»)",
+      "_quelle/website/text/de.md (Gratis-Anreise, Bedingungen)"
+     ],
+     "baustein": "Der Bon",
+     "quelle": "neu",
+     "skizze": "Eine Quittung auf Papier, oben und unten mit gezackter Abrisskante wie der Grat, daneben drei Fotos. Kopfzeile: «Zimmer mit Frühstück ab CHF 90.00 pro Person / Tag (Budgetzimmer)». Darunter die Zeilen wörtlich aus der Preisliste «Inklusive»: Benutzung Postautos im ganzen Saastal (Sommer/Winter) · Benutzung aller Bergbahnen im Saastal (ohne Metro Alpin) (Sommer) · ZF und HP: Frühstücksbuffet · Halbpension: wöchentlicher Racletteabend · Kidsclub: täglich Mo - Sa 16:30 bis 21:00 Uhr · Hotelparkplatz; dazu «An- und Abreise mit dem öffentlichen Verkehr (ab 2 Nächten) geschenkt!» mit den Bedingungen des Hauses (Wohnsitz Schweiz, direkt gebucht, Zeitraum 1. Mai bis 31. Oktober 2026). Rechts steht je Zeile «inklusive» statt eines Preises. Unten ein Stempel mit dem Satz des Hauses und der Knopf «Zimmer buchen». Aktionen haben ein Datum und laufen über die Werkbank ab.",
+     "bewegung": "Der Bon schiebt sich wie aus der Kasse von oben heraus, die Zeilen erscheinen nacheinander mit Haken. Nur der Bon bewegt sich, die Fotos stehen.",
+     "flaeche": "tapete",
+     "flaeche_genau": "tapete",
+     "unterschied": "Kein bisheriges Haus zeigt, was im Preis steckt. Beim Monte-Moro ist das der tragende Baustein: eine Quittung, auf der alles «inklusive» steht. Das Haus rechnet für seine Gäste, die Seite rechnet mit.",
+     "bisher": {
+      "Carlton-Europe": "«Das Vintage Hotel» mit Fotos, danach «Zwei Häuser, ein Hotel» auf Creme.",
+      "Grand Beau-Rivage": "«Halle»: dunkler Abschnitt, Rundgang durch die Räume.",
+      "Hotel Seiler au Lac": "«Zuerst, was Sie bekommen» als Angebote auf Nacht.",
+      "Waldhotel Doldenhorn": "«Herzlich willkommen», dann die Wahl «Worauf freuen Sie sich?».",
+      "Landgasthof Ruedihus": "«Das Ruedihus, unsere Dependance», dann «Was führt Sie zu uns?».",
+      "Castell Son Claret": "Der Plan des Guts als Infografik."
+     },
+     "bisher_links": {
+      "Carlton-Europe": "https://carlton-europe-entwurf.vercel.app/#willkommen",
+      "Grand Beau-Rivage": "http://127.0.0.1:8940/#halle",
+      "Hotel Seiler au Lac": "http://localhost:8921/#angebote",
+      "Waldhotel Doldenhorn": "https://waldhotel-doldenhorn-entwurf.vercel.app/#willkommen",
+      "Landgasthof Ruedihus": "https://landgasthof-ruedihus-entwurf.vercel.app/#ankommen"
+     }
+    },
+    {
+     "teil": "lage",
+     "titel": "Zwei Minuten bis zum Lift.",
+     "satz": "«2 Gehminuten vom Skigebiet Saas-Almagell · 3 Gehminuten von der Busstation · 3 Gehminuten zum Dorfkern»",
+     "bilder": [
+      "_quelle/website/bilder/winter_1.jpg",
+      "_quelle/website/bilder/winter_2.jpg",
+      "_quelle/website/text/de.md («Zentrale Lage»)"
+     ],
+     "baustein": "Die Gehminuten-Linie",
+     "quelle": "neu",
+     "skizze": "Eine Linie vom Haus nach rechts, flach gezogen wie der Grat, mit drei Halten: Skigebiet 2 · Busstation 3 · Dorfkern 3, die Minuten gross in Fjalla One. Unter jedem Halt der Zusatz des Hauses in kleiner Schrift («Alle 30 Minuten bringt Sie ein Bus ins Skigebiet Saas-Grund oder Saas-Fee», «Einkaufsmöglichkeiten, Bankomat, Tourismusbüro usw.»). Dahinter das Dorf im Winter. Am Handy steht die Linie senkrecht.",
+     "bewegung": "Die Linie zieht sich von links nach rechts (scaleX), die drei Halte springen nacheinander auf. Die Zahlen zählen nicht hoch.",
+     "flaeche": "hell",
+     "flaeche_genau": "hell",
+     "unterschied": "Keine Karte und kein Plan: Die Lage ist ein Weg in Minuten, so wie das Haus sie selbst angibt.",
+     "bisher": {
+      "Castell Son Claret": "Plan des Guts, Orte als Wörter am Plan.",
+      "Landgasthof Ruedihus": "Kompass der Herkunft (Lieferanten) als Infografik.",
+      "Hotel Seiler au Lac": "Fahrplan-Tafel «Vor der Tür» auf Holz.",
+      "Carlton-Europe": "Schluss mit Karte."
+     },
+     "bisher_links": {
+      "Landgasthof Ruedihus": "https://landgasthof-ruedihus-entwurf.vercel.app/#rund",
+      "Hotel Seiler au Lac": "http://localhost:8921/#tuer",
+      "Carlton-Europe": "https://carlton-europe-entwurf.vercel.app/#pakete"
+     }
+    },
+    {
+     "teil": "fenster-sonne",
+     "titel": "Fenster Bei uns scheint fast immer die Sonne.",
+     "satz": "Restaurant Röstihüs, monte-moro.ch.",
+     "bilder": [
+      "_quelle/website/bilder/aktuel_hotel-monte-moro-saas-almagell-balkon.jpg"
+     ],
+     "baustein": "Fenster",
+     "quelle": "fundus",
+     "skizze": "",
+     "bewegung": "Das Bild steht, die Seite zieht darüber, der Satz rollt zeilenweise herein. Erstes von zwei Fenstern, der Wendepunkt vom Ankommen zum Wohnen.",
+     "flaeche": "hell",
+     "flaeche_genau": "foto",
+     "unterschied": "Der Satz kommt vom Haus selbst (Restaurantseite), das Bild vom eigenen Balkon. Zwei Fenster je Startseite: Sonne am Tag, Gondel am Abend.",
+     "bisher": {
+      "Grand Beau-Rivage": "Fünf Fenster, das erste «Ankommen mit Stil» nach der Halle.",
+      "Carlton-Europe": "Erstes Fenster «Was bedeutet Vintage?».",
+      "Castell Son Claret": "Drei Fenster: Galatzó, Allee bei Nacht, Konzert."
+     },
+     "bisher_links": {
+      "Grand Beau-Rivage": "http://127.0.0.1:8940/#zimmer",
+      "Carlton-Europe": "https://carlton-europe-entwurf.vercel.app/#zimmer"
+     }
+    },
+    {
+     "teil": "zimmer",
+     "titel": "Schöne Hotelzimmer, schöne Ferien.",
+     "satz": "«Schöne Hotelzimmer - schöne Ferien»",
+     "bilder": [
+      "_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2017-11-29-291892278-reception.jpg",
+      "_quelle/extern/booking/booking-28633464.jpg",
+      "_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2017-11-29-291892318-doppelzimmer.jpg",
+      "_quelle/website/bilder/apollo_2.jpg",
+      "_quelle/website/bilder/arizon_11.jpg",
+      "_quelle/website/text/de__hotel__zimmer.html.md",
+      "_quelle/website/text/de__hotel__preise.html.md"
+     ],
+     "baustein": "Das Schlüsselbrett",
+     "quelle": "neu",
+     "skizze": "Das Schlüsselbrett der Rezeption als Bedienelement: je Wohnart ein Schlüssel mit Anhänger in Fjalla One: Budgetzimmer · Standardzimmer · Familienzimmer (3 bis 6 Personen) · Residence Alpenhof (4 Gehminuten) · Haus Apollo · Haus Arizona. Wer einen Schlüssel nimmt, sieht daneben die grosse Kachel: Foto, Text des Hauses, Preis wo belegt (Budgetzimmer CHF 90.00, Standardzimmer CHF 100.00 pro Person und Tag mit Frühstück; Halbpension CHF 120.00 und 130.00), Grösse wo belegt (Doppelzimmer 18 m² im Buchungsfenster), Knopf in die richtige Kategorie bei seekda. Erweiterung (Robert 18.10.2026): Zimmer-Finder im Buchen-Fenster: drei Fragen (wie viele, wann, was ist wichtig), danach das passende Zimmer mit dem echten Preis für genau diese Tage aus seekda (Zugang offen; ohne Zugang zeigt der Finder die passenden Zimmer und den Weg zur Buchung). Die Ferienwohnungen Apollo und Arizona stehen im Vergleich nebeneinander (Zimmerzahl, Balkon, Ausstattung) mit Anfragefenster im Hausstil (Preise und Grössen offen). Beim Öffnen hängt der Standardzimmer-Schlüssel schon in der Hand.",
+     "bewegung": "Der gewählte Schlüssel hebt sich und schwingt einmal um seine Öse aus (rotate), die Kachel kommt deckend von unten, das Foto zoomt in seinen Rahmen.",
+     "flaeche": "hell",
+     "flaeche_genau": "creme",
+     "unterschied": "Zimmer und Ferienwohnungen als Schlüssel am Brett der eigenen Rezeption, gleichrangig nebeneinander, nicht als Kachelreihe, Bildwand oder Polaroids.",
+     "bisher": {
+      "Grand Beau-Rivage": "Reihe von 3D-Kacheln je Kategorie mit Namensfeld.",
+      "Carlton-Europe": "Kacheln «Süsse Träume», danach das Kissen-Band.",
+      "Waldhotel Doldenhorn": "Helle Kacheln von Economy bis Junior Suite.",
+      "Landgasthof Ruedihus": "Gerahmte Fotos mit den Namen der Stuben.",
+      "Berghotel Gasterntal": "Polaroids paarweise, nach dem Fenster «Die Zimmer».",
+      "Castell Son Claret": "Bildwand der Häuser mit Fach (Zimmer nach Orten)."
+     },
+     "bisher_links": {
+      "Grand Beau-Rivage": "http://127.0.0.1:8940/#zimmer",
+      "Carlton-Europe": "https://carlton-europe-entwurf.vercel.app/#zimmer",
+      "Waldhotel Doldenhorn": "https://waldhotel-doldenhorn-entwurf.vercel.app/#zimmer",
+      "Landgasthof Ruedihus": "https://landgasthof-ruedihus-entwurf.vercel.app/#zimmer",
+      "Berghotel Gasterntal": "https://berghotel-gasterntal-entwurf.vercel.app/#zimmer"
+     }
+    },
+    {
+     "teil": "kinder",
+     "titel": "Von halb fünf bis neun: der Kidsclub.",
+     "satz": "«Kidsclub: täglich Mo - Sa 16:30 bis 21:00 Uhr» (Preisliste, «Inklusive»)",
+     "bilder": [
+      "_quelle/extern/booking/booking-28199274.jpg",
+      "_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2018-02-17-303351039-fruhstucksbuffet.jpg",
+      "_quelle/website/text/de__hotel__preise.html.md («Inklusive», «Kinderzuschläge»)",
+      "_quelle/website/text/de__hotel__zimmer.html.md (Familienzimmer)"
+     ],
+     "baustein": "Familien-Platte: Kidsclub, Familienzimmer, Kinder im Zimmer der Eltern",
+     "quelle": "neu",
+     "skizze": "Ein eigener Platz für Familien (Erweiterung, Robert 18.10.2026: «yes hinzufügen alles»): Links gross die Uhrzeit des Kidsclubs, Mo bis Sa 16:30 bis 21:00 Uhr, inklusive. Rechts die Familienzimmer und Familienkombinationen für 3 bis 6 Personen und die Kinderzuschläge im Zimmer der Eltern wörtlich aus der Preisliste (pro Kind und Tag inklusiv Halbpension: bis 5 Jahre 50.00, 6 Jahre 60.00, 7 Jahre 70.00, 8 Jahre 80.00, 9 - 16 Jahre 90.00 CHF), Knopf «Familienzimmer anfragen». Fotos vom Kidsclub: offen (keine im Material); bis dahin trägt das Bild eines Zimmers.",
+     "bewegung": "Die Uhrzeit steht still, die zwei Platten kommen nebeneinander deckend von unten, die Fotos zoomen in ihren Rahmen.",
+     "flaeche": "hell",
+     "flaeche_genau": "hell",
+     "unterschied": "Familien bekommen einen eigenen Platz mit Uhrzeit und Kinderpreisen, nicht nur ein Wort im Kleingedruckten.",
+     "bisher": {
+      "Carlton-Europe": "Familien kommen in den Zimmer-Kacheln vor, kein eigener Abschnitt.",
+      "Grand Beau-Rivage": "Kein Familienabschnitt auf der Startseite.",
+      "Waldhotel Doldenhorn": "Familienzimmer als Kachel unter den Zimmern.",
+      "Castell Son Claret": "Haus ohne Kinderangebot auf der Startseite."
+     },
+     "bisher_links": {
+      "Carlton-Europe": "https://carlton-europe-entwurf.vercel.app/#zimmer",
+      "Waldhotel Doldenhorn": "https://waldhotel-doldenhorn-entwurf.vercel.app/#zimmer"
+     }
+    },
+    {
+     "teil": "fenster-gondel",
+     "titel": "Fenster Der Abend vor dem Haus.",
+     "satz": "«Es lebe die Tradition!»",
+     "bilder": [
+      "_quelle/extern/booking/booking-609882092.jpg"
+     ],
+     "baustein": "Fenster",
+     "quelle": "fundus",
+     "skizze": "",
+     "bewegung": "Wie das erste Fenster. Hier wird die Seite zum ersten Mal dunkel; dahinter liegt das Röstihüs.",
+     "flaeche": "hell",
+     "flaeche_genau": "foto",
+     "unterschied": "Das zweite Fenster ist die Naht vom Tag zum Abend: die Gondel mit den Lichtern vor der Tür, nicht ein Saal oder eine Allee.",
+     "bisher": {
+      "Grand Beau-Rivage": "«Während das Kaminfeuer knistert» vor den Restaurants.",
+      "Castell Son Claret": "Die Allee bei Nacht vor Sa Clastra."
+     },
+     "bisher_links": {
+      "Grand Beau-Rivage": "http://127.0.0.1:8940/#tafel"
+     }
+    },
+    {
+     "teil": "roestihues",
+     "titel": "Elf Röstis, jede mit Namen.",
+     "satz": "«Im hauseigenen Restaurant Röstihüs verwöhnen wir Sie gerne mit Schweizer Spezialitäten, die mit Liebe, Herz und den besten regionalen Produkten zubereitet werden.»",
+     "bilder": [
+      "_quelle/website/pdf/speisekarte.pdf (Seite 4, Stand 18.11.2024)",
+      "_quelle/website/bilder/restau_3.jpg",
+      "_quelle/website/bilder/restau_restaurant.jpg",
+      "_quelle/website/bilder/restau_4.jpg"
+     ],
+     "baustein": "Karte auf Papier, Laufzeile der Röstis",
+     "quelle": "fundus",
+     "skizze": "Auf Nacht mit Tapete liegt die Rösti-Seite als Blatt Papier, gesetzt aus der Karte vom 18.11.2024: elf Röstis mit Zutaten und Preis (Rösti Albert Fr. 25.– bis Rösti Indian Style Fr. 32.–), die Zahl kommt aus der Karte, nicht von der heutigen Startseite. Daneben die Säcke vor der Tür und die Stube. Unten läuft die Zeile mit den Namen: Albert · Dracula · Macugnaga · Exotic Palma · Tschug Tschug · Gartu · Saastal · Diavolo · Schmugglerrösti · Olma · Indian Style. Knöpfe «Tisch reservieren» und «Die ganze Karte». Erweiterung (Robert 18.10.2026): Der Tisch wird in einem Fenster im Stil des Hauses reserviert, mit der Karte daneben (elf Röstis, fünf Cordon Bleus), statt im fremden Fenster von TheFork; Telefon bleibt. Öffnungszeiten und Ruhetage: offen.",
+     "bewegung": "Das Blatt kommt leicht gedreht von unten und legt sich gerade, die Fotos zoomen in ihren Rahmen, die Laufzeile läuft ruhig.",
+     "flaeche": "dunkel",
+     "flaeche_genau": "dunkel",
+     "unterschied": "Die Startseite zeigt eine echte Karte mit Preisen statt Restaurant-Kacheln, und die Namen der Röstis sind der Takt des Abschnitts.",
+     "bisher": {
+      "Grand Beau-Rivage": "«Restaurants & Bar» als Kacheln auf Papier.",
+      "Carlton-Europe": "«Im Haus» dunkel, Wechsel hell/dunkel über drei Abschnitte.",
+      "Waldhotel Doldenhorn": "«Gemeinsam geniessen und verweilen» dunkel mit Tannen.",
+      "Landgasthof Ruedihus": "«Kommen Sie herein»: Stuben, Rahmen hängen sich auf.",
+      "Berghotel Gasterntal": "Karte als Laube.",
+      "Castell Son Claret": "Sa Clastra mit der Windrose als bewegtem Element."
+     },
+     "bisher_links": {
+      "Grand Beau-Rivage": "http://127.0.0.1:8940/#tafel",
+      "Carlton-Europe": "https://carlton-europe-entwurf.vercel.app/#im-haus",
+      "Waldhotel Doldenhorn": "https://waldhotel-doldenhorn-entwurf.vercel.app/#kueche",
+      "Landgasthof Ruedihus": "https://landgasthof-ruedihus-entwurf.vercel.app/#stuben",
+      "Berghotel Gasterntal": "https://berghotel-gasterntal-entwurf.vercel.app/#karte"
+     }
+    },
+    {
+     "teil": "stuebli",
+     "titel": "Raclette im Stübli, Wein von Fabian.",
+     "satz": "«Hotelwein» Cuvee Special, Fils Maye, Prestige Silber «(wurde von Fabian selber kreiert)», laut Weinkarte des Hauses.",
+     "bilder": [
+      "_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2017-11-29-291892107-raclettestubli.jpg",
+      "_quelle/extern/myswitzerland/myswitzerland-00072104_m.jpg",
+      "_quelle/website/bilder/restau_8.jpg",
+      "_quelle/website/pdf/speisekarte.pdf (Weinkarte, Nr. 7 und 8)",
+      "_quelle/website/text/de__restaurant.html.md (Spritz)"
+     ],
+     "baustein": "Bildgruppe (1 gross, 2 klein) mit Weinkarten-Zeile",
+     "quelle": "fundus",
+     "skizze": "Das Raclettestübli mit den Butzenscheiben gross, daneben Raclette und die Bar. Darunter zwei Zeilen wie in der Weinkarte: die zwei Hotelweine (Cuvee Special und Cuvee Special Eichenfass, Fils Maye), dazu Zurbriggen Spritz und Antrona Spritz mit den Zutaten des Hauses. Ein Satz zum wöchentlichen Racletteabend für Halbpensionsgäste. Erweiterung (Robert 18.10.2026): «Fabians Hauswein»: Neben den zwei Cuvees auf Wunsch sein Lied «Wallis Baby» (Kanal Fabian Zurbriggen, mit Szenen im Röstihüs) als Film im Bild mit Start per Klick, nie als Hintergrund, und nur mit Fabians Ja (offen).",
+     "bewegung": "Die Gruppe schwebt als Einheit herauf, das grosse Bild zoomt in seinen Rahmen, die Zeilen kommen nacheinander.",
+     "flaeche": "tapete",
+     "flaeche_genau": "tapete",
+     "unterschied": "Wein als Geschichte des Gastgebers (Fabian kreiert die Hotelweine) und Raclette als Abend des Hauses, nicht Weinkeller, Bar-Kachel oder Kursblatt.",
+     "bisher": {
+      "Carlton-Europe": "Weinkeller als eigene Welt.",
+      "Grand Beau-Rivage": "Bar als Kachel unter «Restaurants & Bar».",
+      "Castell Son Claret": "Castell Bar im Kutscherhaus als Kachel unter Olivera.",
+      "Salt & Silver": "Kursblatt mit Fahrt."
+     },
+     "bisher_links": {
+      "Carlton-Europe": "https://carlton-europe-entwurf.vercel.app/#im-haus",
+      "Grand Beau-Rivage": "http://127.0.0.1:8940/#tafel"
+     }
+    },
+    {
+     "teil": "spa",
+     "titel": "Das Spa gleich nebenan.",
+     "satz": "«Erleben Sie Entspannung pur im ausgezeichneten Spa vom Hotel Pirmin Zurbriggen****S.»",
+     "bilder": [
+      "_quelle/website/bilder/wellne_wellness.jpg",
+      "_quelle/website/bilder/wellne_3.jpg",
+      "_quelle/website/bilder/wellne_2.jpg",
+      "_quelle/website/text/de__hotel__wellness.html.md"
+     ],
+     "baustein": "Platte und Kuhle",
+     "quelle": "fundus",
+     "skizze": "Eine helle Platte auf Nacht: links das Monte-Moro, rechts das Wellness & Spa Pirmin Zurbriggen, dazwischen der Weg. In der Kuhle die Tarife für Hotelgäste wörtlich: CHF 25.00 pro Person und Eintritt, 7 Tage Abo CHF 150.00 pro Person; Bademantel, Schuhe, Handtücher stehen zur Verfügung. Keine Grösse des Spas (drei Angaben auf der heutigen Seite). Knopf «Zum Spa nebenan» auf die Seite des Partnerhotels.",
+     "bewegung": "Die Platte schwebt deckend von unten, die drei Fotos kommen gestaffelt und zoomen in ihren Rahmen.",
+     "flaeche": "dunkel",
+     "flaeche_genau": "dunkel",
+     "unterschied": "Das Spa gehört dem Familienhaus nebenan: Die Seite zeigt den Weg und den Preis für Hotelgäste, keine eigene Wellness-Welt.",
+     "bisher": {
+      "Grand Beau-Rivage": "«Bad» als Wand-Abschnitt auf Nacht.",
+      "Carlton-Europe": "«Wellness-Park» hell.",
+      "Waldhotel Doldenhorn": "«Anspannung lösen» auf Stahlblau.",
+      "Berghotel Gasterntal": "«Sauna in der alten Käserei».",
+      "Castell Son Claret": "Das Wasser des Guts als Band zum Blättern."
+     },
+     "bisher_links": {
+      "Grand Beau-Rivage": "http://127.0.0.1:8940/#bad",
+      "Carlton-Europe": "https://carlton-europe-entwurf.vercel.app/#wellness-park",
+      "Waldhotel Doldenhorn": "https://waldhotel-doldenhorn-entwurf.vercel.app/#spa",
+      "Berghotel Gasterntal": "https://berghotel-gasterntal-entwurf.vercel.app/#sauna"
+     }
+    },
+    {
+     "teil": "saastal",
+     "titel": "Im Sommer ein herrliches Wanderparadies.",
+     "satz": "«Im Sommer ein herrliches Wanderparadies. Ueber 250 km Wanderwege …» (Seite «Aktivitäten im Sommer»)",
+     "bilder": [
+      "_quelle/website/bilder/sommer_1.jpg",
+      "_quelle/website/bilder/ausflu_1.jpg",
+      "_quelle/website/bilder/winter_2.jpg",
+      "_quelle/website/bilder/winter_4.jpg",
+      "_quelle/website/text/de__region__sommer.html.md",
+      "_quelle/website/text/de__region__winter.html.md",
+      "_quelle/website/text/de__region__ausfluege.html.md"
+     ],
+     "baustein": "Band zum Blättern",
+     "quelle": "fundus",
+     "skizze": "Hohe Karten je Aktivität und Ausflug aus den Seiten Sommer, Winter und Ausflüge des Hauses (Wandern, Alpin Gorge, Winterwanderwege, Schneeschuhlaufen, Mattmark, Saas-Fee mit Metro Alpin, Zermatt, Glacier-Express …). Auf jeder Karte ein kleiner Vermerk aus dem Bon, ob Postauto oder Bergbahn inbegriffen sind (Metro Alpin: offen). Umschalter Sommer · Winter oben, voreingestellt nach dem Stichtag des Auftakts.",
+     "bewegung": "Nativer Seitwärts-Scroll mit Pfeilen und Laufbalken, die Karten schweben beim ersten Hereinkommen gestaffelt von unten.",
+     "flaeche": "hell",
+     "flaeche_genau": "hell",
+     "unterschied": "Die Region wird vom Inbegriffenen her erzählt: Jede Karte sagt, ob die Fahrt schon bezahlt ist. Sommer und Winter folgen dem Stichtag.",
+     "bisher": {
+      "Castell Son Claret": "Das Wasser als Band; die Region nur auf der Unterseite als Kacheln.",
+      "Grand Beau-Rivage": "Band zum Blättern für die Angebote.",
+      "Carlton-Europe": "Band für die Kissen.",
+      "Berghotel Gasterntal": "«Was Sie hier nicht finden»."
+     },
+     "bisher_links": {
+      "Grand Beau-Rivage": "http://127.0.0.1:8940/#angebote",
+      "Carlton-Europe": "https://carlton-europe-entwurf.vercel.app/#zimmer"
+     }
+    },
+    {
+     "teil": "gaeste",
+     "titel": "Was Gäste am Haus schätzen.",
+     "satz": "Google 4,5 von 5 aus 121 Bewertungen · Booking.com 8,3 von 10 aus 94, Personal 9,0 und Lage 9,0 · Stand 17.10.2026.",
+     "bilder": [
+      "_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2017-11-29-291892278-reception.jpg",
+      "_kette/02-spaeher/befund.md («Noten»)"
+     ],
+     "baustein": "Noten als Zeilen auf dem Bon",
+     "quelle": "neu",
+     "skizze": "Der Bon kommt ein zweites Mal, kurz: Zeilen statt Sterne, «Personal 9,0 · Lage 9,0 · Sauberkeit 8,8 · Google 4,5 von 5», mit Datum. Kein TripAdvisor (3,9, Stand 09.10.). Gästesätze: offen (keine Texte im Material).",
+     "bewegung": "Die Zahlen stehen still, die Zeilen erscheinen nacheinander.",
+     "flaeche": "hell",
+     "flaeche_genau": "creme",
+     "unterschied": "Die Noten stehen auf derselben Quittung wie die Leistungen, still und mit Datum.",
+     "bisher": {
+      "Grand Beau-Rivage": "Noten zählen hoch zwischen Goldlinien.",
+      "Carlton-Europe": "Auszeichnungen als vier Felder.",
+      "Waldhotel Doldenhorn": "Auszeichnungs-Laufband unter dem Auftakt.",
+      "Landgasthof Ruedihus": "«So sehen es die Gäste» auf Holz.",
+      "Castell Son Claret": "Stille Note, drei Siegel und das Team."
+     },
+     "bisher_links": {
+      "Grand Beau-Rivage": "http://127.0.0.1:8940/#gaeste",
+      "Carlton-Europe": "https://carlton-europe-entwurf.vercel.app/#pakete",
+      "Waldhotel Doldenhorn": "https://waldhotel-doldenhorn-entwurf.vercel.app/#ankunft",
+      "Landgasthof Ruedihus": "https://landgasthof-ruedihus-entwurf.vercel.app/#gaeste"
+     }
+    },
+    {
+     "teil": "gut-zu-wissen",
+     "titel": "Gut zu wissen, bevor Sie buchen.",
+     "satz": "Alles aus der Preisliste an einer Stelle, wörtlich, nichts gerundet.",
+     "bilder": [
+      "_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2017-11-29-291892278-reception.jpg",
+      "_quelle/website/text/de__hotel__preise.html.md («Zuschläge»)"
+     ],
+     "baustein": "Platte und Kuhle, Zeilen wie auf dem Bon",
+     "quelle": "fundus",
+     "skizze": "Erweiterung (Robert 18.10.2026): eine helle Platte mit Kuhlen vor der zweiten Buchungsleiste. Zeilen wörtlich aus der Preisliste: Kurtaxen Erwachsene pro Tag (Winter) 4.50, (Sommer) 7.00; Kinder (6 - 16 Jahre) pro Tag (Winter) 2.25, (Sommer) 3.50 · Einzelzimmerzuschlag 50 % · Zuschlag für 1 - 3 Übernachtungen / pro Tag 5.00 · Kinderzuschläge im Zimmer der Eltern · Hund pro Tag ohne Futter 7.00 - 10.00 · Bezahlung in Euro möglich, Rückgeld in Franken · Hotelparkplatz inklusive. Storno- und Geschäftsbedingungen: offen (stehen auf keiner Seite). Dieselben Zeilen stehen im Buchen-Fenster.",
+     "bewegung": "Die Platte schwebt deckend von unten, die Zeilen erscheinen nacheinander.",
+     "flaeche": "hell",
+     "flaeche_genau": "creme",
+     "unterschied": "Das Kleingedruckte steht vor dem Buchen gross und an einer Stelle, statt in der Preisliste versteckt.",
+     "bisher": {
+      "Castell Son Claret": "«Gut zu wissen» nur auf der Zimmerseite (Check-in, Check-out).",
+      "Carlton-Europe": "Zimmermappe für gebuchte Gäste, keine Konditionen auf der Startseite.",
+      "Grand Beau-Rivage": "Keine Konditionen auf der Startseite."
+     },
+     "bisher_links": {
+      "Carlton-Europe": "https://carlton-europe-entwurf.vercel.app/#zimmer"
+     }
+    },
+    {
+     "teil": "anreise",
+     "titel": "Mit dem Zug bis Visp, dann im Postauto.",
+     "satz": "«Zeitdauer Visp - Saas-Almagell ca. 45 Min.» (Zug und Postauto) · «ca. 40 Min.» (Auto)",
+     "bilder": [
+      "_quelle/extern/myswitzerland/myswitzerland-00072097_m.jpg",
+      "_quelle/website/text/de__hotel__anreise.html.md"
+     ],
+     "baustein": "Bild über die volle Breite, zweite Buchungsleiste, Anreise als Platte",
+     "quelle": "fundus",
+     "skizze": "Das Haus im Winter über die volle Breite, darüber die zweite Buchungsleiste als Platte und daneben die Anreise-Platte: Zug bis Visp, Postauto mit Umsteigen in Saas-Grund (ca. 45 Min.), Auto ab Visp (ca. 40 Min.), dazu die Gratis-Anreise aus dem Bon. Erweiterung (Robert 18.10.2026): «Mit dem Zug anreisen, Ticket inklusive»: für Gäste aus der Schweiz ab zwei Nächten bei direkter Buchung, Zeitraum 1. Mai bis 31. Oktober 2026 (ob es 2027 weiterläuft: offen), mit dem Weg bis vor die Tür und den Verbindungen des Hauses (stündlich bis 20.10 Uhr ab Visp). Adresse: nur «CH-3905 Saas-Almagell» wie im Impressum, die Strasse ist offen.",
+     "bewegung": "Das Bild schwebt herauf, die zwei Platten kommen nebeneinander von unten.",
+     "flaeche": "hell",
+     "flaeche_genau": "foto",
+     "unterschied": "Der Bogen schliesst sich über das Jahr: Sommerfassade am Anfang (im Winter umgekehrt), die andere Jahreszeit am Schluss, mit dem Weg hierher statt eines Abschieds.",
+     "bisher": {
+      "Grand Beau-Rivage": "«Herzlich willkommen im Grand Beau-Rivage» als Abschied auf Nacht.",
+      "Hotel Seiler au Lac": "«Gute Nacht am See».",
+      "Waldhotel Doldenhorn": "«Wir freuen uns, Sie bald willkommen zu heissen».",
+      "Castell Son Claret": "Das Castell bei Nacht, zweite Buchungsleiste, Anreise als Platte."
+     },
+     "bisher_links": {
+      "Grand Beau-Rivage": "http://127.0.0.1:8940/#abschied",
+      "Hotel Seiler au Lac": "http://localhost:8921/#schluss",
+      "Waldhotel Doldenhorn": "https://waldhotel-doldenhorn-entwurf.vercel.app/#buchen"
+     }
+    },
+    {
+     "teil": "haus-finder",
+     "titel": "Welches Haus der Familie zu Ihnen passt.",
+     "satz": "Drei Fragen, dann das passende Haus der Familie Zurbriggen.",
+     "bilder": [
+      "_quelle/extern/myswitzerland/myswitzerland-00072098_m.jpg",
+      "_quelle/website/bilder/wellne_wellness.jpg",
+      "Familie Zurbriggen/erweiterungen/index.html (Preise ab je Haus)"
+     ],
+     "baustein": "Haus-Finder der Familie",
+     "quelle": "neu",
+     "skizze": "Erweiterung für alle drei Häuser (Robert 18.10.2026): drei Fragen als Auswahl im Hausstil: Mit wem kommen Sie? · Was ist Ihnen wichtig (Preis, Spa, Gourmet)? · Saastal oder Zermatt? Danach eine Karte mit dem passenden Haus der Familie, Foto, Preis ab wie belegt (Monte-Moro CHF 90.00 mit Frühstück, Wellness & Spa CHF 175 mit Halbpension, Suitenhotel Zermatt Suiten von 23 bis 145 m²) und Knopf «Zum Haus». Der Gast bleibt in der Familie, statt zu einem Portal zu wechseln. Derselbe Finder steht auf den Seiten aller drei Häuser, je in deren Kleid.",
+     "bewegung": "Die Fragen erscheinen nacheinander, die Antwortkarte kommt deckend von unten. Nur ein Element bewegt sich.",
+     "flaeche": "tapete",
+     "flaeche_genau": "tapete",
+     "unterschied": "Kein bisheriges Haus führt den Gast zu einem anderen Haus derselben Familie, das zu ihm besser passt.",
+     "bisher": {
+      "Waldhotel Doldenhorn": "Die Häuser der Familie Maeder nur als Karten im Fuss.",
+      "Carlton-Europe": "«Wofür kommen Sie?» als Wahl innerhalb des eigenen Hauses.",
+      "Grand Beau-Rivage": "Seiler au Lac als Karte im Fuss."
+     },
+     "bisher_links": {
+      "Waldhotel Doldenhorn": "https://waldhotel-doldenhorn-entwurf.vercel.app/#buchen",
+      "Carlton-Europe": "https://carlton-europe-entwurf.vercel.app/#anlass",
+      "Grand Beau-Rivage": "http://127.0.0.1:8940/#abschied"
+     }
+    },
+    {
+     "teil": "fuss",
+     "titel": "Der Fuss der Familie Zurbriggen.",
+     "satz": "«Hotel Monte-Moro, Esther und Fabian Zurbriggen-Zurbriggen» (Impressum)",
+     "bilder": [
+      "_quelle/extern/myswitzerland/myswitzerland-00072098_m.jpg",
+      "_kette/02-spaeher/befund.md («Familie und weitere Häuser»)"
+     ],
+     "baustein": "Fuss der Hotelfamilie mit Karten",
+     "quelle": "fundus",
+     "skizze": "Der Satz des Hauses gross, die Wortmarke, darunter die Häuser der Familie als Karten mit Foto und «Zum Haus», nach Gastgebern geordnet: Esther und Fabian (Wellness & Spa Pirmin Zurbriggen, Loft-Suite Hotel, Hotel Monte-Moro), Moni und Pirmin (Suitenhotel Zurbriggen, Zermatt), Heidi und Damian (Chalet Rustica). Aufbau bei allen Häusern der Familie gleich, Farben, Muster und Zeichen je Haus (Master 2.8). Darunter Kontaktfeld, Linkspalten, Rechtstexte, der Verweis auf die neue Familienseite zurbriggen.ch (eigener Auftrag, hier nur der Link) und die Zeile «Designstudie von Tasty Studios, nicht die offizielle Website».",
+     "bewegung": "Ruhig. Die Wortmarke baut sich einmal auf, die Karten kommen gestaffelt.",
+     "flaeche": "dunkel",
+     "flaeche_genau": "dunkel",
+     "unterschied": "Erstes Haus der Familie Zurbriggen in der Kette: Der Fuss legt den gemeinsamen Aufbau für alle Häuser der Familie fest.",
+     "bisher": {
+      "Waldhotel Doldenhorn": "Fuss der Hotelfamilie Maeder mit vier Häusern als Karten.",
+      "Grand Beau-Rivage": "Fuss für zwei Häuser (Seiler au Lac als Karte).",
+      "Castell Son Claret": "Fuss mit dem Schwesterhaus The Fontenay als Karte."
+     },
+     "bisher_links": {
+      "Waldhotel Doldenhorn": "https://waldhotel-doldenhorn-entwurf.vercel.app/#buchen",
+      "Grand Beau-Rivage": "http://127.0.0.1:8940/#abschied"
+     }
+    }
+   ]
+  },
+  {
+   "seite": "zimmer.html",
+   "titel": "Zimmer",
+   "heute": "je Sprache 1 Seite, eine Bildreihe und zwei Absätze",
+   "szenen": [
+    {
+     "teil": "zimmer",
+     "titel": "Zimmer",
+     "satz": "Seitenkopf mit dem Zimmer unter dem Dach · das Schlüsselbrett gross · je Zimmerart eine Bildgruppe mit Text, Preis aus der Preisliste, Belegung und Grösse, wo belegt · Familienzimmer und Familienkombinationen 3 bis 6 Personen · Residence Alpenhof mit Lage · «Gut zu wissen» (Euro möglich, Rückgeld in Franken) · Knopf in die richtige Kategorie bei seekda",
+     "baustein": "Schlüsselbrett (neu) · Bildgruppe · Platte und Kuhle",
+     "quelle": "neu"
+    }
+   ]
+  },
+  {
+   "seite": "ferienwohnungen.html",
+   "titel": "Ferienwohnungen Apollo und Arizona",
+   "heute": "2 Seiten je Sprache, ohne Preis und Anfrage",
+   "szenen": [
+    {
+     "teil": "ferienwohnungen",
+     "titel": "Ferienwohnungen Apollo und Arizona",
+     "satz": "Haus Apollo (4. Stock, Dorfeingang, Südbalkon) und Haus Arizona (4½, 3½ und 2½ Zimmer) im Vergleich nebeneinander (Zimmerzahl, Balkon, Ausstattung; Erweiterung Robert 18.10.2026) · je Wohnung Fotos und Text des Hauses · Anfragefenster im Hausstil direkt auf der Seite (Potentialanalyse Punkt 02) · Preise und Grössen offen",
+     "baustein": "Bildgruppe · Anfrage im Hausstil (3a) · Auswahl im Hausstil",
+     "quelle": "fundus"
+    }
+   ]
+  },
+  {
+   "seite": "preise.html",
+   "titel": "Preise",
+   "heute": "1 Seite je Sprache, Tabelle",
+   "szenen": [
+    {
+     "teil": "preise",
+     "titel": "Preise",
+     "satz": "Die ganze Preisliste als Bon: Zimmer mit Frühstück und Halbpension, Zuschläge, Kurtaxen, Kinder, Hund, wörtlich und vollständig, nichts gerundet · gross und lesbar am Handy (Potentialanalyse Punkt 04) · Saisonzeiten der Preise: offen",
+     "baustein": "Der Bon (neu) · Platte und Kuhle",
+     "quelle": "neu"
+    }
+   ]
+  },
+  {
+   "seite": "roestihues.html",
+   "titel": "Restaurant Röstihüs",
+   "heute": "1 Seite je Sprache + Karte als PDF (deutsch, französisch)",
+   "szenen": [
+    {
+     "teil": "roestihues",
+     "titel": "Restaurant Röstihüs",
+     "satz": "Kopf: die Säcke vor der Tür · Tisch reservieren im Hausstil mit der Karte daneben (statt TheFork-Fenster) · die Karte als Daten (Speisen, Röstis, Cordon Bleus, Weine, Getränke) aus dem PDF vom 18.11.2024, eine Quelle für Seite, La Carte und PDF · Hotelweine von Fabian · Spritz des Hauses · Kinderauswahl · Sonnenterrasse · Tisch reservieren (TheFork, Telefon) · Öffnungszeiten: offen",
+     "baustein": "Karte auf Papier · Karte als Daten · Bogen-Karte (nur hier)",
+     "quelle": "fundus"
+    }
+   ]
+  },
+  {
+   "seite": "angebote.html",
+   "titel": "Aktuelles und Angebote",
+   "heute": "1 Seite «Aktuelles», ohne Datum",
+   "szenen": [
+    {
+     "teil": "angebote",
+     "titel": "Aktuelles und Angebote",
+     "satz": "Gratis-Anreise mit Bedingungen und Zeitraum · Top Winterzauber (CHF 999.00) mit Saison (offen) · jede Aktion mit Datum, läuft über die Werkbank ab (Potentialanalyse Punkt 01)",
+     "baustein": "Platte und Kuhle · Der Bon",
+     "quelle": "fundus"
+    }
+   ]
+  },
+  {
+   "seite": "wellness.html",
+   "titel": "Spa im Partnerhotel",
+   "heute": "1 Seite je Sprache",
+   "szenen": [
+    {
+     "teil": "wellness",
+     "titel": "Spa im Partnerhotel",
+     "satz": "Der Weg nebenan · Angebot des Spas wörtlich · Tarife für Hotelgäste · Knopf zum Partnerhotel · keine Spa-Grösse (Potentialanalyse Punkt 08)",
+     "baustein": "Platte und Kuhle · Bildgruppe",
+     "quelle": "fundus"
+    }
+   ]
+  },
+  {
+   "seite": "saastal.html",
+   "titel": "Saastal: Sommer, Winter, Ausflüge",
+   "heute": "3 Seiten je Sprache, Text und Bildreihe",
+   "szenen": [
+    {
+     "teil": "saastal",
+     "titel": "Saastal: Sommer, Winter, Ausflüge",
+     "satz": "Sommer und Winter als Umschalter, Ausflüge als Kacheln mit grossem Foto, je Karte Vermerk Postauto/Bergbahn inbegriffen (Metro Alpin offen) · kein Wetter, kein Schneebericht",
+     "baustein": "Band zum Blättern · 3D-Kachel",
+     "quelle": "fundus"
+    }
+   ]
+  },
+  {
+   "seite": "anreise.html",
+   "titel": "Anreise",
+   "heute": "1 Seite je Sprache",
+   "szenen": [
+    {
+     "teil": "anreise",
+     "titel": "Anreise",
+     "satz": "Zug bis Visp, Postauto mit Umsteigen in Saas-Grund (ca. 45 Min.) · Auto (ca. 40 Min.) · Gratis-Anreise · Adresse wie im Impressum, Strasse offen",
+     "baustein": "Platte und Kuhle · Gehminuten-Linie",
+     "quelle": "fundus"
+    }
+   ]
+  },
+  {
+   "seite": "vor-ihrer-anreise.html",
+   "titel": "Vor Ihrer Anreise",
+   "heute": "neu (Gäste-Funktion 3a)",
+   "szenen": [
+    {
+     "teil": "vor-ihrer-anreise",
+     "titel": "Vor Ihrer Anreise",
+     "satz": "Für gebuchte Gäste: Ankunftszeit, Tisch im Röstihüs, Spa-Eintritt nebenan, Kidsclub, alles an die Rezeption · Rezeption im Chat",
+     "baustein": "Meldeschein-Karte · Rezeption im Chat",
+     "quelle": "fundus"
+    }
+   ]
+  },
+  {
+   "seite": "familien.html",
+   "titel": "Familien",
+   "heute": "neu (Erweiterung, Robert 18.10.2026)",
+   "szenen": [
+    {
+     "teil": "familien",
+     "titel": "Familien",
+     "satz": "Kidsclub Mo bis Sa 16:30 bis 21:00 Uhr · Familienzimmer und Familienkombinationen 3 bis 6 Personen · Kinderzuschläge im Zimmer der Eltern wörtlich · Ferienwohnungen für Familien · Fotos vom Kidsclub offen",
+     "baustein": "Familien-Platte (neu) · Bildgruppe",
+     "quelle": "neu"
+    }
+   ]
+  },
+  {
+   "seite": "kontakt.html",
+   "titel": "Kontakt",
+   "heute": "1 Formular je Sprache",
+   "szenen": [
+    {
+     "teil": "kontakt",
+     "titel": "Kontakt",
+     "satz": "Telefon, E-Mail, Formular als heller Briefbogen im Hausstil · häufige Fragen",
+     "baustein": "Briefbogen · Auswahl im Hausstil",
+     "quelle": "fundus"
+    }
+   ]
+  },
+  {
+   "seite": "buchen.html",
+   "titel": "Buchen",
+   "heute": "seekda eingebettet",
+   "szenen": [
+    {
+     "teil": "buchen",
+     "titel": "Buchen",
+     "satz": "Das Buchungsfenster von seekda bleibt, die Seite darum im neuen Kleid; kein Weg mehr ins alte Design · davor der Zimmer-Finder mit Live-Preis (Zugang offen) und «Gut zu wissen» (Kurtaxe, Zuschläge, Euro, Parkplatz; Storno offen)",
+     "baustein": "Zimmer-Finder (3a) · Platte und Kuhle",
+     "quelle": "fundus"
+    }
+   ]
+  },
+  {
+   "seite": "impressum.html · datenschutz.html",
+   "titel": "Rechtstexte",
+   "heute": "Impressum, Datenschutz (EN und FR deutsch)",
+   "szenen": [
+    {
+     "teil": "impressum",
+     "titel": "Rechtstexte",
+     "satz": "Wortlaut des Hauses, Kopf übersetzt · AGB, Widerruf und Storno: offen (nirgends gefunden, Potentialanalyse Punkt 09) · 404-Seite mit Wegen zu Zimmern, Röstihüs, Kontakt",
+     "baustein": "Blatt rechts, Inhaltsfeld links",
+     "quelle": "fundus"
+    }
+   ]
+  },
+  {
+   "seite": "en/ · fr/",
+   "titel": "Sprachen",
+   "heute": "heute de, en, fr",
+   "szenen": [
+    {
+     "teil": "en-fr",
+     "titel": "Sprachen",
+     "satz": "Station 15a: Deutsch, Französisch, Englisch (Booking: 46 deutsch, 29 französisch); jede Seite ganz in jeder Sprache, auch Datenschutz EN/FR (heute deutsch); die Seite öffnet in der Sprache des Browsers; Karte und Rechtstexte in allen Sprachen (Potentialanalyse Punkt 12)",
+     "baustein": "–",
+     "quelle": "fundus"
+    }
+   ]
+  }
+ ],
+ "erweiterungen": [
+  {
+   "fuer": "Alle drei Häuser",
+   "was": "Haus-Finder der Familie",
+   "wo": "Szene «haus-finder» vor dem Fuss",
+   "grundlage": "Preise ab: Monte-Moro CHF 90 mit Frühstück, Wellness CHF 175 mit Halbpension, Zermatt Suiten 23 bis 145 m²",
+   "vom_haus_offen": "nichts",
+   "wort": "Robert 18.10.2026: «yes hinzufügen alles»"
+  },
+  {
+   "fuer": "Alle drei Häuser",
+   "was": "Rezeption im Chat auf jeder Seite",
+   "wo": "auf jeder Seite unten rechts; «Vor Ihrer Anreise»",
+   "grundlage": "läuft auf vier Maeder-Häusern und Salt & Silver; antwortet aus den Fakten des Hauses in jeder Sprache der Seite",
+   "vom_haus_offen": "wohin Anfragen aus dem Chat gehen",
+   "wort": "Robert 18.10.2026: «yes hinzufügen alles»"
+  },
+  {
+   "fuer": "Alle drei Häuser",
+   "was": "Zimmer-Finder mit Live-Preis",
+   "wo": "Szene «zimmer», Unterseite «Buchen»",
+   "grundlage": "erprobt am Carlton (Master 3a); Buchungssystem seekda",
+   "vom_haus_offen": "Zugang zu seekda; ohne Zugang die passenden Zimmer und der Weg zur Buchung",
+   "wort": "Robert 18.10.2026: «yes hinzufügen alles»"
+  },
+  {
+   "fuer": "Alle drei Häuser",
+   "was": "Jede Sprache ganz",
+   "wo": "Sprachen (Station 15a)",
+   "grundlage": "Datenschutz auf EN und FR heute deutsch; Seite öffnet in der Sprache des Browsers",
+   "vom_haus_offen": "nichts",
+   "wort": "Robert 18.10.2026: «yes hinzufügen alles»"
+  },
+  {
+   "fuer": "Alle drei Häuser",
+   "was": "Verweis auf die neue Familienseite zurbriggen.ch",
+   "wo": "Fuss",
+   "grundlage": "eigener Auftrag, hier nur der Link",
+   "vom_haus_offen": "Ja der Familie zur Umstellung",
+   "wort": "Robert 18.10.2026: «yes hinzufügen alles»"
+  },
+  {
+   "fuer": "Monte-Moro",
+   "was": "Kidsclub mit eigenem Platz",
+   "wo": "Szene «kinder», Unterseite «Familien»",
+   "grundlage": "Preisliste «Inklusive»: Mo bis Sa 16:30 bis 21:00 Uhr; Kinderzuschläge",
+   "vom_haus_offen": "Fotos vom Kidsclub",
+   "wort": "Robert 18.10.2026: «yes hinzufügen alles»"
+  },
+  {
+   "fuer": "Monte-Moro",
+   "was": "«Gut zu wissen» vor dem Buchen",
+   "wo": "Szene «gut-zu-wissen», Buchen-Fenster",
+   "grundlage": "Preisliste: Kurtaxen 4.50/7.00, Kinder 2.25/3.50, Einzelzimmer 50 %, 1 - 3 Nächte 5.00 pro Tag, Hund, Euro",
+   "vom_haus_offen": "Storno- und Geschäftsbedingungen",
+   "wort": "Robert 18.10.2026: «yes hinzufügen alles»"
+  },
+  {
+   "fuer": "Monte-Moro",
+   "was": "Tisch im Röstihüs im Hausstil reservieren",
+   "wo": "Szene «roestihues», Unterseite «Röstihüs»",
+   "grundlage": "heute TheFork; Karte DE und FR vom 18.11.2024",
+   "vom_haus_offen": "Öffnungszeiten und Ruhetage",
+   "wort": "Robert 18.10.2026: «yes hinzufügen alles»"
+  },
+  {
+   "fuer": "Monte-Moro",
+   "was": "Mit dem Zug anreisen, Ticket inklusive",
+   "wo": "Szene «anreise», Unterseite «Anreise»",
+   "grundlage": "Gratis-Anreise 1. Mai bis 31. Oktober 2026; Zug bis Visp, Postauto über Saas-Grund",
+   "vom_haus_offen": "ob das Angebot 2027 weiterläuft",
+   "wort": "Robert 18.10.2026: «yes hinzufügen alles»"
+  },
+  {
+   "fuer": "Monte-Moro",
+   "was": "Fabians Hauswein mit «Wallis Baby»",
+   "wo": "Szene «stuebli»",
+   "grundlage": "Weinkarte Nr. 7 und 8; Film auf Fabians eigenem Kanal",
+   "vom_haus_offen": "Ja von Fabian zum Film",
+   "wort": "Robert 18.10.2026: «yes hinzufügen alles»"
+  },
+  {
+   "fuer": "Monte-Moro",
+   "was": "Ferienwohnungen im Vergleich",
+   "wo": "Szene «zimmer», Unterseite «Ferienwohnungen»",
+   "grundlage": "Haus Apollo (4. Stock, Südbalkon), Haus Arizona (2½ bis 4½ Zimmer)",
+   "vom_haus_offen": "Grössen und Preise der Wohnungen",
+   "wort": "Robert 18.10.2026: «yes hinzufügen alles»"
+  }
+ ],
+ "gestrichen": [
+  {
+   "was": "Einkerbungen für Bildnamen, Zahlen oder Gruss",
+   "grund": "Robert 18.10.2026: «Keine Einkerbungen benutzen bei den neuen Projekten.» Bildnamen stehen im Foto auf weichem Schatten."
+  },
+  {
+   "was": "Farbwelt B «Logo-Blau und Butzenglas»",
+   "grund": "Robert hat am 18.10.2026 Welt A «Bergnacht und Lärche» gewählt («Und Farbe A»)."
+  },
+  {
+   "was": "Tür, Tor oder Vorhang im Auftakt",
+   "grund": "Robert: kein Vorhang, kein Tor, keine Türflügel. Das Haus steht im Foto."
+  },
+  {
+   "was": "Ein Band mit grossen Zahlen auf der Startseite",
+   "grund": "Carlton, Grand Beau-Rivage und Ruedihus haben es; die Minuten stehen auf der Gehminuten-Linie, die Preise auf dem Bon."
+  },
+  {
+   "was": "Hochzählende Bewertungen",
+   "grund": "Das hat das Grand Beau-Rivage; hier stehen die Noten still auf dem Bon."
+  },
+  {
+   "was": "TripAdvisor-Note",
+   "grund": "3,9 von 5, Nr. 8 von 8 in Saas-Almagell (09.10.2026): gehört nicht auf die Seite (Prompt des Hauses)."
+  },
+  {
+   "was": "Gäste-Videos von YouTube",
+   "grund": "Nie auf die Seite (Prompt des Hauses). Fabians eigener Film «Wallis Baby» kommt ins Stübli (Robert 18.10.2026), im Bild mit Start per Klick, nie als Hintergrund, nur mit Fabians Ja."
+  },
+  {
+   "was": "Wetter und Schneebericht",
+   "grund": "Robert hat Wetter aus allen Seiten gestrichen; die heutige Unterseite «Wetter / Schneebericht» entfällt."
+  },
+  {
+   "was": "Spa-Grösse in m²",
+   "grund": "Drei verschiedene Angaben auf der heutigen Seite (Potentialanalyse Punkt 08); das Spa wird mit seinem Angebot beschrieben."
+  },
+  {
+   "was": "«12 Röstis und 7 Cordon Bleus» von der heutigen Startseite",
+   "grund": "Die Karte gilt: elf Röstis, fünf Cordon Bleus (Potentialanalyse Punkt 06)."
+  },
+  {
+   "was": "Geschichte des Hauses als eigener Abschnitt",
+   "grund": "Nicht belegt (Station 03, offen); nichts dazu erfinden."
+  },
+  {
+   "was": "Eigentum der Resort Monte Moro AG",
+   "grund": "Nicht auf die Seite; die Gastgeber stehen wie im Impressum."
+  },
+  {
+   "was": "«Herzlich willkommen» als zweiter Abschnitt, Wahl «Wofür kommen Sie?»",
+   "grund": "Doldenhorn, Gasterntal, Carlton und Ruedihus haben es. Das Monte-Moro beginnt mit dem Bon."
+  },
+  {
+   "was": "Polaroids, Bühne mit Abzügen, Bildwand mit Fach",
+   "grund": "Salt & Silver, Ruedihus, Gasterntal und Castell haben sie. Das Monte-Moro nimmt das Schlüsselbrett."
+  },
+  {
+   "was": "Ticket / Billett",
+   "grund": "Vorerst nur Carlton und Grand Beau-Rivage (Robert 15.10.2026)."
+  }
+ ],
+ "offen": [
+  {
+   "punkt": "Öffnungszeiten und Ruhetage des Röstihüs stehen nirgends",
+   "wo": "Station 03 › offen; alle 49 Seiten, Schweiz Tourismus, Google"
+  },
+  {
+   "punkt": "Preise und Grössen der Ferienwohnungen Apollo und Arizona fehlen",
+   "wo": "de/ferienwohnungen/apollo.html, arizona.html, Preisliste"
+  },
+  {
+   "punkt": "Saisonzeiten der Preise und Saison der Pauschale «Top Winterzauber» fehlen",
+   "wo": "de/hotel/preise.html, de/hotel/aktuelles.html"
+  },
+  {
+   "punkt": "Zimmergrössen ausser Doppelzimmer (18 m², Buchungsfenster) nicht belegt",
+   "wo": "de/hotel/zimmer.html, seekda"
+  },
+  {
+   "punkt": "Metro Alpin inbegriffen oder nicht: zwei Angaben",
+   "wo": "Preisliste «ohne Metro Alpin» gegen Schweiz Tourismus «auch»"
+  },
+  {
+   "punkt": "Strasse des Hauses: Talstrasse 129, Furusandstrasse 12 oder 10",
+   "wo": "fakten.json › adresse; auf der Seite nur «CH-3905 Saas-Almagell»"
+  },
+  {
+   "punkt": "Herkunft der Region-Fotos (sommer_*, winter_*, ausflu_*) unbekannt: liegen auf der Seite des Hauses, Fotograf nicht genannt",
+   "wo": "_quelle/website/herkunft.json"
+  },
+  {
+   "punkt": "Gästesätze für die Szene «Was Gäste schätzen»: keine Bewertungstexte im Material",
+   "wo": "Booking, Google, TripAdvisor nicht als Text abgelesen"
+  },
+  {
+   "punkt": "Fotos der anderen Familienhäuser für den Fuss: aus deren Paketen zu übernehmen (Wellness, Loft-Suite, Zermatt laufen eigene Stationen; Chalet Rustica nicht in der Kette)",
+   "wo": "../Familie Zurbriggen/_quelle/"
+  },
+  {
+   "punkt": "AGB, Widerruf und Stornobedingungen nicht vorhanden",
+   "wo": "alle Seiten DE/EN/FR; seekda nicht bis zur Buchung durchgeklickt"
+  },
+  {
+   "punkt": "Fotos vom Kidsclub (Erweiterung): keine im Material",
+   "wo": "_quelle/website/bilder, booking, tripadvisor"
+  },
+  {
+   "punkt": "Zugang zu seekda für den Zimmer-Finder mit Live-Preis (Erweiterung)",
+   "wo": "Buchungsfenster de/buchen.html"
+  },
+  {
+   "punkt": "Wohin Anfragen aus der Rezeption im Chat gehen (Erweiterung)",
+   "wo": "vom Haus zu klären"
+  },
+  {
+   "punkt": "Ja von Fabian, dass «Wallis Baby» auf der Seite läuft (Erweiterung)",
+   "wo": "_quelle/video/familie/youtube_gbSFcYqELPA_Wallis Baby.mp4"
+  },
+  {
+   "punkt": "Ob die Gratis-Anreise mit dem Zug 2027 weiterläuft (Erweiterung)",
+   "wo": "de.md: Zeitraum 1. Mai bis 31. Oktober 2026"
+  },
+  {
+   "punkt": "Neue Familienseite zurbriggen.ch: eigener Auftrag, Ja der Familie zur Umstellung offen",
+   "wo": "Familie Zurbriggen/erweiterungen/index.html"
+  }
+ ],
+ "familie_machart": null,
+ "quellen": [
+  "_kette/02-spaeher/seitenliste.json",
+  "_kette/02-spaeher/befund.md",
+  "_kette/03-sammler/fakten.json",
+  "_kette/04-analyst/potential.json",
+  "_kette/05-markenbauer/marke.json",
+  "Prompt — Hotel Monte-Moro, Saas-Almagell.md (Abschnitt 4)",
+  "_quelle/website/text/de*.md",
+  "_quelle/website/pdf/speisekarte.pdf",
+  "_Archiv/Castell Son Claret/_kette/06-konzepter/konzept.json (bisherige Häuser)"
+ ]
+}

@@ -1,0 +1,128 @@
+[
+ {
+  "name": "Logo-Blau",
+  "hex": "#115595",
+  "rolle": "knopf",
+  "belegt": "Logo",
+  "fundstelle": "allgem_logo.png, häufigste Farbe der Wortmarke (87.674 Bildpunkte, gemessen 17.10.2026)"
+ },
+ {
+  "name": "Seiten-Blau",
+  "hex": "#005794",
+  "rolle": "heutige Seite",
+  "belegt": "heutige Seite",
+  "fundstelle": "templates/zerone/css/template.css, Titel und Links; Kanten des Logos (#005793)"
+ },
+ {
+  "name": "Himmelblau",
+  "hex": "#6BB1DE",
+  "rolle": "heutige Seite",
+  "belegt": "heutige Seite",
+  "fundstelle": "template.css, 11 Fundstellen: Balken, Knöpfe «Speisekarte», Menü"
+ },
+ {
+  "name": "Geschenk-Grün",
+  "hex": "#268369",
+  "rolle": "heutige Seite",
+  "belegt": "heutige Seite",
+  "fundstelle": "template.css, 2 Fundstellen; Minze #CEF2CB in den Geschenk-Kacheln der Startseite. Wird nicht übernommen"
+ },
+ {
+  "name": "Seiten-Grau",
+  "hex": "#595959",
+  "rolle": "heutige Seite",
+  "belegt": "heutige Seite",
+  "fundstelle": "template.css, 4 Fundstellen, Lauftext. Wird nicht übernommen"
+ },
+ {
+  "name": "Nacht",
+  "hex": "#0A2A4A",
+  "rolle": "flaeche-dunkel",
+  "belegt": "Logo, abgeleitet",
+  "fundstelle": "Logo-Blau, auf 45 Prozent Helligkeit gezogen: die dunkle Fläche der Welt A und der Lesetext"
+ },
+ {
+  "name": "Nachtblau",
+  "hex": "#0D3F6F",
+  "rolle": "kuhle-dunkel",
+  "belegt": "Logo, abgeleitet",
+  "fundstelle": "zwischen Nacht und Logo-Blau: Kuhlen und Platten auf dunklem Grund"
+ },
+ {
+  "name": "Lärche",
+  "hex": "#C67144",
+  "rolle": "akzent",
+  "belegt": "Foto",
+  "fundstelle": "myswitzerland-00072098 (Fassade im Sommer, 3734 px), Median der besonnten Balkone, 16 Prozent des Bildes"
+ },
+ {
+  "name": "Lärche tief",
+  "hex": "#9A4F2B",
+  "rolle": "betonung-hell",
+  "belegt": "Foto, abgeleitet",
+  "fundstelle": "Lärche, dunkler gezogen, damit sie auf Papier als Schrift lesbar ist (Kontrast über 4,5 zu 1)"
+ },
+ {
+  "name": "Fassade",
+  "hex": "#E7E1DC",
+  "rolle": "flaeche-creme",
+  "belegt": "Foto",
+  "fundstelle": "myswitzerland-00072098, die weisse Wand im Sonnenlicht, Median"
+ },
+ {
+  "name": "Papier",
+  "hex": "#F5F2EE",
+  "rolle": "flaeche-hell",
+  "belegt": "Foto, abgeleitet",
+  "fundstelle": "Fassade, aufgehellt: die Grundfläche, auf der gelesen wird"
+ },
+ {
+  "name": "Wandschatten",
+  "hex": "#D6CCC1",
+  "rolle": "kante",
+  "belegt": "Foto, abgeleitet",
+  "fundstelle": "Fassade im Schatten unter den Balkonen: Kanten, Unterseite der Knöpfe"
+ },
+ {
+  "name": "Himmel",
+  "hex": "#5381BD",
+  "rolle": "nur-im-bild",
+  "belegt": "Foto",
+  "fundstelle": "myswitzerland-00072098, Himmel über dem Dach, 78 Prozent des oberen Streifens. Bleibt im Bild"
+ },
+ {
+  "name": "Schnee",
+  "hex": "#E2E2E2",
+  "rolle": "nur-im-bild",
+  "belegt": "Foto",
+  "fundstelle": "myswitzerland-00072097 (Haus im Winter), Schnee vor dem Haus. Bleibt im Bild"
+ },
+ {
+  "name": "Stubenholz",
+  "hex": "#9A6521",
+  "rolle": "holz",
+  "belegt": "Foto",
+  "fundstelle": "restau_restaurant.jpg (Röstihüs), Median des Holzes, 23 Prozent"
+ },
+ {
+  "name": "Jute",
+  "hex": "#AF8343",
+  "rolle": "akzent-b",
+  "belegt": "Foto",
+  "fundstelle": "restau_3.jpg, die Kartoffelsäcke vor dem Röstihüs, Median, 35 Prozent"
+ },
+ {
+  "name": "Jute tief",
+  "hex": "#7E5A2B",
+  "rolle": "betonung-hell-b",
+  "belegt": "Foto, abgeleitet",
+  "fundstelle": "Jute, dunkler gezogen für Schrift auf Papier (Welt B)"
+ },
+ {
+  "name": "Butzenglas",
+  "hex": "#DBAF56",
+  "rolle": "gold-b",
+  "belegt": "Foto",
+  "fundstelle": "TripAdvisor «Raclettestübli» (vom Haus, 2017), Butzenscheiben im Licht, 22 Prozent"
+ }
+]

@@ -1,0 +1,92 @@
+{
+  "station": "04",
+  "name": "Potentialanalyse",
+  "rolle": "Analyst",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "zustand": "bestätigt",
+  "beginn": "2026-10-17T17:02+07:00",
+  "ende": "2026-10-17T23:17+07:00",
+  "verbrauch": {
+    "budget_vorher": 88.0,
+    "budget_nachher": 93.0,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Welche Strasse gilt (Talstrasse 129 im Routenplaner oder Furusandstrasse 12 bei Google) bleibt offen und steht so auf der Seite",
+      "wo": "Fuss der Seite, «Anfahrt berechnen», Google Maps, 17.10.2026"
+    },
+    {
+      "punkt": "Eigentum (Resort Monte Moro AG, VR Oliver Wachs) bewusst nicht auf der Analyse: Gastgeber wie im Impressum",
+      "wo": "02-spaeher/befund.md; Zefix CHE-167.073.174"
+    },
+    {
+      "punkt": "Buchungsfenster (seekda) nicht bis zur Buchung durchgeklickt: ob dort Storno- und Zahlungsbedingungen stehen, ungeprüft",
+      "wo": "https://www.monte-moro.ch/de/buchen.html"
+    },
+    {
+      "punkt": "Vertrag des Hauses mit zerone (Preis, Umfang, Laufzeit) unbekannt, als Frage fürs Gespräch auf der Seite",
+      "wo": "potential/index.html#agentur; AGB zerone Stand August 2018"
+    },
+    {
+      "punkt": "14 Gault-Millau-Punkte für Markus Ries (Partnerhotel) und TripAdvisor-Note (Stand 09.10.) nicht an der Quelle geprüft",
+      "wo": "monte-moro.ch/de/restaurant.html; fakten.json › noten"
+    },
+    {
+      "punkt": "Zwei Region-Fotos ohne Herkunftsangabe im Einsatz (winter_1 im Schluss, stando_Saas_Almagell im Register)",
+      "wo": "_quelle/website/bilder/; 02-spaeher stand.json"
+    },
+    {
+      "punkt": "Nur im WebKit-Kern und Chromium geprüft (1440 und 390), echtes Safari auf iPhone nicht",
+      "wo": "_qa/bericht-*.json"
+    },
+    {
+      "punkt": "Punkt 11: die Leiste des Browsers im Laptop ist nachgezeichnet, Titel und Adresse darin sind echt (Master 1b Nr. 2)",
+      "wo": "_bau/geraet.py › laptop(tab=…); potential/geraete/d8.1t.webp"
+    },
+    {
+      "punkt": "Die Beispiele je Punkt sind ausgedachte Fälle, als «Ein Beispiel» gekennzeichnet und im Fuss erklärt",
+      "wo": "_bau/inhalt.py › fall"
+    },
+    {
+      "punkt": "Karten-Ausschnitte (Röstis, Hotelwein, Tschug Tschug) am Handy 12 bis 15 px, weil die Zeilen der Karte breit sind; der Wortlaut steht daneben als Text in Lesegrösse",
+      "wo": "_qa/lesbar.js; inhalt.py › wortlaut"
+    },
+    {
+      "punkt": "Am Handy (390) sind breite Vergrösserungen 12 bis 15 px gross, weil die Zeilen wie im Gerät brechen sollen (Robert 17.10.); am Rechner 18 bis 21 px",
+      "wo": "_kette/04-analyst/_qa/lesbar.js; potential/_werkbank/haus.py (.mm-z--breit)"
+    },
+    {
+      "punkt": "Farbwelt und Titelschrift jetzt aus Markenbuch 05 (Welt A, Fjalla One); die Farben der Analyse sind nicht neu abgestimmt",
+      "wo": "potential/_werkbank/haus.py FARBEN; 05-markenbauer/marke.json"
+    }
+  ],
+  "paket": [
+    "potential/",
+    "potential.json"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/_kette/04-analyst/potential/",
+  "briefing": "briefing.html",
+  "notiz": "Fassung 4: Handys gerade mit leisem Schatten dahinter; jede Vergrösserung aus derselben Ansicht wie das Gerät, Zeilen brechen gleich; Punkt 08 zeigt die Wellness-Seite im Handy; 1440 und 390 in Chromium und WebKit geprüft. Nachtrag 17.10. 23:17 (Markenbauer-Chat, nur Fehler): Lupen mit weissem Rand, nichts stösst mehr an den Rahmen; Punkt 09 am Handy so breit wie das Bild; Punkt 03 ohne Fotostreifen über «Doppelzimmer». Unterschrift wie im Rivage-Brief: Porträt füllt den Kreis, handschriftliche Unterschrift rechtsbündig (Robert über den Oberchef, 23:20). Titel in Fjalla One wie das Markenbuch (Robert: «ja»); keine Einkerbung mehr im Titelbild.",
+  "bestaetigt": {
+    "zeit": "2026-10-17T23:41+07:00",
+    "wort": "Robert 18.10.2026 ~00:45 über den Oberchef: «Ich bestätige sie alle bei dir.»"
+  },
+  "rueckgaben": [
+    {
+      "zeit": "2026-10-17T17:40+07:00",
+      "satz": "Robert 17.10.2026: für Laien schreiben, Schlimmstes und Offensichtlichstes zuerst, jeder Punkt mit Alltagsfall; zu unübersichtlich; Handys und Rechner als freigestellte Blender-Renders; jede Analyse eigener Stil und Aufbau (Master 1b, 11 bis 14).",
+      "allgemein": false
+    },
+    {
+      "zeit": "2026-10-17T18:08+07:00",
+      "satz": "Robert 17.10.2026: Beweisführung zu dünn, Aufnahme schwebt; jeder Beweis in vier Schritten Wo, Was genau, Warum, Was es bewirkt, im Blender-Gerät, Anordnung wechselnd (Master 1b Punkt 15).",
+      "allgemein": false
+    },
+    {
+      "zeit": "2026-10-17T19:32+07:00",
+      "satz": "Robert 17.10.2026: Geräte sehen nicht nach 3D-Blender aus, teils zu klein, Schatten erscheinen verzögert; Lupe mit Linie zur Stelle; edler (Master 1b Punkt 16).",
+      "allgemein": false
+    }
+  ]
+}

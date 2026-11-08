@@ -1,0 +1,25 @@
+{
+  "station": "11",
+  "name": "La Réception / Der Gastgeber",
+  "rolle": "Werkbank-Bauer + Werkzeug-Anpasser ×7",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "gaeste",
+  "zustand": "wartet",
+  "beginn": null,
+  "ende": null,
+  "verbrauch": {
+    "budget_vorher": null,
+    "budget_nachher": null,
+    "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+    "werkzeuge/<schlüssel>/STAND.md",
+    "../../werkbank/"
+  ],
+  "adresse": null,
+  "briefing": "briefing.html?teil=gaeste",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": []
+}

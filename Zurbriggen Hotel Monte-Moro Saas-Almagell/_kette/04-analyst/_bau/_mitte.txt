@@ -1,0 +1,234 @@
+# ---------------------------------------------------------------- Fassung 2 (Robert 17.10.2026): hell, für Laien, zwölf Punkte, Blender-Geräte
+# Aufbau eigen für dieses Haus (Master 1b Nr. 14): kein Pult, keine Blätter. Auftakt hell mit gerahmtem Hausfoto, Gruss mit den zwölf Punkten,
+# dann die Punkte untereinander mit einer mitlaufenden Liste am Rand, je Punkt ein Beispiel, ein Satz zur Seite, eine Idee und das Gerät.
+GER = json.load(open(os.path.join(H, 'geraete.json')))
+
+
+def kn(text, href, klasse='', neu=False):
+    return f'<a class="kn {klasse}" href="{href}"{" target=\"_blank\" rel=\"noopener\"" if neu else ""}>{text}<i>{PF}</i></a>'
+
+
+def hz(kl=''):
+    return f'<svg class="{kl}" viewBox="{HAUS.ZEICHEN[0]}" fill="currentColor" aria-hidden="true"><use href="#hz"/></svg>'
+
+
+def inline(t):
+    return t if '<code>' in t else e(t, quote=False)
+
+
+def kopf_mitte(wort, zeilen, lauf=None):
+    l = f'<div class="lauf" data-a="auf">{lauf}</div>' if lauf else ''
+    return f'<div class="kopfzeile kopfzeile--mitte"><p class="kap kap--z" data-a="auf">{hz("kap__z")}<span>{e(wort)}</span></p>{K.titel(zeilen)}{l}</div>'
+
+
+def geraet(gid, satz, i=0):
+    g = GER[gid]
+    src = f'geraete/{gid}.webp?v={V}'
+    knopf = kn('Auf Ihrer Seite ansehen', e(g['url']), 'kn--klein kn--linie', neu=True) if g.get('url') else ''
+    return (f'<figure class="mm-g mm-g--{g["typ"]}" data-a="feder" style="--i:{i}"><img src="{src}" width="{g["w"]}" height="{g["h"]}" alt="{e(satz)}" loading="lazy" decoding="async">'
+            f'<figcaption><span>{e(satz)}</span>{knopf}</figcaption></figure>')
+
+
+def punkt(p, j):
+    gs = p['geraete']
+    typen = ''.join(GER[g]['typ'][0] for g, _ in gs)
+    figs = ''.join(geraet(g, s, i) for i, (g, s) in enumerate(gs))
+    links = ''.join(kn(e(t), e(u), 'kn--klein kn--linie', neu=True) for t, u in p['nachsehen'])
+    genau = ''.join(f'<p>{inline(a)}</p>' for a in p['genau'])
+    return f'''<article class="mm-p{' mm-p--l' if j % 2 else ''}" id="p{p['nr']}">
+  <header class="mm-p__kopf" data-a="auf"><span class="mm-p__nr">{p['nr']}</span><h2>{e(p['titel'])}</h2></header>
+  <div class="mm-p__k">
+    <div class="mm-p__t" data-a="auf">
+      <p class="mm-l">Ein Beispiel</p><p class="mm-fall">{e(p['fall'])}</p>
+      <p class="mm-l">Auf Ihrer Seite</p><p>{e(p['heute'])}</p>
+      <div class="mm-tun"><p class="mm-l"><i>{HAKEN}</i>Was wir tun würden</p><p>{e(p['tun'])}</p></div>
+      <details class="mm-genau"><summary>Genauer nachlesen<i aria-hidden="true"></i></summary><div>{genau}<div class="mm-genau__l">{links}</div></div></details>
+    </div>
+    <div class="mm-p__g mm-p__g--{typen}">{figs}</div>
+  </div>
+</article>'''
+
+
+def agentur():
+    agb = [('Ein Vertrag läuft ein Kalenderjahr und verlängert sich von selbst um ein weiteres.', '3c, 4a'),
+           ('Kündigen kann man bis zum 15. November, auf Ende Jahr.', '4c'),
+           ('Nach Vertragsende löscht zerone alle Daten. Für eine Sicherung muss das Haus selbst sorgen.', '4f'),
+           ('Die Adresse monte-moro.ch läuft auf den Namen, den das Haus angibt.', '5e'),
+           ('Die Preise sind nicht veröffentlicht, bezahlt wird jährlich im Voraus.', '2a, 2c')]
+    agb_html = ''.join(f'<li>{e(t)}<small>Ziffer {z}</small></li>' for t, z in agb)
+    gehoert = ['Die Seite selbst, mit allen Dateien.', 'Die Adresse monte-moro.ch, auf Ihr Haus eingetragen.', 'Die Zugänge, bei Ihnen hinterlegt.',
+               'Das Buchungsfenster und die Tischreservation bleiben, wo sie sind.']
+    return f'''<section class="fl fl--papier blatt mm-ag" id="agentur">
+<div class="in">
+{kopf_mitte('Ihre Seite heute', ['Wer sie baut', 'und wem sie gehört.'], '<p>Ihre Seite hat zerone computer gmbh aus Brig-Glis gebaut und betreut sie seit mindestens 2014. Alles hier steht so in öffentlichen Quellen: auf Ihrer Seite, in den Bedingungen von zerone und im Handelsregister.</p>')}
+<div class="mm-ag__r">
+  <div class="mm-ag__b" data-a="auf">
+    <h3>Das Programm hinter Ihrer Seite</h3>
+    <p>Ihre Seite läuft auf Joomla 3, einem Baukasten für Websites. Für diese Fassung erscheinen seit Februar 2025 keine Sicherheits-Updates mehr. Für Ihre Gäste ändert sich dadurch heute nichts Sichtbares, die Seite steht aber auf einer Fassung, die nicht mehr gepflegt wird.</p>
+    <details class="mm-genau"><summary>Genauer nachlesen<i aria-hidden="true"></i></summary><div><p>Fassung 3.10.12 vom Juli 2023 (monte-moro.ch, abgerufen am {STAND}). Für Joomla 3 endete die Pflege im August 2023, die bezahlte Verlängerung am 17. Februar 2025 (joomshaper.com). Die Vorlage «zerone» ist am 4. April 2019 angelegt und nennt «Copyright (C) zerone computer gmbh», Lizenz «None».</p></div></details>
+  </div>
+  <div class="mm-ag__b" data-a="auf" style="--i:1">
+    <h3>Was die Bedingungen von zerone sagen</h3>
+    <ul class="mm-ag__l">{agb_html}</ul>
+    <p class="mm-q">Allgemeine Geschäftsbedingungen «Internet Services», Stand August 2018, zerone.ch/agb, abgerufen am {STAND}. Zur Gestaltung und zu den Texten der Seite selbst sagen sie nichts.</p>
+  </div>
+  <div class="mm-ag__g">{geraet('a.1p', 'Ziffer 4c: Kündigung bis 15. November')}{geraet('a.2p', 'Ziffer 4f: Daten werden gelöscht', 1)}</div>
+</div>
+<div class="mm-ag__u" data-a="auf">
+  <div><h3>Was bei uns Ihnen gehört</h3><ul class="mm-ag__h">{''.join(f'<li>{e(x)}</li>' for x in gehoert)}</ul></div>
+  <div class="mm-ag__offen"><h3>Offen fürs Gespräch</h3><p>Ihren Vertrag mit zerone kennen wir nicht. Was er kostet, was er umfasst und wann er endet, ist eine Frage an Sie, keine Annahme von uns.</p></div>
+</div>
+</div>
+</section>'''
+
+
+def seite():
+    P = I.PUNKTE
+    n = len(P)
+    liste = ''.join(f'<a class="mm-reg__z" href="#p{p["nr"]}"><span class="mm-reg__b">{bild(p["foto"], None, "64px")}</span><b>{p["nr"]}</b><span class="mm-reg__t">{e(p["titel"])}</span><i class="knauf">{PF}</i></a>' for p in P)
+    leiste = ''.join(f'<a href="#p{p["nr"]}" data-ziel="p{p["nr"]}"><b>{p["nr"]}</b><span>{e(p["kurz"])}</span></a>' for p in P)
+    punkte = ''.join(punkt(p, j) for j, p in enumerate(P))
+    weitere = ''.join(f'<li><span>{e(t)}</span><a href="{e(u)}" target="_blank" rel="noopener">ansehen{PF}</a></li>' for t, u in I.WEITERE)
+    gut = ''.join(f'<figure class="mm-gut__k" data-a="feder" style="--i:{i % 3}"><span class="mm-gut__b">{bild(k, None, "(max-width:700px) 92vw, 30vw")}</span><figcaption><b>{e(t)}</b><span>{e(s)}</span></figcaption></figure>' for i, (k, t, s) in enumerate(I.GUT))
+    luecken = ''.join(f'<li>{e(x)}</li>' for x in I.OFFEN_SEITE)
+    lauf = ''.join(f'<span>{e(w)}</span>{hz("lz__z")}' for w in I.LAUFWORTE)
+    nav = '<a href="#brief">Überblick</a><a href="#p01">Die zwölf Punkte</a><a href="#gut">Was gut ist</a><a href="#agentur">Ihre Seite heute</a>'
+    titelschrift = HAUS.SCHRIFT['titel'][1]
+    return f'''<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website Potentialanalyse · Hotel Monte-Moro, Saas-Almagell</title>
+<meta name="description" content="Was Gäste auf der heutigen Website des Hotel Monte-Moro erleben: zwölf Punkte in einfachen Worten, jeder mit einem Beispiel und der Stelle auf der Seite. Stand {STAND}.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#F7F5F0">
+<link rel="preload" href="werkbank/fonts/{titelschrift}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="werkbank/fonts/InstrumentSans-normal-400_600.woff2" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="werkbank/werkbank.css?v={K.v('werkbank.css')}">
+</head>
+<body class="haus-{HAUS.KURZ} mm">
+{K.sprite()}
+<div class="gang-linie" aria-hidden="true"></div>
+<header class="leiste"><div class="insel">
+  <a class="insel__m" href="#oben">{HZ}<span>Potentialanalyse</span></a>
+  <nav aria-label="Abschnitte">{nav}</nav>
+  <a class="glanz" href="{HEUTE}" target="_blank" rel="noopener">Zur Website{PF}</a>
+</div></header>
+
+<main id="oben">
+<section class="mm-auf" id="auftakt">
+  <div class="in mm-auf__in">
+    <div class="mm-auf__t">
+      <div class="mm-auf__z" data-a="auf">{hz("")}</div>
+      <p class="mm-auf__k" data-a="auf" style="--i:1">Website Potentialanalyse · Stand {STAND}</p>
+      <h1 data-a="auf" style="--i:2"><span>Hotel</span> <em>Monte-Moro</em></h1>
+      <p class="mm-auf__o" data-a="auf" style="--i:3">Saas-Almagell · Saastal · Wallis</p>
+      <p class="mm-auf__s" data-a="auf" style="--i:4">Ihre Website, gelesen wie von einem Gast, der zum ersten Mal ins Saastal kommt. Zwölf Punkte, die er bemerkt, in einfachen Worten und mit der Stelle auf Ihrer Seite.</p>
+      <div class="kn-reihe" data-a="auf" style="--i:5">{kn('Die zwölf Punkte', '#brief')}</div>
+    </div>
+    <figure class="mm-auf__f" data-a="feder" style="--i:2">{bild('hero', sizes='(max-width:999px) 92vw, 52vw', lazy=False, prio=True)}<figcaption class="kerbe">Saas-Almagell, im Sommer</figcaption></figure>
+  </div>
+</section>
+
+<section class="fl fl--papier mm-brief" id="brief">
+  <div class="in mm-brief__in">
+    <div class="mm-brief__l" data-a="auf">
+      <p class="kap kap--z kap--links">{hz("kap__z")}<span>Guten Tag nach Saas-Almagell</span></p>
+      <h2 class="mm-h2">Liebe Frau Zurbriggen, lieber Herr Zurbriggen</h2>
+      <div class="lauf"><p>Ihr Haus hat vieles, was Gäste suchen: Bergbahnen und Postautos inbegriffen, das Skigebiet zwei Minuten entfernt, ein Röstihüs mit eigener Handschrift und das Spa nebenan. Ich habe Ihre Website gelesen wie ein Gast und zwölf Stellen gefunden, an denen sie das nicht so zeigt, wie es ist.</p><p>Ganz oben steht, was ein Gast am schnellsten merkt. Jeder Punkt hat ein Beispiel, die Stelle auf Ihrer Seite und eine Idee, was man tun kann. Diese Seite ist eine Analyse, kein Entwurf.</p></div>
+      <div class="gastgeber"><span class="gastgeber__b"><img src="bilder/robert.jpg?v={V}" alt="Robert Reff" width="640" height="640" loading="lazy" decoding="async"></span><div class="gastgeber__n"><b>Robert Reff</b><span>Tasty Studios, Hamburg</span></div></div>
+    </div>
+    <div class="mm-reg" data-a="feder"><p class="mm-reg__k">Die zwölf Punkte, das Wichtigste zuerst</p>{liste}</div>
+  </div>
+</section>
+
+<div class="laufzeile" aria-label="Worte des Hauses: {e(', '.join(I.LAUFWORTE))}"><div class="lz__band" aria-hidden="true"><div class="lz__satz">{lauf}</div><div class="lz__satz">{lauf}</div></div></div>
+
+<section class="mm-punkte" id="punkte">
+  <div class="in mm-punkte__in">
+    <nav class="mm-rand" aria-label="Die zwölf Punkte"><p>Die zwölf Punkte</p>{leiste}</nav>
+    <div class="mm-punkte__k">{punkte}
+      <details class="mm-weitere" id="weitere"><summary><span>Was uns sonst aufgefallen ist</span><small>{len(I.WEITERE)} kleinere Punkte</small><i aria-hidden="true"></i></summary><ul>{weitere}</ul></details>
+    </div>
+  </div>
+</section>
+
+{fenster('fenster-sonne', 'balkon', ['Bei uns scheint', 'fast immer die Sonne.'], 'Restaurant Röstihüs · monte-moro.ch', FOTOS['balkon'][1])}
+
+<section class="fl fl--papier mm-gut" id="gut">
+  <div class="in">
+    {kopf_mitte('Was schon gut ist', ['Was Ihre Seite', 'heute richtig macht.'])}
+    <div class="mm-gut__r">{gut}</div>
+  </div>
+</section>
+
+{agentur()}
+
+<section class="schluss" id="schluss">
+  <img class="schluss__b ld" src="bilder/schluss-1200.webp?v={V}" alt="{e(FOTOS['dorf-nacht'][1])}" loading="lazy" decoding="async">
+  <div class="in">
+    {kopf_mitte('Zum Schluss', ['Das meiste', 'ist schon da.'])}
+    <div class="lauf" data-a="auf" style="--i:1"><p>Die Zimmerarten stehen im Buchungsfenster, die Röstis auf der Karte, die Familie im Fuss, die besten Fotos bei Schweiz Tourismus. Es muss nur an eine Stelle.</p></div>
+    <div class="platte schluss__offen" data-a="feder"><p class="pb__ko pb__ko--mitte"><i>{HAKEN}</i>Was offen bleibt</p><p class="schluss__os">Diese Punkte haben wir nicht prüfen oder belegen können. Sie stehen hier, damit nichts als sicher gilt, was es nicht ist.</p><ul class="luecken">{luecken}</ul></div>
+    <div class="gruss-u gruss-u--bild" data-a="auf" style="--i:2"><span class="gruss-u__b"><img src="bilder/robert.jpg?v={V}" alt="Robert Reff" width="640" height="640" loading="lazy" decoding="async"></span><b>Robert Reff</b><small>Tasty Studios, Hamburg</small></div>
+    <div class="kn-reihe" data-a="auf" style="--i:3">{kn('Zurück zum Anfang', '#oben')}</div>
+  </div>
+</section>
+</main>
+
+<footer class="fuss"><div class="in fuss__u">
+  <div><div class="siegel">{HZ}<b>Hotel Monte-Moro</b></div><b>Website Potentialanalyse</b><p>Stand {STAND}. Fotos, Zeichen und Texte des Hauses gehören {HAUS.RECHTE} Die Beispiele zeigen, wie ein Gast eine Stelle erlebt, sie beschreiben keine echte Begebenheit. Studie von Tasty Studios, nicht die offizielle Website des Hauses.</p></div>
+  <div class="r mono"><span>robert@tasty-studios.de</span><span>Robert Reff · Tasty Studios · Hamburg</span></div>
+</div></footer>
+<script src="werkbank/werkbank.js?v={K.v('werkbank.js')}"></script>
+<script src="mm.js?v={V}"></script>
+</body>
+</html>
+'''
+
+
+MMJS = r'''/* Potentialanalyse Hotel Monte-Moro, Fassung 2: mitlaufende Liste am Rand (nur Klassen), Sicherung für Auftritte. Nativer Scroll. */
+(function () {
+  'use strict';
+  var d = document, $$ = function (s) { return [].slice.call(d.querySelectorAll(s)); };
+  var links = $$('.mm-rand a'), arts = $$('.mm-p');
+  if ('IntersectionObserver' in window && links.length) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) links.forEach(function (a) { a.classList.toggle('an', a.dataset.ziel === e.target.id); }); });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    arts.forEach(function (a) { io.observe(a); });
+  }
+  function sicher() {
+    var h = innerHeight * 1.05;
+    $$('[data-a]:not(.da),.zt:not(.da),.wfen:not(.da)').forEach(function (el) { if (el.closest('details:not([open])')) return; if (el.getBoundingClientRect().top < h) el.classList.add('da'); });
+  }
+  var t = 0; addEventListener('scroll', function () { clearTimeout(t); t = setTimeout(sicher, 260); }, { passive: true });
+  addEventListener('load', function () { setTimeout(sicher, 1500); }); setTimeout(sicher, 3500);
+  $$('.laufzeile').forEach(function (l) { if (!('IntersectionObserver' in window)) return; new IntersectionObserver(function (es) { l.classList.toggle('steht', !es[0].isIntersecting); }).observe(l); });
+  $$('.wfen').forEach(function (f) {
+    if (!('IntersectionObserver' in window)) { f.classList.add('da'); return; }
+    f.classList.add('weg');
+    new IntersectionObserver(function (es) { f.classList.toggle('weg', !es[0].isIntersecting); }).observe(f);
+    new IntersectionObserver(function (es, o) { if (es[0].isIntersecting) { o.disconnect(); f.classList.add('da'); } }, { threshold: 0.35 }).observe(f);
+  });
+})();
+'''
+
+
+def main():
+    fotos_bauen()
+    tapeten()
+    K.gestaltung()
+    shutil.copy2(os.path.join(ROOT, 'bilder', 'tapete-hell.webp'), os.path.join(ROOT, 'werkbank', 'tapete-hell.webp'))
+    open(os.path.join(ROOT, 'mm.js'), 'w', encoding='utf-8').write(MMJS)
+    fehlt = [g for p in I.PUNKTE for g, _ in p['geraete'] if g not in GER]
+    print('Geräte ohne Bild:', fehlt or 'keine')
+    t = seite()
+    open(os.path.join(ROOT, 'index.html'), 'w', encoding='utf-8').write(t)
+    print('index.html', len(I.PUNKTE), 'Punkte', len(t) // 1024, 'KB')
+
+
+if __name__ == '__main__':
+    main()

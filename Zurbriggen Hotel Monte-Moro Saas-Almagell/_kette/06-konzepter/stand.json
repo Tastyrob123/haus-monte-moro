@@ -1,0 +1,92 @@
+{
+  "station": "06",
+  "name": "Konzept-Board",
+  "rolle": "Konzepter",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "zustand": "bestätigt",
+  "beginn": "2026-10-17T23:45+07:00",
+  "ende": "2026-10-18T00:49+07:00",
+  "verbrauch": {
+    "budget_vorher": null,
+    "budget_nachher": null,
+    "guthaben": []
+  },
+  "offen": [
+    {
+      "punkt": "Öffnungszeiten und Ruhetage des Röstihüs stehen nirgends",
+      "wo": "Station 03 › offen; alle 49 Seiten, Schweiz Tourismus, Google"
+    },
+    {
+      "punkt": "Preise und Grössen der Ferienwohnungen Apollo und Arizona fehlen",
+      "wo": "de/ferienwohnungen/apollo.html, arizona.html, Preisliste"
+    },
+    {
+      "punkt": "Saisonzeiten der Preise und Saison der Pauschale «Top Winterzauber» fehlen",
+      "wo": "de/hotel/preise.html, de/hotel/aktuelles.html"
+    },
+    {
+      "punkt": "Zimmergrössen ausser Doppelzimmer (18 m², Buchungsfenster) nicht belegt",
+      "wo": "de/hotel/zimmer.html, seekda"
+    },
+    {
+      "punkt": "Metro Alpin inbegriffen oder nicht: zwei Angaben",
+      "wo": "Preisliste «ohne Metro Alpin» gegen Schweiz Tourismus «auch»"
+    },
+    {
+      "punkt": "Strasse des Hauses: Talstrasse 129, Furusandstrasse 12 oder 10",
+      "wo": "fakten.json › adresse; auf der Seite nur «CH-3905 Saas-Almagell»"
+    },
+    {
+      "punkt": "Herkunft der Region-Fotos (sommer_*, winter_*, ausflu_*) unbekannt: liegen auf der Seite des Hauses, Fotograf nicht genannt",
+      "wo": "_quelle/website/herkunft.json"
+    },
+    {
+      "punkt": "Gästesätze für die Szene «Was Gäste schätzen»: keine Bewertungstexte im Material",
+      "wo": "Booking, Google, TripAdvisor nicht als Text abgelesen"
+    },
+    {
+      "punkt": "Fotos der anderen Familienhäuser für den Fuss: aus deren Paketen zu übernehmen (Wellness, Loft-Suite, Zermatt laufen eigene Stationen; Chalet Rustica nicht in der Kette)",
+      "wo": "../Familie Zurbriggen/_quelle/"
+    },
+    {
+      "punkt": "AGB, Widerruf und Stornobedingungen nicht vorhanden",
+      "wo": "alle Seiten DE/EN/FR; seekda nicht bis zur Buchung durchgeklickt"
+    },
+    {
+      "punkt": "Fotos vom Kidsclub (Erweiterung): keine im Material",
+      "wo": "_quelle/website/bilder, booking, tripadvisor"
+    },
+    {
+      "punkt": "Zugang zu seekda für den Zimmer-Finder mit Live-Preis (Erweiterung)",
+      "wo": "Buchungsfenster de/buchen.html"
+    },
+    {
+      "punkt": "Wohin Anfragen aus der Rezeption im Chat gehen (Erweiterung)",
+      "wo": "vom Haus zu klären"
+    },
+    {
+      "punkt": "Ja von Fabian, dass «Wallis Baby» auf der Seite läuft (Erweiterung)",
+      "wo": "_quelle/video/familie/youtube_gbSFcYqELPA_Wallis Baby.mp4"
+    },
+    {
+      "punkt": "Ob die Gratis-Anreise mit dem Zug 2027 weiterläuft (Erweiterung)",
+      "wo": "de.md: Zeitraum 1. Mai bis 31. Oktober 2026"
+    },
+    {
+      "punkt": "Neue Familienseite zurbriggen.ch: eigener Auftrag, Ja der Familie zur Umstellung offen",
+      "wo": "Familie Zurbriggen/erweiterungen/index.html"
+    }
+  ],
+  "paket": [
+    "konzept.html",
+    "konzept.json"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/_kette/06-konzepter/konzept.html",
+  "briefing": "briefing.html",
+  "notiz": "Fassung 2 mit Roberts Erweiterungen («yes hinzufügen alles»): 16 Szenen (neu Kidsclub, Gut zu wissen, Haus-Finder der Familie), Zimmer-Finder mit Live-Preis, Ferienwohnungen im Vergleich, Tisch im Röstihüs im Hausstil, Zug-Anreise mit Ticket, Fabians Wein mit «Wallis Baby» (nur mit seinem Ja), Rezeption im Chat, jede Sprache ganz, Verweis auf zurbriggen.ch; was vom Haus fehlt, steht offen. Chromium und WebKit, 1440 und 390 ohne Fehler.",
+  "bestaetigt": {
+    "zeit": "2026-10-18T01:07+07:00",
+    "wort": "Robert 18.10.2026 im Kette-Chat: «Kannst du bitte erstmal mit den anderen drei weitermachen?»"
+  },
+  "rueckgaben": []
+}

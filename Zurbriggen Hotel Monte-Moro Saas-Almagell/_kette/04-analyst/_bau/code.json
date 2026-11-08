@@ -1,0 +1,32 @@
+{
+ "1.2c": {
+  "titel": "Kopf jeder Seite · Abruf 17.10.2026",
+  "zeilen": "<div class=\"z n\">&lt;meta name=\"viewport\" content=\"width=device-width,initial-scale=0.8\" /&gt;</div><div class=\"z g\"><b>initial-scale=0.8</b> · die Seite öffnet sich auf 80 Prozent</div><div class=\"z\">Üblich: initial-scale=1</div>",
+  "fuss": "Gleich auf Startseite, Zimmer, Preise und Restaurant, in Deutsch, Englisch und Französisch."
+ },
+ "1.3c": {
+  "titel": "Der Knopf «Ablehnen» · Abruf 17.10.2026",
+  "zeilen": "<div class=\"z\">&lt;a id=\"cookiehintsubmitno\" onclick=\"return cookiehintsubmitnoc(this);\" … class=\"btn\"&gt;Ablehnen&lt;/a&gt;</div><div class=\"z\">function cookiehintsubmitnoc(obj) {</div><div class=\"z n\">confirm(\"Eine Ablehnung wird die Funktionen der Website beeinträchtigen. Möchten Sie wirklich ablehnen?\")</div><div class=\"z g\">«Akzeptieren»: ohne Rückfrage</div>",
+  "fuss": "Erweiterung redim cookiehint für Joomla, auf jeder Seite."
+ },
+ "8.1c": {
+  "titel": "Kopf der Startseite · Abruf 17.10.2026",
+  "zeilen": "<div class=\"z n\">&lt;title&gt;Aktuelles | Hotel Monte Moro Saas-Almagell&lt;/title&gt;</div><div class=\"z\">&lt;meta name=\"description\" content=\"Hotel Monte Moro | Restaurant Röstihüs| CH-3905 Saas-Almagell/Saastal | Tel. +41 27 957 10 12 | Tisch reservieren unter +41 27 957 23 01 | info@monte-moro.ch | Partnerhotel Pirmin Zurbriggen\" /&gt;</div><div class=\"z g\">Seite «Aktuelles»:</div><div class=\"z n\">&lt;title&gt;Akuelles im Hotel Monte Moro Saas-Almagell&lt;/title&gt;</div>",
+  "fuss": "Titel und Beschreibung zeigt Google meist als Treffer an."
+ },
+ "8.2c": {
+  "titel": "Knopf «Anfahrt berechnen» · Abruf 17.10.2026",
+  "zeilen": "<div class=\"z\">https://www.google.ch/maps/dir//Hotel+Monte+Moro,+Talstrasse+129 …</div><div class=\"z n\">Ziel: <b>Hotel Monte Moro, Talstrasse 129, 3905 Saas-Almagell</b></div><div class=\"z g\">Fuss der Seite: CH-3905 Saas-Almagell (ohne Strasse)</div><div class=\"z g\">Google Maps, Eintrag des Hauses: Furusandstrasse 12</div>",
+  "fuss": "Google Maps abgelesen am 17.10.2026."
+ },
+ "8.3c": {
+  "titel": "Kopf der Startseite · Abruf 17.10.2026",
+  "zeilen": "<div class=\"z\">&lt;meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" /&gt;</div><div class=\"z\">&lt;meta name=\"keywords\" content=\"Cordon Bleu, Beautysalon, Esther, Fabian, Ferienziel, Fest, Fitnesstower, Gastronomen, Ha …</div><div class=\"z\">&lt;meta name=\"description\" content=\"Hotel Monte Moro | Restaurant Röstihüs| CH-3905 Saas-Almagell/Saastal | Tel. +41 27 95 …</div><div class=\"z\">&lt;meta name=\"generator\" content=\"Joomla! - Open Source Content Management\" /&gt;</div><div class=\"z\">&lt;title&gt;Aktuelles | Hotel Monte Moro Saas-Almagell&lt;/title&gt;</div><div class=\"z\">&lt;meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"&gt;</div><div class=\"z\">&lt;meta name=\"viewport\" content=\"width=device-width,initial-scale=0.8\" /&gt;</div><div class=\"z\">&lt;meta name=\"format-detection\" content=\"telephone=no\" /&gt;</div><div class=\"z n\">application/ld+json · <b>0</b> Treffer</div><div class=\"z n\">og:image · <b>0</b> Treffer</div>",
+  "fuss": "Keine Angaben nach schema.org: Name, Adresse, Sterne, Telefon, Restaurant."
+ },
+ "z.1c": {
+  "titel": "Was die Seite über sich sagt · Abruf 17.10.2026",
+  "zeilen": "<div class=\"z g\">templates/zerone/templateDetails.xml</div><div class=\"z\">&lt;creationDate&gt;04.04.2019&lt;/creationDate&gt;</div><div class=\"z\">&lt;author&gt;zerone&lt;/author&gt; · info@zerone.ch</div><div class=\"z n\">&lt;copyright&gt;Copyright (C) zerone computer gmbh&lt;/copyright&gt;</div><div class=\"z n\">&lt;license&gt;None&lt;/license&gt;</div><div class=\"z g\">Joomla, Fassung</div><div class=\"z n\">&lt;version&gt;<b>3.10.12</b>&lt;/version&gt; · vom Juli 2023</div>",
+  "fuss": "Joomla 3: Ende der Pflege im August 2023, bezahlte Verlängerung bis 17.02.2025, seither keine Sicherheits-Updates (joomshaper.com, abgerufen 17.10.2026)."
+ }
+}

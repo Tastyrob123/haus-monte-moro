@@ -1,0 +1,422 @@
+[
+ {
+  "station": "07",
+  "name": "Plakat 01 · Saas-Almagell",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "auftakt",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T02:15+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#auftakt",
+  "briefing": "briefing.html?teil=auftakt",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Ortsplakat: SAAS-ALMAGELL über die ganze Breite, das Haus in seiner Jahreszeit als Motiv, Satz in Lärche, Preisschild, Buchung als gedruckte Felder mit Kalender im Hausstil",
+  "messwert": "Startseite «Das Plakat» 4× gedrosselt 115 Bilder/s, p95 9,3 ms (1440); 6× gedrosselt 120 Bilder/s, p95 9,2 ms (390); 2,0 MB geladen"
+ },
+ {
+  "station": "07",
+  "name": "Plakat 02 · Alles schon dabei",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "inbegriffen",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T02:15+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#inbegriffen",
+  "briefing": "briefing.html?teil=inbegriffen",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Wortsäule auf Bergnacht: sechs Leistungen in grosser Schrift mit Stempel «inklusive», runder Stempel «Geschenkt» für die Gratis-Anreise (läuft am 31.10.2026 von selbst ab)",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Plakat 03 · Zwei Minuten bis zum Lift",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "lage",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T02:15+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#lage",
+  "briefing": "briefing.html?teil=lage",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Riesige 2 in Lärche, das Dorf im Winter als Motiv, die drei Wege als Fahrplanzeile",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Plakat 04 · Bei uns scheint fast immer die Sonne",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "sonne",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T02:15+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#sonne",
+  "briefing": "briefing.html?teil=sonne",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Nachtfeld mit dem Satz des Hauses, Balkonbild hoch",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Plakat 05 · Schöne Hotelzimmer - schöne Ferien",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "zimmer",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T02:15+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#zimmer",
+  "briefing": "briefing.html?teil=zimmer",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Preisaushang: Zeile antippen, Bild und Text wechseln im selben Rahmen; Ferienwohnungen nebeneinander",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Plakat 06 · Kidsclub 16:30 – 21:00",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "kinder",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T02:15+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#kinder",
+  "briefing": "briefing.html?teil=kinder",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Lärche als ganze Fläche, die Uhrzeit riesig, Kinderpreise als Preisschild",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Plakat 07 · Bergbahnen inklusive",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "bergbahnen",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T02:15+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#bergbahnen",
+  "briefing": "briefing.html?teil=bergbahnen",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Vollbild der Gondeln vor dem Röstihüs, Schrift auf dem Lärche-Streifen",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Plakat 08 · Es lebe die Tradition!",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "roestihues",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T02:15+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#roestihues",
+  "briefing": "briefing.html?teil=roestihues",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Elf Röstis als Namenszeilen mit Preis, Cordon bleus aufklappbar, Tisch-Anfrage als E-Mail-Entwurf, zwei Bilder versetzt",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Plakat 09 · Wein von Fabian",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "stuebli",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T02:15+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#stuebli",
+  "briefing": "briefing.html?teil=stuebli",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Flaschenetikett mit doppelter Rahmenlinie, die zwei Hotelweine wörtlich, Raclette und Apéro",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Plakat 10 · Das Spa nebenan",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "spa",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T02:15+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#spa",
+  "briefing": "briefing.html?teil=spa",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Text links, Ruheraum hoch, Preise als Schild über der Kante",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Plakat 11 · Die Plakatwand im Saastal",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "saastal",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T02:15+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#saastal",
+  "briefing": "briefing.html?teil=saastal",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Kleine Plakate verschiedener Formate angeschlagen, Sommer oder Winter umschaltbar (voreingestellt nach Jahreszeit)",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Plakat 12 · 4,5",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "gaeste",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T02:15+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#gaeste",
+  "briefing": "briefing.html?teil=gaeste",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Riesige Note, die Portale als Zeilen mit Stand, Speisesaal als Streifen",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Plakat 13 · Gut zu wissen, bevor Sie buchen",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "gut-zu-wissen",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T02:15+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#gut-zu-wissen",
+  "briefing": "briefing.html?teil=gut-zu-wissen",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Schaukasten-Aushang: Zuschläge und Kinderpreise in zwei Tafeln",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Plakat 14 · Welches Haus passt zu Ihnen?",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "haus-finder",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T02:15+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#haus-finder",
+  "briefing": "briefing.html?teil=haus-finder",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Drei Fragen als grosse Wörter zum Antippen, die Antwort als kleines Plakat des passenden Hauses der Familie",
+  "messwert": ""
+ },
+ {
+  "station": "07",
+  "name": "Fahrplan statt Fuss",
+  "rolle": "Baumeister",
+  "haus": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
+  "teil": "fahrplan",
+  "zustand": "liegt vor",
+  "beginn": null,
+  "ende": "2026-10-18T02:15+07:00",
+  "verbrauch": {
+   "budget_vorher": null,
+   "budget_nachher": null,
+   "guthaben": []
+  },
+  "offen": [],
+  "paket": [
+   "abschnitte.json",
+   "../../website/"
+  ],
+  "adresse": "http://127.0.0.1:8978/haus/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/index.html#fahrplan",
+  "briefing": "briefing.html?teil=fahrplan",
+  "notiz": "",
+  "bestaetigt": null,
+  "rueckgaben": [],
+  "seite": "index.html",
+  "baustein": "Anreise als Zeilen wie an der Postautohaltestelle, zweite Buchung, die Häuser der Familie als Abfahrten, Kontakt",
+  "messwert": ""
+ }
+]

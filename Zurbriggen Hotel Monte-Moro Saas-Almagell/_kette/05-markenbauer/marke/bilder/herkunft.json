@@ -1,0 +1,72 @@
+{
+ "fassade-sommer": {
+  "quelle": "_quelle/extern/myswitzerland/myswitzerland-00072098_m.jpg",
+  "original": "3734x2447",
+  "hier": "1800x1180"
+ },
+ "fassade-winter": {
+  "quelle": "_quelle/extern/myswitzerland/myswitzerland-00072097_m.jpg",
+  "original": "1200x900",
+  "hier": "1200x900"
+ },
+ "gondel": {
+  "quelle": "_quelle/extern/booking/booking-609882092.jpg",
+  "original": "1440x1080",
+  "hier": "1440x1080"
+ },
+ "roestihues": {
+  "quelle": "_quelle/website/bilder/restau_3.jpg",
+  "original": "1200x500",
+  "hier": "1200x500"
+ },
+ "stube": {
+  "quelle": "_quelle/website/bilder/restau_restaurant.jpg",
+  "original": "1024x678",
+  "hier": "1024x678"
+ },
+ "reception": {
+  "quelle": "_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2017-11-29-291892278-reception.jpg",
+  "original": "2000x1333",
+  "hier": "1800x1200"
+ },
+ "zimmer": {
+  "quelle": "_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2017-11-29-291892318-doppelzimmer.jpg",
+  "original": "2000x1333",
+  "hier": "1800x1200"
+ },
+ "fruehstueck": {
+  "quelle": "_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2018-02-17-303351039-fruhstucksbuffet.jpg",
+  "original": "1600x1200",
+  "hier": "1600x1200"
+ },
+ "balkon": {
+  "quelle": "_quelle/website/bilder/aktuel_hotel-monte-moro-saas-almagell-balkon.jpg",
+  "original": "1280x1280",
+  "hier": "1280x1280"
+ },
+ "stube-bar": {
+  "quelle": "_quelle/website/bilder/restau_5.jpg",
+  "original": "1200x500",
+  "hier": "1200x500"
+ },
+ "zimmer-dach": {
+  "quelle": "_quelle/extern/booking/booking-28633464.jpg",
+  "original": "1440x1080",
+  "hier": "1440x1080"
+ },
+ "haus-winter-tag": {
+  "quelle": "_quelle/extern/booking/booking-609882154.jpg",
+  "original": "1200x900",
+  "hier": "1200x900"
+ },
+ "stube-weit": {
+  "quelle": "_quelle/website/bilder/restau_4.jpg",
+  "original": "1200x500",
+  "hier": "1200x500"
+ },
+ "raclettestuebli": {
+  "quelle": "_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2017-11-29-291892107-raclettestubli.jpg",
+  "original": "2000x1333",
+  "hier": "1800x1200"
+ }
+}
