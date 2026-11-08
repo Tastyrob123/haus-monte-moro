@@ -39,6 +39,12 @@ Stand: 08.11.2026, Oberchef-Sitzung (Zweig `claude/task-o0ores`).
 - 32 zufällige Zustandsbilder aller Werkzeuge mit dem Auge angesehen: ohne Befund.
 - Diese Sitzung legt nach Abschluss die Tafel in `ergebnis` an und meldet Robert. Folgesitzung: bitte nichts doppelt prüfen; Funde hier eintragen.
 
+## Folgesitzung (session_01QrxqqiMfjLjmUkccW3eNq2, 18:55 UTC)
+- Zwei Funde mit dem Auge, repariert und gepusht (vom Tor nicht gemeldet):
+  1. Schaufenster «Zeiten & Preise»: «ab CHF 90 .00» → «90.00» (`bureau/festigkeit.js › zahlwert`, nur Anzeige).
+  2. Hausdruckerei: Kopfbild der Bereichsköpfe (Alle Vorlagen, Arten) am Handy nur 60 % breit → ganze Breite (`imprimerie/haeuser/montemoro/hell.css` Z. 71).
+- Die Folgesitzung prüft Schaufenster und Hausdruckerei nach diesen Reparaturen frisch (tor-schnell, 4 Breiten) und trägt das Ergebnis hier ein; dazu der Messlauf über alle Ziele (`aus-ende/messlauf/alle/`), den die erste Sitzung nicht hat. Tafel `ergebnis` und Meldung an Robert macht die erste Sitzung.
+
 ## Nächster genauer Schritt
 Läuft `cloud/schluss.sh` nicht mehr und fehlt `aus-ende/ende.json`: neu starten. Danach Funde reparieren, Fundbilder ansehen, Tafeln nach Zweig `ergebnis` unter `ergebnis/laeufe/2026-11-08/`, Meldung.
 
