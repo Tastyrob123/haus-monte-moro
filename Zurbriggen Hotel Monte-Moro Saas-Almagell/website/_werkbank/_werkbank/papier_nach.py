@@ -49,7 +49,7 @@ def drucksachen(t):
     plan = json.load(open(os.path.join(W, 'papier_plan.json'), encoding='utf-8'))
     eigen = len(plan['druck'])
     alt = 'Papier, das im Monte-Moro auf dem Tisch, an der Rezeption, im Zimmer oder im Umschlag landen könnte.'
-    if k:
+    if k and eigen:
         neu = (f'{ZAHL.get(eigen, eigen).capitalize()} Ideen für Papier, dazu {ZAHL.get(k, k)} fertige Drucksachen aus ' + DRUCK + '. '
                'Papier, das im Monte-Moro auf dem Tisch, an der Rezeption, im Zimmer oder im Umschlag landen könnte.')
         t = t.replace(alt, neu)
@@ -111,5 +111,5 @@ if __name__ == '__main__':
     nach('untersetzer')
     nach('drucksachen', drucksachen)
     vorschau('untersetzer', 'u03.webp')
-    vorschau('drucksachen', 'karte.webp')
+    vorschau('drucksachen', 'karte.webp' if os.path.exists(os.path.join(HIER, 'drucksachen', 'img', 'karte.webp')) else 'pw-roestihues-best-of-roestis.webp')
     nachbau()

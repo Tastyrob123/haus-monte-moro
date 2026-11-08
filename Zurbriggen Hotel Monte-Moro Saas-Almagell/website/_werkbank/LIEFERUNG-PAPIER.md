@@ -12,7 +12,7 @@ Teil Papier, Feed, Mails, Material der Werkbank. Nur lokal gebaut, nichts versch
 | Seite | Adresse | Stücke |
 |---|---|---|
 | Unterlagen | http://127.0.0.1:9388/unterlagen/index.html | 2 Karten des Röstihüs (Kartenbrett) neben den Seiten der heutigen Speisekarte (S. 4–5, S. 8) |
-| Drucksachen | http://127.0.0.1:9388/drucksachen/index.html | 7 eigene (Karte am Tisch, Aushang «Inklusive» als Bon, Tischkarte Hotelwein, Aushang Racletteabend, Karte Kidsclub, Willkommensbrief im Zimmer, Briefbogen und Umschlag), 11 Seiten; dazu die Stücke der Hausdruckerei, sobald dort welche des Monte-Moro liegen |
+| Drucksachen | http://127.0.0.1:9388/drucksachen/index.html | 34 aus der Hausdruckerei (Bilder und PDF übernommen). Die 7 eigenen Fassungen (Karte am Tisch, Aushang «Inklusive», Tischkarte Hotelwein, Racletteabend, Kidsclub, Willkommensbrief, Briefpapier) fallen weg, weil die Hausdruckerei jedes Gegenstück hat (Oberchef 08.11.2026: keine Idee doppelt; `papier.py › GEGENSTUECK`) |
 | Untersetzer | http://127.0.0.1:9388/untersetzer/index.html | 12 Bierdeckel fürs Röstihüs, rund 94 mm, 2 Druckbögen A3 |
 | Sticker | http://127.0.0.1:9388/sticker/index.html | 24 Sticker fürs Hotel (Koffer, Skibox), rund/eckig/Kapsel/Grat, 2 Druckbögen A3 |
 | Postkarten | http://127.0.0.1:9388/postkarten/index.html | 12 Postkarten A6 quer (Haus aussen und Saastal), Druck-PDF mit Beschnitt, 2 Sammelbögen SRA3, Fächer, Ständer an der Rezeption |
@@ -50,7 +50,7 @@ Danach wie bisher der Kern-Bau (`bau.py`, `haus.nach_bau`).
 ## Bitte an den Kern (haus.py)
 
 - `mit_papier.py` lädt `haus.py` und legt `_werkbank/papier_haus.json` darüber (PAPIER_SEITE, ETIKETTEN, UNTERLAGEN, MATERIAL; Werkzeugnamen als `[[karten:im]]` aus `kleid/montemoro.js`). Damit die Werkbank-Startseite dieselben Texte zeigt, bitte entweder die Werte aus `papier_haus.json` in haus.py übernehmen oder am Ende von haus.py `import mit_papier; mit_papier.anwenden(sys.modules[__name__])` aufrufen. Solange haus.py nicht lädt (heute: Pfade und Bilder der Vorlage), baut `mit_papier.py` im Notlauf mit den Grundwerten des Hauses (`_falls_fremd`).
-- Zahlen für Kapitel «Für draussen»: 7 Drucksachen (+ Hausdruckerei), 12 Untersetzer, 24 Sticker, 12 Postkarten, 5 Beigaben, 30 Beiträge, 6 Mails. `PAPIER['orte_d']` → `karte`, `aushang`, `willkommen`; `orte_e` → `u01`–`u06`. Vorschaubilder: `<seite>/img/vorschau.webp`. Mails: `mails_reihe.py` (Texte im Sie, Kleid umgestellt), Feed-Bühne: `feed_buehne.py` (Polaroids 4, 6, 5, 11, 16, 20, 23, 8).
+- Zahlen für Kapitel «Für draussen» (aus `papier.json`, `papier_plan.json`, `papier_mehr.json`): 34 Drucksachen (alle aus der Hausdruckerei), 12 Untersetzer, 24 Sticker, 12 Postkarten, 5 Beigaben, 30 Beiträge, 6 Mails. `PAPIER['orte_d']` (in `papier_haus.json`) → `pw-roestihues-best-of-roestis`, `pw-aushang-inklusive`, `pw-willkommensbrief`; die PNG dazu liegen in `_werkbank/roh/papier/`; `orte_e` → `u01`–`u06`. Vorschaubilder: `<seite>/img/vorschau.webp`. Mails: `mails_reihe.py` (Texte im Sie, Kleid umgestellt), Feed-Bühne: `feed_buehne.py` (Polaroids 4, 6, 5, 11, 16, 20, 23, 8).
 - `papier_kacheln.py` (schrieb werkbank/index.html) ist gelöscht; bitte nicht mehr aufrufen.
 - Die Leiste der Unterseiten (Kit `rahmen`) zeigt den Bergkamm aus `werkbank.css` in der Farbe der Vorlage und läuft bei 390 px über («Zur Werkbank» abgeschnitten). Auf den Papier-Seiten löst das `papier_nach.py` (Bergkamm Lärche 18 px hoch, am Handy ohne Seitennamen); für Befund/Geprüft/KI bitte im Kern gleich lösen.
 
@@ -83,7 +83,6 @@ Behoben auf dem Weg: «Zur Werkbank» in der Leiste bei 390 abgeschnitten (Unter
 ## Offen
 
 - **Kern (haus.py) noch auf dem Stand der Vorlage:** bis 11:00 unverändert (09:56). Die Papier-Seiten sind im Notlauf von `mit_papier.py` gebaut; Rahmen, Leiste und `werkbank.css` kommen aus dem Kit mit den Grundwerten des Hauses. Sobald haus.py steht: `bash _werkbank/papier_alles.sh` noch einmal (rund 7 Minuten), damit Rahmen und Fuss die endgültigen Werte tragen.
-- **Hausdruckerei:** `_werkzeuge/imprimerie/haeuser/montemoro/drucksachen/` enthält noch die Stücke der Vorlage; `papier.py` übernimmt sie nicht (Prüfmuster `FREMD`). Sobald dort Stücke des Monte-Moro liegen (`liste.json`), übernimmt der nächste Lauf sie automatisch auf Drucksachen-Seite und in Material.
 - **Unterlagen:** nur die Karten des Röstihüs haben eine heutige Fassung (Speisekarte); Preisliste, Zuschläge und Spa aus dem Kartenbrett haben keine heutige Fassung als Blatt und stehen deshalb nicht in den Unterlagen. Die Ideen kommen aus dem Kartenbrett, das noch gebaut wird; ein neuer Lauf holt seinen letzten Stand.
 - **Material «05 Ansichten der neuen Website»:** erscheint, sobald der Kern die Aufnahmen der Website neu macht (ältere Aufnahmen der Vorlage nimmt `material_mehr.py` nicht).
 - **Profilbild Instagram:** im Material des Hauses gibt es keines; das Profil zeigt den Bergkamm (Kit).

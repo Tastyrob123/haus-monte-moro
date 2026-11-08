@@ -272,6 +272,8 @@ def hausdruckerei():
                 if im.width > 1000:
                     im = im.resize((1000, round(im.height * 1000 / im.width)), Image.LANCZOS)
                 im.save(os.path.join(img, nm + '.webp'), 'WEBP', quality=86, method=5)
+                os.makedirs(os.path.join(ROOT, '_werkbank', 'roh', 'papier'), exist_ok=True)
+                im.save(os.path.join(ROOT, '_werkbank', 'roh', 'papier', nm + '.png'))
                 namen.append((nm, im.size))
             if not namen or not os.path.exists(os.path.join(PW, d['pdf'])):
                 continue
@@ -304,6 +306,12 @@ SEITE_NEU = {   # Karton, Titel und Breite der eigenen Stücke (haus.py › PAPI
     'willkommen': dict(karton=['', [['willkommen', 52, '']]], titel=['Willkommen', 'im Zimmer.'], breit=['willkommen']),
     'briefpapier': dict(karton=['', [['umschlag', 92, 'Umschlag'], ['briefbogen', 38, 'Briefbogen']]], titel=['Briefbogen', 'und Umschlag.'], breit=['briefbogen', 'umschlag']),
 }
+
+
+# eigene Fassung → Stücke der Hausdruckerei, die dieselbe Idee sind (dann fällt die eigene weg)
+GEGENSTUECK = {'karte': ['pw-roestihues-best-of-roestis', 'pw-roestihues-auszug'], 'aushang': ['pw-aushang-inklusive', 'pw-plakat-inklusive-a3'],
+               'hotelwein': ['pw-tischkarte-hotelwein', 'pw-roestihues-wein-von-fabian'], 'raclette': ['pw-aushang-racletteabend'],
+               'kidsclub': ['pw-aushang-kidsclub', 'pw-story-kidsclub'], 'willkommen': ['pw-willkommensbrief'], 'briefpapier': ['pw-briefpapier-a4']}
 
 
 def css_umstellen():
@@ -345,7 +353,12 @@ def baue():
     d('briefpapier', 'Briefbogen und Umschlag', 'Briefbogen A4, Umschlag DIN lang', briefpapier(), [('briefbogen', 1), ('umschlag', 2)],
       'Für Bestätigungen, Angebote und Dankesbriefe: der Briefbogen auf Papier mit der Wortmarke in Logo-Blau und der Gratlinie, der Umschlag in der Nacht des Hauses.',
       'Wortmarke und Fuss der Website')
-    json.dump(SEITE_NEU, open(os.path.join(ROOT, '_werkbank', 'papier_neu_seite.json'), 'w'), ensure_ascii=False, indent=1)
+    # Keine Idee doppelt (Kriterium 15, Oberchef 08.11.2026): hat die Hausdruckerei ein Gegenstück, fällt die eigene Fassung weg.
+    mehr = hausdruckerei()
+    da = {x['id'] for x in mehr}
+    weg = {k for k, ersatz in GEGENSTUECK.items() if any(e in da for e in ersatz)}
+    Dr[:] = [x for x in Dr if x['id'] not in weg]
+    json.dump({k: v for k, v in SEITE_NEU.items() if k not in weg}, open(os.path.join(ROOT, '_werkbank', 'papier_neu_seite.json'), 'w'), ensure_ascii=False, indent=1)
     P.fertig(Dr, untersetzer_alle(), MEINS)
     css_umstellen()
     N.satz_namen('papier.css', 'etiketten.html', 'etiketten-bogen.html', *[x['id'] + '.html' for x in Dr])
@@ -353,7 +366,7 @@ def baue():
     for f in os.listdir(P.SATZ):   # Satzdateien anderer Häuser weg (nicht: Sticker, Beigaben, Postkarten, Etiketten)
         if f.endswith('.html') and f not in ids and not f.startswith(('etiketten', 'sticker', 'beigabe-', 'postkarten')):
             os.remove(os.path.join(P.SATZ, f))
-    print('Hausdruckerei:', len(hausdruckerei()), 'Drucksachen übernommen')
+    print('Eigene Drucksachen:', len(Dr), '· aus der Hausdruckerei:', len(mehr), '· weggelassen, weil die Hausdruckerei sie hat:', ', '.join(sorted(weg)) or '–')
 
 
 if __name__ == '__main__':

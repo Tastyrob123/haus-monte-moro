@@ -1,41 +1,6 @@
 {
  "druck": [
   {
-   "id": "karte",
-   "name": "Die Karte am Tisch",
-   "seiten": 2
-  },
-  {
-   "id": "aushang",
-   "name": "Aushang «Inklusive»",
-   "seiten": 1
-  },
-  {
-   "id": "hotelwein",
-   "name": "Tischkarte zum Hotelwein",
-   "seiten": 2
-  },
-  {
-   "id": "raclette",
-   "name": "Aushang Racletteabend",
-   "seiten": 1
-  },
-  {
-   "id": "kidsclub",
-   "name": "Karte zum Kidsclub",
-   "seiten": 2
-  },
-  {
-   "id": "willkommen",
-   "name": "Willkommensbrief im Zimmer",
-   "seiten": 1
-  },
-  {
-   "id": "briefpapier",
-   "name": "Briefbogen und Umschlag",
-   "seiten": 2
-  },
-  {
    "id": "pw-roestihues-best-of-roestis",
    "name": "Best of Röstis",
    "seiten": 2

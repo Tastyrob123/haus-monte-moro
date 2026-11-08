@@ -11,9 +11,8 @@ export PYTHONPATH="$K:$P/_werkbank" WB_PORT=9388
 M="python3 _werkbank/mit_papier.py"
 timeout 300 python3 _werkbank/druckschrift.py > /dev/null                      # feste Druckschnitte Fjalla One, Instrument Sans, DM Mono
 # ---------- Drucksachen und Untersetzer
-rm -rf drucksachen/img untersetzer/img                                       # vor papier.py: es legt die Bilder der Hausdruckerei schon hinein
+rm -rf drucksachen/img untersetzer/img _werkbank/roh/papier _werkbank/roh/einzel   # vor papier.py: es legt die Bilder der Hausdruckerei schon hinein
 timeout 300 $M _werkbank/papier.py "$P"
-rm -rf _werkbank/roh/papier _werkbank/roh/einzel
 timeout 900 node "$K/papier_druck.js" "$P" > /dev/null
 timeout 300 $M "$K/papier_seiten.py" "$P" | grep -v "Schrift fehlt" || true
 # ---------- Unterlagen (Karten des Röstihüs aus dem Kartenbrett neben der heutigen Speisekarte)

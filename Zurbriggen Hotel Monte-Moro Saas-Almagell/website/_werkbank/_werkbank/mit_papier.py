@@ -27,6 +27,8 @@ def fall(name, art=None):
     artikel, rest = name.split(' ', 1)
     if art == 'klein':
         return artikel.lower() + ' ' + rest
+    if art == 'dativ':
+        return ('der ' if artikel == 'Die' else 'dem ') + rest
     if art == 'im':
         return ('in der ' if artikel == 'Die' else 'im ') + rest
     return name

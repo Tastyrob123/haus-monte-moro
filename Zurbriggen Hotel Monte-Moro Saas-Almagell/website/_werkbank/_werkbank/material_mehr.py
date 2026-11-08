@@ -131,9 +131,9 @@ def nur_dieses_haus():
 
 
 AUSLAGE = [   # (Quelle, Klasse, links %, oben %, Breite %, Drehung): ein Stapel aus dem, was in den Ordnern liegt
-    (os.path.join(W, 'roh', 'papier', 'karte.png'), 'blattbild', 2, 6, 32, -6),
-    (os.path.join(W, 'roh', 'papier', 'aushang.png'), 'blattbild', 34, 0, 31, 3),
-    (os.path.join(W, 'roh', 'papier', 'willkommen.png'), 'blattbild', 64, 10, 32, -3),
+    (os.path.join(W, 'roh', 'papier', 'pw-roestihues-best-of-roestis.png'), 'blattbild', 2, 6, 32, -6),
+    (os.path.join(W, 'roh', 'papier', 'pw-aushang-inklusive.png'), 'blattbild', 34, 0, 31, 3),
+    (os.path.join(W, 'roh', 'papier', 'pw-willkommensbrief.png'), 'blattbild', 64, 10, 32, -3),
     (os.path.join(W, 'roh', 'papier', 'u03.png'), 'form', 18, 58, 25, 8),
     (os.path.join(W, 'roh', 'sticker', 's05.png'), 'form', 58, 62, 20, -9),
 ]

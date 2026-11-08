@@ -67,45 +67,45 @@
   "formen": [],
   "auslage": [
    [
-    "karte",
+    "pw-roestihues-best-of-roestis",
     2,
     2,
     28,
     -4
    ],
    [
-    "raclette",
+    "pw-aushang-kidsclub",
     35,
     0,
     28,
     3
    ],
    [
-    "willkommen",
+    "pw-willkommensbrief",
     68,
     4,
     28,
     -3
    ],
    [
-    "kidsclub-r",
-    6,
-    60,
-    40,
+    "pw-tischkarte-hotelwein",
+    4,
+    62,
+    36,
     2
    ],
    [
-    "hotelwein-r",
-    56,
+    "pw-hinweis-euro",
+    48,
     58,
     20,
     -3
    ],
    [
-    "aushang",
-    80,
+    "pw-preisliste-kinder",
+    74,
     56,
-    19,
+    22,
     3
    ]
   ],
@@ -127,7 +127,7 @@
    "fl--creme",
    "fl--papier"
   ],
-  "druck_text": "Papier, das im Monte-Moro auf dem Tisch, an der Rezeption, im Zimmer oder im Umschlag landen könnte. Jede Zeile kommt aus Ihrer Website und der Karte des Röstihüs. Was nicht passt, lassen Sie einfach weg.",
+  "druck_text": "Papier, das im Monte-Moro auf dem Tisch, an der Rezeption, im Zimmer oder im Umschlag landen könnte, alles aus [[druck:dativ]] und jedes als PDF. Jede Zeile kommt aus Ihrer Website und der Karte des Röstihüs. Was nicht passt, lassen Sie einfach weg.",
   "etik_titel": [
    "Untersetzer",
    "für das Röstihüs."
@@ -228,7 +228,7 @@
  },
  "MATERIAL": {
   "text": "Was für den Entwurf neu entstanden ist, liegt sortiert in einem Ordner: die Karten des Röstihüs als PDF, die Drucksachen, die Untersetzer, die Sticker, die Beigaben, die Postkarten, die Beiträge für Instagram, die Mails und Ihr Logo als Datei.",
-  "druck_satz": "Von der Karte am Tisch bis zum Willkommensbrief im Zimmer.",
+  "druck_satz": "Von der Karte im Röstihüs bis zum Willkommensbrief im Zimmer.",
   "zeichen": [
    [
     "Die Wortmarke in Logo-Blau",
@@ -258,5 +258,34 @@
   ],
   "zeichen_satz": "Das Logo des Hauses und sein Bergkamm als Zeichnung, die in jeder Grösse scharf bleibt, aus dem Markenbuch.",
   "auslage": []
+ },
+ "PAPIER": {
+  "orte_d": [
+   [
+    "pw-roestihues-best-of-roestis",
+    3,
+    16,
+    29,
+    -3,
+    0
+   ],
+   [
+    "pw-aushang-inklusive",
+    35.5,
+    16,
+    29,
+    2,
+    0
+   ],
+   [
+    "pw-willkommensbrief",
+    68,
+    16,
+    29,
+    -2,
+    0
+   ]
+  ],
+  "druck_text": "Von der Karte im Röstihüs bis zum Willkommensbrief im Zimmer, dazu <a href=\"../sticker/index.html\" target=\"_blank\" rel=\"noopener\">Sticker</a>, <a href=\"../postkarten/index.html\" target=\"_blank\" rel=\"noopener\">Postkarten</a> und <a href=\"../beigaben/index.html\" target=\"_blank\" rel=\"noopener\">Beigaben</a>."
  }
 }
