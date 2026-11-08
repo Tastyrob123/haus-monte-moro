@@ -1,0 +1,158 @@
+[
+ {
+  "name": "Papier",
+  "hex": "#F5F2EE",
+  "rgb": [
+   245,
+   242,
+   238
+  ],
+  "rolle": "Grundfläche, auf der gelesen wird",
+  "gruppe": "hell",
+  "woher": "Wert der Website (montemoro.css); Markenbuch: Fassade, aufgehellt: die Grundfläche, auf der gelesen wird"
+ },
+ {
+  "name": "Fassade",
+  "hex": "#E7E1DC",
+  "rgb": [
+   231,
+   225,
+   220
+  ],
+  "rolle": "zweite helle Fläche, Karten und Blätter",
+  "gruppe": "hell",
+  "woher": "Wert der Website (montemoro.css); Markenbuch: myswitzerland-00072098, die weisse Wand im Sonnenlicht, Median"
+ },
+ {
+  "name": "Creme",
+  "hex": "#EFE9E1",
+  "rgb": [
+   239,
+   233,
+   225
+  ],
+  "rolle": "helle Fläche zwischen Papier und Fassade",
+  "gruppe": "hell",
+  "woher": "Wert der Website (montemoro.css)"
+ },
+ {
+  "name": "Wandschatten",
+  "hex": "#D6CCC1",
+  "rgb": [
+   214,
+   204,
+   193
+  ],
+  "rolle": "Kanten, Unterseite der Knöpfe",
+  "gruppe": "hell",
+  "woher": "Wert der Website (montemoro.css); Markenbuch: Fassade im Schatten unter den Balkonen: Kanten, Unterseite der Knöpfe"
+ },
+ {
+  "name": "Nacht",
+  "hex": "#0A2A4A",
+  "rgb": [
+   10,
+   42,
+   74
+  ],
+  "rolle": "dunkle Fläche am Abend, Lesetext auf Hell",
+  "gruppe": "blau",
+  "woher": "Wert der Website (montemoro.css); Markenbuch: Logo-Blau, auf 45 Prozent Helligkeit gezogen: die dunkle Fläche der Welt A und der Lesetext"
+ },
+ {
+  "name": "Nachtblau",
+  "hex": "#0D3F6F",
+  "rgb": [
+   13,
+   63,
+   111
+  ],
+  "rolle": "Platten auf dunklem Grund",
+  "gruppe": "blau",
+  "woher": "Wert der Website (montemoro.css); Markenbuch: zwischen Nacht und Logo-Blau: Kuhlen und Platten auf dunklem Grund"
+ },
+ {
+  "name": "Tiefnacht",
+  "hex": "#071B2E",
+  "rgb": [
+   7,
+   27,
+   46
+  ],
+  "rolle": "tiefste dunkle Fläche, Fuss der Seite",
+  "gruppe": "blau",
+  "woher": "Wert der Website (montemoro.css)"
+ },
+ {
+  "name": "Logo-Blau",
+  "hex": "#115595",
+  "rgb": [
+   17,
+   85,
+   149
+  ],
+  "rolle": "das Blau der Wortmarke, Zeichen auf Hell",
+  "gruppe": "blau",
+  "woher": "Wert der Website (montemoro.css); Markenbuch: allgem_logo.png, häufigste Farbe der Wortmarke (87.674 Bildpunkte, gemessen 17.10.2026)"
+ },
+ {
+  "name": "Lärche",
+  "hex": "#C67144",
+  "rgb": [
+   198,
+   113,
+   68
+  ],
+  "rolle": "Akzent, Hauptknopf, das letzte Wort im Titel",
+  "gruppe": "laerche",
+  "woher": "Wert der Website (montemoro.css); Markenbuch: myswitzerland-00072098 (Fassade im Sommer, 3734 px), Median der besonnten Balkone, 16 Prozent des Bildes"
+ },
+ {
+  "name": "Lärche tief",
+  "hex": "#9A4F2B",
+  "rgb": [
+   154,
+   79,
+   43
+  ],
+  "rolle": "Betonung und kleine Zeilen auf Hell",
+  "gruppe": "laerche",
+  "woher": "Wert der Website (montemoro.css); Markenbuch: Lärche, dunkler gezogen, damit sie auf Papier als Schrift lesbar ist (Kontrast über 4,5 zu 1)"
+ },
+ {
+  "name": "Messing",
+  "hex": "#B39867",
+  "rgb": [
+   179,
+   152,
+   103
+  ],
+  "rolle": "nur feine Linien",
+  "gruppe": "laerche",
+  "woher": "Wert der Website (montemoro.css)"
+ },
+ {
+  "name": "Tinte",
+  "hex": "#13263A",
+  "rgb": [
+   19,
+   38,
+   58
+  ],
+  "rolle": "Lesetext auf Papier",
+  "gruppe": "schrift",
+  "woher": "Wert der Website (montemoro.css)"
+ },
+ {
+  "name": "Grau",
+  "hex": "#4A5D70",
+  "rgb": [
+   74,
+   93,
+   112
+  ],
+  "rolle": "leise Zeilen, Bildunterschriften",
+  "gruppe": "schrift",
+  "woher": "Wert der Website (montemoro.css)"
+ }
+]

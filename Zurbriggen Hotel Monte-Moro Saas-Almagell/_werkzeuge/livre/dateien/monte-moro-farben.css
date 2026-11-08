@@ -1,0 +1,16 @@
+/* Hotel Monte-Moro, Saas-Almagell · Farben der Marke (08.11.2026), Werte der Website */
+:root{
+  --papier:#F5F2EE; /* Papier: Grundfläche, auf der gelesen wird */
+  --fassade:#E7E1DC; /* Fassade: zweite helle Fläche, Karten und Blätter */
+  --creme:#EFE9E1; /* Creme: helle Fläche zwischen Papier und Fassade */
+  --wandschatten:#D6CCC1; /* Wandschatten: Kanten, Unterseite der Knöpfe */
+  --nacht:#0A2A4A; /* Nacht: dunkle Fläche am Abend, Lesetext auf Hell */
+  --nachtblau:#0D3F6F; /* Nachtblau: Platten auf dunklem Grund */
+  --tiefnacht:#071B2E; /* Tiefnacht: tiefste dunkle Fläche, Fuss der Seite */
+  --blau:#115595; /* Logo-Blau: das Blau der Wortmarke, Zeichen auf Hell */
+  --laerche:#C67144; /* Lärche: Akzent, Hauptknopf, das letzte Wort im Titel */
+  --laerche-tief:#9A4F2B; /* Lärche tief: Betonung und kleine Zeilen auf Hell */
+  --messing:#B39867; /* Messing: nur feine Linien */
+  --tinte:#13263A; /* Tinte: Lesetext auf Papier */
+  --grau:#4A5D70; /* Grau: leise Zeilen, Bildunterschriften */
+}

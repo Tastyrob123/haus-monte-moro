@@ -1,0 +1,3335 @@
+{
+ "haus": "Hotel Monte-Moro",
+ "ort": "Saas-Almagell",
+ "fotos": [
+  {
+   "k": "haus-sommer",
+   "t": {
+    "de": "Das Hotel Monte-Moro im Sommer, mit den Balkonen aus Lärche"
+   },
+   "b": "haus",
+   "s": "sommer",
+   "f": "quer",
+   "w": 3734,
+   "h": 2447,
+   "art": "haus",
+   "q": "Schweiz Tourismus (MySwitzerland), aus der Datenbank von HotellerieSuisse, vom Haus geliefert",
+   "u": "https://www.myswitzerland.com/de-ch/unterkuenfte/monte-moro-residence/",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/haus-sommer-x.webp",
+   "fm": "../../assets/img/haus-sommer-l.webp",
+   "fs": "../../assets/img/haus-sommer-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/haus-sommer-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/haus-sommer-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/haus-sommer-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/haus-sommer-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "haus-winter",
+   "t": {
+    "de": "Das Hotel Monte-Moro im Winter"
+   },
+   "b": "haus",
+   "s": "winter",
+   "f": "quer",
+   "w": 1200,
+   "h": 900,
+   "art": "haus",
+   "q": "Schweiz Tourismus (MySwitzerland), aus der Datenbank von HotellerieSuisse, vom Haus geliefert",
+   "u": "https://www.myswitzerland.com/de-ch/unterkuenfte/monte-moro-residence/",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/haus-winter-l.webp",
+   "fm": "../../assets/img/haus-winter-l.webp",
+   "fs": "../../assets/img/haus-winter-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/haus-winter-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/haus-winter-m.webp"
+    ],
+    [
+     1200,
+     "../../assets/img/haus-winter-l.webp"
+    ]
+   ]
+  },
+  {
+   "k": "raclette",
+   "t": {
+    "de": "Raclette im Monte-Moro"
+   },
+   "b": "roestihues",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1200,
+   "h": 500,
+   "art": "haus",
+   "q": "Schweiz Tourismus (MySwitzerland), aus der Datenbank von HotellerieSuisse, vom Haus geliefert",
+   "u": "https://www.myswitzerland.com/de-ch/unterkuenfte/monte-moro-residence/",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/raclette-l.webp",
+   "fm": "../../assets/img/raclette-l.webp",
+   "fs": "../../assets/img/raclette-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/raclette-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/raclette-m.webp"
+    ],
+    [
+     1200,
+     "../../assets/img/raclette-l.webp"
+    ]
+   ]
+  },
+  {
+   "k": "dorf-winter",
+   "t": {
+    "de": "Saas-Almagell im Winter"
+   },
+   "b": "saastal",
+   "s": "winter",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Winter); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/dorf-winter-x.webp",
+   "fm": "../../assets/img/dorf-winter-l.webp",
+   "fs": "../../assets/img/dorf-winter-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/dorf-winter-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/dorf-winter-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/dorf-winter-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/dorf-winter-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "balkon",
+   "t": {
+    "de": "Blick vom Balkon ins Tal"
+   },
+   "b": "haus",
+   "s": "jahr",
+   "f": "quadrat",
+   "w": 2048,
+   "h": 2048,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/balkon-x.webp",
+   "fm": "../../assets/img/balkon-l.webp",
+   "fs": "../../assets/img/balkon-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/balkon-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/balkon-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/balkon-l.webp"
+    ],
+    [
+     2048,
+     "../../assets/img/balkon-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "gondel",
+   "t": {
+    "de": "Die geschmückten Gondeln vor dem Röstihüs"
+   },
+   "b": "haus",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen, aufgehellt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/gondel-x.webp",
+   "fm": "../../assets/img/gondel-l.webp",
+   "fs": "../../assets/img/gondel-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/gondel-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/gondel-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/gondel-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/gondel-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "apollo",
+   "t": {
+    "de": "Die Wohnung im Haus Apollo"
+   },
+   "b": "wohnungen",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Haus Apollo); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/apollo-x.webp",
+   "fm": "../../assets/img/apollo-l.webp",
+   "fs": "../../assets/img/apollo-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/apollo-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/apollo-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/apollo-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/apollo-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "apollo-haus",
+   "t": {
+    "de": "Das Haus Apollo im Sommer und im Winter"
+   },
+   "b": "wohnungen",
+   "s": "winter",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Haus Apollo); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/apollo-haus-x.webp",
+   "fm": "../../assets/img/apollo-haus-l.webp",
+   "fs": "../../assets/img/apollo-haus-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/apollo-haus-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/apollo-haus-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/apollo-haus-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/apollo-haus-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "arizona",
+   "t": {
+    "de": "Eine Wohnung im Haus Arizona"
+   },
+   "b": "wohnungen",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Haus Arizona); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/arizona-x.webp",
+   "fm": "../../assets/img/arizona-l.webp",
+   "fs": "../../assets/img/arizona-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/arizona-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/arizona-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/arizona-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/arizona-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "arizona-haus",
+   "t": {
+    "de": "Das Haus Arizona"
+   },
+   "b": "wohnungen",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Haus Arizona); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/arizona-haus-x.webp",
+   "fm": "../../assets/img/arizona-haus-l.webp",
+   "fs": "../../assets/img/arizona-haus-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/arizona-haus-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/arizona-haus-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/arizona-haus-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/arizona-haus-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "murmeli",
+   "t": {
+    "de": "Ein Kind bei den Murmeltieren"
+   },
+   "b": "kinder",
+   "s": "sommer",
+   "f": "quer",
+   "w": 1200,
+   "h": 500,
+   "art": "haus",
+   "q": "Heutige Website des Hauses (monte-moro.ch) (Seite Sommer); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/murmeli-l.webp",
+   "fm": "../../assets/img/murmeli-l.webp",
+   "fs": "../../assets/img/murmeli-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/murmeli-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/murmeli-m.webp"
+    ],
+    [
+     1200,
+     "../../assets/img/murmeli-l.webp"
+    ]
+   ]
+  },
+  {
+   "k": "stuebli",
+   "t": {
+    "de": "Das Raclettestübli"
+   },
+   "b": "roestihues",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2041,
+   "h": 1360,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Tripadvisor, vom Haus hochgeladen am 29. November 2017",
+   "u": "https://www.tripadvisor.de/Hotel_Review-g1025600-d1050093-Reviews-Hotel_Monte_Moro-Saas_Almagell_Saas_Fee_Canton_of_Valais_Swiss_Alps.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/stuebli-x.webp",
+   "fm": "../../assets/img/stuebli-l.webp",
+   "fs": "../../assets/img/stuebli-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/stuebli-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/stuebli-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/stuebli-l.webp"
+    ],
+    [
+     2041,
+     "../../assets/img/stuebli-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "stube-tische",
+   "t": {
+    "de": "Gedeckte Tische im Röstihüs"
+   },
+   "b": "roestihues",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Restaurant); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/stube-tische-x.webp",
+   "fm": "../../assets/img/stube-tische-l.webp",
+   "fs": "../../assets/img/stube-tische-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/stube-tische-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/stube-tische-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/stube-tische-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/stube-tische-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "mattmark",
+   "t": {
+    "de": "Ein Bergsee über dem Saastal"
+   },
+   "b": "saastal",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Sommer); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/mattmark-x.webp",
+   "fm": "../../assets/img/mattmark-l.webp",
+   "fs": "../../assets/img/mattmark-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/mattmark-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/mattmark-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/mattmark-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/mattmark-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "bach",
+   "t": {
+    "de": "Ein Bergbach im Sommer"
+   },
+   "b": "saastal",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Sommer); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/bach-x.webp",
+   "fm": "../../assets/img/bach-l.webp",
+   "fs": "../../assets/img/bach-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/bach-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/bach-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/bach-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/bach-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "blumen",
+   "t": {
+    "de": "Sommer am See"
+   },
+   "b": "saastal",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Sommer); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/blumen-x.webp",
+   "fm": "../../assets/img/blumen-l.webp",
+   "fs": "../../assets/img/blumen-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/blumen-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/blumen-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/blumen-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/blumen-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "wasserfall",
+   "t": {
+    "de": "Ein Wasserfall im Saastal"
+   },
+   "b": "saastal",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Sommer); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/wasserfall-x.webp",
+   "fm": "../../assets/img/wasserfall-l.webp",
+   "fs": "../../assets/img/wasserfall-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/wasserfall-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/wasserfall-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/wasserfall-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/wasserfall-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "tal-sommer",
+   "t": {
+    "de": "Das Saastal im Sommer"
+   },
+   "b": "saastal",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Sommer); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/tal-sommer-x.webp",
+   "fm": "../../assets/img/tal-sommer-l.webp",
+   "fs": "../../assets/img/tal-sommer-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/tal-sommer-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/tal-sommer-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/tal-sommer-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/tal-sommer-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "huette",
+   "t": {
+    "de": "Eine Hütte im Schnee"
+   },
+   "b": "saastal",
+   "s": "winter",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Winter); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/huette-x.webp",
+   "fm": "../../assets/img/huette-l.webp",
+   "fs": "../../assets/img/huette-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/huette-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/huette-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/huette-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/huette-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "skitour",
+   "t": {
+    "de": "Snowboarden im Saastal"
+   },
+   "b": "saastal",
+   "s": "winter",
+   "f": "quer",
+   "w": 1200,
+   "h": 500,
+   "art": "haus",
+   "q": "Heutige Website des Hauses (monte-moro.ch) (Seite Winter); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/skitour-l.webp",
+   "fm": "../../assets/img/skitour-l.webp",
+   "fs": "../../assets/img/skitour-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/skitour-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/skitour-m.webp"
+    ],
+    [
+     1200,
+     "../../assets/img/skitour-l.webp"
+    ]
+   ]
+  },
+  {
+   "k": "winterweg",
+   "t": {
+    "de": "Zu Fuss durch den Schnee"
+   },
+   "b": "saastal",
+   "s": "winter",
+   "f": "quer",
+   "w": 1200,
+   "h": 500,
+   "art": "haus",
+   "q": "Heutige Website des Hauses (monte-moro.ch) (Seite Winter); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/winterweg-l.webp",
+   "fm": "../../assets/img/winterweg-l.webp",
+   "fs": "../../assets/img/winterweg-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/winterweg-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/winterweg-m.webp"
+    ],
+    [
+     1200,
+     "../../assets/img/winterweg-l.webp"
+    ]
+   ]
+  },
+  {
+   "k": "haus-winter-b",
+   "t": {
+    "de": "Das Hotel Monte-Moro im verschneiten Winter"
+   },
+   "b": "haus",
+   "s": "winter",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/haus-winter-b-x.webp",
+   "fm": "../../assets/img/haus-winter-b-l.webp",
+   "fs": "../../assets/img/haus-winter-b-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/haus-winter-b-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/haus-winter-b-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/haus-winter-b-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/haus-winter-b-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "z-dach",
+   "t": {
+    "de": "Ein Zimmer unter dem Dach"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-dach-x.webp",
+   "fm": "../../assets/img/z-dach-l.webp",
+   "fs": "../../assets/img/z-dach-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/z-dach-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/z-dach-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/z-dach-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/z-dach-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "z-sessel",
+   "t": {
+    "de": "Ein Zimmer mit Sitzecke"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-sessel-x.webp",
+   "fm": "../../assets/img/z-sessel-l.webp",
+   "fs": "../../assets/img/z-sessel-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/z-sessel-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/z-sessel-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/z-sessel-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/z-sessel-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "z-licht",
+   "t": {
+    "de": "Morgenlicht im Zimmer"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-licht-x.webp",
+   "fm": "../../assets/img/z-licht-l.webp",
+   "fs": "../../assets/img/z-licht-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/z-licht-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/z-licht-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/z-licht-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/z-licht-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "z-abend",
+   "t": {
+    "de": "Ein Zimmer am Abend"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-abend-x.webp",
+   "fm": "../../assets/img/z-abend-l.webp",
+   "fs": "../../assets/img/z-abend-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/z-abend-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/z-abend-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/z-abend-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/z-abend-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "z-balkon",
+   "t": {
+    "de": "Die Balkontür"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-balkon-x.webp",
+   "fm": "../../assets/img/z-balkon-l.webp",
+   "fs": "../../assets/img/z-balkon-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/z-balkon-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/z-balkon-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/z-balkon-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/z-balkon-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "z-hell",
+   "t": {
+    "de": "Ein helles Doppelzimmer"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-hell-x.webp",
+   "fm": "../../assets/img/z-hell-l.webp",
+   "fs": "../../assets/img/z-hell-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/z-hell-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/z-hell-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/z-hell-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/z-hell-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "z-familie",
+   "t": {
+    "de": "Zwei Zimmer mit Verbindungstür"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-familie-x.webp",
+   "fm": "../../assets/img/z-familie-l.webp",
+   "fs": "../../assets/img/z-familie-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/z-familie-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/z-familie-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/z-familie-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/z-familie-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "z-bad",
+   "t": {
+    "de": "Ein Bad mit Wanne"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-bad-x.webp",
+   "fm": "../../assets/img/z-bad-l.webp",
+   "fs": "../../assets/img/z-bad-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/z-bad-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/z-bad-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/z-bad-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/z-bad-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "fr-tisch",
+   "t": {
+    "de": "Das Frühstücksbuffet"
+   },
+   "b": "roestihues",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/fr-tisch-x.webp",
+   "fm": "../../assets/img/fr-tisch-l.webp",
+   "fs": "../../assets/img/fr-tisch-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/fr-tisch-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/fr-tisch-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/fr-tisch-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/fr-tisch-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "speiseraum",
+   "t": {
+    "de": "Der Speiseraum"
+   },
+   "b": "roestihues",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/speiseraum-x.webp",
+   "fm": "../../assets/img/speiseraum-l.webp",
+   "fs": "../../assets/img/speiseraum-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/speiseraum-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/speiseraum-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/speiseraum-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/speiseraum-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "empfang",
+   "t": {
+    "de": "Der Empfang mit dem Bergkamm des Hauses"
+   },
+   "b": "haus",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1440,
+   "h": 1080,
+   "art": "haus",
+   "q": "Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/empfang-l.webp",
+   "fm": "../../assets/img/empfang-l.webp",
+   "fs": "../../assets/img/empfang-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/empfang-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/empfang-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/empfang-l.webp"
+    ]
+   ]
+  },
+  {
+   "k": "dorf-nacht",
+   "t": {
+    "de": "Saas-Almagell am Abend"
+   },
+   "b": "saastal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/dorf-nacht-x.webp",
+   "fm": "../../assets/img/dorf-nacht-l.webp",
+   "fs": "../../assets/img/dorf-nacht-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/dorf-nacht-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/dorf-nacht-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/dorf-nacht-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/dorf-nacht-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "tal-dorf",
+   "t": {
+    "de": "Saas-Almagell im Saastal"
+   },
+   "b": "saastal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2048,
+   "h": 1356,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/tal-dorf-x.webp",
+   "fm": "../../assets/img/tal-dorf-l.webp",
+   "fs": "../../assets/img/tal-dorf-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/tal-dorf-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/tal-dorf-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/tal-dorf-l.webp"
+    ],
+    [
+     2048,
+     "../../assets/img/tal-dorf-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "dorf-weiss",
+   "t": {
+    "de": "Das Dorf im Schnee"
+   },
+   "b": "saastal",
+   "s": "winter",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Winter); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/dorf-weiss-x.webp",
+   "fm": "../../assets/img/dorf-weiss-l.webp",
+   "fs": "../../assets/img/dorf-weiss-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/dorf-weiss-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/dorf-weiss-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/dorf-weiss-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/dorf-weiss-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "roesti-stube",
+   "t": {
+    "de": "Im Röstihüs"
+   },
+   "b": "roestihues",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Restaurant); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/roesti-stube-x.webp",
+   "fm": "../../assets/img/roesti-stube-l.webp",
+   "fs": "../../assets/img/roesti-stube-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/roesti-stube-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/roesti-stube-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/roesti-stube-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/roesti-stube-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "roesti-tische",
+   "t": {
+    "de": "Die Tische im Röstihüs"
+   },
+   "b": "roestihues",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Restaurant); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/roesti-tische-x.webp",
+   "fm": "../../assets/img/roesti-tische-l.webp",
+   "fs": "../../assets/img/roesti-tische-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/roesti-tische-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/roesti-tische-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/roesti-tische-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/roesti-tische-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "kinder-rodel",
+   "t": {
+    "de": "Auf der Rodelbahn"
+   },
+   "b": "kinder",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1200,
+   "h": 500,
+   "art": "haus",
+   "q": "Heutige Website des Hauses (monte-moro.ch) (Seite Ausflüge); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/kinder-rodel-l.webp",
+   "fm": "../../assets/img/kinder-rodel-l.webp",
+   "fs": "../../assets/img/kinder-rodel-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/kinder-rodel-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/kinder-rodel-m.webp"
+    ],
+    [
+     1200,
+     "../../assets/img/kinder-rodel-l.webp"
+    ]
+   ]
+  },
+  {
+   "k": "murmeltiere",
+   "t": {
+    "de": "Murmeltiere im Saastal"
+   },
+   "b": "saastal",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Sommer); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/murmeltiere-x.webp",
+   "fm": "../../assets/img/murmeltiere-l.webp",
+   "fs": "../../assets/img/murmeltiere-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/murmeltiere-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/murmeltiere-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/murmeltiere-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/murmeltiere-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "spa-garten",
+   "t": {
+    "de": "Der Ruheraum mit Blick ins Grüne"
+   },
+   "b": "spa",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1200,
+   "h": 500,
+   "art": "haus",
+   "q": "Heutige Website des Hauses (monte-moro.ch) (Seite Wellness); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/spa-garten-l.webp",
+   "fm": "../../assets/img/spa-garten-l.webp",
+   "fs": "../../assets/img/spa-garten-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/spa-garten-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/spa-garten-m.webp"
+    ],
+    [
+     1200,
+     "../../assets/img/spa-garten-l.webp"
+    ]
+   ]
+  },
+  {
+   "k": "spa-holz",
+   "t": {
+    "de": "Die Sauna aus Holz"
+   },
+   "b": "spa",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1200,
+   "h": 500,
+   "art": "haus",
+   "q": "Heutige Website des Hauses (monte-moro.ch) (Seite Wellness); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/spa-holz-l.webp",
+   "fm": "../../assets/img/spa-holz-l.webp",
+   "fs": "../../assets/img/spa-holz-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/spa-holz-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/spa-holz-m.webp"
+    ],
+    [
+     1200,
+     "../../assets/img/spa-holz-l.webp"
+    ]
+   ]
+  },
+  {
+   "k": "spa-wasser",
+   "t": {
+    "de": "Das Schwimmbad im Spa"
+   },
+   "b": "spa",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1200,
+   "h": 500,
+   "art": "haus",
+   "q": "Heutige Website des Hauses (monte-moro.ch) (Seite Wellness); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/spa-wasser-l.webp",
+   "fm": "../../assets/img/spa-wasser-l.webp",
+   "fs": "../../assets/img/spa-wasser-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/spa-wasser-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/spa-wasser-m.webp"
+    ],
+    [
+     1200,
+     "../../assets/img/spa-wasser-l.webp"
+    ]
+   ]
+  },
+  {
+   "k": "metro",
+   "t": {
+    "de": "Die Metro Alpin in Saas-Fee"
+   },
+   "b": "saastal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Ausflüge); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/metro-x.webp",
+   "fm": "../../assets/img/metro-l.webp",
+   "fs": "../../assets/img/metro-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/metro-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/metro-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/metro-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/metro-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "fam-montemoro",
+   "t": {
+    "de": "Das Hotel Monte-Moro mit seinen Holzbalkonen"
+   },
+   "b": "haus",
+   "s": "jahr",
+   "f": "quadrat",
+   "w": 1200,
+   "h": 1200,
+   "art": "haus",
+   "q": "Aus dem Bildbestand der Familie Zurbriggen (Familienband der Website)",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/fam-montemoro-l.webp",
+   "fm": "../../assets/img/fam-montemoro-l.webp",
+   "fs": "../../assets/img/fam-montemoro-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/fam-montemoro-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/fam-montemoro-m.webp"
+    ],
+    [
+     1200,
+     "../../assets/img/fam-montemoro-l.webp"
+    ]
+   ]
+  },
+  {
+   "k": "haus-sommer-g",
+   "t": {
+    "de": "Das Hotel Monte-Moro im Sommer, mit der Sonnenterrasse"
+   },
+   "b": "haus",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Tripadvisor, vom Haus hochgeladen am 29. November 2017",
+   "u": "https://www.tripadvisor.de/Hotel_Review-g1025600-d1050093-Reviews-Hotel_Monte_Moro-Saas_Almagell_Saas_Fee_Canton_of_Valais_Swiss_Alps.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/haus-sommer-g-x.webp",
+   "fm": "../../assets/img/haus-sommer-g-l.webp",
+   "fs": "../../assets/img/haus-sommer-g-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/haus-sommer-g-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/haus-sommer-g-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/haus-sommer-g-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/haus-sommer-g-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "stausee",
+   "t": {
+    "de": "Der Stausee Mattmark"
+   },
+   "b": "saastal",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Ausflüge); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/stausee-x.webp",
+   "fm": "../../assets/img/stausee-l.webp",
+   "fs": "../../assets/img/stausee-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/stausee-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/stausee-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/stausee-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/stausee-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "spielburg",
+   "t": {
+    "de": "Die Spielburg vor dem Haus"
+   },
+   "b": "kinder",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 1792,
+   "h": 2140,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/spielburg-x.webp",
+   "fm": "../../assets/img/spielburg-l.webp",
+   "fs": "../../assets/img/spielburg-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/spielburg-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/spielburg-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/spielburg-l.webp"
+    ],
+    [
+     1792,
+     "../../assets/img/spielburg-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "z-rot",
+   "t": {
+    "de": "Ein Doppelzimmer mit Sessel"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-rot-x.webp",
+   "fm": "../../assets/img/z-rot-l.webp",
+   "fs": "../../assets/img/z-rot-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/z-rot-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/z-rot-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/z-rot-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/z-rot-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "z-fenster",
+   "t": {
+    "de": "Ein Zimmer mit hohen Fenstern"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-fenster-x.webp",
+   "fm": "../../assets/img/z-fenster-l.webp",
+   "fs": "../../assets/img/z-fenster-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/z-fenster-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/z-fenster-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/z-fenster-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/z-fenster-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "z-tv",
+   "t": {
+    "de": "Ein Zimmer mit Balkontür"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-tv-x.webp",
+   "fm": "../../assets/img/z-tv-l.webp",
+   "fs": "../../assets/img/z-tv-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/z-tv-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/z-tv-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/z-tv-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/z-tv-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "z-bogen",
+   "t": {
+    "de": "Ein Zimmer mit Holzbett unter dem Dach"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-bogen-x.webp",
+   "fm": "../../assets/img/z-bogen-l.webp",
+   "fs": "../../assets/img/z-bogen-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/z-bogen-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/z-bogen-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/z-bogen-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/z-bogen-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "z-gelb",
+   "t": {
+    "de": "Ein Doppelzimmer am Morgen"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-gelb-x.webp",
+   "fm": "../../assets/img/z-gelb-l.webp",
+   "fs": "../../assets/img/z-gelb-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/z-gelb-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/z-gelb-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/z-gelb-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/z-gelb-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "z-einzel",
+   "t": {
+    "de": "Ein Einzelzimmer"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-einzel-x.webp",
+   "fm": "../../assets/img/z-einzel-l.webp",
+   "fs": "../../assets/img/z-einzel-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/z-einzel-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/z-einzel-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/z-einzel-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/z-einzel-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "z-neu",
+   "t": {
+    "de": "Ein Doppelzimmer mit Schreibtisch"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-neu-x.webp",
+   "fm": "../../assets/img/z-neu-l.webp",
+   "fs": "../../assets/img/z-neu-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/z-neu-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/z-neu-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/z-neu-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/z-neu-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "z-wanne",
+   "t": {
+    "de": "Ein Bad mit Wanne"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2325,
+   "h": 1744,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-wanne-x.webp",
+   "fm": "../../assets/img/z-wanne-l.webp",
+   "fs": "../../assets/img/z-wanne-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/z-wanne-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/z-wanne-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/z-wanne-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/z-wanne-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "z-twin",
+   "t": {
+    "de": "Ein Zimmer mit zwei Betten"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2041,
+   "h": 1360,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Tripadvisor, vom Haus hochgeladen am 29. November 2017",
+   "u": "https://www.tripadvisor.de/Hotel_Review-g1025600-d1050093-Reviews-Hotel_Monte_Moro-Saas_Almagell_Saas_Fee_Canton_of_Valais_Swiss_Alps.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-twin-x.webp",
+   "fm": "../../assets/img/z-twin-l.webp",
+   "fs": "../../assets/img/z-twin-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/z-twin-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/z-twin-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/z-twin-l.webp"
+    ],
+    [
+     2041,
+     "../../assets/img/z-twin-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "z-doppel",
+   "t": {
+    "de": "Ein Doppelzimmer"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2041,
+   "h": 1360,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Tripadvisor, vom Haus hochgeladen am 29. November 2017",
+   "u": "https://www.tripadvisor.de/Hotel_Review-g1025600-d1050093-Reviews-Hotel_Monte_Moro-Saas_Almagell_Saas_Fee_Canton_of_Valais_Swiss_Alps.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-doppel-x.webp",
+   "fm": "../../assets/img/z-doppel-l.webp",
+   "fs": "../../assets/img/z-doppel-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/z-doppel-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/z-doppel-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/z-doppel-l.webp"
+    ],
+    [
+     2041,
+     "../../assets/img/z-doppel-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "apollo-wohnen",
+   "t": {
+    "de": "Die Stube im Haus Apollo"
+   },
+   "b": "wohnungen",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Haus Apollo); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/apollo-wohnen-x.webp",
+   "fm": "../../assets/img/apollo-wohnen-l.webp",
+   "fs": "../../assets/img/apollo-wohnen-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/apollo-wohnen-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/apollo-wohnen-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/apollo-wohnen-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/apollo-wohnen-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "apollo-kueche",
+   "t": {
+    "de": "Die Küche im Haus Apollo"
+   },
+   "b": "wohnungen",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Haus Apollo); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/apollo-kueche-x.webp",
+   "fm": "../../assets/img/apollo-kueche-l.webp",
+   "fs": "../../assets/img/apollo-kueche-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/apollo-kueche-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/apollo-kueche-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/apollo-kueche-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/apollo-kueche-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "arizona-wohnen",
+   "t": {
+    "de": "Die Stube einer Wohnung im Haus Arizona"
+   },
+   "b": "wohnungen",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Haus Arizona); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/arizona-wohnen-x.webp",
+   "fm": "../../assets/img/arizona-wohnen-l.webp",
+   "fs": "../../assets/img/arizona-wohnen-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/arizona-wohnen-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/arizona-wohnen-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/arizona-wohnen-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/arizona-wohnen-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "arizona-holz",
+   "t": {
+    "de": "Ein Schlafzimmer aus Holz im Haus Arizona"
+   },
+   "b": "wohnungen",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Haus Arizona); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/arizona-holz-x.webp",
+   "fm": "../../assets/img/arizona-holz-l.webp",
+   "fs": "../../assets/img/arizona-holz-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/arizona-holz-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/arizona-holz-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/arizona-holz-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/arizona-holz-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "fr-detail",
+   "t": {
+    "de": "Konfitüren und Brot am Buffet"
+   },
+   "b": "roestihues",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 1744,
+   "h": 2325,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Booking.com, vom Haus hochgeladen",
+   "u": "https://www.booking.com/hotel/ch/monte-moro.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/fr-detail-x.webp",
+   "fm": "../../assets/img/fr-detail-l.webp",
+   "fs": "../../assets/img/fr-detail-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/fr-detail-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/fr-detail-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/fr-detail-l.webp"
+    ],
+    [
+     1744,
+     "../../assets/img/fr-detail-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "alpenrosen",
+   "t": {
+    "de": "Alpenrosen über dem Saastal"
+   },
+   "b": "saastal",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Sommer); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/alpenrosen-x.webp",
+   "fm": "../../assets/img/alpenrosen-l.webp",
+   "fs": "../../assets/img/alpenrosen-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/alpenrosen-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/alpenrosen-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/alpenrosen-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/alpenrosen-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "bergbach",
+   "t": {
+    "de": "Ein Bergbach zwischen den Felsen"
+   },
+   "b": "saastal",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Sommer); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/bergbach-x.webp",
+   "fm": "../../assets/img/bergbach-l.webp",
+   "fs": "../../assets/img/bergbach-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/bergbach-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/bergbach-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/bergbach-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/bergbach-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "see-blumen",
+   "t": {
+    "de": "Blumen am Mattmarksee"
+   },
+   "b": "saastal",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Sommer); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/see-blumen-x.webp",
+   "fm": "../../assets/img/see-blumen-l.webp",
+   "fs": "../../assets/img/see-blumen-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/see-blumen-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/see-blumen-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/see-blumen-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/see-blumen-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "skitour-hang",
+   "t": {
+    "de": "Mit Fellen den Hang hinauf"
+   },
+   "b": "saastal",
+   "s": "winter",
+   "f": "quer",
+   "w": 1200,
+   "h": 500,
+   "art": "haus",
+   "q": "Heutige Website des Hauses (monte-moro.ch) (Seite Winter); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/skitour-hang-l.webp",
+   "fm": "../../assets/img/skitour-hang-l.webp",
+   "fs": "../../assets/img/skitour-hang-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/skitour-hang-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/skitour-hang-m.webp"
+    ],
+    [
+     1200,
+     "../../assets/img/skitour-hang-l.webp"
+    ]
+   ]
+  },
+  {
+   "k": "winterbach",
+   "t": {
+    "de": "Der Bach im Winter"
+   },
+   "b": "saastal",
+   "s": "winter",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Winter); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/winterbach-x.webp",
+   "fm": "../../assets/img/winterbach-l.webp",
+   "fs": "../../assets/img/winterbach-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/winterbach-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/winterbach-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/winterbach-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/winterbach-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "gletscher",
+   "t": {
+    "de": "Über den Gletschern des Saastals"
+   },
+   "b": "saastal",
+   "s": "winter",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Winter); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/gletscher-x.webp",
+   "fm": "../../assets/img/gletscher-l.webp",
+   "fs": "../../assets/img/gletscher-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/gletscher-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/gletscher-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/gletscher-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/gletscher-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "dorf-fluss",
+   "t": {
+    "de": "Saas-Almagell am verschneiten Bach"
+   },
+   "b": "saastal",
+   "s": "winter",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Winter); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/dorf-fluss-x.webp",
+   "fm": "../../assets/img/dorf-fluss-l.webp",
+   "fs": "../../assets/img/dorf-fluss-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/dorf-fluss-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/dorf-fluss-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/dorf-fluss-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/dorf-fluss-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "roesti-raum",
+   "t": {
+    "de": "Die Stube des Röstihüs mit den Säcken"
+   },
+   "b": "roestihues",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2048,
+   "h": 1356,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Restaurant); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/roesti-raum-x.webp",
+   "fm": "../../assets/img/roesti-raum-l.webp",
+   "fs": "../../assets/img/roesti-raum-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/roesti-raum-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/roesti-raum-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/roesti-raum-l.webp"
+    ],
+    [
+     2048,
+     "../../assets/img/roesti-raum-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "roesti-orange",
+   "t": {
+    "de": "Gedeckte Tische im Röstihüs"
+   },
+   "b": "roestihues",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2688,
+   "h": 1120,
+   "art": "ki",
+   "q": "Mit KI neu gerechnet (24. Oktober 2026) nach einem Foto des Hauses. Vorlage: Heutige Website des Hauses (monte-moro.ch) (Seite Restaurant); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/roesti-orange-x.webp",
+   "fm": "../../assets/img/roesti-orange-l.webp",
+   "fs": "../../assets/img/roesti-orange-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/roesti-orange-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/roesti-orange-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/roesti-orange-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/roesti-orange-x.webp"
+    ]
+   ]
+  },
+  {
+   "k": "spa-licht",
+   "t": {
+    "de": "Der Ruheraum mit Leuchter und Blick ins Grüne"
+   },
+   "b": "spa",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1024,
+   "h": 678,
+   "art": "haus",
+   "q": "Heutige Website des Hauses (monte-moro.ch) (Seite Wellness); Fotograf nicht genannt",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/spa-licht-l.webp",
+   "fm": "../../assets/img/spa-licht-l.webp",
+   "fs": "../../assets/img/spa-licht-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/spa-licht-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/spa-licht-m.webp"
+    ],
+    [
+     1024,
+     "../../assets/img/spa-licht-l.webp"
+    ]
+   ]
+  },
+  {
+   "k": "wolkenmeer-echt",
+   "t": {
+    "de": "Sonne über dem Nebelmeer im Wallis"
+   },
+   "b": "saastal",
+   "s": "jahr",
+   "f": "quer",
+   "w": 6000,
+   "h": 3375,
+   "art": "frei",
+   "q": "Foto: Christoph Strässler, «Valais under a sea of fog», Wikimedia Commons, Lizenz CC BY-SA 2.0 (Namensnennung, gleiche Lizenz)",
+   "u": "https://commons.wikimedia.org/wiki/File:Valais_under_a_sea_of_fog.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/wolkenmeer-echt-x.webp",
+   "fm": "../../assets/img/wolkenmeer-echt-l.webp",
+   "fs": "../../assets/img/wolkenmeer-echt-s.webp",
+   "sw": [
+    [
+     480,
+     "../../assets/img/wolkenmeer-echt-s.webp"
+    ],
+    [
+     900,
+     "../../assets/img/wolkenmeer-echt-m.webp"
+    ],
+    [
+     1440,
+     "../../assets/img/wolkenmeer-echt-l.webp"
+    ],
+    [
+     2200,
+     "../../assets/img/wolkenmeer-echt-x.webp"
+    ]
+   ]
+  }
+ ],
+ "dateien": [
+  {
+   "k": "wortmarke",
+   "var": [
+    {
+     "k": "wortmarke-blau",
+     "farbe": "blau",
+     "grund": "hell",
+     "dateien": [
+      "monte-moro-wortmarke-blau.svg",
+      "monte-moro-wortmarke-blau.png"
+     ],
+     "px": [
+      1600,
+      655
+     ]
+    },
+    {
+     "k": "wortmarke-nacht",
+     "farbe": "nacht",
+     "grund": "hell",
+     "dateien": [
+      "monte-moro-wortmarke-nacht.svg",
+      "monte-moro-wortmarke-nacht.png"
+     ],
+     "px": [
+      1600,
+      655
+     ]
+    },
+    {
+     "k": "wortmarke-papier",
+     "farbe": "papier",
+     "grund": "dunkel",
+     "dateien": [
+      "monte-moro-wortmarke-papier.svg",
+      "monte-moro-wortmarke-papier.png"
+     ],
+     "px": [
+      1600,
+      655
+     ]
+    },
+    {
+     "k": "wortmarke-laerche",
+     "farbe": "laerche",
+     "grund": "dunkel",
+     "dateien": [
+      "monte-moro-wortmarke-laerche.svg",
+      "monte-moro-wortmarke-laerche.png"
+     ],
+     "px": [
+      1600,
+      655
+     ]
+    }
+   ]
+  },
+  {
+   "k": "bergkamm",
+   "var": [
+    {
+     "k": "bergkamm-blau",
+     "farbe": "blau",
+     "grund": "hell",
+     "dateien": [
+      "monte-moro-bergkamm-blau.svg",
+      "monte-moro-bergkamm-blau.png"
+     ],
+     "px": [
+      1600,
+      320
+     ]
+    },
+    {
+     "k": "bergkamm-nacht",
+     "farbe": "nacht",
+     "grund": "hell",
+     "dateien": [
+      "monte-moro-bergkamm-nacht.svg",
+      "monte-moro-bergkamm-nacht.png"
+     ],
+     "px": [
+      1600,
+      320
+     ]
+    },
+    {
+     "k": "bergkamm-papier",
+     "farbe": "papier",
+     "grund": "dunkel",
+     "dateien": [
+      "monte-moro-bergkamm-papier.svg",
+      "monte-moro-bergkamm-papier.png"
+     ],
+     "px": [
+      1600,
+      320
+     ]
+    },
+    {
+     "k": "bergkamm-laerche",
+     "farbe": "laerche",
+     "grund": "dunkel",
+     "dateien": [
+      "monte-moro-bergkamm-laerche.svg",
+      "monte-moro-bergkamm-laerche.png"
+     ],
+     "px": [
+      1600,
+      320
+     ]
+    }
+   ]
+  },
+  {
+   "k": "medaillon",
+   "var": [
+    {
+     "k": "medaillon-blau",
+     "farbe": "blau",
+     "grund": "hell",
+     "dateien": [
+      "monte-moro-medaillon-blau.svg",
+      "monte-moro-medaillon-blau.png"
+     ],
+     "px": [
+      1000,
+      1000
+     ]
+    },
+    {
+     "k": "medaillon-laerche",
+     "farbe": "laerche",
+     "grund": "hell",
+     "dateien": [
+      "monte-moro-medaillon-laerche.svg",
+      "monte-moro-medaillon-laerche.png"
+     ],
+     "px": [
+      1000,
+      1000
+     ]
+    },
+    {
+     "k": "medaillon-papier",
+     "farbe": "papier",
+     "grund": "dunkel",
+     "dateien": [
+      "monte-moro-medaillon-papier.svg",
+      "monte-moro-medaillon-papier.png"
+     ],
+     "px": [
+      1000,
+      1000
+     ]
+    }
+   ]
+  },
+  {
+   "k": "original",
+   "var": [
+    {
+     "k": "original",
+     "grund": "hell",
+     "dateien": [
+      "monte-moro-logo-original.png"
+     ],
+     "px": [
+      1161,
+      475
+     ]
+    }
+   ]
+  },
+  {
+   "k": "tapete",
+   "var": [
+    {
+     "k": "hell",
+     "grund": "hell",
+     "dateien": [
+      "monte-moro-tapete-hell.png",
+      "monte-moro-tapete-hell.svg",
+      "monte-moro-tapete-hell.webp"
+     ],
+     "farbe": "#F5F2EE",
+     "px": [
+      960,
+      960
+     ]
+    },
+    {
+     "k": "dunkel",
+     "grund": "dunkel",
+     "dateien": [
+      "monte-moro-tapete-dunkel.png",
+      "monte-moro-tapete-dunkel.svg",
+      "monte-moro-tapete-dunkel.webp"
+     ],
+     "farbe": "#0A2A4A",
+     "px": [
+      960,
+      960
+     ]
+    }
+   ]
+  },
+  {
+   "k": "farben",
+   "var": [
+    {
+     "k": "alle",
+     "grund": "hell",
+     "dateien": [
+      "monte-moro-farben.css",
+      "monte-moro-farben.json",
+      "monte-moro-farben.ase"
+     ]
+    }
+   ]
+  },
+  {
+   "k": "schriften",
+   "var": [
+    {
+     "k": "alle",
+     "grund": "hell",
+     "dateien": [
+      "monte-moro-schriften.zip"
+     ]
+    }
+   ]
+  }
+ ],
+ "farben": [
+  {
+   "k": "papier",
+   "n": "Papier",
+   "h": "#F5F2EE",
+   "rgb": [
+    245,
+    242,
+    238
+   ],
+   "r": "Grundfläche, auf der gelesen wird",
+   "g": "hell",
+   "woher": "Wert der Website (montemoro.css); Markenbuch: Fassade, aufgehellt: die Grundfläche, auf der gelesen wird"
+  },
+  {
+   "k": "fassade",
+   "n": "Fassade",
+   "h": "#E7E1DC",
+   "rgb": [
+    231,
+    225,
+    220
+   ],
+   "r": "zweite helle Fläche, Karten und Blätter",
+   "g": "hell",
+   "woher": "Wert der Website (montemoro.css); Markenbuch: myswitzerland-00072098, die weisse Wand im Sonnenlicht, Median"
+  },
+  {
+   "k": "creme",
+   "n": "Creme",
+   "h": "#EFE9E1",
+   "rgb": [
+    239,
+    233,
+    225
+   ],
+   "r": "helle Fläche zwischen Papier und Fassade",
+   "g": "hell",
+   "woher": "Wert der Website (montemoro.css)"
+  },
+  {
+   "k": "wandschatten",
+   "n": "Wandschatten",
+   "h": "#D6CCC1",
+   "rgb": [
+    214,
+    204,
+    193
+   ],
+   "r": "Kanten, Unterseite der Knöpfe",
+   "g": "hell",
+   "woher": "Wert der Website (montemoro.css); Markenbuch: Fassade im Schatten unter den Balkonen: Kanten, Unterseite der Knöpfe"
+  },
+  {
+   "k": "nacht",
+   "n": "Nacht",
+   "h": "#0A2A4A",
+   "rgb": [
+    10,
+    42,
+    74
+   ],
+   "r": "dunkle Fläche am Abend, Lesetext auf Hell",
+   "g": "blau",
+   "woher": "Wert der Website (montemoro.css); Markenbuch: Logo-Blau, auf 45 Prozent Helligkeit gezogen: die dunkle Fläche der Welt A und der Lesetext"
+  },
+  {
+   "k": "nachtblau",
+   "n": "Nachtblau",
+   "h": "#0D3F6F",
+   "rgb": [
+    13,
+    63,
+    111
+   ],
+   "r": "Platten auf dunklem Grund",
+   "g": "blau",
+   "woher": "Wert der Website (montemoro.css); Markenbuch: zwischen Nacht und Logo-Blau: Kuhlen und Platten auf dunklem Grund"
+  },
+  {
+   "k": "tiefnacht",
+   "n": "Tiefnacht",
+   "h": "#071B2E",
+   "rgb": [
+    7,
+    27,
+    46
+   ],
+   "r": "tiefste dunkle Fläche, Fuss der Seite",
+   "g": "blau",
+   "woher": "Wert der Website (montemoro.css)"
+  },
+  {
+   "k": "blau",
+   "n": "Logo-Blau",
+   "h": "#115595",
+   "rgb": [
+    17,
+    85,
+    149
+   ],
+   "r": "das Blau der Wortmarke, Zeichen auf Hell",
+   "g": "blau",
+   "woher": "Wert der Website (montemoro.css); Markenbuch: allgem_logo.png, häufigste Farbe der Wortmarke (87.674 Bildpunkte, gemessen 17.10.2026)"
+  },
+  {
+   "k": "laerche",
+   "n": "Lärche",
+   "h": "#C67144",
+   "rgb": [
+    198,
+    113,
+    68
+   ],
+   "r": "Akzent, Hauptknopf, das letzte Wort im Titel",
+   "g": "laerche",
+   "woher": "Wert der Website (montemoro.css); Markenbuch: myswitzerland-00072098 (Fassade im Sommer, 3734 px), Median der besonnten Balkone, 16 Prozent des Bildes"
+  },
+  {
+   "k": "laerche-tief",
+   "n": "Lärche tief",
+   "h": "#9A4F2B",
+   "rgb": [
+    154,
+    79,
+    43
+   ],
+   "r": "Betonung und kleine Zeilen auf Hell",
+   "g": "laerche",
+   "woher": "Wert der Website (montemoro.css); Markenbuch: Lärche, dunkler gezogen, damit sie auf Papier als Schrift lesbar ist (Kontrast über 4,5 zu 1)"
+  },
+  {
+   "k": "messing",
+   "n": "Messing",
+   "h": "#B39867",
+   "rgb": [
+    179,
+    152,
+    103
+   ],
+   "r": "nur feine Linien",
+   "g": "laerche",
+   "woher": "Wert der Website (montemoro.css)"
+  },
+  {
+   "k": "tinte",
+   "n": "Tinte",
+   "h": "#13263A",
+   "rgb": [
+    19,
+    38,
+    58
+   ],
+   "r": "Lesetext auf Papier",
+   "g": "schrift",
+   "woher": "Wert der Website (montemoro.css)"
+  },
+  {
+   "k": "grau",
+   "n": "Grau",
+   "h": "#4A5D70",
+   "rgb": [
+    74,
+    93,
+    112
+   ],
+   "r": "leise Zeilen, Bildunterschriften",
+   "g": "schrift",
+   "woher": "Wert der Website (montemoro.css)"
+  }
+ ],
+ "gruppen": [
+  {
+   "k": "hell",
+   "n": "Papier und Fassade",
+   "s": "Hell ist der Normalzustand: so hell wie die Fassade des Hauses in der Sonne. Papier trägt den Lesetext, Fassade und Creme die Blätter und Karten.",
+   "bild": "../../assets/img/haus-sommer-l.webp",
+   "bild_t": "Die Fassade im Sommer, fotografiert für Schweiz Tourismus: daraus kommen Papier, Fassade und Wandschatten."
+  },
+  {
+   "k": "blau",
+   "n": "Das Blau",
+   "s": "Aus der Wortmarke des Hauses. Logo-Blau ist das Zeichen auf Hell, Nacht die dunkle Fläche am Abend und die Farbe des Lesetextes.",
+   "bild": "../../assets/img/empfang-l.webp",
+   "bild_t": "Der Bergkamm an der Wand beim Empfang. Das Blau kommt aus der Logo-Datei des Hauses."
+  },
+  {
+   "k": "laerche",
+   "n": "Lärche und Messing",
+   "s": "Das Holz der Balkone in der Sonne. Lärche zeichnet und betont, schreibt nie den Lesetext; Messing steht nur als feine Linie.",
+   "bild": "../../assets/img/haus-sommer-g-l.webp",
+   "bild_t": "Die Balkone aus Lärche in der Sonne: daraus kommen Lärche und Lärche tief."
+  },
+  {
+   "k": "schrift",
+   "n": "Schrift",
+   "s": "Geschrieben wird in Tinte auf Papier, leise Zeilen in Grau. Nie reines Schwarz, nie reines Weiss."
+  }
+ ],
+ "glanz": [],
+ "groessen": {
+  "monte-moro-bergkamm-blau.png": 27646,
+  "monte-moro-bergkamm-blau.svg": 27267,
+  "monte-moro-bergkamm-laerche.png": 27780,
+  "monte-moro-bergkamm-laerche.svg": 27267,
+  "monte-moro-bergkamm-nacht.png": 27670,
+  "monte-moro-bergkamm-nacht.svg": 27267,
+  "monte-moro-bergkamm-papier.png": 26987,
+  "monte-moro-bergkamm-papier.svg": 27267,
+  "monte-moro-farben.ase": 566,
+  "monte-moro-farben.css": 1024,
+  "monte-moro-farben.json": 3373,
+  "monte-moro-logo-original.png": 121832,
+  "monte-moro-marke.zip": 1244626,
+  "monte-moro-medaillon-blau.png": 83166,
+  "monte-moro-medaillon-blau.svg": 27644,
+  "monte-moro-medaillon-laerche.png": 83595,
+  "monte-moro-medaillon-laerche.svg": 27644,
+  "monte-moro-medaillon-papier.png": 81495,
+  "monte-moro-medaillon-papier.svg": 27644,
+  "monte-moro-schriften.zip": 287875,
+  "monte-moro-tapete-dunkel.png": 45060,
+  "monte-moro-tapete-dunkel.svg": 139308,
+  "monte-moro-tapete-dunkel.webp": 7308,
+  "monte-moro-tapete-hell.png": 49922,
+  "monte-moro-tapete-hell.svg": 139323,
+  "monte-moro-tapete-hell.webp": 10648,
+  "monte-moro-wortmarke-blau.png": 86042,
+  "monte-moro-wortmarke-blau.svg": 78014,
+  "monte-moro-wortmarke-laerche.png": 86752,
+  "monte-moro-wortmarke-laerche.svg": 78014,
+  "monte-moro-wortmarke-nacht.png": 85676,
+  "monte-moro-wortmarke-nacht.svg": 78014,
+  "monte-moro-wortmarke-papier.png": 83526,
+  "monte-moro-wortmarke-papier.svg": 78014
+ },
+ "bereiche": [
+  "haus",
+  "zimmer",
+  "wohnungen",
+  "roestihues",
+  "kinder",
+  "spa",
+  "saastal"
+ ],
+ "schriften": [
+  {
+   "k": "t",
+   "n": "Fjalla One",
+   "d": "FjallaOne-400.woff2",
+   "r": "Titel",
+   "e": "400, eine Stärke; gross und klein, nie fett, nie kursiv",
+   "p": "Mehr erleben, weniger zahlen.",
+   "w": 400,
+   "bild": "listen/schrift-t.webp"
+  },
+  {
+   "k": "s",
+   "n": "Instrument Sans",
+   "d": "InstrumentSans-normal-400_600.woff2",
+   "r": "Lesetext",
+   "e": "400, 17,5 px, Zeilenabstand 1,7",
+   "p": "Im hauseigenen Restaurant Röstihüs verwöhnen wir Sie gerne mit Schweizer Spezialitäten.",
+   "w": 400,
+   "bild": "listen/schrift-s.webp"
+  },
+  {
+   "k": "e",
+   "n": "DM Mono",
+   "d": "DMMono-normal-400.woff2",
+   "r": "Kapitelzeilen und Knöpfe",
+   "e": "400, 11 px, Versalien, 0,16 bis 0,24 em gesperrt",
+   "p": "Restaurant Röstihüs · Saas-Almagell",
+   "w": 400,
+   "bild": "listen/schrift-e.webp"
+  },
+  {
+   "k": "z",
+   "n": "DM Mono",
+   "d": "DMMono-normal-400.woff2",
+   "r": "Zeiten, Preise, Adressen",
+   "e": "gleich breite Ziffern, Preise mit Punkt wie auf der Preisliste",
+   "p": "Mo–Sa 16:30–21:00 · CHF 90.00",
+   "w": 400,
+   "bild": "listen/schrift-z.webp"
+  }
+ ],
+ "namen": {
+  "zentrale": "Das Hotelbüro",
+  "website": "Das Schaufenster",
+  "karten": "Das Kartenbrett",
+  "gaeste": "Die Rezeption",
+  "marke": "Das Markenbuch",
+  "besuche": "Die Besucherliste",
+  "druck": "Die Hausdruckerei"
+ },
+ "zusammen": {
+  "haus-winter-g": "haus-winter-b",
+  "fr-gross": "fr-tisch"
+ },
+ "ton": {
+  "eigene_worte": [
+   "Mehr erleben, weniger zahlen.",
+   "Es lebe die Tradition!",
+   "Bei uns scheint fast immer die Sonne.",
+   "Schöne Hotelzimmer – schöne Ferien",
+   "mit Liebe, Herz und den besten regionalen Produkten",
+   "gemütlich, herzlich eingerichtet",
+   "von Fabian selber kreiert"
+  ],
+  "nicht": [
+   "Du-Form",
+   "Luxus",
+   "exklusiv",
+   "Refugium",
+   "atemberaubend",
+   "einzigartig",
+   "unvergesslich",
+   "JETZT BUCHEN als Werbezeile"
+  ]
+ },
+ "stand": {
+  "fotos": 74,
+  "haus": 14,
+  "frei": 1,
+  "ki": 59,
+  "fremd": 0,
+  "partner": 0,
+  "ue": 0,
+  "vn": 59,
+  "original": 74,
+  "dateien": 32,
+  "datum": "08.11.2026"
+ }
+}

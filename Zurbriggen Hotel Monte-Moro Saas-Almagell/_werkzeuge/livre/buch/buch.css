@@ -1,0 +1,277 @@
+/* Die Hausregeln · Hotel Monte-Moro, Saas-Almagell (buch.py). Kleid des Hauses wie die Website (montemoro.css, Markenbuch Farbwelt A): Nacht #0A2A4A,
+   Nachtblau #0D3F6F, Tiefnacht #071B2E, Papier #F5F2EE, Fassade #E7E1DC, Creme #EFE9E1, Lärche #C67144 als Akzent (letztes Wort im Titel, Hauptknopf),
+   Lärche tief #9A4F2B auf Hell, Messing #B39867 nur als feine Linie; Fjalla One für Titel (eine Stärke), Instrument Sans zum Lesen, DM Mono gesperrt für kleine
+   Zeilen. Form: Knöpfe als Pille mit rundem Knauf, Nähte zwischen hellen und dunklen Blättern als Grat nach den Gipfeln des Logos. Druck: je Kapitel eine A4-Seite quer. */
+@font-face{font-family:"Fjalla One";src:url(/assets/fonts/FjallaOne-400.woff2) format("woff2");font-weight:400;font-display:block}
+@font-face{font-family:"Instrument Sans";src:url(/assets/fonts/InstrumentSans-normal-400_600.woff2) format("woff2");font-weight:400 600;font-display:swap}
+@font-face{font-family:"DM Mono";src:url(/assets/fonts/DMMono-normal-400.woff2) format("woff2");font-weight:400;font-display:swap}
+:root{--nacht:#0A2A4A;--nachtblau:#0D3F6F;--tiefnacht:#071B2E;--blau:#115595;--papier:#F5F2EE;--fassade:#E7E1DC;--creme:#EFE9E1;--wandschatten:#D6CCC1;
+  --laerche:#C67144;--laerche-t:#9A4F2B;--messing:#B39867;--tinte:#13263A;--grau:#4A5D70;
+  --text:#F5F2EE;--text2:rgba(245,242,238,.76);--dunkel:#13263A;--dunkel2:#4A5D70;
+  --titel:"Fjalla One","Arial Narrow",Arial,sans-serif;--lauf:"Instrument Sans",Arial,sans-serif;--mono:"DM Mono",ui-monospace,Menlo,monospace;
+  --k:cubic-bezier(.16,1,.3,1);--schatten:0 30px 60px -28px rgba(3,10,16,.55),0 10px 22px -14px rgba(3,10,16,.35);--innen:min(1240px,92vw);--leiste:64px;
+  --grat:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%2060'%20preserveAspectRatio='none'%3E%3Cpath%20d='M0%2060%20L0%2038%20L70%2030%20L118%206%20L150%2026%20L196%2014%20L250%2040%20L300%2022%20L338%2034%20L380%208%20L430%2036%20L486%2018%20L540%2042%20L600%2028%20L640%2036%20L700%2012%20L748%2032%20L800%2024%20L860%2044%20L920%2020%20L962%2034%20L1000%2026%20L1000%2060%20Z'/%3E%3C/svg%3E")}
+*{box-sizing:border-box}
+html{background:var(--nacht);color:var(--text);font:400 17.5px/1.7 var(--lauf);-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;scroll-padding-top:calc(var(--leiste) + 12px);font-synthesis:none}
+body{margin:0;overflow-x:clip;background:var(--nacht)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+p,h1,h2,h3,figure,ul,dl,dd{margin:0}
+h1,h2,h3{font-weight:400}
+button{font:inherit;color:inherit}
+::selection{background:var(--laerche);color:#fff}
+:focus-visible{outline:1px solid var(--laerche);outline-offset:4px}
+.in{width:var(--innen);margin:0 auto}
+.etikett{font:400 11px/1.4 var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--laerche)}
+.wm,.bk{display:block;width:100%;height:auto;fill:currentColor}
+.wm{aspect-ratio:3483/1425}.bk{aspect-ratio:3483/696}
+
+/* ---------- Knopf wie die Website (.kn): Pille mit Lichtkante oben, Schattenkante unten und rundem Knauf mit Pfeil */
+.kn{display:inline-flex;align-items:center;gap:14px;height:52px;padding:0 7px 0 24px;border:0;border-radius:999px;cursor:pointer;font:400 11.5px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;
+  transition:transform .8s var(--k)}
+.kn>span{display:block;text-box:trim-both cap alphabetic}
+@supports not (text-box:trim-both cap alphabetic){.kn>span{position:relative;top:.06em}}
+.kn i{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;flex:none;color:var(--nacht);background:linear-gradient(180deg,#fff,var(--creme));box-shadow:inset 0 1px 0 rgba(255,255,255,.95),inset 0 -2px 0 rgba(0,0,0,.18),0 2px 5px rgba(0,0,0,.2)}
+.kn svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.kn--laerche{color:#fff;background:linear-gradient(180deg,#D3845A 0%,var(--laerche) 46%,#AE5E34 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.3),inset 0 -2px 0 rgba(0,0,0,.22),0 18px 30px -18px rgba(90,40,15,.45)}
+.kn--nacht{color:#fff;background:linear-gradient(180deg,#15466F 0%,var(--nachtblau) 46%,var(--nacht) 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),inset 0 -2px 0 rgba(0,0,0,.35),0 18px 30px -18px rgba(3,10,16,.5)}
+.kn:hover{transform:translateY(-1px)}
+
+/* ---------- Leiste */
+.leiste{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:18px;height:var(--leiste);padding:0 max(16px,3vw);
+  background:rgba(10,42,74,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(179,152,103,.35)}
+.leiste__m{display:flex;align-items:center;gap:12px;min-width:0}
+.leiste svg.leiste__wm{width:46px;flex:none}
+.leiste__m span{display:flex;flex-direction:column;gap:3px;min-width:0}
+.leiste__m b{font:400 20px/1.05 var(--titel);color:var(--text);white-space:nowrap}
+.leiste__m small{font:400 10px/1.2 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--messing);white-space:nowrap}
+.leiste__k{display:flex;gap:clamp(10px,1.1vw,20px);font:400 10.5px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--text2);white-space:nowrap}
+.leiste__k a{padding:8px 0;border-bottom:1px solid transparent}
+.leiste__k a:hover{color:var(--text);border-color:var(--laerche)}
+.kn--leiste{height:44px;padding-left:18px}.kn--leiste i{width:32px;height:32px}
+@media (max-width:1365px){.leiste__k{display:none}}
+@media (max-width:560px){.leiste__m small{display:none}.kn--leiste>span{display:none}.kn--leiste{padding:0 6px;width:44px;justify-content:center}}
+
+/* ---------- Titel: Nacht mit der Tapete des Hauses */
+.titel{position:relative;padding:clamp(56px,8vw,110px) 0 clamp(36px,4vw,56px);background:linear-gradient(rgba(10,42,74,.9),rgba(10,42,74,.9)),url(../dateien/monte-moro-tapete-dunkel.svg) 0 0/480px 480px,var(--nacht)}
+.titel__in{width:var(--innen);margin:0 auto;display:grid;grid-template-columns:minmax(220px,380px) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:center}
+.titel__wm{padding:clamp(22px,3vw,40px);border-radius:18px;background:var(--tiefnacht);box-shadow:inset 0 0 0 1px rgba(179,152,103,.35),var(--schatten)}
+.titel h1{margin:18px 0 20px;font:400 clamp(44px,6.6vw,92px)/1.02 var(--titel);color:var(--text);text-wrap:balance}
+.titel h1 em,.mk__t em{font-style:normal;color:var(--laerche)}
+.titel__ort{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;font:400 11px/1.5 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--text2)}
+.titel__ort i{width:14px;height:1px;background:var(--messing)}
+.titel__lead{margin-top:22px;max-width:60ch;color:var(--text2)}
+.titel__kn{margin-top:30px}
+.index{width:var(--innen);margin:clamp(44px,5vw,72px) auto 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;border-radius:18px;overflow:hidden;background:rgba(179,152,103,.3);box-shadow:inset 0 0 0 1px rgba(179,152,103,.3)}
+.index a{display:flex;align-items:baseline;gap:12px;padding:16px 18px;background:var(--tiefnacht);font:400 19px/1.25 var(--titel);color:var(--text);transition:background .4s}
+.index a span{font:400 11px/1 var(--mono);letter-spacing:.14em;color:var(--laerche)}
+.index a:hover{background:var(--nachtblau)}
+@media (max-width:900px){.titel__in{grid-template-columns:minmax(0,1fr)}.titel__wm{width:min(300px,70vw)}.index{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ---------- Blätter; ein helles Blatt endet oben als Grat über dem dunklen */
+.blatt{position:relative;padding:clamp(72px,8vw,120px) 0}
+.hell{background:var(--papier);color:var(--dunkel)}
+.creme2{background:var(--fassade);color:var(--dunkel)}
+.dunkel{background:var(--nacht);color:var(--text)}
+.hell::before,.creme2::before{content:"";position:absolute;left:0;right:0;bottom:100%;height:clamp(18px,2.4vw,38px);background:inherit;-webkit-mask:var(--grat) 0 0/100% 100% no-repeat;mask:var(--grat) 0 0/100% 100% no-repeat;pointer-events:none}
+.mk{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:18px clamp(32px,5vw,80px);align-items:end;margin-bottom:clamp(36px,4vw,56px)}
+.mk__kap{grid-column:1/-1;display:flex;align-items:center;gap:14px;font:400 11px/1 var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--laerche)}
+.hell .mk__kap,.creme2 .mk__kap{color:var(--laerche-t)}
+.mk__kap span{font-variant-numeric:tabular-nums}
+.mk__kap i{flex:0 0 72px;height:1px;background:var(--messing)}
+.mk__t{font:400 clamp(38px,4.6vw,66px)/1.04 var(--titel);text-wrap:balance}
+.hell .mk__t,.creme2 .mk__t{color:var(--nacht)}
+.hell .mk__t em,.creme2 .mk__t em{color:var(--laerche-t)}
+.mk__lead{max-width:56ch;color:var(--text2)}
+.hell .mk__lead,.creme2 .mk__lead{color:var(--dunkel2)}
+@media (max-width:900px){.mk{grid-template-columns:minmax(0,1fr);align-items:start}}
+
+/* Karten mit Foto (Haltung) */
+.drei{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,28px)}
+.k3{display:flex;flex-direction:column;border-radius:18px;overflow:hidden;background:#fff;color:var(--dunkel);box-shadow:0 0 0 1px rgba(10,42,74,.08),0 24px 40px -28px rgba(10,42,74,.5)}
+.k3__b{aspect-ratio:4/3;overflow:hidden;background:var(--fassade)}
+.k3__b img{width:100%;height:100%;object-fit:cover}
+.k3__n{display:flex;flex-direction:column;gap:8px;padding:22px 24px 26px;flex:1}
+.k3__n small{font:400 10.5px/1.2 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--laerche-t)}
+.k3__n b{font:400 28px/1.1 var(--titel);color:var(--nacht)}
+.k3__n p{color:var(--dunkel2);font-size:16px}
+@media (max-width:900px){.drei{grid-template-columns:minmax(0,1fr)}}
+
+/* Fenster: Foto über die Breite, ein Satz */
+.fenster{background:var(--nacht)}
+.fenster__f{position:relative;height:min(67vh,624px);overflow:hidden}
+.fenster__b,.fenster__b img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.fenster__b::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,27,46,.82),rgba(7,27,46,.35) 55%,rgba(7,27,46,.1))}
+.fenster__t{position:relative;z-index:1;width:var(--innen);height:100%;margin:0 auto;display:flex;flex-direction:column;justify-content:center;gap:16px}
+.fenster__s{max-width:12em;font:400 clamp(38px,5.4vw,78px)/1.04 var(--titel);color:var(--text);text-wrap:balance}
+.fenster__u{font:400 11px/1.5 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--laerche)}
+
+/* Zeichen */
+.lockups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,28px)}
+.lock{display:flex;flex-direction:column;border-radius:18px;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(179,152,103,.3),var(--schatten)}
+.lock>div{display:grid;place-items:center;aspect-ratio:4/3;padding:clamp(24px,3vw,44px)}
+.lock--nacht>div{background:var(--tiefnacht)}
+.lock--papier>div{background:var(--papier)}
+.lock figcaption{display:flex;flex-direction:column;gap:4px;padding:16px 20px 18px;background:var(--nachtblau)}
+.lock figcaption b{font:400 21px/1.15 var(--titel)}
+.lock figcaption small{font:400 10.5px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--messing)}
+.regeln{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2vw,28px);margin-top:clamp(16px,2vw,28px)}
+.regel{display:flex;flex-direction:column;gap:10px;padding:24px;border-radius:18px;background:var(--nachtblau);box-shadow:inset 0 0 0 1px rgba(179,152,103,.22)}
+.regel--breit{grid-column:1/-1}
+.regel h3{font:400 24px/1.15 var(--titel)}
+.regel p{color:var(--text2);font-size:16px;max-width:70ch}
+.regel__f{display:flex;align-items:flex-end;justify-content:center;gap:32px;min-height:150px;padding:18px;border-radius:14px;background:var(--tiefnacht)}
+.schutz{display:block;width:min(280px,80%);padding:22px;outline:1px dashed rgba(179,152,103,.75);outline-offset:-1px;border-radius:4px}
+.klein span{display:flex;flex-direction:column;align-items:center;gap:10px}
+.klein small{font:400 10.5px/1 var(--mono);letter-spacing:.12em;color:var(--messing);font-variant-numeric:tabular-nums}
+.klein span:nth-child(1) svg{width:48px}.klein span:nth-child(2) svg{width:150px}
+.neine{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch;gap:16px}
+.nein{display:flex;flex-direction:column;align-items:center;gap:12px}
+.nein>div{position:relative;display:grid;place-items:center;width:100%;height:120px;padding:16px 22px;border-radius:14px;background:var(--papier)}
+.nein svg.wm{width:min(150px,80%)}
+.nein>div::after{content:"";position:absolute;left:14%;right:14%;top:50%;height:2px;background:var(--laerche-t);transform:rotate(-20deg)}
+.nein--zerr svg.wm{transform:scale(1.35,.7)}
+.nein--dreh svg.wm{transform:rotate(-16deg)}
+.nein--schatten svg.wm{filter:drop-shadow(0 0 8px rgba(17,85,149,.9)) drop-shadow(4px 6px 0 rgba(0,0,0,.6))}
+.nein--farbe svg.wm{color:#268369!important}
+.nein figcaption{font:400 10.5px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--text2);text-align:center}
+@media (max-width:900px){.lockups{grid-template-columns:minmax(0,1fr)}.lock>div{aspect-ratio:16/9}.regeln{grid-template-columns:minmax(0,1fr)}.neine{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Farben */
+.fg{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,2fr);gap:20px clamp(24px,3vw,48px);padding:28px 0;border-top:1px solid rgba(10,42,74,.14)}
+.fg__t h3{font:400 26px/1.15 var(--titel);margin-bottom:8px;color:var(--nacht)}
+.fg__t p{color:var(--dunkel2);font-size:15.5px}
+.fg__f{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.fa{display:flex;flex-direction:column;padding:0;border:0;border-radius:14px;overflow:hidden;cursor:pointer;text-align:left;background:#fff;box-shadow:0 0 0 1px rgba(10,42,74,.1),0 14px 26px -18px rgba(10,42,74,.5);transition:transform .6s var(--k)}
+.fa:hover{transform:translateY(-2px)}
+.fa:focus-visible{outline:1px solid var(--laerche-t);outline-offset:3px}
+.fa__f{position:relative;display:block;height:84px;background:var(--c);box-shadow:inset 0 -1px 0 rgba(10,42,74,.08)}
+.fa__ok{position:absolute;left:12px;bottom:10px;padding:5px 9px;border-radius:999px;background:rgba(10,42,74,.86);color:var(--papier);font:400 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;opacity:0;transform:translateY(4px);transition:.3s}
+.fa.kopiert .fa__ok{opacity:1;transform:none}
+.fa__n{display:flex;flex-direction:column;gap:4px;padding:12px 14px 14px;color:var(--dunkel)}
+.fa__n b{font:400 18px/1.15 var(--titel);color:var(--nacht);text-wrap:balance}
+.fa__n small{font-size:13px;line-height:1.4;color:var(--dunkel2)}
+.fa__n code{margin-top:4px;font:400 11.5px/1 var(--mono);letter-spacing:.08em;font-variant-numeric:tabular-nums;color:var(--laerche-t)}
+.satzreihe{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,28px);margin-top:20px;padding-top:28px;border-top:1px solid rgba(10,42,74,.14)}
+.satzreihe p{color:var(--dunkel2);font-size:16px}
+.satzreihe b{display:block;margin-bottom:4px;font:400 22px/1.2 var(--titel);color:var(--nacht)}
+@media (max-width:900px){.fg{grid-template-columns:minmax(0,1fr)}.satzreihe{grid-template-columns:minmax(0,1fr)}}
+
+/* Schrift */
+.proben{display:grid;gap:clamp(16px,2vw,24px)}
+.probe{padding:clamp(22px,2.6vw,36px);border-radius:18px;background:var(--nachtblau);box-shadow:inset 0 0 0 1px rgba(179,152,103,.24)}
+.probe small{display:block;margin-bottom:14px;font:400 10.5px/1.4 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--messing)}
+.p1{font:400 clamp(42px,6vw,84px)/1.02 var(--titel);text-wrap:balance}
+.abc{margin-top:14px;font:400 clamp(17px,1.6vw,22px)/1.45 var(--titel);color:var(--text2);overflow-wrap:anywhere}
+.p2{max-width:62ch;font-size:17.5px;line-height:1.7;color:var(--text2)}
+.p3{font:400 13px/1.4 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--laerche)}
+.p4{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-top:16px}
+.p4 span{font:400 15px/1.3 var(--lauf);color:var(--text2)}
+.p4 b{font:400 16px/1.3 var(--mono);font-weight:400;letter-spacing:.06em;margin-right:18px;font-variant-numeric:tabular-nums}
+
+/* Bausteine */
+.formen{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(20px,3vw,40px);align-items:stretch}
+.form-b{display:flex;flex-direction:column;gap:10px;overflow:hidden;border-radius:18px}
+.form-b img{width:100%;height:100%;min-height:280px;object-fit:cover;border-radius:18px;box-shadow:var(--schatten)}
+.form-b figcaption{font:400 10.5px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--laerche-t)}
+.form-d{display:flex;flex-direction:column;gap:22px;justify-content:center}
+.platte{position:relative;padding:24px;border-radius:18px;background:var(--nacht);color:var(--text);box-shadow:var(--schatten)}
+.platte small{display:block;font:400 10.5px/1.2 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--laerche)}
+.platte b{display:block;margin:8px 0 16px;font:400 22px/1.2 var(--titel)}
+.tapeten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.tap{display:grid;place-items:end start;height:96px;padding:10px 12px;border-radius:12px;font:400 10px/1.2 var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.tap--hell{background:url(../dateien/monte-moro-tapete-hell.svg) 0 0/240px 240px,var(--papier);color:var(--nacht)}
+.tap--dunkel{background:url(../dateien/monte-moro-tapete-dunkel.svg) 0 0/240px 240px,var(--nacht);color:var(--text);box-shadow:inset 0 0 0 1px rgba(179,152,103,.3)}
+.kn-reihe{display:flex;flex-wrap:wrap;gap:12px}
+.form-s{color:var(--dunkel2);font-size:16px}
+.form-s b{font-weight:600;color:var(--dunkel)}
+.nicht{margin-top:clamp(24px,3vw,40px);padding:22px 24px;border-radius:18px;background:var(--fassade);box-shadow:inset 0 0 0 1px rgba(10,42,74,.08)}
+.nicht h3{font:400 22px/1.2 var(--titel);margin-bottom:6px;color:var(--nacht)}
+.nicht p{color:var(--dunkel2);font-size:16px}
+@media (max-width:900px){.formen{grid-template-columns:minmax(0,1fr)}}
+
+/* Bilder */
+.mosaik{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:clamp(180px,20vw,280px);gap:10px}
+.mosaik figure{overflow:hidden;border-radius:14px;background:var(--nachtblau)}
+.mosaik figure:nth-child(1){grid-row:span 2}
+.mosaik img{width:100%;height:100%;object-fit:cover}
+.regel-liste{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 32px;margin-top:28px;padding:0;list-style:none;color:var(--text2);font-size:16px}
+.regel-liste b{font-weight:600;color:var(--text)}
+.regel-liste li{padding-left:24px;position:relative}
+.regel-liste li::before{content:"";position:absolute;left:0;top:.85em;width:14px;height:1px;background:var(--laerche)}
+@media (max-width:900px){.mosaik{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:clamp(150px,40vw,240px)}.regel-liste{grid-template-columns:minmax(0,1fr)}}
+
+/* Logo richtig und falsch */
+.rf+.rf{margin-top:clamp(28px,3vw,44px)}
+.rf__t{display:flex;align-items:center;gap:14px;margin-bottom:16px;font:400 11px/1 var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--laerche-t)}
+.rf__t::after{content:"";flex:0 0 72px;height:1px;background:var(--messing)}
+.vier{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.8vw,24px)}
+.k4{display:flex;flex-direction:column;gap:8px}
+.k4__f{position:relative;display:grid;place-items:center;aspect-ratio:4/3;padding:12%;margin-bottom:8px;border-radius:14px;overflow:hidden;box-shadow:0 18px 34px -24px rgba(10,42,74,.6)}
+.k4__f--papier{background:var(--papier)}.k4__f--nacht{background:var(--nacht)}
+.k4__f svg{width:100%}
+.k4--nein .k4__f::after{content:"";position:absolute;left:14%;right:14%;top:50%;height:2px;background:var(--laerche-t);transform:rotate(-20deg)}
+.k4 b{font:400 22px/1.2 var(--titel);color:var(--nacht);text-wrap:balance}
+.k4 p{color:var(--dunkel2);font-size:15.5px}
+@media (max-width:1100px){.vier{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.vier{grid-template-columns:minmax(0,1fr)}}
+
+/* Ton */
+.zwei{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2vw,28px)}
+.ton{padding:clamp(22px,2.6vw,34px);border-radius:18px;background:var(--nachtblau);box-shadow:inset 0 0 0 1px rgba(179,152,103,.24)}
+.ton h3{font:400 26px/1.15 var(--titel);margin-bottom:16px}
+.ton ul{display:flex;flex-direction:column;gap:12px;padding:0;list-style:none}
+.ton--ja li{font:400 21px/1.3 var(--titel);color:var(--text)}
+.ton--nein li{display:flex;flex-direction:column;gap:2px}
+.ton--nein s{color:rgba(245,242,238,.55);text-decoration-color:var(--laerche)}
+.ton--nein span{font:400 20px/1.3 var(--titel);color:var(--text)}
+@media (max-width:900px){.zwei{grid-template-columns:minmax(0,1fr)}}
+
+/* Fuss */
+.fuss{padding:clamp(56px,6vw,90px) 0;background:linear-gradient(rgba(7,27,46,.92),rgba(7,27,46,.92)),url(../dateien/monte-moro-tapete-dunkel.svg) 0 0/480px 480px,var(--tiefnacht);box-shadow:inset 0 1px 0 rgba(179,152,103,.3)}
+.fuss .in{display:grid;grid-template-columns:240px minmax(0,1fr);gap:clamp(28px,4vw,64px);align-items:center}
+.fuss__t{display:flex;flex-direction:column;gap:14px}
+.fuss__a{font:400 24px/1.3 var(--titel)}
+.fuss__z{display:flex;flex-wrap:wrap;gap:8px 32px}
+.fuss__z div{display:flex;gap:10px;align-items:baseline;padding-top:8px;border-top:1px solid rgba(179,152,103,.45)}
+.fuss__z dt{color:var(--text2);font-size:15px}
+.fuss__z dd{font:400 15px/1.3 var(--mono);letter-spacing:.04em}
+.fuss__l a{font:400 11px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--laerche);border-bottom:1px solid rgba(198,113,68,.5);padding-bottom:4px}
+@media (max-width:600px){.fuss .in{grid-template-columns:minmax(0,1fr)}.fuss__wm{width:180px}}
+
+/* Meldung «Kopiert» */
+.meldung{position:fixed;left:50%;bottom:24px;z-index:30;padding:12px 18px;border-radius:999px;background:var(--nacht);color:var(--text);box-shadow:inset 0 0 0 1px rgba(179,152,103,.4),var(--schatten);
+  font:400 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;opacity:0;transform:translate(-50%,10px);transition:.3s var(--k);pointer-events:none}
+.meldung.an{opacity:1;transform:translate(-50%,0)}
+
+/* Bewegung wie im Stamm und im Kleid (bewegung.js): weich auslaufend; nur translate und scale, nie opacity */
+@keyframes bu-hoch{from{translate:0 var(--weg,30px);scale:var(--kl,.975)}}
+@keyframes bu-zoom{from{scale:1.12}}
+.bewegt [data-r]:not(.da){translate:0 30px;scale:.975}
+.bewegt [data-r].da:not(.steht){animation:bu-hoch 1.25s cubic-bezier(.19,1,.22,1) backwards;animation-delay:calc(var(--i,0) * 85ms)}
+.bewegt [data-r].da:not(.steht) .k3__b img,.bewegt .mosaik figure[data-r].da:not(.steht) img,.bewegt .form-b[data-r].da:not(.steht) img{animation:bu-zoom 2.2s cubic-bezier(.19,1,.22,1) backwards;animation-delay:calc(var(--i,0) * 85ms)}
+.bewegt [data-t] .w{display:inline-block}
+.bewegt [data-t]:not(.da) .w{translate:0 .6em}
+.bewegt [data-t].da:not(.steht) .w{animation:bu-hoch 1.25s cubic-bezier(.19,1,.22,1) backwards;--weg:.6em;--kl:1;animation-delay:calc(var(--i,0) * 85ms + var(--z,0) * 95ms)}
+.bewegt .fenster[data-z].da:not(.steht) .fenster__b img{animation:bu-zoom 2.6s cubic-bezier(.19,1,.22,1) backwards}
+@media (prefers-reduced-motion:reduce){.bewegt [data-r],.bewegt [data-t] .w,.bewegt img{animation:none!important;translate:none!important;scale:none!important}}
+
+/* ---------- Druck: A4 quer, je Kapitel eine Seite, nichts zerschnitten */
+@media print{
+  @page{size:A4 landscape;margin:10mm}
+  html,body{background:#fff}
+  .leiste,.meldung,.titel__kn{display:none!important}
+  .hell::before,.creme2::before{display:none}
+  .blatt,.titel,.fenster,.fuss{break-before:page;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .titel{break-before:auto}
+  .blatt{padding:12mm 0}
+  .in,.titel__in,.index{width:100%}
+  .fenster__f{height:170mm}
+  [data-r],[data-t] .w,img{transform:none!important;translate:none!important;scale:none!important;animation:none!important}
+  .k3,.lock,.regel,.fa,.k4,.ton,.probe,.platte,.mosaik figure{break-inside:avoid}
+  .mosaik{grid-auto-rows:60mm}
+}
+.mk__lead,.k3__n p,.k4 p,.regel p,.fg__t p,.satzreihe p,.probe p{text-wrap:pretty}
+.ort-z{display:inline-flex;align-items:center;gap:14px;white-space:nowrap}
+/* Rasterspalten nie breiter als der Platz (WebKit) */
+.drei>*,.vier>*,.lockups>*,.regeln>*,.formen>*,.zwei>*,.fg>*,.fg__f>*,.satzreihe>*,.mosaik>*,.titel__in>*,.index>*,.neine>*,.tapeten>*{min-width:0}

@@ -1,0 +1,372 @@
+{
+ "haus-sommer": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/myswitzerland/myswitzerland-00072098_m.jpg",
+  "ausschnitt": null,
+  "original": null
+ },
+ "haus-winter": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/myswitzerland/myswitzerland-00072097_m.jpg",
+  "ausschnitt": null,
+  "original": null
+ },
+ "raclette": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/myswitzerland/myswitzerland-00072104_m.jpg",
+  "ausschnitt": null,
+  "original": null
+ },
+ "dorf-winter": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/dorf-winter.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/winter_1.jpg"
+ },
+ "balkon": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/balkon.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/aktuel_hotel-monte-moro-saas-almagell-balkon.jpg"
+ },
+ "gondel": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/gondel.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/bearbeitet/gondel-booking-609882092-hell.jpg"
+ },
+ "apollo": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/apollo.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/apollo_2.jpg"
+ },
+ "apollo-haus": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/apollo-haus.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/apollo_1.jpg"
+ },
+ "arizona": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/arizona.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/arizon_11.jpg"
+ },
+ "arizona-haus": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/arizona-haus.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/arizon_1.jpg"
+ },
+ "murmeli": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/sommer_11.jpg",
+  "ausschnitt": null,
+  "original": null
+ },
+ "stuebli": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/stuebli.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2017-11-29-291892107-raclettestubli.jpg"
+ },
+ "stube-tische": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/stube-tische.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/restau_6.jpg"
+ },
+ "mattmark": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/mattmark.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/sommer_10.jpg"
+ },
+ "bach": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/bach.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/sommer_4.jpg"
+ },
+ "blumen": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/blumen.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/sommer_2.jpg"
+ },
+ "wasserfall": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/wasserfall.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/sommer_9.jpg"
+ },
+ "tal-sommer": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/tal-sommer.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/sommer_1.jpg"
+ },
+ "huette": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/huette.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/winter_2.jpg"
+ },
+ "skitour": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/winter_6.jpg",
+  "ausschnitt": null,
+  "original": null
+ },
+ "winterweg": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/winter_9.jpg",
+  "ausschnitt": null,
+  "original": null
+ },
+ "haus-winter-b": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/haus-winter-b.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-47894191.jpg"
+ },
+ "z-dach": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/z-dach.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-28633464.jpg"
+ },
+ "z-sessel": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/z-sessel.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-28199204.jpg"
+ },
+ "z-licht": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/z-licht.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-28199274.jpg"
+ },
+ "z-abend": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/z-abend.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-47896311.jpg"
+ },
+ "z-balkon": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/z-balkon.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-28199224.jpg"
+ },
+ "z-hell": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/z-hell.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-28633426.jpg"
+ },
+ "z-familie": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/z-familie.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-47896340.jpg"
+ },
+ "z-bad": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/z-bad.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-28199314.jpg"
+ },
+ "fr-tisch": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/fr-tisch.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-133404915.jpg"
+ },
+ "speiseraum": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/speiseraum.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-28633462.jpg"
+ },
+ "empfang": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-47896195.jpg",
+  "ausschnitt": null,
+  "original": null
+ },
+ "dorf-nacht": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/dorf-nacht.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/stando_Saas_Almagell.jpg"
+ },
+ "tal-dorf": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/tal-dorf.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/hotel_standort.jpg"
+ },
+ "dorf-weiss": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/dorf-weiss.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/winter_5.jpg"
+ },
+ "roesti-stube": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/roesti-stube.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/restau_5.jpg"
+ },
+ "roesti-tische": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/roesti-tische.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/restau_4.jpg"
+ },
+ "kinder-rodel": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/ausflu_5.jpg",
+  "ausschnitt": null,
+  "original": null
+ },
+ "murmeltiere": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/murmeltiere.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/sommer_5.jpg"
+ },
+ "spa-garten": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/wellne_1.jpg",
+  "ausschnitt": null,
+  "original": null
+ },
+ "spa-holz": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/wellne_2.jpg",
+  "ausschnitt": null,
+  "original": null
+ },
+ "spa-wasser": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/wellne_3.jpg",
+  "ausschnitt": null,
+  "original": null
+ },
+ "metro": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/metro.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/ausflu_3.jpg"
+ },
+ "fam-montemoro": {
+  "druck": "Familie Zurbriggen/einstieg/site/bilder/monte-moro-1200.webp",
+  "ausschnitt": null,
+  "original": null
+ },
+ "haus-sommer-g": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/haus-sommer-g.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2017-11-29-291891830-hotel-restaurant-monte.jpg"
+ },
+ "stausee": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/stausee.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/ausflu_6.jpg"
+ },
+ "spielburg": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/spielburg.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-609882105.jpg"
+ },
+ "z-rot": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/z-rot.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-28199221.jpg"
+ },
+ "z-fenster": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/z-fenster.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-28199272.jpg"
+ },
+ "z-tv": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/z-tv.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-28199287.jpg"
+ },
+ "z-bogen": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/z-bogen.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-28633467.jpg"
+ },
+ "z-gelb": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/z-gelb.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-28633456.jpg"
+ },
+ "z-einzel": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/z-einzel.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-47896298.jpg"
+ },
+ "z-neu": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/z-neu.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-47896394.jpg"
+ },
+ "z-wanne": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/z-wanne.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-47896427.jpg"
+ },
+ "z-twin": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/z-twin.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2017-11-29-291891961-hotel-restaurant-monte.jpg"
+ },
+ "z-doppel": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/z-doppel.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2017-11-29-291892318-doppelzimmer.jpg"
+ },
+ "apollo-wohnen": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/apollo-wohnen.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/apollo_3.jpg"
+ },
+ "apollo-kueche": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/apollo-kueche.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/apollo_5.jpg"
+ },
+ "arizona-wohnen": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/arizona-wohnen.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/arizon_2.jpg"
+ },
+ "arizona-holz": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/arizona-holz.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/arizon_9.jpg"
+ },
+ "fr-detail": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/fr-detail.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/extern/booking/booking-133404918.jpg"
+ },
+ "alpenrosen": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/alpenrosen.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/sommer_6.jpg"
+ },
+ "bergbach": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/bergbach.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/sommer_7.jpg"
+ },
+ "see-blumen": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/see-blumen.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/sommer_8.jpg"
+ },
+ "skitour-hang": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/winter_4.jpg",
+  "ausschnitt": null,
+  "original": null
+ },
+ "winterbach": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/winterbach.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/winter_7.jpg"
+ },
+ "gletscher": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/gletscher.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/winter_8.jpg"
+ },
+ "dorf-fluss": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/dorf-fluss.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/winter_3.jpg"
+ },
+ "roesti-raum": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/roesti-raum.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/restau_restaurant.jpg"
+ },
+ "roesti-orange": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/ki-2026-10-24/roesti-orange.png",
+  "ausschnitt": null,
+  "original": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/restau_7.jpg"
+ },
+ "spa-licht": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/website/bilder/wellne_wellness.jpg",
+  "ausschnitt": null,
+  "original": null
+ },
+ "wolkenmeer-echt": {
+  "druck": "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle/schlussbild-echt-2026-10-20/valais-sea-of-fog-strassler.jpg",
+  "ausschnitt": null,
+  "original": null
+ }
+}
