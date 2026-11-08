@@ -1,0 +1,23 @@
+{
+ "_hinweis": "Knopf-Namen der Tafeln «So geht’s» je Werkzeug, aus dem Code des Werkzeugs gelesen und beim Bau dagegen geprüft (M20). Texte für das Hotel Monte-Moro (mm-maison 08.11.2026); nur Knopf-Namen, die im Code aller Fassungen des Werkzeugs stehen.",
+ "bureau": [
+  ["stift", "Text oder Foto ändern", "Den Bereich wählen, in der Vorschau auf den Text oder das Foto klicken und ändern, oder «Eigenes Foto hochladen». «Speichern» legt es in den Entwurf."],
+  ["uhr", "Preise und Hinweise", "Zimmerpreise, Inklusive-Leistungen und Hinweise für Gäste stehen an einer Stelle. Einmal ändern, jede Seite der Website folgt."],
+  ["waage", "Erst ansehen, dann online", "«Vorher, nachher» zeigt beide Stände nebeneinander, «Veröffentlichen» stellt sie auf die Website. Jeder frühere Stand lässt sich mit «Zurückholen» wieder holen."]
+ ],
+ "carte": [
+  ["stift", "Die Karte schreiben", "Mit «Neue Karte anlegen» entsteht eine neue Fassung; jede Rösti, jedes Cordon bleu und jeder Wein steht mit Beschreibung und Preis in einer Zeile, eine weitere kommt mit «Neuer Eintrag» dazu."],
+  ["pdf", "Erst ansehen", "«Probe-PDF» zeigt die Karte genau so, wie sie gedruckt im Röstihüs liegt. «Vorher, nachher» vergleicht mit dem letzten Stand."],
+  ["zurueck", "Speichern und zeigen", "«Speichern» legt den Entwurf ab, «Veröffentlichen» setzt die PDF neu. Unter «Frühere Fassungen» liegt jede frühere Karte bereit."]
+ ],
+ "imprimerie": [
+  ["satz", "Eine Vorlage wählen", "Aushang, Karte, Brief oder Beitrag wählen, vom Racletteabend bis zum Willkommensbrief im Zimmer, und die Angaben eintragen."],
+  ["fuenf", "In der Sprache des Hauses", "Jede Vorlage steht im Kleid der Website: Bergkamm, Fjalla One, Papier auf Nacht. Die passende mit «Diesen bearbeiten» öffnen und im Editor fertig machen."],
+  ["druck", "Drucken", "«Druckfertig speichern» legt die Drucksache als PDF für die Druckerei ab, dazu Bilder für Beitrag und Story."]
+ ],
+ "reception": [
+  ["blase", "Gäste fragen im Chat", "Auf jeder Seite der Website können Gäste fragen. Mit «Chat ausprobieren» sehen Sie, was der Chat antwortet, wenn ein Gast nach Zimmern, Preisen oder der Anreise fragt."],
+  ["eingang", "Anfragen beantworten", "Im «Eingang» steht jede Anfrage, ein Zimmer für die Skiwoche oder ein Tisch im Röstihüs, mit einem Brief im Ton des Hauses. «Text kopieren» oder «Als PDF speichern»: verschickt wird nur, was Sie selbst schicken."],
+  ["liste", "Lücken schliessen", "Wusste der Chat etwas nicht, steht die Frage offen. Mit «Antwort nachtragen» ergänzen Sie es einmal; unter «Das weiss der Chat» sehen Sie, woraus er antwortet."]
+ ]
+}
