@@ -108,8 +108,7 @@
    "name": "Die Hausdruckerei",
    "url": "http://127.0.0.1:9387/_werkzeuge/imprimerie/",
    "localStorage": {
-    "ds-wildside-willkommen": "1",
-    "ds-culinarium-willkommen": "1"
+    "ds-montemoro-willkommen": "1"
    },
    "max": 700,
    "gefahrExtra": "führung am studio",
@@ -118,7 +117,10 @@
   {
    "k": "hausdruckerei-mail",
    "name": "Die Hausdruckerei · Mail",
-   "url": "http://127.0.0.1:9387/_werkzeuge/imprimerie/mail.html"
+   "url": "http://127.0.0.1:9387/_werkzeuge/imprimerie/mail.html",
+   "localStorage": {
+    "ds-montemoro-willkommen": "1"
+   }
   },
   {
    "k": "werkbank",

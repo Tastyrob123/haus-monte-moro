@@ -73,13 +73,19 @@
  {
   "k": "hausdruckerei",
   "name": "Die Hausdruckerei",
-  "url": "http://127.0.0.1:9387/_werkzeuge/imprimerie/"
+  "url": "http://127.0.0.1:9387/_werkzeuge/imprimerie/",
+  "localStorage": {
+   "ds-montemoro-willkommen": "1"
+  }
  },
  {
   "k": "hausdruckerei-mail",
   "name": "Die Hausdruckerei · Mail",
   "url": "http://127.0.0.1:9387/_werkzeuge/imprimerie/mail.html",
-  "rundgang": false
+  "rundgang": false,
+  "localStorage": {
+   "ds-montemoro-willkommen": "1"
+  }
  },
  {
   "k": "werkbank",
