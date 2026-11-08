@@ -66,6 +66,9 @@ Keiner – alles fertig und geprüft. Nur noch «Wartet auf Roberts Wort».
 - Funde der Gegenprüfung, repariert und auf `claude/task-o0ores` gepusht (77b8f0d):
   1. Werkbank › Material: Ordner «05 Ansichten der neuen Website» fehlte (Culinarium hat ihn). Website am Rechner und am Handy neu aufgenommen (`_werkbank/ansicht_lang.js`), 64 Bilder, Ordner in `material/index.html` eingesetzt («zehn Ordner»).
   2. Hotelbüro › Rundgang: «Das ist Das Hotelbüro» → «Das ist das Hotelbüro», Werkzeugliste mit kleinen Artikeln (auch in `maison/bau.py`).
+  3. Drucksachen (alle 34 PDFs gerendert und angesehen): «Preisliste Zimmer» setzte «CHF» bei 100.00/120.00/130.00 allein über die Zahl, «Zuschläge» bei «CHF 7.00 - 10.00». Preisspalte jetzt so breit wie der längste Preis (`imprimerie/haeuser/montemoro/dokumente.js › V.preisliste`).
+  4. «Best of Röstis» (A4, zwei Seiten): Titel vorne 11,4 mm, hinten 16,7 mm. Rückseite übernimmt Titel- und Gerichtgrösse der Vorderseite (`inhalt.titelGr`/`nameGr`, gesetzt in `bau_vorlagen.py`).
+  Drucksachen neu gesetzt (`_bau/drucksachen.js`, 0 rote Befunde), Vorschaubilder der Hausdruckerei neu (`vorschau_katalog.js`, `vorschaubilder.js`, Stand v=115/38), Werkbank Drucksachen + Material nachgeführt (587f496).
 - Hinweis für Prüfer: Ganzseiten-Aufnahmen (fullPage) zeigen falsche Überlagerungen in den Seitenleisten und leere Flächen (Einblendung); nur Ansichten mit echtem Scrollen werten.
 
 ## Entscheidungen der Nacht
