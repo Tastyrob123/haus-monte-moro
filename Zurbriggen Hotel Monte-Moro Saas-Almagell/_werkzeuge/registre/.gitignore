@@ -1,0 +1,4 @@
+*.vor-*
+__pycache__/
+_daten/
+_bau/aus/
