@@ -1,0 +1,96 @@
+{
+ "haus": "montemoro",
+ "stand": "2026-11-08",
+ "quelle": "website/assets/css/montemoro.css (:root, .kn, --grat-maske), _kette/05-markenbauer/marke/ (farben.json, marke.css, markenbuch.html), website/inhalt/daten.py",
+ "masseinheit": "u = kurze Seite des Formats in mm; Schriftgrad gr in mm",
+ "rollen": {
+  "titel": {"rolle": ["titel"], "schrift": "Fjalla One", "schrift_alias": ["Fjalla One", "DS-titel"], "versalien": false, "kursiv": false, "fett": false, "sperr_max": 0.02, "schreibung": "normal geschrieben (Gross- und Kleinbuchstaben), eine Stärke", "akzent": "in Titeln höchstens das letzte Wort in Lärche"},
+  "kleine_zeile": {"rolle": ["kapitale"], "schrift": ["DM Mono"], "versalien": true, "sperr": [0.06, 0.24], "quelle": "montemoro.css: kleine Zeilen, Etiketten und Knöpfe DM Mono in Versalien gesperrt"},
+  "text": {"rolle": ["text", "kursiv"], "schrift": ["Instrument Sans", "Instrument Sans 500"], "kursiv": false, "versalien": false, "betonung": "über die Stärke (500), nie kursiv"},
+  "etikett": {"rolle": ["mono"], "schrift": ["DM Mono"], "schnitt": "DM Mono 400", "versalien": true, "versalien_erlaubt": true, "sperr": [0.04, 0.24], "ziffern": "tabular-nums", "quelle": "montemoro.css: --mono DM Mono, Etiketten gesperrt .16–.24em; im PDF höchstens .12em"}
+ },
+ "verboten": {
+  "versalien_in_rolle": ["titel", "text", "kursiv"],
+  "sperr_max": 0.24,
+  "rollen_fremd": "jede Rolle ausser titel, kapitale, text, kursiv, mono, detail",
+  "schriften_fremd": "nur Fjalla One, Instrument Sans und DM Mono; jede andere Schrift ist fremd (Prata, Hanken, Fraunces, Urbanist, Rammetto gibt es hier nicht)"
+ },
+ "trenner": {
+  "karte": " · ",
+  "ort": " · ",
+  "preis": "Fr. 25.– / CHF 90.00 wie auf Karte und Preisliste des Hauses",
+  "umbruch": "nur zwischen Gliedern, Trenner am Zeilenende entfällt"
+ },
+ "achse": {
+  "regel": "eine Achse je Seite, mittig; Ausnahmen: Aufbauten mit eigener Ordnung",
+  "mittig_toleranz_mm": 0.8,
+  "ausnahmen_aufbau": ["ansicht", "geteilt", "gutschein", "gutscheinrueck", "kartengruss", "programm", "brief", "blatt"],
+  "ausnahme_zeitleiste": "Elemente mit ausr 'l' in Paaren (Zeit DM Mono | Schritt) dürfen links stehen, wenn der Block als Ganzes mittig ist",
+  "ausnahmen_quer": ["fenster", "geteilt", "einladung", "rueckseite", "deckel", "gutschein"],
+  "zweispaltig_quer": {"aufbauten": ["einladung", "rueckseite", "deckel", "gutschein"], "formate": ["a6q", "dlq", "a5q"], "regel": "zwei Spalten, jede mit eigener Mittelachse", "pruefung": "jeder Text steht mittig auf einer der zwei Spaltenachsen"},
+  "ausnahme_brief": "Briefpapier und Willkommensbrief stehen linksbündig auf einer Kante wie ein Brief"
+ },
+ "komposition": {
+  "optische_mitte": "Gruppenmitte 4 % der freien Höhe über der geometrischen Mitte zwischen Kopf- und Fusszeile",
+  "toleranz_mitte_anteil": 0.06,
+  "fuellung_min": 0.45,
+  "fuellung_max": 0.78,
+  "kopf_fuss_gleich_toleranz_mm": 1.0,
+  "loch_max_textzeilen": 2.5,
+  "fuellung_max_aufbau": {"menue": 0.92, "karte": 0.9, "blatt": 0.92}
+ },
+ "groessen_anteil_u": {
+  "aushang": {"formate": ["a3h", "a4h", "a5h"], "titel": 0.105, "text": 0.038, "etikett": 0.0165, "zeichen": 0.13},
+  "karte": {"formate": ["a6h", "dlh"], "titel": 0.118, "text": 0.047, "etikett": 0.02, "zeichen": 0.15},
+  "quer": {"formate": ["a7q", "a6q"], "titel": 0.14, "text": 0.055, "etikett": 0.022, "zeichen": 0.13},
+  "handy": {"formate": ["story", "mail", "insta", "ig11"], "titel": 0.115, "text": 0.046, "etikett": 0.02, "zeichen": 0.15}
+ },
+ "mindestgrade_mm": {
+  "a3h": {"titel": 15, "text": 6, "etikett": 2.6},
+  "a4h": {"titel": 15, "text": 6, "etikett": 2.6},
+  "a5h": {"titel": 11, "text": 4.2, "etikett": 2.0},
+  "a6h": {"titel": 6, "text": 2.85, "etikett": 2.85},
+  "dlh": {"titel": 6, "text": 2.85, "etikett": 2.85},
+  "a7q": {"titel": 5, "text": 2.85, "etikett": 2.85},
+  "story": {"titel": 7, "text": 3.6, "etikett": 1.6},
+  "insta": {"titel": 7, "text": 3.6, "etikett": 1.6},
+  "mail": {"titel": 7, "text": 3.6, "etikett": 1.6},
+  "_druck": "Drucksachen: kein Text unter 8 pt (2,85 mm)"
+ },
+ "farben": {
+  "hell": {"grund": ["weiss"], "titel": ["tanne"], "text": ["tinte"], "etikett": ["taupe", "akzent"], "linie": ["gold"], "zeichen": ["logo"]},
+  "creme": {"grund": ["papier"], "titel": ["tanne"], "text": ["tinte"], "etikett": ["taupe", "akzent"], "linie": ["gold"], "zeichen": ["logo"]},
+  "dunkel": {"grund": ["navy"], "titel": ["weiss"], "text": ["papier"], "etikett": ["kander"], "linie": ["gold"], "zeichen": ["weiss"]},
+  "blau": {"grund": ["laden"], "titel": ["weiss"], "text": ["papier"], "etikett": ["kander"], "linie": ["gold"], "zeichen": ["weiss"]},
+  "werte": {"nacht": "#0A2A4A", "nachtblau": "#0D3F6F", "tiefnacht": "#071B2E", "logo_blau": "#115595", "laerche": "#C67144", "laerche_tief": "#9A4F2B", "messing": "#B39867", "papier": "#F5F2EE", "fassade": "#E7E1DC", "creme": "#EFE9E1", "tinte": "#13263A", "grau": "#4A5D70"},
+  "regel": "Papier auf Nacht; Lärche nur als Akzent (Etikett, letztes Titelwort, Hauptknopf), Lärche tief für Betonung auf Hell, Messing nur als feine Linie; Bergkamm und Wortmarke nur Logo-Blau oder Papier"
+ },
+ "linien": {
+  "rahmen": {"abstand_anteil_u": 0.045, "abstand_min_mm": 4.5, "staerke_anteil_u": 0.0018, "staerke_min_mm": 0.25, "ecke_anteil_u": 0.011},
+  "titellinie": {"laenge_anteil_u": [0.08, 0.1], "staerke_anteil_u": 0.0024, "staerke_min_mm": 0.3, "farbe": "Messing"},
+  "zwischen_posten": "feine Messinglinie 0.2 mm, Deckkraft 45 %"
+ },
+ "raender_anteil_u": {"rahmen": 0.045, "satz_innen": [0.08, 0.09], "kopf_fuss_innen": 0.055, "lesetext_max_breite": 0.74, "blatt_rand": 0.06},
+ "marke": {
+  "wortmarke_je_seite_max": 1,
+  "zeichen_und_wortmarke_zusammen": false,
+  "wortmarke": "nur das ganze Logo «Monte Moro / Saas-Almagell» (kleid/montemoro-marke.svg), Logo-Blau auf Hell, Papier auf Nacht, nie als Schrift nachgebaut",
+  "zeichen": "der Bergkamm aus dem Logo (kleid/montemoro-zeichen.svg), breit (3483 × 696)"
+ },
+ "bilder": {"verzerren": false, "grat_oberkante": "Fotos dürfen oben die Grat-Kante der Website tragen (--grat-maske)", "herkunft": "nur website/assets/img"},
+ "umbruch": {"einzelwort_letzte_zeile": false, "ausnahme": "Titel aus einem Wort"},
+ "schmuck": {
+  "zeichen_je_haus": "Bergkamm und Wortmarke des Monte-Moro, Grat-Kante",
+  "zierzeichen_verboten": ["x", "×", "*", "◆", "♦", "•", "✕"],
+  "akzent_voll_max": 1
+ },
+ "mindestgrade_zweck": {"tisch": {"aufbau": ["menue"], "wie": "dlh", "grund": "Karten liegen am Platz und werden aus Armlänge gelesen"}},
+ "schreibung": {
+  "sprache": "Schweizer Schreibung: ss statt ß, «Guillemets», Anrede Sie",
+  "preis_karte": "25.– (Röstihüs-Karte vom 18.11.2024, «Fr.»)",
+  "preis_hotel": "CHF 90.00 pro Person / Tag (Preisliste)",
+  "uhrzeit": "16:30 bis 21:00 Uhr (Kidsclub, wie auf der Website)",
+  "name": "Hotel Monte-Moro, kurz Monte-Moro; Restaurant Röstihüs; Gastgeber Esther und Fabian Zurbriggen",
+  "satz": "Mehr erleben, weniger zahlen."
+ }
+}
