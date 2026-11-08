@@ -202,7 +202,7 @@ def uebersicht():
     pf = lambda d: f'<svg viewBox="0 0 16 16" aria-hidden="true"><path d="{d}"/></svg>'
     n = ZAHLWORT.get(len(FAELLE), str(len(FAELLE)))
     karten = ''.join(f'''<article class="mb hr" style="--i:{min(i, 4)}">
-  <header class="mb-ueber"><span class="mb-nr">{f['nr']}</span><span class="mb-ueber__t"><b>{fest(f['name'])}</b><small><span>Von</span> Hotel&nbsp;Monte&#8209;Moro</small><small><span>Wann</span> {fest(f['wann'])}</small><small><span>Betreff</span> {fest(f['betreff'])}</small></span></header>
+  <div class="mb-ueber"><span class="mb-nr">{f['nr']}</span><span class="mb-ueber__t"><b>{fest(f['name'])}</b><small><span>Von</span> Hotel&nbsp;Monte&#8209;Moro</small><small><span>Wann</span> {fest(f['wann'])}</small><small><span>Betreff</span> {fest(f['betreff'])}</small></span></div>
   <div class="mb-blatt"><div class="mb-in">{eingebettet(f)}</div></div>
   <p class="mb-ganz"><button type="button" class="mb-kn" aria-expanded="false"><span class="a">Ganze Mail</span><span class="z">Weniger zeigen</span><i>{pf('M4 6l4 4 4-4')}</i></button></p>
 </article>''' for i, f in enumerate(FAELLE))
@@ -225,7 +225,7 @@ main{{padding:0 0 clamp(60px,8vw,120px)}}
 .band:focus-visible{{outline:2px solid {LAERCHE};outline-offset:-2px}}
 .mb{{flex:0 0 clamp(300px,34vw,520px);scroll-snap-align:start}}
 .mb:last-child{{margin-inline-end:var(--rand)}}
-.mb-ueber{{display:flex;gap:16px;align-items:flex-start;margin:0 4px 18px}}
+.mb-ueber{{display:flex;gap:16px;align-items:flex-start;margin:0 0 18px;padding:16px 18px;border-radius:16px;background:{NACHT2};box-shadow:inset 0 0 0 1px rgba(179,152,103,.35)}}   /* Nummer und Kopf der Mail auf einer Tafel (Oberflächenprüfung 4) */
 .mb-nr{{font:400 2.3rem/.95 'Fjalla One','Arial Narrow',sans-serif;color:{CREME};font-variant-numeric:tabular-nums}}
 .mb-ueber__t{{display:flex;flex-direction:column;gap:5px;min-width:0}}
 .mb-ueber__t b{{font:400 1.3rem/1.2 'Fjalla One','Arial Narrow',sans-serif}}

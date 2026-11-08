@@ -11,8 +11,9 @@ export PYTHONPATH="$K:$P/_werkbank" WB_PORT=9388
 M="python3 _werkbank/mit_papier.py"
 timeout 300 python3 _werkbank/druckschrift.py > /dev/null                      # feste Druckschnitte Fjalla One, Instrument Sans, DM Mono
 # ---------- Drucksachen und Untersetzer
+rm -rf drucksachen/img untersetzer/img                                       # vor papier.py: es legt die Bilder der Hausdruckerei schon hinein
 timeout 300 $M _werkbank/papier.py "$P"
-rm -rf _werkbank/roh/papier _werkbank/roh/einzel drucksachen/img untersetzer/img
+rm -rf _werkbank/roh/papier _werkbank/roh/einzel
 timeout 900 node "$K/papier_druck.js" "$P" > /dev/null
 timeout 300 $M "$K/papier_seiten.py" "$P" | grep -v "Schrift fehlt" || true
 # ---------- Unterlagen (Karten des Röstihüs aus dem Kartenbrett neben der heutigen Speisekarte)
@@ -35,6 +36,7 @@ timeout 120 python3 _werkbank/feed_leicht.py
 # ---------- Mails
 timeout 120 python3 mails/_src/bau.py; timeout 300 node mails/_src/aufnahme.js
 # ---------- Material (zuletzt: sammelt alles ein), dann die Nachbauten über alle Papier-Seiten
+timeout 120 node _werkbank/zeichen_bild.js                                      # Bilder der Zeichen für die Liste im Material
 timeout 300 $M _werkbank/material_mehr.py "$P"
 timeout 120 python3 _werkbank/papier_nach.py
 echo "Papier fertig: http://127.0.0.1:9388/drucksachen/index.html"

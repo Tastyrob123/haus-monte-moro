@@ -184,6 +184,43 @@ def aufraeumen():
     return n
 
 
+ZEICHEN_BILD = {'Wortmarke Logo-Blau': 'wortmarke-blau', 'Wortmarke Papier': 'wortmarke-papier', 'Wortmarke Nacht': 'wortmarke-nacht',
+                'Bergkamm Lärche': 'bergkamm-laerche', 'Bergkamm Logo-Blau': 'bergkamm-blau'}
+
+
+def vorschau():
+    """Jede Datei der Liste mit ihrem Bild, wie es wb_kapitel.mit_vorschau (Kern) für PDF und Bilder tut; hier dazu die Zeichen (SVG,
+    Bilder aus zeichen_bild.js) und die Mails (HTML, Aufnahme aus mails/_src/aufnahme.js). Danach ergänzt mit_vorschau die übrigen."""
+    import hashlib, html as _h, urllib.parse
+    from PIL import Image
+    vz = os.path.join(ZIEL, '_vorschau'); os.makedirs(vz, exist_ok=True)
+    p = os.path.join(ZIEL, 'index.html'); s = open(p, encoding='utf-8').read()
+
+    def quelle(href):
+        name = os.path.basename(href)
+        if href.startswith('04 Zeichen/'):
+            k = next((v for a, v in ZEICHEN_BILD.items() if a in name), None)
+            return os.path.join(W, 'roh', 'zeichen', k + '.png') if k else None
+        if href.startswith('10 Mails/') and name.endswith('.html'):
+            return os.path.join(W, 'ansichten', 'Mails', name[:2] + '.jpg')
+        return None
+
+    def eins(m):
+        href = _h.unescape(m.group(2)); q = quelle(urllib.parse.unquote(href))
+        if not q or not os.path.exists(q):
+            return m.group(0)
+        n = hashlib.sha1(href.encode()).hexdigest()[:12]
+        im = Image.open(q).convert('RGB'); im.thumbnail((240, 240)); im.save(os.path.join(vz, n + '.webp'), 'WEBP', quality=78)
+        return m.group(1) + f'<span class="dt-b"><img src="_vorschau/{n}.webp" alt="" loading="lazy" decoding="async"></span>'
+    s = re.sub(r'(<li[^>]*><a href="([^"]+)"[^>]*>)(?!<span class="dt-b">)', eins, s)
+    try:
+        import wb_kapitel   # Kern: Vorschauen der PDF und Bilder und ihre Gestaltung (nur aufgerufen, nicht geändert)
+        s = wb_kapitel.mit_vorschau(s, ZIEL)
+    except Exception as f:   # noqa: BLE001
+        print('material: Vorschauen des Kerns nicht verfügbar:', type(f).__name__)
+    open(p, 'w', encoding='utf-8').write(s)
+
+
 def kleid():
     """Titel des Hauses, kein mailto, die Nachbauten der Werkbank (kein Wort allein unten, Schrift mittig in Knöpfen)."""
     import zeile_ganz as ZG, text_mitte as TM
@@ -215,6 +252,7 @@ def baue():
     nm = mails()
     n = aufraeumen()
     auslage()
+    vorschau()
     kleid()
     dateien = sum(len([f for f in fs if not f.startswith('.')]) for dp, _, fs in os.walk(ZIEL) if '_vorschau' not in dp) - 1
     print('Material:', n, 'Ordner,', dateien, 'Dateien · Hausdruckerei', npw, '· Sticker', ns, '· Beigaben', nb, '· Mails', nm, ('· fehlt noch: ' + ', '.join(sorted(set(FEHLT)))) if FEHLT else '')
