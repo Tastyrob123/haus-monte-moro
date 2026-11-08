@@ -4,8 +4,79 @@
   "ordner": "Zurbriggen Hotel Monte-Moro Saas-Almagell",
   "tor_ziele": "_Werkzeuge/abnahme-tor/ziele-monte-moro.json",
   "mess_ziele": "_Werkzeuge/messlauf/ziele-monte-moro.json",
-  "tor_groessen": ["1280x800", "1000x650", "390x844"],
-  "mess_groessen": ["1440", "1280", "1000", "390"],
-  "browser": ["chromium", "webkit"],
-  "server": []
+  "tor_groessen": [
+    "1280x800",
+    "1000x650",
+    "390x844"
+  ],
+  "mess_groessen": [
+    "1440",
+    "1280",
+    "1000",
+    "390"
+  ],
+  "browser": [
+    "chromium",
+    "webkit"
+  ],
+  "server": [
+    {
+      "port": 9381,
+      "wo": "_werkzeuge/maison",
+      "befehl": "python3 server.py 9381",
+      "pruef": "/_werkzeuge/maison/"
+    },
+    {
+      "port": 9382,
+      "wo": ".",
+      "befehl": "python3 _werkzeuge/bureau/serve.py 9382",
+      "pruef": "/_werkzeuge/bureau/"
+    },
+    {
+      "port": 9383,
+      "wo": ".",
+      "befehl": "python3 _werkzeuge/carte/serve.py 9383",
+      "pruef": "/_werkzeuge/carte/"
+    },
+    {
+      "port": 9384,
+      "wo": ".",
+      "befehl": "python3 _werkzeuge/reception/server.py 9384",
+      "pruef": "/_werkzeuge/reception/"
+    },
+    {
+      "port": 9385,
+      "wo": "_werkzeuge/livre",
+      "befehl": "python3 server.py 9385",
+      "pruef": "/_werkzeuge/livre/"
+    },
+    {
+      "port": 9386,
+      "wo": ".",
+      "befehl": "python3 _werkzeuge/registre/server.py 9386",
+      "pruef": "/_werkzeuge/registre/"
+    },
+    {
+      "port": 9387,
+      "wo": "_werkzeuge/imprimerie",
+      "befehl": "python3 serve.py 9387",
+      "pruef": "/_werkzeuge/imprimerie/"
+    },
+    {
+      "port": 9388,
+      "wo": ".",
+      "befehl": "python3 website/_werkbank/serve.py 9388",
+      "pruef": "/werkbank/index.html"
+    }
+  ],
+  "namen": {
+    "zentrale": "hotelbuero",
+    "website": "schaufenster",
+    "karten": "kartenbrett",
+    "gaeste": "rezeption",
+    "marke": "markenbuch",
+    "besuche": "besucherliste",
+    "druck": "hausdruckerei"
+  },
+  "hinweis": "Stamm Culinarium über Wild Side kopiert (Oberchef 08.11.2026), Ports 9381–9388, Tor-Schlüssel nach den Namen des Hauses."
 }
