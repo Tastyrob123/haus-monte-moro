@@ -1,0 +1,308 @@
+{
+ "_lies_mich": "Beschreibung des Hauses für das Werkzeug «website» (Das Schaufenster · Website pflegen). Hotel Monte-Moro mit Restaurant Röstihüs, Saas-Almagell (Familie Zurbriggen), nur Deutsch. Jeder Text, jede Zahl, jedes Foto wird aus den gebauten Seiten gelesen (website/ des Projekts, nie geschrieben). Läuft im Rahmen des Hauses: http://127.0.0.1:9382/_werkzeuge/bureau/ (Zurbriggen Hotel Monte-Moro Saas-Almagell/_werkzeuge/bureau/). Geschrieben von _werkzeuge/bureau/beschreibung.py, nie von Hand ändern.",
+ "seiten": [
+  {
+   "datei": "index.html"
+  },
+  {
+   "datei": "zimmer.html"
+  },
+  {
+   "datei": "preise.html"
+  },
+  {
+   "datei": "saastal.html"
+  },
+  {
+   "datei": "spa.html"
+  },
+  {
+   "datei": "roestihues.html"
+  },
+  {
+   "datei": "anreise.html"
+  },
+  {
+   "datei": "impressum.html",
+   "foto": "empfang"
+  },
+  {
+   "datei": "datenschutz.html",
+   "foto": "empfang"
+  }
+ ],
+ "sprachen": [],
+ "kopie": {
+  "unter": "website",
+  "ordner": [
+   "assets"
+  ]
+ },
+ "gesperrt": [
+  {
+   "wahl": "#karte .rk, #roestihues .buch, #wein .wein__glaeser, #stube .bl__zeilen",
+   "werkzeug": "karten"
+  }
+ ],
+ "auslassen": [
+  "[data-bis]",
+  ".familienband",
+  "img[src$=\".svg\"]",
+  "section.chat",
+  ".zaehlwerk"
+ ],
+ "vorschau": {
+  "ohne_skripte": [
+   "assets/js/rezeption.js"
+  ],
+  "zusatz_css": ".fenster{overflow:clip}@media (hover:none){[data-ws-e],img[data-ws-b]{cursor:pointer}}"
+ },
+ "bild_groessen": "-(?:s|m|l|x|\\d{3,4}w?)$",
+ "bereiche": {
+  "packages": {
+   "an": false
+  },
+  "saele": {
+   "an": false
+  },
+  "unterlagen": {
+   "an": false
+  },
+  "stellen": {
+   "an": false
+  },
+  "zimmer": {
+   "name": "Zimmer und Wohnungen",
+   "satz": "Hotelzimmer, Familienzimmer mit der Residence Alpenhof und die Ferienwohnungen Apollo und Arizona, je mit Name, Text, Angaben und Fotos.",
+   "quellen": [
+    {
+     "seite": "zimmer.html",
+     "jedes": "#hotelzimmer div.bl, #ferienwohnungen div.bl",
+     "felder": [
+      {
+       "key": "name",
+       "label": "Name",
+       "art": "text",
+       "wo": "p.bl__name",
+       "titel": true
+      },
+      {
+       "key": "ueber",
+       "label": "Zeile darüber",
+       "art": "text",
+       "wo": ".bl__text p.ueber"
+      },
+      {
+       "key": "satz",
+       "label": "Text",
+       "art": "lang",
+       "wo": "p.bl__satz"
+      },
+      {
+       "key": "zeilen",
+       "label": "Angaben und Preise",
+       "art": "liste",
+       "wo": "ul.bl__zeilen li"
+      },
+      {
+       "key": "bilder",
+       "label": "Fotos",
+       "art": "bilder",
+       "wo": ".bl__bilder"
+      }
+     ]
+    }
+   ]
+  },
+  "preisstufen": {
+   "name": "Preisliste",
+   "satz": "Jede Zeile der Preisliste: Zimmer mit Frühstück oder Halbpension, Zuschläge und Kinderpreise, in CHF pro Person und Tag.",
+   "quellen": [
+    {
+     "seite": "preise.html",
+     "jedes": "#preisliste .aus__matrix tbody tr",
+     "felder": [
+      {
+       "key": "name",
+       "label": "Zimmer",
+       "art": "text",
+       "wo": "th",
+       "titel": true
+      },
+      {
+       "key": "preise",
+       "label": "Frühstück · Halbpension",
+       "art": "liste",
+       "wo": "td"
+      }
+     ]
+    },
+    {
+     "seite": "preise.html",
+     "jedes": "#preisliste .aus__liste li",
+     "felder": [
+      {
+       "key": "name",
+       "label": "Bezeichnung",
+       "art": "text",
+       "wo": "span",
+       "titel": true
+      },
+      {
+       "key": "preis",
+       "label": "Preis",
+       "art": "zahl",
+       "wo": "b"
+      }
+     ]
+    }
+   ]
+  },
+  "inklusive": {
+   "name": "Inklusive",
+   "satz": "Was im Preis dabei ist, Zeile für Zeile wie auf dem Bon der Rezeption: Postauto, Bergbahnen, Frühstück, Racletteabend, Kidsclub, Parkplatz.",
+   "quellen": [
+    {
+     "seite": "preise.html",
+     "jedes": "#bon .bon__zeilen li",
+     "felder": [
+      {
+       "key": "name",
+       "label": "Was",
+       "art": "text",
+       "wo": "b",
+       "titel": true
+      },
+      {
+       "key": "text",
+       "label": "Im Wortlaut des Hauses",
+       "art": "text",
+       "wo": "small"
+      },
+      {
+       "key": "zusatz",
+       "label": "Rechts auf dem Bon",
+       "art": "text",
+       "wo": "em"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "zahlen": {
+  "muster": "((?:CHF|Fr\\.|€|\\bEUR)\\s?\\d|\\b\\d+\\s?\\.\\d{2}\\b|\\d\\s?(?:CHF|Uhr)\\b|\\b\\d+\\.–|\\d+\\s?(Minuten|Min\\.|m²|m2|Personen|Pers\\.|Nächte?|Nacht|Betten|Zimmer|Plätze|Gänge|Jahre|dl|km|m ü\\. M\\.|M\\.ü\\.M\\.|%)|\\b\\d{3,4}\\s?m\\b|\\d{1,2}[.:]\\d{2}\\s?(?:[–-]|bis)\\s?\\d{1,2}[.:]\\d{2}|\\d{1,2}[.:]\\d{2}\\s?Uhr|\\b\\d{1,2} bis \\d{1,2} Uhr)"
+ },
+ "kleid": {},
+ "website": [
+  {
+   "key": "start",
+   "name": "Startseite",
+   "satz": "Der erste Eindruck: das Haus in Saas-Almagell, die Zimmer, was im Preis dabei ist, das Saastal, das Spa nebenan, das Röstihüs und der Kidsclub.",
+   "seiten": [
+    "index.html"
+   ],
+   "foto": "haus-winter-g"
+  },
+  {
+   "key": "zimmer",
+   "name": "Zimmer",
+   "satz": "Hotelzimmer, Familienzimmer, die Residence Alpenhof und die Ferienwohnungen in den Häusern Apollo und Arizona.",
+   "seiten": [
+    "zimmer.html"
+   ],
+   "foto": "z-dach"
+  },
+  {
+   "key": "preise",
+   "name": "Preise",
+   "satz": "Zimmer mit Frühstück oder Halbpension, was inklusive ist, die Zuschläge und die Preise für Kinder.",
+   "seiten": [
+    "preise.html"
+   ],
+   "foto": "fr-gross"
+  },
+  {
+   "key": "saastal",
+   "name": "Saastal",
+   "satz": "Sommer und Winter im Saastal: Wandern, Skifahren, Ausflüge, Bergbahnen und Postauto.",
+   "seiten": [
+    "saastal.html"
+   ],
+   "foto": "tal-sommer"
+  },
+  {
+   "key": "spa",
+   "name": "Spa nebenan",
+   "satz": "Das Spa im Partnerhotel Pirmin Zurbriggen: was es bietet und was der Eintritt kostet.",
+   "seiten": [
+    "spa.html"
+   ],
+   "foto": "spa-garten"
+  },
+  {
+   "key": "roestihues",
+   "name": "Röstihüs",
+   "satz": "Das Restaurant des Hauses mit Stube und Sonnenterrasse. Die Karte selbst pflegen Sie im Kartenbrett.",
+   "seiten": [
+    "roestihues.html"
+   ],
+   "foto": "gondel"
+  },
+  {
+   "key": "anreise",
+   "name": "Anreise",
+   "satz": "Mit Zug und Postauto oder mit dem Auto ab Visp, die Ankunft im Dorf und der Kontakt.",
+   "seiten": [
+    "anreise.html"
+   ],
+   "foto": "empfang"
+  },
+  {
+   "key": "recht",
+   "name": "Rechtliches",
+   "satz": "Impressum und Datenschutz im Wortlaut des Hauses.",
+   "seiten": [
+    "impressum.html",
+    "datenschutz.html"
+   ],
+   "foto": "empfang"
+  }
+ ],
+ "angaben": [
+  {
+   "key": "telefon",
+   "label": "Telefon des Hotels",
+   "art": "telefon",
+   "wert": "+41 27 957 10 12",
+   "link": "tel:+41279571012",
+   "quelle": "website/index.html (gebaut aus website/bau.py › f3_kontakt(), inhalt/daten.py › HAUS)"
+  },
+  {
+   "key": "mail",
+   "label": "E-Mail des Hotels",
+   "art": "mail",
+   "wert": "info@monte-moro.ch",
+   "link": "mailto:info@monte-moro.ch",
+   "quelle": "website/index.html (gebaut aus website/bau.py › f3_kontakt(), inhalt/daten.py › HAUS)"
+  },
+  {
+   "key": "ort",
+   "label": "PLZ und Ort",
+   "art": "text",
+   "wert": "CH-3905 Saas-Almagell",
+   "quelle": "website/index.html (gebaut aus website/bau.py › f3_kontakt(), inhalt/daten.py › HAUS)"
+  }
+ ],
+ "google": {
+  "an": true
+ },
+ "hochladen": {
+  "an": true,
+  "ordner": "assets/img"
+ },
+ "funktionen": [
+  "leiste_klar"
+ ],
+ "anleitung": "/_werkzeuge/bureau/anleitung.html"
+}
