@@ -513,7 +513,7 @@
     (V[vorlage] || V.deckel).bau(c, inhalt || {}, seite);
     if (ton === 'dc' && M.zeichen3) c.el.forEach(e => { if (e.typ === 'zeichen' && !e.z) e.z = 3; });
     if (c.stil.ausr === 'l' && LINKS_MOEGLICH.includes(vorlage) && !(vorlage === 'gutschein' && c.quer)) linksbuendig(c);
-    for (const e of c.el) {   // kein Wort bricht mitten im Wort (Tor 31.10.2026: «Geburtstag», «Preise», «SESSION»): Titel, Kapitale und Plakatschrift kleiner, bis das längste Wort passt
+    for (const e of c.el) {   // kein Wort bricht mitten im Wort (Tor 31.10.2026: «Geburtstag», «Preise»): Titel, Kapitale und Plakatschrift kleiner, bis das längste Wort passt
       if (e.typ !== 'text' || !/^(titel|kapitale|plakat|plakatfett|kopf)$/.test(e.rolle)) continue;
       const lang = String(e.text || '').split(/[\s\-\u2010]+/).sort((a, b) => b.length - a.length)[0] || '';   // am Bindestrich darf die Zeile brechen
       if (lang.length < 6) continue;

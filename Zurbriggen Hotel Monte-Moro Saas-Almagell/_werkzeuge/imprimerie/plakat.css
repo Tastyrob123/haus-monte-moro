@@ -1,4 +1,4 @@
-/* Hausdruckerei · Ansichten «DJ-Abend anlegen» und «Plakat-Grund» (plakat.js), Walk on the Wild Side 31.10.2026. Farben und Schriften aus dem Kleid (--wo-*) und
+/* Hausdruckerei · Ansichten «Aushang anlegen» und «Bergbilder» (plakat.js), Hotel Monte-Moro 08.11.2026 (Form der Vorlage vom 31.10.2026). Farben und Schriften aus dem Kleid (--wo-*) und
    dem Kern (--navy, --messing, --tinte …); Bewegung nur transform/opacity. Keine Pillen-Reihen als Zierde: die Chips sind Filter, wie überall im Kern. */
 .pk-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 22px;max-width:980px;margin:6px 0 34px;padding:26px 28px 28px;border-radius:14px;
   background:var(--wo-blatt,#fcfaf9);box-shadow:0 1px 0 #fff inset,0 24px 50px -30px rgba(6,23,41,.45),0 0 0 1px var(--wo-linie,rgba(6,23,41,.14))}
@@ -93,14 +93,14 @@
 
 /* K35 (Tor 30.10.2026): Ziffern 3/4/5 in den runden Wahlknöpfen optisch mittig */
 .pk-zahl button{display:grid;place-items:center;padding:1px 0 0;line-height:1}
-/* Wild Side (31.10.2026): eine Seite je Karte (SESSION-Plakat ohne Rückseite), Blatt und Unterschrift auf einer linken Kante, gerade */
+/* Vorlage (31.10.2026): eine Seite je Karte (Aushang ohne Rückseite), Blatt und Unterschrift auf einer linken Kante, gerade */
 .pk-blaetter--eins{justify-content:flex-start}
 .pk-blaetter--eins .pk-vorn{transform:none}
 @media (hover:hover){.pk-karte--eins:hover .pk-vorn{transform:translateY(-6px)}}
 .pk-karte--eins .pk-blaetter--eins{justify-content:center;text-align:center}
 .pk-karte--eins .pk-text{text-align:center}
 
-/* ---------- Baukasten «DJ-Abend anlegen» (1.11.2026): links die Schritte, rechts das Plakat, mitlaufend ---------- */
+/* ---------- Baukasten «Aushang anlegen» (Vorlage 1.11.2026): links die Schritte, rechts das Plakat, mitlaufend ---------- */
 .bk{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,440px);gap:28px;align-items:start;margin:6px 0 34px}
 .bk-form{display:flex;flex-direction:column;gap:18px;min-width:0}
 .bk-teil{min-width:0;padding:22px 24px 24px;border-radius:14px;background:var(--wo-blatt,#fcfaf9);box-shadow:0 1px 0 #fff inset,0 24px 50px -30px rgba(6,23,41,.45),0 0 0 1px var(--wo-linie,rgba(6,23,41,.14))}

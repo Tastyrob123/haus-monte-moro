@@ -262,7 +262,7 @@
         const ohneNamen = t;
         if (/(^|\s)[xX×](\s|$)/.test(ohneNamen)) rot(el, `${kurz(el)} trennt mit «x»; «x» ist im Haus kein Zier- oder Trennzeichen`);
       }
-      // eine Achse: Text mittig (ausser in den Aufbauten mit eigener Achse und Zeitleisten in Hanken 500)
+      // eine Achse: Text mittig (ausser in den Aufbauten mit eigener Achse und Zeitleisten in DM Mono)
       const ach = st.achse || {}; if (!(ach.ausnahmen_aufbau || []).includes(aufbau)) {
         const links = texte.filter(el => el.ausr === 'l'), lx0 = Math.min(...links.map(el => el.x)), lx1 = Math.max(...links.map(el => el.x + el.w));
         const zeitleiste = aufbau === 'aushang' && links.length > 1 && Math.abs((lx0 + lx1) / 2 - f.b / 2) <= Math.max(ach.mittig_toleranz_mm || .8, f.b * .02);   // Uhrzeit und Schritt als Block (Gestaltung 29.10.)
@@ -289,13 +289,13 @@
       }
       // Marke: höchstens eine Wortmarke je Seite
       const wm = s.el.filter(el => el.typ === 'zeichen' && el.z === 2 && auf(el)).length; if (wm > ((st.marke || {}).wortmarke_je_seite_max || 1)) rot(null, `${wm} Wortmarken auf einer Seite, höchstens eine`);
-      // Komposition (stilblatt.komposition): Kopf- und Fusszeile (oberste/unterste Zeile in Hanken 500) sind Rahmen; dazwischen keine Löcher über
+      // Komposition (stilblatt.komposition): Kopf- und Fusszeile (oberste/unterste Zeile in DM Mono) sind Rahmen; dazwischen keine Löcher über
       // loch_max_textzeilen, Füllung mindestens fuellung_min, Gruppenmitte auf der optischen Mitte (4 % über der geometrischen) ± toleranz_mitte_anteil
       const ko = st.komposition || {}, rahmen = s.el.find(el => el.typ === 'rahmen'), o = rahmen ? rahmen.y : 0, u = rahmen ? rahmen.y + rahmen.h : f.h;
       const belegt = s.el.filter(el => auf(el) && el.typ !== 'rahmen' && !((el.typ === 'flaeche' || el.typ === 'bild') && el.x <= .5 && el.y <= .5 && el.x + (el.w || 0) >= f.b - .5 && el.y + (el.h || 0) >= f.h - .5))   // nur randlose Hintergründe zählen nicht
         .map(el => ({ el, a: Math.max(o, el.y), b: Math.min(u, el.y + (el.h || DS.elHoehe(M, el) || 0)) })).filter(x => x.b > x.a).sort((p, q) => p.a - q.a);
       const txt = texte.filter(el => KLASSE[el.rolle] === 'text').map(el => el.gr).sort((p, q) => p - q), zeile = (txt.length ? txt[Math.floor(txt.length / 2)] : (min ? min.text : 3)) * 1.35;
-      /* Kopf- oder Fusszeile ist eine Zeile in Hanken 500 nur, wenn sie höchstens 12 % der kurzen Seite vom Rahmen steht und mehr als 2,5 Textzeilen Abstand zur
+      /* Kopf- oder Fusszeile ist eine Zeile in DM Mono nur, wenn sie höchstens 12 % der kurzen Seite vom Rahmen steht und mehr als 2,5 Textzeilen Abstand zur
          nächsten Zeile hat; ein Etikett mitten in der Gruppe (Etikett unter der Wortmarke, «+41 27 957 10 12») gehört zur Gruppe (Gestaltung 29.10.) */
       const kurzS = Math.min(f.b, f.h), lm0 = ko.loch_max_textzeilen || 2.5;
       const istMono = x => x && x.el.typ === 'text' && x.el.rolle === 'mono' && (x.b - x.a) < 3 * zeile;

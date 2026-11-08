@@ -203,7 +203,7 @@
     return { titel: .118, text: .047, mono: .02, zeichen: .15 };                                                 // Karte aus Armlänge
   }
 
-  /* Zeitleiste (Ablauf): «Eindecken bis 18 Uhr, Kerzen an um 18:45, …» → Uhrzeit links in Hanken 500, Schritt rechts */
+  /* Zeitleiste (Ablauf): «Eindecken bis 18 Uhr, Kerzen an um 18:45, …» → Uhrzeit links in DM Mono, Schritt rechts */
   const ZEIT = /(?:\b(?:bis|ab|um)\s+)?(\d{1,2})(?:[:.](\d{2}))?\s*Uhr|\b(\d{1,2}):(\d{2})\b/i;
   function ablauf(text) {
     const teile = String(text || '').split(/,\s*|\.\s+|\s+·\s+/).map(s => s.trim().replace(/\.$/, '')).filter(Boolean);

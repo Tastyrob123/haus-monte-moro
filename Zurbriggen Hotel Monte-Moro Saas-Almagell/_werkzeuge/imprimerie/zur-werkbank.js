@@ -1,6 +1,6 @@
 /* Die Hausdruckerei · Hotel Monte-Moro, Saas-Almagell: Kopie von _werkzeuge/maison/zur-werkbank.js (Baustein von La Maison), geschrieben von bau.py.
    Änderungen: die Wurzel des Hauses wird auch aus _werkzeuge/imprimerie/ und werkzeuge/imprimerie/ erkannt (Master F78); der Prüfserver :9387 gilt als eigene Adresse. */
-/* «Zur Werkbank» (R19) · Der Tresen des Wild Side: Kopie des Bausteins der Häuser, Schlüssel des Hauses «montemoro-wb». Gebaut von bau.py. */
+/* «Zur Werkbank» (R19) · Die Hausdruckerei des Monte-Moro: Kopie des Bausteins der Häuser, Schlüssel des Hauses «montemoro-wb». Gebaut von bau.py. */
 /* «Zur Werkbank» (Robert 12.10.2026): ein Knopf unten links auf jeder Seite, die man aus der Werkbank heraus öffnet.
    Eine Datei für alle Seiten, sie bringt Aussehen und Verhalten selbst mit (eigener Schattenbaum, kein Stylesheet der Seite greift hinein).
 

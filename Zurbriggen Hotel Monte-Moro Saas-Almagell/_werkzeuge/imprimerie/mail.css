@@ -300,7 +300,7 @@
 .ml-fotos__raster img{aspect-ratio:520/402}
 /* Tor 2, F2 (K35): «Eintrag hinzufügen» und «Alle» in Safari optisch mittig, wie die Chips */
 
-/* Wild Side (31.10.2026, Tor schnell): Kopf passt bei 1440 (Name der Mail steht rechts unter «Die E-Mail»), Schrift in Bausteinen und Navigation optisch mittig */
+/* Vorlage (31.10.2026, Tor schnell): Kopf passt bei 1440 (Name der Mail steht rechts unter «Die E-Mail»), Schrift in Bausteinen und Navigation optisch mittig */
 @media (max-width:1560px){.ml-name{display:none}}
 .ml-einfuegen button{text-indent:.02em}
 .ml-nav button{padding-top:1px}
@@ -317,3 +317,5 @@
 /* Monte-Moro (08.11.2026, Tor schnell bei 1000 px): Namen der eigenen Mails in Fjalla One brechen um statt «…» */
 .ml-meine__e b{white-space:normal;overflow:visible;text-overflow:clip}
 .ml-meine__e b{text-wrap:balance}
+/* Monte-Moro: Bildbeschreibungen der Fotos ganz, ohne «…» (Messlauf 08.11.2026) */
+.ml-fotos__raster span{display:block;-webkit-line-clamp:unset;overflow:visible}

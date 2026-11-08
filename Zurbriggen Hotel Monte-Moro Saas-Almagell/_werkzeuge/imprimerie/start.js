@@ -872,7 +872,7 @@
         <label class="start__suche vb__suche"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><input type="search" id="vbSuche" placeholder="In den Vorlagen suchen …" value="${esc(vFilter.q)}"></label></div>
       <div class="vb__wahl">${wahl.alle ? `<label class="start__format vb__feld">Art<select id="vbArt"><option value="alle">Alle Arten</option>${ARTEN.filter(a => arten[a.key]).map(a => `<option value="${a.key}">${esc(a.name)} · ${arten[a.key]}</option>`).join('')}</select></label>` : ''}
         <label class="start__format vb__feld">Bereich des Hauses<select id="vbBereich"></select></label>
-        <div class="vb__toene">${[['alle', 'Jeder Grund'], ['dunkel', 'Nacht'], ['hell', 'Weiss'], ['creme', 'Creme']].map(([k, t]) => `<button data-ton="${k}" class="${vFilter.ton === k ? 'an' : ''}">${t}</button>`).join('')}</div></div>`;
+        <div class="vb__toene">${[['alle', 'Jeder Grund'], ['dunkel', 'Nacht'], ['hell', 'Papier'], ['creme', 'Creme']].map(([k, t]) => `<button data-ton="${k}" class="${vFilter.ton === k ? 'an' : ''}">${t}</button>`).join('')}</div></div>`;
     zeichneBereiche();
     const su = kopf.querySelector('#vbSuche'); if (su) { let t; su.addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => { vFilter.q = su.value; filterVorlagen(); }, 140); }); }
     const sa = kopf.querySelector('#vbArt'); if (sa) sa.addEventListener('change', () => { vFilter.art = sa.value; zeichneBereiche(); filterVorlagen(); });
@@ -1184,7 +1184,7 @@
     const k = q.get('foto'), b = DS.M.bildIndex[k]; if (!b) return false;
     const fmt = q.get('art') === 'story' ? 'story' : 'insta', x = Math.min(1, Math.max(0, +q.get('x') || .5)), y = Math.min(1, Math.max(0, +q.get('y') || .5));
     const inh = { bild: k, ueber: DS.M.name, titel: '[Titel]', text: '[Ein Satz zum Bild]', aktion: '', fuss: '' };
-    const arten = [['buehne', 'dunkel', 'Foto gross, Nacht'], ['buehne', 'hell', 'Foto gross, Weiss'], ['fenster', 'creme', 'Im Rahmen, Creme'], ['ansicht', 'dunkel', 'Foto randlos'], ['fenster', 'dunkel', 'Im Rahmen, Nacht']];
+    const arten = [['buehne', 'dunkel', 'Foto gross, Nacht'], ['buehne', 'hell', 'Foto gross, Papier'], ['fenster', 'creme', 'Im Rahmen, Creme'], ['ansicht', 'dunkel', 'Foto randlos'], ['fenster', 'dunkel', 'Im Rahmen, Nacht']];
     const docs = arten.map(([v, t, titel]) => {
       const d = DS.dokument(DS.M, { name: (fmt === 'story' ? 'Story · ' : 'Beitrag · ') + b.alt, format: fmt, seiten: [{ vorlage: v, ton: t, inhalt: v === 'ansicht' ? { bild: k, titel: DS.M.ort, unter: DS.M.name } : inh }] });
       d.seiten.forEach(s => s.el.forEach(e => { if (e.typ === 'bild' && e.bild === k) { e.fx = x; e.fy = y; } }));

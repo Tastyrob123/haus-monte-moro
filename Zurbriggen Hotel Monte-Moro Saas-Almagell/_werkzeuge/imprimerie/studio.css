@@ -1687,7 +1687,7 @@ textarea.kopf__name.zwei{font-size:16px;line-height:1.2;padding:3px 10px}
 /* Tor 1, 31.10.2026 (gezielt): Schriftknöpfe dürfen zweizeilig werden, nichts ragt heraus */
 .segment--schrift button{height:auto;min-height:36px;padding:6px 6px;line-height:1.15;text-wrap:balance}
 
-/* Wild Side (31.10.2026, Kleid): der Hauptweg ist das rote Schild mit Creme-Knauf (kleid/montemoro.css .wo-kn--gold), Gold bleibt Linie und Knauf der Nebenwege */
+/* Vorlage (31.10.2026, Kleid), im Monte-Moro in Lärche: der Hauptweg ist das Schild mit hellem Knauf (kleid/montemoro.css .wo-kn--gold), Gold bleibt Linie und Knauf der Nebenwege */
 .kn.ms-kn-gold{--o:#D49877;--m:#CA8058;--u:#B06238;--t:#F8F6F3;--licht:rgba(244,240,235,.45);--kante:rgba(90,10,15,.45);--ko:#FCFAF9;--ku:#E6DCD0;--kt:#B06238;--klicht:rgba(255,255,255,.6);text-shadow:none;
   box-shadow:inset 0 1px 0 var(--licht),inset 0 -2px 0 var(--kante),0 14px 26px -14px rgba(99,55,31,.6)}
 

@@ -43,6 +43,20 @@ NODE_PATH=$(npm root -g) node _bau/filme.js           neun Kurzfilme der Führun
 - **Mails:** Racletteabend, Ihre Anfrage (mit Preisliste), Sommer im Saastal, Winter im Saastal, Vor Ihrer Anreise, Danke für Ihren Besuch. Kontakt: Telefon, E-Mail, Website des Hauses.
 - **Nicht drin, weil das Haus es nicht veröffentlicht (OFFEN):** Öffnungszeiten des Röstihüs, Strasse, Storno, Fotos vom Kidsclub, Wochentag des Racletteabends. Die Gratis-Anreise ist abgelaufen und steht nirgends.
 
-## Geprüft
+## Geprüft (08.11.2026, lokal, Chromium; WebKit ist in dieser Sitzung nicht installiert)
 
-(siehe Abschnitt «Prüfstand» unten, nachgeführt nach dem letzten Lauf)
+- **Abnahme-Tor schnell** (`tor-schnell.js --max 40 --tiefe 2 --breiten 1440,1280,1000,390`), letzter Lauf nach allen Reparaturen:
+  - `hausdruckerei`: 178 Zustände (40 + 40 + 40 + 58), **0 Funde**, nichts «nicht erreicht».
+  - `hausdruckerei-mail`: 172 Zustände (40 + 40 + 40 + 52), **0 Funde**, nichts «nicht erreicht».
+  - Ergebnis in `aus/hausdruckerei/`, `aus/hausdruckerei-mail/`. Gelaufen mit einer Kopie der Zielliste, in der für `hausdruckerei` der Merker `ds-montemoro-willkommen` steht (die Zielliste des Oberchefs nennt noch `ds-wildside-willkommen`).
+- **Messlauf** (`messlauf.js --nur hausdruckerei,hausdruckerei-mail --browser chromium --groesse 1440,390`): 1 Fund (Bildbeschreibung im Fotofach der Mail mit «…» gekürzt) → repariert. Der Messlauf erreicht in der Hausdruckerei nur 5–6 Zustände, weil seine Zielliste keinen Begrüssungs-Merker setzt.
+- **Oberflächenprüfung** (`oberflaeche_pruefen.js`): Werkzeug und Mail-Baukasten BESTANDEN.
+- **Drucksachen:** 34 Stück (40 Seiten), Druck- und Stilprüfung ohne roten Befund; `pdffonts`: 97 Schriften, alle CID TrueType eingebettet, kein Type 3; `pdftotext`: kein «ß», keine Wörter der Bar, keine Gratis-Anreise.
+- **Vorlagen:** alle 74 Vorlagen und jeder Aufbau in jedem seiner Formate gesetzt und gegen Druck- und Stilprüfung gelaufen; Zahlen der Texte gegen `daten.py` und die Seiten der Website geprüft (`bau_vorlagen.py`: nichts unbelegt).
+- **Mit den Augen:** Übersicht, Anlässe, Aushang anlegen (mit Vorschau und Gründen), Bergbilder, Abteilungen, Hinweise, Newsletter, Fotos, Farben & Schriften, Arten und Vorlagen, Editor (1440/1000/390), Mail-Baukasten, Hilfe-Film, 32 zufällige Zustandsbilder des Tors, alle 34 Drucksachen als Bild.
+
+## Offen
+
+- Zielliste des Abnahme-Tors (`_Werkzeuge/abnahme-tor/ziele-monte-moro.json`, Oberchef): beim Schlüssel `hausdruckerei` den Merker `ds-montemoro-willkommen` statt `ds-wildside-willkommen`/`ds-culinarium-willkommen` eintragen. Zielliste des Messlaufs: denselben Merker als `localStorage` ergänzen, damit er über die Begrüssung hinauskommt.
+- Das Markenbuch (`_werkzeuge/livre/livre.json`) wird nur genutzt, wenn es `haus` «Monte-Moro» und `hausdruckerei: true` meldet; bis dahin arbeitet die Hausdruckerei mit ihrer eigenen Kopie der Website-Fotos.
+- WebKit nicht geprüft (in dieser Sitzung nicht installierbar).

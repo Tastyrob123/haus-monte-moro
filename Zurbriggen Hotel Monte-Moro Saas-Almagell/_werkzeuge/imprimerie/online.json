@@ -1,6 +1,6 @@
 {
  "name": "Die Hausdruckerei",
- "hinweis": "Die Hausdruckerei des Hotel Monte-Moro, Saas-Almagell, 31.10.2026, Form wie die Hausdruckerei des Stammhauses. Oberfläche statisch unter /werkzeuge/imprimerie/. KI-Funktion api/imprimerie_entwurf.py aus api/entwurf.py; ohne ANTHROPIC_API_KEY melden nur «Fünf Entwürfe» und Bildtext «KI-FREIGABE», Vorlagen, Editor und PDF gehen. Schlüssel nur auf Roberts Wort. Kein Blob-Speicher: alles im Browser der Bar. Die grossen Fotos (haeuser/montemoro/bilder) nur unter «zusatz». NICHT ANGESCHLOSSEN: ein Online-Projekt der Bar gibt es noch nicht, nichts hochgeladen.",
+ "hinweis": "Die Hausdruckerei des Hotel Monte-Moro, Saas-Almagell, 08.11.2026, Form wie die Plakatwerkstatt des Stammhauses. Oberfläche statisch unter /werkzeuge/imprimerie/. KI-Funktion api/imprimerie_entwurf.py aus api/entwurf.py; ohne ANTHROPIC_API_KEY melden nur «Fünf Entwürfe» und Bildtext «KI-FREIGABE», Vorlagen, Editor und PDF gehen. Schlüssel nur auf Roberts Wort. Kein Blob-Speicher: alles im Browser der Bar. Die grossen Fotos (haeuser/montemoro/bilder) nur unter «zusatz». NICHT ANGESCHLOSSEN: ein Online-Projekt der Bar gibt es noch nicht, nichts hochgeladen.",
  "funktionen": {
   "api/imprimerie_entwurf.py": {
    "von": "_werkzeuge/imprimerie/api/entwurf.py",
@@ -62,7 +62,7 @@
  },
  "zusatz": {
   "_": "Nur nötig, wenn das Hauptprojekt zu gross wird; Umleitung unten. Name ohne Nummer.",
-  "montemoro-hannover-werkstatt": {
+  "montemoro-werkstatt": {
    "_werkzeuge/imprimerie/haeuser/montemoro/bilder": "werkzeuge/imprimerie/haeuser/montemoro/bilder"
   }
  },
@@ -77,7 +77,7 @@
   },
   {
    "source": "/werkzeuge/imprimerie/haeuser/montemoro/bilder/:pfad*",
-   "destination": "https://montemoro-hannover-werkstatt.vercel.app/werkzeuge/imprimerie/haeuser/montemoro/bilder/:pfad*"
+   "destination": "https://montemoro-werkstatt.vercel.app/werkzeuge/imprimerie/haeuser/montemoro/bilder/:pfad*"
   }
  ],
  "stand": "",
