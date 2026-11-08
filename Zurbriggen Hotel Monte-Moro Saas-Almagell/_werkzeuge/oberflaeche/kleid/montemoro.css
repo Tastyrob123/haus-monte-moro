@@ -1,80 +1,126 @@
-/* kleid/montemoro.css · Walk on the Wild Side Hannover · Das Eckschild (Oberchef 31.10.2026).
-   Werte aus der gebauten Website (website/assets/wild.css :root, CHARAKTER.md Abschnitt 4), nicht abgetippt aus dem Entwurf:
-   Nacht #071B2E, Platte #0A2A4A / #0D3F6F als dunkle Flächen; Creme #F5F2EE (die weissen Plakate der Bar) als Raum; Gold #B39867 nur als Haarlinie,
-   Etikett und Knauf (Rahmen des Eckschilds); Rot #C67144 nur als Punkt (Hauptknopf, Logo); Ultramarin #115595 nur bei den DJ-Abenden (Klasse .wo-dj).
-   Schrift wie verbaut: Titel Prata (Antiqua mit Glanz, leicht), Lauf Hanken Grotesk 400, Etiketten Hanken 500 gesperrt, Zahlen Hanken mit gleich breiten Ziffern.
-   Nie fett, nie kursiv. Eigene Form: das Eckschild an der Hausecke. Platten 18 px Radius mit Gold-Haarlinie innen und weichem Schatten, Kacheln 14 px,
-   Knöpfe als Schild mit rundem Knauf (Rot mit Creme-Knauf = Hauptweg, Nacht mit Goldlinie und Gold-Knauf = Nebenweg). Rahmen: Die Bühne. */
+/* kleid/montemoro.css · Hotel Monte-Moro mit Restaurant Röstihüs, Saas-Almagell · Kleid der sieben Werkzeuge (mm-maison, 08.11.2026).
+   Werte aus der gebauten Website (website/assets/css/montemoro.css :root) und dem Markenbuch (_kette/05-markenbauer/marke/farben.json), nicht abgetippt:
+   Nacht #0A2A4A, Nachtblau #0D3F6F, Tiefnacht #071B2E als dunkle Flächen; Papier #F5F2EE, Creme #EFE9E1, Fassade #E7E1DC als Raum;
+   Lärche #C67144 nur als Akzent (Hauptknopf, Betonung im Titel, Bergkamm im Ring), Lärche tief #9A4F2B für kleine Zeilen auf Hell;
+   Messing #B39867 nur für feine Linien und kleine Zeilen auf Dunkel (wie die Website: --akzent:var(--messing) in dunklen Szenen); Logo-Blau #115595 im Knauf des hellen Knopfs.
+   Schrift wie verbaut: Titel Fjalla One (eine Stärke, normale Schreibung, nie fett, nie kursiv), Lauf Instrument Sans 400,
+   kleine Zeilen, Etiketten, Knöpfe und Zahlen DM Mono in Versalien gesperrt (.16 bis .24em).
+   Form der Website: Knöpfe als Pille mit Lichtkante oben, Schattenkante unten und rundem Knauf mit Pfeil (.kn, .kn--laerche, .kn--nacht);
+   Fotos mit Grat-Oberkante (Bergkamm-Maske --grat-maske); Papier auf Nacht. Rahmen: Die Bühne (Kopf Nacht, Raum Papier). */
 @font-face{font-family:'Fjalla One';font-weight:400;font-display:swap;src:url('../../fonts/FjallaOne-400.woff2') format('woff2')}
 @font-face{font-family:'Instrument Sans';font-weight:400 600;font-display:swap;src:url('../../fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
 @font-face{font-family:'DM Mono';font-weight:400;font-display:swap;src:url('../../fonts/DMMono-normal-400.woff2') format('woff2')}
 :root{
   --wo-sans:'Instrument Sans',Arial,system-ui,sans-serif; --wo-mono:'DM Mono',ui-monospace,Menlo,monospace;
   --wo-etikett:'DM Mono',ui-monospace,Menlo,monospace;
-  --wo-e1:cubic-bezier(.22,.68,.26,1); --wo-e2:cubic-bezier(.2,.62,.24,1);
+  --wo-e1:cubic-bezier(.16,1,.3,1); --wo-e2:cubic-bezier(.22,.61,.36,1);
+  /* Farben des Hauses (Namen wie in der Website) */
+  --wo-laerche:#C67144; --wo-laerche-tief:#9A4F2B; --wo-messing:#B39867; --wo-blau:#115595; --wo-fassade:#E7E1DC; --wo-wandschatten:#D6CCC1;
   --wo-nacht:#0A2A4A; --wo-nacht2:#0D3F6F; --wo-tief:#071B2E;
-  --wo-g1:#E3D5B8; --wo-g2:#CDB88F; --wo-g3:#B39867;
+  /* Knauf der Knöpfe und kleine Marken (Stamm: Gold-Verlauf): im Monte-Moro der helle Knauf der Website, Weiss zu Creme */
+  --wo-g1:#FFFFFF; --wo-g2:#F4F0EB; --wo-g3:#E2DAD0;
+  /* --wo-gold heisst im Stamm so; im Monte-Moro ist es Messing (feine Linien, kleine Zeilen auf Dunkel) */
   --wo-gold:#B39867; --wo-akzent:#9A4F2B; --wo-kerze:#B39867; --wo-rot:#C67144; --wo-dc:#115595; --wo-dj:#115595;
   --wo-papier:#EFE9E1; --wo-papier2:#E7E1DC; --wo-blatt:#F5F2EE; --wo-weiss:#FFFFFF;
-  --wo-tinte:#0A2A4A; --wo-leise:#4A5D70; --wo-linie:rgba(10,42,74,.14); --wo-linie-d:rgba(179,152,103,.30);
+  --wo-tinte:#13263A; --wo-leise:#4A5D70; --wo-linie:rgba(10,42,74,.14); --wo-linie-d:rgba(179,152,103,.30);
   --wo-punkt:#C67144; --wo-gut:#268369;
-  --wo-titel:'Fjalla One','Arial Narrow',Arial,sans-serif; --wo-titel-g:400; --wo-titel-ls:0;
-  --wo-r1:18px; --wo-r2:14px; --wo-r3:14px; --wo-rk:999px;
+  --wo-titel:'Fjalla One','Arial Narrow',Arial,sans-serif; --wo-titel-g:400; --wo-titel-ls:.004em;
+  --wo-r1:18px; --wo-r2:14px; --wo-r3:12px; --wo-rk:999px;
   --wo-tapete:#071B2E;
   --wo-tapete-fein:var(--wo-tapete);
+  /* Grat-Kante der Website (Bergkamm als Oberkante der Bilder), dieselbe Linie wie website/assets/css/montemoro.css --grat-maske */
+  --wo-gh:clamp(14px,1.6vw,24px);
+  --wo-grat-maske:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%2060'%20preserveAspectRatio='none'%3E%3Cpath%20d='M0%2060%20L0%2038%20L70%2030%20L118%206%20L150%2026%20L196%2014%20L250%2040%20L300%2022%20L338%2034%20L380%208%20L430%2036%20L486%2018%20L540%2042%20L600%2028%20L640%2036%20L700%2012%20L748%2032%20L800%2024%20L860%2044%20L920%2020%20L962%2034%20L1000%2026%20L1000%2060%20Z'/%3E%3C/svg%3E");
 }
 
-/* ================= Wild Side · Eckschild ================= */
-/* Titel in Prata wie die Website: eine Stärke, normale Schreibung; Betonung über die Farbe (auf Hell Gold tief), nie fett, nie kursiv */
-.wo-sb__h,.wo-zw{font-family:var(--wo-titel);font-weight:400;letter-spacing:0}
-.wo-zw em{font-style:normal;color:var(--wo-akzent)}
-/* Fehlerbuch 10a: auf dunkler Fläche ist jede Titelzeile hell */
-.wo-sb .wo-sb__h em,[data-wo-rahmen] .wo-sb .wo-sb__h em,#ansicht .wo-sb .wo-sb__h em,body .wo-sb .wo-sb__h em{font-style:normal;color:var(--wo-gold);font-weight:400}
-/* Frühere Klasse für Menüzeilen: im Wild Side als Etikett (Hanken 500, gesperrt) */
-.wo-rudi{font-family:var(--wo-etikett);font-weight:500;text-transform:uppercase;letter-spacing:.12em}
-/* Etiketten in Hanken 500 gesperrt wie die Website, Zahlen mit gleich breiten Ziffern */
-.wo-bk__t small,.wo-mk,.wo-sb__zier span{font-family:var(--wo-etikett);font-weight:500;letter-spacing:.14em}
+/* ================= Monte-Moro · Ein Tag am Grat ================= */
+/* Titel in Fjalla One wie die Website: eine Stärke, normale Schreibung; Betonung über die Farbe Lärche (nur das letzte Wort), nie fett, nie kursiv */
+.wo-sb__h,.wo-zw{font-family:var(--wo-titel);font-weight:400;letter-spacing:var(--wo-titel-ls)}
+.wo-zw em{font-style:normal;color:var(--wo-laerche)}
+/* Fehlerbuch 10a: auf dunkler Fläche ist jede Titelzeile hell, die Betonung Lärche wie in den dunklen Szenen der Website */
+.wo-sb .wo-sb__h em,[data-wo-rahmen] .wo-sb .wo-sb__h em,#ansicht .wo-sb .wo-sb__h em,body .wo-sb .wo-sb__h em{font-style:normal;color:var(--wo-laerche);font-weight:400}
+/* Frühere Klasse für Menüzeilen: im Monte-Moro als Etikett (DM Mono, Versalien, gesperrt) */
+.wo-rudi{font-family:var(--wo-etikett);font-weight:400;text-transform:uppercase;letter-spacing:.18em}
+/* Etiketten in DM Mono gesperrt wie die kleinen Zeilen der Website (.ueber), Zahlen DM Mono */
+.wo-bk__t small,.wo-mk,.wo-sb__zier span{font-family:var(--wo-etikett);font-weight:400;letter-spacing:.2em;text-transform:uppercase}
 .wo-zahl{font-family:var(--wo-mono);font-variant-numeric:tabular-nums lining-nums}
 .wo-dj,.wo-dc{--wo-akzent:#115595}
 
-/* Platten wie das Eckschild: Gold-Haarlinie innen, weicher Schatten */
-.wo-lage,.wo-ag,.wo-det__kopf{box-shadow:inset 0 0 0 1px rgba(179,152,103,.42),0 18px 40px -26px rgba(7,27,46,.45)}
-[data-wo-rahmen="buehne"] .wo-kopf{border-bottom:1px solid rgba(179,152,103,.30)}
-/* Die Bühne: unten eine Gold-Haarlinie wie der Rahmen des Schilds */
-[data-wo-rahmen="buehne"] .wo-sb{border-bottom:0;box-shadow:inset 0 0 0 1px rgba(179,152,103,.55),inset 0 0 0 6px #071B2E,0 40px 60px -40px rgba(3,10,16,.8)}
-/* Über den Abschnittstiteln: eine kurze Gold-Haarlinie, sonst kein Schmuck */
-.wo-zw::before{content:'';display:block;width:56px;height:1px;margin-bottom:14px;background:var(--wo-gold)}
-.cu-x{font-family:var(--wo-titel);font-style:normal;font-weight:400;letter-spacing:0;text-transform:none;color:var(--wo-gold)}
-/* Fotos wie unter der Decke der Bar: unten leicht in die Nacht */
+/* Platten ruhig wie die Szenen der Website: weicher Schatten, eine feine Linie, kein Schmuck */
+.wo-lage,.wo-ag,.wo-det__kopf{box-shadow:inset 0 1px 0 rgba(255,255,255,.1),inset 0 0 0 1px rgba(179,152,103,.18),0 18px 40px -26px rgba(7,27,46,.45)}
+[data-wo-rahmen="buehne"] .wo-kopf{border-bottom:0}
+[data-wo-rahmen="buehne"] .wo-sb{box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 40px 60px -40px rgba(3,10,16,.8)}
+/* Über den Abschnittstiteln: eine kurze feine Linie in Lärche (die Grat-Linie der Website ist 1 px Lärche), sonst kein Schmuck */
+.wo-zw::before{content:'';display:block;width:48px;height:1px;margin-bottom:14px;background:var(--wo-laerche);opacity:.75}
+.cu-x{font-family:var(--wo-titel);font-style:normal;font-weight:400;letter-spacing:0;text-transform:none;color:var(--wo-laerche)}
+/* Fotos wie in der Website: unten leicht in die Nacht */
 .wo-sb__foto::after{background:linear-gradient(0deg,rgba(7,27,46,.55),transparent 55%)}
-.wo-lg__z,.wo-ag__z{border-radius:14px}
+/* Grat-Oberkante: das Foto im Startbild endet oben im Bergkamm (wie .rahmen/.paar der Website), zusätzlich zur Blende des Rahmens */
+@media (min-width:901px){
+  [data-wo-rahmen="buehne"] .wo-sb__foto{-webkit-mask:linear-gradient(90deg,transparent 0,#000 44%),var(--wo-grat-maske) top/100% var(--wo-gh) no-repeat,linear-gradient(#000 0 0) 0 calc(var(--wo-gh) - 1px)/100% 100% no-repeat;
+    -webkit-mask-composite:source-in,source-over;mask:linear-gradient(90deg,transparent 0,#000 44%),var(--wo-grat-maske) top/100% var(--wo-gh) no-repeat,linear-gradient(#000 0 0) 0 calc(var(--wo-gh) - 1px)/100% 100% no-repeat;mask-composite:intersect,add}
+}
+@media (max-width:900px){
+  [data-wo-rahmen="buehne"] .wo-sb__foto{-webkit-mask:linear-gradient(180deg,#000 55%,transparent),var(--wo-grat-maske) top/100% var(--wo-gh) no-repeat,linear-gradient(#000 0 0) 0 calc(var(--wo-gh) - 1px)/100% 100% no-repeat;
+    -webkit-mask-composite:source-in,source-over;mask:linear-gradient(180deg,#000 55%,transparent),var(--wo-grat-maske) top/100% var(--wo-gh) no-repeat,linear-gradient(#000 0 0) 0 calc(var(--wo-gh) - 1px)/100% 100% no-repeat;mask-composite:intersect,add}
+}
+/* Kacheln mit Foto: die Bildkante oben als Grat (Kacheln haben die Rundung der Platte, der Grat liegt im Bild darunter) */
+.wo-ag__b,.wo-bk__b{-webkit-mask:var(--wo-grat-maske) top/100% 12px no-repeat,linear-gradient(#000 0 0) 0 11px/100% 100% no-repeat;mask:var(--wo-grat-maske) top/100% 12px no-repeat,linear-gradient(#000 0 0) 0 11px/100% 100% no-repeat}
+.wo-lg__z,.wo-ag__z{border-radius:50%}
 .wo-bk__t small,.wo-mk{color:var(--wo-akzent)}
-.wo-re.wo-an,.wo-re[aria-current="true"],.wo-re[aria-current="page"]{background:linear-gradient(180deg,#0D3F6F,#071B2E);box-shadow:inset 0 0 0 1px rgba(179,152,103,.55)}
+.wo-lg .wo-mk,.wo-det__kopf .wo-mk,.wo-sb .wo-mk{color:var(--wo-messing)}
+.wo-re.wo-an,.wo-re[aria-current="true"],.wo-re[aria-current="page"]{background:linear-gradient(180deg,#15466F 0%,#0D3F6F 46%,#0A2A4A 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),inset 0 -2px 0 rgba(0,0,0,.35),0 10px 18px -12px rgba(3,10,16,.6)}
 .wo-re.wo-an,.wo-re[aria-current="true"],.wo-re[aria-current="page"],.wo-re.wo-an *,.wo-re[aria-current] *{color:#F5F2EE}
+.wo-re .wo-zahl{background:linear-gradient(180deg,#FFFFFF,#E7E1DC);box-shadow:inset 0 0 0 1px rgba(10,42,74,.12)}
 .wo-re.wo-an .wo-zahl,.wo-re[aria-current="true"] .wo-zahl,.wo-re[aria-current="page"] .wo-zahl{color:var(--wo-tief)}
+/* Marken in einer Zeile (Sprache, «Neu»): DM Mono, Neu in Lärche mit weisser Schrift, sonst hell mit feiner Linie */
+.wo-sp{font-weight:400;box-shadow:inset 0 0 0 1px rgba(10,42,74,.14)}
+.wo-an--neu .wo-an__st em{color:#FFFFFF;background:linear-gradient(180deg,#D3845A,#C67144 52%,#AE5E34);box-shadow:inset 0 1px 0 rgba(255,255,255,.3)}
+.wo-an__st em,.wo-marke{font-weight:400}
 
-/* Knöpfe wie das Eckschild (CHARAKTER.md 4): Hauptweg rot mit Creme-Knauf, Nebenweg Nacht mit Goldlinie und Gold-Knauf */
-.wo-kn:not(.wo-kn--rund){border-radius:14px}
-.wo-kn--gold{color:#FFFFFF;background:linear-gradient(180deg,#D3845A 0%,#C67144 52%,#AE5E34 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.45),inset 0 -1px 0 rgba(90,40,15,.45),0 14px 26px -14px rgba(7,27,46,.75),0 3px 8px -3px rgba(7,27,46,.35)}
-.wo-kn--dunkel{color:#F5F2EE;background:linear-gradient(180deg,#15466F 0%,#0A2A4A 52%,#071B2E 100%);box-shadow:inset 0 0 0 1px rgba(179,152,103,.6),inset 0 1px 0 rgba(255,255,255,.12),0 16px 30px -16px rgba(7,27,46,.75),0 3px 8px -3px rgba(7,27,46,.35)}
-.wo-kn--hell{color:#0A2A4A;background:linear-gradient(180deg,#FFFFFF 0%,#F4F0EB 52%,#E2DAD0 100%);box-shadow:inset 0 0 0 1px rgba(154,79,43,.35),0 10px 22px -14px rgba(7,27,46,.5)}
-[data-wo-rahmen="buehne"] .wo-leiste{border-radius:18px}
+/* ---------- Knöpfe wie die Website (.kn): Pille mit Lichtkante oben, Schattenkante unten, runder Knauf mit Pfeil ----------
+   .wo-kn--gold  = Hauptweg, Lärche mit weissem Knauf (.kn--laerche)
+   .wo-kn--dunkel = Nebenweg, Nacht mit weissem Knauf (.kn--nacht)
+   .wo-kn--hell  = heller Weg, Weiss zu Creme mit blauem Knauf (.kn, Grundknopf der Website)
+   .wo-kn--glas  = Weg auf Dunkel, feine helle Linie (.kn--linie) */
+.wo-kn{border-radius:var(--wo-rk);font-family:var(--wo-mono);font-weight:400;letter-spacing:.16em;text-transform:uppercase}
+.wo-kn i{box-shadow:inset 0 1px 0 rgba(255,255,255,.95),inset 0 -2px 0 rgba(0,0,0,.24),0 2px 5px rgba(0,0,0,.2)}
+@media (hover:hover) and (pointer:fine){ .wo-kn:not([disabled]):hover{transform:translateY(-1px)} .wo-kn:not([disabled]):hover i{transform:translateX(2px)} }
+.wo-kn--gold{color:#FFFFFF;text-shadow:none;background:linear-gradient(180deg,#D3845A 0%,#C67144 46%,#AE5E34 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.3),inset 0 -2px 0 rgba(0,0,0,.22),0 1px 1px rgba(0,0,0,.12),0 18px 30px -18px rgba(90,40,15,.45)}
+.wo-kn--gold i,.wo-kn--dunkel i{background:linear-gradient(180deg,#FFFFFF,#EFE9E1);color:#0A2A4A;box-shadow:inset 0 1px 0 rgba(255,255,255,.95),inset 0 -2px 0 rgba(0,0,0,.24),0 2px 5px rgba(0,0,0,.2)}
+.wo-kn--dunkel{color:#FFFFFF;background:linear-gradient(180deg,#15466F 0%,#0D3F6F 46%,#0A2A4A 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.18),inset 0 -2px 0 rgba(0,0,0,.35),0 1px 1px rgba(0,0,0,.12),0 18px 30px -18px rgba(3,10,16,.5)}
+.wo-kn--hell{color:#0A2A4A;background:linear-gradient(180deg,#FFFFFF 0%,#F4F0EB 46%,#E2DAD0 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.95),inset 0 -2px 0 rgba(10,42,74,.16),0 1px 1px rgba(0,0,0,.12),0 18px 30px -18px rgba(10,42,74,.32)}
+.wo-kn--hell i{background:linear-gradient(180deg,#1B5E9C,#0D3F6F);color:#FFFFFF;box-shadow:inset 0 1px 0 rgba(255,255,255,.22),inset 0 -2px 0 rgba(0,0,0,.24),0 2px 5px rgba(0,0,0,.2)}
+.wo-kn--glas{color:#F5F2EE;background:rgba(255,255,255,.04);box-shadow:inset 0 0 0 1px rgba(245,242,238,.55)}
+.wo-kn--glas i{background:linear-gradient(180deg,#FFFFFF,#EFE9E1);color:#0A2A4A;box-shadow:0 2px 5px rgba(0,0,0,.2)}
+.wo-kn--rund{color:#F5F2EE;background:rgba(255,255,255,.05);box-shadow:inset 0 0 0 1px rgba(245,242,238,.3),inset 0 1px 0 rgba(255,255,255,.1)}
+[data-wo-rahmen="buehne"] .wo-leiste{border-radius:var(--wo-rk)}
 
-/* Ecke oben links in allen Werkzeugen gleich (M24): die Wortmarke der Bar in Rot im Ring aus Nacht mit Gold-Haarlinie, daneben Bereich · Haus */
-.wo-marke-w{position:relative;padding-left:60px!important;min-height:46px}
-.wo-marke-w::before{content:'';position:absolute;left:0;top:50%;width:46px;height:46px;margin-top:-23px;border-radius:50%;
-  background:radial-gradient(circle at 50% 38%,#0D3F6F,#071B2E 76%);box-shadow:inset 0 0 0 1px rgba(179,152,103,.85),inset 0 0 0 4px rgba(7,27,46,.55),0 6px 14px -8px rgba(0,0,0,.8)}
-.wo-marke-w .wo-zeichen{position:absolute;left:12px;top:50%;width:22px;height:27px;max-width:none;margin-top:-13.5px;color:#C67144}
-.wo-marke-w b{font-family:var(--wo-titel);font-weight:400}
+/* ---------- Ecke oben links in allen Werkzeugen gleich (M24): der Bergkamm des Logos in Lärche (wie im Kopf der Website, .kopf__marke svg)
+   in einer kleinen Pille aus Nacht. Der Bergkamm ist breit (viewBox 3483 × 696, Seitenverhältnis 5 : 1, WO_HAUS.zeichenMass):
+   ein runder Ring würde ihn auf 6 px Höhe drücken; die Pille 64 × 44 trägt ihn 44 px breit wie die Website, mittig und ganz. ---------- */
+.wo-marke-w{position:relative;padding-left:78px!important;min-height:46px}
+.wo-marke-w::before{content:'';position:absolute;left:0;top:50%;width:64px;height:44px;margin-top:-22px;border-radius:999px;
+  background:linear-gradient(180deg,#15466F 0%,#0D3F6F 46%,#0A2A4A 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),inset 0 -2px 0 rgba(0,0,0,.35),inset 0 0 0 1px rgba(179,152,103,.35),0 6px 14px -8px rgba(0,0,0,.8)}
+.wo-marke-w .wo-zeichen,[data-wo-rahmen] .wo-marke-w .wo-zeichen{position:absolute;left:10px;top:50%;width:44px;height:8.8px;max-width:none;margin-top:-5.4px;color:#C67144}
+.wo-marke-w b{font-family:var(--wo-titel);font-weight:400;letter-spacing:.04em}
 .wo-marke-w small{color:rgba(179,152,103,.95)!important}
+/* Der Bergkamm an den übrigen Stellen (Zier im Startbild, Briefkopf, Band, Bildunterschrift): breit statt hoch */
+.wo-sb__zier .wo-zeichen{width:46px;height:auto;max-width:none;color:var(--wo-laerche)}
+.wo-brief__kopf .wo-zeichen{width:90px;height:auto;max-width:none;color:var(--wo-laerche)}
+.wo-bl__band .wo-zeichen{width:22cqw;height:auto}
+.wo-sb__foto figcaption .wo-zeichen{width:60px;height:auto;max-width:none}
 
 /* Auftritt der Bühne wie bei den abgenommenen Häusern (Fehlerbuch 10a): Foto schwebt 40 px von unten und zoomt von 1,06 auf 1,
-   Zier, Titel, Satz und Knöpfe folgen 40 px von unten, 0,85 s, Staffel 0,12 s. Nur transform, deckend. */
+   Zier, Titel, Satz und Knöpfe folgen 40 px von unten. Nur transform, deckend. */
 @keyframes woAufFoto{from{translate:0 40px;scale:1.06}}
 @keyframes woAuf{from{translate:0 40px}}
-/* Bewegung 29.10.2026 (Robert: «dieses mit dem Reinzoomen, mit dem hochgeflogen Kommen der Schriften»): im Ton des Abends ruhiger und länger.
-   Das Foto im Rahmen zoomt 2,6 s langsam ein (von 1,12), der Titel kommt 1,15 s aus der Tiefe, die Kurve läuft weich aus. Läuft ab dem ersten Bild,
-   wartet auf kein Skript. Das Foto zieht beim Scrollen etwas langsamer mit (Scroll-Zeitachse, nur wo der Browser sie kann, im Compositor). */
+/* Bewegung langsam und weich wie die Website (Regel 55: ohne Hüpfen, Wackeln oder Klappern): das Foto im Rahmen zoomt 2,6 s langsam ein (von 1,12),
+   der Titel kommt 1,15 s aus der Tiefe, die Kurve läuft weich aus. Läuft ab dem ersten Bild, wartet auf kein Skript.
+   Das Foto zieht beim Scrollen etwas langsamer mit (Scroll-Zeitachse, nur wo der Browser sie kann, im Compositor). */
 @keyframes woZoom{from{scale:1.12}}
 @keyframes woHoch{from{translate:0 34px}}
 @media screen and (prefers-reduced-motion:no-preference){
@@ -86,7 +132,7 @@
   html:not(.still) .wo-sb__h{animation-delay:.18s}
   html:not(.still) .wo-sb__satz{animation-delay:.3s}
   html:not(.still) .wo-sb__kn{animation-delay:.42s}
-  /* Titel zeilenweise (30.10.2026, Kriterium 37): kleid/montemoro.js teilt ihn in Wörter mit Zeilennummer --z; jede Zeile steigt 0,11 s nach der vorigen */
+  /* Titel zeilenweise (Kriterium 37): kleid/montemoro.js teilt ihn in Wörter mit Zeilennummer --z; jede Zeile steigt 0,11 s nach der vorigen */
   html:not(.still) .wo-sb__h.wo-zl{animation:none}
   html:not(.still) .wo-sb__h.wo-zl .wo-w{display:inline-block;animation:woHoch 1.15s cubic-bezier(.19,1,.22,1) both;animation-delay:calc(.18s + var(--z,0) * .11s)}
   @supports (animation-timeline:view()){
@@ -108,8 +154,8 @@
 }
 @media (min-width:901px) and (max-width:1240px){
   .wo-kopf__mitte b{font-size:18px}
-  .wo-kopf .wo-kn--gold.wo-kn--klein>span{position:absolute;left:50%;top:50%;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;font-size:1px;line-height:1px;letter-spacing:0;color:transparent;text-box:none}   /* Beschriftung bleibt für Vorleser, sichtbar nur der Knauf; sie liegt in der Mitte des Knaufs, nie ausserhalb (Tor-Regel «randlos», 31.10.2026) */
-  .wo-kopf .wo-kn--gold.wo-kn--klein{padding:0;gap:0;width:42px;height:42px;min-height:0;min-width:0;border-radius:50%;justify-content:center;align-items:center}   /* nur noch der runde Knauf, nie eine Kachel (30.10.2026) */
+  .wo-kopf .wo-kn--gold.wo-kn--klein>span{position:absolute;left:50%;top:50%;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;font-size:1px;line-height:1px;letter-spacing:0;color:transparent;text-box:none}   /* Beschriftung bleibt für Vorleser, sichtbar nur der Knauf; sie liegt in der Mitte des Knaufs, nie ausserhalb (Tor-Regel «randlos») */
+  .wo-kopf .wo-kn--gold.wo-kn--klein{padding:0;gap:0;width:42px;height:42px;min-height:0;min-width:0;border-radius:50%;justify-content:center;align-items:center}   /* nur noch der runde Knauf, nie eine Kachel */
 }
 
 /* Zierzeile im Startbild: bricht um, wenn der Platz nicht reicht; die Linie daneben gibt unter 1240 px ihren Platz dem Text */
@@ -117,60 +163,54 @@
 .wo-sb__zier span{min-width:0;white-space:normal;overflow:visible;line-height:1.6}
 @media (max-width:1240px){.wo-sb__zier i{display:none}}
 
-/* Luft unter der Bühne (Fehlerbuch 10a, 20.10.2026): mindestens 30 px bis zu den ersten Kacheln, am Handy 24 px */
+/* Luft unter der Bühne (Fehlerbuch 10a): mindestens 30 px bis zu den ersten Kacheln, am Handy 24 px */
 .wo-sb{margin-bottom:34px}
 @media (max-width:760px){.wo-sb{margin-bottom:24px}}
 
 /* Fehlerbuch 10a: auf jeder dunklen Fläche ist die Schrift hell, auch auf Knöpfen und Einträgen, die immer dunkel sind */
 .wo-kopf,.wo-kopf a,.wo-sb,.wo-sb a:not(.wo-kn){color:#F5F2EE}
 
-/* Nie kursiv (CHARAKTER.md 4): die Stamm-Bausteine Brief und Blatt setzen Georgia kursiv; im Wild Side aufrecht in Prata, Hervorhebung über die Farbe */
+/* Nie kursiv (Markenbuch): die Stamm-Bausteine Brief und Blatt setzen Georgia kursiv; im Monte-Moro aufrecht in Fjalla One, Hervorhebung über die Farbe */
 .wo-brief em,.wo-brief i,.wo-bl em,.wo-bl i{font-style:normal}
 .wo-bl__rub span,.wo-bl__g span,.wo-bl__h{font-family:var(--wo-titel);font-style:normal;font-weight:400}
 .wo-brief mark,.wo-brief em{background:none;color:var(--wo-akzent)}
-.wo-lu{font-style:normal;background:linear-gradient(180deg,transparent 55%,rgba(179,152,103,.38) 55%)}
+.wo-lu{font-style:normal;background:linear-gradient(180deg,transparent 55%,rgba(198,113,68,.28) 55%)}
 
-/* Nie fett (CHARAKTER.md 4): der Stamm setzt im Blatt Namen fett (.wo-bl__g b 700); im Wild Side in Prata */
+/* Nie fett (Markenbuch): der Stamm setzt im Blatt Namen fett (.wo-bl__g b 700); im Monte-Moro in Fjalla One */
 .wo-bl__g b{font-family:var(--wo-titel);font-weight:400;letter-spacing:.01em}
 b,strong{font-weight:500}
 
-/* Schrift optisch mittig in Knöpfen und Pillen (Robert 29.10.2026: «Die Schriften in deinen Buttons sitzen IMMER falsch»; Messlauf-Regel text-mitte).
-   Die Zeilenbox wurde zentriert, nicht die Versalhöhe: in Chromium sass die Schrift 0,6 bis 1,3 px zu hoch. text-box schneidet die Zeile auf Versalhöhe und Grundlinie zu,
+/* Schrift optisch mittig in Knöpfen und Pillen (Messlauf-Regel text-mitte). text-box schneidet die Zeile auf Versalhöhe und Grundlinie zu,
    dann zentriert der Knopf genau die Buchstaben. Ohne text-box (ältere Browser) ein kleiner gemessener Ausgleich. */
 .wo-kn>span,.wo-re>span,.wo-kopf__ber>span{text-box:trim-both cap alphabetic}
 .wo-re .wo-zahl{display:block;height:auto;padding:7px;line-height:1;text-align:center;text-box:trim-both cap alphabetic}
 @supports not (text-box:trim-both cap alphabetic){.wo-kn>span,.wo-re>span,.wo-kopf__ber>span{position:relative;top:.05em}}
 
-/* Messlauf 29.10.2026 (Regel einzelwort): kein einzelnes Wort allein in der letzten Titelzeile */
+/* Messlauf (Regel einzelwort): kein einzelnes Wort allein in der letzten Titelzeile */
 h1,h2,h3,h4,figcaption{text-wrap:balance}
 .rdg-karte h3,.wo-zw,.wo-sb__h{text-wrap:balance}
-/* Messlauf 29.10.2026 (Regel reihe): wo die Kacheltitel neben dem Pfeil umbrechen (schmale Spalten), reserviert jeder Titel zwei Zeilen, damit die Reihe auf einer Linie steht */
+/* Messlauf (Regel reihe): wo die Kacheltitel neben dem Pfeil umbrechen (schmale Spalten), reserviert jeder Titel zwei Zeilen, damit die Reihe auf einer Linie steht */
 @media (min-width:901px) and (max-width:1365px){.wo-ber .wo-bk__t b{min-height:2.4em}}
 
-/* Handy (31.10.2026, Tresen): der Knopf «Bereiche» im dunklen Kopf ist ein Nebenweg wie am Eckschild (Nacht mit Gold-Haarlinie, Schild 14 px), keine goldene Pille */
+/* Handy: der Knopf «Bereiche» im dunklen Kopf ist ein Nebenweg (.kn--nacht als kleine Pille mit heller Linie), kein Hauptweg */
 @media (max-width:900px){
-  [data-wo-rahmen] .wo-kopf__ber{border-radius:14px;font-family:var(--wo-etikett);font-weight:500;color:#F5F2EE;
-    background:linear-gradient(180deg,#15466F 0%,#0A2A4A 52%,#071B2E 100%);box-shadow:inset 0 0 0 1px rgba(179,152,103,.6),inset 0 1px 0 rgba(255,255,255,.12),0 8px 18px -10px rgba(0,0,0,.8)}
-  [data-wo-rahmen] .wo-kopf__ber .wo-ic{color:#B39867}
+  [data-wo-rahmen] .wo-kopf__ber{border-radius:999px;font-family:var(--wo-etikett);font-weight:400;color:#F5F2EE;
+    background:linear-gradient(180deg,#15466F 0%,#0D3F6F 46%,#0A2A4A 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),inset 0 -2px 0 rgba(0,0,0,.35),inset 0 0 0 1px rgba(245,242,238,.22),0 8px 18px -10px rgba(0,0,0,.8)}
+  [data-wo-rahmen] .wo-kopf__ber .wo-ic{color:#F5F2EE}
 }
-/* Hauptweg wie am Eckschild und auf der Website (31.10.2026, Tresen): Rot mit Creme-Knauf, der Pfeil rot; kein heller Schriftschatten auf Rot */
-.wo-kn--gold{text-shadow:none}
-.wo-kn--gold i{background:linear-gradient(180deg,#FFFFFF 0%,#F5F2EE 55%,#E7E1DC 100%);color:#C67144;box-shadow:inset 0 1px 0 #fff,0 3px 8px -2px rgba(90,40,15,.45)}
-
-/* Kopfmitte (31.10.2026, Funde Markenbuch und Pairing-Karte): Prata braucht mehr Zeilenhöhe als die Schrift des Stamms (Schriftkasten 1,39 em);
-   bei 1,1 schnitt «overflow:hidden» die Unterlängen ab. Zeile 1,42, dafür die Unterzeile näher heran, der Kopf bleibt gleich hoch. */
-.wo-kopf__mitte b{line-height:1.42}
-.wo-kopf__mitte small{margin-top:0}
-/* Leiste unten am Handy (31.10.2026, Fund Gästebuch): grund.css färbt den Hauptknopf dort gold; im Wild Side bleibt der Hauptweg rot, das Zeichen hell */
+/* Fjalla One braucht im Kopf etwas mehr Zeilenhöhe, damit «overflow:hidden» keine Unterlängen abschneidet; die Unterzeile rückt dafür näher */
+.wo-kopf__mitte b{line-height:1.3}
+.wo-kopf__mitte small{margin-top:2px}
+/* Leiste unten am Handy: grund.css färbt den Hauptknopf dort aus den Knauf-Werten; im Monte-Moro bleibt der Hauptweg Lärche, das Zeichen weiss */
 @media (max-width:900px){
-  .wo-leiste .wo-kn--gold{background:linear-gradient(180deg,#D3845A 0%,#C67144 52%,#AE5E34 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 8px 18px -10px rgba(198,113,68,.6)}
+  .wo-leiste .wo-kn--gold{background:linear-gradient(180deg,#D3845A 0%,#C67144 46%,#AE5E34 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 8px 18px -10px rgba(198,113,68,.6)}
   .wo-leiste .wo-kn--gold i{color:#FFFFFF}
+  .wo-leiste .wo-kn:not(.wo-kn--gold) i{color:#F5F2EE}
 }
 
-/* Sperrabstand optisch mittig (31.10.2026, Oberchef; Messlauf «text-mitte» in WebKit). Gesperrte Versalien: Chromium hängt den Sperrabstand auch nach dem
-   letzten Buchstaben an (die Schrift sitzt dann um den halben Abstand links), WebKit nicht. Grundfall ist darum symmetrisch (richtig in WebKit, ohne Ausgleich);
-   nur Chromium bekommt den Ausgleich, erkannt an interpolate-size (gibt es nur dort). Gemessen in Chromium 153 an einem Knopf mit Hanken 500, 12 px, .16em:
-   Tinte ohne Ausgleich 1,12 px links der Mitte, mit Ausgleich 0,12 px; Text ohne Kind (inline-block) 0,62 px → 0,38 px.
+/* Sperrabstand optisch mittig (Messlauf «text-mitte»). Gesperrte Versalien: Chromium hängt den Sperrabstand auch nach dem letzten Buchstaben an
+   (die Schrift sitzt dann um den halben Abstand links), WebKit nicht. Grundfall ist darum symmetrisch (richtig in WebKit, ohne Ausgleich);
+   nur Chromium bekommt den Ausgleich, erkannt an interpolate-size (gibt es nur dort).
    Für eigene Knöpfe der Werkzeuge: --wo-sperr = der Sperrabstand des Knopfs (in em, wie letter-spacing), Klasse .wo-sperr-mitte an den Knopf
    (Text direkt im Knopf oder in einem Kind ohne eigene Breite; Zeichen in <i>, <svg>, <img> rücken nicht mit). Bei span-Beschriftungen geht auch
    margin-right:calc(-1 * var(--wo-sperr)) am span (so die Bausteine unten). */

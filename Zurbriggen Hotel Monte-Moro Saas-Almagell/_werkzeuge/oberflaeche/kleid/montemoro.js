@@ -7,7 +7,7 @@ window.WO_HAUS = { kurz: 'montemoro', name: 'Monte-Moro', voll: 'Hotel Monte-Mor
   foto: '/assets/img/haus-sommer-m.webp', fotoKlein: '/assets/img/haus-sommer-s.webp', fotoFarbe: '#5381BD',
   fotoStufen: [480, 900, 1440], fotoStufenNamen: { 480: 's', 900: 'm', 1440: 'l', 2200: 'x' }, fotoAlt: 'Das Hotel Monte-Moro im Sommer, mit den Balkonen aus Lärche',
   /* Zeichen: der Bergkamm aus dem Logo des Hauses (Markenbuch, bergkamm-*.svg, nachgezogen), Wortmarke: das ganze Logo «Monte Moro Saas-Almagell» (wortmarke-*.svg) */
-  zeichen: '/assets/oberflaeche/kleid/montemoro-zeichen.svg', zeichenMass: 0.2, wortmarke: '/assets/oberflaeche/kleid/montemoro-marke.svg#wm', wortmarkeMass: 0.41,
+  zeichen: '/assets/oberflaeche/kleid/montemoro-zeichen.svg', zeichenMass: 5.004, wortmarke: '/assets/oberflaeche/kleid/montemoro-marke.svg#wm', wortmarkeMass: 2.444,   /* Breite : Höhe (Bergkamm viewBox 3483 × 696, Logo 3483 × 1425); oberflaeche.js setzt zeichenMass als aspect-ratio */
   /* Namen der sieben Werkzeuge: die EINE Stelle (Oberchef 08.11.2026, Welt des Hotels; Dateien, Schlüssel und Adressen bleiben: maison, bureau, carte …) */
   namen: { zentrale: 'Das Hotelbüro', website: 'Das Schaufenster', karten: 'Das Kartenbrett', gaeste: 'Die Rezeption', marke: 'Das Markenbuch', besuche: 'Die Besucherliste', druck: 'Die Hausdruckerei' },
   saetze: { zentrale: 'Hier beginnt alles: ein Blick auf alle Werkzeuge und ihren Stand.',
@@ -21,7 +21,7 @@ window.WO_HAUS = { kurz: 'montemoro', name: 'Monte-Moro', voll: 'Hotel Monte-Mor
   /* Prüfserver je Werkzeug (cloud/haus.json); Wege zwischen Werkzeugen immer 127.0.0.1, nie localhost (Fehlerbuch 10a) */
   ports: { zentrale: 9381, website: 9382, karten: 9383, gaeste: 9384, marke: 9385, besuche: 9386, druck: 9387, werkbank: 9388, website_lokal: 8947 } };
 /* Lokal (Prüfserver je Werkzeug) zeigen die Wege zu den ANDEREN Werkzeugen auf deren eigenen Server unter 127.0.0.1, nie auf den eigenen Port
-   (Fund culinarium-reception 28.10.2026: der Knopf «La Maison» öffnete /_werkzeuge/maison/ auf 9384 ohne Stand-Wege; Fehlerbuch 10a). Online bleiben sie relativ.
+   (Fund im Stamm 28.10.2026: der Knopf zur Zentrale öffnete /_werkzeuge/maison/ auf 9384 ohne Stand-Wege; Fehlerbuch 10a). Online bleiben sie relativ.
    Wer selbst schon absolute Wege setzt: nur Wege umschreiben, die noch mit «/» beginnen (WO_HAUS.wegeLokal = true zeigt, dass es hier geschah). */
 (function () {
   if (!/^(127\.0\.0\.1|localhost)$/.test(location.hostname)) return;
