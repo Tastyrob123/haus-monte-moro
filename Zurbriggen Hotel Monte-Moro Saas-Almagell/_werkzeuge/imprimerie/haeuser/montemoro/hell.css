@@ -217,6 +217,11 @@ textarea::placeholder,input::placeholder{font-style:normal!important}
 #startWochen>.wo:not(:first-child) .wo__datum{letter-spacing:.1em;padding-left:8px;padding-right:8px}
 .mb__z{color:var(--wo-blatt,#F5F2EE)}   /* Bergkamm nur in Logo-Blau oder Papier (Markenbuch) */
 /* «Zurück zur Drucksache» bis 1240 px nur mit Pfeil (Wort bleibt für Vorleser): sonst drückte der Knopf in DM Mono das Suchfeld auf 30 px (Tor 08.11.2026, 1000 px) */
-@media (max-width:1240px){#startZu{padding:0 14px}#startZu>span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}}
+@media (max-width:1240px){#startZu{padding:0;width:auto;min-width:0;aspect-ratio:1/1;justify-content:center;gap:0}#startZu>span{display:none}}
 @media (max-width:600px){.reiter button:first-of-type{padding-left:5px}}
 .papier--neu{background:linear-gradient(180deg,#F5F2EE,#EFE9E1)}.stueck--neu .papier--neu{background:linear-gradient(180deg,rgba(245,242,238,.08),rgba(245,242,238,.04));box-shadow:none}.stueck--neu .papier--neu::after{content:none}
+/* Wörter in kleinen Feldern in DM Mono wie jede Versalzeile des Hauses (Tor 08.11.2026: «Neu beginnen» in Versalien der Lesetype) */
+.papier__wort{font-family:var(--mono);font-weight:400}
+/* «Noch keine eigenen Fotos …» über die ganze Breite des Fotorasters statt in einer Zelle von 69 px */
+.bk-fotos>.bk-satz{grid-column:1/-1}
+@media (max-width:430px){.kopf #btnSpeichern i svg{transform:translateY(.6px)}}

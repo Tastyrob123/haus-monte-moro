@@ -130,7 +130,7 @@ ZIMMER = [
 ]
 for w in WEINE:
     ZIMMER.append(v('Tischkarte · ' + w["name"], 'auf dem Tisch im Röstihüs', 'a7q', 'deckel', 'dunkel' if 'Eichenfass' in w["name"] else 'creme',
-                    {"ueber": "«Hotelwein» · " + w["preis"], "titel": w["name"], "unter": "Von Fabian selber kreiert", "text": ""}))
+                    {"ueber": "«Hotelwein» von Fabian · " + w["preis"], "titel": w["name"], "unter": "Von Fabian selber kreiert", "text": ""}))
 
 SAASTAL = [
     v('Mit Zug und Postauto', 'zum Mitschicken, an der Rezeption', 'a5h', 'programm', 'hell', {"ueber": "Ab Visp ca. 45 Min.", "titel": "Mit Zug und Postauto",
