@@ -50,12 +50,15 @@ Stand: 08.11.2026, Oberchef-Sitzung (Zweig `claude/task-o0ores`).
 - Die Folgesitzung prüft Schaufenster und Hausdruckerei nach diesen Reparaturen frisch (tor-schnell, 4 Breiten) und trägt das Ergebnis hier ein; dazu der Messlauf über alle Ziele (`aus-ende/messlauf/alle/`), den die erste Sitzung nicht hat. Tafel `ergebnis` und Meldung an Robert macht die erste Sitzung.
 
 ## Nächster genauer Schritt
-Läuft `cloud/schluss.sh` nicht mehr und fehlt `aus-ende/ende.json`: neu starten. Danach Funde reparieren, Fundbilder ansehen, Tafeln nach Zweig `ergebnis` unter `ergebnis/laeufe/2026-11-08/`, Meldung.
+Keiner – alles fertig und geprüft. Nur noch «Wartet auf Roberts Wort».
+
+(Früher:) Läuft `cloud/schluss.sh` nicht mehr und fehlt `aus-ende/ende.json`: neu starten. Danach Funde reparieren, Fundbilder ansehen, Tafeln nach Zweig `ergebnis` unter `ergebnis/laeufe/2026-11-08/`, Meldung.
 
 ## Nachtsitzung (session_01Qrxqqj2RNsgQhwdQL8dkgE, 20:10 UTC)
 - Vorige Sitzung war fertig (19:10 Fertig, 19:17 letztes Lebenszeichen); kein Unteragent offen, keiner neu gestartet.
 - Zweig `ergebnis` trägt jetzt `.claude/`, `CLAUDE.md`, `AUFTRAG.md` und diese Übergabe (Lebenszeichen für die Wache).
-- Schaufenster nach der Reparatur «90.00» (17:57) frisch geprüft: läuft (`/tmp/o0`, Worktree von `claude/task-o0ores`, `aus/schaufenster/`).
+- Schaufenster nach der Reparatur «90.00» (17:57) frisch geprüft, 20:30 UTC: Schaufenster 40 Zustände, Anleitung 21 Zustände, je 4 Breiten, 0 Funde, nichts unerreicht (Chromium). Mit dem Auge: «ab CHF 90.00», Preisliste 390, Fototausch – ohne Befund. Belege in `ergebnis/laeufe/2026-11-08/nacht/`.
+- Damit ist nichts mehr offen. Auftrag fertig.
 
 ## Gegenprüfung (session_01Qrxqqmsi6FLCXQ7QCpcSoE, 20:16 UTC)
 - Auftrag: jeden Auftragspunkt selbst nachprüfen (Werkbank, sieben Werkzeuge, Drucksachen, Feed, Prüfung) bei 1440/390, Fehlendes bauen. Arbeitet in Worktree `/tmp/gp` von `claude/task-o0ores`. Nachtsitzung 01Qrxqqj2… prüft Schaufenster nach; die Gegenprüfung nimmt sich nach dem Schaufenster nicht doppelt an.
