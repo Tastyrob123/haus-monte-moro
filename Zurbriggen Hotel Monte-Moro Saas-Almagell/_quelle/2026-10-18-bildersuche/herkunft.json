@@ -1,0 +1,40 @@
+{
+ "stand": "18.10.2026, Station 07",
+ "geladen": [
+  {
+   "url": "https://d37dhr5745n0y2.cloudfront.net/5/5d/69/55d69747b3ad20205777d459506445722e49f936_781573766.jpg",
+   "seite": "https://www.myswitzerland.com/de-ch/erlebnisse/essen-trinken/restaurant/restaurant-roestihues/",
+   "herausgeber": "Schweiz Tourismus, Eintrag des Restaurants (Kontakt info@monte-moro.ch)",
+   "datum": "10.11.2023",
+   "groesse": "341 KB",
+   "zeigt": "Die Stube des Röstihüs mit Kartoffelsäcken",
+   "datei": "myswitzerland-roestihues-781573766.jpg",
+   "geladen": "18.10.2026 mit Roberts Ja",
+   "pixel": "1200 x 500",
+   "befund": "gleiches Bild wie website/bilder/restau_4.jpg (Website des Hauses), steht schon auf der Seite; nicht zusätzlich eingebaut"
+  },
+  {
+   "url": "https://d37dhr5745n0y2.cloudfront.net/2/7f/7e/27f7e428eb99d5f90131f85f32ecfb16daa0a3b2_781573767.jpg",
+   "seite": "https://www.myswitzerland.com/de-ch/erlebnisse/essen-trinken/restaurant/restaurant-roestihues/",
+   "herausgeber": "Schweiz Tourismus, Eintrag des Restaurants (Kontakt info@monte-moro.ch)",
+   "datum": "10.11.2023",
+   "groesse": "377 KB",
+   "zeigt": "Das Röstihüs mit Kartoffelsack und Bar",
+   "datei": "myswitzerland-roestihues-781573767.jpg",
+   "geladen": "18.10.2026 mit Roberts Ja",
+   "pixel": "1200 x 500",
+   "befund": "gleiches Bild wie website/bilder/restau_5.jpg (Website des Hauses), steht schon auf der Seite; nicht zusätzlich eingebaut"
+  }
+ ],
+ "zu_klein": {
+  "extern/ig/ig-01.jpg … ig-12.jpg": "640 px, zu klein für grosse Bilder (Fabian-Selfie ig-02, Winter ig-09/11/12, Zimmer mit Logo ig-06/08)"
+ },
+ "geprueft_ohne_neues": [
+  "monte-moro.ch, alle Galerien de/en/fr: alle 88 Bilder schon in _quelle/website/bilder",
+  "Booking, Tripadvisor «vom Hotel», MySwitzerland Monte-Moro Residence: schon in _quelle/extern",
+  "MySwitzerland «hotel-monte-moro-1» zeigt heute ein anderes Haus (Hotel Sport)",
+  "MySwitzerland Event-Piazza Röstihüs: Seite gelöscht",
+  "Facebook, YouTube des Hauses: nichts gefunden ausser «Wallis Baby» (bleibt draussen)"
+ ],
+ "fehlt_weiter": "Fotos von Tellern und Röstis, von Esther und Fabian, vom Röstihüs am Abend von innen; gibt es online nicht vom Haus"
+}

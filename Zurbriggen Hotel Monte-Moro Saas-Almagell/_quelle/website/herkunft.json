@@ -1,0 +1,674 @@
+{
+ "website/bilder/allgem_logo.png": {
+  "quelle": "https://www.monte-moro.ch/images/allgemeines/logo.png",
+  "seiten": [
+   "de",
+   "de__8-monte-moro-de__17-wetter-schneebericht.html",
+   "de__?rCH=-2",
+   "de__?rCH=2",
+   "de__buchen.html",
+   "de__datenschutz.html",
+   "de__ferienwohnungen__apollo.html",
+   "de__ferienwohnungen__arizona.html",
+   "de__hotel__aktuelles.html",
+   "de__hotel__anreise.html",
+   "de__hotel__preise.html",
+   "de__hotel__wellness.html",
+   "de__hotel__zimmer.html",
+   "de__impressum.html",
+   "de__kontakt__formular.html",
+   "de__region__ausfluege.html",
+   "de__region__sommer.html",
+   "de__region__winter.html",
+   "de__restaurant.html",
+   "start"
+  ]
+ },
+ "website/bilder/zerone_hauptmenue.png": {
+  "quelle": "https://www.monte-moro.ch/templates/zerone/images/zerone/hauptmenue.png",
+  "seiten": [
+   "de",
+   "de__8-monte-moro-de__17-wetter-schneebericht.html",
+   "de__?rCH=-2",
+   "de__?rCH=2",
+   "de__buchen.html",
+   "de__datenschutz.html",
+   "de__ferienwohnungen__apollo.html",
+   "de__ferienwohnungen__arizona.html",
+   "de__hotel__aktuelles.html",
+   "de__hotel__anreise.html",
+   "de__hotel__preise.html",
+   "de__hotel__wellness.html",
+   "de__hotel__zimmer.html",
+   "de__impressum.html",
+   "de__kontakt__formular.html",
+   "de__region__ausfluege.html",
+   "de__region__sommer.html",
+   "de__region__winter.html",
+   "de__restaurant.html",
+   "start"
+  ]
+ },
+ "website/bilder/aktuel_1.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/aktuelles/1.jpg",
+  "seiten": [
+   "de",
+   "de__8-monte-moro-de__17-wetter-schneebericht.html",
+   "de__?rCH=-2",
+   "de__?rCH=2",
+   "start"
+  ]
+ },
+ "website/bilder/aktuel_2.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/aktuelles/2.jpg",
+  "seiten": [
+   "de",
+   "de__8-monte-moro-de__17-wetter-schneebericht.html",
+   "de__?rCH=-2",
+   "de__?rCH=2",
+   "start"
+  ]
+ },
+ "website/bilder/aktuel_3.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/aktuelles/3.jpg",
+  "seiten": [
+   "de",
+   "de__8-monte-moro-de__17-wetter-schneebericht.html",
+   "de__?rCH=-2",
+   "de__?rCH=2",
+   "start"
+  ]
+ },
+ "website/bilder/allgem_geschenk.png": {
+  "quelle": "https://www.monte-moro.ch/images/allgemeines/geschenk.png",
+  "seiten": [
+   "de",
+   "de__?rCH=-2",
+   "de__?rCH=2",
+   "start"
+  ]
+ },
+ "website/bilder/sommer_11.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/sommer/11.jpg",
+  "seiten": [
+   "de",
+   "de__?format=feed&amp;type=rss",
+   "de__?rCH=-2",
+   "de__?rCH=2",
+   "start"
+  ]
+ },
+ "website/bilder/wellne_wellness.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/wellness/wellness.jpg",
+  "seiten": [
+   "de",
+   "de__?format=feed&amp;type=rss",
+   "de__?rCH=-2",
+   "de__?rCH=2",
+   "start"
+  ]
+ },
+ "website/bilder/restau_restaurant.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/restaurant/restaurant.jpg",
+  "seiten": [
+   "de",
+   "de__?format=feed&amp;type=rss",
+   "de__?rCH=-2",
+   "de__?rCH=2",
+   "start"
+  ]
+ },
+ "website/bilder/hotel_standort.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/hotel/standort.jpg",
+  "seiten": [
+   "de",
+   "de__?format=feed&amp;type=rss",
+   "de__?rCH=-2",
+   "de__?rCH=2",
+   "start"
+  ]
+ },
+ "website/bilder/allgem_logo-saastalcard.png": {
+  "quelle": "https://www.monte-moro.ch/images/allgemeines/logo-saastalcard.png",
+  "seiten": [
+   "de",
+   "de__8-monte-moro-de__17-wetter-schneebericht.html",
+   "de__?rCH=-2",
+   "de__?rCH=2",
+   "de__buchen.html",
+   "de__datenschutz.html",
+   "de__ferienwohnungen__apollo.html",
+   "de__ferienwohnungen__arizona.html",
+   "de__hotel__aktuelles.html",
+   "de__hotel__anreise.html",
+   "de__hotel__preise.html",
+   "de__hotel__wellness.html",
+   "de__hotel__zimmer.html",
+   "de__impressum.html",
+   "de__kontakt__formular.html",
+   "de__region__ausfluege.html",
+   "de__region__sommer.html",
+   "de__region__winter.html",
+   "de__restaurant.html",
+   "start"
+  ]
+ },
+ "website/bilder/allgem_logo-magic-pass.png": {
+  "quelle": "https://www.monte-moro.ch/images/allgemeines/logo-magic-pass.png",
+  "seiten": [
+   "de",
+   "de__8-monte-moro-de__17-wetter-schneebericht.html",
+   "de__?rCH=-2",
+   "de__?rCH=2",
+   "de__buchen.html",
+   "de__datenschutz.html",
+   "de__ferienwohnungen__apollo.html",
+   "de__ferienwohnungen__arizona.html",
+   "de__hotel__aktuelles.html",
+   "de__hotel__anreise.html",
+   "de__hotel__preise.html",
+   "de__hotel__wellness.html",
+   "de__hotel__zimmer.html",
+   "de__impressum.html",
+   "de__kontakt__formular.html",
+   "de__region__ausfluege.html",
+   "de__region__sommer.html",
+   "de__region__winter.html",
+   "de__restaurant.html",
+   "start"
+  ]
+ },
+ "website/bilder/allgem_logo_saas-fee.png": {
+  "quelle": "https://www.monte-moro.ch/images/allgemeines/logo_saas-fee.png",
+  "seiten": [
+   "de",
+   "de__8-monte-moro-de__17-wetter-schneebericht.html",
+   "de__?rCH=-2",
+   "de__?rCH=2",
+   "de__buchen.html",
+   "de__datenschutz.html",
+   "de__ferienwohnungen__apollo.html",
+   "de__ferienwohnungen__arizona.html",
+   "de__hotel__aktuelles.html",
+   "de__hotel__anreise.html",
+   "de__hotel__preise.html",
+   "de__hotel__wellness.html",
+   "de__hotel__zimmer.html",
+   "de__impressum.html",
+   "de__kontakt__formular.html",
+   "de__region__ausfluege.html",
+   "de__region__sommer.html",
+   "de__region__winter.html",
+   "de__restaurant.html",
+   "start"
+  ]
+ },
+ "website/bilder/apollo_1.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/apollo/1.jpg",
+  "seiten": [
+   "de__ferienwohnungen__apollo.html"
+  ]
+ },
+ "website/bilder/apollo_2.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/apollo/2.jpg",
+  "seiten": [
+   "de__ferienwohnungen__apollo.html"
+  ]
+ },
+ "website/bilder/apollo_3.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/apollo/3.jpg",
+  "seiten": [
+   "de__ferienwohnungen__apollo.html"
+  ]
+ },
+ "website/bilder/apollo_4.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/apollo/4.jpg",
+  "seiten": [
+   "de__ferienwohnungen__apollo.html"
+  ]
+ },
+ "website/bilder/apollo_5.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/apollo/5.jpg",
+  "seiten": [
+   "de__ferienwohnungen__apollo.html"
+  ]
+ },
+ "website/bilder/apollo_6.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/apollo/6.jpg",
+  "seiten": [
+   "de__ferienwohnungen__apollo.html"
+  ]
+ },
+ "website/bilder/apollo_7.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/apollo/7.jpg",
+  "seiten": [
+   "de__ferienwohnungen__apollo.html"
+  ]
+ },
+ "website/bilder/apollo_8.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/apollo/8.jpg",
+  "seiten": [
+   "de__ferienwohnungen__apollo.html"
+  ]
+ },
+ "website/bilder/apollo_9.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/apollo/9.jpg",
+  "seiten": [
+   "de__ferienwohnungen__apollo.html"
+  ]
+ },
+ "website/bilder/arizon_1.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/arizona/1.jpg",
+  "seiten": [
+   "de__ferienwohnungen__arizona.html"
+  ]
+ },
+ "website/bilder/arizon_2.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/arizona/2.jpg",
+  "seiten": [
+   "de__ferienwohnungen__arizona.html"
+  ]
+ },
+ "website/bilder/arizon_3.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/arizona/3.jpg",
+  "seiten": [
+   "de__ferienwohnungen__arizona.html"
+  ]
+ },
+ "website/bilder/arizon_4.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/arizona/4.jpg",
+  "seiten": [
+   "de__ferienwohnungen__arizona.html"
+  ]
+ },
+ "website/bilder/arizon_5.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/arizona/5.jpg",
+  "seiten": [
+   "de__ferienwohnungen__arizona.html"
+  ]
+ },
+ "website/bilder/arizon_6.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/arizona/6.jpg",
+  "seiten": [
+   "de__ferienwohnungen__arizona.html"
+  ]
+ },
+ "website/bilder/arizon_7.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/arizona/7.jpg",
+  "seiten": [
+   "de__ferienwohnungen__arizona.html"
+  ]
+ },
+ "website/bilder/arizon_8.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/arizona/8.jpg",
+  "seiten": [
+   "de__ferienwohnungen__arizona.html"
+  ]
+ },
+ "website/bilder/arizon_9.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/arizona/9.jpg",
+  "seiten": [
+   "de__ferienwohnungen__arizona.html"
+  ]
+ },
+ "website/bilder/arizon_10.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/arizona/10.jpg",
+  "seiten": [
+   "de__ferienwohnungen__arizona.html"
+  ]
+ },
+ "website/bilder/arizon_11.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/arizona/11.jpg",
+  "seiten": [
+   "de__ferienwohnungen__arizona.html"
+  ]
+ },
+ "website/bilder/arizon_12.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/arizona/12.jpg",
+  "seiten": [
+   "de__ferienwohnungen__arizona.html"
+  ]
+ },
+ "website/bilder/aktuel_hotel-monte-moro-saas-almagell-ansicht.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/aktuelles/hotel-monte-moro-saas-almagell-ansicht.jpg",
+  "seiten": [
+   "de__hotel__aktuelles.html"
+  ]
+ },
+ "website/bilder/aktuel_hotel-monte-moro-saas-almagell-balkon.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/aktuelles/hotel-monte-moro-saas-almagell-balkon.jpg",
+  "seiten": [
+   "de__hotel__aktuelles.html"
+  ]
+ },
+ "website/bilder/stando_Saas_Almagell.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/standort/Saas_Almagell.jpg",
+  "seiten": [
+   "de__hotel__anreise.html"
+  ]
+ },
+ "website/bilder/zimmer_1.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/zimmer/1.jpg",
+  "seiten": [
+   "de__hotel__preise.html",
+   "de__hotel__zimmer.html"
+  ]
+ },
+ "website/bilder/zimmer_2.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/zimmer/2.jpg",
+  "seiten": [
+   "de__hotel__preise.html",
+   "de__hotel__zimmer.html"
+  ]
+ },
+ "website/bilder/zimmer_3.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/zimmer/3.jpg",
+  "seiten": [
+   "de__hotel__preise.html"
+  ]
+ },
+ "website/bilder/zimmer_4.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/zimmer/4.jpg",
+  "seiten": [
+   "de__hotel__preise.html",
+   "de__hotel__zimmer.html"
+  ]
+ },
+ "website/bilder/zimmer_5.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/zimmer/5.jpg",
+  "seiten": [
+   "de__hotel__preise.html",
+   "de__hotel__zimmer.html"
+  ]
+ },
+ "website/bilder/zimmer_6.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/zimmer/6.jpg",
+  "seiten": [
+   "de__hotel__preise.html",
+   "de__hotel__zimmer.html"
+  ]
+ },
+ "website/bilder/zimmer_7.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/zimmer/7.jpg",
+  "seiten": [
+   "de__hotel__preise.html",
+   "de__hotel__zimmer.html"
+  ]
+ },
+ "website/bilder/zimmer_11.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/zimmer/11.jpg",
+  "seiten": [
+   "de__hotel__preise.html",
+   "de__hotel__zimmer.html"
+  ]
+ },
+ "website/bilder/wellne_1.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/wellness/1.jpg",
+  "seiten": [
+   "de__hotel__wellness.html"
+  ]
+ },
+ "website/bilder/wellne_2.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/wellness/2.jpg",
+  "seiten": [
+   "de__hotel__wellness.html"
+  ]
+ },
+ "website/bilder/wellne_3.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/wellness/3.jpg",
+  "seiten": [
+   "de__hotel__wellness.html"
+  ]
+ },
+ "website/bilder/wellne_4.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/wellness/4.jpg",
+  "seiten": [
+   "de__hotel__wellness.html"
+  ]
+ },
+ "website/bilder/zimmer_15.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/zimmer/15.jpg",
+  "seiten": [
+   "de__hotel__zimmer.html"
+  ]
+ },
+ "website/bilder/zimmer_16.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/zimmer/16.jpg",
+  "seiten": [
+   "de__hotel__zimmer.html"
+  ]
+ },
+ "website/bilder/formul_1.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/formular/1.jpg",
+  "seiten": [
+   "de__kontakt__formular.html"
+  ]
+ },
+ "website/bilder/formul_2.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/formular/2.jpg",
+  "seiten": [
+   "de__kontakt__formular.html"
+  ]
+ },
+ "website/bilder/ausflu_1.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/ausfluege/1.jpg",
+  "seiten": [
+   "de__region__ausfluege.html"
+  ]
+ },
+ "website/bilder/ausflu_2.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/ausfluege/2.jpg",
+  "seiten": [
+   "de__region__ausfluege.html"
+  ]
+ },
+ "website/bilder/ausflu_3.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/ausfluege/3.jpg",
+  "seiten": [
+   "de__region__ausfluege.html"
+  ]
+ },
+ "website/bilder/ausflu_4.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/ausfluege/4.jpg",
+  "seiten": [
+   "de__region__ausfluege.html"
+  ]
+ },
+ "website/bilder/ausflu_5.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/ausfluege/5.jpg",
+  "seiten": [
+   "de__region__ausfluege.html"
+  ]
+ },
+ "website/bilder/ausflu_6.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/ausfluege/6.jpg",
+  "seiten": [
+   "de__region__ausfluege.html"
+  ]
+ },
+ "website/bilder/ausflu_7.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/ausfluege/7.jpg",
+  "seiten": [
+   "de__region__ausfluege.html"
+  ]
+ },
+ "website/bilder/sommer_1.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/sommer/1.jpg",
+  "seiten": [
+   "de__region__sommer.html"
+  ]
+ },
+ "website/bilder/sommer_2.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/sommer/2.jpg",
+  "seiten": [
+   "de__region__sommer.html"
+  ]
+ },
+ "website/bilder/sommer_3.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/sommer/3.jpg",
+  "seiten": [
+   "de__region__sommer.html"
+  ]
+ },
+ "website/bilder/sommer_4.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/sommer/4.jpg",
+  "seiten": [
+   "de__region__sommer.html"
+  ]
+ },
+ "website/bilder/sommer_5.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/sommer/5.jpg",
+  "seiten": [
+   "de__region__sommer.html"
+  ]
+ },
+ "website/bilder/sommer_6.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/sommer/6.jpg",
+  "seiten": [
+   "de__region__sommer.html"
+  ]
+ },
+ "website/bilder/sommer_7.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/sommer/7.jpg",
+  "seiten": [
+   "de__region__sommer.html"
+  ]
+ },
+ "website/bilder/sommer_8.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/sommer/8.jpg",
+  "seiten": [
+   "de__region__sommer.html"
+  ]
+ },
+ "website/bilder/sommer_9.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/sommer/9.jpg",
+  "seiten": [
+   "de__region__sommer.html"
+  ]
+ },
+ "website/bilder/sommer_10.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/sommer/10.jpg",
+  "seiten": [
+   "de__region__sommer.html"
+  ]
+ },
+ "website/bilder/winter_1.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/winter/1.jpg",
+  "seiten": [
+   "de__region__winter.html"
+  ]
+ },
+ "website/bilder/winter_2.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/winter/2.jpg",
+  "seiten": [
+   "de__region__winter.html"
+  ]
+ },
+ "website/bilder/winter_3.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/winter/3.jpg",
+  "seiten": [
+   "de__region__winter.html"
+  ]
+ },
+ "website/bilder/winter_4.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/winter/4.jpg",
+  "seiten": [
+   "de__region__winter.html"
+  ]
+ },
+ "website/bilder/winter_5.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/winter/5.jpg",
+  "seiten": [
+   "de__region__winter.html"
+  ]
+ },
+ "website/bilder/winter_6.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/winter/6.jpg",
+  "seiten": [
+   "de__region__winter.html"
+  ]
+ },
+ "website/bilder/winter_7.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/winter/7.jpg",
+  "seiten": [
+   "de__region__winter.html"
+  ]
+ },
+ "website/bilder/winter_8.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/winter/8.jpg",
+  "seiten": [
+   "de__region__winter.html"
+  ]
+ },
+ "website/bilder/winter_9.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/winter/9.jpg",
+  "seiten": [
+   "de__region__winter.html"
+  ]
+ },
+ "website/bilder/winter_10.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/winter/10.jpg",
+  "seiten": [
+   "de__region__winter.html"
+  ]
+ },
+ "website/bilder/winter_11.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/winter/11.jpg",
+  "seiten": [
+   "de__region__winter.html"
+  ]
+ },
+ "website/bilder/restau_3.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/restaurant/3.jpg",
+  "seiten": [
+   "de__restaurant.html"
+  ]
+ },
+ "website/bilder/restau_4.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/restaurant/4.jpg",
+  "seiten": [
+   "de__restaurant.html"
+  ]
+ },
+ "website/bilder/restau_5.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/restaurant/5.jpg",
+  "seiten": [
+   "de__restaurant.html"
+  ]
+ },
+ "website/bilder/restau_6.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/restaurant/6.jpg",
+  "seiten": [
+   "de__restaurant.html"
+  ]
+ },
+ "website/bilder/restau_7.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/restaurant/7.jpg",
+  "seiten": [
+   "de__restaurant.html"
+  ]
+ },
+ "website/bilder/restau_8.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/restaurant/8.jpg",
+  "seiten": [
+   "de__restaurant.html"
+  ]
+ },
+ "website/bilder/restau_9.jpg": {
+  "quelle": "https://www.monte-moro.ch/images/beamer/restaurant/9.jpg",
+  "seiten": [
+   "de__restaurant.html"
+  ]
+ },
+ "website/pdf/speisekarte.pdf": {
+  "quelle": "https://www.monte-moro.ch/images/restaurant/speisekarte.pdf",
+  "seiten": [
+   "de",
+   "de__?format=feed&amp;type=rss",
+   "de__?rCH=-2",
+   "de__?rCH=2",
+   "de__restaurant.html",
+   "start"
+  ]
+ }
+}

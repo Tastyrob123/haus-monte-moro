@@ -1,0 +1,560 @@
+[
+{
+"key": "alpenrosen",
+"datei": "../_quelle/website/bilder/sommer_6.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/sommer/6.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Alpenrosen über dem Saastal"
+},
+{
+"key": "apollo",
+"datei": "../_quelle/website/bilder/apollo_2.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/apollo/2.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Die Wohnung im Haus Apollo"
+},
+{
+"key": "apollo-haus",
+"datei": "../_quelle/website/bilder/apollo_1.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/apollo/1.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Das Haus Apollo im Sommer und im Winter"
+},
+{
+"key": "apollo-kueche",
+"datei": "../_quelle/website/bilder/apollo_5.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/apollo/5.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Die Küche im Haus Apollo"
+},
+{
+"key": "apollo-wohnen",
+"datei": "../_quelle/website/bilder/apollo_3.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/apollo/3.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Die Stube im Haus Apollo"
+},
+{
+"key": "arizona",
+"datei": "../_quelle/website/bilder/arizon_11.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/arizona/11.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Eine Wohnung im Haus Arizona"
+},
+{
+"key": "arizona-haus",
+"datei": "../_quelle/website/bilder/arizon_1.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/arizona/1.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Das Haus Arizona"
+},
+{
+"key": "arizona-holz",
+"datei": "../_quelle/website/bilder/arizon_9.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/arizona/9.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Ein Schlafzimmer aus Holz im Haus Arizona"
+},
+{
+"key": "arizona-wohnen",
+"datei": "../_quelle/website/bilder/arizon_2.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/arizona/2.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Die Stube einer Wohnung im Haus Arizona"
+},
+{
+"key": "bach",
+"datei": "../_quelle/website/bilder/sommer_4.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/sommer/4.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Ein Bergbach im Sommer"
+},
+{
+"key": "balkon",
+"datei": "../_quelle/website/bilder/aktuel_hotel-monte-moro-saas-almagell-balkon.jpg",
+"url": "https://www.monte-moro.ch/images/aktuelles/hotel-monte-moro-saas-almagell-balkon.jpg",
+"ar": "1:1",
+"w": 1280,
+"h": 1280,
+"alt": "Blick vom Balkon ins Tal"
+},
+{
+"key": "bergbach",
+"datei": "../_quelle/website/bilder/sommer_7.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/sommer/7.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Ein Bergbach zwischen den Felsen"
+},
+{
+"key": "blumen",
+"datei": "../_quelle/website/bilder/sommer_2.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/sommer/2.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Sommer am See"
+},
+{
+"key": "dorf-fluss",
+"datei": "../_quelle/website/bilder/winter_3.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/winter/3.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Saas-Almagell am verschneiten Bach"
+},
+{
+"key": "dorf-nacht",
+"datei": "../_quelle/website/bilder/stando_Saas_Almagell.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/standort/Saas_Almagell.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Saas-Almagell am Abend"
+},
+{
+"key": "dorf-weiss",
+"datei": "../_quelle/website/bilder/winter_5.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/winter/5.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Das Dorf im Schnee"
+},
+{
+"key": "dorf-winter",
+"datei": "../_quelle/website/bilder/winter_1.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/winter/1.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Saas-Almagell im Winter"
+},
+{
+"key": "fr-detail",
+"datei": "../_quelle/extern/booking/booking-133404918.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/133404918.jpg?k=f718ddf518fad8c172572b7e7797756d9ad6c0a3ae76a655a34145d81ea9d50a&o=",
+"ar": "3:4",
+"w": 706,
+"h": 941,
+"alt": "Konfitüren und Brot am Buffet"
+},
+{
+"key": "fr-tisch",
+"datei": "../_quelle/extern/booking/booking-133404915.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/133404915.jpg?k=d244396d91309156c3b2d3fa053d06893cd45bc3230f5b99179a4e20385eeb87&o=",
+"ar": "4:3",
+"w": 941,
+"h": 706,
+"alt": "Das Frühstücksbuffet"
+},
+{
+"key": "gletscher",
+"datei": "../_quelle/website/bilder/winter_8.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/winter/8.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Über den Gletschern des Saastals"
+},
+{
+"key": "gondel",
+"datei": "../_quelle/bearbeitet/gondel-booking-609882092-hell.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/609882092.jpg?k=e22c976148ae5d5eb01fb3b7eb9e1ada5b58de7a5f745a1cecb6219598976029&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Die geschmückten Gondeln vor dem Röstihüs"
+},
+{
+"key": "haus-sommer-g",
+"datei": "../_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2017-11-29-291891830-hotel-restaurant-monte.jpg",
+"url": "https://media-cdn.tripadvisor.com/media/photo-o/11/65/ea/76/hotel-restaurant-monte.jpg",
+"ar": "4:3",
+"w": 2000,
+"h": 1500,
+"alt": "Das Hotel Monte-Moro im Sommer, mit der Sonnenterrasse"
+},
+{
+"key": "haus-winter-b",
+"datei": "../_quelle/extern/booking/booking-47894191.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/47894191.jpg?k=bb326d666b81e54578ee58a30d63e5d2c5c4553d7086993fa6b745e032157e89&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Das Hotel Monte-Moro im verschneiten Winter"
+},
+{
+"key": "haus-winter-g",
+"datei": "../_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2017-11-29-291891853-hotel-restaurant-monte.jpg",
+"url": "https://media-cdn.tripadvisor.com/media/photo-o/11/65/ea/8d/hotel-restaurant-monte.jpg",
+"ar": "4:3",
+"w": 2000,
+"h": 1500,
+"alt": "Das Hotel Monte-Moro im Winter"
+},
+{
+"key": "huette",
+"datei": "../_quelle/website/bilder/winter_2.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/winter/2.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Eine Hütte im Schnee"
+},
+{
+"key": "mattmark",
+"datei": "../_quelle/website/bilder/sommer_10.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/sommer/10.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Ein Bergsee über dem Saastal"
+},
+{
+"key": "metro",
+"datei": "../_quelle/website/bilder/ausflu_3.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/ausfluege/3.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Die Metro Alpin in Saas-Fee"
+},
+{
+"key": "murmeltiere",
+"datei": "../_quelle/website/bilder/sommer_5.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/sommer/5.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Murmeltiere im Saastal"
+},
+{
+"key": "roesti-orange",
+"datei": "../_quelle/website/bilder/restau_7.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/restaurant/7.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Gedeckte Tische im Röstihüs"
+},
+{
+"key": "roesti-raum",
+"datei": "../_quelle/website/bilder/restau_restaurant.jpg",
+"url": "https://www.monte-moro.ch/images/restaurant/restaurant.jpg",
+"ar": "3:2",
+"w": 1024,
+"h": 678,
+"alt": "Die Stube des Röstihüs mit den Säcken"
+},
+{
+"key": "roesti-stube",
+"datei": "../_quelle/website/bilder/restau_5.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/restaurant/5.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Im Röstihüs"
+},
+{
+"key": "roesti-tische",
+"datei": "../_quelle/website/bilder/restau_4.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/restaurant/4.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Die Tische im Röstihüs"
+},
+{
+"key": "see-blumen",
+"datei": "../_quelle/website/bilder/sommer_8.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/sommer/8.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Blumen am Mattmarksee"
+},
+{
+"key": "spa-holz",
+"datei": "../_quelle/website/bilder/wellne_2.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/wellness/2.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Die Sauna aus Holz"
+},
+{
+"key": "spa-wasser",
+"datei": "../_quelle/website/bilder/wellne_3.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/wellness/3.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Das Schwimmbad im Spa"
+},
+{
+"key": "speiseraum",
+"datei": "../_quelle/extern/booking/booking-28633462.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/28633462.jpg?k=8925078202bb7c5082e5625998aec0f3a24a64cc089f5e8be42b8ad807c81d6b&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Der Speiseraum"
+},
+{
+"key": "spielburg",
+"datei": "../_quelle/extern/booking/booking-609882105.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/609882105.jpg?k=2c8b267d70d4d53f9a954b214820b999f12c38f526b5b8fa52f9380ffab44c6d&o=",
+"ar": "4:5",
+"w": 536,
+"h": 640,
+"alt": "Die Spielburg vor dem Haus"
+},
+{
+"key": "stausee",
+"datei": "../_quelle/website/bilder/ausflu_6.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/ausfluege/6.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Der Stausee Mattmark"
+},
+{
+"key": "stube-tische",
+"datei": "../_quelle/website/bilder/restau_6.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/restaurant/6.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Gedeckte Tische im Röstihüs"
+},
+{
+"key": "stuebli",
+"datei": "../_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2017-11-29-291892107-raclettestubli.jpg",
+"url": "https://media-cdn.tripadvisor.com/media/photo-o/11/65/eb/8b/raclettestubli.jpg",
+"ar": "3:2",
+"w": 2000,
+"h": 1333,
+"alt": "Das Raclettestübli"
+},
+{
+"key": "tal-dorf",
+"datei": "../_quelle/website/bilder/hotel_standort.jpg",
+"url": "https://www.monte-moro.ch/images/hotel/standort.jpg",
+"ar": "3:2",
+"w": 1024,
+"h": 678,
+"alt": "Saas-Almagell im Saastal"
+},
+{
+"key": "tal-sommer",
+"datei": "../_quelle/website/bilder/sommer_1.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/sommer/1.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Das Saastal im Sommer"
+},
+{
+"key": "wasserfall",
+"datei": "../_quelle/website/bilder/sommer_9.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/sommer/9.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Ein Wasserfall im Saastal"
+},
+{
+"key": "winterbach",
+"datei": "../_quelle/website/bilder/winter_7.jpg",
+"url": "https://www.monte-moro.ch/images/beamer/winter/7.jpg",
+"ar": "21:9",
+"w": 1200,
+"h": 500,
+"alt": "Der Bach im Winter"
+},
+{
+"key": "z-abend",
+"datei": "../_quelle/extern/booking/booking-47896311.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/47896311.jpg?k=ca82b436987348114489f458edacf023c52e3868f6ef69072fdb2e440c15854d&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Ein Zimmer am Abend"
+},
+{
+"key": "z-bad",
+"datei": "../_quelle/extern/booking/booking-28199314.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/28199314.jpg?k=cebb63b284a7ede248de78acc026333fca75c4f6454d1c4c6264ff76e1349583&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Ein Bad mit Wanne"
+},
+{
+"key": "z-balkon",
+"datei": "../_quelle/extern/booking/booking-28199224.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/28199224.jpg?k=c362c3a767d7a5eb3c815d4bdb972a8ea4ac4393c35c256ac1f800237bc040bf&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Die Balkontür"
+},
+{
+"key": "z-bogen",
+"datei": "../_quelle/extern/booking/booking-28633467.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/28633467.jpg?k=a0f13972805ac5de8d948c87e7a14a8dcf0695fdebb8b23403b251986ecf54bf&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Ein Zimmer mit Holzbett unter dem Dach"
+},
+{
+"key": "z-dach",
+"datei": "../_quelle/extern/booking/booking-28633464.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/28633464.jpg?k=deb7c87ff24d27a07f282d3461941e1791bf76b0d1ead489ee4f3de340335586&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Ein Zimmer unter dem Dach"
+},
+{
+"key": "z-doppel",
+"datei": "../_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2017-11-29-291892318-doppelzimmer.jpg",
+"url": "https://media-cdn.tripadvisor.com/media/photo-o/11/65/ec/5e/doppelzimmer.jpg",
+"ar": "3:2",
+"w": 2000,
+"h": 1333,
+"alt": "Ein Doppelzimmer"
+},
+{
+"key": "z-einzel",
+"datei": "../_quelle/extern/booking/booking-47896298.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/47896298.jpg?k=da7498416a7c94f4fc40ddda6252066d35df8d11a36ad2e656963612cfe5bb29&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Ein Einzelzimmer"
+},
+{
+"key": "z-familie",
+"datei": "../_quelle/extern/booking/booking-47896340.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/47896340.jpg?k=55cfa1a0565549432fbbfb93096469d32adbfa7a1410ee3de71f75c4c02479e9&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Zwei Zimmer mit Verbindungstür"
+},
+{
+"key": "z-fenster",
+"datei": "../_quelle/extern/booking/booking-28199272.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/28199272.jpg?k=55521d083de42f8b44c200d56d91f8ddb33fead5e84520801a149a779edc051b&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Ein Zimmer mit hohen Fenstern"
+},
+{
+"key": "z-gelb",
+"datei": "../_quelle/extern/booking/booking-28633456.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/28633456.jpg?k=a8d7b1068822738e22350fd08c409fd43832745e1ccbb3a9cf37b6416e36818e&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Ein Doppelzimmer am Morgen"
+},
+{
+"key": "z-hell",
+"datei": "../_quelle/extern/booking/booking-28633426.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/28633426.jpg?k=a9beeb7b0304e8cc8ef242372e65945d078435cecba331eb6d5d5312197ab174&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Ein helles Doppelzimmer"
+},
+{
+"key": "z-licht",
+"datei": "../_quelle/extern/booking/booking-28199274.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/28199274.jpg?k=275288ae9338814044d3e5db6d298567daafa293eeed3399bddca718dcf5ab43&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Morgenlicht im Zimmer"
+},
+{
+"key": "z-neu",
+"datei": "../_quelle/extern/booking/booking-47896394.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/47896394.jpg?k=582065c9390d9be0a00c903c5dc8236f823fc0e092a0104436ee2a49cb952729&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Ein Doppelzimmer mit Schreibtisch"
+},
+{
+"key": "z-rot",
+"datei": "../_quelle/extern/booking/booking-28199221.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/28199221.jpg?k=60e5b50b98328dfae379d2077cde52d77b3cd8037712192812c0fee66fe82ad5&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Ein Doppelzimmer mit Sessel"
+},
+{
+"key": "z-sessel",
+"datei": "../_quelle/extern/booking/booking-28199204.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/28199204.jpg?k=f4ee83787b3363dafbf9fc106d3a960967771a3e63efdfece919ad36b65f8777&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Ein Zimmer mit Sitzecke"
+},
+{
+"key": "z-tv",
+"datei": "../_quelle/extern/booking/booking-28199287.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/28199287.jpg?k=4e39b40539d525e6dcc2e1a56c17de11e7bfb85d0cf8e56aa8af66bc275bff89&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Ein Zimmer mit Balkontür"
+},
+{
+"key": "z-twin",
+"datei": "../_quelle/extern/tripadvisor/vom-hotel/tripadvisor-2017-11-29-291891961-hotel-restaurant-monte.jpg",
+"url": "https://media-cdn.tripadvisor.com/media/photo-o/11/65/ea/f9/hotel-restaurant-monte.jpg",
+"ar": "3:2",
+"w": 2000,
+"h": 1333,
+"alt": "Ein Zimmer mit zwei Betten"
+},
+{
+"key": "z-wanne",
+"datei": "../_quelle/extern/booking/booking-47896427.jpg",
+"url": "https://cf.bstatic.com/xdata/images/hotel/max1920x1080/47896427.jpg?k=620844d475b2f5323721f7b6dd1a3f83127a67c4ea30d52117479a961c03bc03&o=",
+"ar": "4:3",
+"w": 1440,
+"h": 1080,
+"alt": "Ein Bad mit Wanne"
+}
+]
