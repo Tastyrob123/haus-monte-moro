@@ -6,7 +6,7 @@
 (function () {
   var BASIS = 'haeuser/montemoro/kopf/';
   /* Foto je Ansicht (1200 px, haeuser/montemoro/kopf/, gebaut von bau.py) */
-  var FOTO = { msStart: 'haus-sommer', msAbend: 'stuebli', msMotive: 'tal-sommer', msEvents: 'alpenrosen', msAbteilungen: 'roesti-raum', msHinweise: 'empfang', msNewsletter: 'dorf-nacht', msFotos: 'balkon', msMarke: 'gondel', msLivre: 'haus-winter-g', msMeine: 'z-licht', msFreigegeben: 'fr-tisch', msNeu: 'mattmark' };
+  var FOTO = { msStart: 'haus-sommer', msAbend: 'stuebli', msMotive: 'tal-sommer', msEvents: 'alpenrosen', msAbteilungen: 'roesti-raum', msHinweise: 'empfang', msNewsletter: 'dorf-nacht', msFotos: 'balkon', msMarke: 'gondel', msLivre: 'haus-winter-g', msMeine: 'z-licht', msFreigegeben: 'fr-tisch', msNeu: 'mattmark', weg: 'z-sessel', entwuerfe: 'roesti-abend' };
   /* Das Hotelbüro: liegt wie die Hausdruckerei unter _werkzeuge/ (lokal /_werkzeuge/maison/ auf deren Server :9381, online /maison/) */
   var MAISON = location.port === '9387' ? 'http://127.0.0.1:9381/_werkzeuge/maison/' : /\/_werkzeuge\//.test(location.pathname) ? '../maison/' : '/maison/';
   /* R05: die Website des Hauses (lokal auf ihrem Server :8766 (WO_HAUS.ports.website_lokal), online dieselbe Adresse) */
@@ -52,7 +52,7 @@
   function alle() {
     buehne(document.querySelector('#msStart .ms-gruss'), BASIS + FOTO.msStart + '.webp');
     [].forEach.call(document.querySelectorAll('#start .ms-titel'), function (t) {
-      var v = t.closest('[id^="ms"]'); buehne(t, BASIS + (FOTO[v && v.id] || 'schild') + '.webp', true);
+      var v = t.closest('[id^="ms"]'); buehne(t, BASIS + (FOTO[v && v.id] || 'haus-sommer') + '.webp', true);
     });
     var neu = document.getElementById('msNeu');
     if (neu) hebe(neu, [neu.querySelector(':scope>h1'), neu.querySelector(':scope>.start__satz'), neu.querySelector(':scope>.start__direkt'), neu.querySelector(':scope>.start__fehler')], BASIS + FOTO.msNeu + '.webp', 'ms-tafel--mitte');

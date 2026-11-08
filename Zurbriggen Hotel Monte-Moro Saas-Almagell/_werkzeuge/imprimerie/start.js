@@ -404,8 +404,8 @@
   }
   function neuStueck() {
     const f = DS.FORMATE.a5h, [W, H] = groesse(f, GROSS());
-    const p = document.createElement('span'); p.className = 'papier papier--vorn papier--leer'; p.style.width = W + 'px'; p.style.height = H + 'px';
-    p.innerHTML = `<span class="papier__plus">${PLUS}</span>`;
+    const p = document.createElement('span'); p.className = 'papier papier--vorn papier--neu'; p.style.width = W + 'px'; p.style.height = H + 'px';
+    p.innerHTML = `<span class="papier__plus">${PLUS}<small class="papier__wort">Neu beginnen</small></span>`;   // Karte «Neues Medium» mit Wort im Blatt (Oberflächenprüfung 08.11.2026: nie eine leere Fläche)
     return stueckKarte({ akt: 'neu' }, 0, [p], H, 'Neues Medium', 'Beschreiben oder Vorlage wählen', null);
   }
   async function mailAktion(akt, id, karte) {

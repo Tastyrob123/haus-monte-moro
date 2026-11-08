@@ -207,7 +207,7 @@ NEWSLETTER = [
 
 # ---------------- Anlässe (nur, was das Haus jede Woche oder jede Saison bietet; Daten nur zum Ordnen, gedruckt wird «im Winter», «im Sommer») ----------------
 ANLAESSE = [
-    {"k": "raclette", "t": "Racletteabend im Stübli", "z": "jede Woche", "von": "2026-01-01", "bis": "2027-12-31", "wo": "haus", "ort": "Stübli des Röstihüs",
+    {"k": "raclette", "t": "Racletteabend im Stübli", "z": "wöchentlich", "von": "2026-01-01", "bis": "2027-12-31", "wo": "haus", "ort": "Stübli des Röstihüs",
      "satz": "Einmal in der Woche ist im Stübli Racletteabend für alle mit Halbpension.", "fotos": ["stuebli", "raclette", "roesti-raum"]},
     {"k": "kidsclub", "t": "Kidsclub", "z": "Mo – Sa", "von": "2026-01-01", "bis": "2027-12-31", "wo": "haus", "ort": NAME + " · 16:30 bis 21:00 Uhr",
      "satz": "Täglich " + KIDSCLUB + ", inklusive.", "fotos": ["spielburg", "murmeli", "kinder-rodel"]},
@@ -294,7 +294,7 @@ for x in INKLUSIVE[:4] + [ZIMMER[4]]:
     neu('preisliste', x["n"], 'Preise', x, x["format"])
 for x in [ABENDE[0], ABENDE[2], SAASTAL[1], INKLUSIVE[6], MOTIVE['winter'][3], HINWEISE[5]]:
     neu('aushang', x["n"], 'Aushang', x, x["format"])
-for x in [SAASTAL[3], INKLUSIVE[6], ABENDE[0]]:
+for x in [SAASTAL[3], INKLUSIVE[6], ABENDE[0], INKLUSIVE[4], SAASTAL[4], ABENDE[2]]:
     neu('plakat', x["n"], 'Plakat', x, 'a3h')
 neu('zimmerkarte', ZIMMER[0]["n"], 'Zimmer', ZIMMER[0])
 neu('zimmerkarte', 'Willkommensbrief A5', 'Zimmer', ZIMMER[0], 'a5h')

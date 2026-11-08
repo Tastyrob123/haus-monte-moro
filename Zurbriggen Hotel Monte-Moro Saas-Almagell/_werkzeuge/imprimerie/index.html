@@ -41,7 +41,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){var s=docum
 <link rel="stylesheet" href="ms-bureau.css?v=31-mm1">
 <script>/* Hauseigene Stilschicht (Robert 15./16.10.2026: GBR hell mit Bühne und Schweben wie die übrigen Werkzeuge des Hauses). Ein Haus ohne Eintrag bleibt beim Kern. */
 (function(){var HAUS_STIL={montemoro:1},h=new URLSearchParams(location.search).get('haus')||'montemoro';if(!HAUS_STIL[h])return;var b='haeuser/'+h+'/';var o='/assets/oberflaeche/';
-document.write('<link rel="stylesheet" href="'+b+'hell.css?v=14-mm1"><link rel="stylesheet" href="'+b+'feder.css?v=1-mm1">'
+document.write('<link rel="stylesheet" href="'+b+'hell.css?v=17-mm1"><link rel="stylesheet" href="'+b+'feder.css?v=1-mm1">'
  +'<script src="'+b+'buehne.js?v=5-mm1" defer><\/script>'
  +'<script src="'+b+'feder.js?v=2-mm1" defer><\/script>'
  /* Werkzeug-Oberfläche «Die Bühne»: Paket des Hauses, dann die Hausschicht oberflaeche.* (Kopf, Rand, Startbilder wie in den anderen Werkzeugen) */
@@ -63,7 +63,7 @@ document.write('<link rel="stylesheet" href="'+b+'hell.css?v=14-mm1"><link rel="
     <button class="rund hilfe" id="btnHilfe" data-tip="Hilfe" aria-label="Hilfe"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.1-2.4 3.6M12 17.2v.1"/></svg></button>
     <button class="kn kn--klein kn--ohne pruef" id="btnPruefen"><span class="pruef__zahl" id="pruefZahl">0</span><span class="pruef__t">Druckprüfung</span></button>
     <div class="ausgabe">
-      <button class="kn" id="btnSpeichern"><span class="nb">Druckfertig speichern</span><span class="nk">Speichern</span><i><svg viewBox="0 0 24 24"><path d="M12 5v12m-5-5 5 5 5-5"/></svg></i></button>
+      <button class="kn" id="btnSpeichern" aria-label="Druckfertig speichern"><span class="nb">Druckfertig speichern</span><span class="nk">Speichern</span><i><svg viewBox="0 0 24 24"><path d="M12 5v12m-5-5 5 5 5-5"/></svg></i></button>
       <div class="menue" id="menueSpeichern" hidden>
         <button data-aus="pdf"><i><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 13h5M10 16.5h5"/></svg></i><span><b>PDF für die Druckerei</b><small>Endformat mit 3 mm Beschnitt, Schriften eingebettet, Fotos bis 300 dpi</small></span></button>
         <button data-aus="marken"><i><svg viewBox="0 0 24 24"><path d="M3 7h3M7 3v3M21 7h-3M17 3v3M3 17h3M7 21v-3M21 17h-3M17 21v-3"/><rect x="8" y="8" width="8" height="8"/></svg></i><span><b>PDF mit Schnittmarken</b><small>Für die Hausdruckerei oder den Copyshop</small></span></button>
@@ -86,7 +86,7 @@ document.write('<link rel="stylesheet" href="'+b+'hell.css?v=14-mm1"><link rel="
 
     <section class="tab an" data-tab="entwerfen">
       <h2>Was <span style="white-space:nowrap">soll entstehen?</span></h2>
-      <p class="leise">Sag es in einem Satz. Das Studio kennt Farben, Schriften, Zeichen, Tapete, Fotos und die Angaben des Hauses und legt fünf Entwürfe im Stil des Monte-Moro an. Sie wählen einenn davon.</p>
+      <p class="leise">Sagen Sie es in einem Satz. Das Studio kennt Farben, Schriften, Zeichen, Tapete, Fotos und die Angaben des Hauses und legt fünf Entwürfe im Stil des Monte-Moro an. Sie wählen einen davon.</p>
       <textarea id="auftrag" rows="5" placeholder="Etwa: ein Aushang zum Racletteabend im Stübli."></textarea>
       <div class="zeile2">
         <label>Format<select id="auftragFormat"></select></label>
@@ -238,9 +238,9 @@ document.write('<link rel="stylesheet" href="'+b+'hell.css?v=14-mm1"><link rel="
           <form class="bk-form" id="pkForm" autocomplete="off">
             <section class="bk-teil"><h2><b>1</b>Angaben</h2>
               <div class="bk-felder">
-                <label><span>Titel</span><input id="pkThema" maxlength="60" placeholder="Zum Beispiel: Racletteabend im Stübli."></label>
+                <label><span>Titel</span><input id="pkThema" maxlength="60" placeholder="Racletteabend im Stübli."></label>
                 <label><span>Kleine Zeile darüber</span><input id="pkFreitag" maxlength="50" placeholder="Zum Beispiel: Halbpension"></label>
-                <label class="bk-breit"><span>Satz</span><input id="pkGast" maxlength="160" placeholder="Zum Beispiel: Einmal in der Woche ist im Stübli Racletteabend für alle mit Halbpension."></label>
+                <label class="bk-breit"><span>Satz</span><input id="pkGast" maxlength="160" placeholder="Für alle mit Halbpension."></label>
                 <label class="bk-breit"><span>Zusatzzeile, frei</span><input id="pkZusatz" maxlength="60" placeholder="Zum Beispiel: Hotel Monte-Moro"></label>
               </div>
             </section>
@@ -274,11 +274,11 @@ document.write('<link rel="stylesheet" href="'+b+'hell.css?v=14-mm1"><link rel="
         <div class="ms-titel"><h1>Newsletter & E-Mail</h1><span class="ms-leise">Echte E-Mails im Stil des Hauses zum Versenden mit Mailchimp, Brevo oder dem eigenen Programm, dazu Kopfbilder und Stories als Bild.</span></div>
         <div class="ms-zeile"><h2>Versendbare E-Mails</h2><a class="ms-lnk" href="mail.html"><span>Newsletter-Baukasten öffnen</span><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
         <div class="ms-wochen ms-wochen--abt">
-          <a class="wo" href="mail.html?vorlage=abend" style="--i:0"><span class="wo__k"><span class="wo__bild" style="background-image:url('haeuser/montemoro/mini/stuebli.webp')"></span><span class="wo__licht"></span></span><span class="wo__n"><span><b>Racletteabend im&nbsp;Stübli</b><small>An die Gäste · versendbar</small></span><i><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></span></a>
+          <a class="wo" href="mail.html?vorlage=abend" style="--i:0"><span class="wo__k"><span class="wo__bild" style="background-image:url('haeuser/montemoro/mini/stuebli.webp')"></span><span class="wo__licht"></span></span><span class="wo__n"><span><b>Racletteabend im&nbsp;Stübli</b><small>An Gäste · versendbar</small></span><i><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></span></a>
           <a class="wo" href="mail.html?vorlage=warteliste" style="--i:1"><span class="wo__k"><span class="wo__bild" style="background-image:url('haeuser/montemoro/mini/z-licht.webp')"></span><span class="wo__licht"></span></span><span class="wo__n"><span><b>Ihre Anfrage</b><small>An Anfragen · versendbar</small></span><i><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></span></a>
-          <a class="wo" href="mail.html?vorlage=rueckblick" style="--i:2"><span class="wo__k"><span class="wo__bild" style="background-image:url('haeuser/montemoro/mini/alpenrosen.webp')"></span><span class="wo__licht"></span></span><span class="wo__n"><span><b>Sommer im&nbsp;Saastal</b><small>An alle Gäste · versendbar</small></span><i><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></span></a>
-          <a class="wo" href="mail.html?vorlage=einladung" style="--i:3"><span class="wo__k"><span class="wo__bild" style="background-image:url('haeuser/montemoro/mini/dorf-weiss.webp')"></span><span class="wo__licht"></span></span><span class="wo__n"><span><b>Winter im&nbsp;Saastal</b><small>An alle Gäste · versendbar</small></span><i><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></span></a>
-          <a class="wo" href="mail.html?vorlage=ticket" style="--i:4"><span class="wo__k"><span class="wo__bild" style="background-image:url('haeuser/montemoro/mini/empfang.webp')"></span><span class="wo__licht"></span></span><span class="wo__n"><span><b>Vor Ihrer&nbsp;Anreise</b><small>An Gäste mit Buchung · versendbar</small></span><i><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></span></a>
+          <a class="wo" href="mail.html?vorlage=rueckblick" style="--i:2"><span class="wo__k"><span class="wo__bild" style="background-image:url('haeuser/montemoro/mini/alpenrosen.webp')"></span><span class="wo__licht"></span></span><span class="wo__n"><span><b>Sommer im&nbsp;Saastal</b><small>An Gäste · versendbar</small></span><i><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></span></a>
+          <a class="wo" href="mail.html?vorlage=einladung" style="--i:3"><span class="wo__k"><span class="wo__bild" style="background-image:url('haeuser/montemoro/mini/dorf-weiss.webp')"></span><span class="wo__licht"></span></span><span class="wo__n"><span><b>Winter im&nbsp;Saastal</b><small>An Gäste · versendbar</small></span><i><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></span></a>
+          <a class="wo" href="mail.html?vorlage=ticket" style="--i:4"><span class="wo__k"><span class="wo__bild" style="background-image:url('haeuser/montemoro/mini/empfang.webp')"></span><span class="wo__licht"></span></span><span class="wo__n"><span><b>Vor Ihrer&nbsp;Anreise</b><small>Mit Buchung · versendbar</small></span><i><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></span></a>
           <a class="wo" href="mail.html?vorlage=danke" style="--i:5"><span class="wo__k"><span class="wo__bild" style="background-image:url('haeuser/montemoro/mini/haus-sommer-g.webp')"></span><span class="wo__licht"></span></span><span class="wo__n"><span><b>Danke für Ihren&nbsp;Besuch</b><small>Dankesmail · versendbar</small></span><i><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></span></a>
         </div>
         <div class="ms-zeile"><h2>Als Bild</h2><span class="ms-leise">Kopfbilder, Stories und Mails als Bild in voller Schärfe</span></div>
@@ -331,7 +331,7 @@ document.write('<link rel="stylesheet" href="'+b+'hell.css?v=14-mm1"><link rel="
 <script src="instagram.js?v=40-mm1"></script>
 <script src="lelivre.js?v=c4-mm1"></script>
 <script src="siegel.js?v=1-mm1"></script>
-<script src="start.js?v=97-mm1"></script>
+<script src="start.js?v=97-mm2"></script>
 <script src="plakat.js?v=28-mm1"></script>
 <script src="fuehrung.js?v=41-mm1"></script>
 <script>/* Handy (R07, Prüfung 16.10.2026): die Seitenleiste mit den Bereichen war unter 900 px ganz weg. Der Knopf «Bereiche» klappt sie als Fach auf,

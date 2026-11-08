@@ -11,7 +11,7 @@
   /* Kopf-Fotos mit 800er-Fassung (kopf/<name>-800.webp) und Breite des Originals: das Foto steht bei 1440 rund 660, bei 1000 rund 385, am Handy rund 265 px breit,
      die 800er reicht dort; ab rund 1700 px Fensterbreite oder bei doppelter Dichte nimmt der Browser das Original (30.10.2026, Oberchef) */
   var B800 = { 'alpenrosen': 1200, 'balkon': 1200, 'dorf-nacht': 1200, 'dorf-weiss': 1200, 'empfang': 1200, 'fr-tisch': 1200, 'gondel': 1200, 'haus-sommer': 1200, 'haus-winter-g': 1200, 'mattmark': 1200, 'roesti-abend': 1200, 'roesti-raum': 1200, 'spa-wasser': 1200, 'stuebli': 1200, 'tal-sommer': 1200, 'z-licht': 1200, 'z-sessel': 1200 };
-  var FOTO = { msStart: 'haus-sommer', msAbend: 'stuebli', msMotive: 'tal-sommer', msEvents: 'alpenrosen', msAbteilungen: 'roesti-raum', msHinweise: 'empfang', msNewsletter: 'dorf-nacht', msFotos: 'balkon', msMarke: 'gondel', msLivre: 'haus-winter-g', msMeine: 'z-licht', msFreigegeben: 'fr-tisch', msNeu: 'mattmark' };
+  var FOTO = { msStart: 'haus-sommer', msAbend: 'stuebli', msMotive: 'tal-sommer', msEvents: 'alpenrosen', msAbteilungen: 'roesti-raum', msHinweise: 'empfang', msNewsletter: 'dorf-nacht', msFotos: 'balkon', msMarke: 'gondel', msLivre: 'haus-winter-g', msMeine: 'z-licht', msFreigegeben: 'fr-tisch', msNeu: 'mattmark', weg: 'z-sessel', entwuerfe: 'roesti-abend' };
   var WEBSITE = location.port === '9387' ? 'http://127.0.0.1:' + ((window.WO_HAUS && WO_HAUS.ports && WO_HAUS.ports.website_lokal) || 8766) + '/' : '/';
   var MARKE = function () { return WO.zeichen() + '<span><b>' + WO.esc(WO.name('druck')) + '</b><small>Drucksachen · ' + WO.esc(WO.haus.name) + '</small></span>'; };
 
@@ -64,7 +64,7 @@
       [].forEach.call(t.querySelectorAll(':scope>.ms-bue__foto'), function (x) { x.remove(); });
       var v = t.closest('[id^="ms"]'), h1 = t.querySelector('h1'), satz = t.querySelector('.ms-leise');
       var hilf = document.createElement('div');
-      var fn = FOTO[v && v.id] || 'start', gr = B800[fn];
+      var fn = FOTO[v && v.id] || 'haus-sommer', gr = B800[fn];
       hilf.innerHTML = WO.startbild({ werkzeug: 'druck', art: 'buehne', h1: ' ', satz: satz ? ' ' : '', foto: BASIS + fn + '.webp',
         srcset: gr ? BASIS + fn + '-800.webp 800w, ' + BASIS + fn + '.webp ' + gr + 'w' : '', sizes: '(max-width:700px) 70vw, (max-width:1100px) 39vw, 50vw' });
       var sb = hilf.firstChild; sb.classList.add('ws-sb');

@@ -303,7 +303,7 @@
 /* Wild Side (31.10.2026, Tor schnell): Kopf passt bei 1440 (Name der Mail steht rechts unter «Die E-Mail»), Schrift in Bausteinen und Navigation optisch mittig */
 @media (max-width:1560px){.ml-name{display:none}}
 .ml-einfuegen button{text-indent:.02em}
-.ml-nav button{padding-top:3px}
+.ml-nav button{padding-top:1px}
 /* gemeinsame Kanten (Kriterium 6): mittig gesetzte Köpfe der Spalten stehen als ganze Zeile auf der Mittelachse, «Zur Übersicht» als ganze Zeile */
 .ml-links h3,.ml-rechts h3,.ml-kapitel,.ml-einfuegen{text-align:center}
 .ml-zurueck{display:flex;width:auto}
@@ -314,3 +314,6 @@
 /* Handy: der Posteingang bricht um statt seitlich herauszuragen (Cloud-Prüfung WebKit 390 px) */
 @media (max-width:600px){.ml-posteingang,.ml-posteingang>div{min-width:0;max-width:100%}.ml-posteingang b,#mlBetreff,#mlVorschau{white-space:normal;overflow-wrap:anywhere}}
 @media (max-width:980px){.ml-mitte,.ml-buehne,.ml-posteingang{box-sizing:border-box;max-width:100%;min-width:0}.ml-posteingang>div{flex:1 1 0;min-width:0}#mlBuehne iframe{max-width:100%}}
+/* Monte-Moro (08.11.2026, Tor schnell bei 1000 px): Namen der eigenen Mails in Fjalla One brechen um statt «…» */
+.ml-meine__e b{white-space:normal;overflow:visible;text-overflow:clip}
+.ml-meine__e b{text-wrap:balance}

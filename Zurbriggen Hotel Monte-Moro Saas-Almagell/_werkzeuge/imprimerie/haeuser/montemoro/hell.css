@@ -186,7 +186,7 @@ textarea::placeholder,input::placeholder{font-style:normal!important}
    Engere Abstände, runde Knöpfe 34 px, «Speichern» knapper; alles bleibt sichtbar und tippbar */
 @media (max-width:430px){.kopf{padding:0 8px}.kopf .kopf__werk{gap:4px}.kopf .kopf__werk .rund{width:34px;height:34px}.kopf #btnSpeichern{padding-left:12px;padding-right:4px;letter-spacing:.06em;gap:6px}.kopf #btnNeu{padding:0 8px}.kopf .wo-marke-w .wo-zeichen{height:30px}}
 /* Kleine Handys bis 360 px: «Speichern» nur noch als runder Knauf mit Pfeil, das Wort bleibt für Vorleser im Knopf */
-@media (max-width:360px){.kopf #btnSpeichern{padding:0 3px}.kopf #btnSpeichern .nb,.kopf #btnSpeichern .nk{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}}
+@media (max-width:430px){.kopf #btnSpeichern{padding:0;width:46px;min-width:46px;justify-content:center;gap:0}.kopf #btnSpeichern .nb,.kopf #btnSpeichern .nk{display:none!important}}
 /* Master F45 (Firefox, Scroll-Anker): die geneigte Karte ändert beim Überfahren die Höhe darunter, Firefox verschiebt die Ansicht, das sperrte den Klick */
 #start .ms-haupt{overflow-anchor:none}
 /* I14 Werkzeugleiste bleibt in einer Zeile: in schmaler Mitte nur Symbole, das Blatt springt nicht */
@@ -210,3 +210,13 @@ textarea::placeholder,input::placeholder{font-style:normal!important}
 .ms-fuss .ms-wege{display:block;margin:8px 0 4px;font-size:12.5px;line-height:1.5;color:rgba(6,23,41,.62)}
 .ms-fuss .ms-wege a{color:#082038;text-decoration:none;border-bottom:1px solid rgba(189,167,127,.6)}
 .ms-fuss .ms-wege a:hover,.ms-fuss .ms-wege a:focus-visible{color:#061729;border-color:#bda77f}
+/* Monte-Moro (08.11.2026, Tor schnell): DM Mono ist breiter als die Etikettschrift der Vorlage.
+   Reiter im Editor enger gesperrt (Kante zu «Was soll entstehen?»), «Druckfertig speichern» optisch mittig, Datum der kleinen Anlass-Karten ohne Kürzung */
+.reiter button{letter-spacing:.08em}.reiter button:first-of-type{text-align:left;padding-left:2px}   /* Kante: «Entwerfen» beginnt auf der Kante von «Was soll entstehen?» */
+.kopf #btnSpeichern>span{position:relative;top:1px}
+#startWochen>.wo:not(:first-child) .wo__datum{letter-spacing:.1em;padding-left:8px;padding-right:8px}
+.mb__z{color:var(--wo-blatt,#F5F2EE)}   /* Bergkamm nur in Logo-Blau oder Papier (Markenbuch) */
+/* «Zurück zur Drucksache» bis 1240 px nur mit Pfeil (Wort bleibt für Vorleser): sonst drückte der Knopf in DM Mono das Suchfeld auf 30 px (Tor 08.11.2026, 1000 px) */
+@media (max-width:1240px){#startZu{padding:0 14px}#startZu>span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}}
+@media (max-width:600px){.reiter button:first-of-type{padding-left:5px}}
+.papier--neu{background:linear-gradient(180deg,#F5F2EE,#EFE9E1)}.stueck--neu .papier--neu{background:linear-gradient(180deg,rgba(245,242,238,.08),rgba(245,242,238,.04));box-shadow:none}.stueck--neu .papier--neu::after{content:none}

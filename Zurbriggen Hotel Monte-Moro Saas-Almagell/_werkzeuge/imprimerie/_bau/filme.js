@@ -1,8 +1,8 @@
 /* Kurzfilme der Führung (hilfe/schritt-1…9.mp4 + .jpg) und Demo-Video (hilfe/demo.mp4, demo-poster.jpg, kapitel.json), aufgenommen an der Hausdruckerei
-   des Wild Side (Server :9387, Probe ohne KI). Playwright nimmt WebM auf, ffmpeg schneidet um das Ziel und wandelt in H.264.
+   des Hotel Monte-Moro (Server :9387, Probe ohne KI). Playwright nimmt WebM auf, ffmpeg schneidet um das Ziel und wandelt in H.264.
    NODE_PATH=$(npm root -g) node _bau/filme.js */
 const { chromium } = require('playwright'); const fs = require('fs'), path = require('path'), { execFileSync } = require('child_process');
-const H = path.join(__dirname, '..', 'hilfe'), TMP = fs.mkdtempSync('/tmp/ws-filme-');
+const H = path.join(__dirname, '..', 'hilfe'), TMP = fs.mkdtempSync('/tmp/mm-filme-');
 const URL = 'http://127.0.0.1:9387/_werkzeuge/imprimerie/';
 const W = 1440, HH = 900;
 async function seite(b, video) {
@@ -12,7 +12,7 @@ async function seite(b, video) {
   await p.waitForFunction(() => window.DS && DS.M && window.DSStudio, null, { timeout: 30000 }); await p.waitForTimeout(1200);
   return { ctx, p };
 }
-const oeffne = p => p.evaluate(() => { const x = DSKATALOG.ABTEILUNGEN.find(a => a.k === 'session').vorlagen[0]; const d = DS.dokument(DS.M, { name: x.n, format: x.format, seiten: [{ vorlage: x.vorlage, ton: x.ton, inhalt: x.inhalt, stil: x.stil }] }); DSStudio.oeffne(d); if (window.DSStart && DSStart.offen()) DSStart.zu(); });
+const oeffne = p => p.evaluate(() => { const x = DSKATALOG.ABTEILUNGEN.find(a => a.k === 'abende').vorlagen[0]; const d = DS.dokument(DS.M, { name: x.n, format: x.format, seiten: [{ vorlage: x.vorlage, ton: x.ton, inhalt: x.inhalt, stil: x.stil }] }); DSStudio.oeffne(d); if (window.DSStart && DSStart.offen()) DSStart.zu(); });
 const ffm = (a) => execFileSync('ffmpeg', ['-y', '-loglevel', 'error', ...a]);
 async function film(b, name, ziel, tun, vorher) {
   const { ctx, p } = await seite(b, true);
@@ -30,10 +30,10 @@ async function film(b, name, ziel, tun, vorher) {
 (async () => {
   const b = await chromium.launch();
   const tippe = async (p, sel, t) => { await p.click(sel); for (const ch of t) { await p.keyboard.type(ch); await p.waitForTimeout(45); } };
-  await film(b, 'schritt-1', '#auftrag', async p => { await tippe(p, '#auftrag', 'Ein SESSION-Plakat für den nächsten DJ-Abend am Samstag'); await p.waitForTimeout(900); }, p => p.click('.reiter [data-tab="entwerfen"]'));
-  await film(b, 'schritt-2', '#btnEntwerfen', async p => { await p.fill('#auftrag', 'Ein SESSION-Plakat für den nächsten DJ-Abend am Samstag'); await p.click('#btnEntwerfen'); await p.waitForTimeout(5000); }, p => p.click('.reiter [data-tab="entwerfen"]'));
-  await film(b, 'schritt-3', '#wirt', async p => { const t = p.locator('#wirt .el').filter({ hasText: 'GHAZOUANI' }).first(); const r = await t.boundingBox(); if (r) { await p.mouse.move(r.x + r.width / 2, r.y + r.height / 2, { steps: 12 }); await p.mouse.down(); await p.mouse.move(r.x + r.width / 2 - 30, r.y + r.height / 2 + 24, { steps: 20 }); await p.mouse.up(); await p.waitForTimeout(600); await p.mouse.move(r.x + r.width / 2 + 30, r.y + r.height / 2 - 24, { steps: 20 }); } await p.waitForTimeout(1200); });
-  await film(b, 'schritt-4', '#rechts', async p => { const t = p.locator('#wirt .el').filter({ hasText: '17|10' }).first(); await t.click().catch(() => {}); await p.waitForTimeout(1500); await p.mouse.wheel(0, 300); await p.waitForTimeout(1500); });
+  await film(b, 'schritt-1', '#auftrag', async p => { await tippe(p, '#auftrag', 'Ein Aushang zum Racletteabend im Stübli, A4'); await p.waitForTimeout(900); }, p => p.click('.reiter [data-tab="entwerfen"]'));
+  await film(b, 'schritt-2', '#btnEntwerfen', async p => { await p.fill('#auftrag', 'Ein Aushang zum Racletteabend im Stübli, A4'); await p.click('#btnEntwerfen'); await p.waitForTimeout(5000); }, p => p.click('.reiter [data-tab="entwerfen"]'));
+  await film(b, 'schritt-3', '#wirt', async p => { const t = p.locator('#wirt .el').filter({ hasText: 'Racletteabend' }).first(); const r = await t.boundingBox(); if (r) { await p.mouse.move(r.x + r.width / 2, r.y + r.height / 2, { steps: 12 }); await p.mouse.down(); await p.mouse.move(r.x + r.width / 2 - 30, r.y + r.height / 2 + 24, { steps: 20 }); await p.mouse.up(); await p.waitForTimeout(600); await p.mouse.move(r.x + r.width / 2 + 30, r.y + r.height / 2 - 24, { steps: 20 }); } await p.waitForTimeout(1200); });
+  await film(b, 'schritt-4', '#rechts', async p => { const t = p.locator('#wirt .el').filter({ hasText: 'Einmal in der Woche' }).first(); await t.click().catch(() => {}); await p.waitForTimeout(1500); await p.mouse.wheel(0, 300); await p.waitForTimeout(1500); });
   await film(b, 'schritt-5', '#werkzeug', async p => { await p.click('[data-neu="titel"]'); await p.waitForTimeout(1500); await p.click('[data-neu="zeichen"]'); await p.waitForTimeout(1500); });
   await film(b, 'schritt-6', '.reiter', async p => { await p.click('.reiter [data-tab="fotos"]'); await p.waitForTimeout(1600); await p.click('.reiter [data-tab="vorlagen"]'); await p.waitForTimeout(1600); await p.click('.reiter [data-tab="ablage"]'); await p.waitForTimeout(1400); });
   await film(b, 'schritt-7', '#btnZurueck', async p => { await p.click('[data-neu="titel"]'); await p.waitForTimeout(1200); await p.click('#btnZurueck'); await p.waitForTimeout(1500); });
@@ -44,9 +44,9 @@ async function film(b, name, ziel, tun, vorher) {
   await p.waitForTimeout(2500);
   await p.click('[data-ansicht="abteilungen"]').catch(() => {}); await p.waitForTimeout(2500);
   mark('Sagen'); await oeffne(p); await p.waitForTimeout(1500);
-  await p.click('.reiter [data-tab="entwerfen"]').catch(() => {}); await tippe(p, '#auftrag', 'Ein SESSION-Plakat für Samstag'); await p.waitForTimeout(800); await p.click('#btnEntwerfen').catch(() => {}); await p.waitForTimeout(5500);
+  await p.click('.reiter [data-tab="entwerfen"]').catch(() => {}); await tippe(p, '#auftrag', 'Ein Aushang zum Racletteabend im Stübli'); await p.waitForTimeout(800); await p.click('#btnEntwerfen').catch(() => {}); await p.waitForTimeout(5500);
   await oeffne(p); await p.waitForTimeout(1500);
-  mark('Anpassen'); const t = p.locator('#wirt .el').filter({ hasText: 'GHAZOUANI' }).first(); await t.dblclick().catch(() => {}); await p.waitForTimeout(600); await p.keyboard.press('Control+A'); await p.keyboard.type('MOURY', { delay: 90 }); await p.mouse.click(1300, 860); await p.waitForTimeout(1500);
+  mark('Anpassen'); const t = p.locator('#wirt .el').filter({ hasText: 'Racletteabend' }).first(); await t.dblclick().catch(() => {}); await p.waitForTimeout(600); await p.keyboard.press('Control+A'); await p.keyboard.type('Heute Racletteabend.', { delay: 90 }); await p.mouse.click(1300, 860); await p.waitForTimeout(1500);
   await p.click('.reiter [data-tab="fotos"]').catch(() => {}); await p.waitForTimeout(2500);
   mark('Format'); await p.click('.reiter [data-tab="vorlagen"]').catch(() => {}); await p.waitForTimeout(3000);
   mark('Drucken'); await p.click('#btnPruefen').catch(() => {}); await p.waitForTimeout(2500); await p.keyboard.press('Escape'); await p.click('#btnSpeichern').catch(() => {}); await p.waitForTimeout(3000);
