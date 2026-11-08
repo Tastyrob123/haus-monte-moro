@@ -1,0 +1,87 @@
+{
+ "ziel": "preisliste",
+ "art": "satz",
+ "key": "preisliste",
+ "name": "Die Preisliste",
+ "unter": "Zimmer und Inklusive",
+ "gruppe": "Hotel Monte-Moro",
+ "ab": "",
+ "plakat": "",
+ "foto": "fruehstueck",
+ "titel": "Preisliste des Hauses",
+ "datum": "pro Person und Tag · CHF",
+ "mit": "Mehr erleben, weniger zahlen.",
+ "rubriken": [
+  {
+   "titel": "Zimmer mit Frühstück",
+   "seite": 0,
+   "eintraege": [
+    {
+     "name": "Budgetzimmer",
+     "zutaten": "",
+     "preis": "CHF 90.00"
+    },
+    {
+     "name": "Standardzimmer",
+     "zutaten": "",
+     "preis": "CHF 100.00"
+    }
+   ]
+  },
+  {
+   "titel": "Zimmer mit Halbpension (4-Gänge)",
+   "seite": 0,
+   "eintraege": [
+    {
+     "name": "Budgetzimmer",
+     "zutaten": "",
+     "preis": "CHF 120.00"
+    },
+    {
+     "name": "Standardzimmer",
+     "zutaten": "",
+     "preis": "CHF 130.00"
+    }
+   ]
+  },
+  {
+   "titel": "Inklusive",
+   "seite": 0,
+   "eintraege": [
+    {
+     "name": "Benutzung Postautos im ganzen Saastal (Sommer/Winter)",
+     "zutaten": "",
+     "preis": "inkl."
+    },
+    {
+     "name": "Benutzung aller Bergbahnen im Saastal (ohne Metro Alpin) (Sommer)",
+     "zutaten": "",
+     "preis": "inkl."
+    },
+    {
+     "name": "ZF und HP: Frühstücksbuffet",
+     "zutaten": "",
+     "preis": "inkl."
+    },
+    {
+     "name": "Halbpension: wöchentlicher Racletteabend",
+     "zutaten": "",
+     "preis": "inkl."
+    },
+    {
+     "name": "Kidsclub: täglich Mo - Sa 16:30 bis 21:00 Uhr",
+     "zutaten": "",
+     "preis": "inkl."
+    },
+    {
+     "name": "Hotelparkplatz",
+     "zutaten": "",
+     "preis": "inkl."
+    }
+   ]
+  }
+ ],
+ "hinweis": "Bezahlung in Euro möglich, Rückgeld in Franken.",
+ "quelle": "website/inhalt/daten.py PREISE, INKLUSIVE, EURO, HAUS satz (Seite preise.html)",
+ "fuss": "Hotel Monte-Moro · CH-3905 Saas-Almagell · Tel. +41 27 957 10 12 · info@monte-moro.ch"
+}

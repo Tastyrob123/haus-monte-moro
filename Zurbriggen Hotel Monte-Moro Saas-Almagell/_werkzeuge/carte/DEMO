@@ -1,0 +1,3 @@
+Demo vor dem Auftrag (Muster Demo-Check 21.10.2026, Hotel Monte-Moro 08.11.2026): Solange diese Datei liegt, schreibt das Kartenbrett nie in website/.
+«Veröffentlichen» setzt nur die Daten und PDFs des Werkzeugs (_daten/), der Anschluss an die Website ist gesperrt und meldet «Demo».
+Nach dem Auftrag: Datei entfernen, dann Anschluss in «Wege → Anschluss an die Website» einschalten.

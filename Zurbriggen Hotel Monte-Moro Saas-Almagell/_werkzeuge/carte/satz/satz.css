@@ -1,0 +1,80 @@
+/* Das Kartenbrett · Hotel Monte-Moro, Saas-Almagell — Satz der Karten und Preislisten (08.11.2026, satz_bau.py). Eine Datei für Vorschau, PDF und Werkbank.
+   Machart der Karte auf der Website (roestihues.html «Die Karte», website/assets/css/bewegung.css .rk): ein Blatt Papier mit doppelter Messing-Linie,
+   Rubriken in Fjalla One mittig mit kurzer Messing-Linie, je Eintrag Name, gepunktete Linie, Preis in Lärche tief, die Beschreibung darunter.
+   Unten die Nacht mit der Grat-Kante der Website (.grat-oben, Linie in Lärche) und darin die Adresse. Farben aus dem Markenbuch (farben.json):
+   Nacht #0A2A4A, Logo-Blau #115595, Lärche #C67144 (im Titel nur das letzte Wort), Lärche tief #9A4F2B, Messing #B39867 (nur feine Linien),
+   Papier #FBF9F5 wie die Karte der Website, Tinte #13263A, Grau #4A5D70. Schriften: Titel und Namen Fjalla One (eine Stärke), Lauf Instrument Sans,
+   kleine Zeilen DM Mono in Versalien. Nie fett, nie kursiv. Masse in mm, Schrift in pt über --s (blatt.js passt je Seite an, damit nichts überläuft).
+   Feste Schnitte statt variabler Schriften (fonts_statisch.py, aus den Schriften der Website): Chromium bettet variable Schriften als «Type 3» ein,
+   die Apple-Vorschau zeigt sie weich (Fehlerbuch 10a, 21.10.2026). Gesperrte Versalien höchstens .08em, sonst liest pdftotext Buchstabe für Buchstabe. */
+@font-face{font-family:'Fjalla Satz';src:url('../fonts/FjallaOne-400.ttf') format('truetype');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'Instrument Satz';src:url('../fonts/InstrumentSans-400.ttf') format('truetype');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'Instrument Satz';src:url('../fonts/InstrumentSans-500.ttf') format('truetype');font-weight:500;font-style:normal;font-display:block}
+@font-face{font-family:'Mono Satz';src:url('../fonts/DMMono-400.ttf') format('truetype');font-weight:400;font-style:normal;font-display:block}
+:root{--papier:#FBF9F5;--nacht:#0A2A4A;--blau:#115595;--laerche:#C67144;--laerchetief:#9A4F2B;--messing:#B39867;--tinte:#13263A;--grau:#4A5D70;--leise:#55606C;
+  --linie:rgba(179,152,103,.55);--haar:rgba(19,38,58,.08);--punkt:rgba(19,38,58,.3)}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#071B2E;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.blatt{--s:1;position:relative;overflow:hidden;margin:8mm auto;background:var(--papier);color:var(--tinte);display:flex;flex-direction:column;
+  font-family:'Instrument Satz',Arial,sans-serif;font-weight:400;font-size:calc(9.4pt*var(--s));line-height:1.45;font-variant-numeric:tabular-nums;page-break-after:always;break-after:page}
+:where(.blatt) :where(h1,h2,h3,h4,p){margin:0;padding:0;font-weight:inherit}
+:where(.blatt) b{font-weight:400}   /* nie fett (Kleid des Hauses) */
+/* die doppelte Messing-Linie der Karte auf der Website, über der Nacht des Fusses */
+.blatt::before{content:'';position:absolute;z-index:0;left:7mm;right:7mm;top:7mm;bottom:31mm;border:.3mm solid var(--linie);
+  box-shadow:inset 0 0 0 1.7mm var(--papier),inset 0 0 0 1.95mm rgba(179,152,103,.32);pointer-events:none}
+.inhalt{position:relative;z-index:1;flex:1;min-height:0;padding:19mm 25mm 13mm;display:flex;flex-direction:column}
+/* Fuss: die Nacht mit der Grat-Kante (Bergkamm der Website, Linie in Lärche), darin die Adresse des Hauses */
+.ufuss2{position:relative;z-index:1;flex:none;height:24mm;margin:0;padding:0 18mm 8.5mm;display:flex;align-items:flex-end;justify-content:center;background:var(--nacht);
+  font-family:'Instrument Satz',Arial,sans-serif;font-size:6.9pt;letter-spacing:.02em;text-align:center;color:rgba(245,242,238,.78)}
+.ufuss2::before{content:'';position:absolute;left:0;right:0;bottom:100%;height:7mm;margin-bottom:-.2mm;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 60' preserveAspectRatio='none'%3E%3Cpath d='M0 60 L0 38 L70 30 L118 6 L150 26 L196 14 L250 40 L300 22 L338 34 L380 8 L430 36 L486 18 L540 42 L600 28 L640 36 L700 12 L748 32 L800 24 L860 44 L920 20 L962 34 L1000 26 L1000 60 Z' fill='%230A2A4A'/%3E%3Cpath d='M0 38 L70 30 L118 6 L150 26 L196 14 L250 40 L300 22 L338 34 L380 8 L430 36 L486 18 L540 42 L600 28 L640 36 L700 12 L748 32 L800 24 L860 44 L920 20 L962 34 L1000 26' fill='none' stroke='%23C67144' stroke-opacity='.8' stroke-width='1.4' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E") center bottom/100% 100% no-repeat}
+
+/* Kopf: das Logo des Hauses (Logo-Blau), Titel der Karte (letztes Wort Lärche), kleine Zeile in DM Mono, ein Satz darunter */
+.sb-quer{flex:1 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:space-evenly;text-align:center}
+.sb-oben{display:flex;flex-direction:column;align-items:center;margin-bottom:calc(2mm*var(--s))}
+.sb-zeichen{display:block;color:var(--blau)}
+.mm-wm{display:block;width:calc(40mm*min(var(--s),1.15));height:auto}   /* das Logo wächst bei kurzen Karten nur wenig mit */
+.mm-kamm{display:block;width:calc(20mm*min(var(--s),1.2));height:auto}
+.sb-oben--weiter .sb-zeichen{color:var(--laerche)}
+.sb-band{font-family:'Fjalla Satz','Arial Narrow',sans-serif;font-weight:400;font-size:calc(31pt*var(--s));line-height:1.06;letter-spacing:.004em;color:var(--nacht);margin-top:calc(7.5mm*var(--s))}
+.sb-b2{color:var(--laerche)}
+.sb-datum{font-family:'Mono Satz',ui-monospace,monospace;font-weight:400;font-size:calc(7.2pt*var(--s));letter-spacing:.08em;text-transform:uppercase;color:var(--laerchetief);margin-top:calc(3.6mm*var(--s))}
+.sb-mit{font-size:calc(9.6pt*var(--s));color:var(--grau);margin-top:calc(2.2mm*var(--s));max-width:125mm}
+
+/* Rubriken und Einträge wie die Karte der Website */
+.sb-menue{display:flex;flex-direction:column;justify-content:center;align-items:stretch;text-align:left;padding:calc(4mm*var(--s)) 0;width:100%;max-width:142mm}
+.sb-r{break-inside:avoid}
+.sb-r+.sb-r{margin-top:calc(9mm*var(--s))}
+.sb-h{position:relative;display:block;text-align:center;font-family:'Fjalla Satz','Arial Narrow',sans-serif;font-weight:400;font-size:calc(16pt*var(--s));line-height:1.15;color:var(--nacht);
+  padding-bottom:calc(3.4mm*var(--s));margin-bottom:calc(2mm*var(--s))}
+.sb-h::after{content:'';position:absolute;left:50%;bottom:0;width:12mm;height:.25mm;margin-left:-6mm;background:var(--messing)}
+.sb-m{display:grid;grid-template-columns:auto minmax(4mm,1fr) auto;column-gap:2.6mm;align-items:baseline;break-inside:avoid;padding:calc(2.3mm*var(--s)) 0}
+.sb-m+.sb-m{border-top:.2mm solid var(--haar)}
+.sb-m::before{content:'';grid-column:2;grid-row:1;align-self:end;margin-bottom:calc(1.1mm*var(--s));border-bottom:.3mm dotted var(--punkt)}
+.sb-n,.sb-band,.sb-dr,.sb-mit,.sb-hinweis{text-wrap:balance}
+.sb-n{grid-column:1;grid-row:1;font-family:'Fjalla Satz','Arial Narrow',sans-serif;font-weight:400;font-size:calc(12.6pt*var(--s));line-height:1.22;color:var(--nacht)}
+.sb-mp{grid-column:3;grid-row:1;font-family:'Fjalla Satz','Arial Narrow',sans-serif;font-size:calc(12.2pt*var(--s));line-height:1.22;color:var(--laerchetief);white-space:nowrap;text-align:right}
+.sb-dr{grid-column:1/-1;font-size:calc(8.6pt*var(--s));color:var(--leise);line-height:1.45;margin-top:calc(.8mm*var(--s));max-width:120mm}
+/* Preislisten ohne Beschreibung: Name in Instrument Sans, Preis in DM Mono (Zahlen des Hauses), enger */
+.sb-r--knapp .sb-m{padding:calc(1.9mm*var(--s)) 0}
+.sb-r--knapp .sb-n{font-family:'Instrument Satz',Arial,sans-serif;font-size:calc(10.4pt*var(--s));line-height:1.3;color:var(--tinte)}
+.sb-r--knapp .sb-mp{font-family:'Mono Satz',ui-monospace,monospace;font-size:calc(9.6pt*var(--s));line-height:1.3}
+.sb-gn{display:none}
+.sb-tr.bruch{display:block;height:0;overflow:hidden;font-size:0;line-height:0}   /* Trenner, an dem die Zeile bricht (blatt.js trennerAmRand) */
+.sb-gang{display:none}
+/* Hinweis unter der Karte */
+.sb-unten{display:flex;flex-direction:column;align-items:center;max-width:130mm}
+.sb-hinweis{margin-top:calc(3mm*var(--s));font-size:calc(8.4pt*var(--s));line-height:1.55;color:var(--grau)}
+.sb-zusatz{margin-top:calc(2.4mm*var(--s));font-size:calc(8.4pt*var(--s));color:var(--grau);text-wrap:balance}
+
+/* Gestalten (Fortgeschritten): Stile, die satz.js an ein Element legt (nie fett, nie kursiv) */
+[data-gf]{font-family:var(--gf)!important}
+[data-gc]{color:var(--gc)!important}
+[data-ga="versal"]{text-transform:uppercase!important;letter-spacing:.06em}
+[data-ga="normal"]{text-transform:none!important;letter-spacing:0!important}
+[data-gal]{text-align:var(--gal)!important;justify-content:var(--gai)!important;align-items:var(--gai)}
+[data-gz]{line-height:var(--gz)!important}
+@media print{html,body{background:none}.blatt{margin:0}}
+/* Flächen wachsen, schrumpfen aber nie: sonst läuft Inhalt unbemerkt übereinander statt dass blatt.js die Schrift einpasst (Fehlerbuch 9) */
+.sb-quer,.sb-menue{flex:1 0 auto;min-height:auto}
+.sb-menue{flex:0 0 auto}

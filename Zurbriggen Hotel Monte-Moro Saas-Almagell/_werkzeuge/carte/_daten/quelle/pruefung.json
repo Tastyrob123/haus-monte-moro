@@ -1,0 +1,30 @@
+{
+ "geprueft": "Wort für Wort gegen website/inhalt/daten.py, die Speisekarte (Stand 18.11.2024) und die Website (roestihues.html, preise.html, spa.html); Restaurant: Name und Preis gegen die Speisekarte; Hotel: Name und Preis gegen preise.html bzw. spa.html",
+ "karten": {
+  "roestihues": {
+   "name": "Die Röstihüs-Karte",
+   "eintraege": 18,
+   "preise": 18
+  },
+  "wein-apero": {
+   "name": "Wein und Apéro",
+   "eintraege": 9,
+   "preise": 9
+  },
+  "preisliste": {
+   "name": "Die Preisliste",
+   "eintraege": 10,
+   "preise": 10
+  },
+  "zuschlaege": {
+   "name": "Zuschläge und Kinder",
+   "eintraege": 12,
+   "preise": 12
+  },
+  "spa": {
+   "name": "Spa im Partnerhotel",
+   "eintraege": 2,
+   "preise": 2
+  }
+ }
+}

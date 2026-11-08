@@ -1,0 +1,76 @@
+{
+ "ziel": "wein-apero",
+ "art": "satz",
+ "key": "wein-apero",
+ "name": "Wein und Apéro",
+ "unter": "Hotelwein und Spritz",
+ "gruppe": "Restaurant Röstihüs",
+ "ab": "",
+ "plakat": "",
+ "foto": "stuebli",
+ "titel": "Wein von Fabian",
+ "datum": "Restaurant Röstihüs · Saas-Almagell",
+ "mit": "Auch bei den Getränken setzen wir auf Regionalität.",
+ "rubriken": [
+  {
+   "titel": "«Hotelwein»",
+   "seite": 0,
+   "eintraege": [
+    {
+     "name": "Cuvee Special",
+     "zutaten": "Fils Maye | Prestige Silber (wurde von Fabian selber kreiert) | Diolinoir, Syrah, Merlot, Pinot | 7 dl",
+     "preis": "67.–"
+    },
+    {
+     "name": "Cuvee Special Eichenfass",
+     "zutaten": "Gilles Joel Cina | Prestige Gold (wurde von Fabian selber kreiert) | Diolinoir, Syrah, Merlot, Angelotta | 7 dl",
+     "preis": "67.–"
+    }
+   ]
+  },
+  {
+   "titel": "Zum Apéro",
+   "seite": 0,
+   "eintraege": [
+    {
+     "name": "Hugo Spritz",
+     "zutaten": "Prosecco, Holundersirup",
+     "preis": "12.–"
+    },
+    {
+     "name": "Zurbriggen Spritz",
+     "zutaten": "Lemonsoda, Prosecco, Blue Curaçao",
+     "preis": "12.–"
+    },
+    {
+     "name": "Aperol Spritz",
+     "zutaten": "Aperol, Prosecco",
+     "preis": "12.–"
+    },
+    {
+     "name": "Monte-Moro Spritz",
+     "zutaten": "Prosecco, Grapefruit, Vodka",
+     "preis": "12.–"
+    },
+    {
+     "name": "Limoncello Spritz",
+     "zutaten": "Prosecco, Limoncello",
+     "preis": "12.–"
+    },
+    {
+     "name": "Royal Spritz",
+     "zutaten": "Prosecco, Früchte, Cassis",
+     "preis": "12.–"
+    },
+    {
+     "name": "Antrona Spritz",
+     "zutaten": "Prosecco, Früchte, Campari",
+     "preis": "12.–"
+    }
+   ]
+  }
+ ],
+ "hinweis": "",
+ "quelle": "website/inhalt/daten.py HOTELWEINE, SPRITZ, ROESTI_GETRAENKE; die übrigen Spritz aus der Speisekarte (Stand 18.11.2024)",
+ "fuss": "Restaurant Röstihüs · Hotel Monte-Moro · CH-3905 Saas-Almagell · Tel. +41 27 957 10 12 · info@monte-moro.ch"
+}

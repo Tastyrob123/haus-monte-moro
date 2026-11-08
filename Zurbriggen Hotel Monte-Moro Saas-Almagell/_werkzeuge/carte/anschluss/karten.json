@@ -1,0 +1,347 @@
+{
+ "stand": "2026-11-08 10:25:14",
+ "quelle": "Das Kartenbrett (_werkzeuge/carte/_daten/stand/)",
+ "karten": {
+  "roestihues": {
+   "rubriken": [
+    {
+     "titel": "Best of Röstis",
+     "eintraege": [
+      {
+       "name": "Rösti Albert",
+       "zutaten": "Mit Bauernwurst, Speck und Röstigraben und Käse",
+       "preis": "25.–"
+      },
+      {
+       "name": "Rösti Dracula",
+       "zutaten": "Mit Knoblauch, Rahm und Käse überbacken",
+       "preis": "25.–"
+      },
+      {
+       "name": "Rösti Macugnaga",
+       "zutaten": "Mit Birnen, Gorgonzola, Rahm und Käse überbacken",
+       "preis": "25.–"
+      },
+      {
+       "name": "Rösti Exotic Palma",
+       "zutaten": "Mit Schinken, Ananas, Rahm und Käse überbacken",
+       "preis": "25.–"
+      },
+      {
+       "name": "Rösti Tschug Tschug",
+       "zutaten": "Mit Apfelmus und Calvados flambiert, Rahm und Käse überbacken",
+       "preis": "27.–"
+      },
+      {
+       "name": "Rösti Gartu",
+       "zutaten": "Mit Gemüse, Rahm ohne Käse",
+       "preis": "25.–"
+      },
+      {
+       "name": "Rösti Saastal",
+       "zutaten": "Mit Schinken, Spiegelei, Rahm und Käse überbacken",
+       "preis": "25.–"
+      },
+      {
+       "name": "Rösti Diavolo",
+       "zutaten": "Mit Mozzarella, Salami, scharfer Tomatensauce, Rahm und Parmesan",
+       "preis": "25.–"
+      },
+      {
+       "name": "Schmugglerrösti",
+       "zutaten": "Mit Tomaten, Thon, Mozzarella, Rahm und Käse überbacken",
+       "preis": "27.–"
+      },
+      {
+       "name": "Rösti Olma",
+       "zutaten": "Mit Olma-Bratwurst, Zwiebelringen, Rahm und Käse überbacken",
+       "preis": "27.–"
+      },
+      {
+       "name": "Rösti Indian Style",
+       "zutaten": "Mit gegrillten Krevettenspiess, Zwiebelringen, Ananas, Currysauce, Rahm und Käse überbacken",
+       "preis": "32.–"
+      }
+     ]
+    },
+    {
+     "titel": "Unsere Cordon bleus",
+     "eintraege": [
+      {
+       "name": "Monte-Moro",
+       "zutaten": "Kalbfleisch mit Schinken und Käse",
+       "preis": "42.–"
+      },
+      {
+       "name": "Val Antrona",
+       "zutaten": "Schweinefleisch mit Schinken und Gorgonzola",
+       "preis": "39.–"
+      },
+      {
+       "name": "Knobli",
+       "zutaten": "Schweinefleisch mit Schinken, Zwiebeln, Käse und Knoblauch",
+       "preis": "39.–"
+      },
+      {
+       "name": "Hawaii",
+       "zutaten": "Schweinefleisch mit Schinken, Ananas, Käse",
+       "preis": "39.–"
+      },
+      {
+       "name": "Förster",
+       "zutaten": "Schweinefleisch mit Schinken, Trüffel, Pilzen und Käse",
+       "preis": "41.–"
+      }
+     ]
+    },
+    {
+     "titel": "Zum Dessert",
+     "eintraege": [
+      {
+       "name": "Monte-Moro-Kopf",
+       "zutaten": "Eiweissschaum mit Schoko und Eis",
+       "preis": "15.–"
+      }
+     ]
+    },
+    {
+     "titel": "Im Stübli",
+     "eintraege": [
+      {
+       "name": "Raclette gross",
+       "zutaten": "mit Pellkartoffeln",
+       "preis": "17.–"
+      }
+     ]
+    }
+   ],
+   "name": "Die Röstihüs-Karte"
+  },
+  "wein-apero": {
+   "rubriken": [
+    {
+     "titel": "«Hotelwein»",
+     "eintraege": [
+      {
+       "name": "Cuvee Special",
+       "zutaten": "Fils Maye · Prestige Silber (wurde von Fabian selber kreiert) · Diolinoir, Syrah, Merlot, Pinot · 7 dl",
+       "preis": "67.–"
+      },
+      {
+       "name": "Cuvee Special Eichenfass",
+       "zutaten": "Gilles Joel Cina · Prestige Gold (wurde von Fabian selber kreiert) · Diolinoir, Syrah, Merlot, Angelotta · 7 dl",
+       "preis": "67.–"
+      }
+     ]
+    },
+    {
+     "titel": "Zum Apéro",
+     "eintraege": [
+      {
+       "name": "Hugo Spritz",
+       "zutaten": "Prosecco, Holundersirup",
+       "preis": "12.–"
+      },
+      {
+       "name": "Zurbriggen Spritz",
+       "zutaten": "Lemonsoda, Prosecco, Blue Curaçao",
+       "preis": "12.–"
+      },
+      {
+       "name": "Aperol Spritz",
+       "zutaten": "Aperol, Prosecco",
+       "preis": "12.–"
+      },
+      {
+       "name": "Monte-Moro Spritz",
+       "zutaten": "Prosecco, Grapefruit, Vodka",
+       "preis": "12.–"
+      },
+      {
+       "name": "Limoncello Spritz",
+       "zutaten": "Prosecco, Limoncello",
+       "preis": "12.–"
+      },
+      {
+       "name": "Royal Spritz",
+       "zutaten": "Prosecco, Früchte, Cassis",
+       "preis": "12.–"
+      },
+      {
+       "name": "Antrona Spritz",
+       "zutaten": "Prosecco, Früchte, Campari",
+       "preis": "12.–"
+      }
+     ]
+    }
+   ],
+   "name": "Wein und Apéro"
+  },
+  "preisliste": {
+   "rubriken": [
+    {
+     "titel": "Zimmer mit Frühstück",
+     "eintraege": [
+      {
+       "name": "Budgetzimmer",
+       "zutaten": "",
+       "preis": "CHF 90.00"
+      },
+      {
+       "name": "Standardzimmer",
+       "zutaten": "",
+       "preis": "CHF 100.00"
+      }
+     ]
+    },
+    {
+     "titel": "Zimmer mit Halbpension (4-Gänge)",
+     "eintraege": [
+      {
+       "name": "Budgetzimmer",
+       "zutaten": "",
+       "preis": "CHF 120.00"
+      },
+      {
+       "name": "Standardzimmer",
+       "zutaten": "",
+       "preis": "CHF 130.00"
+      }
+     ]
+    },
+    {
+     "titel": "Inklusive",
+     "eintraege": [
+      {
+       "name": "Benutzung Postautos im ganzen Saastal (Sommer/Winter)",
+       "zutaten": "",
+       "preis": "inkl."
+      },
+      {
+       "name": "Benutzung aller Bergbahnen im Saastal (ohne Metro Alpin) (Sommer)",
+       "zutaten": "",
+       "preis": "inkl."
+      },
+      {
+       "name": "ZF und HP: Frühstücksbuffet",
+       "zutaten": "",
+       "preis": "inkl."
+      },
+      {
+       "name": "Halbpension: wöchentlicher Racletteabend",
+       "zutaten": "",
+       "preis": "inkl."
+      },
+      {
+       "name": "Kidsclub: täglich Mo - Sa 16:30 bis 21:00 Uhr",
+       "zutaten": "",
+       "preis": "inkl."
+      },
+      {
+       "name": "Hotelparkplatz",
+       "zutaten": "",
+       "preis": "inkl."
+      }
+     ]
+    }
+   ],
+   "name": "Die Preisliste"
+  },
+  "zuschlaege": {
+   "rubriken": [
+    {
+     "titel": "Zuschläge",
+     "eintraege": [
+      {
+       "name": "Kurtaxe Erwachsene pro Tag (Winter)",
+       "zutaten": "",
+       "preis": "CHF 4.50"
+      },
+      {
+       "name": "Kurtaxe Erwachsene pro Tag (Sommer)",
+       "zutaten": "",
+       "preis": "CHF 7.00"
+      },
+      {
+       "name": "Kurtaxe Kinder (6 - 16 Jahre) pro Tag (Winter)",
+       "zutaten": "",
+       "preis": "CHF 2.25"
+      },
+      {
+       "name": "Kurtaxe Kinder (6 - 16 Jahre) pro Tag (Sommer)",
+       "zutaten": "",
+       "preis": "CHF 3.50"
+      },
+      {
+       "name": "Einzelzimmerzuschlag",
+       "zutaten": "",
+       "preis": "50 %"
+      },
+      {
+       "name": "Zuschlag für 1 - 3 Übernachtungen, pro Tag",
+       "zutaten": "",
+       "preis": "CHF 5.00"
+      },
+      {
+       "name": "Hund pro Tag ohne Futter",
+       "zutaten": "",
+       "preis": "CHF 7.00 - 10.00"
+      }
+     ]
+    },
+    {
+     "titel": "Kinderzuschläge im Zimmer der Eltern",
+     "eintraege": [
+      {
+       "name": "bis 5 Jahre",
+       "zutaten": "",
+       "preis": "CHF 50.00"
+      },
+      {
+       "name": "6 Jahre",
+       "zutaten": "",
+       "preis": "CHF 60.00"
+      },
+      {
+       "name": "7 Jahre",
+       "zutaten": "",
+       "preis": "CHF 70.00"
+      },
+      {
+       "name": "8 Jahre",
+       "zutaten": "",
+       "preis": "CHF 80.00"
+      },
+      {
+       "name": "9 - 16 Jahre",
+       "zutaten": "",
+       "preis": "CHF 90.00"
+      }
+     ]
+    }
+   ],
+   "name": "Zuschläge und Kinder"
+  },
+  "spa": {
+   "rubriken": [
+    {
+     "titel": "Der Eintritt",
+     "eintraege": [
+      {
+       "name": "Pro Person und Eintritt",
+       "zutaten": "kann nicht auf andere Personen übertragen werden",
+       "preis": "CHF 25.00"
+      },
+      {
+       "name": "7 Tage Abo pro Person",
+       "zutaten": "",
+       "preis": "CHF 150.00"
+      }
+     ]
+    }
+   ],
+   "name": "Spa im Partnerhotel"
+  }
+ },
+ "karte": null
+}

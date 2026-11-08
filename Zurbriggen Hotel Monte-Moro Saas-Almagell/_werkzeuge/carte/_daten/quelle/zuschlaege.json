@@ -1,0 +1,91 @@
+{
+ "ziel": "zuschlaege",
+ "art": "satz",
+ "key": "zuschlaege",
+ "name": "Zuschläge und Kinder",
+ "unter": "Kurtaxe, Kinder, Hund",
+ "gruppe": "Hotel Monte-Moro",
+ "ab": "",
+ "plakat": "",
+ "foto": "kinder-rodel",
+ "titel": "Zuschläge und Kinder",
+ "datum": "Preisliste · CHF",
+ "mit": "",
+ "rubriken": [
+  {
+   "titel": "Zuschläge",
+   "seite": 0,
+   "eintraege": [
+    {
+     "name": "Kurtaxe Erwachsene pro Tag (Winter)",
+     "zutaten": "",
+     "preis": "CHF 4.50"
+    },
+    {
+     "name": "Kurtaxe Erwachsene pro Tag (Sommer)",
+     "zutaten": "",
+     "preis": "CHF 7.00"
+    },
+    {
+     "name": "Kurtaxe Kinder (6 - 16 Jahre) pro Tag (Winter)",
+     "zutaten": "",
+     "preis": "CHF 2.25"
+    },
+    {
+     "name": "Kurtaxe Kinder (6 - 16 Jahre) pro Tag (Sommer)",
+     "zutaten": "",
+     "preis": "CHF 3.50"
+    },
+    {
+     "name": "Einzelzimmerzuschlag",
+     "zutaten": "",
+     "preis": "50 %"
+    },
+    {
+     "name": "Zuschlag für 1 - 3 Übernachtungen, pro Tag",
+     "zutaten": "",
+     "preis": "CHF 5.00"
+    },
+    {
+     "name": "Hund pro Tag ohne Futter",
+     "zutaten": "",
+     "preis": "CHF 7.00 - 10.00"
+    }
+   ]
+  },
+  {
+   "titel": "Kinderzuschläge im Zimmer der Eltern",
+   "seite": 0,
+   "eintraege": [
+    {
+     "name": "bis 5 Jahre",
+     "zutaten": "",
+     "preis": "CHF 50.00"
+    },
+    {
+     "name": "6 Jahre",
+     "zutaten": "",
+     "preis": "CHF 60.00"
+    },
+    {
+     "name": "7 Jahre",
+     "zutaten": "",
+     "preis": "CHF 70.00"
+    },
+    {
+     "name": "8 Jahre",
+     "zutaten": "",
+     "preis": "CHF 80.00"
+    },
+    {
+     "name": "9 - 16 Jahre",
+     "zutaten": "",
+     "preis": "CHF 90.00"
+    }
+   ]
+  }
+ ],
+ "hinweis": "Kinderzuschläge: Preis pro Kind/Tag inklusiv Halbpension. Kinderzuschläge im eigenen Zimmer: normale Zimmerpreise. Bezahlung in Euro möglich, Rückgeld in Franken.",
+ "quelle": "website/inhalt/daten.py ZUSCHLAEGE, KINDER, KINDER_SATZ, KINDER_EIGEN, EURO (Seite preise.html)",
+ "fuss": "Hotel Monte-Moro · CH-3905 Saas-Almagell · Tel. +41 27 957 10 12 · info@monte-moro.ch"
+}

@@ -1,0 +1,35 @@
+{
+ "ziel": "spa",
+ "art": "satz",
+ "key": "spa",
+ "name": "Spa im Partnerhotel",
+ "unter": "Hotel Pirmin Zurbriggen",
+ "gruppe": "Hotel Monte-Moro",
+ "ab": "",
+ "plakat": "",
+ "foto": "spa-licht",
+ "titel": "Spa im Partnerhotel",
+ "datum": "Hotel Pirmin Zurbriggen · Saas-Almagell",
+ "mit": "Hier können Sie die Seele baumeln lassen und dem Körper etwas Gutes tun.",
+ "rubriken": [
+  {
+   "titel": "Der Eintritt",
+   "seite": 0,
+   "eintraege": [
+    {
+     "name": "Pro Person und Eintritt",
+     "zutaten": "kann nicht auf andere Personen übertragen werden",
+     "preis": "CHF 25.00"
+    },
+    {
+     "name": "7 Tage Abo pro Person",
+     "zutaten": "",
+     "preis": "CHF 150.00"
+    }
+   ]
+  }
+ ],
+ "hinweis": "Das Angebot reicht vom Schwimmbad mit Filmvorführungen, Whirlpool, Saunalandschaft mit verschiedenen Saunen über Infrarotliegen, Isha-Whirlwanne, Kneippanlage, Solarium, Fitnesstower mit Hightech & TV, Massagepraxis, Hairstyling bis hin zum Beautysalon. Bademantel, Schuhe, Handtücher stehen zur Verfügung.",
+ "quelle": "website/inhalt/daten.py SPA_TARIFE, SPA_SATZ, SPA_ANGEBOT, SPA_INKL (Seite spa.html)",
+ "fuss": "Hotel Monte-Moro · CH-3905 Saas-Almagell · Tel. +41 27 957 10 12 · info@monte-moro.ch"
+}
