@@ -58,7 +58,7 @@ Keiner – alles fertig und geprüft. Nur noch «Wartet auf Roberts Wort».
 - Vorige Sitzung war fertig (19:10 Fertig, 19:17 letztes Lebenszeichen); kein Unteragent offen, keiner neu gestartet.
 - Zweig `ergebnis` trägt jetzt `.claude/`, `CLAUDE.md`, `AUFTRAG.md` und diese Übergabe (Lebenszeichen für die Wache).
 - Schaufenster nach der Reparatur «90.00» (17:57) frisch geprüft, 20:30 UTC: Schaufenster 40 Zustände, Anleitung 21 Zustände, je 4 Breiten, 0 Funde, nichts unerreicht (Chromium). Mit dem Auge: «ab CHF 90.00», Preisliste 390, Fototausch – ohne Befund. Belege in `ergebnis/laeufe/2026-11-08/nacht/`.
-- Damit ist nichts mehr offen. Auftrag fertig.
+- Damit ist der Teil der Nachtsitzung fertig. Die Gegenprüfung (01Qrxqqmsi6…) führt ihre Schlussprüfung zu Ende; findet sie etwas, repariert sie es und stellt den Kopf dieser Datei falls nötig auf «Nicht fertig.». Die Nachtsitzung beendet sich.
 
 ## Gegenprüfung (session_01Qrxqqmsi6FLCXQ7QCpcSoE, 20:16 UTC)
 - Auftrag: jeden Auftragspunkt selbst nachprüfen (Werkbank, sieben Werkzeuge, Drucksachen, Feed, Prüfung) bei 1440/390, Fehlendes bauen. Arbeitet in Worktree `/tmp/gp` von `claude/task-o0ores`. Nachtsitzung 01Qrxqqj2… prüft Schaufenster nach; die Gegenprüfung nimmt sich nach dem Schaufenster nicht doppelt an.
