@@ -1067,6 +1067,7 @@ b,strong{font-weight:500}
 .rgc-p{padding:8px 10px 6px!important;font-family:var(--mono)!important;font-size:.82rem!important;letter-spacing:0!important}
 .rgc-p[data-i="3"]{padding-left:9.4px!important;padding-right:10.6px!important}   /* «IV»: das V steht in DM Mono 0,6 px weiter rechts (Tor 08.11.) */
 .ins-m{padding:8px 16px!important}
+@supports (interpolate-size:allow-keywords){.ins-m>.tm{position:relative;top:.7px}}   /* DM Mono in Chromium 0,7 px zu hoch (Tor 08.11.) */
 .ins-m .tm-l,.sbf-z .tm-l{letter-spacing:0}
 .sbf-z{padding:7px 9px!important;letter-spacing:0!important}
 @supports (interpolate-size:allow-keywords){.sbf-b .sbf-z{padding-top:7.7px!important;padding-bottom:6.3px!important}}   /* DM Mono in Chromium 0,7 px zu hoch (Tor 08.11.) */
