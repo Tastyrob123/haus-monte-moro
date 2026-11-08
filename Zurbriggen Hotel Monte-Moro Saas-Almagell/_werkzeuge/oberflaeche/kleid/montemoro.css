@@ -101,11 +101,11 @@
 
 /* ---------- Ecke oben links in allen Werkzeugen gleich (M24): der Bergkamm des Logos in Lärche (wie im Kopf der Website, .kopf__marke svg)
    in einer kleinen Pille aus Nacht. Der Bergkamm ist breit (viewBox 3483 × 696, Seitenverhältnis 5 : 1, WO_HAUS.zeichenMass):
-   ein runder Ring würde ihn auf 6 px Höhe drücken; die Pille 64 × 44 trägt ihn 44 px breit wie die Website, mittig und ganz. ---------- */
-.wo-marke-w{position:relative;padding-left:78px!important;min-height:46px}
-.wo-marke-w::before{content:'';position:absolute;left:0;top:50%;width:64px;height:44px;margin-top:-22px;border-radius:999px;
+   ein runder Ring würde ihn auf 6 px Höhe drücken; die Pille 76 × 36 (breiter als 2 : 1, also Pille und kein Oval) trägt ihn 54 px breit, mittig und ganz. ---------- */
+.wo-marke-w{position:relative;padding-left:90px!important;min-height:46px}
+.wo-marke-w::before{content:'';position:absolute;left:0;top:50%;width:76px;height:36px;margin-top:-18px;border-radius:999px;
   background:linear-gradient(180deg,#15466F 0%,#0D3F6F 46%,#0A2A4A 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),inset 0 -2px 0 rgba(0,0,0,.35),inset 0 0 0 1px rgba(179,152,103,.35),0 6px 14px -8px rgba(0,0,0,.8)}
-.wo-marke-w .wo-zeichen,[data-wo-rahmen] .wo-marke-w .wo-zeichen{position:absolute;left:10px;top:50%;width:44px;height:8.8px;max-width:none;margin-top:-5.4px;color:#C67144}
+.wo-marke-w .wo-zeichen,[data-wo-rahmen] .wo-marke-w .wo-zeichen{position:absolute;left:11px;top:50%;width:54px;height:10.8px;max-width:none;margin-top:-5.4px;color:#C67144}
 .wo-marke-w b{font-family:var(--wo-titel);font-weight:400;letter-spacing:.04em}
 .wo-marke-w small{color:rgba(179,152,103,.95)!important}
 /* Der Bergkamm an den übrigen Stellen (Zier im Startbild, Briefkopf, Band, Bildunterschrift): breit statt hoch */
