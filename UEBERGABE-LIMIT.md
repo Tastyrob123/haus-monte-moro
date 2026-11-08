@@ -38,6 +38,7 @@ Läuft `cloud/schluss.sh` nicht mehr und fehlt `aus-ende/ende.json`: neu starten
 ## Entscheidungen der Nacht
 - Gearbeitet wird auf `claude/task-o0ores` (Auftrag der Folgesitzung), nicht auf main.
 - Geprüft nur in Chromium (WebKit nicht ladbar, siehe Stolpersteine).
+- Schaufenster «Zeiten & Preise» zeigte «90 .00» (Leser des Stamms setzt Leerschlag für Tags). Korrigiert nur in der Anzeige des Hauses (`bureau/festigkeit.js › zahlwert`), Stamm-Leser unverändert, weil seine Kennungen gespeicherte Änderungen tragen. Schaufenster nach der Schlussprüfung neu prüfen.
 
 ## Wartet auf Roberts Wort
 - Baustein `reception/baustein/anfrage.js` in die Website, Datenschutz-Satz zu Anfragen/Chat (Website-Revier).
