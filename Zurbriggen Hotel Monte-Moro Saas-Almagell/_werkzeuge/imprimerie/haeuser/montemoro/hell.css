@@ -68,7 +68,7 @@ body{background:var(--raum)}
 
 /* Vorlagen einer Art: Kopf als Tafel, Format rechts unten auf der Tafel */
 .weg__kopf.ms-bue{flex-direction:row;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 30px}
-.weg__kopf.ms-bue>div{max-width:min(60%,720px)}
+.weg__kopf.ms-bue>div:not(.ms-bue__foto){max-width:min(60%,720px)}
 .weg__kopf.ms-bue .start__format{color:var(--gold)}
 .ms-bue .start__zurueck{color:var(--goldhell)}
 
