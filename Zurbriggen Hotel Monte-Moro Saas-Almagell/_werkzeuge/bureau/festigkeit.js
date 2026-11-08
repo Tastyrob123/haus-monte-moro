@@ -99,6 +99,14 @@
       e.replaceWith(p);
     });
   }
+  /* Dasselbe in «Zeiten & Preise»: der Wert zeigt «ab CHF 90.00» wie die Website, nicht «90 .00» (nur die Anzeige; gespeichert wird, was im Editor steht) */
+  function zahlwert() {
+    document.querySelectorAll('.ws-zl__wert [data-ws-zeigt]').forEach(function (e) {
+      if (e.children.length) return;
+      var t = e.textContent, n = t.replace(/(\d) \.(\d)/g, '$1.$2');
+      if (n !== t) e.textContent = n;
+    });
+  }
   /* Werte nur aus Kleinbuchstaben («inkl.»): auf Versalhöhe zugeschnitten sassen sie gemessen 1 px zu tief (Kriterium 35); sie werden auf die x-Höhe zugeschnitten */
   function klein() {
     document.querySelectorAll('.ws-zl__wert:not([data-klein])').forEach(function (e) { e.setAttribute('data-klein', /^[a-zäöüß.,:;\s–-]+$/.test(e.textContent.trim()) ? 'ja' : 'nein'); });
@@ -108,6 +116,6 @@
     document.querySelectorAll('#ws-rand .wo-rand__g').forEach(function (g) { if (g.querySelector('a.wo-re[href*="/_werkzeuge/carte/"]')) g.remove(); });
   }
   var plan = 0;
-  function alles() { plan = 0; einWeg(); sofort(); klein(); woerter(); preise(); fest(); aendernZeichen(); ganz(); ohneX(); knaufName(); langfeld(); scharf(); }
+  function alles() { plan = 0; einWeg(); sofort(); klein(); woerter(); preise(); zahlwert(); fest(); aendernZeichen(); ganz(); ohneX(); knaufName(); langfeld(); scharf(); }
   if (window.MutationObserver) new MutationObserver(function () { if (!plan) plan = requestAnimationFrame(alles); }).observe(document.documentElement, { childList: true, subtree: true, characterData: true });
 })();
