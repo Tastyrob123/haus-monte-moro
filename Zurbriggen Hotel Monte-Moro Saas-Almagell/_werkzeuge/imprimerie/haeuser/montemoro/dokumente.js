@@ -384,11 +384,14 @@
       // passt die Gruppe auch mit den kleinsten Posten nicht in 74 % der Höhe, wird zuerst der Kopf kleiner (nie unter den Mindestgrad)
       { const pMin = gruppe(.45).posten.reduce((s0, x) => s0 + stapelH(c, x), 0);
         for (let kk = .95; kk >= .6 && hK + pMin * 1.15 > verf * .74; kk -= .05) { kopf = gruppe(kk).kopf; hK = stapelH(c, kopf); } }
+      // Rückseite einer zweiseitigen Karte: Kopf in derselben Titelgrösse wie die Vorderseite (inhalt.titelGr in mm; Gegenprüfung 08.11.2026, «Best of Röstis» vorne 11,4 mm, hinten 16,7 mm)
+      if (+i.titelGr > 0) { const kk = Math.max(.45, Math.min(1, +i.titelGr / (.095 * u))); kopf = gruppe(kk).kopf; hK = stapelH(c, kopf); }
       const tgr = (kopf.find(e => e.slot === 'titel') || {}).gr || .095 * u;
       const strich = Math.min(7, .07 * u), n = liste.length;
       const basis = (versal ? .036 : .05) * u, kMax = (versal ? .8 : .7) * tgr / basis;
       const mass = k => { const p = gruppe(k).posten, h = p.reduce((s0, x) => s0 + stapelH(c, x), 0); return { p, h }; };
       let lo = .45, hi = Math.max(1, kMax), best = mass(lo);
+      if (+i.nameGr > 0) hi = Math.max(lo, Math.min(hi, +i.nameGr / basis));   // Rückseite: Gerichte nicht grösser als vorne (inhalt.nameGr in mm)
       const passt = m => hK + m.h * 1.15 <= verf * .7;   // Platz für Abstände: ein Drittel der Posten-Höhe
       for (let t = 0; t < 10; t++) { const k = (lo + hi) / 2, m = mass(k); if (passt(m)) { lo = k; best = m; } else hi = k; }
       let H, frei, zl, gap, ges;
@@ -783,13 +786,15 @@
           i.text && ausgewogen(c, tx(c, 'text', i.text, cw, Math.max(9.5 * PT, Z.text * u), c.T.text, { slot: 'text', deck: .85 })), i.text && tg * .35,
           linie(c, .08 * u), tg * .55];
         const ng = Math.max(13 * PT, .052 * u * k), pg = Math.max(12 * PT, .046 * u * k), zl = ng * 1.3;
+        // Preisspalte so breit wie der längste Preis in einer Zeile (Gegenprüfung 08.11.2026: «CHF» stand bei «CHF 100.00» allein über der Zahl), höchstens die halbe Breite
+        const pw = Math.min(cw * .5, Math.max(cw * .32, ...liste.map((e, n) => e.preis ? DS.mess(grad(tx(c, 'mono', e.preis, cw, pg, c.T.mono, { slot: `liste.${n}.preis`, ausr: 'r', frei: true, sperr: .04, zeile: 1.15 }), pg)).bw * 1.04 + .5 : 0)));
         liste.forEach((e, n) => {
-          const a = e.name ? grad(tx(c, 'titel', e.name, cw * .66, ng, c.T.titel, { slot: `liste.${n}.name`, ausr: 'l', frei: true, zeile: 1.15 }), ng) : null;
-          const b = e.preis ? grad(tx(c, 'mono', e.preis, cw * .32, pg, c.T.mono, { slot: `liste.${n}.preis`, ausr: 'r', frei: true, sperr: .04, zeile: 1.15 }), pg) : null;
+          const a = e.name ? grad(tx(c, 'titel', e.name, cw - pw - cw * .02, ng, c.T.titel, { slot: `liste.${n}.name`, ausr: 'l', frei: true, zeile: 1.15 }), ng) : null;
+          const b = e.preis ? grad(tx(c, 'mono', e.preis, pw, pg, c.T.mono, { slot: `liste.${n}.preis`, ausr: 'r', frei: true, sperr: .04, zeile: 1.15 }), pg) : null;
           const teile = [];
           const h = Math.max(a ? a.h : 0, b ? b.h : 0);
           if (a) { a.x = +innen.toFixed(2); a.y0 = (h - a.h) / 2; teile.push(a); }
-          if (b) { b.x = +(innen + cw * .68).toFixed(2); b.y0 = (h - b.h) / 2 + (a ? (a.h - b.h) * .12 : 0); teile.push(b); }
+          if (b) { b.x = +(innen + cw - pw).toFixed(2); b.y0 = (h - b.h) / 2 + (a ? (a.h - b.h) * .12 : 0); teile.push(b); }
           if (n) items.push(zl * .45 * k, linie(c, cw, { x: +innen.toFixed(2), staerke: Math.max(.2, .0012 * u), deck: .45 }), zl * .45 * k);
           items.push({ typ: 'reihe', teile, h });
         });

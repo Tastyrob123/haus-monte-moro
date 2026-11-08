@@ -34,7 +34,7 @@
 <script>/* Rückfall, falls das Studio nicht startet: die Startseite zeigt sich spätestens nach 5 s (start.js setzt «bereit» sonst selbst, sobald die Fotos da sind) */
 addEventListener('DOMContentLoaded',function(){setTimeout(function(){var s=document.getElementById('start');if(s)s.classList.add('bereit')},5000)});</script>
 <!-- Katalog früh (hängt von nichts ab) und die Kachelfotos des ersten Bildschirms gleich mit anfragen (30.10.2026: die Startseite wartet auf sie, vorher kamen sie erst ab 2,5 s). Dieselbe Auswahl wie start.js kommend()/kachel(): die nächsten vier Anlässe und die ersten drei Abteilungen, kleine Fassung. -->
-<script src="katalog.js?v=37-mm1"></script>
+<script src="katalog.js?v=38-mm1"></script>
 <script>(function(){try{var K=window.DSKATALOG;if(!K||/[?&]haus=(?!montemoro)/.test(location.search))return;var h=new Date();h.setHours(0,0,0,0);var k=K.ANLAESSE.filter(function(a){return new Date(a.bis+"T00:00")>=h}).sort(function(x,y){return((new Date(x.von+"T00:00")<h)-(new Date(y.von+"T00:00")<h))||x.von.localeCompare(y.von)}).slice(0,4).map(function(a){return a.fotos[0]}).concat(K.ABTEILUNGEN.map(function(a){return a.foto}));k.filter(function(f,i){return f&&k.indexOf(f)===i}).forEach(function(f){var l=document.createElement("link");l.rel="preload";l.as="image";l.href="haeuser/montemoro/mini/"+f+".webp";document.head.appendChild(l)})}catch(e){}})();</script>
 <link rel="stylesheet" href="lib/auswahl.css?v=36-mm1">
 <link rel="stylesheet" href="studio.css?v=91-mm2">
@@ -324,7 +324,7 @@ document.write('<link rel="stylesheet" href="'+b+'hell.css?v=20-mm1"><link rel="
 <script src="satz.js?v=53-mm1"></script>
 <script src="eigene.js?v=36-mm1"></script>
 <script src="vorlagen.js?v=51-mm1"></script>
-<script src="haeuser/montemoro/dokumente.js?v=114-mm1"></script>
+<script src="haeuser/montemoro/dokumente.js?v=115-mm1"></script>
 <script src="druck.js?v=62-mm1"></script>
 <script src="studio.js?v=70-mm1"></script>
 <script src="vorschaubild.js?v=7-mm1"></script>

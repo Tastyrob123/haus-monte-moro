@@ -62,7 +62,7 @@ def v(n, wo, fmt, vorlage, ton, inhalt, rueck=None, stil=S0):
 # ---------------- Abteilungen ----------------
 ROESTIHUES = [
     v('Best of Röstis', 'am Tisch, im Röstihüs', 'a4h', 'blatt', 'dunkel', {"innen": "karte", "ueber": "Röstihüs · Saas-Almagell", "titel": "Best of Röstis", "text": "", "liste": ROESTIS[:6], "fuss": "Karte vom 18.11.2024 · Preise in Fr."},
-      {"vorlage": "blatt", "inhalt": {"innen": "karte", "ueber": "Röstihüs · Saas-Almagell", "titel": "Best of Röstis", "text": "", "liste": ROESTIS[6:], "fuss": "Karte vom 18.11.2024 · Preise in Fr."}}),
+      {"vorlage": "blatt", "inhalt": {"innen": "karte", "titelGr": 11.41, "nameGr": 4.16, "ueber": "Röstihüs · Saas-Almagell", "titel": "Best of Röstis", "text": "", "liste": ROESTIS[6:], "fuss": "Karte vom 18.11.2024 · Preise in Fr."}}),
     v('Unsere Cordon bleus', 'am Tisch, im Röstihüs', 'dlh', 'karte', 'creme', {"ueber": "Röstihüs · Saas-Almagell", "titel": "Unsere Cordon bleus", "text": "", "liste": CORDON, "fuss": "Karte vom 18.11.2024 · Preise in Fr."}),
     v('Wein von Fabian', 'am Tisch, im Röstihüs', 'dlh', 'karte', 'dunkel', {"ueber": "«Hotelwein» · von Fabian selber kreiert", "titel": "Wein von Fabian", "text": "",
       "liste": [{"name": w["name"], "detail": w["detail"], "preis": w["preis"]} for w in WEINE], "fuss": "Röstihüs · Preise in Fr."}),
