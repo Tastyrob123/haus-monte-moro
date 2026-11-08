@@ -351,7 +351,7 @@ EIGEN_CSS = '''
 def unterseiten():
     """Die Seiten neben «Alles auf einen Blick» (Prüfbericht, Unterlagen, Drucksachen, Zündhölzer, Feed, Mails, Dateien): für das Haus heisst die Werkbank
     «Alles auf einen Blick», das Material «Dateien», und nichts öffnet ein Mailprogramm (Robert 17.10.2026). Die Adresse steht als Text."""
-    for rel in ('werkbank/geprueft', 'unterlagen', 'drucksachen', 'untersetzer', 'feed', 'mails', 'material', 'werkbank/anleitung', 'befund'):
+    for rel in (('werkbank/geprueft', 'befund') if os.environ.get('NUR_KERN') else ('werkbank/geprueft', 'unterlagen', 'drucksachen', 'untersetzer', 'feed', 'mails', 'material', 'werkbank/anleitung', 'befund')):   # NUR_KERN=1: Papier-Seiten nicht anfassen
         p = os.path.join(ROOT, rel, 'index.html')
         if not os.path.exists(p):
             continue

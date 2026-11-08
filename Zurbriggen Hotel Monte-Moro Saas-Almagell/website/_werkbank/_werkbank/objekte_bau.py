@@ -121,7 +121,7 @@ def main():
         fertig.append(lege([(blatt(UN + f), b, x, y, r, True) for f, (b, x, y, r) in zip(un[:3], orte)], 'unterlagen'))
     dr = liste('drucksachen/img')
     if len(dr) >= 3:
-        wahl = [f for f in ('karte.webp', 'aushang.webp', 'willkommen.webp') if f in dr]   # eigene Formate, keine Plakat-Nachbauten (Robert 1.11.2026)
+        wahl = [f for f in ('pw-roestihues-best-of-roestis.webp', 'pw-aushang-inklusive.webp', 'pw-willkommensbrief.webp') if f in dr]   # eigene Formate, keine Plakat-Nachbauten (Robert 1.11.2026)
         if len(wahl) < 3: wahl = (wahl + [f for f in dr if f not in wahl])[:3]   # immer drei Stücke (Robert 1.11.2026: Mitte bei «Für draussen» war leer)   # hell, dunkel, farbig: drei Stücke nebeneinander (Robert 29.10.2026)
         fertig.append(lege([(blatt(D + f), 300, x, 500, r, True) for f, (x, r) in zip(wahl, ((170, -3), (500, 2), (830, -2)))], 'drucksachen'))
     us = liste('untersetzer/img', 'u')
@@ -129,7 +129,7 @@ def main():
         fertig.append(lege([(blatt(U_ + us[0]), 400, 285, 285, -4, True), (blatt(U_ + us[1]), 400, 715, 285, 3, True), (blatt(U_ + us[2]), 400, 285, 715, 2, True),
                             (blatt(U_ + us[3]), 400, 715, 715, -3, True)], 'etiketten'))   # zwei mal zwei mit Abstand
         if len(dr) >= 2:
-            fertig.append(lege([(blatt(D + dr[-1]), 300, 170, 500, -3, True), (blatt(U_ + us[-1]), 260, 500, 520, 0, True), (blatt(D + dr[-2]), 300, 830, 500, 2, True)], 'material'))   # nebeneinander
+            fertig.append(lege([(blatt(D + 'pw-preisliste-zimmer.webp'), 300, 170, 500, -3, True), (blatt(U_ + us[-1]), 260, 500, 520, 0, True), (blatt(D + 'pw-tischkarte-hotelwein.webp'), 300, 830, 500, 2, True)], 'material'))   # nebeneinander
     if os.path.exists(os.path.join(ROOT, 'feed', 'feed.json')) and os.path.exists(os.path.join(AN, 'Strom', 'feed-rechner.jpg')):
         fertig.append(lege([(lap(os.path.join(AN, 'Strom', 'feed-rechner.jpg')), 980, 500, 520, 0, False)], 'feed'))
     WH = lambda n: os.path.join(AN, 'Werkzeuge-Handy', n + '.jpg')

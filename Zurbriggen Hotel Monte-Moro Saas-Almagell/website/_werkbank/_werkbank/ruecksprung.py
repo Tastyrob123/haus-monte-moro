@@ -16,7 +16,7 @@ def block():
 
 def anwenden(root):
     b, n = block(), 0
-    for o in ORDNER:
+    for o in ([x for x in ORDNER if x in ('werkbank', 'befund')] if os.environ.get('NUR_KERN') else ORDNER):   # NUR_KERN=1: Papier-Seiten nicht anfassen
         for f in glob.glob(os.path.join(root, o, '**', '*.html'), recursive=True):
             rel = os.path.relpath(f, root)
             name = os.path.basename(f)

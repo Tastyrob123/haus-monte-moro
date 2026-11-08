@@ -113,6 +113,8 @@ def anwenden(root):
     n = 0
     for f in glob.glob(os.path.join(root, '**', '*.html'), recursive=True):
         rel = os.path.relpath(f, root)
+        if os.environ.get('NUR_KERN') and not rel.startswith(('werkbank', 'befund')):   # NUR_KERN=1: Papier-Seiten nicht anfassen
+            continue
         if rel.startswith(('_werkbank', '_sicherung', 'node_modules')) or '.vor-' in rel:
             continue
         s = open(f, encoding='utf-8').read()

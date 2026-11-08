@@ -228,9 +228,9 @@ FEED = dict(art='bogen', bogen=[1, 2, 3, 4, 5, 6, 7, 8, 9], bogen_zeile='Die ers
             text1='', text2='Tippen Sie auf den Bildschirm, dann scrollen Sie durch den Feed wie am Handy.', kacheln=[])
 PAPIER = dict(
     etik_text='Zum Bier im Röstihüs gehört ein Untersetzer: zwölf Ideen mit dem Bergkamm, der Lärche der Balkone und den Sätzen des Hauses.',
-    druck_text='Von der Karte am Tisch bis zum Willkommensbrief im Zimmer, dazu <a href="../sticker/index.html" target="_blank" rel="noopener">Sticker</a> und <a href="../beigaben/index.html" target="_blank" rel="noopener">Beigaben</a>.',
+    druck_text='Von der Karte im Röstihüs bis zum Willkommensbrief im Zimmer, dazu <a href="../sticker/index.html" target="_blank" rel="noopener">Sticker</a> und <a href="../beigaben/index.html" target="_blank" rel="noopener">Beigaben</a>.',
     orte_e=[(3, 6, 28, -3), (36, 6, 28, 2), (69, 6, 28, -2), (3, 54, 28, 2), (36, 54, 28, -3), (69, 54, 28, 3)],
-    orte_d=[('karte', 3, 16, 29, -3, 0), ('aushang', 35.5, 16, 29, 2, 0), ('willkommen', 68, 16, 29, -2, 0)])
+    orte_d=[('pw-roestihues-best-of-roestis', 3, 16, 29, -3, 0), ('pw-aushang-inklusive', 35.5, 16, 29, 2, 0), ('pw-willkommensbrief', 68, 16, 29, -2, 0)])   # Stücke der Hausdruckerei (papier_haus.json)
 PAPIER_SEITE = dict(breit=set(), formen=set(), auslage=[], karton={}, titel={}, schatten=set(), flaeche=['fl--papier', 'fl--nacht tapete-leicht', 'fl--papier', 'fl--creme'],
                     etik_titel=('Untersetzer', 'fürs Röstihüs.'), etik_text='', etik_kap='Die Untersetzer', etik_kopf=['Zwölf', 'Untersetzer.'], etik_kopftext='', druck_text='', etik_auslage=[])
 MATERIAL = dict(
@@ -250,7 +250,7 @@ KAPITEL = {
     'seiten': dict(text='Eine Seite aussuchen, mit den Pfeilen weiterblättern. Rechts dieselbe Stelle am Handy, mit «Öffnen» sind Sie auf der echten Seite.'),
     'unterlagen': dict(text=UNTERLAGEN['text']),
     'gaeste': dict(text='Wer zu Ihnen kommen will, möchte vorher wissen, wie das Zimmer aussieht, was inbegriffen ist und wie er hinfindet. Auf der neuen Seite steht das an einem Ort, und jede Frage hat einen Weg zu Ihnen.'),
-    'papier': dict(text='Für das Monte-Moro ist einiges entstanden: Drucksachen von der Karte am Tisch bis zum Willkommensbrief im Zimmer, Untersetzer fürs Röstihüs, Mails an Ihre Gäste, Postkarten und Sticker.'),
+    'papier': dict(text='Für das Monte-Moro ist einiges entstanden: Drucksachen von der Karte im Röstihüs bis zum Willkommensbrief im Zimmer, Untersetzer fürs Röstihüs, Mails an Ihre Gäste, Postkarten und Sticker.'),
     'material': dict(text='Wer eine Datei braucht, findet sie hier: die Karte als PDF, jede Drucksache, jeden Untersetzer und Ihr Logo in voller Schärfe.'),
     'geprueft': dict(text='Bevor etwas davon zu Ihnen kommt, wird es geöffnet, gelesen und gedrückt: am Handy wie am Rechner, jeder Preis gegen Ihre Angaben, jedes Werkzeug in jedem Schritt. Das Blatt fasst es zusammen, der Bericht erzählt es ganz.'),
     'schluss': dict(text='Sagen Sie mir offen, was Ihnen am Entwurf gefällt und was nicht. Ändern lässt sich alles.'),
@@ -363,6 +363,8 @@ svg:has(> use[href="#hz"]){color:var(--gold);fill:currentColor}
 /* Knöpfe wie .kn der Website: Hauptweg Lärche mit weissem Knauf, Nebenweg Nacht (montemoro.css .kn--laerche, .kn--nacht) */
 .kn,.hell .kn,.fl .kn,.pk .kn,.wf .kn,.fl--papier .kn,.fl--creme .kn,.pk--hell .kn{--o:#d3845a!important;--m:#c67144!important;--u:#ae5e34!important;--t:#ffffff!important;--licht:rgba(255,255,255,.3)!important;--kante:rgba(0,0,0,.22)!important;--tf:rgba(90,40,15,.45)!important;--ko:#ffffff!important;--ku:#efe9e1!important;--kt:#0a2a4a!important;--klicht:rgba(255,255,255,.95)!important}
 .kn--linie,.hell .kn--linie,.fl .kn--linie,.pk .kn--linie,.wf .kn--linie,.kn--nacht{--o:#15466f!important;--m:#0d3f6f!important;--u:#0a2a4a!important;--t:#ffffff!important;--licht:rgba(255,255,255,.18)!important;--kante:rgba(0,0,0,.35)!important;--tf:rgba(3,10,16,.5)!important;--ko:#ffffff!important;--ku:#efe9e1!important;--kt:#0a2a4a!important;--klicht:rgba(255,255,255,.95)!important}
+/* Auf der Lärche-Karte der Drucksachen der Knopf in Nacht (nie zwei grosse Flächen in voller Akzentfarbe, Kriterium 25) */
+.pk--hell .kn{--o:#15466f!important;--m:#0d3f6f!important;--u:#0a2a4a!important;--tf:rgba(3,10,16,.5)!important}
 /* Etiketten des Hauses: DM Mono, gesperrt, Versalien (wie die kleinen Zeilen der Website) */
 .rz{font-family:var(--mono);font-weight:400;letter-spacing:.18em;text-transform:uppercase}
 '''
@@ -399,7 +401,7 @@ CSS += '''
 #material .streu .abzug img{display:block;width:100%;height:100%;object-fit:cover;border-radius:0!important}
 @media(min-width:760px){#material .streu{align-items:center}#material .streu .abzug:nth-child(3){transform:scale(1.18);z-index:2}#material .streu .abzug:nth-child(2),#material .streu .abzug:nth-child(4){transform:scale(1.04);z-index:1}}
 /* Flüssigkeit (Regel 55): Abschnitte ausserhalb des Blicks werden nicht gezeichnet. Ausgenommen der Brief (überstehendes Blatt). */
-@supports (content-visibility:auto){main>section.fl:not(#brief):not(#gefuege){content-visibility:auto;contain-intrinsic-size:auto 1400px}}
+@supports (content-visibility:auto){main>section.fl:not(#brief):not(#gefuege):not(.bfs):not(.ki){content-visibility:auto;contain-intrinsic-size:auto 1400px}}   /* Befund und KI-Seite sind kurz: immer gezeichnet (Oberflächen-Prüfung Punkt 3) */
 html.cv-alle main>section.fl:not(#brief){content-visibility:visible}
 @media(min-width:760px){.vh-wahl>:first-child,#seiten .wahl>:first-child{margin-left:auto}.vh-wahl>:last-child,#seiten .wahl>:last-child{margin-right:auto}}
 @media(max-width:480px){.kn{max-width:100%;height:auto;min-height:54px;padding-top:9px;padding-bottom:9px;white-space:normal;line-height:1.35;text-align:left}.kn i{flex:none}.kn-reihe{max-width:100%}}

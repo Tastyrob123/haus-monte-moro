@@ -5,7 +5,9 @@ Was Sie bekommen, wie es weitergeht, Ihre Daten, laufende Betreuung (freiwillig)
 Belegt ist nur, was im Paket liegt, und die Kündigungsfrist in den AGB des heutigen Anbieters (Potentialanalyse, agentur.agb 4c)."""
 import html, os
 
-e = html.escape
+_e = html.escape
+NB = lambda s: s.replace('Monte-Moro', '<span class="nb">Monte-Moro</span>')   # «Monte-Moro» nie am Bindestrich umbrechen (Oberchef 08.11.)
+e = lambda s: NB(_e(s))
 W = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(W)
 
@@ -85,6 +87,7 @@ def karte_html():
 
 
 CSS = '''
+.nb{white-space:nowrap}
 .sag-h::before{content:attr(data-n);font-family:var(--mono);font-size:clamp(.78rem,.9vw,.92rem);letter-spacing:.16em;color:var(--rot)}
 /* ---------- Kapitel VIII «Das Angebot» (sb_angebot.py): helle Blätter auf der Nacht ---------- */
 .sag-opt{margin:14px 0 0;font-family:var(--serif);font-size:clamp(1.15rem,1.5vw,1.4rem);line-height:1.35;color:var(--tinte)}

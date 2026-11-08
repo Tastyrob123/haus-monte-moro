@@ -35,12 +35,12 @@ SZENEN = [
     (_N['livre'], 'Marke', (WZB('livre.jpg'), None), [
         (WZB('livre-2.jpg'), None, 'Die Fotos des Hauses',
          'Jedes Foto von Haus, Zimmern, Röstihüs und Saastal gross ansehen und in der passenden Grösse laden.'),
-        (DR('karte.webp'), None, 'Auf jedem Blatt',
+        (DR('pw-roestihues-best-of-roestis.webp'), None, 'Auf jedem Blatt',
          'Dieselben Farben, Schriften und der Bergkamm kennt auch das Werkzeug für Drucksachen, darum sieht jedes Blatt nach dem Monte-Moro aus.')]),
     (_N['imprimerie'], 'Drucksachen', (WZB('imprimerie.jpg'), None), [
         (WZB('imprimerie-2.jpg'), None, 'Eine Vorlage wählen',
          'Vom Aushang an der Rezeption bis zum Willkommensbrief im Zimmer: Vorlage wählen, Texte setzen.'),
-        (DR('aushang.webp'), None, 'Druckfertig',
+        (DR('pw-aushang-inklusive.webp'), None, 'Druckfertig',
          'Daraus wird das Blatt für die Rezeption, als PDF für die Druckerei oder den eigenen Drucker.')]),
     (_N['reception'], 'Gäste', (WZB('reception.jpg'), None), [
         (WZB('reception-2.jpg'), None, 'Jede Anfrage nach ihrer Art',

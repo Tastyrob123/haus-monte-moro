@@ -215,6 +215,7 @@ html.ins-ruhe :is(.stapel .tel,.runter i,.zeile__z,.namenzug div,.wb-band__zug,.
 .ins-texte{display:grid;grid-template-columns:minmax(0,1fr)}   /* nie breiter als die Spalte (Tor 30.10., 1000 px) */
 .ins-t{grid-area:1/1;width:100%;max-width:33rem;margin-inline:auto;text-align:center;opacity:0;visibility:hidden;transition:opacity .16s linear,visibility 0s .16s}
 .ins-t.an{opacity:1;visibility:visible;transition:opacity .3s linear .16s,visibility 0s .16s}
+@media(max-width:760px){.ins-t:not(.an){display:none}}   /* Handy: nur der gezeigte Text nimmt Platz, keine leere Fläche unter dem Knopf (Oberchef 08.11.) */
 .ins-t>*{translate:0 10px;opacity:0;transition:opacity .16s linear,translate .16s ease}
 .ins-t.an>*{translate:0 0;opacity:1;transition:opacity .4s cubic-bezier(.22,.61,.36,1),translate .55s cubic-bezier(.22,.61,.36,1)}
 .ins-t.an>:nth-child(2){transition-delay:.06s}.ins-t.an>:nth-child(3){transition-delay:.1s}.ins-t.an>:nth-child(4){transition-delay:.14s}.ins-t.an>:nth-child(5){transition-delay:.18s}
@@ -397,6 +398,7 @@ html.ins-ruhe :is(.stapel .tel,.runter i,.zeile__z,.namenzug div,.wb-band__zug,.
 @media(max-width:700px){.sbf-bild{min-height:0;padding:10px 0 40px}.sbf-handy{width:52vw}.sbf-handy--breit{width:100%;margin-top:0}.sbf-nah{width:60vw;bottom:0}.sbf-nah--breit{width:66vw;right:0;bottom:-6%}.sbf-ziffern{display:none}}
 @media(prefers-reduced-motion:reduce){.sbf-p,.sbf-p.an .sbf-handy,.sbf-p.an .sbf-nah{transition:none;animation:none}}
 
+.nb{white-space:nowrap}
 .sag-h::before{content:attr(data-n);font-family:var(--mono);font-size:clamp(.78rem,.9vw,.92rem);letter-spacing:.16em;color:var(--rot)}
 /* ---------- Kapitel VIII «Das Angebot» (sb_angebot.py): helle Blätter auf der Nacht ---------- */
 .sag-opt{margin:14px 0 0;font-family:var(--serif);font-size:clamp(1.15rem,1.5vw,1.4rem);line-height:1.35;color:var(--tinte)}

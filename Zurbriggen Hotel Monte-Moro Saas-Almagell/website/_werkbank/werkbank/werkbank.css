@@ -1003,6 +1003,8 @@ body.kino-offen{overflow:hidden}
 .bf-fuss__reihe{flex:1 1 100%;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);align-items:center;gap:clamp(22px,3.4vw,56px)}
 .bf-fuss__reihe .bf-name{margin:0 auto;align-self:center}
 @media(max-width:759px){.bf-fuss__reihe{grid-template-columns:1fr}.bf-fuss__reihe .bf-name{align-self:center}}
+/* Handy (Oberchef 08.11.): Robert rund über dem letzten Absatz, Text in voller Breite (vorher Spalte von zwei, drei Wörtern) */
+@media(max-width:759px){.bf-rechts .bf-stuetze{display:none!important}.bf-rechts .bf-ich{float:none!important;shape-outside:none!important;margin:0 0 18px!important}}
 
 /* ---------- Abschnittsköpfe mittig, Medaillon des Hauses in Gold darüber, ohne Zahl (kopf_mitte.py, 12.10.2026) ---------- */
 .kap--z{flex-direction:column;justify-content:center;gap:clamp(14px,1.4vw,22px);text-align:center;margin-bottom:clamp(16px,1.8vw,28px)}
@@ -1084,6 +1086,8 @@ svg:has(> use[href="#hz"]){color:var(--gold);fill:currentColor}
 /* Knöpfe wie .kn der Website: Hauptweg Lärche mit weissem Knauf, Nebenweg Nacht (montemoro.css .kn--laerche, .kn--nacht) */
 .kn,.hell .kn,.fl .kn,.pk .kn,.wf .kn,.fl--papier .kn,.fl--creme .kn,.pk--hell .kn{--o:#d3845a!important;--m:#c67144!important;--u:#ae5e34!important;--t:#ffffff!important;--licht:rgba(255,255,255,.3)!important;--kante:rgba(0,0,0,.22)!important;--tf:rgba(15,52,90,.45)!important;--ko:#ffffff!important;--ku:#efe9e1!important;--kt:#0a2a4a!important;--klicht:rgba(255,255,255,.95)!important}
 .kn--linie,.hell .kn--linie,.fl .kn--linie,.pk .kn--linie,.wf .kn--linie,.kn--nacht{--o:#15466f!important;--m:#0d3f6f!important;--u:#0a2a4a!important;--t:#ffffff!important;--licht:rgba(255,255,255,.18)!important;--kante:rgba(0,0,0,.35)!important;--tf:rgba(3,9,16,.5)!important;--ko:#ffffff!important;--ku:#efe9e1!important;--kt:#0a2a4a!important;--klicht:rgba(255,255,255,.95)!important}
+/* Auf der Lärche-Karte der Drucksachen der Knopf in Nacht (nie zwei grosse Flächen in voller Akzentfarbe, Kriterium 25) */
+.pk--hell .kn{--o:#15466f!important;--m:#0d3f6f!important;--u:#0a2a4a!important;--tf:rgba(3,9,16,.5)!important}
 /* Etiketten des Hauses: DM Mono, gesperrt, Versalien (wie die kleinen Zeilen der Website) */
 .rz{font-family:var(--mono);font-weight:400;letter-spacing:.18em;text-transform:uppercase}
 
@@ -1403,7 +1407,7 @@ svg:has(> use[href="#hz"]){color:var(--gold);fill:currentColor}
 #material .streu .abzug img{display:block;width:100%;height:100%;object-fit:cover;border-radius:0!important}
 @media(min-width:760px){#material .streu{align-items:center}#material .streu .abzug:nth-child(3){transform:scale(1.18);z-index:2}#material .streu .abzug:nth-child(2),#material .streu .abzug:nth-child(4){transform:scale(1.04);z-index:1}}
 /* Flüssigkeit (Regel 55): Abschnitte ausserhalb des Blicks werden nicht gezeichnet. Ausgenommen der Brief (überstehendes Blatt). */
-@supports (content-visibility:auto){main>section.fl:not(#brief):not(#gefuege){content-visibility:auto;contain-intrinsic-size:auto 1400px}}
+@supports (content-visibility:auto){main>section.fl:not(#brief):not(#gefuege):not(.bfs):not(.ki){content-visibility:auto;contain-intrinsic-size:auto 1400px}}   /* Befund und KI-Seite sind kurz: immer gezeichnet (Oberflächen-Prüfung Punkt 3) */
 html.cv-alle main>section.fl:not(#brief){content-visibility:visible}
 @media(min-width:760px){.vh-wahl>:first-child,#seiten .wahl>:first-child{margin-left:auto}.vh-wahl>:last-child,#seiten .wahl>:last-child{margin-right:auto}}
 @media(max-width:480px){.kn{max-width:100%;height:auto;min-height:54px;padding-top:9px;padding-bottom:9px;white-space:normal;line-height:1.35;text-align:left}.kn i{flex:none}.kn-reihe{max-width:100%}}

@@ -328,6 +328,7 @@ html.ins-ruhe :is(.stapel .tel,.runter i,.zeile__z,.namenzug div,.wb-band__zug,.
 .ins-texte{display:grid;grid-template-columns:minmax(0,1fr)}   /* nie breiter als die Spalte (Tor 30.10., 1000 px) */
 .ins-t{grid-area:1/1;width:100%;max-width:33rem;margin-inline:auto;text-align:center;opacity:0;visibility:hidden;transition:opacity .16s linear,visibility 0s .16s}
 .ins-t.an{opacity:1;visibility:visible;transition:opacity .3s linear .16s,visibility 0s .16s}
+@media(max-width:760px){.ins-t:not(.an){display:none}}   /* Handy: nur der gezeigte Text nimmt Platz, keine leere Fläche unter dem Knopf (Oberchef 08.11.) */
 .ins-t>*{translate:0 10px;opacity:0;transition:opacity .16s linear,translate .16s ease}
 .ins-t.an>*{translate:0 0;opacity:1;transition:opacity .4s cubic-bezier(.22,.61,.36,1),translate .55s cubic-bezier(.22,.61,.36,1)}
 .ins-t.an>:nth-child(2){transition-delay:.06s}.ins-t.an>:nth-child(3){transition-delay:.1s}.ins-t.an>:nth-child(4){transition-delay:.14s}.ins-t.an>:nth-child(5){transition-delay:.18s}

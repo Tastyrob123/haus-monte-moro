@@ -121,4 +121,6 @@ CSS = """
 .bf-fuss__reihe{flex:1 1 100%;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);align-items:center;gap:clamp(22px,3.4vw,56px)}
 .bf-fuss__reihe .bf-name{margin:0 auto;align-self:center}
 @media(max-width:759px){.bf-fuss__reihe{grid-template-columns:1fr}.bf-fuss__reihe .bf-name{align-self:center}}
+/* Handy (Oberchef 08.11.): Robert rund über dem letzten Absatz, Text in voller Breite (vorher Spalte von zwei, drei Wörtern) */
+@media(max-width:759px){.bf-rechts .bf-stuetze{display:none!important}.bf-rechts .bf-ich{float:none!important;shape-outside:none!important;margin:0 0 18px!important}}
 """

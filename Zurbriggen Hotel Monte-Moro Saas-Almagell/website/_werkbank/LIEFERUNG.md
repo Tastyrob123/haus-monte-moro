@@ -49,14 +49,14 @@ Aufbau, Wege und Funktionen aus dem Stamm (Auftakt, Brief, Worum es geht, Inhalt
 | werkbank-befund | 4 | 0 |
 
   Reparierte Funde: Ziffern der Befunde und des Registers, Reiter der Werkzeug-Ansichten (DM Mono in Chromium 0,6–0,8 px versetzt), Ziffer allein in den Köpfen des Angebots (jetzt `::before`), «Datenschutz» allein in der letzten Zeile, Fächer-Aufschrift «Wein und Apéro» am Handy (jetzt «Weinkarte»).
-- **Oberflächen-Prüfung** `node _Werkzeuge/oberflaeche_pruefen.js http://127.0.0.1:9388/werkbank/index.html`: BESTANDEN mit einer Ausnahme (`--ausnahme "6 Laufband: …"`); Punkte 1–5 und 7 ohne Fund (repariert: Gefüge war wegen `content-visibility` beim Messen leer, Ziffer «01» des Befunds steht jetzt in einer Tafel). Punkt 6 («Laufband») meldet das Ideen- und das Gästeband: gemessen wird dort die Ziffer «01» im Bild der ersten Karte (`span.idee__n`), die Bänder sind Bildbänder zum Blättern, kein Laufband. Beleg: `band.js` (Scratchpad) gibt das gemessene Element aus. Vorschlag an den Oberchef: Regel 6 nur für Bänder mit Bewegung (Animation) oder `data-laufband`.
+- **Oberflächen-Prüfung** `node _Werkzeuge/oberflaeche_pruefen.js` ohne Ausnahme BESTANDEN für werkbank/index.html, befund/index.html, werkbank/ki.html, werkbank/karte.html, werkbank/geprueft/index.html (repariert: Gefüge, Befund und KI-Seite waren wegen `content-visibility` beim Messen leer; Ziffer «01» des Befunds steht in einer Tafel; Regel 6 vom Oberchef geschärft). Punkt 6 («Laufband») meldet das Ideen- und das Gästeband: gemessen wird dort die Ziffer «01» im Bild der ersten Karte (`span.idee__n`), die Bänder sind Bildbänder zum Blättern, kein Laufband. Beleg: `band.js` (Scratchpad) gibt das gemessene Element aus. Vorschlag an den Oberchef: Regel 6 nur für Bänder mit Bewegung (Animation) oder `data-laufband`.
 - **Angesehen:** jeder Abschnitt der Startseite bei 1440 und 390, Befund, KI, Karte, Prüfbericht bei 1440; alle Aufnahmen der Ideen, der Gäste-Funktionen und der sieben Werkzeuge.
 - **Texte:** Suchlauf `python3 _werkbank/du_gang.py` (ß, Du/Ihr-Form, Wörter der Vorlagen) über alle Seiten des Kerns; Werkzeugnamen nur aus `kleid/montemoro.js`.
 - **PDF:** `pdffonts` nur Fjalla One, Instrument Sans, DM Mono (eingebettet, kein Type 3).
 
 ## Offen
 
-- Regel 6 der Oberflächen-Prüfung (Fehlalarm, siehe oben): Entscheid beim Oberchef.
 - Bildschirme der Werkzeuge aufgenommen, nachdem alle sieben fertig gemeldet waren (08.11.2026 nachmittags); bei Änderungen an einem Werkzeug `node _werkbank/sb_werkzeuge.js <schlüssel>`, dann `bash bau_alles.sh --ohne-aufnahmen`.
 - Nicht eingecheckt (Zwischenstufen, beim Bau neu erzeugt): `_werkbank/ansichten/`, `_werkbank/objekte/`, `_werkbank/geraete/schirm-feed-sb.png`. Die Papier-Seiten werden vom Kern-Bau (Rücksprung, Leiste) nachbearbeitet; sie gehören Werkbank Papier und sind hier nicht eingecheckt.
-- Prüfbericht: die Zahl der geprüften Zustände je Werkzeug steht erst, wenn alle sieben fertig gemeldet sind (`_werkbank/pruef_werkzeuge.json`).
+- Prüfbericht: Zustände je Werkzeug aus `aus/<k>/inventar.json` + `stich-*.json` (`_werkbank/pruef_werkzeuge.json`). `aus/besucherliste/` auf der Platte ist noch der Lauf von 10:29 mit dem alten Stilblatt (Regel 12 Fehlalarm); die Zahl der Zustände stimmt, die Funde dort sind die gemeldeten Fehlalarme.
+- Bau ohne Eingriff in die Papier-Seiten: `NUR_KERN=1` (Rücksprung, Leiste, Schrift-Mitte und Zeilen nur auf werkbank/ und befund/).
