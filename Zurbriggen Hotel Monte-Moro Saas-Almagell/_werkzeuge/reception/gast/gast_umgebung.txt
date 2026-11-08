@@ -1,0 +1,20 @@
+=== Kontakt (Website: Impressum und Anreise, website/inhalt/daten.py HAUS) ===
+Hotel Monte-Moro, CH-3905 Saas-Almagell. Telefon +41 27 957 10 12, Fax +41 27 957 37 12, E-Mail info@monte-moro.ch.
+Gastgeber: Esther und Fabian Zurbriggen (Esther & Fabian Zurbriggen-Zurbriggen).
+Zimmer buchen: mit «Zimmer buchen» auf der Website (Buchungsfenster des Hauses), per Telefon oder E-Mail.
+Tisch im Röstihüs: Telefon +41 27 957 10 12 oder über TheFork.
+Anfrage an die Rezeption: das Anfrage-Fenster auf der Website (Name, E-Mail oder Telefon, Nachricht).
+
+=== Was das Haus nicht veröffentlicht (website/inhalt/daten.py OFFEN, _kette/03-sammler/fakten.json) ===
+Dazu steht in keiner Quelle des Hauses etwas; das beantworten Esther und Fabian persönlich, ohne dass der Chat eine Zahl oder Zeit nennt:
+- Öffnungszeiten und Ruhetage des Röstihüs (die Rezeption gibt sie gern bekannt).
+- die Strasse des Hauses (die Adresse lautet Hotel Monte-Moro, CH-3905 Saas-Almagell).
+- Storno- und Geschäftsbedingungen.
+- Preise der Ferienwohnungen im Haus Apollo und im Haus Arizona.
+- Zeiten für Anreise und Abreise am Zimmer (Check-in, Check-out).
+- Alter und Ablauf im Kidsclub über die Zeiten hinaus (Kidsclub: täglich Mo - Sa 16:30 bis 21:00 Uhr, inklusive).
+- Saisonzeiten und Betriebsferien.
+Die Gratis-Anreise mit dem öffentlichen Verkehr galt für Buchungen vom 1. Mai bis 31. Oktober 2026 und wird nicht mehr angeboten; ob sie 2027 weiterläuft, steht nicht fest.
+
+=== Lage (Website: Startseite und Anreise) ===
+Das Hotel Monte Moro befindet sich an bester Lage in Saas-Almagell. 2 Gehminuten zum Skigebiet Saas-Almagell, 3 zur Busstation, 3 zum Dorfkern. Parkplätze für Hotelgäste stehen zur Verfügung.

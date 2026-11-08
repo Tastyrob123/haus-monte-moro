@@ -1,0 +1,132 @@
+[
+ {
+  "vor": [
+   0,
+   10,
+   20
+  ],
+  "sprache": "de",
+  "buchung": false,
+  "frage": "Was ist im Preis inbegriffen?",
+  "antwort": "Inklusive: Benutzung Postautos im ganzen Saastal (Sommer/Winter); Benutzung aller Bergbahnen im Saastal (ohne Metro Alpin) (Sommer); ZF und HP: Frühstücksbuffet; Halbpension: wöchentlicher Racletteabend; Kidsclub: täglich Mo - Sa 16:30 bis 21:00 Uhr; Hotelparkplatz.",
+  "belegt": true,
+  "thema": ""
+ },
+ {
+  "vor": [
+   0,
+   8,
+   55
+  ],
+  "sprache": "de",
+  "buchung": true,
+  "frage": "Was kostet ein Zimmer?",
+  "antwort": "Budgetzimmer, Zimmer mit Frühstück: CHF 90.00 pro Person / Tag · Standardzimmer, Zimmer mit Frühstück: CHF 100.00 pro Person / Tag · Budgetzimmer, Zimmer mit Halbpension (4-Gänge): CHF 120.00 pro Person / Tag · Standardzimmer, Zimmer mit Halbpension (4-Gänge): CHF 130.00 pro Person / Tag.",
+  "belegt": true,
+  "thema": ""
+ },
+ {
+  "vor": [
+   1,
+   19,
+   5
+  ],
+  "sprache": "de",
+  "frage": "Gibt es einen Kidsclub für Kinder?",
+  "antwort": "Kidsclub: täglich Mo - Sa 16:30 bis 21:00 Uhr, inklusive.",
+  "belegt": true,
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   1,
+   13,
+   40
+  ],
+  "sprache": "de",
+  "frage": "Wann hat das Röstihüs am Abend offen?",
+  "antwort": "Die Öffnungszeiten des Röstihüs erfahren Sie gern direkt bei uns an der Rezeption: +41 27 957 10 12 oder info@monte-moro.ch.",
+  "belegt": false,
+  "thema": "Öffnungszeiten des Röstihüs",
+  "buchung": false
+ },
+ {
+  "vor": [
+   2,
+   17,
+   25
+  ],
+  "sprache": "de",
+  "frage": "Sind Hunde erlaubt?",
+  "antwort": "Hund pro Tag ohne Futter: CHF 7.00 - 10.00.",
+  "belegt": true,
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   2,
+   9,
+   10
+  ],
+  "sprache": "de",
+  "frage": "Wie komme ich mit dem Zug und Postauto zu Ihnen?",
+  "antwort": "Wenn Sie mit dem Zug anreisen, erreichen Sie das Saastal über Visp, wo sie ins Postauto umsteigen. Es bestehen stündliche Verbindungen bis 20.10 Uhr ab Visp [bis Saas-Grund 22.40 ab Visp, sowie Freitag und Samstag um 23.40 Uhr]. In Saas-Grund müssen Sie umsteigen. Zeitdauer Visp - Saas-Almagell ca. 45 Min.",
+  "belegt": true,
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   3,
+   12,
+   30
+  ],
+  "sprache": "de",
+  "frage": "Ab wann können wir am Anreisetag ins Zimmer, gibt es einen Check-in?",
+  "antwort": "Wann Ihr Zimmer bereit ist und bis wann Sie es am Abreisetag nutzen, sagen Ihnen Esther und Fabian gern persönlich: +41 27 957 10 12 oder info@monte-moro.ch.",
+  "belegt": false,
+  "thema": "Check-in und Check-out",
+  "buchung": false
+ },
+ {
+  "vor": [
+   3,
+   15,
+   45
+  ],
+  "sprache": "en",
+  "belegt": true,
+  "thema": "",
+  "frage": "Are the cable cars included in summer?",
+  "antwort": "Yes, in summer all cable cars in the Saastal are included, except the Metro Alpin; the post buses in the whole Saastal are included in summer and winter.",
+  "buchung": false
+ },
+ {
+  "vor": [
+   4,
+   11,
+   0
+  ],
+  "sprache": "de",
+  "frage": "Was kostet das Spa im Partnerhotel?",
+  "antwort": "CHF 25.00 pro Person und Eintritt · CHF 150.00 7 Tage Abo pro Person. Bademantel, Schuhe, Handtücher stehen zur Verfügung.",
+  "belegt": true,
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   4,
+   18,
+   20
+  ],
+  "sprache": "de",
+  "frage": "Kann ich in Euro bezahlen?",
+  "antwort": "Bezahlung in Euro möglich, Rückgeld in Franken.",
+  "belegt": true,
+  "thema": "",
+  "buchung": false
+ }
+]

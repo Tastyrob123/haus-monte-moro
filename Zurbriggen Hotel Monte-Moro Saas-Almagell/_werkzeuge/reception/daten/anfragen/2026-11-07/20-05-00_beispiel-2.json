@@ -1,0 +1,40 @@
+{
+ "zeit": "2026-11-07T20:05:00+01:00",
+ "art": "zimmer",
+ "name": "Thomas Gerber",
+ "kontakt": "+41 79 555 01 23",
+ "datum": "14. bis 16. Januar 2027",
+ "personen": 2,
+ "anliegen": "Zimmer für zwei Erwachsene mit Halbpension, 2 Nächte im Januar; der Hund Bruno kommt mit.",
+ "sprache": "de",
+ "gespraech": "beispiel-2",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Grüezi, wir möchten im Januar zwei Nächte zu zweit kommen, vom 14. bis 16. Januar, mit Halbpension. Dürfen wir unseren Hund mitnehmen?"
+  },
+  {
+   "rolle": "assistant",
+   "text": "Ja, Ihr Hund ist bei uns willkommen; laut Preisliste kostet er CHF 7.00 - 10.00 pro Tag ohne Futter. Möchten Sie, dass ich Ihre Anfrage an die Rezeption weitergebe? Dann brauche ich Ihren Namen und eine E-Mail-Adresse oder Telefonnummer."
+  },
+  {
+   "rolle": "user",
+   "text": "Thomas Gerber, +41 79 555 01 23. Der Hund heisst Bruno."
+  },
+  {
+   "rolle": "assistant",
+   "text": "Herzlichen Dank. Ihre Anfrage liegt jetzt bei der Rezeption des Hotel Monte-Moro; Esther und Fabian melden sich persönlich bei Ihnen."
+  }
+ ],
+ "status": "gelesen",
+ "beispiel": true,
+ "abteilung": "Zimmer",
+ "entwurf": {
+  "betreff": "Ihr Wochenende im Januar mit Bruno",
+  "text": "Guten Tag Thomas Gerber,\n\nherzlichen Dank für Ihre Anfrage. Wir freuen uns, Sie und Bruno vom 14. bis 16. Januar bei uns in Saas-Almagell zu begrüssen; ob das Zimmer für diese Tage frei ist, prüfen wir gern für Sie [Zimmer prüfen].\n\nEin Zimmer mit Halbpension (4 Gänge) kostet bei uns ab CHF 120.00 pro Person und Tag; für einen Aufenthalt von 1 bis 3 Nächten kommt ein Zuschlag von CHF 5.00 pro Tag dazu. Für Bruno rechnen wir CHF 7.00 - 10.00 pro Tag ohne Futter [Preis für den Hund].\n\nDas Postauto im ganzen Saastal ist im Preis inbegriffen, und an einem Abend der Woche ist Racletteabend im Stübli.\n\nHerzliche Grüsse aus Saas-Almagell\n\nEsther und Fabian Zurbriggen\nHotel Monte-Moro",
+  "team": "Grundlage: Preise (Halbpension, Zuschläge, Hund), Inklusive.\nOffen: freies Zimmer, Preis für den Hund innerhalb CHF 7.00 bis 10.00, Budget- oder Standardzimmer.",
+  "vorlage": "zimmer",
+  "absender": "Telefon +41 27 957 10 12 · info@monte-moro.ch",
+  "zeit": "2026-11-07T20:05:00+01:00"
+ }
+}

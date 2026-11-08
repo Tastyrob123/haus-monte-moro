@@ -1,0 +1,27 @@
+{
+ "zeit": "2026-11-08T09:12:00+01:00",
+ "art": "zimmer",
+ "name": "Anna Meier",
+ "kontakt": "anna.meier@example.com",
+ "datum": "",
+ "personen": null,
+ "anliegen": "Familienzimmer: Wir möchten vom 26. bis 30. Dezember 2026 mit zwei Kindern (5 und 9 Jahre) kommen, gern mit Halbpension.",
+ "sprache": "de",
+ "gespraech": "beispiel-1",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Über ein Formular der Website (Seite Zimmer): Betreff: Familienzimmer\nIhre Nachricht: Wir möchten vom 26. bis 30. Dezember 2026 mit zwei Kindern (5 und 9 Jahre) kommen, gern mit Halbpension."
+  }
+ ],
+ "status": "neu",
+ "beispiel": true,
+ "an": "Telefon +41 27 957 10 12 · info@monte-moro.ch",
+ "abteilung": "Zimmer",
+ "seite": "/zimmer.html",
+ "seite_name": "Zimmer",
+ "web": true,
+ "nachricht": "Betreff: Familienzimmer\nIhre Nachricht: Wir möchten vom 26. bis 30. Dezember 2026 mit zwei Kindern (5 und 9 Jahre) kommen, gern mit Halbpension.",
+ "formular": "zimmer",
+ "entwurf": null
+}

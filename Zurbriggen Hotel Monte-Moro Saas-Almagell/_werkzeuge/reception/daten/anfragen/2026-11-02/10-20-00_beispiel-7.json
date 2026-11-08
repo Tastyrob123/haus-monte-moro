@@ -1,0 +1,27 @@
+{
+ "zeit": "2026-11-02T10:20:00+01:00",
+ "art": "nachricht",
+ "name": "Peter Schmid",
+ "kontakt": "+41 76 555 44 33",
+ "datum": "",
+ "personen": null,
+ "anliegen": "Frage zu den Preisen: Gilt die Gratis-Anreise mit dem Zug auch im Dezember noch?",
+ "sprache": "de",
+ "gespraech": "beispiel-7",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Über ein Formular der Website (Seite Preise): Betreff: Frage zu den Preisen\nIhre Nachricht: Gilt die Gratis-Anreise mit dem Zug auch im Dezember noch?"
+  }
+ ],
+ "status": "neu",
+ "beispiel": true,
+ "an": "Telefon +41 27 957 10 12 · info@monte-moro.ch",
+ "abteilung": "Nachrichten",
+ "seite": "/preise.html",
+ "seite_name": "Preise",
+ "web": true,
+ "nachricht": "Betreff: Frage zu den Preisen\nIhre Nachricht: Gilt die Gratis-Anreise mit dem Zug auch im Dezember noch?",
+ "formular": "allgemein",
+ "entwurf": null
+}

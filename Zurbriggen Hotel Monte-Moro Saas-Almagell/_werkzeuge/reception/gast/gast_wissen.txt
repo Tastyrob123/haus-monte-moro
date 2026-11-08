@@ -1,0 +1,182 @@
+=== Seite: Startseite · Hotel Monte-Moro (Website: index.html; Angaben des Hauses (website/inhalt/daten.py, Abruf 09.10.2026, Nachtrag 17.10.2026)) ===
+## Ihre Gastgeber
+Esther und Fabian Zurbriggen sind die Gastgeber im Hotel Monte-Moro in Saas-Almagell (Impressum: Esther & Fabian Zurbriggen-Zurbriggen).
+Mehr erleben, weniger zahlen.
+Das Hotel Monte Moro befindet sich an bester Lage in Saas-Almagell.
+Bei schönem Wetter (bei uns scheint fast immer die Sonne) können Sie übrigens auch unsere Sonnenterasse direkt vor dem Haus geniessen.
+Das Haus: 18 Zimmer, 55 Betten (Schweiz Tourismus), 3 Sterne.
+Im hauseigenen Restaurant Röstihüs verwöhnen wir Sie gerne mit Schweizer Spezialitäten, die mit Liebe, Herz und den besten regionalen Produkten zubereitet werden.
+## Noten der Gäste (Stand 17. Oktober 2026)
+Google: 4,5 von 5 (121 Bewertungen) · Booking.com: 8,3 von 10 (94 Bewertungen) · Personal: 9,0 Booking.com · Lage: 9,0 Booking.com · Sauberkeit: 8,8 Booking.com
+
+=== Seite: Zimmer und Ferienwohnungen · Hotel Monte-Moro (Website: zimmer.html; Angaben des Hauses (website/inhalt/daten.py, Abruf 09.10.2026, Nachtrag 17.10.2026)) ===
+## Schöne Hotelzimmer - schöne Ferien
+Alle Zimmer sind mit Dusche/Bad, WC, Haarfön, TV, Safe und Balkon ausgestattet. Zum Schutz unserer Gäste haben wir eine Brandmeldeanlage.
+Laut dem Eintrag des Hauses bei Booking.com: Sitzbereich, Flachbild-TV mit Satellitenkanälen, Schreibtisch, Kostenlose Pflegeprodukte, WLAN inklusive, Nichtraucherzimmer.
+## Familienzimmer
+Wir haben gemütliche, komfortable Familienzimmer und Familienkombinationen - ideal für 3 - 6 Personen.
+## Residence Alpenhof
+Wir bieten ebenfalls Hotelzimmer in der 4 Gehminuten entfernten Residence Alpenhof an (Frühstück und Abendessen im Hotel Monte-Moro).
+## Ferienwohnung Haus Apollo
+Das Haus Apollo befindet sich am Dorfeingang von Saas-Almagell. Da sich die Ferienwohnung im 4. Stock befindet, können wir Ihnen einen herrlichen Ausblick auf das ganze Dorf garantieren. Die Wohnung ist ausgestattet mit Fernseher, Geschirrspülmaschine, Kaffeemaschine und Südbalkon. Bett- und Frotteewäsche stehen Ihnen zur Verfügung. Der Parkplatz befindet sich direkt neben dem Haus.
+## Ferienwohnungen Haus Arizona
+Das Haus Arizona verfügt über gemütliche und geräumige 4½, 3½ und 2½-Zimmer - Wohnungen. Die Wohnungen sind komfortabel eingerichtet: TV, Radio, Geschirrspülmaschine, Kaffeemaschine und Mikrowelle. Bett- und Frotteewäsche stehen Ihnen zur Verfügung. Der Parkplatz befindet sich direkt neben dem Haus.
+
+=== Seite: Preise und Inklusive · Hotel Monte-Moro (Website: preise.html; Angaben des Hauses (website/inhalt/daten.py, Abruf 09.10.2026, Nachtrag 17.10.2026)) ===
+## Zimmer mit Frühstück und mit Halbpension (CHF pro Person / Tag)
+Budgetzimmer, Zimmer mit Frühstück: CHF 90.00 pro Person / Tag
+Standardzimmer, Zimmer mit Frühstück: CHF 100.00 pro Person / Tag
+Budgetzimmer, Zimmer mit Halbpension (4-Gänge): CHF 120.00 pro Person / Tag
+Standardzimmer, Zimmer mit Halbpension (4-Gänge): CHF 130.00 pro Person / Tag
+## Inklusive
+Benutzung Postautos im ganzen Saastal (Sommer/Winter)
+Benutzung aller Bergbahnen im Saastal (ohne Metro Alpin) (Sommer)
+ZF und HP: Frühstücksbuffet
+Halbpension: wöchentlicher Racletteabend
+Kidsclub: täglich Mo - Sa 16:30 bis 21:00 Uhr
+Hotelparkplatz
+Bergbahnen und Postautos im Sommer und Herbst ab der 1. Übernachtung inklusive!
+## Zuschläge
+Kurtaxe Erwachsene pro Tag (Winter): CHF 4.50
+Kurtaxe Erwachsene pro Tag (Sommer): CHF 7.00
+Kurtaxe Kinder (6 - 16 Jahre) pro Tag (Winter): CHF 2.25
+Kurtaxe Kinder (6 - 16 Jahre) pro Tag (Sommer): CHF 3.50
+Einzelzimmerzuschlag: 50 %
+Zuschlag für 1 - 3 Übernachtungen / pro Tag: CHF 5.00
+Hund pro Tag ohne Futter: CHF 7.00 - 10.00
+## Kinder
+Kinderzuschläge im Zimmer der Eltern (Preis pro Kind/Tag) inklusiv Halbpension: bis 5 Jahre: CHF 50.00 · 6 Jahre: CHF 60.00 · 7 Jahre: CHF 70.00 · 8 Jahre: CHF 80.00 · 9 - 16 Jahre: CHF 90.00
+Kinderzuschläge im eigenen Zimmer: normale Zimmerpreise.
+## Bezahlung
+Bezahlung in Euro möglich, Rückgeld in Franken.
+
+=== Seite: Restaurant Röstihüs · Hotel Monte-Moro (Website: roestihues.html; Angaben des Hauses (website/inhalt/daten.py, Abruf 09.10.2026, Nachtrag 17.10.2026)) ===
+## Es lebe die Tradition!
+Im hauseigenen Restaurant Röstihüs verwöhnen wir Sie gerne mit Schweizer Spezialitäten, die mit Liebe, Herz und den besten regionalen Produkten zubereitet werden.
+In unserem Röstihüs setzen wir auf Gastfreundschaft und Regionalität. Unseren Gästen zufolge servieren wir damit die wohl besten Röstis und Cordon Bleus der Region.
+Auch bei den Getränken setzen wir auf Regionalität. Es werden hervorragende Weine aus dem Kanton Wallis angeboten. Frisches Appenzeller Bier serviert sowie verschiedene Digestifs.
+Bei schönem Wetter (bei uns scheint fast immer die Sonne) können Sie übrigens auch unsere Sonnenterasse direkt vor dem Haus geniessen.
+Natürlich haben wir auch eine kleine Auswahl an Speisen für unsere kleinsten Gäste.
+## Best of Röstis (Karte vom 18.11.2024, Preise in Franken)
+Rösti Albert: Mit Bauernwurst, Speck und Röstigraben und Käse, Fr. 25.–
+Rösti Dracula: Mit Knoblauch, Rahm und Käse überbacken, Fr. 25.–
+Rösti Macugnaga: Mit Birnen, Gorgonzola, Rahm und Käse überbacken, Fr. 25.–
+Rösti Exotic Palma: Mit Schinken, Ananas, Rahm und Käse überbacken, Fr. 25.–
+Rösti Tschug Tschug: Mit Apfelmus und Calvados flambiert, Rahm und Käse überbacken, Fr. 27.–
+Rösti Gartu: Mit Gemüse, Rahm ohne Käse, Fr. 25.–
+Rösti Saastal: Mit Schinken, Spiegelei, Rahm und Käse überbacken, Fr. 25.–
+Rösti Diavolo: Mit Mozzarella , Salami, scharfer Tomatensauce, Rahm und Parmesan, Fr. 25.–
+Schmugglerrösti: Mit Tomaten, Thon, Mozzarella, Rahm und Käse überbacken, Fr. 27.–
+Rösti Olma: Mit Olma-Bratwurst , Zwiebelringen, Rahm und Käse überbacken, Fr. 27.–
+Rösti Indian Style: Mit gegrillten Krevettenspiess, Zwiebelringen, Ananas, Currysauce, Rahm und Käse überbacken, Fr. 32.–
+## Unsere Cordon bleus
+Cordon bleu Monte-Moro: Kalbfleisch mit Schinken und Käse, Fr. 42.–
+Cordon bleu Val Antrona: Schweinefleisch mit Schinken und Gorgonzola, Fr. 39.–
+Cordon bleu Knobli: Schweinefleisch mit Schinken, Zwiebeln, Käse und Knoblauch, Fr. 39.–
+Cordon bleu Hawaii: Schweinefleisch mit Schinken, Ananas, Käse, Fr. 39.–
+Cordon bleu Förster: Schweinefleisch mit Schinken, Trüffel, Pilzen und Käse, Fr. 41.–
+## Hotelweine
+«Hotelwein» Cuvee Special, Fils Maye | Prestige Silber (wurde von Fabian selber kreiert): Diolinoir, Syrah,Merlot, Pinot, 7 dl, Fr. 67.–
+«Hotelwein» Cuvee Special Eichenfass, Gilles Joel Cina | Prestige Gold (wurde von Fabian selber kreiert): Diolinoir, Syrah, Merlot, Angelotta, 7 dl, Fr. 67.–
+## Spritz
+Zurbriggen Spritz: Lemonsoda, Prosecco, Blue Curaçao, Fr. 12.–
+Antrona Spritz: Prosecco, Früchte, Campari, Fr. 12.–
+## Dessert und Raclette
+Monte-Moro-Kopf (Eiweissschaum mit Schoko und Eis): Fr. 15.–
+Raclette gross mit Pellkartoffeln: Fr. 17.–
+Halbpension: wöchentlicher Racletteabend im Stübli.
+## Tisch reservieren
+Telefon +41 27 957 10 12 oder über TheFork.
+
+=== Seite: Spa im Partnerhotel · Hotel Monte-Moro (Website: spa.html; Angaben des Hauses (website/inhalt/daten.py, Abruf 09.10.2026, Nachtrag 17.10.2026)) ===
+## Im Partnerhotel Pirmin Zurbriggen ****S
+Erleben Sie Entspannung pur im ausgezeichneten Spa vom Hotel Pirmin Zurbriggen****S. Hier können Sie die Seele baumeln lassen und dem Körper etwas Gutes tun.
+Das Angebot reicht vom Schwimmbad mit Filmvorführungen, Whirlpool, Saunalandschaft mit verschiedenen Saunen über Infrarotliegen, Isha-Whirlwanne, Kneippanlage, Solarium, Fitnesstower mit Hightech & TV, Massagepraxis, Hairstyling bis hin zum Beautysalon.
+CHF 25.00 pro Person und Eintritt (kann nicht auf andere Personen übertragen werden)
+CHF 150.00 7 Tage Abo pro Person
+Bademantel, Schuhe, Handtücher stehen zur Verfügung.
+
+=== Seite: Das Saastal · Hotel Monte-Moro (Website: saastal.html; Angaben des Hauses (website/inhalt/daten.py, Abruf 09.10.2026, Nachtrag 17.10.2026)) ===
+## Sommer
+Im Sommer ein herrliches Wanderparadies. Ueber 250 km Wanderwege; von einfachen Spaziergängen über Bergwanderungen bis zur Besteigung von Viertausendern, somit findet sich bestimmt für jedermann das Richtige.
+Wandern: Ueber 250 km Wanderwege
+Alpin Gorge: Durchquerung einer Gebirgsbachschlucht mit einem Bergführer
+Abenteuerwald: Suchen Sie eine besondere Herausforderung?
+Tennis, Velofahren, Trottiplausch, Schwimmen + Minigolf: Sportmöglichkeiten
+Tagesausflüge: Saas-Fee, Zermatt, Stresa, Chamonix, Montreux, Mattmark, Grande Dixence, Sitten, Glacier-Express
+## Winter
+Skifahren und Snowboarden: Saas-Almagell 2400m · Saas-Grund 3200m · Saas-Fee 3500m
+Wandern: mehrere Winterwanderwege
+Schneeschuhlaufen: aus «10 Dinge, die man im Saastal erlebt haben sollte»
+Saas-Fee: Metro Alpin mit dem höchstgelegenen Drehrestaurant auf 3'500 M.ü.M.
+## Lage
+2 Gehminuten: Skigebiet Saas-Almagell (Gehminuten vom Skigebiet Saas-Almagell)
+3 Gehminuten: Busstation (Alle 30 Minuten bringt Sie ein Bus ins Skigebiet Saas-Grund oder Saas-Fee)
+3 Gehminuten: Dorfkern (Einkaufsmöglichkeiten, Bankomat, Tourismusbüro usw.)
+Postauto im ganzen Saastal inklusive.
+
+=== Seite: Anreise · Hotel Monte-Moro (Website: anreise.html; Angaben des Hauses (website/inhalt/daten.py, Abruf 09.10.2026, Nachtrag 17.10.2026)) ===
+## Mit Zug und Postauto
+Wenn Sie mit dem Zug anreisen, erreichen Sie das Saastal über Visp, wo sie ins Postauto umsteigen. Es bestehen stündliche Verbindungen bis 20.10 Uhr ab Visp [bis Saas-Grund 22.40 ab Visp, sowie Freitag und Samstag um 23.40 Uhr]. In Saas-Grund müssen Sie umsteigen.
+Zeitdauer Visp - Saas-Almagell ca. 45 Min.
+## Mit dem Auto
+Von Visp aus fahren sie durchs Vispertal, bei der Verzweigung in Stalden Richtung Saastal, in Saas-Grund, bei der Abzweigung nach Saas-Fee halten sie sich links und erreichen so Ihr Reiseziel - den Ferienort Saas-Almagell.
+Zeitdauer Visp - Saas-Almagell ca. 40 Min.
+## Parkplatz
+Parkplätze für Hotelgäste stehen zur Verfügung. Hotelparkplatz inklusive.
+
+=== Fragen und Antworten des Chats der Website (Website: assets/js/wissen.json, Angaben der Seiten des Hauses (Abruf 09.10.2026)) ===
+## Preise: Was ist im Preis inbegriffen?
+Inklusive: Benutzung Postautos im ganzen Saastal (Sommer/Winter); Benutzung aller Bergbahnen im Saastal (ohne Metro Alpin) (Sommer); ZF und HP: Frühstücksbuffet; Halbpension: wöchentlicher Racletteabend; Kidsclub: täglich Mo - Sa 16:30 bis 21:00 Uhr; Hotelparkplatz.
+## Preise: Was kostet ein Zimmer?
+Budgetzimmer, Zimmer mit Frühstück: CHF 90.00 pro Person / Tag · Standardzimmer, Zimmer mit Frühstück: CHF 100.00 pro Person / Tag · Budgetzimmer, Zimmer mit Halbpension (4-Gänge): CHF 120.00 pro Person / Tag · Standardzimmer, Zimmer mit Halbpension (4-Gänge): CHF 130.00 pro Person / Tag.
+## Preise: Wie hoch ist die Kurtaxe?
+Kurtaxe Erwachsene pro Tag (Winter): CHF 4.50 · Kurtaxe Erwachsene pro Tag (Sommer): CHF 7.00 · Kurtaxe Kinder (6 - 16 Jahre) pro Tag (Winter): CHF 2.25 · Kurtaxe Kinder (6 - 16 Jahre) pro Tag (Sommer): CHF 3.50.
+## Preise: Gibt es einen Zuschlag für Einzelzimmer oder kurze Aufenthalte?
+Einzelzimmerzuschlag 50 %. Zuschlag für 1 - 3 Übernachtungen / pro Tag CHF 5.00.
+## Preise: Kann ich in Euro bezahlen?
+Bezahlung in Euro möglich, Rückgeld in Franken.
+## Hund: Sind Hunde erlaubt?
+Hund pro Tag ohne Futter: CHF 7.00 - 10.00.
+## Kinder: Gibt es einen Kidsclub für Kinder?
+Kidsclub: täglich Mo - Sa 16:30 bis 21:00 Uhr, inklusive.
+## Kinder: Was kosten Kinder im Zimmer der Eltern?
+Kinderzuschläge im Zimmer der Eltern (Preis pro Kind/Tag) inklusiv Halbpension: bis 5 Jahre: CHF 50.00 · 6 Jahre: CHF 60.00 · 7 Jahre: CHF 70.00 · 8 Jahre: CHF 80.00 · 9 - 16 Jahre: CHF 90.00. Kinderzuschläge im eigenen Zimmer: normale Zimmerpreise.
+## Zimmer: Gibt es Familienzimmer?
+Wir haben gemütliche, komfortable Familienzimmer und Familienkombinationen - ideal für 3 - 6 Personen.
+## Zimmer: Wie sind die Zimmer ausgestattet?
+Alle Zimmer sind mit Dusche/Bad, WC, Haarfön, TV, Safe und Balkon ausgestattet. Zum Schutz unserer Gäste haben wir eine Brandmeldeanlage.
+## Zimmer: Was ist die Residence Alpenhof?
+Wir bieten ebenfalls Hotelzimmer in der 4 Gehminuten entfernten Residence Alpenhof an (Frühstück und Abendessen im Hotel Monte-Moro).
+## Ferienwohnung: Wie ist die Ferienwohnung im Haus Apollo?
+Das Haus Apollo befindet sich am Dorfeingang von Saas-Almagell. Da sich die Ferienwohnung im 4. Stock befindet, können wir Ihnen einen herrlichen Ausblick auf das ganze Dorf garantieren. Die Wohnung ist ausgestattet mit Fernseher, Geschirrspülmaschine, Kaffeemaschine und Südbalkon. Bett- und Frotteewäsche stehen Ihnen zur Verfügung. Der Parkplatz befindet sich direkt neben dem Haus.
+## Ferienwohnung: Welche Ferienwohnungen gibt es im Haus Arizona?
+Das Haus Arizona verfügt über gemütliche und geräumige 4½, 3½ und 2½-Zimmer - Wohnungen. Die Wohnungen sind komfortabel eingerichtet: TV, Radio, Geschirrspülmaschine, Kaffeemaschine und Mikrowelle. Bett- und Frotteewäsche stehen Ihnen zur Verfügung. Der Parkplatz befindet sich direkt neben dem Haus.
+## Anreise: Wie komme ich mit dem Zug und Postauto zu Ihnen?
+Wenn Sie mit dem Zug anreisen, erreichen Sie das Saastal über Visp, wo sie ins Postauto umsteigen. Es bestehen stündliche Verbindungen bis 20.10 Uhr ab Visp [bis Saas-Grund 22.40 ab Visp, sowie Freitag und Samstag um 23.40 Uhr]. In Saas-Grund müssen Sie umsteigen. Zeitdauer Visp - Saas-Almagell ca. 45 Min.
+## Anreise: Wie komme ich mit dem Auto zu Ihnen?
+Von Visp aus fahren sie durchs Vispertal, bei der Verzweigung in Stalden Richtung Saastal, in Saas-Grund, bei der Abzweigung nach Saas-Fee halten sie sich links und erreichen so Ihr Reiseziel - den Ferienort Saas-Almagell. Zeitdauer Visp - Saas-Almagell ca. 40 Min.
+## Lage: Wie weit ist es zum Skigebiet und zum Bus?
+2 Gehminuten: Skigebiet Saas-Almagell (Gehminuten vom Skigebiet Saas-Almagell) · 3 Gehminuten: Busstation (Alle 30 Minuten bringt Sie ein Bus ins Skigebiet Saas-Grund oder Saas-Fee) · 3 Gehminuten: Dorfkern (Einkaufsmöglichkeiten, Bankomat, Tourismusbüro usw.).
+## Parkplatz: Gibt es einen Parkplatz beim Hotel?
+Parkplätze für Hotelgäste stehen zur Verfügung. Hotelparkplatz inklusive.
+## Bergbahnen: Sind die Bergbahnen und das Postauto inbegriffen?
+Bergbahnen und Postautos im Sommer und Herbst ab der 1. Übernachtung inklusive! Laut Preisliste: Benutzung Postautos im ganzen Saastal (Sommer/Winter); Benutzung aller Bergbahnen im Saastal (ohne Metro Alpin) (Sommer).
+## Röstihüs: Welche Röstis gibt es im Röstihüs?
+Rösti Albert (Fr. 25.–) · Rösti Dracula (Fr. 25.–) · Rösti Macugnaga (Fr. 25.–) · Rösti Exotic Palma (Fr. 25.–) · Rösti Tschug Tschug (Fr. 27.–) · Rösti Gartu (Fr. 25.–) · Rösti Saastal (Fr. 25.–) · Rösti Diavolo (Fr. 25.–) · Schmugglerrösti (Fr. 27.–) · Rösti Olma (Fr. 27.–) · Rösti Indian Style (Fr. 32.–).
+## Röstihüs: Welche Cordon bleus gibt es?
+Monte-Moro: Kalbfleisch mit Schinken und Käse (Fr. 42.–) · Val Antrona: Schweinefleisch mit Schinken und Gorgonzola (Fr. 39.–) · Knobli: Schweinefleisch mit Schinken, Zwiebeln, Käse und Knoblauch (Fr. 39.–) · Hawaii: Schweinefleisch mit Schinken, Ananas, Käse (Fr. 39.–) · Förster: Schweinefleisch mit Schinken, Trüffel, Pilzen und Käse (Fr. 41.–).
+## Röstihüs: Wie reserviere ich einen Tisch im Röstihüs?
+Telefon +41 27 957 10 12 oder über TheFork. Die Öffnungszeiten erfahren Sie an der Rezeption.
+## Röstihüs: Gibt es Raclette?
+Halbpension: wöchentlicher Racletteabend. Auf der Karte: Raclette gross mit Pellkartoffeln, Fr. 17.–.
+## Wein: Was ist der Hotelwein?
+«Hotelwein» Cuvee Special, Fils Maye | Prestige Silber (wurde von Fabian selber kreiert), Diolinoir, Syrah,Merlot, Pinot 7 dl Fr. 67.– · «Hotelwein» Cuvee Special Eichenfass, Gilles Joel Cina | Prestige Gold (wurde von Fabian selber kreiert), Diolinoir, Syrah, Merlot, Angelotta, 7 dl Fr. 67.–
+## Spa: Was kostet das Spa im Partnerhotel?
+CHF 25.00 pro Person und Eintritt · CHF 150.00 7 Tage Abo pro Person. Bademantel, Schuhe, Handtücher stehen zur Verfügung.
+## Spa: Was bietet das Spa nebenan?
+Das Angebot reicht vom Schwimmbad mit Filmvorführungen, Whirlpool, Saunalandschaft mit verschiedenen Saunen über Infrarotliegen, Isha-Whirlwanne, Kneippanlage, Solarium, Fitnesstower mit Hightech & TV, Massagepraxis, Hairstyling bis hin zum Beautysalon.
+## Saastal: Was kann man im Sommer im Saastal machen?
+Im Sommer ein herrliches Wanderparadies. Ueber 250 km Wanderwege; von einfachen Spaziergängen über Bergwanderungen bis zur Besteigung von Viertausendern, somit findet sich bestimmt für jedermann das Richtige.
+## Kontakt: Wie erreiche ich das Hotel?
+Telefon +41 27 957 10 12, Fax +41 27 957 37 12, info@monte-moro.ch, CH-3905 Saas-Almagell.

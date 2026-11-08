@@ -1,0 +1,40 @@
+{
+ "zeit": "2026-11-05T14:10:00+01:00",
+ "art": "nachricht",
+ "name": "Sabine Lehner",
+ "kontakt": "sabine.lehner@example.com",
+ "datum": "",
+ "personen": null,
+ "anliegen": "Fragt, was das Spa im Partnerhotel kostet und ob Bademäntel dabei sind.",
+ "sprache": "de",
+ "gespraech": "beispiel-5",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Was kostet das Spa nebenan, und muss ich einen Bademantel mitbringen?"
+  },
+  {
+   "rolle": "assistant",
+   "text": "Das Spa im Partnerhotel kostet CHF 25.00 pro Person und Eintritt, das 7-Tage-Abo CHF 150.00. Bademantel, Schuhe und Handtücher stehen zur Verfügung. Möchten Sie der Rezeption noch etwas schreiben? Dann brauche ich Ihren Namen und eine E-Mail-Adresse."
+  },
+  {
+   "rolle": "user",
+   "text": "Sabine Lehner, sabine.lehner@example.com. Danke, das war schon alles."
+  },
+  {
+   "rolle": "assistant",
+   "text": "Herzlichen Dank. Ihre Anfrage liegt jetzt bei der Rezeption des Hotel Monte-Moro; Esther und Fabian melden sich persönlich bei Ihnen."
+  }
+ ],
+ "status": "erledigt",
+ "beispiel": true,
+ "abteilung": "Nachrichten",
+ "entwurf": {
+  "betreff": "Das Spa im Partnerhotel",
+  "text": "Guten Tag Sabine Lehner,\n\nschön, dass Sie sich nach einem Tag am Berg etwas Gutes tun möchten. Unsere Gäste nutzen das ausgezeichnete Spa im Partnerhotel Pirmin Zurbriggen gleich nebenan.\n\nDer Eintritt kostet CHF 25.00 pro Person, das 7-Tage-Abo CHF 150.00 pro Person. Bademantel, Schuhe und Handtücher stehen Ihnen zur Verfügung.\n\nHerzliche Grüsse aus Saas-Almagell\n\nEsther und Fabian Zurbriggen\nHotel Monte-Moro",
+  "team": "Grundlage: Spa (Tarife, «Bademantel, Schuhe, Handtücher stehen zur Verfügung»).\nOffen: nichts.",
+  "vorlage": "",
+  "absender": "Telefon +41 27 957 10 12 · info@monte-moro.ch",
+  "zeit": "2026-11-05T14:10:00+01:00"
+ }
+}

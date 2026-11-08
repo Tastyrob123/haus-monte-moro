@@ -1,0 +1,51 @@
+{
+ "zeit": "2026-11-03T21:15:00+01:00",
+ "art": "zimmer",
+ "name": "James Whitfield",
+ "kontakt": "james.whitfield@example.com",
+ "datum": "February, 3 nights",
+ "personen": 1,
+ "anliegen": "Single room for 3 nights in February, for skiing.",
+ "sprache": "en",
+ "gespraech": "beispiel-6",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Hello, I would like to come for three nights of skiing in February, on my own. Do you have a single room?"
+  },
+  {
+   "rolle": "assistant",
+   "text": "I will gladly pass your request on to our reception. What is your name, and how can the hotel reach you?"
+  },
+  {
+   "rolle": "user",
+   "text": "James Whitfield, james.whitfield@example.com"
+  },
+  {
+   "rolle": "assistant",
+   "text": "Thank you very much. Your request is now with the reception of Hotel Monte-Moro; Esther and Fabian will get back to you personally."
+  }
+ ],
+ "status": "gelesen",
+ "beispiel": true,
+ "abteilung": "Zimmer",
+ "entwurf": {
+  "betreff": "Your skiing days in Saas-Almagell",
+  "text": "Dear James Whitfield,\n\nthank you very much for your enquiry. We would be delighted to welcome you for three nights in February [Zimmer prüfen]; the ski area of Saas-Almagell is just two minutes on foot from the hotel.\n\nA room with breakfast starts at CHF 90.00 per person and day, with half board (4 courses) at CHF 120.00. For a single room we add 50 %, and for stays of 1 to 3 nights CHF 5.00 per day.\n\nPlease let us know your dates of arrival and departure, and whether you would like breakfast or half board.\n\nWarm regards from Saas-Almagell\n\nEsther und Fabian Zurbriggen\nHotel Monte-Moro",
+  "team": "Grundlage: Preise (Zimmer, Einzelzimmerzuschlag, Zuschlag 1 bis 3 Nächte), Lage (2 Gehminuten zum Skigebiet).\nOffen: genaue Daten, freies Zimmer.",
+  "vorlage": "zimmer",
+  "absender": "Telefon +41 27 957 10 12 · info@monte-moro.ch",
+  "zeit": "2026-11-03T21:15:00+01:00",
+  "deutsch": {
+   "betreff": "Ihre Skitage in Saas-Almagell",
+   "text": "Guten Tag James Whitfield,\n\nherzlichen Dank für Ihre Anfrage. Wir freuen uns, Sie im Februar für drei Nächte zu begrüssen [Zimmer prüfen]; das Skigebiet Saas-Almagell liegt nur zwei Gehminuten vom Hotel.\n\nEin Zimmer mit Frühstück kostet ab CHF 90.00 pro Person und Tag, mit Halbpension (4 Gänge) ab CHF 120.00. Für ein Einzelzimmer kommen 50 % dazu, für 1 bis 3 Nächte CHF 5.00 pro Tag.\n\nBitte nennen Sie uns Anreise und Abreise und ob Sie Frühstück oder Halbpension wünschen.\n\nHerzliche Grüsse aus Saas-Almagell\n\nEsther und Fabian Zurbriggen\nHotel Monte-Moro",
+   "quelle": "555b8ff80014"
+  }
+ },
+ "verlauf_de": [
+  "Guten Tag, ich möchte im Februar drei Nächte zum Skifahren kommen, allein. Haben Sie ein Einzelzimmer?",
+  "Gern gebe ich Ihre Anfrage an die Rezeption weiter. Wie ist Ihr Name, und wie erreicht Sie das Haus?",
+  "James Whitfield, james.whitfield@example.com",
+  "Herzlichen Dank. Ihre Anfrage liegt jetzt bei der Rezeption des Hotel Monte-Moro; Esther und Fabian melden sich persönlich bei Ihnen."
+ ]
+}

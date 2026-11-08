@@ -1,0 +1,248 @@
+[
+ {
+  "vor": [
+   0,
+   9,
+   12
+  ],
+  "art": "zimmer",
+  "status": "neu",
+  "abteilung": "Zimmer",
+  "name": "Anna Meier",
+  "kontakt": "anna.meier@example.com",
+  "datum": "",
+  "personen": null,
+  "sprache": "de",
+  "anliegen": "Familienzimmer: Wir möchten vom 26. bis 30. Dezember 2026 mit zwei Kindern (5 und 9 Jahre) kommen, gern mit Halbpension.",
+  "betreff": "",
+  "text": "",
+  "team": "",
+  "web": true,
+  "an": "Telefon +41 27 957 10 12 · info@monte-moro.ch",
+  "seite": "/zimmer.html",
+  "seite_name": "Zimmer",
+  "formular": "zimmer",
+  "nachricht": "Betreff: Familienzimmer\nIhre Nachricht: Wir möchten vom 26. bis 30. Dezember 2026 mit zwei Kindern (5 und 9 Jahre) kommen, gern mit Halbpension.",
+  "verlauf": [
+   [
+    "user",
+    "Über ein Formular der Website (Seite Zimmer): Betreff: Familienzimmer\nIhre Nachricht: Wir möchten vom 26. bis 30. Dezember 2026 mit zwei Kindern (5 und 9 Jahre) kommen, gern mit Halbpension."
+   ]
+  ]
+ },
+ {
+  "vor": [
+   1,
+   20,
+   5
+  ],
+  "art": "zimmer",
+  "status": "gelesen",
+  "abteilung": "Zimmer",
+  "name": "Thomas Gerber",
+  "kontakt": "+41 79 555 01 23",
+  "datum": "14. bis 16. Januar 2027",
+  "personen": 2,
+  "sprache": "de",
+  "anliegen": "Zimmer für zwei Erwachsene mit Halbpension, 2 Nächte im Januar; der Hund Bruno kommt mit.",
+  "betreff": "Ihr Wochenende im Januar mit Bruno",
+  "text": "Guten Tag Thomas Gerber,\n\nherzlichen Dank für Ihre Anfrage. Wir freuen uns, Sie und Bruno vom 14. bis 16. Januar bei uns in Saas-Almagell zu begrüssen; ob das Zimmer für diese Tage frei ist, prüfen wir gern für Sie [Zimmer prüfen].\n\nEin Zimmer mit Halbpension (4 Gänge) kostet bei uns ab CHF 120.00 pro Person und Tag; für einen Aufenthalt von 1 bis 3 Nächten kommt ein Zuschlag von CHF 5.00 pro Tag dazu. Für Bruno rechnen wir CHF 7.00 - 10.00 pro Tag ohne Futter [Preis für den Hund].\n\nDas Postauto im ganzen Saastal ist im Preis inbegriffen, und an einem Abend der Woche ist Racletteabend im Stübli.\n\nHerzliche Grüsse aus Saas-Almagell\n\nEsther und Fabian Zurbriggen\nHotel Monte-Moro",
+  "team": "Grundlage: Preise (Halbpension, Zuschläge, Hund), Inklusive.\nOffen: freies Zimmer, Preis für den Hund innerhalb CHF 7.00 bis 10.00, Budget- oder Standardzimmer.",
+  "verlauf": [
+   [
+    "user",
+    "Grüezi, wir möchten im Januar zwei Nächte zu zweit kommen, vom 14. bis 16. Januar, mit Halbpension. Dürfen wir unseren Hund mitnehmen?"
+   ],
+   [
+    "assistant",
+    "Ja, Ihr Hund ist bei uns willkommen; laut Preisliste kostet er CHF 7.00 - 10.00 pro Tag ohne Futter. Möchten Sie, dass ich Ihre Anfrage an die Rezeption weitergebe? Dann brauche ich Ihren Namen und eine E-Mail-Adresse oder Telefonnummer."
+   ],
+   [
+    "user",
+    "Thomas Gerber, +41 79 555 01 23. Der Hund heisst Bruno."
+   ],
+   [
+    "assistant",
+    "Herzlichen Dank. Ihre Anfrage liegt jetzt bei der Rezeption des Hotel Monte-Moro; Esther und Fabian melden sich persönlich bei Ihnen."
+   ]
+  ]
+ },
+ {
+  "vor": [
+   1,
+   11,
+   30
+  ],
+  "art": "tisch",
+  "status": "neu",
+  "abteilung": "Röstihüs",
+  "name": "Claudia Imboden",
+  "kontakt": "claudia.imboden@example.com",
+  "datum": "Sa, 14. November 2026",
+  "uhrzeit": "19:00 Uhr",
+  "personen": 4,
+  "sprache": "de",
+  "anliegen": "Tisch im Röstihüs: Wir freuen uns auf Röstis. Eine von uns isst kein Gluten.",
+  "betreff": "",
+  "text": "",
+  "team": "",
+  "web": true,
+  "an": "Telefon +41 27 957 10 12 · info@monte-moro.ch",
+  "seite": "/roestihues.html",
+  "seite_name": "Röstihüs",
+  "formular": "tisch",
+  "nachricht": "Betreff: Tisch im Röstihüs\nTag: Sa, 14. November 2026\nUhrzeit: 19:00 Uhr\nPersonen: 4\nIhre Nachricht: Wir freuen uns auf Röstis. Eine von uns isst kein Gluten.",
+  "verlauf": [
+   [
+    "user",
+    "Über ein Formular der Website (Seite Röstihüs): Betreff: Tisch im Röstihüs\nTag: Sa, 14. November 2026\nUhrzeit: 19:00 Uhr\nPersonen: 4\nIhre Nachricht: Wir freuen uns auf Röstis. Eine von uns isst kein Gluten."
+   ]
+  ]
+ },
+ {
+  "vor": [
+   2,
+   18,
+   45
+  ],
+  "art": "wohnung",
+  "status": "gelesen",
+  "abteilung": "Ferienwohnungen",
+  "name": "Markus Brunner",
+  "kontakt": "markus.brunner@example.com",
+  "datum": "",
+  "personen": null,
+  "sprache": "de",
+  "anliegen": "Haus Arizona: Wir sind zu fünft und suchen vom 1. bis 8. August 2027 eine 3½-Zimmer-Wohnung.",
+  "betreff": "Ihre Ferienwohnung im Haus Arizona",
+  "text": "Guten Tag Markus Brunner,\n\nherzlichen Dank für Ihre Anfrage und Ihr Interesse an unseren Ferienwohnungen. Gern schauen wir, ob für Sie fünf vom 1. bis 8. August eine 3½-Zimmer-Wohnung im Haus Arizona frei ist [Wohnung prüfen].\n\nDie Wohnungen sind komfortabel eingerichtet, mit TV, Radio, Geschirrspülmaschine, Kaffeemaschine und Mikrowelle; Bett- und Frotteewäsche stehen Ihnen zur Verfügung, und der Parkplatz liegt direkt neben dem Haus.\n\nDen Preis für Ihre Woche nennen wir Ihnen gern persönlich [Preis der Wohnung]. Im Sommer sind bei uns alle Bergbahnen im Saastal ausser der Metro Alpin inklusive.\n\nHerzliche Grüsse aus Saas-Almagell\n\nEsther und Fabian Zurbriggen\nHotel Monte-Moro",
+  "team": "Grundlage: Zimmer und Ferienwohnungen (Haus Arizona), Inklusive.\nOffen: Preis der Wohnung (nicht veröffentlicht), freie Wohnung, ob die Bergbahnen auch für Gäste der Ferienwohnungen gelten.",
+  "web": true,
+  "an": "Telefon +41 27 957 10 12 · info@monte-moro.ch",
+  "seite": "/zimmer.html",
+  "seite_name": "Zimmer",
+  "formular": "zimmer",
+  "nachricht": "Betreff: Haus Arizona\nIhre Nachricht: Wir sind zu fünft und suchen vom 1. bis 8. August 2027 eine 3½-Zimmer-Wohnung.",
+  "verlauf": [
+   [
+    "user",
+    "Über ein Formular der Website (Seite Zimmer): Betreff: Haus Arizona\nIhre Nachricht: Wir sind zu fünft und suchen vom 1. bis 8. August 2027 eine 3½-Zimmer-Wohnung."
+   ]
+  ]
+ },
+ {
+  "vor": [
+   3,
+   14,
+   10
+  ],
+  "art": "nachricht",
+  "status": "erledigt",
+  "abteilung": "Nachrichten",
+  "name": "Sabine Lehner",
+  "kontakt": "sabine.lehner@example.com",
+  "datum": "",
+  "personen": null,
+  "sprache": "de",
+  "anliegen": "Fragt, was das Spa im Partnerhotel kostet und ob Bademäntel dabei sind.",
+  "betreff": "Das Spa im Partnerhotel",
+  "text": "Guten Tag Sabine Lehner,\n\nschön, dass Sie sich nach einem Tag am Berg etwas Gutes tun möchten. Unsere Gäste nutzen das ausgezeichnete Spa im Partnerhotel Pirmin Zurbriggen gleich nebenan.\n\nDer Eintritt kostet CHF 25.00 pro Person, das 7-Tage-Abo CHF 150.00 pro Person. Bademantel, Schuhe und Handtücher stehen Ihnen zur Verfügung.\n\nHerzliche Grüsse aus Saas-Almagell\n\nEsther und Fabian Zurbriggen\nHotel Monte-Moro",
+  "team": "Grundlage: Spa (Tarife, «Bademantel, Schuhe, Handtücher stehen zur Verfügung»).\nOffen: nichts.",
+  "verlauf": [
+   [
+    "user",
+    "Was kostet das Spa nebenan, und muss ich einen Bademantel mitbringen?"
+   ],
+   [
+    "assistant",
+    "Das Spa im Partnerhotel kostet CHF 25.00 pro Person und Eintritt, das 7-Tage-Abo CHF 150.00. Bademantel, Schuhe und Handtücher stehen zur Verfügung. Möchten Sie der Rezeption noch etwas schreiben? Dann brauche ich Ihren Namen und eine E-Mail-Adresse."
+   ],
+   [
+    "user",
+    "Sabine Lehner, sabine.lehner@example.com. Danke, das war schon alles."
+   ],
+   [
+    "assistant",
+    "Herzlichen Dank. Ihre Anfrage liegt jetzt bei der Rezeption des Hotel Monte-Moro; Esther und Fabian melden sich persönlich bei Ihnen."
+   ]
+  ]
+ },
+ {
+  "vor": [
+   5,
+   21,
+   15
+  ],
+  "art": "zimmer",
+  "status": "gelesen",
+  "abteilung": "Zimmer",
+  "name": "James Whitfield",
+  "kontakt": "james.whitfield@example.com",
+  "datum": "February, 3 nights",
+  "personen": 1,
+  "sprache": "en",
+  "anliegen": "Single room for 3 nights in February, for skiing.",
+  "betreff": "Your skiing days in Saas-Almagell",
+  "text": "Dear James Whitfield,\n\nthank you very much for your enquiry. We would be delighted to welcome you for three nights in February [Zimmer prüfen]; the ski area of Saas-Almagell is just two minutes on foot from the hotel.\n\nA room with breakfast starts at CHF 90.00 per person and day, with half board (4 courses) at CHF 120.00. For a single room we add 50 %, and for stays of 1 to 3 nights CHF 5.00 per day.\n\nPlease let us know your dates of arrival and departure, and whether you would like breakfast or half board.\n\nWarm regards from Saas-Almagell\n\nEsther und Fabian Zurbriggen\nHotel Monte-Moro",
+  "team": "Grundlage: Preise (Zimmer, Einzelzimmerzuschlag, Zuschlag 1 bis 3 Nächte), Lage (2 Gehminuten zum Skigebiet).\nOffen: genaue Daten, freies Zimmer.",
+  "deutsch": {
+   "betreff": "Ihre Skitage in Saas-Almagell",
+   "text": "Guten Tag James Whitfield,\n\nherzlichen Dank für Ihre Anfrage. Wir freuen uns, Sie im Februar für drei Nächte zu begrüssen [Zimmer prüfen]; das Skigebiet Saas-Almagell liegt nur zwei Gehminuten vom Hotel.\n\nEin Zimmer mit Frühstück kostet ab CHF 90.00 pro Person und Tag, mit Halbpension (4 Gänge) ab CHF 120.00. Für ein Einzelzimmer kommen 50 % dazu, für 1 bis 3 Nächte CHF 5.00 pro Tag.\n\nBitte nennen Sie uns Anreise und Abreise und ob Sie Frühstück oder Halbpension wünschen.\n\nHerzliche Grüsse aus Saas-Almagell\n\nEsther und Fabian Zurbriggen\nHotel Monte-Moro"
+  },
+  "verlauf_de": [
+   "Guten Tag, ich möchte im Februar drei Nächte zum Skifahren kommen, allein. Haben Sie ein Einzelzimmer?",
+   "Gern gebe ich Ihre Anfrage an die Rezeption weiter. Wie ist Ihr Name, und wie erreicht Sie das Haus?",
+   "James Whitfield, james.whitfield@example.com",
+   "Herzlichen Dank. Ihre Anfrage liegt jetzt bei der Rezeption des Hotel Monte-Moro; Esther und Fabian melden sich persönlich bei Ihnen."
+  ],
+  "verlauf": [
+   [
+    "user",
+    "Hello, I would like to come for three nights of skiing in February, on my own. Do you have a single room?"
+   ],
+   [
+    "assistant",
+    "I will gladly pass your request on to our reception. What is your name, and how can the hotel reach you?"
+   ],
+   [
+    "user",
+    "James Whitfield, james.whitfield@example.com"
+   ],
+   [
+    "assistant",
+    "Thank you very much. Your request is now with the reception of Hotel Monte-Moro; Esther and Fabian will get back to you personally."
+   ]
+  ]
+ },
+ {
+  "vor": [
+   6,
+   10,
+   20
+  ],
+  "art": "nachricht",
+  "status": "neu",
+  "abteilung": "Nachrichten",
+  "name": "Peter Schmid",
+  "kontakt": "+41 76 555 44 33",
+  "datum": "",
+  "personen": null,
+  "sprache": "de",
+  "anliegen": "Frage zu den Preisen: Gilt die Gratis-Anreise mit dem Zug auch im Dezember noch?",
+  "betreff": "",
+  "text": "",
+  "team": "",
+  "web": true,
+  "an": "Telefon +41 27 957 10 12 · info@monte-moro.ch",
+  "seite": "/preise.html",
+  "seite_name": "Preise",
+  "formular": "allgemein",
+  "nachricht": "Betreff: Frage zu den Preisen\nIhre Nachricht: Gilt die Gratis-Anreise mit dem Zug auch im Dezember noch?",
+  "verlauf": [
+   [
+    "user",
+    "Über ein Formular der Website (Seite Preise): Betreff: Frage zu den Preisen\nIhre Nachricht: Gilt die Gratis-Anreise mit dem Zug auch im Dezember noch?"
+   ]
+  ]
+ }
+]

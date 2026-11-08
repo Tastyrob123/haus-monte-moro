@@ -1,0 +1,34 @@
+{
+ "zeit": "2026-11-06T18:45:00+01:00",
+ "art": "wohnung",
+ "name": "Markus Brunner",
+ "kontakt": "markus.brunner@example.com",
+ "datum": "",
+ "personen": null,
+ "anliegen": "Haus Arizona: Wir sind zu fünft und suchen vom 1. bis 8. August 2027 eine 3½-Zimmer-Wohnung.",
+ "sprache": "de",
+ "gespraech": "beispiel-4",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Über ein Formular der Website (Seite Zimmer): Betreff: Haus Arizona\nIhre Nachricht: Wir sind zu fünft und suchen vom 1. bis 8. August 2027 eine 3½-Zimmer-Wohnung."
+  }
+ ],
+ "status": "gelesen",
+ "beispiel": true,
+ "an": "Telefon +41 27 957 10 12 · info@monte-moro.ch",
+ "abteilung": "Ferienwohnungen",
+ "seite": "/zimmer.html",
+ "seite_name": "Zimmer",
+ "web": true,
+ "nachricht": "Betreff: Haus Arizona\nIhre Nachricht: Wir sind zu fünft und suchen vom 1. bis 8. August 2027 eine 3½-Zimmer-Wohnung.",
+ "formular": "zimmer",
+ "entwurf": {
+  "betreff": "Ihre Ferienwohnung im Haus Arizona",
+  "text": "Guten Tag Markus Brunner,\n\nherzlichen Dank für Ihre Anfrage und Ihr Interesse an unseren Ferienwohnungen. Gern schauen wir, ob für Sie fünf vom 1. bis 8. August eine 3½-Zimmer-Wohnung im Haus Arizona frei ist [Wohnung prüfen].\n\nDie Wohnungen sind komfortabel eingerichtet, mit TV, Radio, Geschirrspülmaschine, Kaffeemaschine und Mikrowelle; Bett- und Frotteewäsche stehen Ihnen zur Verfügung, und der Parkplatz liegt direkt neben dem Haus.\n\nDen Preis für Ihre Woche nennen wir Ihnen gern persönlich [Preis der Wohnung]. Im Sommer sind bei uns alle Bergbahnen im Saastal ausser der Metro Alpin inklusive.\n\nHerzliche Grüsse aus Saas-Almagell\n\nEsther und Fabian Zurbriggen\nHotel Monte-Moro",
+  "team": "Grundlage: Zimmer und Ferienwohnungen (Haus Arizona), Inklusive.\nOffen: Preis der Wohnung (nicht veröffentlicht), freie Wohnung, ob die Bergbahnen auch für Gäste der Ferienwohnungen gelten.",
+  "vorlage": "wohnung",
+  "absender": "Telefon +41 27 957 10 12 · info@monte-moro.ch",
+  "zeit": "2026-11-06T18:45:00+01:00"
+ }
+}

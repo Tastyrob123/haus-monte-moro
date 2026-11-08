@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="de" data-wo-titel="Anleitung · {name} · Hotel Monte-Moro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anleitung · Die Rezeption · Hotel Monte-Moro</title>
+<meta name="description" content="Schritt für Schritt durch das Werkzeug von Esther und Fabian Zurbriggen für Anfragen und Fragen der Gäste des Hotel Monte-Moro.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0A2A4A">
+<link rel="icon" href="/assets/oberflaeche/kleid/montemoro-zeichen.svg?v=155840ed76">
+<link rel="preload" href="../../assets/fonts/FjallaOne-400.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Fjalla One';font-style:normal;font-weight:400;font-display:swap;src:url('../../assets/fonts/FjallaOne-400.woff2') format('woff2')}
+@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400 600;font-display:swap;src:url('../../assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
+@font-face{font-family:'DM Mono';font-style:normal;font-weight:400;font-display:swap;src:url('../../assets/fonts/DMMono-normal-400.woff2') format('woff2')}
+:root{--navy:#0b2137;--nacht:#061422;--papier:#e9e1d9;--weiss:#f6f3ef;--gold:#d9c9ac;--messing:#ab905d;--taupe:#964e2a;--tinte:#061422;--serif:'Fjalla One','Arial Narrow',Arial,sans-serif;--sans:'Instrument Sans',system-ui,sans-serif;--mono:'Instrument Sans',ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:16px/1.65 var(--sans);color:var(--tinte);background:linear-gradient(rgba(233,225,217,.86),rgba(233,225,217,.86)),linear-gradient(transparent,transparent),var(--papier)}
+a{color:inherit}
+.kopf{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:18px;padding:14px clamp(18px,4vw,56px);background:linear-gradient(180deg,#0f2f50,#0b2137 60%,#061422);color:var(--weiss);box-shadow:0 0 0 1px rgba(217,201,172,.4),0 14px 30px -18px rgba(6,20,34,.7)}
+.kopf b{font:400 12px var(--serif);letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
+.kopf nav{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+.kopf a.kn{display:inline-flex;align-items:center;padding:9px 18px;border-radius:999px;font:500 11px var(--mono);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--weiss);box-shadow:inset 0 0 0 1px rgba(217,201,172,.4)}
+.kopf a.gold{background:linear-gradient(180deg,#deceb4,#ab905d);color:var(--nacht);box-shadow:none}
+.hero{position:relative;overflow:hidden;color:var(--weiss);padding:clamp(48px,7vw,96px) clamp(22px,6vw,90px);background:linear-gradient(90deg,rgba(6,20,34,.96),rgba(6,20,34,.7)),url('/assets/img/rezeption-l.webp') center/cover,var(--navy)}
+.hero span.m{font:11px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.hero h1{font:400 clamp(36px,5.6vw,68px)/1.06 var(--serif);margin:14px 0 16px;max-width:15em}
+.hero h1 em{color:var(--gold)}
+.hero p{max-width:56ch;color:#e4d8c3}
+main{max-width:1060px;margin:0 auto;padding:46px clamp(18px,4vw,40px) 90px}
+.inhalt{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin:0 0 20px}
+.inhalt a{display:flex;gap:12px;align-items:baseline;padding:14px 18px;border-radius:16px;background:var(--weiss);text-decoration:none;box-shadow:0 0 0 1px rgba(150,78,42,.25),0 12px 24px -18px rgba(6,20,34,.5)}
+.inhalt a b{font:400 11px var(--mono);letter-spacing:.14em;color:var(--taupe)}
+.k{margin-top:60px;padding-top:22px;border-top:1px solid rgba(150,78,42,.4)}
+.k .m{font:11px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--taupe)}
+.k h2{font:400 clamp(28px,3.6vw,40px)/1.1 var(--serif);color:var(--navy);margin:6px 0 12px}
+.k h2 em{color:var(--taupe)}
+.k p.s{max-width:68ch;color:rgba(6,20,34,.82)}
+.k ol{list-style:none;counter-reset:z;display:grid;gap:10px;margin:16px 0;max-width:72ch}
+.k ol li{counter-increment:z;position:relative;padding:12px 16px 12px 52px;border-radius:14px;background:rgba(246,243,239,.8);box-shadow:inset 0 0 0 1px rgba(150,78,42,.2)}
+.k ol li::before{content:counter(z);position:absolute;left:14px;top:11px;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font:500 12px var(--sans);color:var(--nacht);background:linear-gradient(180deg,#deceb4,#ab905d)}
+.k .gut{margin:14px 0 18px;max-width:72ch;padding:14px 18px;border-radius:14px;background:linear-gradient(180deg,#103051,#0b2137);color:var(--weiss);box-shadow:inset 0 0 0 1px rgba(217,201,172,.35)}
+.k .gut b{display:block;font:400 11px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+figure{margin:22px 0 4px}
+figure img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 0 0 1px rgba(150,78,42,.3),0 30px 50px -30px rgba(6,20,34,.7);cursor:zoom-in}
+figcaption{font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--taupe);margin-top:8px}
+.gross{position:fixed;inset:0;z-index:20;background:rgba(6,20,34,.88);display:none;place-items:center;padding:24px;cursor:zoom-out}
+.gross.auf{display:grid}.gross img{max-width:min(1400px,100%);max-height:100%;border-radius:12px}
+.hilfe{display:grid;gap:10px;margin-top:16px}
+.hilfe div{padding:14px 18px;border-radius:14px;background:var(--weiss);box-shadow:inset 0 0 0 1px rgba(150,78,42,.25)}
+.hilfe b{font:500 11px var(--mono);letter-spacing:.16em;color:var(--taupe)}
+/* Messlauf 29.10.2026 (Regel einzelwort): kein einzelnes Wort allein in der letzten Titelzeile */
+h1,h2,h3,h4,figcaption{text-wrap:balance}
+.zs{white-space:nowrap}
+/* Monte-Moro (08.11.2026): Fjalla One hat keinen Schrägschnitt und nur eine Stärke: nie künstlich kursiv oder fett, Betonung über die Farbe; Hauptknopf in Lärche wie auf der Website */
+*{font-synthesis:none}em,i{font-style:normal}
+.kopf a.gold{background:linear-gradient(180deg,#ca7d53 0%,#ca7d53 52%,#b16237 100%);color:#f8f6f3}
+.kopf a.kn{white-space:nowrap}
+@media (max-width:520px){.kopf{flex-wrap:wrap;row-gap:10px}.kopf nav{margin-left:0}}
+</style>
+<script src="/assets/oberflaeche/kleid/montemoro.js?v=05d6fe2a46"></script>
+<script src="/assets/oberflaeche/oberflaeche.js?v=2617dce4fe" defer></script>
+<script src="studio/namen.js?v=31a3c2f7a8" defer></script>
+</head>
+<body>
+<header class="kopf"><b>Anleitung · <span data-wo-name="gaeste">Werkzeug</span></b><nav><a class="kn" href="#kapitel">Kapitel</a><a class="kn gold" href="./">Werkzeug öffnen</a></nav></header>
+<section class="hero"><span class="m">Anfragen der Gäste, Schritt für Schritt</span>
+<h1>Was Gäste fragen, <em>und Ihre Antwort.</em></h1>
+<p>Wie eine Anfrage für ein Zimmer, eine Ferienwohnung oder einen Tisch im Röstihüs von der Website in den Eingang kommt, wie Sie den Brief gestalten und sichern, was Gäste fragen und wie der Chat lernt, was er bisher nicht wusste. Zwölf kurze Kapitel. Jedes Bild lässt sich mit einem Klick gross ansehen.</p></section>
+<main id="kapitel">
+<div class="inhalt">
+<a href="#k1"><b>01</b>Übersicht</a><a href="#k2"><b>02</b>Eine Anfrage beantworten</a><a href="#k3"><b>03</b>Den Brief gestalten</a><a href="#k4"><b>04</b>Brief senden und sichern</a>
+<a href="#k5"><b>05</b>Auf Deutsch lesen</a><a href="#k6"><b>06</b>Den Brief lenken und löschen</a><a href="#k7"><b>07</b>Das wurde gefragt</a><a href="#k8"><b>08</b>Eine Antwort nachtragen</a>
+<a href="#k9"><b>09</b>Vom Team nachgetragen</a><a href="#k10"><b>10</b>Das weiss der Chat</a><a href="#k11"><b>11</b>Neues Wissen eintragen</a><a href="#k12"><b>12</b>Chat ausprobieren</a>
+</div>
+
+<section class="k" id="k1"><span class="m">01 · Übersicht</span><h2>So ist <span class="zs"><em>die Rezeption</em> aufgebaut.</span></h2>
+<p class="s"><span data-wo-name="gaeste">Dieses Werkzeug</span> ist das Werkzeug Ihres Teams für alles, was Gäste über die Website schreiben: jede Anfrage aus dem Anfrage-Fenster der Website (Hotelzimmer, Familienzimmer, Haus Apollo, Haus Arizona, Tisch im Röstihüs, Fragen zu den Preisen), jede Anfrage aus dem Chat (Zimmer, Ferienwohnung, Tisch im Röstihüs, Nachricht) und jede Frage an die Rezeption im Chat.</p>
+<ol><li>Oben in der Übersicht drei Felder: neue Anfragen im Eingang, Fragen ohne Antwort, alle Fragen bisher. Darunter die Arten (Zimmer, Ferienwohnungen, Tisch im Röstihüs, Nachrichten) mit der Zahl der Anfragen, links «Zuletzt angefragt», rechts «Zuletzt gefragt».</li>
+<li>Links die Bereiche: «Eingang», «Das wurde gefragt», «Vom Team nachgetragen» und «Das weiss der Chat». Die Zahl daneben zeigt, was auf Sie wartet. Auf dem Handy öffnet «Bereiche» die Liste.</li>
+<li>Die Leiste unten sagt in einem Satz, was offen ist. «Neu laden» holt den Stand, «Zum Eingang» führt zu den Anfragen. Das Werkzeug sieht auch von selbst nach, ob etwas Neues da ist.</li></ol>
+<figure><img src="bilder/rez-uebersicht.jpg?v=29ff8cfae5" alt="Übersicht" loading="lazy"><figcaption><span data-wo-name="gaeste">Werkzeug</span> · Übersicht</figcaption></figure></section>
+
+<section class="k" id="k2"><span class="m">02 · Eingang</span><h2>Eine <span class="zs">Anfrage <em>beantworten.</em></span></h2>
+<p class="s">Jede Anfrage aus dem Anfrage-Fenster der Website landet hier, mit allen Angaben und der Seite, von der sie kam. Ebenso eine Anfrage aus dem Chat, sobald der Gast Name und Kontakt nennt. Niemand sagt dem Gast, dass ein Zimmer reserviert oder bestätigt ist; das tun Sie.</p>
+<ol><li>«Eingang» öffnen. Oben Zimmer, Ferienwohnungen, Röstihüs und Nachrichten mit der Zahl offener Anfragen, darunter die Auswahl «Alle», «Neu», «Offen», «Erledigt». Die Anfragen stehen nach Tagen geordnet (Heute, Gestern, Wochentag, Früher). Neue tragen das Feld «Neu».</li>
+<li>Eine Anfrage anklicken. Rechts stehen Name, Zeitraum, Art, Gäste, Sprache und Kontakt, darunter die Hinweise aus Ihrer Preisliste: Einzelzimmerzuschlag bei einer Person, der Zuschlag für 1 bis 3 Übernachtungen, die Kinderzuschläge im Zimmer der Eltern und der Kidsclub, der Hund, mehr Gäste als ein Familienzimmer fasst, die Preise der Ferienwohnungen und die Öffnungszeiten des Röstihüs (beide nicht veröffentlicht: persönlich klären), Allergien (die Küche fragen) und die abgelaufene Gratis-Anreise. Unter «Die Nachricht über die Website» lesen Sie nach, was der Gast ausgefüllt hat. Öffnen macht eine neue Anfrage zur gelesenen.</li>
+<li>Der Assistent schreibt beim ersten Öffnen einen Entwurf. Er hält sich an das, was das Haus selbst schreibt (Zimmer: Preise, Inklusive, Zuschläge; Ferienwohnung: Haus Apollo und Haus Arizona; Tisch: das Röstihüs), schreibt in der Sie-Form wie die Website, fragt nach, was fehlt, nennt jede Allergie, setzt für freie Zimmer und Preise der Wohnungen offene Felder und schreibt in der Sprache des Gastes.</li>
+<li>Ist alles beantwortet, «Erledigt» drücken. Die Anfrage bleibt in der Liste, blasser, und lässt sich mit «Wieder offen» zurückholen.</li></ol>
+<figure><img src="bilder/rez-eingang.jpg?v=135646f8e1" alt="Eingang mit Anfrage und Brief" loading="lazy"><figcaption><span data-wo-name="gaeste">Werkzeug</span> · Eingang</figcaption></figure></section>
+
+<section class="k" id="k3"><span class="m">03 · Der Brief</span><h2>Den Brief <em>gestalten.</em></h2>
+<p class="s">Der Brief liegt wie ein Blatt Papier vor Ihnen, mit dem Logo des Hauses, Anrede, Absätzen und Gruss. Sie arbeiten direkt darin, wie in einem Gestaltungsprogramm. Alles wird von selbst gesichert («Gesichert» steht über dem Brief).</p>
+<ol><li><b>Wählen:</b> einen Teil anklicken (Absatz, Betreff, Logo, Linie). Ein Rahmen mit dem Namen erscheint, die Leiste oben wird frei, und daneben öffnet sich die Seitenleiste «Gestalten».</li>
+<li><b>Schreiben:</b> Doppelklick oder Enter schreibt in den Teil. Klick ausserhalb oder Esc beendet das Schreiben. Stellen in [Klammern] sind offene Felder, die Ihr Team ausfüllt (freies Zimmer, Preis der Wohnung); sie sind markiert.</li>
+<li><b>Verschieben:</b> ziehen. Der Teil rastet an Papierkanten, Mitte und anderen Teilen ein (Hilfslinien); Alt hält das Einrasten aus. Pfeiltasten verschieben um 1 Pixel, mit Umschalt um 10.</li>
+<li><b>Grösse:</b> die Ecken ziehen (Schrift) oder die Seiten (Breite); oder in der Leiste «+» und «−».</li>
+<li><b>Schrift und Ausrichtung</b> in der Leiste oben: die Titelschrift der Website (Fjalla One), die kleine Zeile (DM Mono), der Lauftext (Instrument Sans), links, Mitte, rechts, Linienfarbe. Die Seitenleiste bietet mehr: Schriftart, Schriftgrösse in Punkt, Textart, Farben des Hauses, Abstände davor und danach, Sperrung, Zeilenabstand, Deckkraft, Lage und «Teil zurücksetzen».</li>
+<li><b>Foto einfügen:</b> in der Leiste das Bild-Symbol. Vierzehn Fotos des Hauses stehen zur Wahl (das Haus im Sommer und im Winter, ein Zimmer, der Blick vom Balkon, das Frühstücksbuffet, das Röstihüs, Raclette, das Spa, das Saastal …). Das Foto kommt unter den gewählten Absatz; verschieben, Grösse ziehen, Ausschnitt in der Seitenleiste, mit Entfernen oder Löschen-Taste weg.</li>
+<li><b>Linien</b> sind eigene Teile: Stärke, Farbe und Länge ändern, oder entfernen.</li>
+<li><b>Rückgängig:</b> die Pfeile in der Leiste oder ⌘Z, wiederholen mit Umschalt ⌘Z. «Zurück auf die Vorlage» (Symbol rechts in der Leiste) stellt Text, Anordnung und Fotos her, wie der Assistent sie geschrieben hat.</li></ol>
+<figure><img src="bilder/rez-gestalten.jpg?v=0be776a1f1" alt="Brief gestalten mit Seitenleiste" loading="lazy"><figcaption><span data-wo-name="gaeste">Werkzeug</span> · Brief gestalten</figcaption></figure>
+<figure><img src="bilder/rez-foto.jpg?v=17c4ed7203" alt="Foto in den Brief einfügen" loading="lazy"><figcaption><span data-wo-name="gaeste">Werkzeug</span> · Foto einfügen</figcaption></figure>
+<div class="gut"><b>Gut zu wissen</b>Wer lieber nur den Text bearbeitet, schaltet oben rechts im Brief von «Gestalten» auf «Nur Text». Dort stehen Betreff und Text in zwei Feldern; «Änderung sichern» merkt sich Ihre Fassung.</div></section>
+
+<section class="k" id="k4"><span class="m">04 · Senden</span><h2>Brief <em>senden und sichern.</em></h2>
+<p class="s">Hier wird nichts verschickt, und es öffnet sich kein Mailprogramm. Der Brief bleibt bei der Anfrage.</p>
+<ol><li><b>Text kopieren</b> legt Betreff und Brief als reinen Text in die Zwischenablage.</li>
+<li><b>Als PDF speichern</b> setzt den Brief als fertige A4-Seite auf Briefpapier und lädt die Datei direkt («Hotel Monte-Moro – Name – Datum.pdf»). Passt der Text, ist es eine Seite; sonst bricht er sauber um, mit dem Bergkamm als kleinem Kopf auf der Folgeseite, Fusszeile und Rahmen auf jeder Seite. Geht auch aus «Nur Text».</li>
+<li>Unter dem Brief steht die Notiz «Vor dem Senden»: wie viele Stellen offen sind, woher die Angaben stammen und was das Team vorher klären muss.</li></ol></section>
+
+<section class="k" id="k5"><span class="m">05 · Sprache</span><h2>Auf Deutsch <em>lesen.</em></h2>
+<p class="s">Schreibt ein Gast Englisch oder Französisch, steht der Brief in seiner Sprache. Damit Ihr Team weiss, was darin steht, bevor es ihn schickt, gibt es eine deutsche Lesefassung.</p>
+<ol><li>Bei einer fremdsprachigen Anfrage über dem Brief «Auf Deutsch lesen» drücken.</li>
+<li>An der Stelle des Briefs erscheint die Lesefassung mit Betreff und Text, dazu «Das Gespräch im Chat auf Deutsch». Sie ändert nichts am Brief und wird nie verschickt.</li>
+<li>Haben Sie den Brief geändert, weist ein Hinweis darauf hin; «Neu übersetzen» holt eine frische Fassung. «Deutsch ausblenden» schliesst sie wieder.</li></ol>
+<figure><img src="bilder/rez-deutsch.jpg?v=e519844875" alt="Deutsche Lesefassung eines englischen Briefs" loading="lazy"><figcaption><span data-wo-name="gaeste">Werkzeug</span> · Auf Deutsch lesen</figcaption></figure></section>
+
+<section class="k" id="k6"><span class="m">06 · Brief lenken, Anfragen löschen</span><h2>Den Brief <em>lenken und löschen.</em></h2>
+<p class="s">Wissen Sie mehr als die Website, zum Beispiel, welches Familienzimmer frei ist, geben Sie es dem Assistenten mit.</p>
+<ol><li>Unter dem Brief «Neu schreiben lassen» drücken, im Fenster den Hinweis in einem Satz eintragen und «Neu schreiben» drücken. Der neue Brief ersetzt den alten; wollen Sie Ihre Fassung behalten, kopieren Sie sie vorher mit «Text kopieren».</li>
+<li>Preise und Leistungen nennt der Assistent nur, wenn sie auf der Website stehen. Was das Haus nicht veröffentlicht (Preise der Ferienwohnungen, Öffnungszeiten des Röstihüs, Storno), bleibt ein offenes Feld.</li>
+<li><b>Löschen:</b> Anfragen enthalten Namen und Kontakte und bleiben zwölf Monate gespeichert. Möchte ein Gast, dass seine Angaben gelöscht werden, die Anfrage öffnen, oben rechts das runde Zeichen mit dem Papierkorb drücken und «Endgültig löschen» bestätigen.</li></ol></section>
+
+<section class="k" id="k7"><span class="m">07 · Das wurde gefragt</span><h2>Was Gäste <em>wissen wollen.</em></h2>
+<p class="s">Jede Frage an den Chat steht hier, nach Themen: Zimmer &amp; Preise, Ferienwohnungen, Kinder &amp; Familie, Röstihüs, Spa, Inklusive &amp; Saastal, Anreise &amp; Lage, Das Haus.</p>
+<ol><li>«Das wurde gefragt» öffnen. Oben die Zahlen: alle Fragen, ohne Antwort, vom Team nachgetragen, zur Anfrage geworden.</li>
+<li>Eine Frage aufklappen: «Antwort des Chats» zeigt, was der Chat geantwortet hat.</li>
+<li>Fragen ohne Antwort sind hervorgehoben; «Ohne Antwort» oben zeigt nur diese. Ohne Antwort heisst: dazu steht nichts auf der Website, etwa die Zeit für den Check-in. Der Chat hat den Gast an Esther und Fabian verwiesen, statt zu raten.</li></ol>
+<figure><img src="bilder/rez-gefragt.jpg?v=b5bbb7c142" alt="Das wurde gefragt" loading="lazy"><figcaption><span data-wo-name="gaeste">Werkzeug</span> · Das wurde gefragt</figcaption></figure></section>
+
+<section class="k" id="k8"><span class="m">08 · Nachtragen</span><h2>Eine Antwort <em>nachtragen.</em></h2>
+<p class="s">Was einmal gefragt wurde, wird wieder gefragt. Tragen Sie die Antwort einmal nach, beantwortet der Chat die Frage ab dann selbst, in jeder Sprache.</p>
+<ol><li>Bei der Frage ohne Antwort «Antwort nachtragen» drücken.</li><li>Die Frage so lassen oder kürzer fassen. Die Antwort so schreiben, wie Sie es einem Gast am Telefon sagen würden, dann «Nachtragen».</li>
+<li>Passt eine Frage nicht zum Haus: «Ohne Antwort abhaken». Sie bleibt im Protokoll, ohne Markierung.</li></ol>
+<figure><img src="bilder/rez-nachtragen.jpg?v=791145abe1" alt="Antwort nachtragen" loading="lazy"><figcaption><span data-wo-name="gaeste">Werkzeug</span> · Antwort nachtragen</figcaption></figure></section>
+
+<section class="k" id="k9"><span class="m">09 · Nachgetragen</span><h2>Was der Chat <em>von Ihnen weiss.</em></h2>
+<p class="s">Unter «Vom Team nachgetragen» stehen alle Antworten Ihres Teams als Karteikarten. Der Chat nutzt sie wie die Website.</p>
+<ol><li>Ändert sich etwas, bei der Karte «Ändern» drücken und neu schreiben.</li><li>Gilt etwas nicht mehr, «Entfernen». Der Chat verweist bei dieser Frage dann wieder an die Rezeption.</li>
+<li>Oben «Antwort ohne Frage anlegen», wenn Sie dem Chat etwas mitgeben wollen, bevor jemand fragt.</li></ol>
+<figure><img src="bilder/rez-nachgetragen.jpg?v=5f8fe58ad4" alt="Vom Team nachgetragen" loading="lazy"><figcaption><span data-wo-name="gaeste">Werkzeug</span> · Vom Team nachgetragen</figcaption></figure></section>
+
+<section class="k" id="k10"><span class="m">10 · Das weiss der Chat</span><h2>Alles, was der Chat <em>über Ihr Haus weiss.</em></h2>
+<p class="s">Der Chat antwortet nur mit dem, was auf der Website, in den Wegen zur Rezeption (Telefon, E-Mail) und hier steht. Dieser Bereich zeigt es geordnet, so dass Sie auf einen Blick sehen, was Sache ist.</p>
+<ol><li>Links die Bereiche (Das Haus, Zimmer &amp; Wohnungen, Preise, Inklusive, Kinder &amp; Familie, Röstihüs, Spa, Anreise &amp; Lage, Saastal, Kontakt …), rechts die Angaben als Zeilen mit «So steht es auf der Website» als Beleg.</li>
+<li><b>Suchen:</b> das Feld oben sucht in allen Bereichen. Steht zu einem Stichwort noch nichts im Wissen, bietet das Werkzeug zwei Wege an: selbst eintragen, oder als offen vermerken, bei Esther und Fabian, der Rezeption oder der Küche. Das Thema steht dann oben unter «Offen bei Ihrem Team»; wer die Antwort weiss, trägt sie dort mit «Antwort eintragen» ein. Es öffnet sich kein Mailprogramm.</li>
+<li><b>Eine Angabe ändern:</b> die Zeile antippen, Text ändern, «Übernehmen». Der Chat antwortet ab der nächsten Frage damit; die Website bleibt, wie sie ist. «Nicht mehr nennen» schaltet eine Angabe ab, «Wie auf der Website» stellt sie zurück.</li>
+<li><b>Chat prüfen:</b> rechts oben «Fragen wie ein Gast». Die Antwort kommt aus dem Wissen, so wie es jetzt steht. Diese Frage landet nicht im Protokoll.</li>
+<li>Unten «Zuletzt geändert» listet, was wann geändert wurde.</li></ol>
+<figure><img src="bilder/rez-wissen.jpg?v=16533d565f" alt="Das weiss der Chat" loading="lazy"><figcaption><span data-wo-name="gaeste">Werkzeug</span> · Das weiss der Chat</figcaption></figure></section>
+
+<section class="k" id="k11"><span class="m">11 · Neues Wissen</span><h2>Neues Wissen <em>eintragen.</em></h2>
+<p class="s">Ein Feld für alles, was der Chat bisher nicht wusste: eigener Text, ein Link, ein Dokument, ein Foto.</p>
+<ol><li><b>Text:</b> schreiben, einen Bereich wählen oder «automatisch» lassen, «Übernehmen». Ein Text mit gewähltem Bereich steht sofort im Wissen.</li>
+<li><b>Link:</b> die Adresse einer Veranstaltung im Saastal oder eines Anbieters einfügen. Die Seite wird im Hintergrund gelesen (meist eine halbe Minute), der Chat übernimmt nur, was dort steht, mit Datum und Quelle. «Neu einlesen» holt den neuen Stand, «Entfernen» nimmt die Angaben wieder weg.</li>
+<li><b>Dokument oder Foto:</b> PDF, Word, Text und Fotos bis 20 MB, per Knopf oder hineinziehen. Etwa die neue Karte des Röstihüs als Foto oder ein Aushang im Haus.</li>
+<li><b>Angabe hinzufügen:</b> Bereich, Titel, Text und «Gilt bis», etwa für eine Veranstaltung. Abgelaufene Angaben nennt der Chat nicht mehr, sie bleiben sichtbar.</li>
+<li>Eine eigene Anmeldung brauchen Sie nicht: Jede Änderung steht mit Datum im Verlauf, eingetragen als «Team Monte-Moro».</li></ol></section>
+
+<section class="k" id="k12"><span class="m">12 · Chat ausprobieren</span><h2>So fragt <em>ein Gast.</em></h2>
+<p class="s">Hier sehen Sie, wie die Rezeption im Chat einem Gast antwortet: genau so wie der Chat auf der Website.</p>
+<ol><li>Oben rechts «Chat ausprobieren» öffnet ein Fenster: links vier Fragen zum Antippen, rechts das Chatfenster, wie ein Gast es auf dem Handy sieht.</li>
+<li>Nennen Sie im Chat einen Namen und eine E-Mail-Adresse, liegt die Anfrage danach als Beispiel im Eingang.</li></ol>
+<figure><img src="bilder/rez-probe.jpg?v=14d8202012" alt="Chat ausprobieren" loading="lazy"><figcaption><span data-wo-name="gaeste">Werkzeug</span> · Chat ausprobieren</figcaption></figure></section>
+</main>
+<div class="gross" id="gross" role="dialog" aria-label="Bild gross"><img alt=""></div>
+<script src="studio/anleitung.js?v=3223473d32"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+ "zeit": "2026-11-07T11:30:00+01:00",
+ "art": "tisch",
+ "name": "Claudia Imboden",
+ "kontakt": "claudia.imboden@example.com",
+ "datum": "Sa, 14. November 2026",
+ "personen": 4,
+ "anliegen": "Tisch im Röstihüs: Wir freuen uns auf Röstis. Eine von uns isst kein Gluten.",
+ "sprache": "de",
+ "gespraech": "beispiel-3",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Über ein Formular der Website (Seite Röstihüs): Betreff: Tisch im Röstihüs\nTag: Sa, 14. November 2026\nUhrzeit: 19:00 Uhr\nPersonen: 4\nIhre Nachricht: Wir freuen uns auf Röstis. Eine von uns isst kein Gluten."
+  }
+ ],
+ "status": "neu",
+ "beispiel": true,
+ "an": "Telefon +41 27 957 10 12 · info@monte-moro.ch",
+ "abteilung": "Röstihüs",
+ "seite": "/roestihues.html",
+ "seite_name": "Röstihüs",
+ "web": true,
+ "nachricht": "Betreff: Tisch im Röstihüs\nTag: Sa, 14. November 2026\nUhrzeit: 19:00 Uhr\nPersonen: 4\nIhre Nachricht: Wir freuen uns auf Röstis. Eine von uns isst kein Gluten.",
+ "formular": "tisch",
+ "uhrzeit": "19:00 Uhr",
+ "entwurf": null
+}

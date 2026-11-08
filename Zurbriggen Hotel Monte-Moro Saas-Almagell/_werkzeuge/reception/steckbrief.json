@@ -1,0 +1,729 @@
+{
+ "stand": 1794132608.9428842,
+ "bereiche": [
+  {
+   "bereich": "Das Haus",
+   "gruppen": [
+    {
+     "gruppe": "Auf einen Blick",
+     "zeilen": [
+      {
+       "fid": "973f3bf8f7",
+       "was": "Gastgeber",
+       "angabe": "Esther und Fabian Zurbriggen",
+       "beleg": "Esther und Fabian Zurbriggen sind die Gastgeber im Hotel Monte-Moro in Saas-Almagell",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "04fd623a95",
+       "was": "Das Haus",
+       "angabe": "18 Zimmer, 55 Betten, 3 Sterne",
+       "beleg": "Das Haus: 18 Zimmer, 55 Betten (Schweiz Tourismus), 3 Sterne.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "2440fcc729",
+       "was": "Lage",
+       "angabe": "an bester Lage in Saas-Almagell",
+       "beleg": "Das Hotel Monte Moro befindet sich an bester Lage in Saas-Almagell.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "1c759469e6",
+       "was": "Sonnenterrasse",
+       "angabe": "direkt vor dem Haus, bei schönem Wetter",
+       "beleg": "Bei schönem Wetter (bei uns scheint fast immer die Sonne) können Sie übrigens auch unsere Sonnenterasse direkt vor dem Haus geniessen.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "d296325c8b",
+       "was": "Satz des Hauses",
+       "angabe": "Mehr erleben, weniger zahlen.",
+       "beleg": "Mehr erleben, weniger zahlen.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Was Gäste sagen",
+     "zeilen": [
+      {
+       "fid": "50594cdfcf",
+       "was": "Google",
+       "angabe": "4,5 von 5 aus 121 Bewertungen (Stand 17. Oktober 2026)",
+       "beleg": "Google: 4,5 von 5 (121 Bewertungen)",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Noten der Gäste (Stand 17. Oktober 2026)"
+       ]
+      },
+      {
+       "fid": "3f61ae2fb6",
+       "was": "Booking.com",
+       "angabe": "8,3 von 10 aus 94 Bewertungen; Personal 9,0, Lage 9,0",
+       "beleg": "Booking.com: 8,3 von 10 (94 Bewertungen)",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Personal: 9,0 Booking.com · Lage: 9,0 Booking.com"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Zimmer & Wohnungen",
+   "gruppen": [
+    {
+     "gruppe": "Im Hotel",
+     "zeilen": [
+      {
+       "fid": "a9a1c1f228",
+       "was": "Ausstattung",
+       "angabe": "Dusche/Bad, WC, Haarfön, TV, Safe und Balkon; Brandmeldeanlage",
+       "beleg": "Alle Zimmer sind mit Dusche/Bad, WC, Haarfön, TV, Safe und Balkon ausgestattet. Zum Schutz unserer Gäste haben wir eine Brandmeldeanlage.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "1295addee2",
+       "was": "Laut Booking.com",
+       "angabe": "Sitzbereich, Flachbild-TV, Schreibtisch, WLAN inklusive, Nichtraucherzimmer",
+       "beleg": "Laut dem Eintrag des Hauses bei Booking.com: Sitzbereich, Flachbild-TV mit Satellitenkanälen, Schreibtisch, Kostenlose Pflegeprodukte, WLAN inklusive, Nichtraucherzimmer.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "2b4697dd1c",
+       "was": "Zimmerarten",
+       "angabe": "Budgetzimmer und Standardzimmer, mit Frühstück oder Halbpension",
+       "beleg": "Budgetzimmer, Zimmer mit Frühstück: CHF 90.00 pro Person / Tag",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Standardzimmer, Zimmer mit Halbpension (4-Gänge): CHF 130.00 pro Person / Tag"
+       ]
+      },
+      {
+       "fid": "8a8ca747ca",
+       "was": "Familienzimmer",
+       "angabe": "Familienzimmer und Familienkombinationen, ideal für 3 bis 6 Personen",
+       "beleg": "Wir haben gemütliche, komfortable Familienzimmer und Familienkombinationen - ideal für 3 - 6 Personen.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "19359eb7b3",
+       "was": "Residence Alpenhof",
+       "angabe": "Hotelzimmer 4 Gehminuten entfernt, Frühstück und Abendessen im Hotel Monte-Moro",
+       "beleg": "Wir bieten ebenfalls Hotelzimmer in der 4 Gehminuten entfernten Residence Alpenhof an (Frühstück und Abendessen im Hotel Monte-Moro).",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Ferienwohnungen",
+     "zeilen": [
+      {
+       "fid": "59fefe98f3",
+       "was": "Haus Apollo",
+       "angabe": "Wohnung im 4. Stock am Dorfeingang, Ausblick auf das ganze Dorf, Südbalkon",
+       "beleg": "Das Haus Apollo befindet sich am Dorfeingang von Saas-Almagell. Da sich die Ferienwohnung im 4. Stock befindet, können wir Ihnen einen herrlichen Ausblick auf das ganze Dorf garantieren.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "fe2cd48be0",
+       "was": "Haus Arizona",
+       "angabe": "Wohnungen mit 2½, 3½ und 4½ Zimmern",
+       "beleg": "Das Haus Arizona verfügt über gemütliche und geräumige 4½, 3½ und 2½-Zimmer - Wohnungen.",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "TV, Radio, Geschirrspülmaschine, Kaffeemaschine und Mikrowelle"
+       ]
+      },
+      {
+       "fid": "086e3be361",
+       "was": "Wäsche und Parkplatz",
+       "angabe": "Bett- und Frotteewäsche stehen zur Verfügung, der Parkplatz direkt neben dem Haus",
+       "beleg": "Bett- und Frotteewäsche stehen Ihnen zur Verfügung. Der Parkplatz befindet sich direkt neben dem Haus.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "067816e302",
+       "was": "Preise",
+       "angabe": "stehen nicht auf der Website; Esther und Fabian beantworten das persönlich",
+       "beleg": "Preise der Ferienwohnungen im Haus Apollo und im Haus Arizona.",
+       "datei": "gast_umgebung.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Preise",
+   "gruppen": [
+    {
+     "gruppe": "Pro Person und Tag",
+     "zeilen": [
+      {
+       "fid": "9f1ab58e68",
+       "was": "Budgetzimmer mit Frühstück",
+       "angabe": "CHF 90.00",
+       "beleg": "Budgetzimmer, Zimmer mit Frühstück: CHF 90.00 pro Person / Tag",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "e786f2145f",
+       "was": "Standardzimmer mit Frühstück",
+       "angabe": "CHF 100.00",
+       "beleg": "Standardzimmer, Zimmer mit Frühstück: CHF 100.00 pro Person / Tag",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "312369498c",
+       "was": "Budgetzimmer mit Halbpension",
+       "angabe": "CHF 120.00, Halbpension mit 4 Gängen",
+       "beleg": "Budgetzimmer, Zimmer mit Halbpension (4-Gänge): CHF 120.00 pro Person / Tag",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "d7a212b727",
+       "was": "Standardzimmer mit Halbpension",
+       "angabe": "CHF 130.00, Halbpension mit 4 Gängen",
+       "beleg": "Standardzimmer, Zimmer mit Halbpension (4-Gänge): CHF 130.00 pro Person / Tag",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Zuschläge",
+     "zeilen": [
+      {
+       "fid": "d0f02d5b9d",
+       "was": "Einzelzimmer",
+       "angabe": "Zuschlag 50 %",
+       "beleg": "Einzelzimmerzuschlag: 50 %",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "34a2fa4e38",
+       "was": "1 bis 3 Nächte",
+       "angabe": "Zuschlag CHF 5.00 pro Tag",
+       "beleg": "Zuschlag für 1 - 3 Übernachtungen / pro Tag: CHF 5.00",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "4f9868d38c",
+       "was": "Kurtaxe Erwachsene",
+       "angabe": "pro Tag CHF 4.50 im Winter, CHF 7.00 im Sommer",
+       "beleg": "Kurtaxe Erwachsene pro Tag (Winter): CHF 4.50",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Kurtaxe Erwachsene pro Tag (Sommer): CHF 7.00"
+       ]
+      },
+      {
+       "fid": "982b261580",
+       "was": "Kurtaxe Kinder",
+       "angabe": "6 bis 16 Jahre, pro Tag CHF 2.25 im Winter, CHF 3.50 im Sommer",
+       "beleg": "Kurtaxe Kinder (6 - 16 Jahre) pro Tag (Winter): CHF 2.25",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Kurtaxe Kinder (6 - 16 Jahre) pro Tag (Sommer): CHF 3.50"
+       ]
+      },
+      {
+       "fid": "d4fcccbcf9",
+       "was": "Hund",
+       "angabe": "pro Tag ohne Futter CHF 7.00 bis 10.00",
+       "beleg": "Hund pro Tag ohne Futter: CHF 7.00 - 10.00",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Bezahlung",
+     "zeilen": [
+      {
+       "fid": "b1e17f59b9",
+       "was": "Euro",
+       "angabe": "Bezahlung in Euro möglich, Rückgeld in Franken",
+       "beleg": "Bezahlung in Euro möglich, Rückgeld in Franken.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Inklusive",
+   "gruppen": [
+    {
+     "gruppe": "Im Preis dabei",
+     "zeilen": [
+      {
+       "fid": "0ddf9220fb",
+       "was": "Postauto",
+       "angabe": "im ganzen Saastal, Sommer und Winter",
+       "beleg": "Benutzung Postautos im ganzen Saastal (Sommer/Winter)",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "526bc50573",
+       "was": "Bergbahnen",
+       "angabe": "alle Bergbahnen im Saastal im Sommer, ohne Metro Alpin; im Sommer und Herbst ab der 1. Übernachtung",
+       "beleg": "Benutzung aller Bergbahnen im Saastal (ohne Metro Alpin) (Sommer)",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Bergbahnen und Postautos im Sommer und Herbst ab der 1. Übernachtung inklusive!"
+       ]
+      },
+      {
+       "fid": "8840ac9dde",
+       "was": "Frühstück",
+       "angabe": "Frühstücksbuffet mit Frühstück und Halbpension",
+       "beleg": "ZF und HP: Frühstücksbuffet",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "8b040f4a34",
+       "was": "Racletteabend",
+       "angabe": "einmal in der Woche im Stübli, mit Halbpension",
+       "beleg": "Halbpension: wöchentlicher Racletteabend im Stübli.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "260684afdf",
+       "was": "Kidsclub",
+       "angabe": "täglich Mo bis Sa, 16:30 bis 21:00 Uhr",
+       "beleg": "Kidsclub: täglich Mo - Sa 16:30 bis 21:00 Uhr",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "4a70f773f6",
+       "was": "Parkplatz",
+       "angabe": "Hotelparkplatz für Hotelgäste",
+       "beleg": "Parkplätze für Hotelgäste stehen zur Verfügung. Hotelparkplatz inklusive.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Kinder & Familie",
+   "gruppen": [
+    {
+     "gruppe": "Im Zimmer der Eltern, mit Halbpension",
+     "zeilen": [
+      {
+       "fid": "731cd9d130",
+       "was": "Bis 5 Jahre",
+       "angabe": "CHF 50.00 pro Kind und Tag",
+       "beleg": "bis 5 Jahre: CHF 50.00",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "20f28892a1",
+       "was": "6 bis 8 Jahre",
+       "angabe": "CHF 60.00, 70.00 und 80.00 pro Kind und Tag",
+       "beleg": "6 Jahre: CHF 60.00 · 7 Jahre: CHF 70.00 · 8 Jahre: CHF 80.00",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "f9b0330f19",
+       "was": "9 bis 16 Jahre",
+       "angabe": "CHF 90.00 pro Kind und Tag",
+       "beleg": "9 - 16 Jahre: CHF 90.00",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "ab3946c028",
+       "was": "Im eigenen Zimmer",
+       "angabe": "normale Zimmerpreise",
+       "beleg": "Kinderzuschläge im eigenen Zimmer: normale Zimmerpreise.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Für die Kinder",
+     "zeilen": [
+      {
+       "fid": "b997a16640",
+       "was": "Kidsclub",
+       "angabe": "täglich Mo bis Sa, 16:30 bis 21:00 Uhr, inklusive",
+       "beleg": "Kidsclub: täglich Mo - Sa 16:30 bis 21:00 Uhr, inklusive.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "3494b5a3da",
+       "was": "Im Röstihüs",
+       "angabe": "eine kleine Auswahl an Speisen für die kleinsten Gäste",
+       "beleg": "Natürlich haben wir auch eine kleine Auswahl an Speisen für unsere kleinsten Gäste.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Röstihüs",
+   "gruppen": [
+    {
+     "gruppe": "Das Restaurant",
+     "zeilen": [
+      {
+       "fid": "3299c6ba30",
+       "was": "Küche",
+       "angabe": "Schweizer Spezialitäten aus den besten regionalen Produkten",
+       "beleg": "Im hauseigenen Restaurant Röstihüs verwöhnen wir Sie gerne mit Schweizer Spezialitäten, die mit Liebe, Herz und den besten regionalen Produkten zubereitet werden.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "3aeb42002d",
+       "was": "Was die Gäste sagen",
+       "angabe": "die wohl besten Röstis und Cordon bleus der Region",
+       "beleg": "Unseren Gästen zufolge servieren wir damit die wohl besten Röstis und Cordon Bleus der Region.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "dbccefc224",
+       "was": "Tisch reservieren",
+       "angabe": "Telefon +41 27 957 10 12 oder über TheFork",
+       "beleg": "Telefon +41 27 957 10 12 oder über TheFork.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "02af56a472",
+       "was": "Öffnungszeiten",
+       "angabe": "stehen nicht auf der Website; die Rezeption gibt sie gern bekannt",
+       "beleg": "Öffnungszeiten und Ruhetage des Röstihüs (die Rezeption gibt sie gern bekannt).",
+       "datei": "gast_umgebung.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Auf der Karte",
+     "zeilen": [
+      {
+       "fid": "87fb782249",
+       "was": "Röstis",
+       "angabe": "elf Röstis, Fr. 25.– bis 32.–",
+       "beleg": "Rösti Albert: Mit Bauernwurst, Speck und Röstigraben und Käse, Fr. 25.–",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Rösti Indian Style: Mit gegrillten Krevettenspiess, Zwiebelringen, Ananas, Currysauce, Rahm und Käse überbacken, Fr. 32.–"
+       ]
+      },
+      {
+       "fid": "62ad891a09",
+       "was": "Rösti Tschug Tschug",
+       "angabe": "mit Apfelmus und Calvados flambiert, Fr. 27.–",
+       "beleg": "Rösti Tschug Tschug: Mit Apfelmus und Calvados flambiert, Rahm und Käse überbacken, Fr. 27.–",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "713f36ef4d",
+       "was": "Rösti Gartu",
+       "angabe": "mit Gemüse, Rahm ohne Käse, Fr. 25.–",
+       "beleg": "Rösti Gartu: Mit Gemüse, Rahm ohne Käse, Fr. 25.–",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "2ef9aad7c1",
+       "was": "Cordon bleus",
+       "angabe": "fünf Cordon bleus, Fr. 39.– bis 42.–",
+       "beleg": "Cordon bleu Monte-Moro: Kalbfleisch mit Schinken und Käse, Fr. 42.–",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Cordon bleu Val Antrona: Schweinefleisch mit Schinken und Gorgonzola, Fr. 39.–"
+       ]
+      },
+      {
+       "fid": "fafd615285",
+       "was": "Raclette",
+       "angabe": "Raclette gross mit Pellkartoffeln, Fr. 17.–",
+       "beleg": "Raclette gross mit Pellkartoffeln: Fr. 17.–",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "5e40f62064",
+       "was": "Monte-Moro-Kopf",
+       "angabe": "Eiweissschaum mit Schoko und Eis, Fr. 15.–",
+       "beleg": "Monte-Moro-Kopf (Eiweissschaum mit Schoko und Eis): Fr. 15.–",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Im Glas",
+     "zeilen": [
+      {
+       "fid": "fab5de5e98",
+       "was": "Hotelweine",
+       "angabe": "zwei Cuvées, von Fabian selber kreiert, 7 dl Fr. 67.–",
+       "beleg": "«Hotelwein» Cuvee Special, Fils Maye | Prestige Silber (wurde von Fabian selber kreiert)",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "«Hotelwein» Cuvee Special Eichenfass, Gilles Joel Cina | Prestige Gold (wurde von Fabian selber kreiert)"
+       ]
+      },
+      {
+       "fid": "b3e59eb0d6",
+       "was": "Aus der Region",
+       "angabe": "Weine aus dem Wallis, Appenzeller Bier, Digestifs",
+       "beleg": "Es werden hervorragende Weine aus dem Kanton Wallis angeboten. Frisches Appenzeller Bier serviert sowie verschiedene Digestifs.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "abea59309c",
+       "was": "Zurbriggen Spritz",
+       "angabe": "Lemonsoda, Prosecco, Blue Curaçao, Fr. 12.–",
+       "beleg": "Zurbriggen Spritz: Lemonsoda, Prosecco, Blue Curaçao, Fr. 12.–",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Spa",
+   "gruppen": [
+    {
+     "gruppe": "Im Partnerhotel Pirmin Zurbriggen",
+     "zeilen": [
+      {
+       "fid": "9c5932ea40",
+       "was": "Eintritt",
+       "angabe": "CHF 25.00 pro Person und Eintritt, nicht übertragbar",
+       "beleg": "CHF 25.00 pro Person und Eintritt (kann nicht auf andere Personen übertragen werden)",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "ba14eaf8d3",
+       "was": "7 Tage",
+       "angabe": "Abo CHF 150.00 pro Person",
+       "beleg": "CHF 150.00 7 Tage Abo pro Person",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "39a6c6ab32",
+       "was": "Dabei",
+       "angabe": "Bademantel, Schuhe, Handtücher",
+       "beleg": "Bademantel, Schuhe, Handtücher stehen zur Verfügung.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "e5165a7ffc",
+       "was": "Angebot",
+       "angabe": "Schwimmbad, Whirlpool, Saunalandschaft, Kneippanlage, Massagepraxis, Beautysalon",
+       "beleg": "Das Angebot reicht vom Schwimmbad mit Filmvorführungen, Whirlpool, Saunalandschaft mit verschiedenen Saunen über Infrarotliegen, Isha-Whirlwanne, Kneippanlage, Solarium, Fitnesstower mit Hightech & TV, Massagepraxis, Hairstyling bis hin zum Beautysalon.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Anreise & Lage",
+   "gruppen": [
+    {
+     "gruppe": "Hinkommen",
+     "zeilen": [
+      {
+       "fid": "95c656b87d",
+       "was": "Zug und Postauto",
+       "angabe": "über Visp ins Postauto, Umsteigen in Saas-Grund, ca. 45 Min. ab Visp",
+       "beleg": "Wenn Sie mit dem Zug anreisen, erreichen Sie das Saastal über Visp, wo sie ins Postauto umsteigen.",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Zeitdauer Visp - Saas-Almagell ca. 45 Min."
+       ]
+      },
+      {
+       "fid": "65b1b3b7dd",
+       "was": "Verbindungen",
+       "angabe": "stündlich bis 20.10 Uhr ab Visp; bis Saas-Grund 22.40, Freitag und Samstag 23.40 Uhr",
+       "beleg": "Es bestehen stündliche Verbindungen bis 20.10 Uhr ab Visp [bis Saas-Grund 22.40 ab Visp, sowie Freitag und Samstag um 23.40 Uhr].",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "2db7de8607",
+       "was": "Auto",
+       "angabe": "durchs Vispertal, in Stalden Richtung Saastal, in Saas-Grund links; ca. 40 Min. ab Visp",
+       "beleg": "Von Visp aus fahren sie durchs Vispertal, bei der Verzweigung in Stalden Richtung Saastal",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Zeitdauer Visp - Saas-Almagell ca. 40 Min."
+       ]
+      },
+      {
+       "fid": "0d37c5c76a",
+       "was": "Parkplatz",
+       "angabe": "Parkplätze für Hotelgäste, inklusive",
+       "beleg": "Parkplätze für Hotelgäste stehen zur Verfügung. Hotelparkplatz inklusive.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Zu Fuss ab dem Haus",
+     "zeilen": [
+      {
+       "fid": "dfe2839f33",
+       "was": "Skigebiet",
+       "angabe": "2 Gehminuten zum Skigebiet Saas-Almagell",
+       "beleg": "2 Gehminuten: Skigebiet Saas-Almagell",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "e855f99511",
+       "was": "Busstation",
+       "angabe": "3 Gehminuten; alle 30 Minuten ein Bus nach Saas-Grund oder Saas-Fee",
+       "beleg": "3 Gehminuten: Busstation (Alle 30 Minuten bringt Sie ein Bus ins Skigebiet Saas-Grund oder Saas-Fee)",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "cdb6b03d25",
+       "was": "Dorfkern",
+       "angabe": "3 Gehminuten: Einkaufen, Bankomat, Tourismusbüro",
+       "beleg": "3 Gehminuten: Dorfkern (Einkaufsmöglichkeiten, Bankomat, Tourismusbüro usw.)",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Saastal",
+   "gruppen": [
+    {
+     "gruppe": "Sommer und Winter",
+     "zeilen": [
+      {
+       "fid": "9ce0389459",
+       "was": "Wandern",
+       "angabe": "über 250 km Wanderwege, vom Spaziergang bis zum Viertausender",
+       "beleg": "Im Sommer ein herrliches Wanderparadies. Ueber 250 km Wanderwege",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "2d1d0c4039",
+       "was": "Skifahren",
+       "angabe": "Saas-Almagell 2400 m, Saas-Grund 3200 m, Saas-Fee 3500 m",
+       "beleg": "Skifahren und Snowboarden: Saas-Almagell 2400m · Saas-Grund 3200m · Saas-Fee 3500m",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "8aeabdc337",
+       "was": "Tagesausflüge",
+       "angabe": "Saas-Fee, Zermatt, Stresa, Chamonix, Montreux, Mattmark, Glacier-Express",
+       "beleg": "Tagesausflüge: Saas-Fee, Zermatt, Stresa, Chamonix, Montreux, Mattmark, Grande Dixence, Sitten, Glacier-Express",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "1574920ca1",
+       "was": "Metro Alpin",
+       "angabe": "in Saas-Fee, mit dem höchstgelegenen Drehrestaurant auf 3500 M.ü.M.",
+       "beleg": "Saas-Fee: Metro Alpin mit dem höchstgelegenen Drehrestaurant auf 3'500 M.ü.M.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Kontakt",
+   "gruppen": [
+    {
+     "gruppe": "So erreichen Sie die Rezeption",
+     "zeilen": [
+      {
+       "fid": "0c5ae51a59",
+       "was": "Telefon",
+       "angabe": "+41 27 957 10 12",
+       "beleg": "Telefon +41 27 957 10 12, Fax +41 27 957 37 12, E-Mail info@monte-moro.ch.",
+       "datei": "gast_umgebung.txt",
+       "mehr": []
+      },
+      {
+       "fid": "3e907ce938",
+       "was": "E-Mail",
+       "angabe": "info@monte-moro.ch",
+       "beleg": "Telefon +41 27 957 10 12, Fax +41 27 957 37 12, E-Mail info@monte-moro.ch.",
+       "datei": "gast_umgebung.txt",
+       "mehr": []
+      },
+      {
+       "fid": "fcbe23e48e",
+       "was": "Adresse",
+       "angabe": "Hotel Monte-Moro, CH-3905 Saas-Almagell",
+       "beleg": "Hotel Monte-Moro, CH-3905 Saas-Almagell.",
+       "datei": "gast_umgebung.txt",
+       "mehr": []
+      },
+      {
+       "fid": "c9a68b0a74",
+       "was": "Zimmer buchen",
+       "angabe": "mit «Zimmer buchen» auf der Website, per Telefon oder E-Mail",
+       "beleg": "Zimmer buchen: mit «Zimmer buchen» auf der Website (Buchungsfenster des Hauses), per Telefon oder E-Mail.",
+       "datei": "gast_umgebung.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
