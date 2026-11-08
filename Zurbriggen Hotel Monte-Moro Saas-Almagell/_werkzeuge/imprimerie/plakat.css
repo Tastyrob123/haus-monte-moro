@@ -1,0 +1,167 @@
+/* Hausdruckerei · Ansichten «DJ-Abend anlegen» und «Plakat-Grund» (plakat.js), Walk on the Wild Side 31.10.2026. Farben und Schriften aus dem Kleid (--wo-*) und
+   dem Kern (--navy, --messing, --tinte …); Bewegung nur transform/opacity. Keine Pillen-Reihen als Zierde: die Chips sind Filter, wie überall im Kern. */
+.pk-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 22px;max-width:980px;margin:6px 0 34px;padding:26px 28px 28px;border-radius:14px;
+  background:var(--wo-blatt,#fcfaf9);box-shadow:0 1px 0 #fff inset,0 24px 50px -30px rgba(6,23,41,.45),0 0 0 1px var(--wo-linie,rgba(6,23,41,.14))}
+.pk-form label{display:flex;flex-direction:column;gap:8px;min-width:0}
+.pk-form label>span{font:10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-akzent,#685736)}
+.pk-form input,.pk-form textarea,.pk-form select{width:100%;min-width:0;padding:12px 14px;border:0;border-radius:10px;font:400 16px/1.35 var(--sans);color:var(--tinte);
+  background:#fff;box-shadow:inset 0 1px 2px rgba(6,23,41,.12),0 0 0 1px var(--wo-linie,rgba(6,23,41,.14))}
+.pk-form textarea{min-height:84px;resize:vertical}
+.pk-form input:focus,.pk-form textarea:focus,.pk-form select:focus{outline:0;box-shadow:inset 0 1px 2px rgba(6,23,41,.12),0 0 0 1.5px var(--messing)}
+.pk-form .pk-breit{grid-column:1/-1}
+.pk-form .pk-unten{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:16px 22px;justify-content:space-between}
+.pk-zahl{display:flex;align-items:center;gap:8px;font:10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-leise,#465462)}
+.pk-zahl button{width:40px;height:40px;border:0;border-radius:50%;font:15px var(--mono);color:var(--tinte);background:#fff;box-shadow:0 0 0 1px var(--wo-linie,rgba(6,23,41,.14));cursor:pointer}
+.pk-zahl button.an{color:#fcfaf9;background:var(--navy)}
+.pk-hinweis{grid-column:1/-1;margin:0 0 6px;font:14px/1.5 var(--sans);color:var(--wo-leise,#465462)}
+.pk-raster{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:34px 26px;margin:6px 0 60px}
+.pk-karte{display:flex;flex-direction:column;gap:14px;min-width:0}
+.pk-blaetter{position:relative;height:262px;display:flex;align-items:flex-end;justify-content:center}
+.pk-blaetter .blatt{box-shadow:0 1px 1px rgba(6,23,41,.18),0 18px 34px -16px rgba(6,23,41,.55);border-radius:2px}
+.pk-blaetter .pk-hinten{position:absolute!important;right:0;top:0;transform:rotate(4deg);opacity:.96}
+.pk-blaetter .pk-vorn{transform:translateX(-14%) rotate(-1.2deg);transition:transform .6s cubic-bezier(.22,.68,.26,1)}
+@media (hover:hover){.pk-karte:hover .pk-vorn{transform:translateX(-14%) translateY(-6px) rotate(-1.2deg)}}
+.pk-text{display:flex;flex-direction:column;gap:4px;min-width:0}
+.pk-text b{font:400 23px/1.15 var(--serif);color:var(--tinte);font-variation-settings:'SOFT' 100}
+.pk-text small{font:10px/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--wo-leise,#465462)}
+.pk-text em{font-style:normal;font-size:13px;color:var(--wo-akzent,#685736)}
+.pk-auftrag{margin-top:6px;font:13px/1.5 var(--sans);color:var(--wo-leise,#465462)}
+.pk-auftrag summary{cursor:pointer;font:10px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--wo-akzent,#685736)}
+.pk-auftrag p{margin:8px 0 0}
+.pk-los{align-self:flex-start;margin-top:auto}   /* Knöpfe nebeneinander auf einer Linie (Fehlerbuch: Kacheln schliessen unten bündig ab) */
+.pk-leer{grid-column:1/-1;font:16px/1.5 var(--sans);color:var(--wo-leise,#465462)}
+.pk-chips{margin:0 0 12px;align-items:center}
+.pk-chips__n{min-width:96px;font:10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-akzent,#685736)}
+#pkFilter{margin:4px 0 22px}
+.pk-motivzahl{font:10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-leise,#465462);margin:0 0 18px}
+@media (max-width:760px){.pk-form{grid-template-columns:1fr;padding:20px 18px}.pk-chips__n{width:100%}}
+
+/* Gestaltung 28.10.2026, Fund 2: «Anlässe der nächsten Wochen» ohne Leerraum. Die grosse Karte reicht über so viele Reihen, wie rechts Karten stehen;
+   die rechten Karten strecken sich auf ihre Höhe */
+#startWochen > .wo:first-child:nth-last-child(3) { grid-row: span 2 }
+#startWochen > .wo:first-child:nth-last-child(2) { grid-row: span 1 }
+#startWochen { grid-template-rows: none; grid-auto-rows: 1fr }
+.pk-zuletzt-satz { margin: -6px 0 14px }
+
+/* Abend beschreiben, live (Oberchef 28.10.): Hinweis im Ton des Hauses und Karten «entsteht …», bis Vorder- und Rückseite da sind */
+.pk-hinweis--live { border-left: 2px solid var(--wo-kerze, #bda77f); padding-left: 14px }
+.pk-entsteht .pk-blaetter { position: relative }
+/* Grösse nach der Höhe des Blattfachs (262 px) wie die fertigen Blätter (vorn 222 px, hinten 144 px), nie nach der Kartenbreite: in breiten Karten ragten die
+   Platzhalter sonst über Text und Knopf (Robert 29.10.) */
+.pk-entsteht__blatt { position: absolute; left: 50%; bottom: 10px; height: calc(var(--vorn, 230px) - 16px); width: auto; aspect-ratio: 1; border-radius: 3px;
+  background: linear-gradient(110deg, rgba(189,167,127,.10) 8%, rgba(189,167,127,.28) 18%, rgba(189,167,127,.10) 33%) 0 0 / 200% 100%, #eee8e0;
+  box-shadow: 0 10px 28px rgba(6,23,41,.14); animation: pk-malt 1.6s linear infinite; transform: translateX(-64%) rotate(-1.2deg) }
+.pk-entsteht__blatt--h { left: auto; right: 0; top: 0; bottom: auto; height: var(--hinten, 144px); transform: rotate(4deg); background-color: #061729 }
+@keyframes pk-malt { to { background-position: -200% 0 } }
+@media (prefers-reduced-motion: reduce) { .pk-entsteht__blatt { animation: none } }
+
+/* «Abend beschreiben»: keine Restreihe (Gestaltung 28.10.): 4 Vorschläge 2 × 2, 5 Vorschläge 3 + 2 mittig */
+#pkVorschlaege > .pk-hinweis { grid-column: 1 / -1; flex: 0 0 100% }
+@media (min-width: 700px) {
+  #pkVorschlaege[data-n="4"] { grid-template-columns: repeat(2, minmax(270px, 1fr)) }
+  #pkVorschlaege[data-n="5"] { display: flex; flex-wrap: wrap; justify-content: center }
+  #pkVorschlaege[data-n="5"] > .pk-karte { flex: 0 0 calc((100% - 52px) / 3) }
+}
+
+/* Konzept je Vorschlag in einer Zeile über dem Plakat (Oberchef 28.10.: «Der Döner als Ozeandampfer, die Wings als Möwen») */
+.pk-idee { margin: 0 0 12px; font: 400 19px/1.3 var(--wo-titel); letter-spacing: 0; color: var(--wo-tief, #061729) }
+.pk-nurkonzept { padding: 18px 20px; border-radius: 14px; background: rgba(189,167,127, .06) }
+
+/* «Plakat-Motive» ohne Restreihe und ohne Loch (Gestaltung 28.10., zweite Nachprüfung): feste Kartenbreite, die letzte Reihe steht mittig */
+#pkMotive { display: flex; flex-wrap: wrap; justify-content: center; gap: 34px 26px }
+#pkMotive > .pk-karte { flex: 0 0 100%; min-width: 0 }
+#pkMotive > .pk-leer { flex: 0 0 100% }
+@media (min-width: 700px) { #pkMotive > .pk-karte { flex-basis: calc((100% - 26px) / 2) } }
+@media (min-width: 1180px) { #pkMotive > .pk-karte { flex-basis: calc((100% - 52px) / 3) } }
+
+/* Alle Vorschläge unter «Abend beschreiben» (Robert 29.10.): je Abend eine Überschrift, darunter die Vorschläge 2 × 2 */
+.pk-alle__titel { margin: 10px 0 6px; font: 400 34px/1.1 var(--wo-titel); letter-spacing: 0; color: var(--wo-tief, #061729) }
+.pk-abend { display: flex; flex-direction: column; gap: 6px; margin: 34px 0 22px; padding-top: 22px; border-top: 1px solid var(--wo-linie, rgba(6,23,41,.14));
+  font: 400 26px/1.15 var(--wo-titel); letter-spacing: 0; color: var(--tinte) }
+.pk-abend small { font: 10px/1.6 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--wo-leise, #465462) }
+@media (min-width: 700px) { #pkAlle .pk-raster[data-n="4"] { grid-template-columns: repeat(2, minmax(270px, 1fr)) } }
+
+/* Vorschläge grösser, Rückseite dicht neben der Vorderseite (Robert 29.10.): das Blattfach ist so breit wie das Paar (plakat.js fachStil) und steht mittig */
+.pk-blaetter--gross { width: 100%; margin: 0 auto }
+
+/* Fundliste Gestaltung 29.10.: 09 Konzeptzeilen einer Reihe gleich hoch (Platz für zwei Zeilen), ausgewogen umbrochen; 10 Formular so breit wie die Bühne;
+   11 zweite Zeile der Filter beginnt an der Kante der Chips */
+.pk-idee{min-height:2.6em;text-wrap:balance}
+.pk-form{max-width:none}
+.pk-chips{position:relative;padding-left:108px}
+.pk-chips__n{position:absolute;left:0;top:0;height:36px;display:flex;align-items:center;min-width:0}
+
+/* K35 (Tor 30.10.2026): Ziffern 3/4/5 in den runden Wahlknöpfen optisch mittig */
+.pk-zahl button{display:grid;place-items:center;padding:1px 0 0;line-height:1}
+/* Wild Side (31.10.2026): eine Seite je Karte (SESSION-Plakat ohne Rückseite), Blatt und Unterschrift auf einer linken Kante, gerade */
+.pk-blaetter--eins{justify-content:flex-start}
+.pk-blaetter--eins .pk-vorn{transform:none}
+@media (hover:hover){.pk-karte--eins:hover .pk-vorn{transform:translateY(-6px)}}
+.pk-karte--eins .pk-blaetter--eins{justify-content:center;text-align:center}
+.pk-karte--eins .pk-text{text-align:center}
+
+/* ---------- Baukasten «DJ-Abend anlegen» (1.11.2026): links die Schritte, rechts das Plakat, mitlaufend ---------- */
+.bk{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,440px);gap:28px;align-items:start;margin:6px 0 34px}
+.bk-form{display:flex;flex-direction:column;gap:18px;min-width:0}
+.bk-teil{min-width:0;padding:22px 24px 24px;border-radius:14px;background:var(--wo-blatt,#fcfaf9);box-shadow:0 1px 0 #fff inset,0 24px 50px -30px rgba(6,23,41,.45),0 0 0 1px var(--wo-linie,rgba(6,23,41,.14))}
+.bk-teil h2{display:flex;align-items:center;gap:12px;margin:0 0 14px;font:400 22px/1.2 var(--serif);color:var(--tinte)}
+.bk-teil h2 b{flex:none;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;font:500 13px/1 var(--sans);color:#fcfaf9;background:var(--navy)}
+.bk-satz{margin:-4px 0 14px;font:14px/1.5 var(--sans);color:var(--wo-leise,#465462)}
+.bk-felder{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:14px 18px}   /* zwei Spalten nur, wenn die Beispiele ganz hineinpassen (Tor 1280: Platzhalter abgeschnitten) */
+.bk-felder .bk-breit{grid-column:1/-1}
+.bk label{display:flex;flex-direction:column;gap:7px;min-width:0}
+.bk label>span{font:10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-akzent,#685736)}
+.bk input:not([type=range]):not([type=file]),.bk select{width:100%;min-width:0;padding:11px 13px;border:0;border-radius:10px;font:400 16px/1.35 var(--sans);color:var(--tinte);
+  background:#fff;box-shadow:inset 0 1px 2px rgba(6,23,41,.12),0 0 0 1px var(--wo-linie,rgba(6,23,41,.14))}
+.bk input:focus-visible,.bk select:focus-visible{outline:0;box-shadow:inset 0 1px 2px rgba(6,23,41,.12),0 0 0 1.5px var(--messing)}
+.bk input[aria-invalid=true]{box-shadow:inset 0 1px 2px rgba(6,23,41,.12),0 0 0 1.5px var(--rot,#a75d35)}
+.bk-reihe{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;margin-bottom:14px}
+.bk .bk-hoch{position:relative;flex-direction:row;align-items:center;justify-content:center;height:44px;padding:0 20px;border-radius:999px;cursor:pointer;
+  font:500 11px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#fcfaf9;background:var(--navy)}
+.bk .bk-hoch>span{font:inherit;letter-spacing:inherit;color:inherit}
+.bk-hoch input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.bk-hoch:focus-within{box-shadow:0 0 0 2px var(--messing)}
+.bk-meldung{font:13px/1.45 var(--sans);color:var(--wo-leise,#465462)}
+.bk-fotos,.bk-gruende{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:10px}
+.bk-gruende{grid-template-columns:repeat(auto-fill,minmax(72px,1fr))}
+.bk-foto,.bk-grund{position:relative;padding:0;border:0;border-radius:8px;overflow:hidden;aspect-ratio:3/4;background:var(--creme,#eae2d9);cursor:pointer;box-shadow:0 0 0 1px var(--wo-linie,rgba(6,23,41,.14))}
+.bk-foto img,.bk-grund img{display:block;width:100%;height:100%;object-fit:cover}
+.bk-foto.an,.bk-grund.an{box-shadow:0 0 0 2.5px var(--navy),0 0 0 4px #fcfaf9 inset}
+.bk-regler{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 18px;margin-top:16px}
+.bk-regler input{width:100%;accent-color:var(--navy)}
+/* Schrift-Zeilen: Name oben, darunter Farbe, Feld, Grösse, Lage; bricht um statt rechts überzustehen (Robert 1.11.: «darf niemals passieren, dass das rechts abgeschnitten ist») */
+.bk-zeile{display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px 14px;min-width:0;max-width:100%;margin:0;padding:14px 0;border-top:1px solid var(--wo-linie,rgba(6,23,41,.14))}
+.bk-zeile:first-child{border-top:0;padding-top:2px}
+.bk-zname{flex:0 0 100%;margin:0;font:500 15px/1.3 var(--sans);color:var(--tinte)}
+.bk-farben{flex:0 0 100%;display:flex;flex-wrap:wrap;gap:6px}
+.bk-zeile label{flex:1 1 150px;max-width:100%}
+.bk-zeile label.bk-gr{flex:1 1 84px}
+.bk-zeile select{white-space:nowrap;text-overflow:ellipsis}
+.bk-fotowahl{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}
+.bk-fotowahl button{height:36px;padding:0 14px;border:0;border-radius:999px;font:500 11px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--tinte);background:#fff;box-shadow:0 0 0 1px var(--wo-linie,rgba(6,23,41,.14));cursor:pointer}
+.bk-fotowahl button.an{color:#fcfaf9;background:var(--navy)}
+.bk-fotos .bk-mehrfotos{grid-column:1/-1;justify-self:start}.bk-farbe{display:inline-flex;align-items:center;gap:7px;height:34px;padding:0 11px 0 6px;border:0;border-radius:999px;font:400 13px/1 var(--sans);color:var(--tinte);background:#fff;cursor:pointer;box-shadow:0 0 0 1px var(--wo-linie,rgba(6,23,41,.14))}
+.bk-farbe i{flex:none;width:20px;height:20px;border-radius:50%;background:var(--f);box-shadow:inset 0 0 0 1px rgba(6,23,41,.25)}
+.bk-farbe.an{font-weight:500;box-shadow:0 0 0 2px var(--navy)}
+.bk-pruefung{margin:12px 0 0;padding:12px 14px;border-radius:10px;font:14px/1.45 var(--sans)}
+.bk-pruefung:empty{display:none}
+.bk-pruefung--gut{color:#2d5a3a;background:rgba(45,90,58,.08)}
+.bk-pruefung--hinweis{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;color:var(--tinte);background:rgba(167,93,53,.08)}
+.bk-unten{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 20px}
+.bk-formate{display:flex;flex-wrap:wrap;gap:8px}
+.bk-formate button{height:40px;padding:0 16px;border:0;border-radius:999px;font:500 11px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--tinte);background:#fff;box-shadow:0 0 0 1px var(--wo-linie,rgba(6,23,41,.14));cursor:pointer}
+.bk-formate button.an{color:#fcfaf9;background:var(--navy)}
+#pkVorschlaege{scroll-margin-top:96px}
+/* Schrift optisch mittig (Messlauf text-mitte): Chromium hängt die Sperrung nach dem letzten Buchstaben an, der Einzug gleicht das aus (wie maison.css) */
+@supports (interpolate-size:allow-keywords){.bk .bk-hoch>span{text-indent:.14em}.bk-fotowahl button{text-indent:.1em}.bk-formate button{text-indent:.12em}}
+.bk-formate-titel{flex:0 0 100%;font:10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-akzent,#685736)}
+.bk-vorschau{position:sticky;top:18px;display:flex;flex-direction:column;align-items:center;gap:12px;min-width:0;padding:22px;border-radius:14px;background:var(--creme,#eae2d9)}
+.bk-blatt{display:flex;justify-content:center;width:100%;min-height:260px}
+.bk-blatt .blatt{box-shadow:0 1px 1px rgba(6,23,41,.18),0 18px 34px -16px rgba(6,23,41,.55)}
+.bk-unter{margin:0;text-align:center;font:10px/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--wo-leise,#465462)}
+@media (max-width:1099px){.bk{grid-template-columns:minmax(0,1fr)}.bk-vorschau{position:static;order:-1}}
+@media (max-width:640px){.bk-teil{padding:18px 16px 20px}.bk-felder{grid-template-columns:minmax(0,1fr)}.bk-regler{grid-template-columns:minmax(0,1fr)}
+  .bk-unten .kn{width:100%;justify-content:space-between}}
+/* «Vorschlag übernehmen» als kleiner Knopf mit Rand und Luft (Tor 1.11.: Beschriftung lag 0 px am Knopfrand) */
+#bkVorschlag{padding:8px 14px;margin-top:6px;border-radius:999px;box-shadow:0 0 0 1px currentColor;line-height:1.2}
+@supports (interpolate-size:allow-keywords){#bkVorschlag{padding-left:calc(14px + .16em)}}

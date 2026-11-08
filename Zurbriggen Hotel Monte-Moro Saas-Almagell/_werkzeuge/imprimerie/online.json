@@ -1,0 +1,88 @@
+{
+ "name": "Die Hausdruckerei",
+ "hinweis": "Die Hausdruckerei des Hotel Monte-Moro, Saas-Almagell, 31.10.2026, Form wie die Hausdruckerei des Stammhauses. Oberfläche statisch unter /werkzeuge/imprimerie/. KI-Funktion api/imprimerie_entwurf.py aus api/entwurf.py; ohne ANTHROPIC_API_KEY melden nur «Fünf Entwürfe» und Bildtext «KI-FREIGABE», Vorlagen, Editor und PDF gehen. Schlüssel nur auf Roberts Wort. Kein Blob-Speicher: alles im Browser der Bar. Die grossen Fotos (haeuser/montemoro/bilder) nur unter «zusatz». NICHT ANGESCHLOSSEN: ein Online-Projekt der Bar gibt es noch nicht, nichts hochgeladen.",
+ "funktionen": {
+  "api/imprimerie_entwurf.py": {
+   "von": "_werkzeuge/imprimerie/api/entwurf.py",
+   "dauer": 60,
+   "includeFiles": "api/_lib/imprimerie/**"
+  }
+ },
+ "lib": {
+  "_werkzeuge/imprimerie/api/_daten": "api/_lib/imprimerie/_daten"
+ },
+ "statik": {
+  "assets/oberflaeche": "assets/oberflaeche",
+  "_werkzeuge/imprimerie/index.html": "werkzeuge/imprimerie/index.html",
+  "_werkzeuge/imprimerie/mail.html": "werkzeuge/imprimerie/mail.html",
+  "_werkzeuge/imprimerie/pruefung.html": "werkzeuge/imprimerie/pruefung.html",
+  "_werkzeuge/imprimerie/satz.js": "werkzeuge/imprimerie/satz.js",
+  "_werkzeuge/imprimerie/eigene.js": "werkzeuge/imprimerie/eigene.js",
+  "_werkzeuge/imprimerie/vorlagen.js": "werkzeuge/imprimerie/vorlagen.js",
+  "_werkzeuge/imprimerie/druck.js": "werkzeuge/imprimerie/druck.js",
+  "_werkzeuge/imprimerie/studio.js": "werkzeuge/imprimerie/studio.js",
+  "_werkzeuge/imprimerie/instagram.js": "werkzeuge/imprimerie/instagram.js",
+  "_werkzeuge/imprimerie/lelivre.js": "werkzeuge/imprimerie/lelivre.js",
+  "_werkzeuge/imprimerie/katalog.js": "werkzeuge/imprimerie/katalog.js",
+  "_werkzeuge/imprimerie/siegel.js": "werkzeuge/imprimerie/siegel.js",
+  "_werkzeuge/imprimerie/start.js": "werkzeuge/imprimerie/start.js",
+  "_werkzeuge/imprimerie/fuehrung.js": "werkzeuge/imprimerie/fuehrung.js",
+  "_werkzeuge/imprimerie/mail.js": "werkzeuge/imprimerie/mail.js",
+  "_werkzeuge/imprimerie/mail-satz.js": "werkzeuge/imprimerie/mail-satz.js",
+  "_werkzeuge/imprimerie/zur-werkbank.js": "werkzeuge/imprimerie/zur-werkbank.js",
+  "_werkzeuge/imprimerie/studio.css": "werkzeuge/imprimerie/studio.css",
+  "_werkzeuge/imprimerie/ms-bureau.css": "werkzeuge/imprimerie/ms-bureau.css",
+  "_werkzeuge/imprimerie/mail.css": "werkzeuge/imprimerie/mail.css",
+  "_werkzeuge/imprimerie/lib": "werkzeuge/imprimerie/lib",
+  "_werkzeuge/imprimerie/haeuser/montemoro/marke.json": "werkzeuge/imprimerie/haeuser/montemoro/marke.json",
+  "_werkzeuge/imprimerie/haeuser/montemoro/druck.json": "werkzeuge/imprimerie/haeuser/montemoro/druck.json",
+  "_werkzeuge/imprimerie/haeuser/montemoro/buehne.js": "werkzeuge/imprimerie/haeuser/montemoro/buehne.js",
+  "_werkzeuge/imprimerie/haeuser/montemoro/feder.js": "werkzeuge/imprimerie/haeuser/montemoro/feder.js",
+  "_werkzeuge/imprimerie/haeuser/montemoro/feder.css": "werkzeuge/imprimerie/haeuser/montemoro/feder.css",
+  "_werkzeuge/imprimerie/haeuser/montemoro/hell.css": "werkzeuge/imprimerie/haeuser/montemoro/hell.css",
+  "_werkzeuge/imprimerie/haeuser/montemoro/tapete-dunkel.webp": "werkzeuge/imprimerie/haeuser/montemoro/tapete-dunkel.webp",
+  "_werkzeuge/imprimerie/haeuser/montemoro/tapete-hell.webp": "werkzeuge/imprimerie/haeuser/montemoro/tapete-hell.webp",
+  "_werkzeuge/imprimerie/haeuser/montemoro/tapete-ui-dunkel.webp": "werkzeuge/imprimerie/haeuser/montemoro/tapete-ui-dunkel.webp",
+  "_werkzeuge/imprimerie/haeuser/montemoro/tapete-ui-hell.webp": "werkzeuge/imprimerie/haeuser/montemoro/tapete-ui-hell.webp",
+  "_werkzeuge/imprimerie/haeuser/montemoro/schriften": "werkzeuge/imprimerie/haeuser/montemoro/schriften",
+  "_werkzeuge/imprimerie/haeuser/montemoro/vorlagen": "werkzeuge/imprimerie/haeuser/montemoro/vorlagen",
+  "_werkzeuge/imprimerie/haeuser/montemoro/kopf": "werkzeuge/imprimerie/haeuser/montemoro/kopf",
+  "_werkzeuge/imprimerie/haeuser/montemoro/mini": "werkzeuge/imprimerie/haeuser/montemoro/mini",
+  "_werkzeuge/imprimerie/haeuser/montemoro/mail": "werkzeuge/imprimerie/haeuser/montemoro/mail",
+  "_werkzeuge/imprimerie/haeuser/montemoro/oberflaeche.js": "werkzeuge/imprimerie/haeuser/montemoro/oberflaeche.js",
+  "_werkzeuge/imprimerie/haeuser/montemoro/oberflaeche.css": "werkzeuge/imprimerie/haeuser/montemoro/oberflaeche.css",
+  "_werkzeuge/imprimerie/plakat.js": "werkzeuge/imprimerie/plakat.js",
+  "_werkzeuge/imprimerie/plakat.css": "werkzeuge/imprimerie/plakat.css",
+  "_werkzeuge/imprimerie/vorschaubild.js": "werkzeuge/imprimerie/vorschaubild.js",
+  "_werkzeuge/imprimerie/haeuser/montemoro/stilblatt.json": "werkzeuge/imprimerie/haeuser/montemoro/stilblatt.json",
+  "_werkzeuge/imprimerie/haeuser/montemoro/motive.json": "werkzeuge/imprimerie/haeuser/montemoro/motive.json",
+  "_werkzeuge/imprimerie/haeuser/montemoro/dokumente.js": "werkzeuge/imprimerie/haeuser/montemoro/dokumente.js",
+  "_werkzeuge/imprimerie/haeuser/montemoro/druck": "werkzeuge/imprimerie/haeuser/montemoro/druck",
+  "_werkzeuge/imprimerie/haeuser/montemoro/drucksachen": "werkzeuge/imprimerie/haeuser/montemoro/drucksachen"
+ },
+ "zusatz": {
+  "_": "Nur nötig, wenn das Hauptprojekt zu gross wird; Umleitung unten. Name ohne Nummer.",
+  "montemoro-hannover-werkstatt": {
+   "_werkzeuge/imprimerie/haeuser/montemoro/bilder": "werkzeuge/imprimerie/haeuser/montemoro/bilder"
+  }
+ },
+ "umleitungen": [
+  {
+   "source": "/werkzeuge/imprimerie/api/entwurf",
+   "destination": "/api/imprimerie_entwurf"
+  },
+  {
+   "source": "/_werkzeuge/imprimerie/:pfad*",
+   "destination": "/werkzeuge/imprimerie/:pfad*"
+  },
+  {
+   "source": "/werkzeuge/imprimerie/haeuser/montemoro/bilder/:pfad*",
+   "destination": "https://montemoro-hannover-werkstatt.vercel.app/werkzeuge/imprimerie/haeuser/montemoro/bilder/:pfad*"
+  }
+ ],
+ "stand": "",
+ "pruefung": {
+  "weg": "/werkzeuge/imprimerie/",
+  "kurz": true
+ }
+}

@@ -1,0 +1,449 @@
+[
+ {
+  "k": "roestihues-best-of-roestis",
+  "abt": "roestihues",
+  "n": "Best of Röstis",
+  "was": "Röstihüs-Karte A4, Vorder- und Rückseite: die elf Röstis als Blatt auf Nacht",
+  "format": "A4 hoch",
+  "seiten": 2,
+  "rot": [],
+  "pdf": "roestihues-best-of-roestis.pdf",
+  "vorschau": [
+   "roestihues-best-of-roestis.jpg",
+   "roestihues-best-of-roestis-2.jpg"
+  ]
+ },
+ {
+  "k": "roestihues-cordon-bleus",
+  "abt": "roestihues",
+  "n": "Unsere Cordon bleus",
+  "was": "Röstihüs-Karte DL hoch: die fünf Cordon bleus",
+  "format": "DL hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "roestihues-cordon-bleus.pdf",
+  "vorschau": [
+   "roestihues-cordon-bleus.jpg"
+  ]
+ },
+ {
+  "k": "roestihues-auszug",
+  "abt": "roestihues",
+  "n": "Röstihüs · Auszug der Karte",
+  "was": "Karte am Tisch DL hoch: Auszug der Röstihüs-Karte",
+  "format": "DL hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "roestihues-auszug.pdf",
+  "vorschau": [
+   "roestihues-auszug.jpg"
+  ]
+ },
+ {
+  "k": "roestihues-wein-von-fabian",
+  "abt": "roestihues",
+  "n": "Wein von Fabian",
+  "was": "Weinkarte DL hoch: die zwei Hotelweine, von Fabian selber kreiert",
+  "format": "DL hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "roestihues-wein-von-fabian.pdf",
+  "vorschau": [
+   "roestihues-wein-von-fabian.jpg"
+  ]
+ },
+ {
+  "k": "roestihues-apero-dessert",
+  "abt": "roestihues",
+  "n": "Zum Apéro und zum Dessert",
+  "was": "Karte A6: Spritz und Monte-Moro-Kopf",
+  "format": "A6 hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "roestihues-apero-dessert.pdf",
+  "vorschau": [
+   "roestihues-apero-dessert.jpg"
+  ]
+ },
+ {
+  "k": "tischaufsteller-tradition",
+  "abt": "roestihues",
+  "n": "Es lebe die Tradition",
+  "was": "Tischaufsteller A6 im Röstihüs",
+  "format": "A6 hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "tischaufsteller-tradition.pdf",
+  "vorschau": [
+   "tischaufsteller-tradition.jpg"
+  ]
+ },
+ {
+  "k": "tischkarte-hotelwein",
+  "abt": "zimmer",
+  "n": "Tischkarte · Cuvee Special",
+  "was": "Tischkarte A7 quer zum Hotelwein",
+  "format": "A7 quer",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "tischkarte-hotelwein.pdf",
+  "vorschau": [
+   "tischkarte-hotelwein.jpg"
+  ]
+ },
+ {
+  "k": "tischkarte-hotelwein-eichenfass",
+  "abt": "zimmer",
+  "n": "Tischkarte · Cuvee Special Eichenfass",
+  "was": "Tischkarte A7 quer zum Hotelwein aus dem Eichenfass",
+  "format": "A7 quer",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "tischkarte-hotelwein-eichenfass.pdf",
+  "vorschau": [
+   "tischkarte-hotelwein-eichenfass.jpg"
+  ]
+ },
+ {
+  "k": "aushang-inklusive",
+  "abt": "inklusive",
+  "n": "Inklusive",
+  "was": "Aushang A4 «Inklusive»: Postauto, Bergbahnen im Sommer, Frühstück, Racletteabend, Kidsclub, Parkplatz",
+  "format": "A4 hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "aushang-inklusive.pdf",
+  "vorschau": [
+   "aushang-inklusive.jpg"
+  ]
+ },
+ {
+  "k": "plakat-inklusive-a3",
+  "abt": "inklusive",
+  "n": "Aushang Inklusive",
+  "was": "Plakat A3 mit Grat-Kante: Mehr erleben, weniger zahlen",
+  "format": "A3 hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "plakat-inklusive-a3.pdf",
+  "vorschau": [
+   "plakat-inklusive-a3.jpg"
+  ]
+ },
+ {
+  "k": "preisliste-zimmer",
+  "abt": "inklusive",
+  "n": "Preisliste Zimmer",
+  "was": "Preisliste A4: Zimmer mit Frühstück oder Halbpension",
+  "format": "A4 hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "preisliste-zimmer.pdf",
+  "vorschau": [
+   "preisliste-zimmer.jpg"
+  ]
+ },
+ {
+  "k": "preisliste-zuschlaege",
+  "abt": "inklusive",
+  "n": "Zuschläge",
+  "was": "Preisliste A5: Kurtaxe, Zuschläge, Hund",
+  "format": "A5 hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "preisliste-zuschlaege.pdf",
+  "vorschau": [
+   "preisliste-zuschlaege.jpg"
+  ]
+ },
+ {
+  "k": "preisliste-kinder",
+  "abt": "inklusive",
+  "n": "Kinderpreise",
+  "was": "Preisliste A5: Kinder im Zimmer der Eltern",
+  "format": "A5 hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "preisliste-kinder.pdf",
+  "vorschau": [
+   "preisliste-kinder.jpg"
+  ]
+ },
+ {
+  "k": "aushang-racletteabend",
+  "abt": "abende",
+  "n": "Racletteabend im Stübli",
+  "was": "Aushang A4 mit Grat-Kante: Racletteabend im Stübli",
+  "format": "A4 hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "aushang-racletteabend.pdf",
+  "vorschau": [
+   "aushang-racletteabend.jpg"
+  ]
+ },
+ {
+  "k": "aushang-kidsclub",
+  "abt": "abende",
+  "n": "Kidsclub",
+  "was": "Aushang A4: Kidsclub Mo–Sa 16:30–21:00 Uhr",
+  "format": "A4 hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "aushang-kidsclub.pdf",
+  "vorschau": [
+   "aushang-kidsclub.jpg"
+  ]
+ },
+ {
+  "k": "programm-woche",
+  "abt": "abende",
+  "n": "Die Woche im Monte-Moro",
+  "was": "Programm A5: was jede Woche dabei ist",
+  "format": "A5 hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "programm-woche.pdf",
+  "vorschau": [
+   "programm-woche.jpg"
+  ]
+ },
+ {
+  "k": "willkommensbrief",
+  "abt": "zimmer",
+  "n": "Willkommensbrief im Zimmer",
+  "was": "Brief A4 im Zimmer, mit dem Gruss von Esther und Fabian",
+  "format": "A4 hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "willkommensbrief.pdf",
+  "vorschau": [
+   "willkommensbrief.jpg"
+  ]
+ },
+ {
+  "k": "briefpapier-a4",
+  "abt": "zimmer",
+  "n": "Briefpapier A4",
+  "was": "Briefpapier A4 mit Wortmarke und Absender",
+  "format": "A4 hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "briefpapier-a4.pdf",
+  "vorschau": [
+   "briefpapier-a4.jpg"
+  ]
+ },
+ {
+  "k": "hinweis-spa",
+  "abt": "zimmer",
+  "n": "Das Spa nebenan",
+  "was": "Hinweiskarte A6: Spa im Partnerhotel mit Tarifen",
+  "format": "A6 hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "hinweis-spa.pdf",
+  "vorschau": [
+   "hinweis-spa.jpg"
+  ]
+ },
+ {
+  "k": "hinweis-euro",
+  "abt": "zimmer",
+  "n": "Auch in Euro",
+  "was": "Hinweiskarte A6: Bezahlung in Euro",
+  "format": "A6 hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "hinweis-euro.pdf",
+  "vorschau": [
+   "hinweis-euro.jpg"
+  ]
+ },
+ {
+  "k": "anreise-postauto",
+  "abt": "saastal",
+  "n": "Anreise mit dem Postauto",
+  "was": "Aushang A4: Anreise mit Zug und Postauto ab Visp",
+  "format": "A4 hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "anreise-postauto.pdf",
+  "vorschau": [
+   "anreise-postauto.jpg"
+  ]
+ },
+ {
+  "k": "anreise-zug-postauto",
+  "abt": "saastal",
+  "n": "Mit Zug und Postauto",
+  "was": "Programm A5: Visp, Stalden, Saas-Grund, Saas-Almagell",
+  "format": "A5 hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "anreise-zug-postauto.pdf",
+  "vorschau": [
+   "anreise-zug-postauto.jpg"
+  ]
+ },
+ {
+  "k": "anreise-auto",
+  "abt": "saastal",
+  "n": "Mit dem Auto",
+  "was": "Aushang A5: Anreise mit dem Auto",
+  "format": "A5 hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "anreise-auto.pdf",
+  "vorschau": [
+   "anreise-auto.jpg"
+  ]
+ },
+ {
+  "k": "plakat-wanderparadies-a3",
+  "abt": "saastal",
+  "n": "Wanderparadies",
+  "was": "Plakat A3 mit Grat-Kante: Sommer im Saastal",
+  "format": "A3 hoch",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "plakat-wanderparadies-a3.pdf",
+  "vorschau": [
+   "plakat-wanderparadies-a3.jpg"
+  ]
+ },
+ {
+  "k": "ansichtskarte-sommer",
+  "abt": "saastal",
+  "n": "Ansichtskarte Sommer",
+  "was": "Ansichtskarte A6 quer, Rückseite für Grüsse",
+  "format": "A6 quer",
+  "seiten": 2,
+  "rot": [],
+  "pdf": "ansichtskarte-sommer.pdf",
+  "vorschau": [
+   "ansichtskarte-sommer.jpg",
+   "ansichtskarte-sommer-2.jpg"
+  ]
+ },
+ {
+  "k": "gutschein-aufenthalt",
+  "abt": "haus",
+  "n": "Gutschein für einen Aufenthalt",
+  "was": "Gutschein DL quer, Vorder- und Rückseite",
+  "format": "DL quer",
+  "seiten": 2,
+  "rot": [],
+  "pdf": "gutschein-aufenthalt.pdf",
+  "vorschau": [
+   "gutschein-aufenthalt.jpg",
+   "gutschein-aufenthalt-2.jpg"
+  ]
+ },
+ {
+  "k": "gutschein-roestihues",
+  "abt": "haus",
+  "n": "Gutschein Röstihüs",
+  "was": "Gutschein DL quer mit Foto, Vorder- und Rückseite",
+  "format": "DL quer",
+  "seiten": 2,
+  "rot": [],
+  "pdf": "gutschein-roestihues.pdf",
+  "vorschau": [
+   "gutschein-roestihues.jpg",
+   "gutschein-roestihues-2.jpg"
+  ]
+ },
+ {
+  "k": "flyer-haus",
+  "abt": "haus",
+  "n": "Flyer des Hauses",
+  "was": "Flyer A6, vorne Foto, hinten Kontakt",
+  "format": "A6 hoch",
+  "seiten": 2,
+  "rot": [],
+  "pdf": "flyer-haus.pdf",
+  "vorschau": [
+   "flyer-haus.jpg",
+   "flyer-haus-2.jpg"
+  ]
+ },
+ {
+  "k": "instagram-elf-roestis",
+  "abt": "roestihues",
+  "n": "Elf Röstis",
+  "was": "Instagram-Beitrag hoch 4:5",
+  "format": "Instagram 4:5",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "instagram-elf-roestis.pdf",
+  "vorschau": [
+   "instagram-elf-roestis.jpg"
+  ]
+ },
+ {
+  "k": "instagram-bergbahnen",
+  "abt": "inklusive",
+  "n": "Bergbahnen und Postautos",
+  "was": "Instagram-Beitrag hoch 4:5 mit Grat-Kante",
+  "format": "Instagram 4:5",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "instagram-bergbahnen.pdf",
+  "vorschau": [
+   "instagram-bergbahnen.jpg"
+  ]
+ },
+ {
+  "k": "instagram-lift-quadrat",
+  "abt": "saastal",
+  "n": "Zwei Minuten bis zum Lift",
+  "was": "Instagram-Beitrag quadratisch 1:1 mit Grat-Kante",
+  "format": "Instagram 1:1",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "instagram-lift-quadrat.pdf",
+  "vorschau": [
+   "instagram-lift-quadrat.jpg"
+  ]
+ },
+ {
+  "k": "instagram-gastgeber",
+  "abt": "haus",
+  "n": "Ihre Gastgeber",
+  "was": "Instagram-Beitrag hoch 4:5",
+  "format": "Instagram 4:5",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "instagram-gastgeber.pdf",
+  "vorschau": [
+   "instagram-gastgeber.jpg"
+  ]
+ },
+ {
+  "k": "story-spa",
+  "abt": "saastal",
+  "n": "Das Spa nebenan · Story",
+  "was": "Instagram-Story 9:16",
+  "format": "Story 9:16",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "story-spa.pdf",
+  "vorschau": [
+   "story-spa.jpg"
+  ]
+ },
+ {
+  "k": "story-kidsclub",
+  "abt": "abende",
+  "n": "Spielburg vor dem Haus",
+  "was": "Instagram-Story 9:16",
+  "format": "Story 9:16",
+  "seiten": 1,
+  "rot": [],
+  "pdf": "story-kidsclub.pdf",
+  "vorschau": [
+   "story-kidsclub.jpg"
+  ]
+ }
+]

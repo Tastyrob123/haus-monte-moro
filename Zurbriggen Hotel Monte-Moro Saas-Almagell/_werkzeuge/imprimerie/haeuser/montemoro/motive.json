@@ -1,0 +1,257 @@
+[
+ {
+  "key": "tal-sommer",
+  "titel": "Das Saastal im Sommer",
+  "quelle": "foto",
+  "schrift": false,
+  "schlagworte": {
+   "thema": "Sommer",
+   "ort": "Saastal"
+  },
+  "akzent": "#C67144",
+  "kopf_frei": true,
+  "kopf_farbe": "#F5F2EE",
+  "rueck_farbe": "#0A2A4A",
+  "ganz": null,
+  "kopf_box": null,
+  "ganz_kopf_box": null
+ },
+ {
+  "key": "alpenrosen",
+  "titel": "Alpenrosen über dem Saastal",
+  "quelle": "foto",
+  "schrift": false,
+  "schlagworte": {
+   "thema": "Sommer",
+   "ort": "Saastal"
+  },
+  "akzent": "#C67144",
+  "kopf_frei": true,
+  "kopf_farbe": "#F5F2EE",
+  "rueck_farbe": "#0A2A4A",
+  "ganz": null,
+  "kopf_box": null,
+  "ganz_kopf_box": null
+ },
+ {
+  "key": "mattmark",
+  "titel": "Ein Bergsee über dem Saastal",
+  "quelle": "foto",
+  "schrift": false,
+  "schlagworte": {
+   "thema": "Sommer",
+   "ort": "Saastal"
+  },
+  "akzent": "#C67144",
+  "kopf_frei": true,
+  "kopf_farbe": "#F5F2EE",
+  "rueck_farbe": "#0A2A4A",
+  "ganz": null,
+  "kopf_box": null,
+  "ganz_kopf_box": null
+ },
+ {
+  "key": "stausee",
+  "titel": "Der Stausee Mattmark",
+  "quelle": "foto",
+  "schrift": false,
+  "schlagworte": {
+   "thema": "Ausflug",
+   "ort": "Saastal"
+  },
+  "akzent": "#C67144",
+  "kopf_frei": true,
+  "kopf_farbe": "#F5F2EE",
+  "rueck_farbe": "#0A2A4A",
+  "ganz": null,
+  "kopf_box": null,
+  "ganz_kopf_box": null
+ },
+ {
+  "key": "see-blumen",
+  "titel": "Blumen am Mattmarksee",
+  "quelle": "foto",
+  "schrift": false,
+  "schlagworte": {
+   "thema": "Sommer",
+   "ort": "Saastal"
+  },
+  "akzent": "#C67144",
+  "kopf_frei": true,
+  "kopf_farbe": "#F5F2EE",
+  "rueck_farbe": "#0A2A4A",
+  "ganz": null,
+  "kopf_box": null,
+  "ganz_kopf_box": null
+ },
+ {
+  "key": "bergbach",
+  "titel": "Ein Bergbach zwischen den Felsen",
+  "quelle": "foto",
+  "schrift": false,
+  "schlagworte": {
+   "thema": "Sommer",
+   "ort": "Saastal"
+  },
+  "akzent": "#C67144",
+  "kopf_frei": true,
+  "kopf_farbe": "#F5F2EE",
+  "rueck_farbe": "#0A2A4A",
+  "ganz": null,
+  "kopf_box": null,
+  "ganz_kopf_box": null
+ },
+ {
+  "key": "wasserfall",
+  "titel": "Ein Wasserfall im Saastal",
+  "quelle": "foto",
+  "schrift": false,
+  "schlagworte": {
+   "thema": "Sommer",
+   "ort": "Saastal"
+  },
+  "akzent": "#C67144",
+  "kopf_frei": true,
+  "kopf_farbe": "#F5F2EE",
+  "rueck_farbe": "#0A2A4A",
+  "ganz": null,
+  "kopf_box": null,
+  "ganz_kopf_box": null
+ },
+ {
+  "key": "gletscher",
+  "titel": "Über den Gletschern des Saastals",
+  "quelle": "foto",
+  "schrift": false,
+  "schlagworte": {
+   "thema": "Winter",
+   "ort": "Saastal"
+  },
+  "akzent": "#C67144",
+  "kopf_frei": true,
+  "kopf_farbe": "#F5F2EE",
+  "rueck_farbe": "#0A2A4A",
+  "ganz": null,
+  "kopf_box": null,
+  "ganz_kopf_box": null
+ },
+ {
+  "key": "huette",
+  "titel": "Eine Hütte im Schnee",
+  "quelle": "foto",
+  "schrift": false,
+  "schlagworte": {
+   "thema": "Winter",
+   "ort": "Saastal"
+  },
+  "akzent": "#C67144",
+  "kopf_frei": true,
+  "kopf_farbe": "#F5F2EE",
+  "rueck_farbe": "#0A2A4A",
+  "ganz": null,
+  "kopf_box": null,
+  "ganz_kopf_box": null
+ },
+ {
+  "key": "dorf-weiss",
+  "titel": "Das Dorf im Schnee",
+  "quelle": "foto",
+  "schrift": false,
+  "schlagworte": {
+   "thema": "Winter",
+   "ort": "Saastal"
+  },
+  "akzent": "#C67144",
+  "kopf_frei": true,
+  "kopf_farbe": "#F5F2EE",
+  "rueck_farbe": "#0A2A4A",
+  "ganz": null,
+  "kopf_box": null,
+  "ganz_kopf_box": null
+ },
+ {
+  "key": "dorf-nacht",
+  "titel": "Saas-Almagell am Abend",
+  "quelle": "foto",
+  "schrift": false,
+  "schlagworte": {
+   "thema": "Dorf",
+   "ort": "Saastal"
+  },
+  "akzent": "#C67144",
+  "kopf_frei": true,
+  "kopf_farbe": "#F5F2EE",
+  "rueck_farbe": "#0A2A4A",
+  "ganz": null,
+  "kopf_box": null,
+  "ganz_kopf_box": null
+ },
+ {
+  "key": "haus-sommer-g",
+  "titel": "Das Hotel mit der Sonnenterrasse",
+  "quelle": "foto",
+  "schrift": false,
+  "schlagworte": {
+   "thema": "Haus",
+   "ort": "Saastal"
+  },
+  "akzent": "#C67144",
+  "kopf_frei": true,
+  "kopf_farbe": "#F5F2EE",
+  "rueck_farbe": "#0A2A4A",
+  "ganz": null,
+  "kopf_box": null,
+  "ganz_kopf_box": null
+ },
+ {
+  "key": "haus-winter-g",
+  "titel": "Das Hotel im Winter",
+  "quelle": "foto",
+  "schrift": false,
+  "schlagworte": {
+   "thema": "Haus",
+   "ort": "Saastal"
+  },
+  "akzent": "#C67144",
+  "kopf_frei": true,
+  "kopf_farbe": "#F5F2EE",
+  "rueck_farbe": "#0A2A4A",
+  "ganz": null,
+  "kopf_box": null,
+  "ganz_kopf_box": null
+ },
+ {
+  "key": "gondel",
+  "titel": "Die Gondeln vor dem Röstihüs",
+  "quelle": "foto",
+  "schrift": false,
+  "schlagworte": {
+   "thema": "Röstihüs",
+   "ort": "Saastal"
+  },
+  "akzent": "#C67144",
+  "kopf_frei": true,
+  "kopf_farbe": "#F5F2EE",
+  "rueck_farbe": "#0A2A4A",
+  "ganz": null,
+  "kopf_box": null,
+  "ganz_kopf_box": null
+ },
+ {
+  "key": "wolkenmeer",
+  "titel": "Sonne über dem Nebelmeer",
+  "quelle": "foto",
+  "schrift": false,
+  "schlagworte": {
+   "thema": "Ausflug",
+   "ort": "Saastal"
+  },
+  "akzent": "#C67144",
+  "kopf_frei": true,
+  "kopf_farbe": "#F5F2EE",
+  "rueck_farbe": "#0A2A4A",
+  "ganz": null,
+  "kopf_box": null,
+  "ganz_kopf_box": null
+ }
+]
