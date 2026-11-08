@@ -13,10 +13,10 @@
   /* ziel: Liste von Wahlorten, der erste sichtbare gilt (Handy hat andere Flächen). */
   var GAENGE = {
     maison: { name: 'Das Hotelbüro', schritte: [
-      { ziel: ['.m-f5__titel', '#oben'], oben: true, titel: 'Das ist Das Hotelbüro',
+      { ziel: ['.m-f5__titel', '#oben'], oben: true, titel: 'Das ist das Hotelbüro',
         text: 'Der Eingang zu allen Werkzeugen des Hauses. Von hier aus pflegen Sie die Website, die Karte des Röstihüs und die Preislisten, Aushänge, den Chat und die Marke selbst.' },
       { ziel: ['.hz-z:first-child a', '.hz-tafel'], titel: 'Ein Fenster je Werkzeug',
-        text: 'Das Schaufenster, Das Kartenbrett, Die Hausdruckerei, Die Rezeption, Das Markenbuch, Die Besucherliste. Darunter steht, was dort gerade ansteht.' },
+        text: 'Das Schaufenster, das Kartenbrett, die Hausdruckerei, die Rezeption, das Markenbuch, die Besucherliste. Darunter steht, was dort gerade ansteht.' },
       { ziel: ['.m-f5__zeile'], titel: 'Heute auf der Website',
         text: 'Wer heute auf der Website war und wer von dort weiter zur Buchung oder zur Anfrage ging. Ein Klick öffnet die ganze Liste.' },
       { ziel: ['.m-insel', '.m-oben'], oben: true, titel: 'Immer erreichbar',

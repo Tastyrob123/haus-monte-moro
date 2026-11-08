@@ -670,10 +670,10 @@ window.addEventListener('load',tuer);setTimeout(tuer,12000);})();
 def rundgang():
     s = open(os.path.join(QUELLE, 'rundgang-vorlage.js'), encoding='utf-8').read()
     a = s.index('  var GAENGE = {'); b = s.index('\n  };', a) + 4
-    namen = ', '.join(W[k]['name'] for k in REIHE)
+    namen = ', '.join((W[k]['name'] if i == 0 else re.sub(r'^(Das|Die|Der) ', lambda m: m.group(1).lower() + ' ', W[k]['name'])) for i, k in enumerate(REIHE))
     gang = f'''  var GAENGE = {{
     maison: {{ name: '{ZENTRALE}', schritte: [
-      {{ ziel: ['.m-f5__titel', '#oben'], oben: true, titel: 'Das ist {ZENTRALE}',
+      {{ ziel: ['.m-f5__titel', '#oben'], oben: true, titel: 'Das ist {re.sub(r"^(Das|Die|Der) ", lambda m: m.group(1).lower() + " ", ZENTRALE)}',
         text: 'Der Eingang zu allen Werkzeugen des Hauses. Von hier aus pflegen Sie die Website, die Karte des Röstihüs und die Preislisten, Aushänge, den Chat und die Marke selbst.' }},
       {{ ziel: ['.hz-z:first-child a', '.hz-tafel'], titel: 'Ein Fenster je\u00a0Werkzeug',
         text: '{namen}. Darunter steht, was dort gerade ansteht.' }},
