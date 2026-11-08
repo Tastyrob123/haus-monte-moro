@@ -57,6 +57,9 @@ Läuft `cloud/schluss.sh` nicht mehr und fehlt `aus-ende/ende.json`: neu starten
 - Zweig `ergebnis` trägt jetzt `.claude/`, `CLAUDE.md`, `AUFTRAG.md` und diese Übergabe (Lebenszeichen für die Wache).
 - Schaufenster nach der Reparatur «90.00» (17:57) frisch geprüft: läuft (`/tmp/o0`, Worktree von `claude/task-o0ores`, `aus/schaufenster/`).
 
+## Gegenprüfung (session_01Qrxqqmsi6FLCXQ7QCpcSoE, 20:16 UTC)
+- Auftrag: jeden Auftragspunkt selbst nachprüfen (Werkbank, sieben Werkzeuge, Drucksachen, Feed, Prüfung) bei 1440/390, Fehlendes bauen. Arbeitet in Worktree `/tmp/gp` von `claude/task-o0ores`. Nachtsitzung 01Qrxqqj2… prüft Schaufenster nach; die Gegenprüfung nimmt sich nach dem Schaufenster nicht doppelt an.
+
 ## Entscheidungen der Nacht
 - Nachtsitzung: Auftrag sagt Zweig `ergebnis`; die Übergabe lag nur auf `claude/task-o0ores`. Übergabe und Lebenszeichen leben ab jetzt auf `ergebnis`, Code-Reparaturen weiter auf `claude/task-o0ores`.
 - Schaufenster wurde in der Schlussprüfung (16:56) vor der Reparatur 17:57 geprüft: deshalb Nachprüfung in der Nacht.
