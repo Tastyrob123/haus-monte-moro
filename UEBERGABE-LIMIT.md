@@ -34,6 +34,11 @@ Stand: 08.11.2026, Oberchef-Sitzung (Zweig `claude/task-o0ores`).
 - Zwischenstand Schlussprüfung (18:25): Hotelbüro, Schaufenster (+Anleitung), Kartenbrett (+Anleitung), Rezeption (+Anleitung), Markenbuch (+Buch, +Anleitung): je 0 Funde, nichts «nicht erreicht». Messlauf über alles läuft parallel (`aus-ende/messlauf/alle/`), bisher 0 Funde.
 - Augen (Oberchef): Werkbank 1440/390, Drucksachen, Feed, Kartenbrett, Rezeption, Markenbuch, Besucherliste, Hausdruckerei angesehen; Feed-Zahlen aus `_quelle/extern/ig/profil.txt` belegt.
 
+## Erste Sitzung (Oberchef, läuft parallel weiter, 18:50 UTC)
+- Eigene Schlussprüfung in `aus-ende/` dieser Sitzung: 16 Ziele frisch 0 Funde (Hotelbüro bis Werkbank, Werkbank-KI). Rest der Werkbank-Ziele und Oberflächenprüfung über alle Oberflächen laufen (`cloud/schluss_teil.sh`, Zählen: `python3 cloud/funde_zaehlen.py aus-ende`).
+- 32 zufällige Zustandsbilder aller Werkzeuge mit dem Auge angesehen: ohne Befund.
+- Diese Sitzung legt nach Abschluss die Tafel in `ergebnis` an und meldet Robert. Folgesitzung: bitte nichts doppelt prüfen; Funde hier eintragen.
+
 ## Nächster genauer Schritt
 Läuft `cloud/schluss.sh` nicht mehr und fehlt `aus-ende/ende.json`: neu starten. Danach Funde reparieren, Fundbilder ansehen, Tafeln nach Zweig `ergebnis` unter `ergebnis/laeufe/2026-11-08/`, Meldung.
 
