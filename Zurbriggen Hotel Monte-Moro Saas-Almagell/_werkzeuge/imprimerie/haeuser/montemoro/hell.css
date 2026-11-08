@@ -225,3 +225,12 @@ textarea::placeholder,input::placeholder{font-style:normal!important}
 /* «Noch keine eigenen Fotos …» über die ganze Breite des Fotorasters statt in einer Zelle von 69 px */
 .bk-fotos>.bk-satz{grid-column:1/-1}
 @media (max-width:430px){.kopf #btnSpeichern i svg{transform:translateY(.6px)}}
+/* Knöpfe wie die Website (montemoro.css .kn--nacht / .kn--laerche, Gegenprobe Oberchef 08.11.2026): Messing ist nur feine Linie.
+   Knauf weiss/Creme mit Pfeil in Nacht; kein goldener Verlauf, kein goldener Knauf */
+.knopf--voll,.kn.knopf--voll,.kopf .knopf--gold,.kn.ms-kn-neu,.kn.ms-kn-gold{--ko:#FFFFFF;--ku:#EFE9E1;--kt:#0A2A4A;--klicht:rgba(255,255,255,.95)}
+.kn.ms-kn-neu{--o:#15466F;--m:#0D3F6F;--u:#0A2A4A;--t:#FFFFFF}
+.kn.ms-kn-gold{--o:#D3845A;--m:#C67144;--u:#AE5E34;--t:#FFFFFF;--kante:rgba(0,0,0,.22)}
+.hk__video{background:linear-gradient(180deg,#FFFFFF,#F5F2EE)!important;box-shadow:inset 0 0 0 1px rgba(10,42,74,.14),0 1px 0 rgba(255,255,255,.9) inset,0 10px 22px -14px rgba(10,42,74,.5)!important;color:#0A2A4A}
+.hk__video svg{color:#FFFFFF;background:linear-gradient(180deg,#15466F,#0A2A4A);box-shadow:none}
+.hk .ms-zeichen,.hk__zeichen,.hk svg.zeichen{color:#115595}
+.kopf .knopf--gold{--o:#FFFFFF;--m:#F5F2EE;--u:#E7E1DC;--t:#0A2A4A;--ko:#15466F;--ku:#0A2A4A;--kt:#FFFFFF;--klicht:rgba(255,255,255,.3)}

@@ -105,3 +105,4 @@ button.wo-marke-w{border:0;background:none;padding:0;cursor:pointer;text-align:l
 @media (max-width:600px){.start__direkt{flex-wrap:wrap;border-radius:24px;padding:10px 10px 10px 18px}.start__direkt textarea{flex:1 1 calc(100% - 40px);min-width:0}.start__direkt .knopf--voll{flex:1 1 100%;width:100%;justify-content:space-between}}
 /* «Neu erstellen»: Kacheln einer Reihe gleich hoch (Tor 1.11.2026, 1000 px: 445–500 px in einer Reihe) */
 #arten>.stueck{align-self:stretch}
+.wo-sb__zier .nw,.nw{white-space:nowrap}

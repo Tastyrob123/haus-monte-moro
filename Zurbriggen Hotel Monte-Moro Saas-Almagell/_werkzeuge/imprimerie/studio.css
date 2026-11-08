@@ -61,7 +61,7 @@ svg{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-l
 .kn--ohne{padding-right:16px}
 /* Navy auf blauen Flächen und als Hauptknopf, Knauf poliertes Gold */
 .kopf .kn,.knopf--voll,.dialog__knoepfe .knopf,.hk__nav .knopf,.hk__knoepfe--zeile .knopf{--o:#465462;--m:#04101c;--u:#04101c;--t:#ece4db;--licht:rgba(252,250,249,.34);--kante:rgba(0,0,0,.5);--tief:rgba(0,0,0,.55);
-  --ko:#e7ddd2;--ku:#af9463;--kt:#061729;--klicht:rgba(247,244,240,.95);text-shadow:0 1px 1px rgba(0,0,0,.35);
+  --ko:#FFFFFF;--ku:#EFE9E1;--kt:#061729;--klicht:rgba(247,244,240,.95);text-shadow:0 1px 1px rgba(0,0,0,.35);
   box-shadow:inset 0 1px 0 var(--licht),inset 0 -3px 0 var(--kante),inset 0 0 0 1px rgba(206,190,160,.6),0 0 0 1px rgba(0,0,0,.25),0 18px 30px -14px var(--tief)}
 :is(.kopf .kn,.knopf--voll,.dialog__knoepfe .knopf,.hk__nav .knopf,.hk__knoepfe--zeile .knopf)::after{background:linear-gradient(100deg,transparent,rgba(240,239,237,.3) 50%,transparent)}
 :is(.kopf .kn,.knopf--voll,.dialog__knoepfe .knopf,.hk__nav .knopf,.hk__knoepfe--zeile .knopf) i{box-shadow:inset 0 1px 0 var(--klicht),inset 0 -2px 0 rgba(13,49,85,.45),0 0 0 1px rgba(232,223,213,.35),0 6px 12px -6px rgba(0,0,0,.55)}
@@ -567,9 +567,9 @@ body.startoffen :is(.kopf__mitte,#btnZurueck,#btnVor,.pruef,.ausgabe,.kopf__tren
 .stueck{position:relative;width:232px;padding:0 0 30px;border:0;background:none;color:inherit;text-align:center;cursor:pointer;animation:reinschweben 2s var(--e1) both;animation-delay:calc(.25s + var(--i,0)*120ms)}
 .stueck:focus-visible{outline:0}
 .stueck__buehne{position:relative;display:flex;align-items:flex-end;justify-content:center;height:304px;padding-bottom:17px}
-/* die Leiste: Messing, durchgehend über die Reihe */
+/* die Leiste: Fassade bis Nacht, durchgehend über die Reihe (Messing nur als feine Linie) */
 .stueck__buehne::after{content:'';position:absolute;left:0;right:0;bottom:9px;height:8px;z-index:0;
-  background:linear-gradient(180deg,#e5dbcf 0%,#cbba9b 28%,#af9463 62%,#465463 100%);
+  background:linear-gradient(180deg,#E7E1DC 0%,#D6CCC1 30%,#4A5D70 70%,#0A2A4A 100%);
   box-shadow:inset 0 1px 0 rgba(246,242,237,.85),0 1px 0 rgba(0,0,0,.35),0 14px 18px -6px rgba(0,0,0,.75)}
 .stueck:first-child .stueck__buehne::after{border-radius:4px 0 0 4px}
 /* Schattenfleck unter dem Stück */
@@ -932,7 +932,7 @@ html.start-gleich .studio{visibility:hidden}
 .ms-suche kbd{font:10px var(--mono);letter-spacing:.08em;padding:4px 8px;border-radius:999px;color:var(--taupe-tief);background:rgba(104,87,54,.12)}
 .ms-frei{flex:1}
 .start.ms .start__zu{position:static}
-.kn.ms-kn-neu{--o:#465462;--m:#04101c;--u:#04101c;--t:#ece4db;--licht:rgba(252,250,249,.34);--kante:rgba(0,0,0,.5);--tief:rgba(0,0,0,.55);--ko:#e7ddd2;--ku:#af9463;--kt:#061729;--klicht:rgba(247,244,240,.95);padding:0 4px 0 16px;
+.kn.ms-kn-neu{--o:#465462;--m:#04101c;--u:#04101c;--t:#ece4db;--licht:rgba(252,250,249,.34);--kante:rgba(0,0,0,.5);--tief:rgba(0,0,0,.55);--ko:#FFFFFF;--ku:#EFE9E1;--kt:#061729;--klicht:rgba(247,244,240,.95);padding:0 4px 0 16px;
   box-shadow:inset 0 1px 0 var(--licht),inset 0 -3px 0 var(--kante),inset 0 0 0 1px rgba(206,190,160,.6),0 0 0 1px rgba(0,0,0,.25),0 14px 24px -12px var(--tief)}
 .kn.ms-kn-neu i{width:28px;height:28px}
 @media (min-width:901px){.kn.ms-kn-neu{display:none}}
@@ -1146,7 +1146,7 @@ html.start-gleich .studio{visibility:hidden}
 .ig-tuer__t{flex:1;min-width:0}
 .ig-tuer__t b{display:block;font:400 17px/1.15 var(--serif);color:#eee8e0}
 .ig-tuer__t small{display:block;margin-top:4px;font-size:12px;line-height:1.35;color:rgba(227,217,204,.72)}
-.ig-tuer__k{flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#e3d9cc,#b09665);color:#061729;box-shadow:inset 0 1px 0 rgba(250,248,245,.9),inset 0 -2px 0 rgba(13,49,85,.45),0 6px 12px -6px rgba(0,0,0,.6)}
+.ig-tuer__k{flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#FFFFFF,#EFE9E1);color:#061729;box-shadow:inset 0 1px 0 rgba(250,248,245,.9),inset 0 -2px 0 rgba(13,49,85,.45),0 6px 12px -6px rgba(0,0,0,.6)}
 .ig-tuer__k svg{width:14px;height:14px;stroke-width:1.8}
 .ig-kurz{margin:10px 2px 0;font:15px/1.35 var(--serif);color:var(--leise);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .ig-zip{display:flex;align-items:center;gap:12px;width:100%;margin-top:12px;padding:10px 12px;border:0;border-radius:16px;text-align:left;cursor:pointer;background:var(--kuhle);box-shadow:var(--kuhle-s);transition:transform .5s var(--e2)}
@@ -1279,7 +1279,7 @@ body.ig-offen{overflow:hidden}
 .mb-livre>span:nth-child(2){flex:1;min-width:0}
 .mb-livre b{display:block;font:400 24px/1.1 var(--serif)}
 .mb-livre small{display:block;margin-top:5px;font-size:13.5px;color:rgba(227,217,204,.75)}
-.mb-livre i{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;color:#061729;background:linear-gradient(180deg,#e3d9cc,#b09665);box-shadow:inset 0 1px 0 rgba(250,248,245,.9),inset 0 -2px 0 rgba(13,49,85,.45)}
+.mb-livre i{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;color:#061729;background:linear-gradient(180deg,#FFFFFF,#EFE9E1);box-shadow:inset 0 1px 0 rgba(250,248,245,.9),inset 0 -2px 0 rgba(13,49,85,.45)}
 .mb-livre i svg{width:15px;height:15px;stroke:currentColor;stroke-width:1.8;fill:none}
 .mb__dateien{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .mb__datei{display:block;text-decoration:none;color:var(--navy)}
@@ -1293,7 +1293,7 @@ body.ig-offen{overflow:hidden}
 /* ---------- Le Livre in Die Hausdruckerei (12.10.2026): Ansicht auf der Startseite, Fach im Editor, Markenprüfung ---------- */
 .ms-rund{flex:none;position:relative}
 .ms-rund svg{width:17px;height:17px;stroke-width:1.6}
-.insel button[data-livre].an,.kopf .rund[data-livre].an{color:#061729;background:linear-gradient(180deg,#e3d9cc,#b09665)}
+.insel button[data-livre].an,.kopf .rund[data-livre].an{color:#061729;background:linear-gradient(180deg,#FFFFFF,#EFE9E1)}
 .ll-kopf{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:0 0 22px}
 .ll-satz{display:block;margin:0 0 20px;max-width:760px}
 .ll-fach[hidden]{display:none}
@@ -1396,7 +1396,7 @@ span.ll-d__f[style*="background-image"]{background-size:220px auto;background-re
 .lp__ton s{display:block;color:var(--leise)}
 .lp__rahmen{display:flex;align-items:center;gap:10px;margin:0 0 10px;font-size:12.5px;color:var(--leise)}
 .lp__rahmen span{flex:none;width:90px;height:6px;border-radius:6px;background:var(--kuhle);box-shadow:var(--kuhle-s);overflow:hidden}
-.lp__rahmen i{display:block;height:100%;background:linear-gradient(90deg,#b09665,#d2c4a9)}
+.lp__rahmen i{display:block;height:100%;background:linear-gradient(90deg,#9A4F2B,#C67144)}
 .lp__t{display:grid;grid-template-columns:24px 1fr auto;grid-template-rows:auto auto;column-gap:10px;align-items:center;padding:7px 0;border-top:1px solid var(--linie)}
 .lp__t i{grid-row:1/3;width:24px;height:24px;border-radius:7px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.1)}
 .lp__t b{font:11px var(--mono);letter-spacing:.08em}
@@ -1424,7 +1424,7 @@ span.ll-d__f[style*="background-image"]{background-size:220px auto;background-re
 .stueck:hover .stueck__name{color:inherit}
 .stueck:hover .stueck__satztext{color:inherit}
 .stueck__nimm{display:inline-block;max-width:none;margin:10px auto 0;padding:7px 14px 6px;border-radius:999px;font:9.5px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:#061729;
-  background:linear-gradient(180deg,#e3d9cc,#b09665);box-shadow:inset 0 1px 0 rgba(250,248,245,.9),inset 0 -2px 0 rgba(13,49,85,.45);opacity:0;transform:translateY(4px);transition:opacity .4s,transform .5s var(--e1);animation:none}
+  background:linear-gradient(180deg,#FFFFFF,#EFE9E1);box-shadow:inset 0 1px 0 rgba(250,248,245,.9),inset 0 -2px 0 rgba(13,49,85,.45);opacity:0;transform:translateY(4px);transition:opacity .4s,transform .5s var(--e1);animation:none}
 .stueck:hover .stueck__nimm,.stueck:focus-visible .stueck__nimm{opacity:1;transform:none;color:#061729}
 @media (hover:none){.stueck__nimm{opacity:1;transform:none}}
 .stueck--vorlage{text-align:center}

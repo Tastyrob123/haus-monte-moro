@@ -43,12 +43,14 @@
   }
 
   /* Startbild der Übersicht: WO.startbild «voll», Gruss und Satz bleiben dieselben Knoten (start.js schreibt sie), das Feld steht darunter */
+  /* Zierzeile: Namen mit Bindestrich nie am Bindestrich umbrechen («Monte-» / «Moro», Gegenprobe Oberchef 08.11.2026) */
+  function ZIER() { return (WO.esc(WO.name('druck')) + ' · ' + WO.esc(WO.haus.voll || WO.haus.name)).replace(/(\S+-\S+)/g, '<span class="nw">$1</span>'); }
   function startbild() {
     var g = document.querySelector('#msStart .ms-gruss');
     if (!g || g.__wo) return; g.__wo = 1; g.__b = 1;
     var h = document.getElementById('msGruss'), s = document.getElementById('msSatz');
     var hilf = document.createElement('div');
-    hilf.innerHTML = WO.startbild({ werkzeug: 'druck', art: 'voll', h1: ' ', satz: ' ', knoepfe: ' ' });
+    hilf.innerHTML = WO.startbild({ werkzeug: 'druck', art: 'voll', h1: ' ', satz: ' ', knoepfe: ' ', zier: ZIER() });
     var sb = hilf.firstChild; sb.classList.add('ws-sb');
     [].forEach.call(sb.querySelectorAll('img'), function (im) { im.loading = 'eager'; im.decoding = 'sync'; im.setAttribute('fetchpriority', 'high'); });   // Startbild sofort, auch nach dem Wechsel aus mail.html (Tor WebKit 1.11.)
     if (h) { h.classList.add('wo-sb__h'); sb.querySelector('.wo-sb__h').replaceWith(h); }
@@ -65,7 +67,7 @@
       var v = t.closest('[id^="ms"]'), h1 = t.querySelector('h1'), satz = t.querySelector('.ms-leise');
       var hilf = document.createElement('div');
       var fn = FOTO[v && v.id] || 'haus-sommer', gr = B800[fn];
-      hilf.innerHTML = WO.startbild({ werkzeug: 'druck', art: 'buehne', h1: ' ', satz: satz ? ' ' : '', foto: BASIS + fn + '.webp',
+      hilf.innerHTML = WO.startbild({ werkzeug: 'druck', art: 'buehne', zier: ZIER(), h1: ' ', satz: satz ? ' ' : '', foto: BASIS + fn + '.webp',
         srcset: gr ? BASIS + fn + '-800.webp 800w, ' + BASIS + fn + '.webp ' + gr + 'w' : '', sizes: '(max-width:700px) 70vw, (max-width:1100px) 39vw, 50vw' });
       var sb = hilf.firstChild; sb.classList.add('ws-sb');
       if (h1) { h1.classList.add('wo-sb__h'); sb.querySelector('.wo-sb__h').replaceWith(h1); }
