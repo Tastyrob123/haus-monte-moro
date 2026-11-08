@@ -27,8 +27,21 @@ Stand: 08.11.2026, Oberchef-Sitzung (Zweig `claude/task-o0ores`).
 4. Prüfung über alles, Tafeln in Zweig `ergebnis` unter `ergebnis/laeufe/2026-11-08/`.
 5. Meldung an Robert.
 
+## Stand Folgesitzung (08.11., Nacht)
+- Alle acht Reviere haben `LIEFERUNG.md` (Hotelbüro, Schaufenster, Kartenbrett, Rezeption, Markenbuch, Besucherliste, Hausdruckerei, Werkbank Kern + Papier). Kein Agent fehlt, keiner neu gestartet.
+- `.claude/` und `CLAUDE.md` von main übernommen (Lebenszeichen).
+- Schlussprüfung `bash cloud/schluss.sh > /tmp/schluss.log` läuft (28 Ziele, danach oberflaeche_pruefen.js je Oberfläche), Ergebnis in `aus-ende/`.
+
 ## Nächster genauer Schritt
-Stand der Agenten prüfen (`git log --oneline`, `LIEFERUNG.md` je Revier). Fehlt ein Revier: Agent mit `AUFTRAG-GEMEINSAM.md` neu starten (Opus).
+Läuft `cloud/schluss.sh` nicht mehr und fehlt `aus-ende/ende.json`: neu starten. Danach Funde reparieren, Fundbilder ansehen, Tafeln nach Zweig `ergebnis` unter `ergebnis/laeufe/2026-11-08/`, Meldung.
+
+## Entscheidungen der Nacht
+- Gearbeitet wird auf `claude/task-o0ores` (Auftrag der Folgesitzung), nicht auf main.
+- Geprüft nur in Chromium (WebKit nicht ladbar, siehe Stolpersteine).
+
+## Wartet auf Roberts Wort
+- Baustein `reception/baustein/anfrage.js` in die Website, Datenschutz-Satz zu Anfragen/Chat (Website-Revier).
+
 
 ## Einrichten in einer neuen Sitzung
 - `git fetch origin quelle && git worktree add /tmp/quelle origin/quelle && ln -sfn "/tmp/quelle/Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle" "Zurbriggen Hotel Monte-Moro Saas-Almagell/_quelle"`
