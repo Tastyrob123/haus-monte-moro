@@ -34,6 +34,176 @@
    "id": "briefpapier",
    "name": "Briefbogen und Umschlag",
    "seiten": 2
+  },
+  {
+   "id": "pw-roestihues-best-of-roestis",
+   "name": "Best of Röstis",
+   "seiten": 2
+  },
+  {
+   "id": "pw-roestihues-cordon-bleus",
+   "name": "Unsere Cordon bleus",
+   "seiten": 1
+  },
+  {
+   "id": "pw-roestihues-auszug",
+   "name": "Röstihüs · Auszug der Karte",
+   "seiten": 1
+  },
+  {
+   "id": "pw-roestihues-wein-von-fabian",
+   "name": "Wein von Fabian",
+   "seiten": 1
+  },
+  {
+   "id": "pw-roestihues-apero-dessert",
+   "name": "Zum Apéro und zum Dessert",
+   "seiten": 1
+  },
+  {
+   "id": "pw-tischaufsteller-tradition",
+   "name": "Es lebe die Tradition",
+   "seiten": 1
+  },
+  {
+   "id": "pw-tischkarte-hotelwein",
+   "name": "Tischkarte · Cuvee Special",
+   "seiten": 1
+  },
+  {
+   "id": "pw-tischkarte-hotelwein-eichenfass",
+   "name": "Tischkarte · Cuvee Special Eichenfass",
+   "seiten": 1
+  },
+  {
+   "id": "pw-aushang-inklusive",
+   "name": "Inklusive",
+   "seiten": 1
+  },
+  {
+   "id": "pw-plakat-inklusive-a3",
+   "name": "Aushang Inklusive",
+   "seiten": 1
+  },
+  {
+   "id": "pw-preisliste-zimmer",
+   "name": "Preisliste Zimmer",
+   "seiten": 1
+  },
+  {
+   "id": "pw-preisliste-zuschlaege",
+   "name": "Zuschläge",
+   "seiten": 1
+  },
+  {
+   "id": "pw-preisliste-kinder",
+   "name": "Kinderpreise",
+   "seiten": 1
+  },
+  {
+   "id": "pw-aushang-racletteabend",
+   "name": "Racletteabend im Stübli",
+   "seiten": 1
+  },
+  {
+   "id": "pw-aushang-kidsclub",
+   "name": "Kidsclub",
+   "seiten": 1
+  },
+  {
+   "id": "pw-programm-woche",
+   "name": "Die Woche im Monte-Moro",
+   "seiten": 1
+  },
+  {
+   "id": "pw-willkommensbrief",
+   "name": "Willkommensbrief im Zimmer",
+   "seiten": 1
+  },
+  {
+   "id": "pw-briefpapier-a4",
+   "name": "Briefpapier A4",
+   "seiten": 1
+  },
+  {
+   "id": "pw-hinweis-spa",
+   "name": "Das Spa nebenan",
+   "seiten": 1
+  },
+  {
+   "id": "pw-hinweis-euro",
+   "name": "Auch in Euro",
+   "seiten": 1
+  },
+  {
+   "id": "pw-anreise-postauto",
+   "name": "Anreise mit dem Postauto",
+   "seiten": 1
+  },
+  {
+   "id": "pw-anreise-zug-postauto",
+   "name": "Mit Zug und Postauto",
+   "seiten": 1
+  },
+  {
+   "id": "pw-anreise-auto",
+   "name": "Mit dem Auto",
+   "seiten": 1
+  },
+  {
+   "id": "pw-plakat-wanderparadies-a3",
+   "name": "Wanderparadies",
+   "seiten": 1
+  },
+  {
+   "id": "pw-ansichtskarte-sommer",
+   "name": "Ansichtskarte Sommer",
+   "seiten": 2
+  },
+  {
+   "id": "pw-gutschein-aufenthalt",
+   "name": "Gutschein für einen Aufenthalt",
+   "seiten": 2
+  },
+  {
+   "id": "pw-gutschein-roestihues",
+   "name": "Gutschein Röstihüs",
+   "seiten": 2
+  },
+  {
+   "id": "pw-flyer-haus",
+   "name": "Flyer des Hauses",
+   "seiten": 2
+  },
+  {
+   "id": "pw-instagram-elf-roestis",
+   "name": "Elf Röstis",
+   "seiten": 1
+  },
+  {
+   "id": "pw-instagram-bergbahnen",
+   "name": "Bergbahnen und Postautos",
+   "seiten": 1
+  },
+  {
+   "id": "pw-instagram-lift-quadrat",
+   "name": "Zwei Minuten bis zum Lift",
+   "seiten": 1
+  },
+  {
+   "id": "pw-instagram-gastgeber",
+   "name": "Ihre Gastgeber",
+   "seiten": 1
+  },
+  {
+   "id": "pw-story-spa",
+   "name": "Das Spa nebenan · Story",
+   "seiten": 1
+  },
+  {
+   "id": "pw-story-kidsclub",
+   "name": "Spielburg vor dem Haus",
+   "seiten": 1
   }
  ],
  "etiketten": [

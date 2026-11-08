@@ -47,10 +47,7 @@ html.js .hr.da{opacity:1;transform:none;transition:opacity .9s cubic-bezier(.2,.
 @media (max-width:760px){.mb{flex-basis:calc(100vw - 2 * var(--rand))}.pfeile{display:none}}
 @media (hover:none){.pfeile{display:none}}
 .mb-kn>span{top:0!important;left:0!important;text-box:trim-both cap alphabetic}.pf svg{transform:none!important}   /* Versalien mittig in Chromium und WebKit (wie knopf_mitte.css) */
-</style>
-
-
-<style id="papier-kleid">.karton,.bogenblick{background:#D6CCC1!important;border-radius:0!important}.karton figcaption{color:#4A5D70!important}.fl--nacht .karton,.fl--navy .karton,.fl--tief .karton{background:#E7E1DC!important}.etk .b{background:#E7E1DC}.insel__m svg{color:#C67144!important;fill:#C67144!important;height:18px!important}.insel__m svg *{fill:#C67144!important}@media(max-width:480px){.insel__m span{display:none!important}}</style>
+</style><style id="papier-kleid">.karton,.bogenblick{background:#D6CCC1!important;border-radius:0!important}.karton figcaption{color:#4A5D70!important}.fl--nacht .karton,.fl--navy .karton,.fl--tief .karton{background:#E7E1DC!important}.etk .b{background:#E7E1DC}.insel__m svg{color:#C67144!important;fill:#C67144!important;height:18px!important}.insel__m svg *{fill:#C67144!important}@media(max-width:480px){.insel__m span{display:none!important}}</style>
 <style id="zeile-ganz">h1,h2,h3,h4,.z>span{text-wrap:balance}h1 br+em,h2 br+em{display:inline-block;text-wrap:balance}.stapel .fen__k{position:relative}.stapel .fen__k span{position:absolute;left:50%;transform:translateX(-50%);margin:0;overflow:visible}@media(max-width:860px){.stapel .fen__k span{display:none}}@media(max-width:480px){.etk{grid-template-columns:minmax(0,1fr)!important}}@media(min-width:900px) and (max-width:1279px){.brett-p{grid-template-columns:300px minmax(0,1fr)}.brett-p__k{grid-column:1/-1}}@media(max-width:1279px){.brett-p p{text-wrap:balance}}.da:not([data-drift]){will-change:auto!important}.mb-ueber__t small{display:grid;grid-template-columns:64px minmax(0,1fr);align-items:baseline}.mb-ueber__t small span{min-width:0}@media(max-width:480px){.mn-titel{font-size:clamp(1.5rem,8vw,2.2rem);letter-spacing:.03em}.mn-ende{gap:10px}.mn-ende i{width:18px}.mn-ende span{letter-spacing:.12em;white-space:nowrap}a.kn[href="../index.html#geprueft"]{letter-spacing:.04em;font-size:9.5px;white-space:nowrap;padding-left:14px}.stapel .tel{width:21%;right:-2%}}@media(max-width:480px){.wege__t,figcaption,.mb-ueber__t small{text-wrap:balance}.sag-h{font-size:1.32rem;letter-spacing:.03em;gap:10px}.hs2-her{grid-template-columns:repeat(2,minmax(0,1fr))!important}.hs2-her figcaption small{font-size:9px;letter-spacing:0}.ki-knoepfe{flex-direction:column;align-items:stretch}.ki-knoepfe .kn{white-space:nowrap;letter-spacing:.04em;font-size:10px}#sag-aufbau[data-a="heben"]:not(.da){transform:translateY(56px) scale(.98)!important}.faecher--2 .blattk span{flex-direction:column;gap:3px;font-size:9.5px;letter-spacing:.08em}}.stage>.aside h1{font-size:clamp(2rem,3.6vw,3.3rem);white-space:nowrap}.stage>.aside h1 em{display:inline}</style></head>
 <body>
 <script>if (!matchMedia('(prefers-reduced-motion:reduce)').matches && 'IntersectionObserver' in window) document.documentElement.classList.add('js');</script>
@@ -246,4 +243,34 @@ a.kn>.tm,button.kn>.tm,.uwahl button>.tm,.uschalter button>.tm,.wahl button>.tm,
 .uwahl button,.uschalter button,.wahl button,.vh-wahl button{display:inline-flex;align-items:center;justify-content:center}
 .tm-l{letter-spacing:0}
 
-@media(max-width:480px){h1.t1{font-size:min(38px,9.4vw)!important}}</style><script id="knopf-mitte-js">(function(){function m(){document.querySelectorAll('.kn,.sbf-z,.wahl button,.vh-wahl button,.uwahl button,.uschalter button').forEach(function(k){var t=k.firstChild;if(t&&t.nodeType===3&&t.textContent.trim()){var s=document.createElement('span');s.className='tm';s.textContent=t.textContent;k.replaceChild(s,t);t=s}if(!t||t.nodeType!==1||!t.classList.contains('tm')||t.querySelector('.tm-l'))return;var x=t.textContent.replace(/\s+$/,'');if(x.length<2)return;var l=document.createElement('span');l.className='tm-l';l.textContent=x.slice(-1);t.textContent=x.slice(0,-1);t.appendChild(l)})}m();addEventListener('load',m)})();</script></body></html>
+@media(max-width:480px){h1.t1{font-size:min(38px,9.4vw)!important}}</style><script id="knopf-mitte-js">(function(){function m(){document.querySelectorAll('.kn,.sbf-z,.wahl button,.vh-wahl button,.uwahl button,.uschalter button').forEach(function(k){var t=k.firstChild;if(t&&t.nodeType===3&&t.textContent.trim()){var s=document.createElement('span');s.className='tm';s.textContent=t.textContent;k.replaceChild(s,t);t=s}if(!t||t.nodeType!==1||!t.classList.contains('tm')||t.querySelector('.tm-l'))return;var x=t.textContent.replace(/\s+$/,'');if(x.length<2)return;var l=document.createElement('span');l.className='tm-l';l.textContent=x.slice(-1);t.textContent=x.slice(0,-1);t.appendChild(l)})}m();addEventListener('load',m)})();</script>
+
+
+<script id="ruecksprung">(function () {
+  var K = 'rs:' + location.pathname, d = document.documentElement;
+  function merk() { try { var y = String(Math.round(window.scrollY || 0)); sessionStorage.setItem(K, y); if (document.getElementById('rh-zurueck')) sessionStorage.setItem('wb-y', y); } catch (e) {} }
+  var t = 0;
+  addEventListener('scroll', function () { clearTimeout(t); t = setTimeout(merk, 150); }, { passive: true });
+  addEventListener('pagehide', merk);
+  document.addEventListener('click', function (ev) { if (ev.target.closest && ev.target.closest('a[href]')) merk(); }, true);
+  var nav = null; try { nav = performance.getEntriesByType('navigation')[0]; } catch (e) {}
+  if (!nav || nav.type !== 'back_forward') return;
+  if (document.getElementById('rh-zurueck')) return;   /* die Startseite stellt die Höhe selbst her (rh-zurueck liest «wb-y», das hier laufend mitgeschrieben wird) */
+  var y = null; try { y = sessionStorage.getItem(K); } catch (e) {}
+  if (y === null || !/^\d+$/.test(y) || +y < 40) return;
+  y = +y;
+  try { history.scrollRestoration = 'manual'; } catch (e) {}
+  var st = document.createElement('style');
+  st.textContent = 'html.rs-sofort,html.rs-sofort *{transition:none!important;animation-duration:0s!important;animation-delay:0s!important;scroll-behavior:auto!important}';
+  document.head.appendChild(st); d.classList.add('rs-sofort');
+  var weg = false;
+  ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (k) { addEventListener(k, function () { weg = true; }, { once: true, passive: true }); });
+  function oben() { var g = y + innerHeight * 1.2; [].forEach.call(document.querySelectorAll('[data-a],.zt,.roll,img.ld'), function (e) { var r = e.getBoundingClientRect(); if (r.top + scrollY < g) e.classList.add('da'); }); }
+  function geh() { if (!weg) { window.scrollTo(0, y); oben(); } }
+  function los() {
+    geh(); requestAnimationFrame(function () { geh(); requestAnimationFrame(function () { d.classList.remove('rs-sofort'); }); });
+    var n = 0, iv = setInterval(function () { n++; if (Math.abs(scrollY - y) > 40) geh(); if (n >= 12 || weg) clearInterval(iv); }, 150);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', los); else los();
+  addEventListener('load', function () { if (Math.abs(scrollY - y) > 40) geh(); });
+})();</script></body></html>

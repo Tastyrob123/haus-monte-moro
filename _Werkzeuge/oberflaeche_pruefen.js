@@ -94,6 +94,9 @@ async function pruefe(b, breite) {
       if (!sicht(bd) || getComputedStyle(bd).overflow.indexOf('hidden') < 0) return;
       const t = bd.querySelector('li button, li, span'); if (!t) return;
       const r = bd.getBoundingClientRect(); let unten = r.bottom;
+      // Ein Laufband ist ein Schriftstreifen. Bildbänder zum Blättern (Karten mit Fotos, höher als 160 px) sind keins (Beleg 08.11.2026, Werkbank Monte-Moro:
+      // die Ziffer «01» auf dem ersten Bild im Ideen- und Gästeband wurde gegen die Bandmitte gemessen). [data-laufband] wird immer gemessen.
+      if (!bd.hasAttribute('data-laufband') && r.height > 160 && bd.querySelector('img,picture,video')) return;
       const n = bd.nextElementSibling; if (n) { const rn = n.getBoundingClientRect(); if (rn.top < unten && rn.top > r.top) unten = rn.top; }
       const rt = t.getBoundingClientRect(), mitte = (r.top + unten) / 2, tm = (rt.top + rt.bottom) / 2;
       if (Math.abs(mitte - tm) > 3) out.push('6 Laufband: Schrift sitzt ' + Math.round(tm - mitte) + ' px neben der Mitte des sichtbaren Bands (' + name(bd) + ').');

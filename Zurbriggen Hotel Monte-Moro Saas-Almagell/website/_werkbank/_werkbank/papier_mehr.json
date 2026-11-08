@@ -1,3 +1,967 @@
 {
- "druck": []
+ "druck": [
+  {
+   "id": "pw-roestihues-best-of-roestis",
+   "name": "Best of Röstis",
+   "format": "A4 hoch · 2 Seiten · aus der Hausdruckerei",
+   "satz": "Röstihüs-Karte A4, Vorder- und Rückseite: die elf Röstis als Blatt auf Nacht",
+   "titel": [
+    "Best of",
+    "Röstis."
+   ],
+   "pdf": "montemoro-pw-roestihues-best-of-roestis.pdf",
+   "karton": [
+    [
+     "pw-roestihues-best-of-roestis",
+     44,
+     "Vorderseite"
+    ],
+    [
+     "pw-roestihues-best-of-roestis-2",
+     44,
+     "Rückseite"
+    ]
+   ],
+   "masse": {
+    "pw-roestihues-best-of-roestis": [
+     1000,
+     1414
+    ],
+    "pw-roestihues-best-of-roestis-2": [
+     1000,
+     1414
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 2
+  },
+  {
+   "id": "pw-roestihues-cordon-bleus",
+   "name": "Unsere Cordon bleus",
+   "format": "DL hoch · aus der Hausdruckerei",
+   "satz": "Röstihüs-Karte DL hoch: die fünf Cordon bleus",
+   "titel": [
+    "Unsere Cordon",
+    "bleus."
+   ],
+   "pdf": "montemoro-pw-roestihues-cordon-bleus.pdf",
+   "karton": [
+    [
+     "pw-roestihues-cordon-bleus",
+     40,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-roestihues-cordon-bleus": [
+     1000,
+     2121
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-roestihues-auszug",
+   "name": "Röstihüs · Auszug der Karte",
+   "format": "DL hoch · aus der Hausdruckerei",
+   "satz": "Karte am Tisch DL hoch: Auszug der Röstihüs-Karte",
+   "titel": [
+    "Röstihüs · Auszug der",
+    "Karte."
+   ],
+   "pdf": "montemoro-pw-roestihues-auszug.pdf",
+   "karton": [
+    [
+     "pw-roestihues-auszug",
+     40,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-roestihues-auszug": [
+     1000,
+     2121
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-roestihues-wein-von-fabian",
+   "name": "Wein von Fabian",
+   "format": "DL hoch · aus der Hausdruckerei",
+   "satz": "Weinkarte DL hoch: die zwei Hotelweine, von Fabian selber kreiert",
+   "titel": [
+    "Wein von",
+    "Fabian."
+   ],
+   "pdf": "montemoro-pw-roestihues-wein-von-fabian.pdf",
+   "karton": [
+    [
+     "pw-roestihues-wein-von-fabian",
+     40,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-roestihues-wein-von-fabian": [
+     1000,
+     2121
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-roestihues-apero-dessert",
+   "name": "Zum Apéro und zum Dessert",
+   "format": "A6 hoch · aus der Hausdruckerei",
+   "satz": "Karte A6: Spritz und Monte-Moro-Kopf",
+   "titel": [
+    "Zum Apéro und zum",
+    "Dessert."
+   ],
+   "pdf": "montemoro-pw-roestihues-apero-dessert.pdf",
+   "karton": [
+    [
+     "pw-roestihues-apero-dessert",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-roestihues-apero-dessert": [
+     1000,
+     1409
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-tischaufsteller-tradition",
+   "name": "Es lebe die Tradition",
+   "format": "A6 hoch · aus der Hausdruckerei",
+   "satz": "Tischaufsteller A6 im Röstihüs",
+   "titel": [
+    "Es lebe die",
+    "Tradition."
+   ],
+   "pdf": "montemoro-pw-tischaufsteller-tradition.pdf",
+   "karton": [
+    [
+     "pw-tischaufsteller-tradition",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-tischaufsteller-tradition": [
+     1000,
+     1409
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-tischkarte-hotelwein",
+   "name": "Tischkarte · Cuvee Special",
+   "format": "A7 quer · aus der Hausdruckerei",
+   "satz": "Tischkarte A7 quer zum Hotelwein",
+   "titel": [
+    "Tischkarte · Cuvee",
+    "Special."
+   ],
+   "pdf": "montemoro-pw-tischkarte-hotelwein.pdf",
+   "karton": [
+    [
+     "pw-tischkarte-hotelwein",
+     86,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-tischkarte-hotelwein": [
+     1000,
+     705
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-tischkarte-hotelwein-eichenfass",
+   "name": "Tischkarte · Cuvee Special Eichenfass",
+   "format": "A7 quer · aus der Hausdruckerei",
+   "satz": "Tischkarte A7 quer zum Hotelwein aus dem Eichenfass",
+   "titel": [
+    "Tischkarte · Cuvee Special",
+    "Eichenfass."
+   ],
+   "pdf": "montemoro-pw-tischkarte-hotelwein-eichenfass.pdf",
+   "karton": [
+    [
+     "pw-tischkarte-hotelwein-eichenfass",
+     86,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-tischkarte-hotelwein-eichenfass": [
+     1000,
+     705
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-aushang-inklusive",
+   "name": "Inklusive",
+   "format": "A4 hoch · aus der Hausdruckerei",
+   "satz": "Aushang A4 «Inklusive»: Postauto, Bergbahnen im Sommer, Frühstück, Racletteabend, Kidsclub, Parkplatz",
+   "titel": [
+    "",
+    "Inklusive"
+   ],
+   "pdf": "montemoro-pw-aushang-inklusive.pdf",
+   "karton": [
+    [
+     "pw-aushang-inklusive",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-aushang-inklusive": [
+     1000,
+     1414
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-plakat-inklusive-a3",
+   "name": "Aushang Inklusive",
+   "format": "A3 hoch · aus der Hausdruckerei",
+   "satz": "Plakat A3 mit Grat-Kante: Mehr erleben, weniger zahlen",
+   "titel": [
+    "Aushang",
+    "Inklusive."
+   ],
+   "pdf": "montemoro-pw-plakat-inklusive-a3.pdf",
+   "karton": [
+    [
+     "pw-plakat-inklusive-a3",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-plakat-inklusive-a3": [
+     1000,
+     1414
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-preisliste-zimmer",
+   "name": "Preisliste Zimmer",
+   "format": "A4 hoch · aus der Hausdruckerei",
+   "satz": "Preisliste A4: Zimmer mit Frühstück oder Halbpension",
+   "titel": [
+    "Preisliste",
+    "Zimmer."
+   ],
+   "pdf": "montemoro-pw-preisliste-zimmer.pdf",
+   "karton": [
+    [
+     "pw-preisliste-zimmer",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-preisliste-zimmer": [
+     1000,
+     1414
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-preisliste-zuschlaege",
+   "name": "Zuschläge",
+   "format": "A5 hoch · aus der Hausdruckerei",
+   "satz": "Preisliste A5: Kurtaxe, Zuschläge, Hund",
+   "titel": [
+    "",
+    "Zuschläge"
+   ],
+   "pdf": "montemoro-pw-preisliste-zuschlaege.pdf",
+   "karton": [
+    [
+     "pw-preisliste-zuschlaege",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-preisliste-zuschlaege": [
+     1000,
+     1419
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-preisliste-kinder",
+   "name": "Kinderpreise",
+   "format": "A5 hoch · aus der Hausdruckerei",
+   "satz": "Preisliste A5: Kinder im Zimmer der Eltern",
+   "titel": [
+    "",
+    "Kinderpreise"
+   ],
+   "pdf": "montemoro-pw-preisliste-kinder.pdf",
+   "karton": [
+    [
+     "pw-preisliste-kinder",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-preisliste-kinder": [
+     1000,
+     1419
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-aushang-racletteabend",
+   "name": "Racletteabend im Stübli",
+   "format": "A4 hoch · aus der Hausdruckerei",
+   "satz": "Aushang A4 mit Grat-Kante: Racletteabend im Stübli",
+   "titel": [
+    "Racletteabend im",
+    "Stübli."
+   ],
+   "pdf": "montemoro-pw-aushang-racletteabend.pdf",
+   "karton": [
+    [
+     "pw-aushang-racletteabend",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-aushang-racletteabend": [
+     1000,
+     1414
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-aushang-kidsclub",
+   "name": "Kidsclub",
+   "format": "A4 hoch · aus der Hausdruckerei",
+   "satz": "Aushang A4: Kidsclub Mo–Sa 16:30–21:00 Uhr",
+   "titel": [
+    "",
+    "Kidsclub"
+   ],
+   "pdf": "montemoro-pw-aushang-kidsclub.pdf",
+   "karton": [
+    [
+     "pw-aushang-kidsclub",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-aushang-kidsclub": [
+     1000,
+     1414
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-programm-woche",
+   "name": "Die Woche im Monte-Moro",
+   "format": "A5 hoch · aus der Hausdruckerei",
+   "satz": "Programm A5: was jede Woche dabei ist",
+   "titel": [
+    "Die Woche im",
+    "Monte-Moro."
+   ],
+   "pdf": "montemoro-pw-programm-woche.pdf",
+   "karton": [
+    [
+     "pw-programm-woche",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-programm-woche": [
+     1000,
+     1419
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-willkommensbrief",
+   "name": "Willkommensbrief im Zimmer",
+   "format": "A4 hoch · aus der Hausdruckerei",
+   "satz": "Brief A4 im Zimmer, mit dem Gruss von Esther und Fabian",
+   "titel": [
+    "Willkommensbrief im",
+    "Zimmer."
+   ],
+   "pdf": "montemoro-pw-willkommensbrief.pdf",
+   "karton": [
+    [
+     "pw-willkommensbrief",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-willkommensbrief": [
+     1000,
+     1414
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-briefpapier-a4",
+   "name": "Briefpapier A4",
+   "format": "A4 hoch · aus der Hausdruckerei",
+   "satz": "Briefpapier A4 mit Wortmarke und Absender",
+   "titel": [
+    "Briefpapier",
+    "A4."
+   ],
+   "pdf": "montemoro-pw-briefpapier-a4.pdf",
+   "karton": [
+    [
+     "pw-briefpapier-a4",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-briefpapier-a4": [
+     1000,
+     1414
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-hinweis-spa",
+   "name": "Das Spa nebenan",
+   "format": "A6 hoch · aus der Hausdruckerei",
+   "satz": "Hinweiskarte A6: Spa im Partnerhotel mit Tarifen",
+   "titel": [
+    "Das Spa",
+    "nebenan."
+   ],
+   "pdf": "montemoro-pw-hinweis-spa.pdf",
+   "karton": [
+    [
+     "pw-hinweis-spa",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-hinweis-spa": [
+     1000,
+     1409
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-hinweis-euro",
+   "name": "Auch in Euro",
+   "format": "A6 hoch · aus der Hausdruckerei",
+   "satz": "Hinweiskarte A6: Bezahlung in Euro",
+   "titel": [
+    "Auch in",
+    "Euro."
+   ],
+   "pdf": "montemoro-pw-hinweis-euro.pdf",
+   "karton": [
+    [
+     "pw-hinweis-euro",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-hinweis-euro": [
+     1000,
+     1409
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-anreise-postauto",
+   "name": "Anreise mit dem Postauto",
+   "format": "A4 hoch · aus der Hausdruckerei",
+   "satz": "Aushang A4: Anreise mit Zug und Postauto ab Visp",
+   "titel": [
+    "Anreise mit dem",
+    "Postauto."
+   ],
+   "pdf": "montemoro-pw-anreise-postauto.pdf",
+   "karton": [
+    [
+     "pw-anreise-postauto",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-anreise-postauto": [
+     1000,
+     1414
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-anreise-zug-postauto",
+   "name": "Mit Zug und Postauto",
+   "format": "A5 hoch · aus der Hausdruckerei",
+   "satz": "Programm A5: Visp, Stalden, Saas-Grund, Saas-Almagell",
+   "titel": [
+    "Mit Zug und",
+    "Postauto."
+   ],
+   "pdf": "montemoro-pw-anreise-zug-postauto.pdf",
+   "karton": [
+    [
+     "pw-anreise-zug-postauto",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-anreise-zug-postauto": [
+     1000,
+     1419
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-anreise-auto",
+   "name": "Mit dem Auto",
+   "format": "A5 hoch · aus der Hausdruckerei",
+   "satz": "Aushang A5: Anreise mit dem Auto",
+   "titel": [
+    "Mit dem",
+    "Auto."
+   ],
+   "pdf": "montemoro-pw-anreise-auto.pdf",
+   "karton": [
+    [
+     "pw-anreise-auto",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-anreise-auto": [
+     1000,
+     1419
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-plakat-wanderparadies-a3",
+   "name": "Wanderparadies",
+   "format": "A3 hoch · aus der Hausdruckerei",
+   "satz": "Plakat A3 mit Grat-Kante: Sommer im Saastal",
+   "titel": [
+    "",
+    "Wanderparadies"
+   ],
+   "pdf": "montemoro-pw-plakat-wanderparadies-a3.pdf",
+   "karton": [
+    [
+     "pw-plakat-wanderparadies-a3",
+     54,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-plakat-wanderparadies-a3": [
+     1000,
+     1414
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-ansichtskarte-sommer",
+   "name": "Ansichtskarte Sommer",
+   "format": "A6 quer · 2 Seiten · aus der Hausdruckerei",
+   "satz": "Ansichtskarte A6 quer, Rückseite für Grüsse",
+   "titel": [
+    "Ansichtskarte",
+    "Sommer."
+   ],
+   "pdf": "montemoro-pw-ansichtskarte-sommer.pdf",
+   "karton": [
+    [
+     "pw-ansichtskarte-sommer",
+     84,
+     "Vorderseite"
+    ],
+    [
+     "pw-ansichtskarte-sommer-2",
+     84,
+     "Rückseite"
+    ]
+   ],
+   "masse": {
+    "pw-ansichtskarte-sommer": [
+     1000,
+     709
+    ],
+    "pw-ansichtskarte-sommer-2": [
+     1000,
+     709
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 2
+  },
+  {
+   "id": "pw-gutschein-aufenthalt",
+   "name": "Gutschein für einen Aufenthalt",
+   "format": "DL quer · 2 Seiten · aus der Hausdruckerei",
+   "satz": "Gutschein DL quer, Vorder- und Rückseite",
+   "titel": [
+    "Gutschein für einen",
+    "Aufenthalt."
+   ],
+   "pdf": "montemoro-pw-gutschein-aufenthalt.pdf",
+   "karton": [
+    [
+     "pw-gutschein-aufenthalt",
+     84,
+     "Vorderseite"
+    ],
+    [
+     "pw-gutschein-aufenthalt-2",
+     84,
+     "Rückseite"
+    ]
+   ],
+   "masse": {
+    "pw-gutschein-aufenthalt": [
+     1000,
+     472
+    ],
+    "pw-gutschein-aufenthalt-2": [
+     1000,
+     472
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 2
+  },
+  {
+   "id": "pw-gutschein-roestihues",
+   "name": "Gutschein Röstihüs",
+   "format": "DL quer · 2 Seiten · aus der Hausdruckerei",
+   "satz": "Gutschein DL quer mit Foto, Vorder- und Rückseite",
+   "titel": [
+    "Gutschein",
+    "Röstihüs."
+   ],
+   "pdf": "montemoro-pw-gutschein-roestihues.pdf",
+   "karton": [
+    [
+     "pw-gutschein-roestihues",
+     84,
+     "Vorderseite"
+    ],
+    [
+     "pw-gutschein-roestihues-2",
+     84,
+     "Rückseite"
+    ]
+   ],
+   "masse": {
+    "pw-gutschein-roestihues": [
+     1000,
+     472
+    ],
+    "pw-gutschein-roestihues-2": [
+     1000,
+     472
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 2
+  },
+  {
+   "id": "pw-flyer-haus",
+   "name": "Flyer des Hauses",
+   "format": "A6 hoch · 2 Seiten · aus der Hausdruckerei",
+   "satz": "Flyer A6, vorne Foto, hinten Kontakt",
+   "titel": [
+    "Flyer des",
+    "Hauses."
+   ],
+   "pdf": "montemoro-pw-flyer-haus.pdf",
+   "karton": [
+    [
+     "pw-flyer-haus",
+     44,
+     "Vorderseite"
+    ],
+    [
+     "pw-flyer-haus-2",
+     44,
+     "Rückseite"
+    ]
+   ],
+   "masse": {
+    "pw-flyer-haus": [
+     1000,
+     1409
+    ],
+    "pw-flyer-haus-2": [
+     1000,
+     1409
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 2
+  },
+  {
+   "id": "pw-instagram-elf-roestis",
+   "name": "Elf Röstis",
+   "format": "Instagram 4:5 · aus der Hausdruckerei",
+   "satz": "Instagram-Beitrag hoch 4:5",
+   "titel": [
+    "Elf",
+    "Röstis."
+   ],
+   "pdf": "montemoro-pw-instagram-elf-roestis.pdf",
+   "karton": [
+    [
+     "pw-instagram-elf-roestis",
+     64,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-instagram-elf-roestis": [
+     1000,
+     1250
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-instagram-bergbahnen",
+   "name": "Bergbahnen und Postautos",
+   "format": "Instagram 4:5 · aus der Hausdruckerei",
+   "satz": "Instagram-Beitrag hoch 4:5 mit Grat-Kante",
+   "titel": [
+    "Bergbahnen und",
+    "Postautos."
+   ],
+   "pdf": "montemoro-pw-instagram-bergbahnen.pdf",
+   "karton": [
+    [
+     "pw-instagram-bergbahnen",
+     64,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-instagram-bergbahnen": [
+     1000,
+     1250
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-instagram-lift-quadrat",
+   "name": "Zwei Minuten bis zum Lift",
+   "format": "Instagram 1:1 · aus der Hausdruckerei",
+   "satz": "Instagram-Beitrag quadratisch 1:1 mit Grat-Kante",
+   "titel": [
+    "Zwei Minuten bis zum",
+    "Lift."
+   ],
+   "pdf": "montemoro-pw-instagram-lift-quadrat.pdf",
+   "karton": [
+    [
+     "pw-instagram-lift-quadrat",
+     86,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-instagram-lift-quadrat": [
+     1000,
+     1000
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-instagram-gastgeber",
+   "name": "Ihre Gastgeber",
+   "format": "Instagram 4:5 · aus der Hausdruckerei",
+   "satz": "Instagram-Beitrag hoch 4:5",
+   "titel": [
+    "Ihre",
+    "Gastgeber."
+   ],
+   "pdf": "montemoro-pw-instagram-gastgeber.pdf",
+   "karton": [
+    [
+     "pw-instagram-gastgeber",
+     64,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-instagram-gastgeber": [
+     1000,
+     1250
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-story-spa",
+   "name": "Das Spa nebenan · Story",
+   "format": "Story 9:16 · aus der Hausdruckerei",
+   "satz": "Instagram-Story 9:16",
+   "titel": [
+    "Das Spa nebenan ·",
+    "Story."
+   ],
+   "pdf": "montemoro-pw-story-spa.pdf",
+   "karton": [
+    [
+     "pw-story-spa",
+     40,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-story-spa": [
+     1000,
+     1778
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  },
+  {
+   "id": "pw-story-kidsclub",
+   "name": "Spielburg vor dem Haus",
+   "format": "Story 9:16 · aus der Hausdruckerei",
+   "satz": "Instagram-Story 9:16",
+   "titel": [
+    "Spielburg vor dem",
+    "Haus."
+   ],
+   "pdf": "montemoro-pw-story-kidsclub.pdf",
+   "karton": [
+    [
+     "pw-story-kidsclub",
+     40,
+     ""
+    ]
+   ],
+   "masse": {
+    "pw-story-kidsclub": [
+     1000,
+     1778
+    ]
+   },
+   "schatten": true,
+   "haengt": false,
+   "seiten": 1
+  }
+ ]
 }
