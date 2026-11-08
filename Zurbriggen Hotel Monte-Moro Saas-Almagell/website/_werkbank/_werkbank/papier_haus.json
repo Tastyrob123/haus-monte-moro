@@ -1,0 +1,262 @@
+{
+ "_falls_fremd": {
+  "NAME": "Hotel Monte-Moro",
+  "KURZ": "montemoro",
+  "FARBEN": {
+   "nacht": "#0a2a4a",
+   "tief": "#071b2e",
+   "navy": "#0d3f6f",
+   "blau": "#115595",
+   "papier": "#f5f2ee",
+   "creme": "#efe9e1",
+   "weiss": "#f5f2ee",
+   "gold": "#c67144",
+   "messing": "#b39867",
+   "taupe": "#4a5d70",
+   "tinte": "#13263a",
+   "punkt": "#c67144",
+   "rot": "#9a4f2b"
+  },
+  "SCHRIFT": {
+   "titel": [
+    "Fjalla One",
+    "FjallaOne-400.woff2"
+   ],
+   "titel_folge": "'Arial Narrow',sans-serif",
+   "ersatz": "local('Arial Narrow')",
+   "druckgewicht": 400
+  },
+  "DRUCKSCHRIFT": [
+   [
+    "Fjalla One",
+    400,
+    "FjallaOne-Regular.ttf"
+   ],
+   [
+    "Fjalla One",
+    500,
+    "FjallaOne-Regular.ttf"
+   ],
+   [
+    "Fjalla One",
+    700,
+    "FjallaOne-Regular.ttf"
+   ]
+  ],
+  "DRUCKQUELLEN": [],
+  "RECHTE": "dem Hotel Monte-Moro, der Familie Zurbriggen und den jeweiligen Fotografen.",
+  "LEISTE": ""
+ },
+ "ETIKETTEN": {
+  "ordner": "untersetzer",
+  "name": "Untersetzer",
+  "einzahl": "Untersetzer"
+ },
+ "PAPIER_SEITE": {
+  "breit": [
+   "karte",
+   "karte-r",
+   "aushang",
+   "raclette",
+   "willkommen",
+   "kidsclub",
+   "kidsclub-r",
+   "briefbogen",
+   "umschlag"
+  ],
+  "formen": [],
+  "auslage": [
+   [
+    "karte",
+    2,
+    2,
+    28,
+    -4
+   ],
+   [
+    "raclette",
+    35,
+    0,
+    28,
+    3
+   ],
+   [
+    "willkommen",
+    68,
+    4,
+    28,
+    -3
+   ],
+   [
+    "kidsclub-r",
+    6,
+    60,
+    40,
+    2
+   ],
+   [
+    "hotelwein-r",
+    56,
+    58,
+    20,
+    -3
+   ],
+   [
+    "aushang",
+    80,
+    56,
+    19,
+    3
+   ]
+  ],
+  "schatten": [
+   "karte",
+   "aushang",
+   "hotelwein",
+   "raclette",
+   "kidsclub",
+   "willkommen",
+   "briefpapier"
+  ],
+  "flaeche": [
+   "fl--papier",
+   "fl--nacht",
+   "fl--creme",
+   "fl--papier",
+   "fl--nacht",
+   "fl--creme",
+   "fl--papier"
+  ],
+  "druck_text": "Papier, das im Monte-Moro auf dem Tisch, an der Rezeption, im Zimmer oder im Umschlag landen könnte. Jede Zeile kommt aus Ihrer Website und der Karte des Röstihüs. Was nicht passt, lassen Sie einfach weg.",
+  "etik_titel": [
+   "Untersetzer",
+   "für das Röstihüs."
+  ],
+  "etik_text": "Zum Glas im Röstihüs gehört ein Bierdeckel. Hier sind {n} als Idee, rund wie ein Deckel und genau in der Mitte gesetzt: die Wortmarke, der Bergkamm, die Sätze des Hauses, Gerichte von der Karte und zwei Fotos aus der Stube.",
+  "etik_kap": "Die Untersetzer",
+  "etik_kopf": [
+   "Zwölf",
+   "Bierdeckel."
+  ],
+  "etik_kopftext": "Die Wortmarke und der Bergkamm kommen aus Ihrem Logo, die Sätze von Ihrer Website, die Gerichte von der Karte des Röstihüs, die Messinglinie aus dem Markenbuch.",
+  "etik_auslage": [
+   [
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    2,
+    4,
+    30,
+    -5
+   ],
+   [
+    35,
+    0,
+    30,
+    4
+   ],
+   [
+    68,
+    6,
+    30,
+    -3
+   ],
+   [
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    4,
+    36,
+    30,
+    3
+   ],
+   [
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    37,
+    36,
+    30,
+    -4
+   ],
+   [
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    70,
+    40,
+    28,
+    5
+   ],
+   [
+    12,
+    66,
+    28,
+    2
+   ],
+   [
+    46,
+    68,
+    28,
+    -3
+   ]
+  ]
+ },
+ "UNTERLAGEN": {
+  "pflege": [
+   "Karten [[karten:im]] ändern",
+   "http://127.0.0.1:9383/_werkzeuge/carte/"
+  ],
+  "text": "Die Karte des Röstihüs, neu gesetzt neben den Seiten, wie sie heute auf dem Tisch liegen: die Röstis, die Cordon bleus, der Wein von Fabian und der Apéro.",
+  "seite_text": "{n} Karten des Röstihüs, neu gesetzt im Kleid der neuen Website: jede Rösti, jedes Cordon bleu und der Wein von Fabian mit Preis. Links die Seiten der heutigen Speisekarte, rechts die Idee. Jede neue Karte schreibt [[karten:klein]].",
+  "knopf2": [
+   "Das Röstihüs auf der Website",
+   "../roestihues.html"
+  ]
+ },
+ "MATERIAL": {
+  "text": "Was für den Entwurf neu entstanden ist, liegt sortiert in einem Ordner: die Karten des Röstihüs als PDF, die Drucksachen, die Untersetzer, die Sticker, die Beigaben, die Postkarten, die Beiträge für Instagram, die Mails und Ihr Logo als Datei.",
+  "druck_satz": "Von der Karte am Tisch bis zum Willkommensbrief im Zimmer.",
+  "zeichen": [
+   [
+    "Die Wortmarke in Logo-Blau",
+    "../../_kette/05-markenbauer/marke/zeichen/wortmarke-blau.svg",
+    "Hotel Monte-Moro Wortmarke Logo-Blau.svg"
+   ],
+   [
+    "Die Wortmarke in Papier (für dunklen Grund)",
+    "../../_kette/05-markenbauer/marke/zeichen/wortmarke-papier.svg",
+    "Hotel Monte-Moro Wortmarke Papier.svg"
+   ],
+   [
+    "Die Wortmarke in Nacht",
+    "../../_kette/05-markenbauer/marke/zeichen/wortmarke-nacht.svg",
+    "Hotel Monte-Moro Wortmarke Nacht.svg"
+   ],
+   [
+    "Der Bergkamm in Lärche",
+    "../../_kette/05-markenbauer/marke/zeichen/bergkamm-laerche.svg",
+    "Hotel Monte-Moro Bergkamm Lärche.svg"
+   ],
+   [
+    "Der Bergkamm in Logo-Blau",
+    "../../_kette/05-markenbauer/marke/zeichen/bergkamm-blau.svg",
+    "Hotel Monte-Moro Bergkamm Logo-Blau.svg"
+   ]
+  ],
+  "zeichen_satz": "Das Logo des Hauses und sein Bergkamm als Zeichnung, die in jeder Grösse scharf bleibt, aus dem Markenbuch.",
+  "auslage": []
+ }
+}

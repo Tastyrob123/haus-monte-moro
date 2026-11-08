@@ -1,0 +1,24 @@
+[
+ {
+  "ziel": "roestihues",
+  "quelle": "_werkbank/heute/roestihues.pdf",
+  "name": "Röstis und Cordon bleus",
+  "gruppe": "Röstihüs",
+  "seiten": 0,
+  "b": 210,
+  "h": 297,
+  "dazu": "",
+  "fehlt": ""
+ },
+ {
+  "ziel": "wein-apero",
+  "quelle": "_werkbank/heute/wein-apero.pdf",
+  "name": "Wein von Fabian und Apéro",
+  "gruppe": "Röstihüs",
+  "seiten": 0,
+  "b": 210,
+  "h": 297,
+  "dazu": "",
+  "fehlt": ""
+ }
+]

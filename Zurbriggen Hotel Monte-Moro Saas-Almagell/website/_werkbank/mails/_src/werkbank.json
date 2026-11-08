@@ -1,0 +1,38 @@
+[
+ [
+  "01",
+  "01-anfrage",
+  "Ihre Anfrage ist da",
+  "Kommt gleich nach der Anfrage über die Website: was angefragt ist, und dass das Angebot persönlich folgt."
+ ],
+ [
+  "02",
+  "02-angebot",
+  "Ihr Angebot",
+  "Das Angebot zur Anfrage, gerechnet aus der Preisliste des Hauses: Zimmer mit Halbpension, Kind im Zimmer der Eltern, Kurtaxe."
+ ],
+ [
+  "03",
+  "03-bestaetigung",
+  "Ihre Buchung ist bestätigt",
+  "Kommt nach der Buchung: die Daten des Aufenthalts und alles, was im Preis schon dabei ist."
+ ],
+ [
+  "04",
+  "04-anreise",
+  "Vor Ihrer Anreise",
+  "Kommt vor der Anreise: der Weg mit Zug und Postauto oder mit dem Auto, so wie das Haus ihn beschreibt, und der Parkplatz."
+ ],
+ [
+  "05",
+  "05-danke",
+  "Danke für Ihren Besuch",
+  "Kommt am Tag nach der Abreise: ein Dank von Esther und Fabian und der Weg zurück ins Saastal."
+ ],
+ [
+  "06",
+  "06-tisch",
+  "Ihr Tisch im Röstihüs",
+  "Kommt nach der Reservierung eines Tischs im Röstihüs: Tag, Uhrzeit, Personen, und was auf der Karte steht."
+ ]
+]

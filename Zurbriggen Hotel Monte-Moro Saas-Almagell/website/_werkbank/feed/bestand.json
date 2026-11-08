@@ -1,0 +1,122 @@
+{
+ "bestand": [
+  "ig-01.jpg",
+  "ig-02.jpg",
+  "ig-03.jpg",
+  "ig-04.jpg",
+  "ig-05.jpg",
+  "ig-06.jpg",
+  "ig-07.jpg",
+  "ig-08.jpg",
+  "ig-09.jpg",
+  "ig-10.jpg",
+  "ig-11.jpg",
+  "ig-12.jpg"
+ ],
+ "ausnahmen": [],
+ "fotos": {
+  "tal-sommer": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "haus-sommer-g": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "roesti-raum": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "fr-tisch": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "balkon": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "alpenrosen": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "murmeltiere": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "gletscher": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "haus-winter-g": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "dorf-winter": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "stuebli": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "z-hell": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "empfang": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "see-blumen": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "stausee": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "wasserfall": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "fr-detail": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  }
+ },
+ "doppelt": []
+}

@@ -1,0 +1,89 @@
+{
+ "druck": [
+  {
+   "id": "karte",
+   "name": "Die Karte am Tisch",
+   "seiten": 2
+  },
+  {
+   "id": "aushang",
+   "name": "Aushang «Inklusive»",
+   "seiten": 1
+  },
+  {
+   "id": "hotelwein",
+   "name": "Tischkarte zum Hotelwein",
+   "seiten": 2
+  },
+  {
+   "id": "raclette",
+   "name": "Aushang Racletteabend",
+   "seiten": 1
+  },
+  {
+   "id": "kidsclub",
+   "name": "Karte zum Kidsclub",
+   "seiten": 2
+  },
+  {
+   "id": "willkommen",
+   "name": "Willkommensbrief im Zimmer",
+   "seiten": 1
+  },
+  {
+   "id": "briefpapier",
+   "name": "Briefbogen und Umschlag",
+   "seiten": 2
+  }
+ ],
+ "etiketten": [
+  {
+   "id": "u01",
+   "name": "Die Wortmarke auf der Nacht"
+  },
+  {
+   "id": "u02",
+   "name": "Die Wortmarke in Logo-Blau"
+  },
+  {
+   "id": "u03",
+   "name": "Es lebe die Tradition!"
+  },
+  {
+   "id": "u04",
+   "name": "Die Stube"
+  },
+  {
+   "id": "u05",
+   "name": "Röstihüs"
+  },
+  {
+   "id": "u06",
+   "name": "Rösti Tschug Tschug"
+  },
+  {
+   "id": "u07",
+   "name": "Cordon bleu Monte-Moro"
+  },
+  {
+   "id": "u08",
+   "name": "Zurbriggen Spritz"
+  },
+  {
+   "id": "u09",
+   "name": "Wein von Fabian"
+  },
+  {
+   "id": "u10",
+   "name": "Raclette"
+  },
+  {
+   "id": "u11",
+   "name": "Regional und herzlich."
+  },
+  {
+   "id": "u12",
+   "name": "Bei uns scheint fast immer die Sonne."
+  }
+ ]
+}

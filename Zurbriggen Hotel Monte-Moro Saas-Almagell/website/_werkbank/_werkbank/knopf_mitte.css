@@ -1,0 +1,10 @@
+/* knopf-mitte (Werkbank Papier, 31.10.2026): Beschriftung optisch mittig in Knöpfen, in Chromium und WebKit gleich, ohne Ausgleich je Engine.
+   Senkrecht: statt .tm{top:.7px} nur für Chromium (text_mitte.py) wird die Beschriftung auf Versalhöhe und Grundlinie beschnitten
+   (text-box: trim-both cap alphabetic); der Knopf zentriert dann genau die Versalien, unabhängig von Zeilenhöhe und Metrik der Engine.
+   Waagrecht: Chromium setzt die Sperrung auch hinter den letzten Buchstaben, WebKit nicht. knopf_mitte.js stellt den letzten Buchstaben
+   in <span class="tm-l"> ohne Sperrung, damit gibt es in keiner Engine einen Abstand am Ende.
+   Wird nach dem Block von text_mitte.py eingefügt und hebt dessen Verschiebungen auf. */
+a.kn>.tm,button.kn>.tm,.uwahl button>.tm,.uschalter button>.tm,.wahl button>.tm,.vh-wahl button>.tm,.sbf-z>.tm{
+  top:0!important;left:0!important;text-box:trim-both cap alphabetic}
+.uwahl button,.uschalter button,.wahl button,.vh-wahl button{display:inline-flex;align-items:center;justify-content:center}
+.tm-l{letter-spacing:0}

@@ -1,0 +1,160 @@
+{
+ "druck": [
+  {
+   "id": "bon",
+   "name": "Der Bon der Rezeption",
+   "format": "Kassenzettel 80 × 150 mm",
+   "vorschau": [
+    [
+     "bon",
+     1
+    ]
+   ],
+   "satz": "Bei der Ankunft in die Hand: alles, was im Zimmerpreis steckt, als Bon wie auf der Website. Postauto, Bergbahnen, Frühstück, Raclette, Kidsclub, Parkplatz, und unten steht «inklusive».",
+   "seiten": 1,
+   "karton": [
+    [
+     "bon",
+     34,
+     ""
+    ]
+   ],
+   "titel": [
+    "Der Bon",
+    "zum Mitnehmen."
+   ]
+  },
+  {
+   "id": "tuerhaenger",
+   "name": "Türhänger",
+   "format": "Türhänger 90 × 220 mm, zwei Seiten",
+   "vorschau": [
+    [
+     "tuerhaenger",
+     1
+    ],
+    [
+     "tuerhaenger-r",
+     2
+    ]
+   ],
+   "satz": "Vorne in der Nacht des Hauses «Bitte nicht stören.», hinten auf Papier die Bitte ums Aufräumen. Oben das Loch für die Klinke, unten die Wortmarke.",
+   "seiten": 2,
+   "karton": [
+    [
+     "tuerhaenger",
+     30,
+     "Vorderseite"
+    ],
+    [
+     "tuerhaenger-r",
+     30,
+     "Rückseite"
+    ]
+   ],
+   "titel": [
+    "Ein Zeichen",
+    "an der Tür."
+   ]
+  },
+  {
+   "id": "anhaenger",
+   "name": "Kofferanhänger",
+   "format": "Anhänger 60 × 110 mm mit Öse, zwei Seiten",
+   "vorschau": [
+    [
+     "anhaenger",
+     1
+    ],
+    [
+     "anhaenger-r",
+     2
+    ]
+   ],
+   "satz": "Wie früher die Etiketten der Hotels: vorne Saas-Almagell unter dem Bergkamm, hinten die Adresse des Hauses und sein Satz. Fährt mit dem Gast nach Hause.",
+   "seiten": 2,
+   "karton": [
+    [
+     "anhaenger",
+     30,
+     "Vorderseite"
+    ],
+    [
+     "anhaenger-r",
+     30,
+     "Rückseite"
+    ]
+   ],
+   "titel": [
+    "Ein Anhänger",
+    "für den Koffer."
+   ]
+  },
+  {
+   "id": "kissen",
+   "name": "Kärtchen auf dem Kissen",
+   "format": "A7 quer, 105 × 74 mm, zwei Seiten",
+   "vorschau": [
+    [
+     "kissen",
+     1
+    ],
+    [
+     "kissen-r",
+     2
+    ]
+   ],
+   "satz": "Am Abend auf dem Kissen: vorne der Satz von der Seite «Anreise», hinten, was am Morgen wartet.",
+   "seiten": 2,
+   "karton": [
+    [
+     "kissen",
+     46,
+     "Vorderseite"
+    ],
+    [
+     "kissen-r",
+     46,
+     "Rückseite"
+    ]
+   ],
+   "titel": [
+    "Gute Nacht",
+    "im Monte-Moro."
+   ]
+  },
+  {
+   "id": "serviette",
+   "name": "Servietten fürs Röstihüs",
+   "format": "Serviette 125 × 125 mm, gefaltet 62,5 mm",
+   "vorschau": [
+    [
+     "serviette",
+     1
+    ],
+    [
+     "serviette-n",
+     2
+    ]
+   ],
+   "satz": "Zwei Fassungen: Papier mit der Wortmarke in Logo-Blau, die Nacht mit dem Bergkamm und «Es lebe die Tradition!». Gefaltet liegt das Motiv oben.",
+   "seiten": 2,
+   "karton": [
+    [
+     "serviette",
+     46,
+     "Papier"
+    ],
+    [
+     "serviette-n",
+     46,
+     "Nacht"
+    ]
+   ],
+   "titel": [
+    "Eine Serviette",
+    "im Röstihüs."
+   ]
+  }
+ ]
+}

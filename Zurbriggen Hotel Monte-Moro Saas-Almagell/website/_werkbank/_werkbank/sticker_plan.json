@@ -1,0 +1,201 @@
+{
+ "etiketten": [
+  {
+   "id": "s01",
+   "b": 60,
+   "h": 60,
+   "name": "Die Wortmarke",
+   "satz": "Rund, 60 mm. Das Logo in Logo-Blau auf Papier.",
+   "form": "M30.0 0A30.0 30.0 0 1 1 29.99 0Z"
+  },
+  {
+   "id": "s02",
+   "b": 70,
+   "h": 48,
+   "name": "Saas-Almagell",
+   "satz": "Der Grat, 70 × 48 mm. Der Bergkamm über dem Namen des Dorfs.",
+   "form": "M0.00 3.99 L4.90 3.15 L8.26 0.63 L10.50 2.73 L13.72 1.47 L17.50 4.20 L21.00 2.31 L23.66 3.57 L26.60 0.84 L30.10 3.78 L34.02 1.89 L37.80 4.41 L42.00 2.94 L44.80 3.78 L49.00 1.26 L52.36 3.36 L56.00 2.52 L60.20 4.62 L64.40 2.10 L67.34 3.57 L70.00 2.73 L70 45.6A2.4 2.4 0 0 1 67.6 48H2.4A2.4 2.4 0 0 1 0 45.6Z"
+  },
+  {
+   "id": "s03",
+   "b": 104,
+   "h": 24,
+   "name": "Mehr erleben, weniger zahlen.",
+   "satz": "Kapsel, 104 mm. Der Satz des Hauses.",
+   "form": "M12.0 0H92.0A12.0 12.0 0 0 1 104 12.0V12.0A12.0 12.0 0 0 1 92.0 24H12.0A12.0 12.0 0 0 1 0 12.0V12.0A12.0 12.0 0 0 1 12.0 0Z"
+  },
+  {
+   "id": "s04",
+   "b": 60,
+   "h": 60,
+   "name": "Das Haus im Sommer",
+   "satz": "Eckig, 60 mm. Die Balkone aus Lärche in der Sonne.",
+   "form": "M2.4 0H57.6A2.4 2.4 0 0 1 60 2.4V57.6A2.4 2.4 0 0 1 57.6 60H2.4A2.4 2.4 0 0 1 0 57.6V2.4A2.4 2.4 0 0 1 2.4 0Z"
+  },
+  {
+   "id": "s05",
+   "b": 52,
+   "h": 52,
+   "name": "Und morgen scheint die Sonne wieder.",
+   "satz": "Rund, 52 mm. Der letzte Satz der Seite «Anreise».",
+   "form": "M26.0 0A26.0 26.0 0 1 1 25.99 0Z"
+  },
+  {
+   "id": "s06",
+   "b": 50,
+   "h": 66,
+   "name": "Die Skigebiete",
+   "satz": "Eckig, 50 × 66 mm. Die drei Skigebiete des Saastals mit ihren Höhen, wie auf der Seite «Saastal».",
+   "form": "M2.4 0H47.6A2.4 2.4 0 0 1 50 2.4V63.6A2.4 2.4 0 0 1 47.6 66H2.4A2.4 2.4 0 0 1 0 63.6V2.4A2.4 2.4 0 0 1 2.4 0Z"
+  },
+  {
+   "id": "s07",
+   "b": 46,
+   "h": 46,
+   "name": "Der Bergkamm",
+   "satz": "Rund, 46 mm. Das Zeichen aus dem Logo, in Lärche.",
+   "form": "M23.0 0A23.0 23.0 0 1 1 22.99 0Z"
+  },
+  {
+   "id": "s08",
+   "b": 80,
+   "h": 56,
+   "name": "Ein Bergsee",
+   "satz": "Der Grat, 80 × 56 mm. Ein Bergsee über dem Saastal, das Foto bis an den Rand.",
+   "form": "M0.00 4.56 L5.60 3.60 L9.44 0.72 L12.00 3.12 L15.68 1.68 L20.00 4.80 L24.00 2.64 L27.04 4.08 L30.40 0.96 L34.40 4.32 L38.88 2.16 L43.20 5.04 L48.00 3.36 L51.20 4.32 L56.00 1.44 L59.84 3.84 L64.00 2.88 L68.80 5.28 L73.60 2.40 L76.96 4.08 L80.00 3.12 L80 53.6A2.4 2.4 0 0 1 77.6 56H2.4A2.4 2.4 0 0 1 0 53.6Z"
+  },
+  {
+   "id": "s09",
+   "b": 96,
+   "h": 22,
+   "name": "Familie Zurbriggen · seit 1967",
+   "satz": "Kapsel, 96 mm. Wie die Familie im Fuss der Website steht.",
+   "form": "M11.0 0H85.0A11.0 11.0 0 0 1 96 11.0V11.0A11.0 11.0 0 0 1 85.0 22H11.0A11.0 11.0 0 0 1 0 11.0V11.0A11.0 11.0 0 0 1 11.0 0Z"
+  },
+  {
+   "id": "s10",
+   "b": 56,
+   "h": 56,
+   "name": "Es lebe die Tradition!",
+   "satz": "Rund, 56 mm. Der Satz des Röstihüs.",
+   "form": "M28.0 0A28.0 28.0 0 1 1 27.99 0Z"
+  },
+  {
+   "id": "s11",
+   "b": 60,
+   "h": 60,
+   "name": "Das Haus im Winter",
+   "satz": "Eckig, 60 mm. Das Monte-Moro im frischen Schnee.",
+   "form": "M2.4 0H57.6A2.4 2.4 0 0 1 60 2.4V57.6A2.4 2.4 0 0 1 57.6 60H2.4A2.4 2.4 0 0 1 0 57.6V2.4A2.4 2.4 0 0 1 2.4 0Z"
+  },
+  {
+   "id": "s12",
+   "b": 70,
+   "h": 40,
+   "name": "Zwei Minuten bis zum Lift.",
+   "satz": "Eckig, 70 × 40 mm. Vom Haus zum Skigebiet Saas-Almagell.",
+   "form": "M2.4 0H67.6A2.4 2.4 0 0 1 70 2.4V37.6A2.4 2.4 0 0 1 67.6 40H2.4A2.4 2.4 0 0 1 0 37.6V2.4A2.4 2.4 0 0 1 2.4 0Z"
+  },
+  {
+   "id": "s13",
+   "b": 50,
+   "h": 50,
+   "name": "Die Wortmarke auf der Nacht",
+   "satz": "Rund, 50 mm. Das Logo in Papier auf der Nacht.",
+   "form": "M25.0 0A25.0 25.0 0 1 1 24.99 0Z"
+  },
+  {
+   "id": "s14",
+   "b": 70,
+   "h": 52,
+   "name": "Über 250 km Wanderwege",
+   "satz": "Der Grat, 70 × 52 mm. Das Saastal im Sommer, wie es das Haus beschreibt.",
+   "form": "M0.00 3.99 L4.90 3.15 L8.26 0.63 L10.50 2.73 L13.72 1.47 L17.50 4.20 L21.00 2.31 L23.66 3.57 L26.60 0.84 L30.10 3.78 L34.02 1.89 L37.80 4.41 L42.00 2.94 L44.80 3.78 L49.00 1.26 L52.36 3.36 L56.00 2.52 L60.20 4.62 L64.40 2.10 L67.34 3.57 L70.00 2.73 L70 49.6A2.4 2.4 0 0 1 67.6 52H2.4A2.4 2.4 0 0 1 0 49.6Z"
+  },
+  {
+   "id": "s15",
+   "b": 60,
+   "h": 60,
+   "name": "Alpenrosen",
+   "satz": "Eckig, 60 mm. Alpenrosen über dem Saastal.",
+   "form": "M2.4 0H57.6A2.4 2.4 0 0 1 60 2.4V57.6A2.4 2.4 0 0 1 57.6 60H2.4A2.4 2.4 0 0 1 0 57.6V2.4A2.4 2.4 0 0 1 2.4 0Z"
+  },
+  {
+   "id": "s16",
+   "b": 100,
+   "h": 24,
+   "name": "Postauto im ganzen Saastal inklusive",
+   "satz": "Kapsel, 100 mm. Im Zimmerpreis, Sommer und Winter.",
+   "form": "M12.0 0H88.0A12.0 12.0 0 0 1 100 12.0V12.0A12.0 12.0 0 0 1 88.0 24H12.0A12.0 12.0 0 0 1 0 12.0V12.0A12.0 12.0 0 0 1 12.0 0Z"
+  },
+  {
+   "id": "s17",
+   "b": 56,
+   "h": 56,
+   "name": "Willkommen im Monte-Moro.",
+   "satz": "Rund, 56 mm. Der Gruss an der Rezeption.",
+   "form": "M28.0 0A28.0 28.0 0 1 1 27.99 0Z"
+  },
+  {
+   "id": "s18",
+   "b": 60,
+   "h": 60,
+   "name": "Murmeltiere",
+   "satz": "Eckig, 60 mm. Zwei Murmeltiere im Saastal.",
+   "form": "M2.4 0H57.6A2.4 2.4 0 0 1 60 2.4V57.6A2.4 2.4 0 0 1 57.6 60H2.4A2.4 2.4 0 0 1 0 57.6V2.4A2.4 2.4 0 0 1 2.4 0Z"
+  },
+  {
+   "id": "s19",
+   "b": 54,
+   "h": 54,
+   "name": "Bei uns scheint fast immer die Sonne.",
+   "satz": "Eckig, 54 mm. Der Satz am Fuss jeder Seite.",
+   "form": "M2.4 0H51.6A2.4 2.4 0 0 1 54 2.4V51.6A2.4 2.4 0 0 1 51.6 54H2.4A2.4 2.4 0 0 1 0 51.6V2.4A2.4 2.4 0 0 1 2.4 0Z"
+  },
+  {
+   "id": "s20",
+   "b": 80,
+   "h": 56,
+   "name": "Das Dorf im Winter",
+   "satz": "Der Grat, 80 × 56 mm. Saas-Almagell im Schnee.",
+   "form": "M0.00 4.56 L5.60 3.60 L9.44 0.72 L12.00 3.12 L15.68 1.68 L20.00 4.80 L24.00 2.64 L27.04 4.08 L30.40 0.96 L34.40 4.32 L38.88 2.16 L43.20 5.04 L48.00 3.36 L51.20 4.32 L56.00 1.44 L59.84 3.84 L64.00 2.88 L68.80 5.28 L73.60 2.40 L76.96 4.08 L80.00 3.12 L80 53.6A2.4 2.4 0 0 1 77.6 56H2.4A2.4 2.4 0 0 1 0 53.6Z"
+  },
+  {
+   "id": "s21",
+   "b": 46,
+   "h": 46,
+   "name": "Mattmark",
+   "satz": "Rund, 46 mm. Ein Tagesausflug aus der Liste des Hauses.",
+   "form": "M23.0 0A23.0 23.0 0 1 1 22.99 0Z"
+  },
+  {
+   "id": "s22",
+   "b": 92,
+   "h": 24,
+   "name": "Monte-Moro · Saas-Almagell",
+   "satz": "Kapsel, 92 mm. Für den Koffer, wie früher an der Rezeption.",
+   "form": "M12.0 0H80.0A12.0 12.0 0 0 1 92 12.0V12.0A12.0 12.0 0 0 1 80.0 24H12.0A12.0 12.0 0 0 1 0 12.0V12.0A12.0 12.0 0 0 1 12.0 0Z"
+  },
+  {
+   "id": "s23",
+   "b": 60,
+   "h": 60,
+   "name": "Über den Gletschern",
+   "satz": "Eckig, 60 mm. Über den Gletschern des Saastals.",
+   "form": "M2.4 0H57.6A2.4 2.4 0 0 1 60 2.4V57.6A2.4 2.4 0 0 1 57.6 60H2.4A2.4 2.4 0 0 1 0 57.6V2.4A2.4 2.4 0 0 1 2.4 0Z"
+  },
+  {
+   "id": "s24",
+   "b": 66,
+   "h": 50,
+   "name": "Der Satz unter dem Grat",
+   "satz": "Der Grat, 66 × 50 mm. Mehr erleben, weniger zahlen, im Logo-Blau.",
+   "form": "M0.00 3.76 L4.62 2.97 L7.79 0.59 L9.90 2.57 L12.94 1.39 L16.50 3.96 L19.80 2.18 L22.31 3.37 L25.08 0.79 L28.38 3.56 L32.08 1.78 L35.64 4.16 L39.60 2.77 L42.24 3.56 L46.20 1.19 L49.37 3.17 L52.80 2.38 L56.76 4.36 L60.72 1.98 L63.49 3.37 L66.00 2.57 L66 47.6A2.4 2.4 0 0 1 63.6 50H2.4A2.4 2.4 0 0 1 0 47.6Z"
+  }
+ ],
+ "boegen": 2,
+ "masse": [
+  22,
+  104
+ ]
+}

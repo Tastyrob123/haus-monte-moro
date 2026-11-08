@@ -1,0 +1,78 @@
+{
+ "karten": [
+  {
+   "id": "pk01",
+   "key": "haus-sommer-g",
+   "name": "Gruss aus Saas-Almagell",
+   "satz": "Das Hotel Monte-Moro im Sommer, mit der Sonnenterrasse"
+  },
+  {
+   "id": "pk02",
+   "key": "stausee",
+   "name": "Mattmark",
+   "satz": "Der Stausee Mattmark"
+  },
+  {
+   "id": "pk03",
+   "key": "alpenrosen",
+   "name": "Saastal",
+   "satz": "Alpenrosen über dem Saastal"
+  },
+  {
+   "id": "pk04",
+   "key": "haus-winter-g",
+   "name": "Saas-Almagell",
+   "satz": "Das Hotel Monte-Moro im Winter"
+  },
+  {
+   "id": "pk05",
+   "key": "tal-sommer",
+   "name": "Das Saastal",
+   "satz": "Das Saastal im Sommer"
+  },
+  {
+   "id": "pk06",
+   "key": "gletscher",
+   "name": "Saastal",
+   "satz": "Über den Gletschern des Saastals"
+  },
+  {
+   "id": "pk07",
+   "key": "see-blumen",
+   "name": "Mattmark",
+   "satz": "Blumen am Mattmarksee"
+  },
+  {
+   "id": "pk08",
+   "key": "dorf-winter",
+   "name": "Saas-Almagell",
+   "satz": "Saas-Almagell im Winter"
+  },
+  {
+   "id": "pk09",
+   "key": "wasserfall",
+   "name": "Saastal",
+   "satz": "Ein Wasserfall im Saastal"
+  },
+  {
+   "id": "pk10",
+   "key": "huette",
+   "name": "Gruss aus dem Saastal",
+   "satz": "Eine Hütte im Schnee"
+  },
+  {
+   "id": "pk11",
+   "key": "murmeltiere",
+   "name": "Saastal",
+   "satz": "Murmeltiere im Saastal"
+  },
+  {
+   "id": "pk12",
+   "key": "dorf-weiss",
+   "name": "Saas-Almagell",
+   "satz": "Das Dorf im Schnee"
+  }
+ ],
+ "boegen": 2,
+ "quer": true
+}
