@@ -13,6 +13,11 @@ Stand: 08.11.2026, Oberchef-Sitzung (Zweig `claude/task-o0ores`).
 - Ziellisten `_Werkzeuge/abnahme-tor/ziele-monte-moro.json`, `_Werkzeuge/messlauf/ziele-monte-moro.json`; Server in `cloud/haus.json` (9381–9388).
 - Gemeinsamer Auftrag der Agenten: `Zurbriggen Hotel Monte-Moro Saas-Almagell/_werkzeuge/AUFTRAG-GEMEINSAM.md`.
 
+## Stand der Agenten (08.11., Nachmittag)
+- Fertig, 0 Funde (Chromium, 4 Breiten), committet: Hotelbüro + Kleid, Kartenbrett, Markenbuch (Nachbesserung Titel läuft), Besucherliste, Werkbank Papier/Feed/Mails/Material (`website/_werkbank/LIEFERUNG-PAPIER.md`).
+- In Arbeit: Schaufenster, Rezeption, Hausdruckerei (zuerst `stilblatt.json`), Werkbank-Kern.
+- Danach: `bash "Zurbriggen Hotel Monte-Moro Saas-Almagell/_werkzeuge/maison/_bau/aufnahmen.sh"` (Bildschirme im Hotelbüro neu), Werkbank `sb_werkzeuge.js` + `bau_alles.sh`.
+
 ## Offen, in Reihenfolge
 1. Acht Bau-Agenten (Opus) parallel: Hotelbüro, Schaufenster, Kartenbrett, Rezeption, Markenbuch, Besucherliste, Hausdruckerei, Werkbank. Jeder: umkleiden, Hauswerte, `tor-schnell` 0 Funde, `LIEFERUNG.md`, Commit im Revier.
 2. Oberchef: je Werkzeug Gegenprobe (15 Bilder ansehen), Funde zurück.
