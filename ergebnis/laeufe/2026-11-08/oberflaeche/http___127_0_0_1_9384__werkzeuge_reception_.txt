@@ -1,0 +1,2 @@
+Geprüft: http://127.0.0.1:9384/_werkzeuge/reception/
+BESTANDEN

@@ -1,0 +1,401 @@
+{
+ "summe": {
+  "zustaende": 413,
+  "funde": 0,
+  "nicht_erreicht": 0
+ },
+ "ziele": {
+  "hotelbuero": {
+   "zustaende": 4,
+   "breiten": {
+    "1440": 4,
+    "1000": 4,
+    "1280": 4,
+    "390": 4
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9381/_werkzeuge/maison/",
+   "name": "Das Hotelbüro"
+  },
+  "schaufenster": {
+   "zustaende": 40,
+   "breiten": {
+    "1440": 40,
+    "1000": 40,
+    "1280": 40,
+    "390": 62
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9382/_werkzeuge/bureau/",
+   "name": "Das Schaufenster"
+  },
+  "schaufenster-anleitung": {
+   "zustaende": 22,
+   "breiten": {
+    "1440": 22,
+    "1000": 22,
+    "1280": 22,
+    "390": 43
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": null,
+   "url": "http://127.0.0.1:9382/_werkzeuge/bureau/anleitung.html",
+   "name": "Das Schaufenster · Anleitung"
+  },
+  "kartenbrett": {
+   "zustaende": 20,
+   "breiten": {
+    "1440": 20,
+    "1000": 20,
+    "1280": 20,
+    "390": 29
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9383/_werkzeuge/carte/",
+   "name": "Das Kartenbrett"
+  },
+  "kartenbrett-anleitung": {
+   "zustaende": 15,
+   "breiten": {
+    "1440": 15,
+    "1000": 15,
+    "1280": 15,
+    "390": 21
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": null,
+   "url": "http://127.0.0.1:9383/_werkzeuge/carte/anleitung.html",
+   "name": "Das Kartenbrett · Anleitung"
+  },
+  "rezeption": {
+   "zustaende": 40,
+   "breiten": {
+    "1440": 40,
+    "1000": 40,
+    "1280": 40,
+    "390": 58
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9384/_werkzeuge/reception/",
+   "name": "Die Rezeption"
+  },
+  "rezeption-anleitung": {
+   "zustaende": 11,
+   "breiten": {
+    "1440": 11,
+    "1000": 11,
+    "1280": 11,
+    "390": 15
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": null,
+   "url": "http://127.0.0.1:9384/_werkzeuge/reception/anleitung.html",
+   "name": "Die Rezeption · Anleitung"
+  },
+  "markenbuch": {
+   "zustaende": 16,
+   "breiten": {
+    "1440": 16,
+    "1000": 16,
+    "1280": 16,
+    "390": 21
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9385/_werkzeuge/livre/",
+   "name": "Das Markenbuch"
+  },
+  "markenbuch-buch": {
+   "zustaende": 6,
+   "breiten": {
+    "1440": 6,
+    "1000": 6,
+    "1280": 6,
+    "390": 10
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": null,
+   "url": "http://127.0.0.1:9385/_werkzeuge/livre/buch.html",
+   "name": "Das Markenbuch · Hausregeln"
+  },
+  "markenbuch-anleitung": {
+   "zustaende": 8,
+   "breiten": {
+    "1440": 8,
+    "1000": 8,
+    "1280": 8,
+    "390": 12
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": null,
+   "url": "http://127.0.0.1:9385/_werkzeuge/livre/anleitung.html",
+   "name": "Das Markenbuch · Anleitung"
+  },
+  "besucherliste": {
+   "zustaende": 40,
+   "breiten": {
+    "1440": 40,
+    "1000": 40,
+    "1280": 40,
+    "390": 53
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9386/_werkzeuge/registre/",
+   "name": "Die Besucherliste"
+  },
+  "besucherliste-anleitung": {
+   "zustaende": 16,
+   "breiten": {
+    "1440": 16,
+    "1000": 16,
+    "1280": 16,
+    "390": 25
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": null,
+   "url": "http://127.0.0.1:9386/_werkzeuge/registre/anleitung.html",
+   "name": "Die Besucherliste · Anleitung"
+  },
+  "hausdruckerei": {
+   "zustaende": 40,
+   "breiten": {
+    "1440": 40,
+    "1000": 40,
+    "1280": 40,
+    "390": 58
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9387/_werkzeuge/imprimerie/",
+   "name": "Die Hausdruckerei"
+  },
+  "hausdruckerei-mail": {
+   "zustaende": 40,
+   "breiten": {
+    "1440": 40,
+    "1000": 40,
+    "1280": 40,
+    "390": 52
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": null,
+   "url": "http://127.0.0.1:9387/_werkzeuge/imprimerie/mail.html",
+   "name": "Die Hausdruckerei · Mail"
+  },
+  "werkbank": {
+   "zustaende": 40,
+   "breiten": {
+    "1440": 40,
+    "1000": 40,
+    "1280": 40,
+    "390": 40
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9388/werkbank/index.html",
+   "name": "Die Werkbank"
+  },
+  "werkbank-ki": {
+   "zustaende": 26,
+   "breiten": {
+    "1440": 26,
+    "1000": 26,
+    "1280": 26,
+    "390": 26
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9388/werkbank/ki.html",
+   "name": "Die Werkbank · KI"
+  },
+  "werkbank-karte": {
+   "zustaende": 11,
+   "breiten": {
+    "1440": 11,
+    "1000": 11,
+    "1280": 11,
+    "390": 11
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9388/werkbank/karte.html",
+   "name": "Die Werkbank · Karte"
+  },
+  "werkbank-geprueft": {
+   "zustaende": 6,
+   "breiten": {
+    "1440": 6,
+    "1000": 6,
+    "1280": 6,
+    "390": 6
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9388/werkbank/geprueft/index.html",
+   "name": "Die Werkbank · Geprüft"
+  },
+  "werkbank-befund": {
+   "zustaende": 1,
+   "breiten": {
+    "1440": 1,
+    "1000": 1,
+    "1280": 1,
+    "390": 1
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9388/befund/index.html",
+   "name": "Die Werkbank · Befund"
+  },
+  "werkbank-unterlagen": {
+   "zustaende": 2,
+   "breiten": {
+    "1440": 2,
+    "1000": 2,
+    "1280": 2,
+    "390": 2
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9388/unterlagen/index.html",
+   "name": "Die Werkbank · Unterlagen"
+  },
+  "werkbank-drucksachen": {
+   "zustaende": 1,
+   "breiten": {
+    "1440": 1,
+    "1000": 1,
+    "1280": 1,
+    "390": 1
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9388/drucksachen/index.html",
+   "name": "Die Werkbank · Drucksachen"
+  },
+  "werkbank-untersetzer": {
+   "zustaende": 1,
+   "breiten": {
+    "1440": 1,
+    "1000": 1,
+    "1280": 1,
+    "390": 1
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9388/untersetzer/index.html",
+   "name": "Die Werkbank · Untersetzer"
+  },
+  "werkbank-sticker": {
+   "zustaende": 1,
+   "breiten": {
+    "1440": 1,
+    "1000": 1,
+    "1280": 1,
+    "390": 1
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9388/sticker/index.html",
+   "name": "Die Werkbank · Sticker"
+  },
+  "werkbank-postkarten": {
+   "zustaende": 1,
+   "breiten": {
+    "1440": 1,
+    "1000": 1,
+    "1280": 1,
+    "390": 1
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9388/postkarten/index.html",
+   "name": "Die Werkbank · Postkarten"
+  },
+  "werkbank-beigaben": {
+   "zustaende": 1,
+   "breiten": {
+    "1440": 1,
+    "1000": 1,
+    "1280": 1,
+    "390": 1
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9388/beigaben/index.html",
+   "name": "Die Werkbank · Beigaben"
+  },
+  "werkbank-feed": {
+   "zustaende": 2,
+   "breiten": {
+    "1440": 2,
+    "1000": 2,
+    "1280": 2,
+    "390": 2
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9388/feed/index.html",
+   "name": "Die Werkbank · Feed"
+  },
+  "werkbank-mails": {
+   "zustaende": 1,
+   "breiten": {
+    "1440": 1,
+    "1000": 1,
+    "1280": 1,
+    "390": 1
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9388/mails/index.html",
+   "name": "Die Werkbank · Mails"
+  },
+  "werkbank-material": {
+   "zustaende": 1,
+   "breiten": {
+    "1440": 1,
+    "1000": 1,
+    "1280": 1,
+    "390": 1
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9388/material/index.html",
+   "name": "Die Werkbank · Material"
+  }
+ }
+}
