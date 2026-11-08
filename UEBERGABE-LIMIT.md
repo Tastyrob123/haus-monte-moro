@@ -52,7 +52,14 @@ Stand: 08.11.2026, Oberchef-Sitzung (Zweig `claude/task-o0ores`).
 ## Nächster genauer Schritt
 Läuft `cloud/schluss.sh` nicht mehr und fehlt `aus-ende/ende.json`: neu starten. Danach Funde reparieren, Fundbilder ansehen, Tafeln nach Zweig `ergebnis` unter `ergebnis/laeufe/2026-11-08/`, Meldung.
 
+## Nachtsitzung (session_01Qrxqqj2RNsgQhwdQL8dkgE, 20:10 UTC)
+- Vorige Sitzung war fertig (19:10 Fertig, 19:17 letztes Lebenszeichen); kein Unteragent offen, keiner neu gestartet.
+- Zweig `ergebnis` trägt jetzt `.claude/`, `CLAUDE.md`, `AUFTRAG.md` und diese Übergabe (Lebenszeichen für die Wache).
+- Schaufenster nach der Reparatur «90.00» (17:57) frisch geprüft: läuft (`/tmp/o0`, Worktree von `claude/task-o0ores`, `aus/schaufenster/`).
+
 ## Entscheidungen der Nacht
+- Nachtsitzung: Auftrag sagt Zweig `ergebnis`; die Übergabe lag nur auf `claude/task-o0ores`. Übergabe und Lebenszeichen leben ab jetzt auf `ergebnis`, Code-Reparaturen weiter auf `claude/task-o0ores`.
+- Schaufenster wurde in der Schlussprüfung (16:56) vor der Reparatur 17:57 geprüft: deshalb Nachprüfung in der Nacht.
 - Gearbeitet wird auf `claude/task-o0ores` (Auftrag der Folgesitzung), nicht auf main.
 - Geprüft nur in Chromium (WebKit nicht ladbar, siehe Stolpersteine).
 - Schaufenster «Zeiten & Preise» zeigte «90 .00» (Leser des Stamms setzt Leerschlag für Tags). Korrigiert nur in der Anzeige des Hauses (`bureau/festigkeit.js › zahlwert`), Stamm-Leser unverändert, weil seine Kennungen gespeicherte Änderungen tragen. Schaufenster nach der Schlussprüfung neu prüfen.
