@@ -59,6 +59,8 @@ Läuft `cloud/schluss.sh` nicht mehr und fehlt `aus-ende/ende.json`: neu starten
 
 ## Gegenprüfung (session_01Qrxqqmsi6FLCXQ7QCpcSoE, 20:16 UTC)
 - Auftrag: jeden Auftragspunkt selbst nachprüfen (Werkbank, sieben Werkzeuge, Drucksachen, Feed, Prüfung) bei 1440/390, Fehlendes bauen. Arbeitet in Worktree `/tmp/gp` von `claude/task-o0ores`. Nachtsitzung 01Qrxqqj2… prüft Schaufenster nach; die Gegenprüfung nimmt sich nach dem Schaufenster nicht doppelt an.
+- 20:40: Werkbank 1440/390 Abschnitt für Abschnitt angesehen (15 + 21 Bilder), alle 28 Ziele bei 1440/390 geöffnet: kein Überlauf, keine Konsolenfehler, keine 404, keine fremden Hausnamen, keine Platzhalter. Hauswerte gegen `website/inhalt/daten.py` (Preise 90/100/120/130, Röstis, Cordon bleus, Hotelweine, Kidsclub) stimmen. Eigene Schlussprüfung `cloud/schluss.sh` läuft (`/tmp/gp/aus-ende`).
+- Hinweis für Prüfer: Ganzseiten-Aufnahmen (fullPage) zeigen falsche Überlagerungen in den Seitenleisten und leere Flächen (Einblendung); nur Ansichten mit echtem Scrollen werten.
 
 ## Entscheidungen der Nacht
 - Nachtsitzung: Auftrag sagt Zweig `ergebnis`; die Übergabe lag nur auf `claude/task-o0ores`. Übergabe und Lebenszeichen leben ab jetzt auf `ergebnis`, Code-Reparaturen weiter auf `claude/task-o0ores`.
