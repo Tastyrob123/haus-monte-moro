@@ -73,7 +73,7 @@ KAP = [('haltung', 'Haltung'), ('zeichen', 'Zeichen'), ('farben', 'Farben'), ('s
 def kopf(nr, etikett, titel, lead):
     a, b = titel
     return (f'<header class="mk"><p class="mk__kap" data-r><span>{nr:02d}</span><b>{e(etikett)}</b><i></i></p>'
-            f'<h2 class="mk__t" data-t>{e(a)}{" " if " " in b else "&nbsp;"}<em>{nb(b)}</em></h2><p class="mk__lead" data-r>{lead}</p></header>')
+            f'<h2 class="mk__t" data-t>{e((a + " " + b).rsplit(" ", 1)[0])}&nbsp;<em>{e((a + " " + b).rsplit(" ", 1)[1])}</em></h2><p class="mk__lead" data-r>{lead}</p></header>')
 
 
 def faecher():
@@ -95,7 +95,7 @@ def seite():
     <div class="titel__wm" data-r>{marke("papier")}</div>
     <div class="titel__t">
       <p class="etikett" data-r>Die Hausregeln · Markenbuch, Oktober 2026</p>
-      <h1 data-t>Mehr erleben, <em>weniger zahlen.</em></h1>
+      <h1 data-t>Mehr erleben, weniger <em>zahlen.</em></h1>
       <p class="titel__ort" data-r>Hotel Monte-Moro <i></i> Restaurant Röstihüs <i></i> <span class="ort-z">Saas-Almagell <i></i> Saastal <i></i> Wallis</span></p>
       <p class="titel__lead" data-r>Alles, was das Haus erkennbar macht, an einem Ort: der Bergkamm und die Wortmarke, die Farben und ihre Rollen, die Schriften, das Medaillon als Tapete, die Bausteine, die Bilder und der Ton. Damit jedes neue Stück, ob Karte, Aushang oder Beitrag, aussieht wie aus einem Guss.</p>
       <p class="titel__kn" data-r><a class="kn kn--laerche" href="#haltung"><span>Lesen</span><i>{RUNTER}</i></a></p>

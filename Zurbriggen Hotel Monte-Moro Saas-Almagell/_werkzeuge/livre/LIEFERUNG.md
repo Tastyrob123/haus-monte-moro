@@ -22,11 +22,12 @@ Server: `python3 server.py 9385` im Ordner `_werkzeuge/livre` (Markenprüfung oh
 
 ## Wie geprüft (Chromium, 08.11.2026)
 
-- `tor-schnell` `--nur markenbuch` (16 Zustände), `markenbuch-buch` (6), `markenbuch-anleitung` (8), je 1440/1280/1000/390: **0 echte Funde.** Übrig je Schlüssel 16 Meldungen «Versalien in DM Mono»: Fehlalarm, weil die Prüfregel ihre erlaubten Schriften aus `_werkzeuge/imprimerie/haeuser/montemoro/stilblatt.json` liest, das noch das Stilblatt der Bar ist (Prata/Hanken). DM Mono in Versalien ist die Regel der Website (`montemoro.css .ueber`, `.kn`). Erledigt sich, sobald die Hausdruckerei ihr Stilblatt umstellt.
-- Messlauf `markenbuch` (1440/1280/1000/390) 0 Funde, `markenbuch-buch` (4 Breiten) 0, `markenbuch-anleitung` (1440/390) 0.
+- `tor-schnell` `--nur markenbuch` (16 Zustände), `markenbuch-buch` (6), `markenbuch-anleitung` (8), je 1440/1280/1000/390, mit dem umgestellten Stilblatt der Hausdruckerei: **0 Funde.**
+- Gegenprobe Oberchef: Lärche in Titeln nur im letzten Wort (Startbild «Guten Tag. Womit beginnen wir heute?», Hausregeln, Anleitung); Kachel Markenprüfung zeigt «13 Farben des Hauses» statt «ΔE 2000».
+- Messlauf alle drei Schlüssel, 1440/1280/1000/390: 0 Funde.
 - `oberflaeche_pruefen.js` auf `/_werkzeuge/livre/`: BESTANDEN.
 - Mit den Augen: 16 Zustände 1440, 12 Zustände 390, Hausregeln ganz, Logo & Dateien ganz, die neun Anleitungsbilder, das Beispiel.
 
 ## Offen
 
-- Stilblatt der Hausdruckerei (siehe oben), nicht in diesem Revier.
+- nichts.

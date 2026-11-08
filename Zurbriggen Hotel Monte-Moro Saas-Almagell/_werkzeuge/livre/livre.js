@@ -37,12 +37,13 @@ const T = {
 de: {
   name: '{marke}', unter: 'Marke · Monte-Moro', start: 'Übersicht', arbeiten: 'Arbeiten', nachschlagen: 'Nachschlagen', bilder: 'Fotos', dateien: 'Logo & Dateien', pruefung: 'Markenprüfung', buch: 'Die Hausregeln',
   anleitung: 'Anleitung', maison: '{zentrale}', website: 'Website ansehen', sprache: 'Sprache', rundgang: 'Kurzer Rundgang', bereiche: 'Bereiche',
-  morgen: 'Guten Morgen.', tag: 'Guten Tag.', abend: 'Guten Abend.', frage: 'Schön, dass Sie da sind. Womit fangen wir an?',
+  morgen: 'Guten Morgen.', tag: 'Guten Tag.', abend: 'Guten Abend.', frage: 'Womit beginnen wir heute?',
   start_satz: '{marke} ist die Marke des Hotel Monte-Moro zum Arbeiten: alle Fotos der Website in fertigen Grössen für Beitrag, Story und Druck, Wortmarke, Bergkamm, Medaillon, Tapete und Farben als Dateien, und eine Prüfung für Entwürfe von Agenturen, Druckereien und aus dem Haus.',
   k_bilder: 'Alle Fotos der Website, nach Bereich, Saison, Format und Herkunft. Jedes Foto als Beitrag, Story, für die Website oder den Druck.',
   k_dateien: 'Die Wortmarke, der Bergkamm und das Medaillon in den Farben des Hauses, die Tapete, die Farben zum Kopieren und die Schriften der Website.',
   k_pruefung: 'Ein Entwurf als Bild oder PDF. {marke} sagt, was zum Haus passt und was nicht, Punkt für Punkt.',
   k_buch: 'Haltung, Zeichen, Farben, Schriften, Tapete, Bausteine, Bilder und Ton, nach denen alles gestaltet ist.',
+  k_pruefung2: 'Farben des Hauses, gegen die jeder Entwurf gemessen wird; dazu Schrift, Zeichen, Abstand, Bild und Ton.', p_hausfarben: 'Farben des Hauses', p_bereiche: 'Punkte je Entwurf',
   oeffnen: 'Öffnen', lesen: 'Lesen',
   ue_kurz: 'mit Vorher', z_haus: 'vom Haus', z_frei: 'frei lizenziert', z_ki: 'mit KI neu gerechnet', z_fremd: 'fremde Rechte', z_ue: 'mit Vorher', z_dateien: 'Dateien', formate: 'Formate',
   stand: '{0} Fotos · {1} Dateien',
@@ -219,18 +220,18 @@ function start() {
   const lg = (ic, mk, b, p, ziel) => `<div class="wo-lg"><i class="wo-lg__z">${WO.ic(ic)}</i><span class="wo-mk">${esc(mk)}</span><b>${b}</b><p>${esc(p)}</p><a class="wo-lk" href="#${ziel}" data-gehe="${ziel}">${esc(t('oeffnen'))}</a></div>`;
   const ag = (ziel, img, ic, name, satz, i, href) => `<${href ? `a href="${href}"` : `button type="button" data-gehe="${ziel}"`} class="wo-ag" data-r style="--i:${i}">
       <span class="wo-ag__b">${img}</span><span class="wo-ag__t"><i class="wo-ag__z">${WO.ic(ic)}</i><b>${esc(name)}</b><span>${esc(satz).replace(/ (\S+)$/, '&nbsp;$1')}</span></span></${href ? 'a' : 'button'}>`;
-  return `${umbenannt(WO.startbild({ werkzeug: 'marke', art: 'voll', ...sbFoto('haus-sommer'), h1: `${esc(gruss)} <em>${esc(t('frage'))}</em>`, satz: esc(t('start_satz')),
+  return `${umbenannt(WO.startbild({ werkzeug: 'marke', art: 'voll', ...sbFoto('haus-sommer'), h1: `${esc(gruss)} ${zwei(t('frage'))}`, satz: esc(t('start_satz')),
       knoepfe: WO.knopf(esc(t('anleitung')), 'buch', 'gold', { href: 'anleitung.html', neu: true }) + WO.knopf(esc(t('buch')), 'pfeil', 'glas', { href: MARKE }) }))}
     <div class="wo-lage" data-r>
       ${lg('foto', t('bilder'), zahl(st.fotos), `${zahl(st.haus)} ${t('z_haus')} · ${zahl(st.ki)} ${t('z_ki')}`, 'bilder')}
       ${lg('kopie', t('z_dateien'), zahl(st.dateien), t('k_dateien'), 'dateien')}
-      ${lg('auge', t('pruefung'), 'ΔE 2000', t('k_pruefung'), 'pruefung')}
+      ${lg('auge', t('pruefung'), zahl(S.d.farben.length), t('k_pruefung2'), 'pruefung')}
     </div>
     <h2 class="wo-zw">${esc(t('arbeiten'))}</h2>
     <div class="wo-aufg li-aufg">
       ${ag('bilder', `<span class="li-stapel"><img src="${klein('z-dach')}" alt="" decoding="async"><img src="${klein('roesti-raum')}" alt="" decoding="async"><img src="${klein('haus-winter-b')}" alt="" decoding="async"></span>`, 'foto', t('bilder'), t('k_bilder'), 0)}
       ${ag('dateien', `<span class="li-logo li-tapete-d"><img src="${DAT}${S_}-wortmarke-blau.svg" alt="" decoding="async"></span>`, 'kopie', t('dateien'), t('k_dateien'), 1)}
-      ${ag('pruefung', `<span class="li-pr-bild"><span class="li-pr-f">${S.d.farben.slice(0, 9).map(x => `<i style="background:${x.h}"></i>`).join('')}</span><span class="li-pr-de"><b>ΔE</b><small>2000</small></span></span>`, 'auge', t('pruefung'), t('k_pruefung'), 2)}
+      ${ag('pruefung', `<span class="li-pr-bild"><span class="li-pr-f">${S.d.farben.slice(0, 9).map(x => `<i style="background:${x.h}"></i>`).join('')}</span><span class="li-pr-de"><b>${zahl(S.d.farben.length)}</b><small>${esc(t('p_hausfarben'))}</small></span></span>`, 'auge', t('pruefung'), t('k_pruefung'), 2)}
       ${ag('', `<img src="${klein('stuebli')}" alt="" loading="lazy" decoding="async">`, 'buch', t('buch'), t('k_buch'), 3, MARKE)}
     </div>`;
 }
@@ -443,7 +444,7 @@ function dateienLeben() {
 
 /* ---------------------------------------------------------------- Markenprüfung */
 function pruefung() {
-  return `${titel('pruefung', teile(t('p_titel')), t('p_satz'), '', [['ΔE 2000', t('p_farben')], ['Claude', t('ber').bild + ' · ' + t('ber').ton]])}<div id="li-pr"></div><div id="li-bsp-erg"></div>`;
+  return `${titel('pruefung', teile(t('p_titel')), t('p_satz'), '', [[zahl(S.d.farben.length), t('p_hausfarben')], ['6', t('p_bereiche')]])}<div id="li-pr"></div><div id="li-bsp-erg"></div>`;
 }
 function pruefungLeben() { S.ergebnis ? ergebnis(S.ergebnis) : feld(); if (!S.ergebnis && /[?&]beispiel=1/.test(location.search)) beispielPruefung(); }
 /* Beispiel: ein eigens gezeichneter Entwurf (beispiel/entwurf.png), geprüft mit der Prüfung selbst (ohne Claude), Antwort unverändert, als Beispiel beschriftet */
