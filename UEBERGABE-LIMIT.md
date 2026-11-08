@@ -31,6 +31,8 @@ Stand: 08.11.2026, Oberchef-Sitzung (Zweig `claude/task-o0ores`).
 - Alle acht Reviere haben `LIEFERUNG.md` (Hotelbüro, Schaufenster, Kartenbrett, Rezeption, Markenbuch, Besucherliste, Hausdruckerei, Werkbank Kern + Papier). Kein Agent fehlt, keiner neu gestartet.
 - `.claude/` und `CLAUDE.md` von main übernommen (Lebenszeichen).
 - Schlussprüfung `bash cloud/schluss.sh > /tmp/schluss.log` läuft (28 Ziele, danach oberflaeche_pruefen.js je Oberfläche), Ergebnis in `aus-ende/`.
+- Zwischenstand Schlussprüfung (18:25): Hotelbüro, Schaufenster (+Anleitung), Kartenbrett (+Anleitung), Rezeption (+Anleitung), Markenbuch (+Buch, +Anleitung): je 0 Funde, nichts «nicht erreicht». Messlauf über alles läuft parallel (`aus-ende/messlauf/alle/`), bisher 0 Funde.
+- Augen (Oberchef): Werkbank 1440/390, Drucksachen, Feed, Kartenbrett, Rezeption, Markenbuch, Besucherliste, Hausdruckerei angesehen; Feed-Zahlen aus `_quelle/extern/ig/profil.txt` belegt.
 
 ## Nächster genauer Schritt
 Läuft `cloud/schluss.sh` nicht mehr und fehlt `aus-ende/ende.json`: neu starten. Danach Funde reparieren, Fundbilder ansehen, Tafeln nach Zweig `ergebnis` unter `ergebnis/laeufe/2026-11-08/`, Meldung.
