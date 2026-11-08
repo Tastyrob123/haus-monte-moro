@@ -63,6 +63,9 @@ Keiner – alles fertig und geprüft. Nur noch «Wartet auf Roberts Wort».
 ## Gegenprüfung (session_01Qrxqqmsi6FLCXQ7QCpcSoE, 20:16 UTC)
 - Auftrag: jeden Auftragspunkt selbst nachprüfen (Werkbank, sieben Werkzeuge, Drucksachen, Feed, Prüfung) bei 1440/390, Fehlendes bauen. Arbeitet in Worktree `/tmp/gp` von `claude/task-o0ores`. Nachtsitzung 01Qrxqqj2… prüft Schaufenster nach; die Gegenprüfung nimmt sich nach dem Schaufenster nicht doppelt an.
 - 20:40: Werkbank 1440/390 Abschnitt für Abschnitt angesehen (15 + 21 Bilder), alle 28 Ziele bei 1440/390 geöffnet: kein Überlauf, keine Konsolenfehler, keine 404, keine fremden Hausnamen, keine Platzhalter. Hauswerte gegen `website/inhalt/daten.py` (Preise 90/100/120/130, Röstis, Cordon bleus, Hotelweine, Kidsclub) stimmen. Eigene Schlussprüfung `cloud/schluss.sh` läuft (`/tmp/gp/aus-ende`).
+- Funde der Gegenprüfung, repariert und auf `claude/task-o0ores` gepusht (77b8f0d):
+  1. Werkbank › Material: Ordner «05 Ansichten der neuen Website» fehlte (Culinarium hat ihn). Website am Rechner und am Handy neu aufgenommen (`_werkbank/ansicht_lang.js`), 64 Bilder, Ordner in `material/index.html` eingesetzt («zehn Ordner»).
+  2. Hotelbüro › Rundgang: «Das ist Das Hotelbüro» → «Das ist das Hotelbüro», Werkzeugliste mit kleinen Artikeln (auch in `maison/bau.py`).
 - Hinweis für Prüfer: Ganzseiten-Aufnahmen (fullPage) zeigen falsche Überlagerungen in den Seitenleisten und leere Flächen (Einblendung); nur Ansichten mit echtem Scrollen werten.
 
 ## Entscheidungen der Nacht
@@ -71,6 +74,8 @@ Keiner – alles fertig und geprüft. Nur noch «Wartet auf Roberts Wort».
 - Gearbeitet wird auf `claude/task-o0ores` (Auftrag der Folgesitzung), nicht auf main.
 - Geprüft nur in Chromium (WebKit nicht ladbar, siehe Stolpersteine).
 - Schaufenster «Zeiten & Preise» zeigte «90 .00» (Leser des Stamms setzt Leerschlag für Tags). Korrigiert nur in der Anzeige des Hauses (`bureau/festigkeit.js › zahlwert`), Stamm-Leser unverändert, weil seine Kennungen gespeicherte Änderungen tragen. Schaufenster nach der Schlussprüfung neu prüfen.
+
+- Gegenprüfung: Nur `material_mehr.py` + `papier_nach.py` einzeln laufen lassen entfernt die Knopf-Nachbauten (text-mitte, knopf-mitte) der Papier-Seiten und setzt werkbank.css/js zurück. Deshalb nur der neue Ordner 05 ins bestehende `material/index.html` übernommen, alles andere auf Stand zurückgesetzt.
 
 ## Wartet auf Roberts Wort
 - Baustein `reception/baustein/anfrage.js` in die Website, Datenschutz-Satz zu Anfragen/Chat (Website-Revier).
