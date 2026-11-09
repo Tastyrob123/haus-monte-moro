@@ -75,6 +75,7 @@ Keiner – alles fertig und geprüft. Nur noch «Wartet auf Roberts Wort».
 - Letztes Lebenszeichen der Gegenprüfung 20:48 (Funde 3 und 4 repariert, 587f496). Kein Bau-Agent offen; alle acht Reviere haben LIEFERUNG.md. Keiner neu gestartet.
 - Offen war nur: Nachprüfung der Ziele, die nach der Schlussprüfung repariert wurden (77b8f0d, 587f496): hotelbuero, hausdruckerei, hausdruckerei-mail, werkbank, werkbank-drucksachen, werkbank-material. Läuft in `/tmp/gp` (`cloud/schnell.sh`, Log `/tmp/gp/nachlauf.log`), danach Oberflächenprüfung, Auge, Tafel `ergebnis/laeufe/2026-11-09/`.
 - 00:55: Drucksachen Preisliste Zimmer, Zuschläge, Best of Röstis (beide Seiten) gerendert und angesehen: CHF steht neben der Zahl, Titel vorne/hinten gleich gross. Oberflächenprüfung Hotelbüro, Hausdruckerei, Werkbank, Drucksachen, Material: 5 × BESTANDEN (`/tmp/gp/aus-nach/oberflaeche/`).
+- Hotelbüro tor-schnell: 4 Zustände, 0 Funde; Rundgang «Das Schaufenster, das Kartenbrett, …» angesehen. Werkbank › Material Ordner 05 bei 1440/390 angesehen, 137 Links der Seite antworten 200.
 
 ## Entscheidungen der Nacht
 - Nachtsitzung: Auftrag sagt Zweig `ergebnis`; die Übergabe lag nur auf `claude/task-o0ores`. Übergabe und Lebenszeichen leben ab jetzt auf `ergebnis`, Code-Reparaturen weiter auf `claude/task-o0ores`.
