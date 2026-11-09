@@ -417,7 +417,8 @@ img{display:block;max-width:100%}
   .li-schrift{grid-template-columns:minmax(0,1fr)}.li-buch{grid-template-columns:minmax(0,1fr)}
   .leiste .kn{padding:0 5px 0 12px;font-size:9.5px}.leiste__t b{font-size:.92rem}
   .li-wahl .mono{min-width:0;width:100%}
-  .li-vn__bar button{padding:0 12px;height:34px;font-size:9.5px}
+  .li-vn__bar{bottom:8px;padding:3px}.li-vn__bar button{padding:0 11px;height:28px;font-size:9.5px}
+  .li-vn__t{display:none}.li-det__bild .li-rahmen::after{display:none}
   .li-hero{padding:24px 20px;border-radius:6px}.li-hero__s li{min-width:84px;padding:12px 10px 10px}
   .li-tafeln--breit{grid-template-columns:minmax(0,1fr)}
   .li-f__n{font-size:.78rem;left:6px;bottom:6px;max-width:calc(100% - 12px)}
@@ -499,6 +500,10 @@ img{display:block;max-width:100%}
 /* Die Zeilen des Rahmens wachsen nicht mit der leeren Seite (sonst springen Rand und Raum beim Laden um 214 px nach oben, CLS 0,18) */
 body.li.wo-app{align-content:start}
 .li [data-r].da.steht{animation:none;transform:none}
+.li [data-r].da.steht.nach:not(.gleit){transform:translate3d(0,22px,0)}
+.li [data-r].da.steht.nach.gleit{animation:li-gleit .7s var(--feder) both}
+@keyframes li-gleit{from{transform:translate3d(0,22px,0)}to{transform:none}}
+@media (prefers-reduced-motion:reduce){.li [data-r].da.steht.nach{transform:none!important;animation:none!important}}
 /* Fehlerbuch 20.10.2026 (Robert: «in allen Tools Bilder dazu»): jede Farbe mit dem Foto, aus dem sie kommt, jede Schrift so, wie sie auf der Website steht */
 .li-farbe__b{position:relative;display:block;aspect-ratio:4/3;overflow:hidden;background:var(--c)}
 .li-farbe__b img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -623,7 +628,7 @@ small.li-teile>i::before{content:none}
 body.li{background:linear-gradient(rgba(245,242,238,.86),rgba(245,242,238,.86)),var(--tap-papier) 0 0/600px 600px,var(--papier)}
 .li-stapel,.li-tapete-d,.li-tafel--dunkel .li-tafel__f{background:linear-gradient(rgba(7,27,46,.55),rgba(7,27,46,.55)),var(--tap-nacht) 0 0/600px 600px,var(--nacht)}
 .li-pr-bild,.li-tafel--hell .li-tafel__f{background:linear-gradient(rgba(245,242,238,.7),rgba(245,242,238,.7)),var(--tap-papier) 0 0/600px 600px,var(--papier)}
-.li-tapete{background-size:300px 300px!important}
+.li-tapete{background-size:170px 170px!important;background-position:50% 50%!important}
 .li-stapel img,.li-aufg .li-stapel img{padding:0;background:var(--nacht);border-radius:var(--wo-r2,14px);box-shadow:0 0 0 1px rgba(179,152,103,.35),0 18px 30px -16px rgba(0,0,0,.8);aspect-ratio:3/4;width:34%;height:auto;object-fit:cover}
 .li-stapel img:nth-child(1){left:9%;top:14%;transform:none}
 .li-stapel img:nth-child(2){left:33%;top:14%;transform:none}
@@ -659,4 +664,4 @@ body.li{background:linear-gradient(rgba(245,242,238,.86),rgba(245,242,238,.86)),
 @media (min-width:901px) and (max-width:1240px){.li .wo-sb--voll .wo-sb__text{max-width:min(80%,520px)}.li .wo-sb--voll .wo-sb__h{font-size:clamp(32px,3.5vw,40px);line-height:1.1}}
 @media (min-width:901px) and (max-width:1240px){.li .wo-sb--voll .wo-sb__text>p:not(.wo-sb__zier){max-width:min(100%,370px)}}
 /* Monte-Moro: vier Fassungen der Wortmarke als zwei Paare */
-.li-tafeln--breit:has(>.li-tafel:nth-child(4):last-child)>.li-tafel{flex-basis:calc((100% - 18px)/2)}
+@media (min-width:761px){.li-tafeln--breit:has(>.li-tafel:nth-child(4):last-child)>.li-tafel{flex-basis:calc((100% - 18px)/2)}}

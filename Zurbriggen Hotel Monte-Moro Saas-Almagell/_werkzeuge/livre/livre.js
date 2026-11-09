@@ -207,7 +207,14 @@ function auftritte(r, still) {
   const alle = $$('[data-r]', r).filter(x => !x.classList.contains('da'));
   if (still || RUHIG()) { alle.forEach(x => x.classList.add('da', 'steht')); return; }
   const H = innerHeight; let n = 0;
-  alle.forEach(x => { const b = x.getBoundingClientRect(); if (b.top < H && b.bottom > 0 && n < 22) { x.style.setProperty('--i', Math.min(n++, 6)); requestAnimationFrame(() => requestAnimationFrame(() => x.classList.add('da'))); } else x.classList.add('da', 'steht'); });
+  alle.forEach(x => { const b = x.getBoundingClientRect(); if (b.top < H && b.bottom > 0 && n < 22) { x.style.setProperty('--i', Math.min(n++, 6)); requestAnimationFrame(() => requestAnimationFrame(() => x.classList.add('da'))); } else { x.classList.add('da', 'steht'); if (b.top >= H) nachher(x); } });
+}
+/* Prüfpunkt 11 (Robert 09.11.2026): was unter dem ersten Bild liegt, gleitet beim Hereinscrollen kurz an seinen Platz – deckend von Anfang an (R17: nichts wartet aufs Aufblenden) */
+let IO3 = null;
+function nachher(x) {
+  if (!('IntersectionObserver' in window)) return;
+  if (!IO3) IO3 = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('gleit'); IO3.unobserve(e.target); } }), { rootMargin: '0px 0px -6% 0px' });
+  x.classList.add('nach'); IO3.observe(x);
 }
 
 /* ---------------------------------------------------------------- Übersicht */

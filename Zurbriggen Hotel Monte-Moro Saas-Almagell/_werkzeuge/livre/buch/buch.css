@@ -22,7 +22,7 @@ button{font:inherit;color:inherit}
 ::selection{background:var(--laerche);color:#fff}
 :focus-visible{outline:1px solid var(--laerche);outline-offset:4px}
 .in{width:var(--innen);margin:0 auto}
-.etikett{font:400 11px/1.4 var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--laerche)}
+.etikett{font:400 11px/1.4 var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--laerche);text-wrap:balance}
 .wm,.bk{display:block;width:100%;height:auto;fill:currentColor}
 .wm{aspect-ratio:3483/1425}.bk{aspect-ratio:3483/696}
 

@@ -136,7 +136,7 @@ def seite():
 </div></section>'''
 
     farben = f'''<section class="blatt hell" id="farben"><div class="in">
-  {kopf(3, 'Farben', ('Papier, Nacht', 'und Lärche.'), 'Die Farben kommen aus dem Haus: aus der Logo-Datei, aus der Fassade in der Sonne und aus den Balkonen aus Lärche. Jede steht genau so in der Gestaltung der Website (Farbwelt A «Bergnacht und Lärche», von Robert am 18. Oktober 2026 gewählt). Ein Klick auf eine Farbe kopiert ihren Wert.')}
+  {kopf(3, 'Farben', ('Papier, Nacht', 'und Lärche.'), 'Die Farben kommen aus dem Haus: aus der Logo-Datei, aus der Fassade in der Sonne und aus den Balkonen aus Lärche. Jede steht genau so in der Gestaltung der Website. Ein Klick auf eine Farbe kopiert ihren Wert.')}
   {faecher()}
   <div class="satzreihe" data-r><p><b>Hell ist der Normalzustand.</b> Papier und Fassade tragen den Lesetext, dunkel wird es am Abend.</p><p><b>Lärche betont.</b> Den Hauptknopf und das letzte Wort im Titel, nie den Lesetext. Messing nur als feine Linie.</p><p><b>Nie rein.</b> Kein reines Schwarz, kein reines Weiss: Nacht und Papier tragen alles.</p></div>
 </div></section>'''
