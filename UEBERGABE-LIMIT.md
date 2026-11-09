@@ -103,6 +103,7 @@ Offen, in Reihenfolge: Funde Agent 5–7 reparieren und nachprüfen, Messlauf au
 - Playwright: `mkdir -p /Users/robertreff/Aussen-Pruefung/node_modules && ln -sfn /opt/node-tools/node_modules/playwright /Users/robertreff/Aussen-Pruefung/node_modules/playwright` (dazu `playwright-core`), `ln -sfn $PWD /Users/robertreff/Desktop/Website-Projekte`, `_Befund-Vorschlaege/node_modules/playwright` ebenso (für `oberflaeche_pruefen.js`). `vorbereiten.sh` nicht nötig.
 - `bash cloud/server.sh` (Ports 9381–9388).
 - Vorbilder klonen wie in CLAUDE.md.
+- Für den Werkbank-Bau (`bau_alles.sh`): `pip install fonttools brotli opencv-python-headless qrcode`; Playwright zusätzlich unter `$HOME/Desktop/Apps & Tools/Tasty Website Builder/node_modules/` verlinken (playwright, playwright-core → /opt/node-tools/node_modules/…). Aufnahmen (`_werkbank/ansichten/`) sind nicht eingecheckt: in neuer Sitzung einmal ganz bauen, danach `--ohne-aufnahmen`.
 
 ## Stolpersteine
 - WebKit lässt sich in dieser Umgebung nicht laden (Netz sperrt cdn.playwright.dev): geprüft wird in Chromium.
