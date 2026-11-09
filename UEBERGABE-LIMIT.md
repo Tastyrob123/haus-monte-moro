@@ -72,7 +72,19 @@ Erledigt:
 Läuft: Messlauf über alles frisch (`aus-mess/alle`, /tmp/mess.log), Augen-Agent Werkzeuge 5–7.
 Offen, in Reihenfolge: Funde Agent 5–7 reparieren und nachprüfen, Messlauf auswerten, Oberflächenprüfung über alles zum Schluss, Tafel nach `ergebnis/laeufe/2026-11-09/`, erste Zeile «Fertig. Geprüft.» mit Belegen.
 
+## Nachtsitzung 3 (09.11.2026, ab 06:05 UTC, Zweig `claude/task-o0ores`)
+- Vorsitzung ohne Lebenszeichen seit 05:31; letzter Stand: Commit 60be9fb (Funde Agent 1–4 behoben). Augen-Agent 5–7 hat nichts mehr abgeliefert → neu gestartet (Markenbuch, Besucherliste, Hausdruckerei).
+- KORREKTUR-ROBERT.md war noch nicht umgesetzt (nur die Datei lag da). Jetzt in Arbeit:
+  1. Ticket «Meine drei Orte» in Brief und Schluss entfernt (`_werkbank/orte_kurs.py › block` gibt nichts mehr zurück; Brief-Fussreihe einspaltig, nur Unterschrift).
+  3. Draussen: vier Kacheln in einer Reihe ab 1200 px, 2×2 ab 700 px, darunter untereinander (`_werkbank/rh_kapitel.py`).
+  2./4. siehe Entscheidungen.
+- Neubau `bau_alles.sh` läuft (Log /tmp/bau.log); Aufnahmen (`_werkbank/ansichten/`) sind nicht eingecheckt, deshalb ganzer Bau nötig.
+- Danach: Bilder 1440/390 ansehen, Rechner mit echtem Tippen prüfen, `oberflaeche_pruefen.js` Werkbank, tor-schnell Werkbank, Messlauf, Tafel `ergebnis/laeufe/2026-11-09/`.
+
 ## Entscheidungen der Nacht
+- 09.11. (Nacht 3): Korrektur Punkt 2 betrifft Suitenhotel und Wellnesshotel; die liegen nicht in diesem Repo und werden laut CLAUDE.md hier nicht angefasst. Für Monte-Moro: Rechner `#vt-rechner` bleibt, wird mit echtem Tippen geprüft.
+- 09.11. (Nacht 3): Korrektur Punkt 4: am Angebot nichts geändert.
+- 09.11. (Nacht 3): Vier Kacheln nebeneinander ab 1200 px (1280/1440); bei 1000 px 2×2, weil der Knopf «Untersetzer ansehen» in einem Viertel nicht Platz hätte; Handy untereinander.
 - 09.11.: «Heute 0 Besuche» im Hotelbüro und in der Besucherliste bleibt: die Beispielbesuche von heute erscheinen nur bis zur aktuellen Uhrzeit (meist abends), früh am Morgen ist 0 stimmig und als Beispiel beschriftet.
 - 09.11.: Messlauf-Regel «doppelt» vergleicht, was nach dem Klick im Bild steht; Fehlalarm auf der Werkbank belegt, Gegenprobe mit Testseite findet echte Doppelungen.
 - 09.11.: Prüfskript genau in der Mac-Fassung (153 Zeilen); die frühere Ausnahme der Vorsitzung für Bildbänder fällt weg, stattdessen heissen die Bildkarussells `kartenzug` (sie sind keine Laufbänder).
