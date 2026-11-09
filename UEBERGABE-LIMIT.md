@@ -1,6 +1,8 @@
-Fertig.
+In Prüfung.
 
-Werkbank und sieben Werkzeuge Monte-Moro fertig und geprüft. Schlussprüfung 08.11.2026: 28 Ziele, 413 Zustände in 1440/1280/1000/390, 0 Funde, Oberflächenprüfung 22 × BESTANDEN (`ergebnis/laeufe/2026-11-08/`). Nachprüfung 09.11.2026 der danach verbesserten Ziele (Hotelbüro, Hausdruckerei, Hausdruckerei-Mail, Werkbank, Drucksachen, Material): 126 Zustände, 0 Funde, 5 × BESTANDEN (`ergebnis/laeufe/2026-11-09/`). Nur Chromium (WebKit in der Cloud nicht ladbar). Wartet auf Roberts Wort (Website-Revier, nicht Teil des Pakets): Baustein `reception/baustein/anfrage.js` in die Website, Datenschutz-Satz zu Anfragen/Chat.
+Gegenprüfung der Sitzung session_0189oeKhRzA8vruci5JGApXy läuft auf `claude/task-o0ores` (WebKit über WebKitWebDriver, drei Prüf-Agenten mit den Augen, Schlussprüfung und Messlauf); sie schreibt ihre Tafel nach `ergebnis/laeufe/2026-11-09/` und setzt diese Zeile auf «Fertig.», wenn sie durch ist. Bisheriger Stand:
+
+Werkbank und sieben Werkzeuge Monte-Moro fertig und geprüft. Schlussprüfung 08.11.2026: 28 Ziele, 413 Zustände in 1440/1280/1000/390, 0 Funde, Oberflächenprüfung 22 × BESTANDEN (`ergebnis/laeufe/2026-11-08/`). Nachprüfung 09.11.2026 der danach verbesserten Ziele (Hotelbüro, Hausdruckerei, Hausdruckerei-Mail, Werkbank, Drucksachen, Material): 126 Zustände, 0 Funde, 5 × BESTANDEN (`ergebnis/laeufe/2026-11-09-nachpruefung/`). Nur Chromium (WebKit in der Cloud nicht ladbar). Wartet auf Roberts Wort (Website-Revier, nicht Teil des Pakets): Baustein `reception/baustein/anfrage.js` in die Website, Datenschutz-Satz zu Anfragen/Chat.
 
 # Übergabe (laufend) · Hotel Monte-Moro, Saas-Almagell
 
@@ -73,12 +75,12 @@ Keiner – alles fertig und geprüft (Nachprüfung 09.11. grün). Nur noch «War
 
 ## Folgesitzung nach Stillstand (session_0189oeKhE5oHiD5mK18i2yjR, 09.11. 00:50 UTC)
 - Letztes Lebenszeichen der Gegenprüfung 20:48 (Funde 3 und 4 repariert, 587f496). Kein Bau-Agent offen; alle acht Reviere haben LIEFERUNG.md. Keiner neu gestartet.
-- Offen war nur: Nachprüfung der Ziele, die nach der Schlussprüfung repariert wurden (77b8f0d, 587f496): hotelbuero, hausdruckerei, hausdruckerei-mail, werkbank, werkbank-drucksachen, werkbank-material. Läuft in `/tmp/gp` (`cloud/schnell.sh`, Log `/tmp/gp/nachlauf.log`), danach Oberflächenprüfung, Auge, Tafel `ergebnis/laeufe/2026-11-09/`.
+- Offen war nur: Nachprüfung der Ziele, die nach der Schlussprüfung repariert wurden (77b8f0d, 587f496): hotelbuero, hausdruckerei, hausdruckerei-mail, werkbank, werkbank-drucksachen, werkbank-material. Läuft in `/tmp/gp` (`cloud/schnell.sh`, Log `/tmp/gp/nachlauf.log`), danach Oberflächenprüfung, Auge, Tafel `ergebnis/laeufe/2026-11-09-nachpruefung/`.
 - 00:55: Drucksachen Preisliste Zimmer, Zuschläge, Best of Röstis (beide Seiten) gerendert und angesehen: CHF steht neben der Zahl, Titel vorne/hinten gleich gross. Oberflächenprüfung Hotelbüro, Hausdruckerei, Werkbank, Drucksachen, Material: 5 × BESTANDEN (`/tmp/gp/aus-nach/oberflaeche/`).
 - Hotelbüro tor-schnell: 4 Zustände, 0 Funde; Rundgang «Das Schaufenster, das Kartenbrett, …» angesehen. Werkbank › Material Ordner 05 bei 1440/390 angesehen, 137 Links der Seite antworten 200.
 - Hausdruckerei tor-schnell 40 Zustände, Hausdruckerei-Mail 40 Zustände, je 4 Breiten, 0 Funde; 15 zufällige Bilder (1440/1000/390) angesehen, ohne Befund. Werkbank 40, Drucksachen 1, Material 1 Zustände, je 4 Breiten, 0 Funde; Werkbank-Bilder (1440/390) und Preisliste Zimmer auf der Drucksachen-Seite angesehen, ohne Befund.
-- Prüftafel `ergebnis/laeufe/2026-11-09/index.html` (nur die sechs Ziele, Link zur vollen Tafel vom 08.11.), Startseite des Zweigs verlinkt. Beide Tafeln liefen bei 390 über (Tabelle 525 px): Spalte «Nicht erreicht» am Handy ausgeblendet, Schrift 13 px; auch in `cloud/tafel_sitzung.py` (Zweig `claude/task-o0ores`).
-- Damit fertig. Keine Unteragenten offen.
+- Prüftafel `ergebnis/laeufe/2026-11-09-nachpruefung/index.html` (nur die sechs Ziele, Link zur vollen Tafel vom 08.11.), Startseite des Zweigs verlinkt. Beide Tafeln liefen bei 390 über (Tabelle 525 px): Spalte «Nicht erreicht» am Handy ausgeblendet, Schrift 13 px; auch in `cloud/tafel_sitzung.py` (Zweig `claude/task-o0ores`).
+- Meine Nachprüfung fertig. Dabei gesehen: zweite Sitzung session_0189oeKhRzA8vruci5JGApXy arbeitet seit 01:45 auf `claude/task-o0ores` (Gegenprüfung mit WebKit, Fund «Dirty Chicken» in der Hausdruckerei repariert). Meine Tafel deshalb nach `2026-11-09-nachpruefung/`, Kopf zurück auf «In Prüfung.»; sie schliesst ab.
 
 ## Entscheidungen der Nacht
 - Nachtsitzung: Auftrag sagt Zweig `ergebnis`; die Übergabe lag nur auf `claude/task-o0ores`. Übergabe und Lebenszeichen leben ab jetzt auf `ergebnis`, Code-Reparaturen weiter auf `claude/task-o0ores`.
