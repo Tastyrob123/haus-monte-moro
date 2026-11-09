@@ -185,10 +185,10 @@ body.ma{margin:0;background:var(--raum);color:var(--tinte);font:400 17px/1.62 va
 .m-weg li+li{padding-left:18px}
 .m-weg li:last-child{border-right:0}
 .m-weg b{display:block;font:400 clamp(1.9rem,2.8vw,2.7rem)/1 var(--titel);color:var(--titel-f)}
-.m-weg span{display:block;margin-top:8px;font:400 13px/1.35 var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.m-weg span{display:block;margin-top:8px;font:400 13px/1.35 var(--mono);letter-spacing:.06em;text-transform:uppercase}
 .m-weg small{display:block;margin-top:6px;font-size:14px;color:var(--leise)}
 .m-weg__z{display:block;width:2.4em;height:auto;margin-top:.3em;color:var(--rot)}
-@media (max-width:1100px){.m-weg{grid-template-columns:1fr 1fr}.m-weg li:nth-child(2n){border-right:0}.m-weg li:nth-child(n+3){border-top:1px solid rgba(10,42,74,.22)}.m-weg li:nth-child(odd){padding-left:0}}
+@media (max-width:1340px){.m-weg{grid-template-columns:1fr 1fr}.m-weg li:nth-child(2n){border-right:0}.m-weg li:nth-child(n+3){border-top:1px solid rgba(10,42,74,.22)}.m-weg li:nth-child(odd){padding-left:0}}
 @media (max-width:560px){.m-weg{grid-template-columns:1fr}.m-weg li,.m-weg li+li{padding:18px 0 14px;border-right:0}.m-weg li+li{border-top:1px solid rgba(10,42,74,.22)}}   /* Prüftor 31.10.2026: in schmalen Spalten zerfiel der Satz unter der Zahl */
 
 /* Stücke der Säle (Fehlerbuch 10a: mehr Bilder): zweiter Bildschirm, gedruckte Karten, Fotos aus dem Bildarchiv, leicht versetzt wie Blätter auf dem Tisch */
