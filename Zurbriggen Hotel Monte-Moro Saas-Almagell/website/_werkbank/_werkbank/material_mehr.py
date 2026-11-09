@@ -231,7 +231,7 @@ def kleid():
         s = s.replace(a, b)
     s = re.sub(r'<a class="kn [^"]*" href="mailto:[^"]*"[^>]*>.*?</a>', '', s, flags=re.S)   # nichts verschicken: kein mailto auf der Seite
     s = re.sub(r'<style id="material-(wild|haus)">.*?</style>', '', s, flags=re.S)
-    s = s.replace('</head>', '<style id="material-haus">@media (max-width:1400px){.dateien--2{grid-template-columns:minmax(0,1fr)}}.dateien a span{text-wrap:balance}</style></head>', 1)
+    s = s.replace('</head>', '<style id="material-haus">@media (max-width:1400px){.dateien--2{grid-template-columns:minmax(0,1fr)}}.dateien a span{text-wrap:balance}@media (min-width:1000px){.ordnerz .in>div:first-child{position:sticky;top:clamp(110px,9vw,140px)}}</style></head>', 1)
     open(p, 'w', encoding='utf-8').write(s)
     ZG.anwenden(ZIEL)
     TM.anwenden(ZIEL)

@@ -67,7 +67,7 @@ def kopiere_analyse():
             kl = f'bfs-{art}' + (' bfs-h--breit' if art == 'h' and im.width > im.height else '')
             alt = f'Die heutige Seite im Gerät, Stelle zum Fund {b["nr"]}' if art == 'h' else f'Ausschnitt: {b["nah_t"]}'
             bi += f'<img src="img/{n}" width="{im.width}" height="{im.height}" alt="{e(alt)}" decoding="async" class="{kl}">'
-        funde += (f'<article class="bfs-f"><div class="bfs-b">{bi}</div><div><p class="bfs-nr">{b["nr"]}</p><h2>{e(b["was"])}</h2><p class="bfs-wo"><b>Heute</b>{e(b["wo"])}</p>'
+        funde += (f'<article class="bfs-f" data-a="auf"><div class="bfs-b">{bi}</div><div><p class="bfs-nr">{b["nr"]}</p><h2>{e(b["was"])}</h2><p class="bfs-wo"><b>Heute</b>{e(b["wo"])}</p>'
                   f'<p class="bfs-bsp">{e(b["beispiel"])}</p>'
                   f'<dl><dt>Für Ihre Gäste</dt><dd>{e(b["gaeste"])}</dd><dt>Für Sie</dt><dd>{e(b["haus"])}</dd><dt>Was wir tun würden</dt><dd>{e(b["tun"])}</dd></dl></div></article>')
     weitere = ''.join(f'<li><span>{e(x["was"])}</span></li>' for x in _P['weitere'])
@@ -77,9 +77,9 @@ def kopiere_analyse():
   <p class="bfs-lauf">Angesehen wurde monte-moro.ch am Rechner und am Telefon, dazu das Buchungsfenster, die Speisekarte und die Portale, Stand {STAND}.
   Hier steht zuerst, was schon stark ist, dann jeder Punkt, an dem ein Gast auf dem Weg zu Ihnen hängen bleibt, mit der Stelle im Gerät.</p>
 </div></section>
-<section class="fl fl--papier tapete-hell bfs"><div class="in"><h2 class="bfs-h">Was schon stark ist</h2><ul class="bfs-l bfs-l--3">{stark}</ul></div></section>
-<section class="fl fl--nacht tapete-leicht bfs"><div class="in"><h2 class="bfs-h">Zwölf Punkte, das Wichtigste zuerst</h2>{funde}</div></section>
-<section class="fl fl--papier tapete-hell bfs"><div class="in"><h2 class="bfs-h">Was sonst noch auffällt</h2><ul class="bfs-l">{weitere}</ul></div></section>'''
+<section class="fl fl--papier tapete-hell bfs"><div class="in"><h2 class="bfs-h" data-a="auf">Was schon stark ist</h2><ul class="bfs-l bfs-l--3" data-a="auf">{stark}</ul></div></section>
+<section class="fl fl--nacht tapete-leicht bfs"><div class="in"><h2 class="bfs-h" data-a="auf">Zwölf Punkte, das Wichtigste zuerst</h2>{funde}</div></section>
+<section class="fl fl--papier tapete-hell bfs"><div class="in"><h2 class="bfs-h" data-a="auf">Was sonst noch auffällt</h2><ul class="bfs-l" data-a="auf">{weitere}</ul></div></section>'''
     css = ('<style>.bfs .in{max-width:1180px}.bfs-lauf{max-width:62ch;margin:18px auto 0;text-align:center;font-size:clamp(1.05rem,1.3vw,1.25rem);line-height:1.6;color:rgba(245,242,238,.86)}'
            '.bfs-h{font-family:var(--serif);font-weight:400;font-size:clamp(1.8rem,3vw,2.8rem);margin:0 0 clamp(24px,3vw,44px)}'
            '.bfs-l{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(18px,2vw,30px)}'
