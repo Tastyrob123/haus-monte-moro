@@ -302,6 +302,15 @@ a.kn>.tm,button.kn>.tm,.uwahl button>.tm,.uschalter button>.tm,.wahl button>.tm,
     merk(true);
   });
 
+  addEventListener('pageshow', function (ev) {   /* Zurück aus dem Speicher (bfcache, Safari): pagehide hat scrollRestoration auf «manual» gestellt, also stellt der Rücksprung die Höhe selbst her (Prüfpunkt 12, 09.11.2026) */
+    if (!ev.persisted) return;
+    var s; try { s = JSON.parse(sessionStorage.getItem(K)); } catch (e) {}
+    if (!s || typeof s.y !== 'number' || s.y < 2) return;
+    clearTimeout(t); t = 0;
+    function hin() { if (Math.abs(window.scrollY - s.y) > 2) window.scrollTo(0, s.y); }
+    hin(); requestAnimationFrame(hin); setTimeout(hin, 120); setTimeout(hin, 400);
+  });
+
   var nav; try { nav = performance.getEntriesByType('navigation')[0]; } catch (e) {}
   if (!nav || (nav.type !== 'back_forward' && nav.type !== 'reload')) return;   /* Zurück/Vor und Neuladen landen an der alten Stelle */
   var w; try { w = JSON.parse(sessionStorage.getItem(K)); } catch (e) {}
