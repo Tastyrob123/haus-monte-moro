@@ -1,0 +1,57 @@
+[
+ {
+  "ziel": "roestihues",
+  "name": "Die Röstihüs-Karte",
+  "unter": "Röstis und Cordon bleus",
+  "seiten": 2,
+  "format": "A4",
+  "stand": "08.11.2026",
+  "b": 900,
+  "h": 1274,
+  "href": "../unterlagen/index.html#roestihues"
+ },
+ {
+  "ziel": "wein-apero",
+  "name": "Wein und Apéro",
+  "unter": "Hotelwein und Spritz",
+  "seiten": 1,
+  "format": "A4",
+  "stand": "08.11.2026",
+  "b": 900,
+  "h": 1274,
+  "href": "../unterlagen/index.html#wein-apero"
+ },
+ {
+  "ziel": "preisliste",
+  "name": "Die Preisliste",
+  "unter": "Zimmer und Inklusive",
+  "seiten": 1,
+  "format": "A4",
+  "stand": "08.11.2026",
+  "b": 900,
+  "h": 1274,
+  "href": "karten/preisliste.pdf"
+ },
+ {
+  "ziel": "zuschlaege",
+  "name": "Zuschläge und Kinder",
+  "unter": "Kurtaxe, Kinder, Hund",
+  "seiten": 1,
+  "format": "A4",
+  "stand": "08.11.2026",
+  "b": 900,
+  "h": 1274,
+  "href": "karten/zuschlaege.pdf"
+ },
+ {
+  "ziel": "spa",
+  "name": "Spa im Partnerhotel",
+  "unter": "Hotel Pirmin Zurbriggen",
+  "seiten": 1,
+  "format": "A4",
+  "stand": "08.11.2026",
+  "b": 900,
+  "h": 1274,
+  "href": "karten/spa.pdf"
+ }
+]

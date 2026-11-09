@@ -206,6 +206,8 @@ body.ma{margin:0;background:var(--raum);color:var(--tinte);font:400 17px/1.62 va
 .m-stueck--foto{aspect-ratio:3/4;background:var(--schiefer)}   /* bis das Foto da ist: Nacht statt weisser Fläche */
 .m-stueck--foto img{height:100%;object-fit:cover}
 .m-stuecke--fotos .m-stueck:nth-child(odd){margin-bottom:clamp(14px,1.6vw,26px)}
+/* Prüfpunkt 10 (09.11.2026): neben der hohen Tafel blieb unter sechs kleinen Fotos eine Leerfläche; breit liegen sie in zwei Reihen zu drei, quer und grösser, und füllen die Spalte */
+@media (min-width:1001px){.m-stuecke--fotos{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}.m-stuecke--fotos .m-stueck--foto{aspect-ratio:4/3}.m-stuecke--fotos .m-stueck:nth-child(odd){margin-bottom:0}}
 @media (max-width:700px){.m-stuecke{padding-left:0;margin-top:16px}.m-stuecke--eins .m-schirm{width:100%}.m-stuecke--fotos{grid-template-columns:repeat(3,minmax(0,1fr))}}
 
 /* Titel auf dunklem Grund weiss, das letzte Wort in Lärche wie die dunklen Szenen der Website (Fehlerbuch 10a: nie dunkel auf dunkel) */

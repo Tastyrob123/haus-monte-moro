@@ -184,7 +184,8 @@ async function ladeAlles() {
 
 function start() {
   const u = S.ue, gruss = WO.gruss();
-  const neueste = S.anfragen.slice(0, 4), fragen = S.fragen.slice(0, 5);
+  /* Prüfpunkt 10 (09.11.2026): vier Anfragen standen neben vier Fragen mit langen Antworten, links blieb eine Leerfläche; sechs Anfragen füllen die Spalte */
+  const neueste = S.anfragen.slice(0, 6), fragen = S.fragen.slice(0, 5);
   return WO.startbild({ werkzeug: 'gaeste', art: 'voll', h1: `${gruss} <em>Wer <span class="re-zs">hat geschrieben?</span></em>`,
     satz: 'Hier landet, was Gäste über die Website und im Chat schreiben: wer ein Zimmer oder eine Ferienwohnung anfragt, wer im Röstihüs einen Tisch möchte, wer vor der Anreise noch eine Frage hat. Jede Anfrage liegt im Eingang, mit den Wünschen des Gastes, den Hinweisen aus den Angaben des Hauses und einem vorbereiteten Brief für Ihre Antwort. Verschickt wird nur, was Sie selbst schicken.',
     knoepfe: WO.knopf('Anleitung', 'buch', 'gold', { href: 'anleitung.html', neu: true }) }) +

@@ -21,6 +21,7 @@ timeout 900 bash _werkbank/papier_alles.sh
 node "$K/ziele.js" "$P" || true
 timeout 300 node _werkbank/geraete/schirme.js feed || true          # Bildschirm des Feeds für die Feed-Bühne der Startseite
 # ---------- Kern: Startseite, Befund, KI, Karte «Ein Vorschlag.», Geprüft ----------
+python3 _werkbank/karten_faecher.py                                  # Kapitel Karten: alle Karten des Kartenbretts als Blätter mit Angaben (Robert 09.11.2026)
 node _werkbank/sb_strom.js || true                                   # Befund, Prüfbericht, Karte, Markenbuch für die Objekte
 python3 _werkbank/objekte_bau.py "$P"
 python3 "$K/bau.py" "$P" | grep -v "Schrift fehlt"                    # die Werkbank (ruft haus.nach_bau: Kapitel, Befund, KI-Seite, Kleid)

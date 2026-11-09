@@ -128,7 +128,8 @@ CSS = '''
   .sag-sp--2 li+li::before{content:"";flex:none;width:.7em;height:.74em;background:var(--blau);-webkit-mask:url(eigen/zeichen-c.svg) center/contain no-repeat;mask:url(eigen/zeichen-c.svg) center/contain no-repeat}
 }
 .sag-zwei{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(36px,4vw,64px)}
-@media(min-width:900px){.sag-zwei{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:900px){.sag-zwei{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sag-zwei>div{display:flex;flex-direction:column}.sag-zwei>div>.sag-l{flex:1;display:flex;flex-direction:column;justify-content:space-between}}   /* zwei Spalten gleich hoch gefüllt, nur die Zeilen verteilt (Prüfpunkt 10, 09.11.2026; Inhalt unverändert) */
 .sag-l li{position:relative;padding:14px 0 14px 30px;border-top:1px solid rgba(17,61,136,.12);font-size:clamp(1.08rem,1.24vw,1.3rem);line-height:1.45;color:rgba(4,16,35,.88)}
 .sag-l li:first-child{border-top:0;padding-top:0}
 .sag-l li::before{content:"";position:absolute;left:0;top:calc(14px + .475em);width:1.1em;height:.5em;background:var(--blau);-webkit-mask:url(eigen/zeichen-c.svg) center/contain no-repeat;mask:url(eigen/zeichen-c.svg) center/contain no-repeat}   /* das «C» des Hauses als einziges Ornament (29.10.2026, vorher das «x» aus der Schrift) */

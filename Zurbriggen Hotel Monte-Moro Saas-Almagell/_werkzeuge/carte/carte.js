@@ -287,9 +287,25 @@ function bildVon(r) {
   if (r.art === 'titel') return imgUrl(FOTO[Z] || FOTO_STD);
   return '';
 }
+/* Auftritte beim Scrollen (Prüfpunkt 11, Robert 09.11.2026: «dieses Luxuriöse, Edle, überall»): was beim Öffnen einer Karte unterhalb des
+   ersten Bildschirms steht (Seiten, Zeilen), schwebt beim Hereinscrollen an seinen Platz, immer deckend, nur translate und scale.
+   Nur beim Öffnen einer Karte oder beim Wechsel des Modus; nach einer Änderung neu gezeichnete Zeilen stehen sofort ruhig da. */
+let AUF_BEOB = null;
+function auftritte(el) {
+  if (AUF_BEOB) { AUF_BEOB.disconnect(); AUF_BEOB = null; }
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const H = innerHeight, warte = [];
+  [...el.children].forEach(t => {
+    if (t.getBoundingClientRect().top > H) { t.classList.add('ct-auf'); warte.push(t); return; }
+    t.querySelectorAll(':scope > .r, :scope > .neu-zeile, :scope > .mw-in > *').forEach(r => { if (r.getBoundingClientRect().top > H) { r.classList.add('ct-auf', 'ct-auf--z'); warte.push(r); } });
+  });
+  if (!warte.length) return;
+  AUF_BEOB = new IntersectionObserver(es => { let k = 0; es.forEach(e => { if (!e.isIntersecting) return; e.target.style.setProperty('--ci', Math.min(k++, 4)); e.target.classList.add('ct-da'); AUF_BEOB.unobserve(e.target); }); }, { rootMargin: '100000px 0px -6% 0px' });   /* auch, was beim schnellen Scrollen schon oben vorbei ist */
+  warte.forEach(x => AUF_BEOB.observe(x));
+}
 function liste() {
-  const el = $('#liste');
-  if (Z === 'abend') { el.innerHTML = abendHTML(); mwWachsen(); return; }
+  const el = $('#liste'), neu = liste.zuletzt !== Z + MODUS; liste.zuletzt = Z + MODUS;
+  if (Z === 'abend') { el.innerHTML = abendHTML(); mwWachsen(); if (neu) auftritte(el); return; }
   const st = zustand();
   el.innerHTML = D.seiten.map((s, i) => {
     const zl = zeilenSeite(i), rub = zl.some(r => r.art === 'rubrik'), ein = zl.some(r => r.art === 'eintrag');
@@ -298,6 +314,7 @@ function liste() {
   }).join('');
   if (BLITZ) { const r = $(`.r[data-pfad="${BLITZ}"]`); if (r) { r.classList.add('blitz'); r.scrollIntoView({ block: 'nearest' }); } BLITZ = null; }
   bilderZeigen();
+  if (neu) auftritte(el);
 }
 /* Zeilenbilder erst laden, wenn die Zeile ins Bild kommt (Weinkarte: 172 Flaschen; gedrosselt stand die Karte sonst erst nach 6,2 s) */
 let BILD_BEOB = null;

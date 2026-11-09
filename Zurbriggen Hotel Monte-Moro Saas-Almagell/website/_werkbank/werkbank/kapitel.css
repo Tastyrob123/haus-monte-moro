@@ -36,6 +36,10 @@
   .papier .pk h3{font-size:clamp(1.55rem,1.9vw,2rem)}
   .papier .pk p{margin:8px 0 18px;font-size:.95rem}
   .papier .pk .kn{font-size:10.5px;letter-spacing:.14em}}
+/* Drucksachen-Kachel: drei Blätter versetzt (aussen hoch, Mitte tiefer), sie füllen die Bildfläche bis unten (Prüfpunkt 13, 09.11.2026) */
+.papier .pk--hell .bogenb{width:31%!important}
+.papier .pk--hell .bogenb:nth-child(1){left:2%!important;top:6%!important}.papier .pk--hell .bogenb:nth-child(2){left:34.5%!important;top:24%!important}.papier .pk--hell .bogenb:nth-child(3){left:67%!important;top:6%!important}
+@media(min-width:1200px){.papier .pk--hell .bogenb:nth-child(1),.papier .pk--hell .bogenb:nth-child(3){top:8%!important}.papier .pk--hell .bogenb:nth-child(2){top:30%!important}}
 .pk--mail{background:#f5f2ee;color:var(--tinte);box-shadow:inset 0 1px 0 #ffffff,0 0 0 1px rgba(22,78,134,.36)}
 .pk--mail p{color:rgba(12,42,73,.86)}
 .pk--mail .kn{--o:#257fd3;--m:#0d3f6f;--u:#081d33;--t:#ffffff;--licht:rgba(255,255,255,.26);--kante:rgba(0,0,0,.55);--tf:rgba(12,42,72,.6);--ko:#f8f5f3;--ku:#c66f41;--kt:var(--tinte);--klicht:rgba(255,255,255,.9)}
@@ -448,7 +452,8 @@ html.ins-ruhe :is(.stapel .tel,.runter i,.zeile__z,.namenzug div,.wb-band__zug,.
   .sag-sp--2 li+li::before{content:"";flex:none;width:.7em;height:.74em;background:var(--blau);-webkit-mask:url(eigen/zeichen-c.svg) center/contain no-repeat;mask:url(eigen/zeichen-c.svg) center/contain no-repeat}
 }
 .sag-zwei{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(36px,4vw,64px)}
-@media(min-width:900px){.sag-zwei{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:900px){.sag-zwei{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sag-zwei>div{display:flex;flex-direction:column}.sag-zwei>div>.sag-l{flex:1;display:flex;flex-direction:column;justify-content:space-between}}   /* zwei Spalten gleich hoch gefüllt, nur die Zeilen verteilt (Prüfpunkt 10, 09.11.2026; Inhalt unverändert) */
 .sag-l li{position:relative;padding:14px 0 14px 30px;border-top:1px solid rgba(38,129,214,.12);font-size:clamp(1.08rem,1.24vw,1.3rem);line-height:1.45;color:rgba(9,33,58,.88)}
 .sag-l li:first-child{border-top:0;padding-top:0}
 .sag-l li::before{content:"";position:absolute;left:0;top:calc(14px + .475em);width:1.1em;height:.5em;background:var(--blau);-webkit-mask:url(eigen/zeichen-c.svg) center/contain no-repeat;mask:url(eigen/zeichen-c.svg) center/contain no-repeat}   /* das «C» des Hauses als einziges Ornament (29.10.2026, vorher das «x» aus der Schrift) */
@@ -539,6 +544,29 @@ html.ins-ruhe :is(.stapel .tel,.runter i,.zeile__z,.namenzug div,.wb-band__zug,.
   .tk__a::before{left:calc(var(--k) + 6px);right:calc(var(--k) + 6px);top:0;bottom:auto;border-left:0;border-top:2px dashed rgba(6,22,39,.32)}
   .tk__a b{font-size:40px;margin:0}.tk__nr{width:100%}.tk__l{margin:0;padding:0 0 0 14px;border-top:0;border-left:1px solid rgba(6,22,39,.18)}
 }
+
+/* ---------- Kapitel Karten: alle Karten des Hauses mit Angaben (karten_faecher.py, Robert 09.11.2026) ---------- */
+.faecher.kf{position:relative;aspect-ratio:auto;max-width:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:auto;gap:clamp(12px,1.2vw,18px);align-self:stretch}
+.kf .blattk{position:relative;top:auto;left:auto;width:auto;display:flex;flex-direction:column;border-radius:14px;overflow:hidden;background:rgba(255,255,255,.05);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.1),0 30px 40px -28px rgba(0,0,0,.8);color:#f9f6f3;text-decoration:none;transform:translateY(60px)}
+.kf.da .blattk,.da .kf .blattk{transform:none}
+.kf.da .blattk:hover{transform:translateY(-6px)}
+.kf .blattk .kf__s{display:block;position:relative;aspect-ratio:210/297;overflow:hidden;background:#f9f7f5}
+.kf .blattk .kf__s img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 0;display:block}
+.kf .blattk .kf__t{position:static;background:none;text-transform:none;letter-spacing:0;font-family:inherit;justify-content:flex-start;display:flex;flex-direction:column;gap:3px;padding:12px 14px 14px}
+.kf .kf__t strong{font-family:var(--serif);font-weight:400;font-size:clamp(1rem,1.15vw,1.25rem);line-height:1.15}
+.kf .kf__t small{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.kf .kf__t em{font-style:normal;font-size:.86rem;line-height:1.35;color:rgba(249,246,243,.78)}
+.kf .kf__t b{font-family:var(--mono);font-weight:400;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(249,246,243,.62);margin-top:4px}
+.kf .blattk .kf__t{white-space:normal;overflow:visible}
+.kf__i{display:flex;flex-direction:column;justify-content:center;gap:10px;padding:clamp(16px,1.6vw,24px);border-radius:14px;background:rgba(255,255,255,.04);box-shadow:inset 0 0 0 1px rgba(178,97,53,.28);color:#f9f6f3}
+.kf__i h3{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(1.25rem,1.6vw,1.7rem);line-height:1.12;color:#f9f6f3}
+.kf__i p{margin:0;font-size:.92rem;line-height:1.45;color:rgba(249,246,243,.8)}
+.kf__i .kf__k{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.kf__i .kf__l{margin-top:4px;font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#f9f6f3;text-decoration:none;border-bottom:1px solid var(--gold);align-self:flex-start;padding-bottom:3px}
+.kf__i .kf__l:hover{color:var(--gold)}
+@media(max-width:999px){.faecher.kf{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){.kf .blattk{transform:none;transition:none}}
 
 /* Werkbank-Regel 1 (Robert 17.10.2026): seitliches Scrollen und Wischen in Bändern und Kacheln bleibt wie im Kit. Behoben ist nur das Hängenbleiben:
    was seitlich scrollt, hat kein eigenes senkrechtes Scrollen (overflow-x:auto macht overflow-y sonst zu auto) und hält das Mausrad nicht fest,

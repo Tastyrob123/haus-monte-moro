@@ -17,7 +17,7 @@ import base64, datetime, html, io, json, os, re
 from PIL import Image
 import kern as K
 import rh_kapitel as KP, rh_werkzeuge as WK, rh_strom as SB, rh_worum as VT, rh_impressum as IM, sb_worum as SW, sb_befund as BE, sb_angebot as SA
-import fuss_faecher as FU, mails_reihe as ML, namen_fall as NF, orte_kurs as OK
+import fuss_faecher as FU, mails_reihe as ML, namen_fall as NF, orte_kurs as OK, karten_faecher as KF
 
 e = html.escape
 W = os.path.dirname(os.path.abspath(__file__))
@@ -256,6 +256,7 @@ def anwenden(pfad):
         hs = hs[:j] + zeile + hs[j:]
     vergleich = kapitel('k3', nimm('vergleich'))
     un = kapitel('k4', nimm('unterlagen'))
+    un = KF.einsetzen(un)   # alle Karten des Hauses als Blätter mit Angaben (Robert 09.11.2026)
     fen_haus = nimm('fenster-haus')
     fen_tisch = nimm('fenster-tisch')
     wk, fehlt = WK.abschnitt(k, KP.platzhalter)
@@ -296,7 +297,7 @@ def anwenden(pfad):
     MARKE = '/* ================= Kapitel (wb_kapitel.py, Werkbank-Chat 17.10.2026) ================= */'
     if MARKE in alt:
         open(css_p, 'w', encoding='utf-8').write(alt[:alt.index(MARKE)])
-    neu = K.faerbe(KP.CSS + VT.CSS + SW.CSS + WK.CSS + SB.CSS + BE.CSS + SA.CSS + OK.CSS)
+    neu = K.faerbe(KP.CSS + VT.CSS + SW.CSS + WK.CSS + SB.CSS + BE.CSS + SA.CSS + OK.CSS + KF.CSS)
     neu = re.sub(r'url\(\.\./assets/img/tapete\.webp\) 50% 0/\d+px auto', 'var(--muster) 50% 0/var(--musterb) auto', neu)
     import sb_farbe as _sf
     open(os.path.join(ZIEL, 'kapitel.css'), 'w', encoding='utf-8').write('/* Kapitel der Werkbank Monte-Moro (wb_kapitel.py), eigene Datei */\n' + _sf.ohne_fett(_sf.faerbe(neu + EIGEN_CSS)))

@@ -156,3 +156,9 @@ body.lc.anl{background:var(--papier)}
 @media (min-width:901px){.lc #arbeit{margin-top:34px}}   /* Ränder fallen zusammen: der grössere zählt */
 /* Monte-Moro 08.11.2026 (Tor K7, 390): «Monte-Moro» und «Saas-Almagell» brechen in der Zier des Startbilds nicht am Bindestrich */
 .lc .wo-sb__zier .nw{white-space:nowrap}
+/* Auftritte beim Scrollen (Prüfpunkt 11, 09.11.2026; gehört zu auftritte() in carte.js): Seiten und Zeilen unterhalb des ersten Bildschirms schweben aus
+   leichter Tiefe an ihren Platz, mit der Feder der Häuser, gestaffelt; immer deckend, nur translate und scale (die Einblendung .teil/schweb bleibt) */
+.lc .ct-auf{transition:translate 1.25s var(--e1),scale 1.25s var(--e1),background-color .3s;transition-delay:calc(var(--ci,0) * 90ms),calc(var(--ci,0) * 90ms),0s}
+.lc .ct-auf:not(.ct-da){translate:0 clamp(36px,4vw,60px);scale:.965}
+.lc .ct-auf--z:not(.ct-da){translate:0 clamp(14px,1.6vw,22px);scale:.99}
+@media (prefers-reduced-motion:reduce){.lc .ct-auf{transition:none!important;translate:none!important;scale:none!important}}

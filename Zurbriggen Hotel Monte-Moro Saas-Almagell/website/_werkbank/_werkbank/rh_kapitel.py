@@ -152,6 +152,10 @@ CSS = '''
   .papier .pk h3{font-size:clamp(1.55rem,1.9vw,2rem)}
   .papier .pk p{margin:8px 0 18px;font-size:.95rem}
   .papier .pk .kn{font-size:10.5px;letter-spacing:.14em}}
+/* Drucksachen-Kachel: drei Blätter versetzt (aussen hoch, Mitte tiefer), sie füllen die Bildfläche bis unten (Prüfpunkt 13, 09.11.2026) */
+.papier .pk--hell .bogenb{width:31%!important}
+.papier .pk--hell .bogenb:nth-child(1){left:2%!important;top:6%!important}.papier .pk--hell .bogenb:nth-child(2){left:34.5%!important;top:24%!important}.papier .pk--hell .bogenb:nth-child(3){left:67%!important;top:6%!important}
+@media(min-width:1200px){.papier .pk--hell .bogenb:nth-child(1),.papier .pk--hell .bogenb:nth-child(3){top:8%!important}.papier .pk--hell .bogenb:nth-child(2){top:30%!important}}
 .pk--mail{background:#f4ecdc;color:var(--tinte);box-shadow:inset 0 1px 0 #fff,0 0 0 1px rgba(150,125,64,.36)}
 .pk--mail p{color:rgba(12,21,38,.86)}
 .pk--mail .kn{--o:#1f3f77;--m:#0b1f40;--u:#040d1e;--t:#fff;--licht:rgba(255,255,255,.26);--kante:rgba(0,0,0,.55);--tf:rgba(6,20,43,.6);--ko:#fbf3e2;--ku:#cfbd98;--kt:var(--tinte);--klicht:rgba(255,255,255,.9)}
