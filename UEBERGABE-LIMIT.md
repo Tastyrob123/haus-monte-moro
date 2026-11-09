@@ -80,7 +80,8 @@ Offen, in Reihenfolge: Funde Agent 5–7 reparieren und nachprüfen, Messlauf au
   2./4. siehe Entscheidungen.
 - Neubau fertig (6b420e6). Rechner mit Tippen geprüft, Bilder 1440/1000/390 angesehen, `oberflaeche_pruefen.js` Werkbank BESTANDEN.
 - Beim Neubau gefunden: `bau_alles.sh` setzte zuletzt die ältere Rücksprung-Fassung des Hauses ein; jetzt die des Kits (wie im geprüften Stand).
-- Läuft: tor-schnell Werkbank (`aus/werkbank/`, /tmp/tor-werkbank.txt), Augen-Agent 5–7 (repariert in livre/registre, noch nicht committet).
+- tor-schnell Werkbank nach Neubau: 40 Zustände × 4 Breiten, 0 Funde (`cloud/schnell.sh` nimmt jetzt Chromium, WebKit-Download ist gesperrt).
+- Läuft: Augen-Agent 5–7 (repariert in livre/registre, noch nicht committet).
 - Danach: Funde 5–7 übernehmen, tor-schnell der geänderten Werkzeuge, Oberflächenprüfung über alle 21, Messlauf, Tafel `ergebnis/laeufe/2026-11-09/`, erste Zeile «Fertig.».
 
 ## Entscheidungen der Nacht
