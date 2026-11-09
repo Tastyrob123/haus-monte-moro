@@ -1,5 +1,7 @@
 In Prüfung.
 
+**ZUERST: `KORREKTUR-ROBERT.md` umsetzen (Robert 09.11.2026, 10:15: kein Ticket, Rechenbeispiel bedienbar, Draussen vier Kacheln nebeneinander, keine Preise eintragen). Vorher kein «Fertig.».**
+
 Gegenprüfung läuft (09.11.2026). Stand siehe Abschnitt «Gegenprüfung 09.11.2026».
 
 # Übergabe (laufend) · Hotel Monte-Moro, Saas-Almagell
