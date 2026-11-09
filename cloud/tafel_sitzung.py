@@ -59,7 +59,7 @@ h1{{font-size:clamp(32px,6vw,56px);margin:0 0 6px;color:#0A2A4A}}.kopf{{display:
 table{{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden}}td,th{{padding:10px 12px;border-bottom:1px solid #E7E1DC;vertical-align:top;text-align:left}}
 th{{background:#0D3F6F;color:#F5F2EE;font-weight:500}}tr.ok td:nth-child(3){{color:#268369;font-weight:600}}tr.rot{{background:#fbe9e1}}
 .bi{{display:flex;flex-wrap:wrap;gap:6px}}.bi img{{height:90px;border-radius:6px;border:1px solid #D6CCC1}}small{{color:#4A5D70}}
-@media(max-width:760px){{td:nth-child(6),th:nth-child(6){{display:none}}}}</style></head><body><main>
+@media(max-width:760px){{td:nth-child(6),th:nth-child(6),td:nth-child(4),th:nth-child(4){{display:none}}table{{font-size:13px;width:100%}}td,th{{padding-left:5px;padding-right:5px}}td:first-child small{{word-break:break-all}}}}</style></head><body><main>
 <h1>Prüftafel · Hotel Monte-Moro</h1><p>Schlussprüfung in der Sitzung, 8. November 2026: jedes Werkzeug und jede Seite der Werkbank mit dem Abnahme-Tor
 (Start, jeder Navigationspunkt, jeder Reiter, jedes Fenster, je Gruppe drei Stücke, höchstens 40 Zustände) in 1440, 1280, 1000 und 390 px,
 dazu die Oberflächenprüfung. Chromium (WebKit liess sich in der Cloud nicht laden). Bilder: zufällige Zustände aus dem Lauf.</p>
