@@ -221,7 +221,7 @@ module.exports = function messen() {
     if (a.ps || b.ps) { if (a.ps && b.ps && a.e === b.e && a.ps === b.ps) continue; const o = a.ps ? b : a, z = a.ps ? a : b; if (!o.ps && o.knopf && (o.e.contains(z.e) || z.e.contains(o.e))) continue; }
     else if (a.e.contains(b.e) || b.e.contains(a.e)) continue;
     if (ebeneM(a.e) !== ebeneM(b.e)) continue;
-    const overlay = x => { for (let y = x; y && y !== document.body; y = y.parentElement) { const c = cs(y); if ((c.position === 'absolute' || c.position === 'fixed') && (parseInt(c.zIndex) || 0) >= 5) { const r = y.getBoundingClientRect(); if (r.width * r.height >= 0.25 * VW * VH) return y; } } return null; };
+    const overlay = x => { for (let y = x; y && y !== document.body; y = y.parentElement) { const c = cs(y); if ((c.position === 'absolute' || c.position === 'fixed') && (parseInt(c.zIndex) || 0) >= 5) { const r = y.getBoundingClientRect(); if (r.width * r.height >= 0.25 * VW * VH) return y; if (y.parentElement && y.parentElement.matches('details[open]') && y.previousElementSibling && y.previousElementSibling.matches('summary')) return y; } } return null; };   /* geöffneter Aufklapper (details[open], eigene Ebene ab z-index 5) liegt gewollt über dem Inhalt; Beleg 09.11.2026 Hausdruckerei E-Mail «2 Prüfung», 1280/1000 */
     if (overlay(a.e) !== overlay(b.e)) continue;
     const gedreht = x => { for (let y = x, n = 0; y && n < 4; y = y.parentElement, n++) { const m = cs(y).transform; if (m && m !== 'none') { const v = m.match(/matrix\(([^)]+)\)/); if (v && Math.abs(parseFloat(v[1].split(',')[1])) > 0.01) return true; } } return false; };
     if (gedreht(a.e) || gedreht(b.e)) continue;

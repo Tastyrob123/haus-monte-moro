@@ -319,3 +319,4 @@
 .ml-meine__e b{text-wrap:balance}
 /* Monte-Moro: Bildbeschreibungen der Fotos ganz, ohne «…» (Messlauf 08.11.2026) */
 .ml-fotos__raster span{display:block;-webkit-line-clamp:unset;overflow:visible}
+.ml-pruef__liste{z-index:60}   /* Aufklapper liegt in eigener Ebene über der Bühne (Messlauf 09.11.2026: überlappte die Posteingangs-Vorschau ohne eigene Ebene) */
