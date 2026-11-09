@@ -10,7 +10,9 @@ _KIT = os.path.join(os.environ.get('WERKBANK_KIT') or os.path.join(os.path.dirna
 
 
 def block(art):
-    """Der Block «orte» aus dem Kit, Wort für Wort; art = 'brief' oder 'schluss' für die Lage im Kleid."""
+    """Robert 09.11.2026 (KORREKTUR-ROBERT.md 1): kein Ticket, kein Billett, keine Reiseroute. Der Block fällt in Brief und Schluss weg.
+    Früher: Der Block «orte» aus dem Kit, Wort für Wort; art = 'brief' oder 'schluss' für die Lage im Kleid."""
+    return ''
     h = re.search(r"orte = '''(.*?)'''", open(_KIT, encoding='utf-8').read(), re.S).group(1).strip()
     # Robert 1.11.2026: «soll mehr wie ein Ticket sein, kein Kasten». Inhalt (Titel, Satz, Kursblatt) bleibt aus dem Kit, die Form wird ein Billett:
     # Kopfzeile, Hauptteil, Perforation mit zwei ausgeschnittenen Kerben (Maske, Website-Master 13: nie Kreise über die Kante), Abriss in Creme.
