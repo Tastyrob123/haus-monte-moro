@@ -71,10 +71,10 @@ Keiner – alles fertig und geprüft. Nur noch «Wartet auf Roberts Wort».
   Drucksachen neu gesetzt (`_bau/drucksachen.js`, 0 rote Befunde), Vorschaubilder der Hausdruckerei neu (`vorschau_katalog.js`, `vorschaubilder.js`, Stand v=115/38), Werkbank Drucksachen + Material nachgeführt (587f496).
 - Hinweis für Prüfer: Ganzseiten-Aufnahmen (fullPage) zeigen falsche Überlagerungen in den Seitenleisten und leere Flächen (Einblendung); nur Ansichten mit echtem Scrollen werten.
 
-## Folgesitzung nach Stillstand (session_0189oeKhE5oHiD5mK18i2yjR, 09.11. 01:00 UTC)
+## Folgesitzung nach Stillstand (session_0189oeKhE5oHiD5mK18i2yjR, 09.11. 00:50 UTC)
 - Letztes Lebenszeichen der Gegenprüfung 20:48 (Funde 3 und 4 repariert, 587f496). Kein Bau-Agent offen; alle acht Reviere haben LIEFERUNG.md. Keiner neu gestartet.
 - Offen war nur: Nachprüfung der Ziele, die nach der Schlussprüfung repariert wurden (77b8f0d, 587f496): hotelbuero, hausdruckerei, hausdruckerei-mail, werkbank, werkbank-drucksachen, werkbank-material. Läuft in `/tmp/gp` (`cloud/schnell.sh`, Log `/tmp/gp/nachlauf.log`), danach Oberflächenprüfung, Auge, Tafel `ergebnis/laeufe/2026-11-09/`.
-- 01:20: Drucksachen Preisliste Zimmer, Zuschläge, Best of Röstis (beide Seiten) gerendert und angesehen: CHF steht neben der Zahl, Titel vorne/hinten gleich gross. Oberflächenprüfung Hotelbüro, Hausdruckerei, Werkbank, Drucksachen, Material: 5 × BESTANDEN (`/tmp/gp/aus-nach/oberflaeche/`).
+- 00:55: Drucksachen Preisliste Zimmer, Zuschläge, Best of Röstis (beide Seiten) gerendert und angesehen: CHF steht neben der Zahl, Titel vorne/hinten gleich gross. Oberflächenprüfung Hotelbüro, Hausdruckerei, Werkbank, Drucksachen, Material: 5 × BESTANDEN (`/tmp/gp/aus-nach/oberflaeche/`).
 
 ## Entscheidungen der Nacht
 - Nachtsitzung: Auftrag sagt Zweig `ergebnis`; die Übergabe lag nur auf `claude/task-o0ores`. Übergabe und Lebenszeichen leben ab jetzt auf `ergebnis`, Code-Reparaturen weiter auf `claude/task-o0ores`.
@@ -86,6 +86,8 @@ Keiner – alles fertig und geprüft. Nur noch «Wartet auf Roberts Wort».
 - Gegenprüfung: Nur `material_mehr.py` + `papier_nach.py` einzeln laufen lassen entfernt die Knopf-Nachbauten (text-mitte, knopf-mitte) der Papier-Seiten und setzt werkbank.css/js zurück. Deshalb nur der neue Ordner 05 ins bestehende `material/index.html` übernommen, alles andere auf Stand zurückgesetzt.
 
 - Folgesitzung 09.11.: Nachprüfung nur der seit der Schlussprüfung geänderten Ziele, nicht aller 28 (übrige unverändert und grün).
+
+- Hotelbüro zeigt nachts «0 Besuche · 0 zur Buchung»: richtig, die Beispielzahlen zählen den laufenden Tag (API je_tag heute = 0 um 01 Uhr). Kein Fund.
 
 ## Wartet auf Roberts Wort
 - Baustein `reception/baustein/anfrage.js` in die Website, Datenschutz-Satz zu Anfragen/Chat (Website-Revier).
