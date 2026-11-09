@@ -60,9 +60,9 @@ table{{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;ov
 th{{background:#0D3F6F;color:#F5F2EE;font-weight:500}}tr.ok td:nth-child(3){{color:#268369;font-weight:600}}tr.rot{{background:#fbe9e1}}
 .bi{{display:flex;flex-wrap:wrap;gap:6px}}.bi img{{height:90px;border-radius:6px;border:1px solid #D6CCC1}}small{{color:#4A5D70}}
 @media(max-width:760px){{td:nth-child(6),th:nth-child(6),td:nth-child(4),th:nth-child(4){{display:none}}table{{font-size:13px;width:100%}}td,th{{padding-left:5px;padding-right:5px}}td:first-child small{{word-break:break-all}}}}</style></head><body><main>
-<h1>Prüftafel · Hotel Monte-Moro</h1><p>Schlussprüfung in der Sitzung, 8. November 2026: jedes Werkzeug und jede Seite der Werkbank mit dem Abnahme-Tor
+<h1>Prüftafel · Hotel Monte-Moro</h1><p>Schlussprüfung in der Sitzung, {os.environ.get('TAFEL_DATUM', '8. November 2026')}: jedes Werkzeug und jede Seite der Werkbank mit dem Abnahme-Tor
 (Start, jeder Navigationspunkt, jeder Reiter, jedes Fenster, je Gruppe drei Stücke, höchstens 40 Zustände) in 1440, 1280, 1000 und 390 px,
-dazu die Oberflächenprüfung. Chromium (WebKit liess sich in der Cloud nicht laden). Bilder: zufällige Zustände aus dem Lauf.</p>
+dazu die Oberflächenprüfung. {os.environ.get('TAFEL_ZUSATZ', 'Chromium (WebKit liess sich in der Cloud nicht laden).')} Bilder: zufällige Zustände aus dem Lauf.</p>
 <div class="kopf"><div><b>{len(ZL)}</b>Ziele</div><div><b>{summe['zustaende']}</b>Zustände (1440)</div><div><b>{summe['funde']}</b>Funde</div><div><b>{summe['nicht_erreicht']}</b>nicht erreicht</div><div><b>{'grün' if alle_gruen else 'offen'}</b>Ergebnis</div></div>
 <table><tr><th>Ziel</th><th>Zustände</th><th>Funde</th><th>Nicht erreicht</th><th>Oberfläche</th><th>Bilder</th></tr>{''.join(zeilen)}</table></main></body></html>""")
 print('Ziele', len(ZL), summe, 'grün' if alle_gruen else 'offen')
