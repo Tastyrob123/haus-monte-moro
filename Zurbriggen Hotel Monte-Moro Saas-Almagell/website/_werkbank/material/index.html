@@ -105,6 +105,7 @@ a.kn>.tm,button.kn>.tm,.uwahl button>.tm,.uschalter button>.tm,.wahl button>.tm,
 .tm-l{letter-spacing:0}
 
 @media(max-width:480px){h1.t1{font-size:min(38px,9.4vw)!important}}</style><script id="knopf-mitte-js">(function(){function m(){document.querySelectorAll('.kn,.sbf-z,.wahl button,.vh-wahl button,.uwahl button,.uschalter button').forEach(function(k){var t=k.firstChild;if(t&&t.nodeType===3&&t.textContent.trim()){var s=document.createElement('span');s.className='tm';s.textContent=t.textContent;k.replaceChild(s,t);t=s}if(!t||t.nodeType!==1||!t.classList.contains('tm')||t.querySelector('.tm-l'))return;var x=t.textContent.replace(/\s+$/,'');if(x.length<2)return;var l=document.createElement('span');l.className='tm-l';l.textContent=x.slice(-1);t.textContent=x.slice(0,-1);t.appendChild(l)})}m();addEventListener('load',m)})();</script>
+
 <script id="ruecksprung">/* Rücksprung (Robert 1.11.2026): Zurück/Vor im Browser landet auf der alten Höhe der Seite, nie ganz oben.
    Merkt je Seite in sessionStorage (rs:<Pfad>) die Höhe und das Inhaltsstück am oberen Fensterrand (beim Scrollen, beim Klick auf einen Link, bei pagehide).
    Kommt man mit Zurück/Vor wieder (Navigation «back_forward»), richtet sich die Seite nach dem Aufbau an diesem Stück aus, nicht nur an der Pixelzahl:

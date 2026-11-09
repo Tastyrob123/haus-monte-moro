@@ -72,8 +72,8 @@ def einsetzen(t):
     def blatt(i, p):
         ang = ' · '.join(x for x in (f"{p['seiten']} {'Seite' if p['seiten'] == 1 else 'Seiten'}" if p['seiten'] else '', p['format'], f"Stand {p['stand']}" if p['stand'] else '') if x)
         return (f'<a class="blattk kf__b kf__b--{i + 1}" style="--j:{i}" href="{e(p["href"])}" target="_blank" rel="noopener">'
-                f'<span class="kf__s"><img src="karten/{p["ziel"]}.webp" width="{p["b"]}" height="{p["h"]}" alt="{e(p["name"])}" loading="lazy" decoding="async"></span>'
-                f'<span class="kf__t"><strong>{e(p["name"])}</strong><small>{e(ang)}</small><em>{e(p["unter"])}</em><b>ansehen</b></span></a>')
+                f'<span class="kf__s"><img src="karten/{p["ziel"]}.webp" width="{p["b"]}" height="{p["h"]}" alt="{e(p["name"])}" loading="lazy" decoding="async"><i class="kf__p" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></span>'
+                f'<span class="kf__t"><strong>{e(p["name"])}</strong><small>{e(ang)}</small><em>{e(p["unter"])}</em></span></a>')
     staende = sorted({p['stand'] for p in plan if p['stand']})
     try:
         import rh_werkzeuge as WK
@@ -120,7 +120,9 @@ CSS = """
 .kf__i .kf__k{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
 .kf__i .kf__l{margin-top:4px;font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#f6f1e8;text-decoration:none;border-bottom:1px solid var(--gold);align-self:flex-start;padding-bottom:3px}
 .kf__i .kf__l:hover{color:var(--gold)}
-@media(max-width:999px){.faecher.kf{grid-template-columns:1fr 1fr}}
+@media(max-width:1199px){.faecher.kf{grid-template-columns:1fr 1fr}}
+.kf .kf__p{position:absolute;right:10px;top:10px;width:30px;height:30px;border-radius:50%;background:var(--navy);display:grid;place-items:center;box-shadow:0 6px 12px -6px rgba(0,0,0,.6)}
+.kf .kf__p svg{width:12px;height:12px;fill:none;stroke:#f6f1e8;stroke-width:1.6}
 @media(prefers-reduced-motion:reduce){.kf .blattk{transform:none;transition:none}}
 """
 
