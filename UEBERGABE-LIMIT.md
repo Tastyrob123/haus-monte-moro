@@ -1,5 +1,7 @@
 In Arbeit.
 
+**Mac-Chat 09.11. 20:06: Korrektur 2 für Suitenhotel und Wellness wird in deren eigenen Repos von deren eigenen Cloud-Sitzungen gebaut (haus-suitenhotel-zermatt, haus-wellness-zurbriggen, beide arbeiten KORREKTUR-ROBERT.md dort ab). In diesem Repo ist dafür nichts zu tun; das ist kein offener Punkt. Bitte nur dieses Haus, dann wieder «Fertig.» ohne Einschränkungssatz.**
+
 Geprüft 09.11.2026, 12:15 UTC (Nachtsitzung 3): Roberts Korrekturen 1–5 umgesetzt und abgehakt (KORREKTUR-ROBERT.md). Abnahme-Tor über alle 28 Ziele (1440/1280/1000/390): 423 Zustände, 0 Funde, nichts unerreicht. `oberflaeche_pruefen.js` in der jüngsten Mac-Fassung (76b4dfb, 270 Zeilen) über alle 21 Oberflächen: 21 × BESTANDEN. Messlauf über alle 28 Ziele: 0 Funde. WebKit-Blick auf die geänderten Oberflächen: BESTANDEN. Augen: Bilder 1440/1000/390 aller geänderten Stellen, je 15 Zustandsbilder Markenbuch, Besucherliste, Hausdruckerei.
 Wartet auf Roberts Wort: nichts.
 
