@@ -122,18 +122,20 @@ ZUSATZ = (('drucksachen/index.html', 'stueck-luft', LUFT), ('beigaben/index.html
           ('feed/index.html', 'fw-mitte', '<style id="fw-mitte">.fw button{text-indent:.1em}'
            '.fw.fw--band{letter-spacing:.06em;gap:6px;padding-left:6px;padding-right:6px}'
            '.fw.fw--band button{padding:0 9px;text-indent:.06em}</style>'))
-# Marke, Herkunft der Farben: am Handy zwei Spalten; «daraus: Lärche, Fassade, Wandschindeln» in 13 px Mono
-# ist breiter als die Spalte und lief 5 px in die Nachbarspalte (Tor 09.11., überlappt): «Fassade, Wandschatten» war
-# mit geschütztem Leerzeichen verbunden. Nach dem Komma darf die Zeile jetzt umbrechen; Spalten dürfen schmal werden.
-HER = ('<style id="her-umbruch">.hs2-her figure{min-width:0}'
-       '@media (max-width:600px){.hs2-her figcaption small{letter-spacing:.02em}}</style>')
-ZUSATZ += tuple((rel, 'her-umbruch', HER) for rel in ('werkbank/index.html',))
-HER_TEXT = re.compile(r'(daraus: [^<]*)')
+# Marke, Herkunft der Farben: am Handy standen die vier Bilder in zwei Spalten; «daraus: Lärche, Fassade, Wandschatten»
+# in 13 px Mono ist breiter als eine halbe Spalte und lief 5 px in die Nachbarspalte (Tor 09.11., überlappt). Ein Umbruch
+# nach dem Komma liesse «Wandschatten» allein in der letzten Zeile. Darum am Handy je Bild eine Zeile: Bild mit Farbstreifen
+# links, Titel und «daraus: …» rechts; so steht die ganze Zeile.
+HER = ('<style id="her-zeilen">@media (max-width:600px){.hs2-her{grid-template-columns:1fr!important}'
+       '.hs2-her figure{display:grid;grid-template-columns:112px minmax(0,1fr);column-gap:16px;align-items:center}'
+       '.hs2-her .hs2-bild,.hs2-her .hs2-st{grid-column:1}.hs2-her figcaption{grid-column:2;grid-row:1/span 2;margin-top:0}'
+       '.hs2-her .hs2-st{height:14px}}</style>')
+ZUSATZ += tuple((rel, 'her-zeilen', HER) for rel in ('werkbank/index.html',))
 
 
 def her_text(t):
-    """Geschütztes Leerzeichen nach einem Komma in «daraus: …» wird ein normales (Umbruch am Handy)."""
-    return HER_TEXT.sub(lambda m: m.group(1).replace(', ', ', '), t)
+    """Nach «daraus:» darf die Zeile umbrechen (sonst ist «daraus: Papier, Nachtblau» am Handy breiter als die Spalte)."""
+    return t.replace('<small>daraus:\u00a0', '<small>daraus: ')
 
 
 def anwenden(root=ROOT):
