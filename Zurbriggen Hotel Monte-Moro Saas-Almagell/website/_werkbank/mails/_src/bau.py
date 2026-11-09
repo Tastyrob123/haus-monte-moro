@@ -289,6 +289,8 @@ html.js .hr.da{{opacity:1;transform:none;transition:opacity .9s cubic-bezier(.2,
   function kl() {{ p[0].disabled = b.scrollLeft < 4; p[1].disabled = b.scrollLeft > b.scrollWidth - b.clientWidth - 4; }}
   [].forEach.call(p, function (x) {{ x.addEventListener('click', function () {{ b.scrollBy({{ left: +x.dataset.r * schritt(), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }}); }}); }});
   b.addEventListener('scroll', kl, {{ passive: true }}); kl();
+  /* aufgeklappte Mail, die aus dem Band geblättert ist, klappt zu: sonst bleibt das Band so hoch wie sie (Fund 09.11.2026) */
+  var zt = 0; b.addEventListener('scroll', function () {{ clearTimeout(zt); zt = setTimeout(function () {{ var rb = b.getBoundingClientRect(); ms.forEach(function (m) {{ if (!m.classList.contains('auf')) return; var r = m.getBoundingClientRect(); if (r.right <= rb.left + 4 || r.left >= rb.right - 4) {{ m.classList.remove('auf'); m.querySelector('.mb-kn').setAttribute('aria-expanded', 'false'); lage(m); }} }}); }}, 160); }}, {{ passive: true }});
 }})();
 </script>
 </body></html>

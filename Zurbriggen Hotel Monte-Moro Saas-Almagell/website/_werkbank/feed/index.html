@@ -114,10 +114,11 @@ a{color:inherit;text-decoration:none}
   .aside{display:none}
   .devwrap{animation:none;opacity:1;transform:none}
   .device{width:100vw;height:100svh;border-radius:0;padding:0;box-shadow:none}
-  .screen{border-radius:0}.island{display:none}.status{height:14px}.status>*{display:none}.post .bar{height:14px}
+  .screen{border-radius:0}.island{display:none}.status{height:14px}.status>*,.status .ic{display:none}.post .bar{height:14px}
   .zurueck{display:flex}
 }
 .zurueck{display:none;position:fixed;z-index:60;right:14px;bottom:96px;height:44px;padding:0 18px;border-radius:999px;align-items:center;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#142b41;background:linear-gradient(180deg,#f9f6f2,#b17556);box-shadow:0 10px 20px -8px rgba(0,0,0,.8)}
+@media (max-width:820px){.zurueck{display:flex}}   /* nach der Grundregel, sonst bleibt der Knopf am Handy aus (Fund 09.11.2026) */
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.aside>*,.devwrap,.t img{opacity:1!important;transform:none!important}}
 </style>
 <link rel="stylesheet" href="uebergang.css">

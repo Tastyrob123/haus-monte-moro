@@ -131,8 +131,8 @@ CSS = '''
 @media(min-width:900px){.sag-zwei{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .sag-l li{position:relative;padding:14px 0 14px 30px;border-top:1px solid rgba(17,61,136,.12);font-size:clamp(1.08rem,1.24vw,1.3rem);line-height:1.45;color:rgba(4,16,35,.88)}
 .sag-l li:first-child{border-top:0;padding-top:0}
-.sag-l li::before{content:"";position:absolute;left:1px;top:.28em;width:.74em;height:.78em;background:var(--blau);-webkit-mask:url(eigen/zeichen-c.svg) center/contain no-repeat;mask:url(eigen/zeichen-c.svg) center/contain no-repeat}   /* das «C» des Hauses als einziges Ornament (29.10.2026, vorher das «x» aus der Schrift) */
-.sag-l li:first-child::before{top:.5em}
+.sag-l li::before{content:"";position:absolute;left:0;top:calc(14px + .475em);width:1.1em;height:.5em;background:var(--blau);-webkit-mask:url(eigen/zeichen-c.svg) center/contain no-repeat;mask:url(eigen/zeichen-c.svg) center/contain no-repeat}   /* das «C» des Hauses als einziges Ornament (29.10.2026, vorher das «x» aus der Schrift) */
+.sag-l li:first-child::before{top:.475em}
 .sag-teil{margin-top:clamp(56px,6vw,100px)}
 .sag-k{margin:0 0 clamp(18px,2vw,28px);text-align:center;font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--messing)}
 .sag-weg{list-style:none;margin:0 auto;padding:clamp(10px,1.4vw,18px) clamp(24px,3.4vw,52px);max-width:780px;border-radius:28px;background:var(--weiss);color:var(--tinte);box-shadow:inset 0 1px 0 #fff,0 0 0 1px rgba(17,61,136,.2),0 40px 50px -36px rgba(0,0,0,.9)}

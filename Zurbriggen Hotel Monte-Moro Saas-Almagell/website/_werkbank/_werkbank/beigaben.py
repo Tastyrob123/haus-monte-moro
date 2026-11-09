@@ -166,6 +166,11 @@ def seite():
             if im.width > 1000:
                 im = im.resize((1000, round(im.height * 1000 / im.width)), Image.LANCZOS)
             im.save(os.path.join(ziel, name + '.webp'), 'WEBP', quality=88, method=5); M[name] = im.size
+    # Auslage neben dem Titel (wie Sticker, Untersetzer, Postkarten): die fünf Beigaben, ohne Überdeckung (Fund 09.11.2026: rechte Kopfhälfte leer)
+    LAGE = {'tuerhaenger': (3, 3, 21, -3), 'bon': (28, 8, 19, 2), 'serviette': (51, 0, 27, -2), 'anhaenger': (81, 7, 16, 4), 'kissen': (33, 60, 38, -1)}
+    auslage = '<div class="auslage" aria-hidden="true">' + ''.join(
+        f'<div class="form" data-a="schweb" style="left:{x}%;top:{y}%;width:{w}%;--r:{r}deg;--r0:{r * 3}deg;--i:{k + 2}"><img src="img/{nm}.webp" width="{M[nm][0]}" height="{M[nm][1]}" alt=""></div>'
+        for k, (nm, (x, y, w, r)) in enumerate(LAGE.items()) if nm in M) + '</div>'
     FL = ['fl--papier', 'fl--nacht tapete-leicht', 'fl--creme', 'fl--papier', 'fl--creme']
     haupt = f'''<section class="sk">
   <div class="in">
@@ -175,6 +180,7 @@ def seite():
       <div class="lauf"><p data-a="worte" style="--vz:700ms">Kleine Dinge, die ein Gast im Monte-Moro in die Hand bekommt, an der Tür findet oder mit nach Hause nimmt. Alle im Stil der neuen Seite, jede als Druckvorlage. Was nicht passt, lassen Sie einfach weg.</p></div>
       <div class="kn-reihe" data-a="auf" style="--i:8">{kn('Zur Werkbank', '../werkbank/index.html#papier')}{kn('Drucksachen', '../drucksachen/index.html', 'kn--linie')}</div>
     </div>
+    {auslage}
   </div>
 </section>
 '''
