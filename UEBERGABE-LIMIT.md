@@ -1,5 +1,7 @@
 In Prüfung.
 
+**ZUERST: `KORREKTUR-ROBERT.md` Punkt 5 BERICHTIGT (Robert 09.11.2026, 16:51): im Kapitel «Ihre Karten» nur mehr Blätter im Raum schweben lassen (alle Unterlagen), KEINE Kacheln, KEINE Beschreibungen oder Angaben je Blatt, keine Zahlenreihe; schon Gebautes davon rückgängig. Punkte 1–4 bleiben. Vorher kein «Fertig.».**
+
 **NEU 09.11.2026, 15:34: `KORREKTUR-ROBERT.md` Punkt 5 (Kapitel Karten nie leer: alle Unterlagen als Blätter, Fläche gefüllt mit Angaben; Prüfpunkt 15) umsetzen. Vorher kein «Fertig.».**
 
 **`KORREKTUR-ROBERT.md` umgesetzt und abgehakt (09.11., Nacht 3, Commit 6b420e6); Werkbank BESTANDEN.**
