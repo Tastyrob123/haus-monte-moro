@@ -1,6 +1,6 @@
 In Prüfung.
 
-**ZUERST: `KORREKTUR-ROBERT.md` umsetzen (Robert 09.11.2026, 10:15: kein Ticket, Rechenbeispiel bedienbar, Draussen vier Kacheln nebeneinander, keine Preise eintragen). Vorher kein «Fertig.».**
+**`KORREKTUR-ROBERT.md` umgesetzt und abgehakt (09.11., Nacht 3, Commit 6b420e6); Werkbank BESTANDEN.**
 
 Gegenprüfung läuft (09.11.2026). Stand siehe Abschnitt «Gegenprüfung 09.11.2026».
 
@@ -78,8 +78,10 @@ Offen, in Reihenfolge: Funde Agent 5–7 reparieren und nachprüfen, Messlauf au
   1. Ticket «Meine drei Orte» in Brief und Schluss entfernt (`_werkbank/orte_kurs.py › block` gibt nichts mehr zurück; Brief-Fussreihe einspaltig, nur Unterschrift).
   3. Draussen: vier Kacheln in einer Reihe ab 1200 px, 2×2 ab 700 px, darunter untereinander (`_werkbank/rh_kapitel.py`).
   2./4. siehe Entscheidungen.
-- Neubau `bau_alles.sh` läuft (Log /tmp/bau.log); Aufnahmen (`_werkbank/ansichten/`) sind nicht eingecheckt, deshalb ganzer Bau nötig.
-- Danach: Bilder 1440/390 ansehen, Rechner mit echtem Tippen prüfen, `oberflaeche_pruefen.js` Werkbank, tor-schnell Werkbank, Messlauf, Tafel `ergebnis/laeufe/2026-11-09/`.
+- Neubau fertig (6b420e6). Rechner mit Tippen geprüft, Bilder 1440/1000/390 angesehen, `oberflaeche_pruefen.js` Werkbank BESTANDEN.
+- Beim Neubau gefunden: `bau_alles.sh` setzte zuletzt die ältere Rücksprung-Fassung des Hauses ein; jetzt die des Kits (wie im geprüften Stand).
+- Läuft: tor-schnell Werkbank (`aus/werkbank/`, /tmp/tor-werkbank.txt), Augen-Agent 5–7 (repariert in livre/registre, noch nicht committet).
+- Danach: Funde 5–7 übernehmen, tor-schnell der geänderten Werkzeuge, Oberflächenprüfung über alle 21, Messlauf, Tafel `ergebnis/laeufe/2026-11-09/`, erste Zeile «Fertig.».
 
 ## Entscheidungen der Nacht
 - 09.11. (Nacht 3): Korrektur Punkt 2 betrifft Suitenhotel und Wellnesshotel; die liegen nicht in diesem Repo und werden laut CLAUDE.md hier nicht angefasst. Für Monte-Moro: Rechner `#vt-rechner` bleibt, wird mit echtem Tippen geprüft.
