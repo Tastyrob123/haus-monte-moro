@@ -1,5 +1,11 @@
 In Arbeit.
 
+**Sitzung session_0189oeKhFSeSdxewE9ka1jFa (09.11.2026 abends, Zweig `claude/task-o0ores-uebergabe-ktwucl` = `claude/task-o0ores` + main):** Auftrag: «Fertig.» der Vorsitzung stand mit Ausschluss-Satz («Website-Revier, nicht Teil des Pakets»). Stand:
+- [x] Anfrage-Baustein der Rezeption: in der Website eingebaut, einmal live bedient auf `:9384` (Familienzimmer-Anfrage und Chat-Frage, 1440 und 390): beide landen in der Rezeption (Eingang bzw. «Das wurde gefragt»), keine Skriptfehler, Bilder angesehen; Testeinträge gelöscht. Ausschluss-Satz umformuliert.
+- [ ] Mitbetroffen: Kartenbrett (`_werkzeuge/carte/LIEFERUNG.md`) schloss die übrigen Rubriken der Speisekarte aus (Vorspeisen, Suppen, Warme Speisen, Kinderkarte, Nachspeisen, Weine, Getränke). Opus-Agent trägt die ganze Speisekarte ein (Revier `_werkzeuge/carte/`), prüft mit `pruefe.py alles`, `oberflaeche_pruefen.js`, Bildern 1440/390.
+- Danach: neue Karte(n) ggf. in die Werkbank (`website/_werkbank/karten_faecher.py`), Werkbank-Stelle nachprüfen, dann «Fertig.».
+**Nächster genauer Schritt (falls diese Sitzung abbricht):** `git log` auf Commits im Revier `_werkzeuge/carte/` prüfen; fehlt der Ausbau, ihn nach `LIEFERUNG.md` + Speisekarte (`_quelle/website/pdf/speisekarte.pdf`) selbst machen.
+
 **Punkt 6, Nebenseiten (09.11.2026, 16:30 UTC):** `_Werkzeuge/oberflaeche_pruefen.js` einmal je Seite (1440 und 390), jede Seite einmal im Bild angesehen:
 - Mail-Werkstatt (`/_werkzeuge/imprimerie/mail.html`): BESTANDEN (17 und 18 frei, auch am Handy)
 - Schaufenster-Anleitung (`/_werkzeuge/bureau/anleitung.html`): BESTANDEN
@@ -38,7 +44,7 @@ Stand: 08.11.2026, Oberchef-Sitzung (Zweig `claude/task-o0ores`).
 - Nachbesserung Hausdruckerei läuft (Umbruch «Monte-/Moro» bei 390, goldene Knöpfe der Bar).
 - Hotelbüro: Bildschirme der Werkzeuge neu (`maison/_bau/aufnahmen.sh`, Log /tmp/aufnahmen.log).
 - Werkbank: Papier fertig (3301c99); Kern läuft, hat Bescheid, dass alle Werkzeuge stehen.
-- Offen für Robert (nur Website-Revier, nicht gebaut): Baustein `reception/baustein/anfrage.js` in die Website, Datenschutz-Satz zu Anfragen/Chat.
+- Baustein `reception/baustein/anfrage.js` in die Website: am 09.11. eingebaut (`website/assets/js/rezeption-weg.js`); Datenschutz deckt Anfragen über Formulare im Wortlaut des Hauses.
 
 ## Offen, in Reihenfolge
 1. Acht Bau-Agenten (Opus) parallel: Hotelbüro, Schaufenster, Kartenbrett, Rezeption, Markenbuch, Besucherliste, Hausdruckerei, Werkbank. Jeder: umkleiden, Hauswerte, `tor-schnell` 0 Funde, `LIEFERUNG.md`, Commit im Revier.
@@ -105,6 +111,8 @@ Offen, in Reihenfolge: Funde Agent 5–7 reparieren und nachprüfen, Messlauf au
 - Offen: Markenbuch Punkt 11, Agent-Ergebnis übernehmen und committen, Tor für Markenbuch/Besucherliste/Hausdruckerei (+Unterseiten), Tafel `ergebnis/laeufe/2026-11-09/`, dann «Fertig.».
 
 ## Entscheidungen der Nacht
+- 09.11. (abends): Die ganze Speisekarte gehört ins Kartenbrett (Fertig = jeder Punkt; die Karte des Hauses ist veröffentlicht). Wortlaut aus `speisekarte.pdf`, nichts erfunden.
+- 09.11. (abends): «Website liest das Kartenbrett noch nicht» bleibt so: im Stamm (Culinarium) ebenso, Demo-Sperre `DEMO`; das Kartenbrett schreibt `anschluss/karten.json`, die Website zeigt die Speisekarte des Hauses als PDF. Live schalten = veröffentlichen → unter «Wartet auf Roberts Wort».
 - 09.11. (Nacht 3): Kapitel Karten: fünf Blätter = die fünf Karten des Kartenbretts (PDF und Vorschau in `werkbank/karten/`, gebaut von `_werkbank/karten_faecher.py`); Seite «Unterlagen» unverändert. Angaben/Kacheln nach Roberts Berichtigung wieder entfernt.
 - 09.11. (Nacht 3): Kit-`ruecksprung.js` ergänzt (pageshow persisted); die Meldung des Prüfskripts verweist selbst auf diese Datei.
 - 09.11. (Nacht 3): «So geht es weiter» (Angebot): nur Zeilenabstand verteilt, Inhalt und Preise unverändert (Korrektur 4).
@@ -115,13 +123,13 @@ Offen, in Reihenfolge: Funde Agent 5–7 reparieren und nachprüfen, Messlauf au
 - 09.11.: Messlauf-Regel «doppelt» vergleicht, was nach dem Klick im Bild steht; Fehlalarm auf der Werkbank belegt, Gegenprobe mit Testseite findet echte Doppelungen.
 - 09.11.: Prüfskript genau in der Mac-Fassung (153 Zeilen); die frühere Ausnahme der Vorsitzung für Bildbänder fällt weg, stattdessen heissen die Bildkarussells `kartenzug` (sie sind keine Laufbänder).
 - 09.11.: Laufband des Hotelbüros (aria-hidden, Zierband) aus `span` statt Liste; der Prüfpunkt 9 meint Knöpfe und Text im Inhalt.
-- 09.11.: «Website-Revier, nicht Teil des Pakets» war falsch eingeengt: Baustein eingebaut. Datenschutz bleibt im Wortlaut des Hauses; er deckt Anfragen über Formulare schon ab, eine Löschfrist veröffentlicht das Haus nicht, also wird keine erfunden.
+- 09.11.: Anfrage-Baustein der Rezeption gehört zum Paket und ist in der Website eingebaut (`website/assets/js/rezeption-weg.js`, über `bau.py`). Datenschutz bleibt im Wortlaut des Hauses; er deckt Anfragen über Formulare schon ab, eine Löschfrist veröffentlicht das Haus nicht, also wird keine erfunden.
 - Gearbeitet wird auf `claude/task-o0ores` (Auftrag der Folgesitzung), nicht auf main.
 - Geprüft in Chromium; WebKit (Playwright-Download gesperrt) seit 09.11. über WebKitWebDriver aus Debian (`cloud/webkit_blick.js`).
 - Schaufenster «Zeiten & Preise» zeigte «90 .00» (Leser des Stamms setzt Leerschlag für Tags). Korrigiert nur in der Anzeige des Hauses (`bureau/festigkeit.js › zahlwert`), Stamm-Leser unverändert, weil seine Kennungen gespeicherte Änderungen tragen. Schaufenster nach der Schlussprüfung neu prüfen.
 
 ## Wartet auf Roberts Wort
-- (nichts; Baustein am 09.11. eingebaut)
+- Online stellen (Website und Werkzeuge hochladen, Kartenbrett an die echte Website anschliessen): veröffentlichen ist ohne Roberts Wort verboten.
 
 
 ## Einrichten in einer neuen Sitzung
