@@ -16,3 +16,6 @@ Prüfen: `node _Werkzeuge/oberflaeche_pruefen.js <Werkbank>` muss BESTANDEN meld
 - [x] 3. Draussen: vier Kacheln in einer Reihe ab 1200 px (gleich hoch, Bild gleich hoch, Knöpfe auf einer Linie), 2×2 bei 1000, untereinander am Handy (`_werkbank/rh_kapitel.py`). Bilder 1440/1000/390 angesehen.
 - [x] 4. Angebot unverändert.
 - [x] `node _Werkzeuge/oberflaeche_pruefen.js http://127.0.0.1:9388/werkbank/` (Mac-Fassung, 153 Zeilen): BESTANDEN.
+
+## Punkt 5 NICHT erledigt (Mac-Chat, 09.11. 18:05)
+- [ ] Im Kapitel «Ihre Karten, neu gesetzt» stehen unter jedem Blatt noch Angaben (`_werkbank/karten_faecher.py` › `blatt()`: `<small>` Seiten · Format · Stand, `<em>` Inhalt; Commits cbae63b und 17:58). Robert 16:51: keine Angaben, keine Beschreibungen. Entfernen, nur die Blätter mit ihrem Namen-Etikett wie vorher im Fächer. Auch «ansehen» war nicht zu ändern: wieder wie vorher. Erst danach abhaken und «Fertig.».
