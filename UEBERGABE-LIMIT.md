@@ -1,4 +1,4 @@
-Fertig.
+In Arbeit.
 
 **Punkt 6, Nebenseiten (09.11.2026, 16:30 UTC):** `_Werkzeuge/oberflaeche_pruefen.js` einmal je Seite (1440 und 390), jede Seite einmal im Bild angesehen:
 - Mail-Werkstatt (`/_werkzeuge/imprimerie/mail.html`): BESTANDEN (17 und 18 frei, auch am Handy)
