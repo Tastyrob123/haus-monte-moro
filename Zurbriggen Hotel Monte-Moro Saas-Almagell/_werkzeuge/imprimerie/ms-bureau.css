@@ -163,8 +163,8 @@ a.ms-lnk{color:var(--taupe-tief)}
    (die Haut setzt nur deren Beschriftung auf 14,5 px), die drei Wege als gleichwertige kleine Etiketten in einer Zeile ohne Unterstreichung,
    der Speicher-Hinweis auf derselben linken Kante wie die Symbole (12 px Innenabstand der Knöpfe) */
 #start .ms-fuss button span{font:500 14.5px/1.3 var(--wo-sans,system-ui);letter-spacing:0;color:var(--wo-tinte,#061729)}
-#start .ms-fuss .ms-wege{display:flex;flex-wrap:nowrap;gap:5px;margin:10px 0 2px;padding:0 12px 0 3px;font-size:13px;line-height:1}
-#start .ms-fuss .ms-wege a{display:inline-flex;align-items:center;height:26px;padding:0 9px;border:0;border-radius:999px;font:500 13px/1 var(--wo-sans,system-ui);letter-spacing:0;white-space:nowrap;color:var(--wo-tinte,#061729);text-decoration:none;background:rgba(255,255,255,.55);box-shadow:inset 0 0 0 1px rgba(104,87,54,.32);cursor:pointer;transition:background .3s,box-shadow .3s,color .3s}
+#start .ms-fuss .ms-wege{display:flex;flex-wrap:wrap;gap:4px;margin:10px 0 2px;padding:0 3px;font-size:13px;line-height:1}
+#start .ms-fuss .ms-wege a{display:inline-flex;align-items:center;height:26px;padding:0 7px;border:0;border-radius:999px;font:500 13px/1 var(--wo-sans,system-ui);letter-spacing:0;white-space:nowrap;color:var(--wo-tinte,#061729);text-decoration:none;background:rgba(255,255,255,.55);box-shadow:inset 0 0 0 1px rgba(104,87,54,.32);cursor:pointer;transition:background .3s,box-shadow .3s,color .3s}
 #start .ms-fuss .ms-wege a:hover,#start .ms-fuss .ms-wege a:focus-visible{color:#061729;background:#fff;box-shadow:inset 0 0 0 1px rgba(189,167,127,.75);outline:0}
 #start .ms-fuss small{padding:8px 12px 0;font-size:13px}
 
