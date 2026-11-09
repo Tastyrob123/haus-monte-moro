@@ -28,7 +28,7 @@
   --kn-d-s:inset 0 1px 0 rgba(255,255,255,.2),inset 0 -3px 0 rgba(0,0,0,.3),0 14px 24px -14px rgba(0,0,0,.6);
   --knauf-d:linear-gradient(180deg,var(--wo-nacht2),var(--wo-tief)); --knauf-d-s:inset 0 1px 0 rgba(255,255,255,.22),0 3px 6px rgba(0,0,0,.3);
   --knauf-h:linear-gradient(180deg,var(--wo-g1),var(--wo-g3)); --knauf-h-s:inset 0 1px 0 rgba(255,255,255,.8),0 3px 6px rgba(0,0,0,.3);
-  --kn-fs:11px; --kn-ls:.16em;
+  --kn-fs:13px; --kn-ls:.16em;
 }
 body.ws.wo-app{background-color:var(--wo-papier);background-image:var(--wo-tapete);font-size:15px}
 .ws.wo-app{--ws-kopf:74px;--ws-rand:286px;--ws-leise:color-mix(in srgb,var(--wo-tinte) 64%,var(--wo-papier));--ws-leise-h:color-mix(in srgb,var(--wo-tinte) 66%,var(--wo-papier))}
@@ -41,7 +41,7 @@ body.ws.wo-app{background-color:var(--wo-papier);background-image:var(--wo-tapet
 
 /* Quittung über der Leiste, im Rahmen «Die Bühne» */
 .ws.wo-app .ws-quittung-ort{left:342px;right:28px;bottom:104px}
-.wo-rand__z{font-style:normal;font:400 9.5px/1 var(--wo-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--wo-akzent);margin-left:auto}
+.wo-rand__z{font-style:normal;font:400 13px/1 var(--wo-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--wo-akzent);margin-left:auto}
 @media (max-width:900px){
   .ws.wo-app .ws-quittung-ort{left:10px;right:10px;bottom:84px}
   .ws.wo-app .ws-haupt,.ws.wo-app #ws-mitte{padding:0}
@@ -189,3 +189,34 @@ textarea.ws-langfeld{display:block;width:100%;box-sizing:border-box;resize:none;
 .ws-zl__wert[data-klein="ja"]{text-box:trim-both ex alphabetic}
 /* Messlauf 08.11.2026 (Kriterium 15): zum Kartenbrett führt der Weg im Kopf (Werkzeuge des Hauses); die Gruppe «Karten» im Rand wäre ein zweiter Weg zum selben Ziel */
 #ws-rand .wo-rand__g:has(a.wo-re[href*="/_werkzeuge/carte/"]){display:none}
+
+/* Punkt 17 (Robert 09.11.2026): keine Schrift unter 13 px. Die Dateien des Stamms (welt.css, website.css) bleiben unverändert; hier im Haus gehoben, in jedem Zustand. */
+.kap,
+.angabe,
+.feld > label, .feld > span,
+.marke,
+.ws-mono,
+.ws-kopf__marke small,
+.ws-kopf__stand,
+.ws-nav p,
+.ws-nw i,
+.ws-nw em,
+.ws-zier,
+.ws-bk__n small,
+.ws-bk__o,
+.ws-wahl2 button,
+.ws-gr > summary small,
+.ws-st small,
+.ws-klein,
+.ws-fehlt,
+.ws-vorschau__k a,
+.ws-taste,
+.ws-leiste__t > span,
+.ws-leiste .marke,
+.ws-fwahl__t,
+.ws-ang__wo summary,
+.ws-gt__adr,
+.ws-gt__zahl{font-size:13px}
+@media (max-width: 560px){
+.ws-leiste .kn{font-size:13px}
+}
