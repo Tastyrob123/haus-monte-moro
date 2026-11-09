@@ -58,14 +58,19 @@ Erledigt:
 - Prüfskript vom Mac übernommen (378cb18). Werkbank fiel durch (Prüfpunkt 6 an den Bildkarussells «Ideen»/«Gäste», Klasse `.band`). Jetzt `kartenzug` (`_werkbank/kartenzug.py`, aus `haus.nach_bau` aufgerufen, Kit unverändert) → BESTANDEN. Dabei gefunden und behoben: Zähler «01 / 12» blieb beim Blättern stehen.
 - Hotelbüro fiel durch (Prüfpunkt 9, Laufband als Liste) → Laufband aus `span` statt `li`, Aussehen gleich → BESTANDEN (7bab2b5).
 - Baustein der Rezeption in die Website eingebaut (`website/assets/js/rezeption-weg.js`, über `bau.py`), Weg Anfrage → Eingang und Chat → «Das wurde gefragt» geprüft, Testeinträge gelöscht.
-Offen, in Reihenfolge: WebKit-Ersatzweg (apt `webkit2gtk-driver`), Oberflächenprüfung Rest, Schlussprüfung tor-schnell + Messlauf über alle Ziele frisch, Augen auf Bilder, Tafel nach `ergebnis/laeufe/2026-11-09/`, erste Zeile «Fertig. Geprüft.».
+- Oberflächenprüfung (Mac-Fassung) über alle 21 Oberflächen: 21 × BESTANDEN (nach den zwei Reparaturen).
+- Hausdruckerei: Rest «Violett (Dirty Chicken)» in der Vorlagenwahl und Bezeichnung «Dirty Chicken» entfernt.
+- WebKit-Ersatzweg: `apt-get install webkit2gtk-driver xvfb`, dann `xvfb-run -a node cloud/webkit_blick.js <aus> <urls…>` (MiniBrowser, 390 im iframe, weil das Fenster nicht schmaler als 447 px wird). Lauf über 28 Ziele + 9 Website-Seiten nach `aus-webkit/`.
+- Hauswerte nachgeprüft: 11 Röstis, 5 Cordon bleus mit Preisen im Kartenbrett = `daten.py`.
+Läuft: `cloud/schluss.sh` → `aus-ende/` (/tmp/schluss.log), Messlauf → `aus-mess/alle/` (/tmp/mess.log), drei Prüf-Agenten mit den Augen (Werkzeuge 1–4, 5–7, Werkbank).
+Offen, in Reihenfolge: Funde der Agenten reparieren und nachprüfen, Ergebnis Schluss/Messlauf/WebKit, Tafel nach `ergebnis/laeufe/2026-11-09/`, erste Zeile «Fertig. Geprüft.» mit Belegen.
 
 ## Entscheidungen der Nacht
 - 09.11.: Prüfskript genau in der Mac-Fassung (153 Zeilen); die frühere Ausnahme der Vorsitzung für Bildbänder fällt weg, stattdessen heissen die Bildkarussells `kartenzug` (sie sind keine Laufbänder).
 - 09.11.: Laufband des Hotelbüros (aria-hidden, Zierband) aus `span` statt Liste; der Prüfpunkt 9 meint Knöpfe und Text im Inhalt.
 - 09.11.: «Website-Revier, nicht Teil des Pakets» war falsch eingeengt: Baustein eingebaut. Datenschutz bleibt im Wortlaut des Hauses; er deckt Anfragen über Formulare schon ab, eine Löschfrist veröffentlicht das Haus nicht, also wird keine erfunden.
 - Gearbeitet wird auf `claude/task-o0ores` (Auftrag der Folgesitzung), nicht auf main.
-- Geprüft nur in Chromium (WebKit nicht ladbar, siehe Stolpersteine).
+- Geprüft in Chromium; WebKit (Playwright-Download gesperrt) seit 09.11. über WebKitWebDriver aus Debian (`cloud/webkit_blick.js`).
 - Schaufenster «Zeiten & Preise» zeigte «90 .00» (Leser des Stamms setzt Leerschlag für Tags). Korrigiert nur in der Anzeige des Hauses (`bureau/festigkeit.js › zahlwert`), Stamm-Leser unverändert, weil seine Kennungen gespeicherte Änderungen tragen. Schaufenster nach der Schlussprüfung neu prüfen.
 
 ## Wartet auf Roberts Wort
