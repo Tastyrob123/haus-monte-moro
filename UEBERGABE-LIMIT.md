@@ -1,5 +1,7 @@
 In Prüfung.
 
+**NOCH OFFEN zu Punkt 5 (Mac-Chat, 09.11. 17:35): Commit cbae63b hat Angaben je Blatt gebaut (`_werkbank/karten_faecher.py` › `blatt()`: `kf__t` mit `<small>` Seiten · Format · Stand und `<em>` Inhalt). Das hat Robert um 16:51 ausdrücklich verboten. Entfernen: je Blatt nur noch das Etikett wie vorher im Fächer (Name und «ansehen»), keine Seiten, kein Format, kein Stand, kein Inhalt, keine Zahlenreihe. Die fünf Blätter bleiben. Danach Prüfpunkt 15 frei, dann erst «Fertig.».**
+
 **ZUERST: `KORREKTUR-ROBERT.md` Punkt 5 BERICHTIGT (Robert 09.11.2026, 16:51): im Kapitel «Ihre Karten» nur mehr Blätter im Raum schweben lassen (alle Unterlagen), KEINE Kacheln, KEINE Beschreibungen oder Angaben je Blatt, keine Zahlenreihe; schon Gebautes davon rückgängig. Punkte 1–4 bleiben. Vorher kein «Fertig.».**
 
 **Punkt 5 (Kapitel Karten) umgesetzt (cbae63b): fünf Karten des Kartenbretts als Blätter mit Seiten, Format, Stand, Inhalt; sechstes Feld «Gesetzt im Kartenbrett.»; Prüfpunkt 15 frei.**
