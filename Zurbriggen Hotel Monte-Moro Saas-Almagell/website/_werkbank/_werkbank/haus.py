@@ -513,6 +513,8 @@ def nach_bau():
     _sp = _iu.spec_from_file_location('rs_haus', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ruecksprung.py'))
     _rs = _iu.module_from_spec(_sp); _sp.loader.exec_module(_rs)
     _rs.anwenden(ROOT)
+    import schrift_13   # ganz zuletzt: keine Lese-Schrift unter 13 px, Luft zwischen den Kartons (Prüfpunkte 17 und 18, Robert 09.11.2026)
+    schrift_13.anwenden(ROOT)
 
 
 TITEL_NEU = {   # eigene Überschriften des Monte-Moro (Werkbank-Regel 14)

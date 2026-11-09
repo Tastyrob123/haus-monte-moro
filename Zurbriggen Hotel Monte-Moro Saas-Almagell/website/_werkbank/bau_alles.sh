@@ -29,4 +29,5 @@ node _werkbank/sb_strom.js || true
 python3 _werkbank/objekte_bau.py "$P"
 python3 "$K/bau.py" "$P" | grep -v "Schrift fehlt"
 python3 "$K/ruecksprung.py" "$P"                                      # zuletzt: Rücksprung des Kits (Fassung mit Merkpunkt, wie geprüft) in jede Seite
+python3 _werkbank/schrift_13.py "$P"                                  # ganz zuletzt: keine Lese-Schrift unter 13 px, Luft zwischen den Kartons (Prüfpunkte 17/18)
 echo "fertig: http://127.0.0.1:9388/werkbank/"

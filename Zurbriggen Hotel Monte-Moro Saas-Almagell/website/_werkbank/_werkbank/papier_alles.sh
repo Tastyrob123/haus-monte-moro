@@ -38,4 +38,5 @@ timeout 120 python3 mails/_src/bau.py; timeout 300 node mails/_src/aufnahme.js
 timeout 120 node _werkbank/zeichen_bild.js                                      # Bilder der Zeichen für die Liste im Material
 timeout 300 $M _werkbank/material_mehr.py "$P"
 timeout 120 python3 _werkbank/papier_nach.py
+timeout 120 python3 _werkbank/schrift_13.py                                    # keine Lese-Schrift unter 13 px, Luft zwischen den Kartons (Prüfpunkte 17/18)
 echo "Papier fertig: http://127.0.0.1:9388/drucksachen/index.html"
