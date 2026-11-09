@@ -74,6 +74,7 @@ Keiner – alles fertig und geprüft. Nur noch «Wartet auf Roberts Wort».
 ## Folgesitzung nach Stillstand (session_0189oeKhE5oHiD5mK18i2yjR, 09.11. 01:00 UTC)
 - Letztes Lebenszeichen der Gegenprüfung 20:48 (Funde 3 und 4 repariert, 587f496). Kein Bau-Agent offen; alle acht Reviere haben LIEFERUNG.md. Keiner neu gestartet.
 - Offen war nur: Nachprüfung der Ziele, die nach der Schlussprüfung repariert wurden (77b8f0d, 587f496): hotelbuero, hausdruckerei, hausdruckerei-mail, werkbank, werkbank-drucksachen, werkbank-material. Läuft in `/tmp/gp` (`cloud/schnell.sh`, Log `/tmp/gp/nachlauf.log`), danach Oberflächenprüfung, Auge, Tafel `ergebnis/laeufe/2026-11-09/`.
+- 01:20: Drucksachen Preisliste Zimmer, Zuschläge, Best of Röstis (beide Seiten) gerendert und angesehen: CHF steht neben der Zahl, Titel vorne/hinten gleich gross. Oberflächenprüfung Hotelbüro, Hausdruckerei, Werkbank, Drucksachen, Material: 5 × BESTANDEN (`/tmp/gp/aus-nach/oberflaeche/`).
 
 ## Entscheidungen der Nacht
 - Nachtsitzung: Auftrag sagt Zweig `ergebnis`; die Übergabe lag nur auf `claude/task-o0ores`. Übergabe und Lebenszeichen leben ab jetzt auf `ergebnis`, Code-Reparaturen weiter auf `claude/task-o0ores`.
@@ -97,6 +98,7 @@ Keiner – alles fertig und geprüft. Nur noch «Wartet auf Roberts Wort».
 - Vorbilder klonen wie in CLAUDE.md.
 
 ## Stolpersteine
+- `tor-schnell.js` startet ohne Angabe WebKit (fehlt hier): immer `--browser chromium` anhängen (`cloud/schnell.sh` tut es nicht).
 - WebKit lässt sich in dieser Umgebung nicht laden (Netz sperrt cdn.playwright.dev): geprüft wird in Chromium.
 - `website/_werkbank/` ist gross (Wild-Side-Bilder aus der Kopie); erst nach dem Neubau einchecken, Wild-Side-Ausgaben vorher löschen.
 - Agenten: keine Heredocs / eingebetteten Skripte in der Shell (hängen an der Freigabe).
