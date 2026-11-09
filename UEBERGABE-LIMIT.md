@@ -1,6 +1,7 @@
 In Prüfung.
 
-**ZUERST: `KORREKTUR-ROBERT.md` umsetzen (Robert 09.11.2026, 10:15: kein Ticket, Rechenbeispiel bedienbar, Draussen vier Kacheln nebeneinander, keine Preise eintragen). Vorher kein «Fertig.».**
+**ACHTUNG ZWEIG: `ergebnis` ist nur die Prüftafel. Gebaut wird auf `claude/task-o0ores` (git fetch origin claude/task-o0ores && git checkout claude/task-o0ores), dort UEBERGABE-LIMIT.md lesen. Offen ist dort `KORREKTUR-ROBERT.md` Punkt 6 (Robert 09.11.2026 abends): Prüfpunkte 17 (Schrift mindestens 13 px) und 18 (kein Leerraum über 380 px) der neuesten Mac-Fassung von `_Werkzeuge/oberflaeche_pruefen.js` frei machen; Karten bleiben nur Blätter. Hier auf `ergebnis` nur Prüftafeln ablegen.**
+
 
 Gegenprüfung der Sitzung session_0189oeKhRzA8vruci5JGApXy läuft auf `claude/task-o0ores` (WebKit über WebKitWebDriver, drei Prüf-Agenten mit den Augen, Schlussprüfung und Messlauf); sie schreibt ihre Tafel nach `ergebnis/laeufe/2026-11-09/` und setzt diese Zeile auf «Fertig.», wenn sie durch ist. Bisheriger Stand:
 
