@@ -17,8 +17,9 @@ async function c(m, p, body) { const r = await fetch(B + p, { method: m, headers
     await c('POST', S + '/frame', { id: null }).catch(() => {});
     await c('POST', S + '/window/rect', { width: schmal ? 900 : w, height: schmal ? 1000 : 900 });
     if (schmal) {
-      await c('POST', S + '/url', { url: 'about:blank' });
-      await c('POST', S + '/execute/sync', { script: `document.body.style.margin='0';const f=document.createElement('iframe');f.id='r';f.style.cssText='border:0;width:${w}px;height:844px;display:block';f.src=arguments[0];document.body.appendChild(f);`, args: [url] });
+      // Rahmen auf derselben Herkunft wie die Seite (Server senden frame-ancestors 'self' / X-Frame-Options SAMEORIGIN)
+      await c('POST', S + '/url', { url: new URL(url).origin + '/__webkit_rahmen_' + Date.now() });
+      await c('POST', S + '/execute/sync', { script: `document.documentElement.innerHTML='<head></head><body></body>';document.body.style.margin='0';const f=document.createElement('iframe');f.id='r';f.style.cssText='border:0;width:${w}px;height:844px;display:block';f.src=arguments[0];document.body.appendChild(f);`, args: [url] });
       await zz(2500);
       rahmen = await c('POST', S + '/element', { using: 'css selector', value: '#r' });
       await c('POST', S + '/frame', { id: rahmen });
@@ -30,10 +31,12 @@ async function c(m, p, body) { const r = await fetch(B + p, { method: m, headers
       const sw = document.documentElement.scrollWidth, iw = document.documentElement.clientWidth;
       const breit = [...document.querySelectorAll('body *')].filter(e => { const r = e.getBoundingClientRect(); if (!r.width || r.right <= iw + 1) return false;
         for (let a = e.parentElement; a; a = a.parentElement) { const o = getComputedStyle(a); if (/hidden|clip|auto|scroll/.test(o.overflowX)) return false; } return getComputedStyle(e).position !== 'fixed'; }).slice(0, 3).map(e => e.tagName + '.' + String(e.className).slice(0, 40));
-      fertig({ sw, iw, breit, f, titel: document.title }); })();`, args: [] });
+      fertig({ sw, iw, breit, f, titel: document.title, laenge: (document.body && document.body.innerText || '').trim().length, wo: location.href }); })();`, args: [] });
     if (schmal) await c('POST', S + '/frame', { id: null });
     const png = await c('GET', S + '/screenshot');
     const datei = path.join(aus, url.replace(/[^A-Za-z0-9]/g, '_').slice(-60) + '-' + w + '.png'); fs.writeFileSync(datei, Buffer.from(png, 'base64'));
+    const leer = !r.titel || r.laenge < 40 || r.wo !== url && !r.wo.startsWith(url.split('#')[0]);
+    if (leer) r.f.push('Seite nicht geladen oder leer (Titel «' + r.titel + '», ' + r.laenge + ' Zeichen, ' + r.wo + ')');
     const ok = r.sw <= r.iw + 1 && !r.breit.length && !r.f.length;
     ergebnis.push({ url, w, ok, ...r, bild: datei }); console.log((ok ? '✓ ' : '✗ ') + w + ' ' + url + (ok ? '' : ' ' + JSON.stringify({ sw: r.sw, iw: r.iw, breit: r.breit, f: r.f })));
   }
