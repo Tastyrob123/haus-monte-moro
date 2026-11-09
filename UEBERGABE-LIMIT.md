@@ -4,7 +4,7 @@ In Prüfung.
 
 **ZUERST: `KORREKTUR-ROBERT.md` Punkt 5 BERICHTIGT (Robert 09.11.2026, 16:51): im Kapitel «Ihre Karten» nur mehr Blätter im Raum schweben lassen (alle Unterlagen), KEINE Kacheln, KEINE Beschreibungen oder Angaben je Blatt, keine Zahlenreihe; schon Gebautes davon rückgängig. Punkte 1–4 bleiben. Vorher kein «Fertig.».**
 
-**Punkt 5 (Kapitel Karten) umgesetzt (cbae63b): fünf Karten des Kartenbretts als Blätter mit Seiten, Format, Stand, Inhalt; sechstes Feld «Gesetzt im Kartenbrett.»; Prüfpunkt 15 frei.**
+**Punkt 5 BERICHTIGT umgesetzt (Nacht 3, nach Roberts 16:51): nur fünf Blätter im Fächer mit Etikett wie vorher, keine Kacheln/Angaben; Titel, Text, Knöpfe wie vorher; Prüfpunkt 15 (Fassung 76b4dfb) frei.**
 
 **`KORREKTUR-ROBERT.md` umgesetzt und abgehakt (09.11., Nacht 3, Commit 6b420e6); Werkbank BESTANDEN.**
 
@@ -96,7 +96,7 @@ Offen, in Reihenfolge: Funde Agent 5–7 reparieren und nachprüfen, Messlauf au
 - Offen: Markenbuch, Besucherliste, Hausdruckerei (Augen-Agent repariert, prüft mit neuer Fassung), dann Tor dieser drei, Oberflächenprüfung über alle 21, Tafel `ergebnis/laeufe/2026-11-09/`.
 
 ## Entscheidungen der Nacht
-- 09.11. (Nacht 3): Kapitel Karten zeigt die fünf Karten des Kartenbretts (Röstihüs, Wein/Apéro, Preisliste, Zuschläge, Spa); Preisliste/Zuschläge/Spa haben keine heutige Fassung, darum nur im Kapitel (PDF in `werkbank/karten/`), Seite «Unterlagen» unverändert. Sechstes Feld: Hinweis aufs Kartenbrett, damit das Raster voll ist.
+- 09.11. (Nacht 3): Kapitel Karten: fünf Blätter = die fünf Karten des Kartenbretts (PDF und Vorschau in `werkbank/karten/`, gebaut von `_werkbank/karten_faecher.py`); Seite «Unterlagen» unverändert. Angaben/Kacheln nach Roberts Berichtigung wieder entfernt.
 - 09.11. (Nacht 3): Kit-`ruecksprung.js` ergänzt (pageshow persisted); die Meldung des Prüfskripts verweist selbst auf diese Datei.
 - 09.11. (Nacht 3): «So geht es weiter» (Angebot): nur Zeilenabstand verteilt, Inhalt und Preise unverändert (Korrektur 4).
 - 09.11. (Nacht 3): Korrektur Punkt 2 betrifft Suitenhotel und Wellnesshotel; die liegen nicht in diesem Repo und werden laut CLAUDE.md hier nicht angefasst. Für Monte-Moro: Rechner `#vt-rechner` bleibt, wird mit echtem Tippen geprüft.

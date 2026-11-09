@@ -522,7 +522,7 @@ TITEL_NEU = {   # eigene Überschriften des Monte-Moro (Werkbank-Regel 14)
     ('Wie alles', 'zusammenhängt.'): ('Was hinter', 'dem Haus steht.'),
     ('Alle Seiten zum', 'Durchblättern.'): ('Vom Zimmer', 'bis zur Anreise.'),
     ('Vorschläge für', 'Ihre Gäste.'): ('Bevor der Gast', 'ankommt.'),
-    ('Ihre Unterlagen,', 'im selben Stil.'): ('Ihre Karten,', 'neu gesetzt.'),   # alle Karten des Hauses (Robert 09.11.2026)
+    ('Ihre Unterlagen,', 'im selben Stil.'): ('Ihre Karte,', 'neu gesetzt.'),
     ('Ein paar Ideen', 'für Papier.'): ('Für Tisch', 'und Zimmer.'),
     ('Ein Feed', 'für Instagram.'): ('Ein Feed', 'am Grat.'),
     ('Alles liegt für', 'Sie bereit.'): ('Alle Dateien', 'an einem Ort.'),

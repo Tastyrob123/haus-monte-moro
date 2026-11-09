@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Werkbank Hotel Monte-Moro, Kapitel «Ihre Karten, neu gesetzt»: alle Karten des Hauses als Blätter mit Angaben
+"""Werkbank Hotel Monte-Moro, Kapitel «Ihre Karte, neu gesetzt»: alle Karten des Hauses als Blätter im Fächer (ohne Angaben)
 (Robert 09.11.2026, 15:34, KORREKTUR-ROBERT.md 5: «nicht zwei dumme Dokumente in der Luft hängen, obwohl es eigentlich mehr sind»).
 Die Karten sind die fünf Karten des Kartenbretts (_werkzeuge/carte/_daten/stand/*.json): Name, was drinsteht («unter»), Format und Stand
 («veroeffentlicht») kommen aus der Karte, die Seitenzahl aus dem gedruckten PDF. Nichts geschätzt.
@@ -61,8 +61,12 @@ def bau():
     print('Karten im Kapitel:', ', '.join(p['ziel'] for p in plan))
 
 
+ETIKETT = {'roestihues': 'Röstihüs', 'wein-apero': 'Weinkarte', 'preisliste': 'Preisliste', 'zuschlaege': 'Zuschläge', 'spa': 'Spa'}
+
+
 def einsetzen(t):
-    """Fächer und Namenzug des Kapitels «Unterlagen» durch alle Karten des Hauses ersetzen (fehlt der Plan: unverändert)."""
+    """Nur mehr Blätter im Fächer (Robert 09.11.2026, 16:51: «einfach nur mehr Dokumente … im Raum schweben», keine Kacheln, keine Angaben):
+    jedes Blatt wie im Kit mit seinem Etikett (Name, «ansehen»); Titel, Text und Knöpfe des Kapitels bleiben. Fehlt der Plan: unverändert."""
     if not os.path.exists(PLAN):
         return t
     plan = json.load(open(PLAN, encoding='utf-8'))
@@ -70,60 +74,32 @@ def einsetzen(t):
         return t
     e = html.escape
     def blatt(i, p):
-        ang = ' · '.join(x for x in (f"{p['seiten']} {'Seite' if p['seiten'] == 1 else 'Seiten'}" if p['seiten'] else '', p['format'], f"Stand {p['stand']}" if p['stand'] else '') if x)
-        return (f'<a class="blattk kf__b kf__b--{i + 1}" style="--j:{i}" href="{e(p["href"])}" target="_blank" rel="noopener">'
-                f'<span class="kf__s"><img src="karten/{p["ziel"]}.webp" width="{p["b"]}" height="{p["h"]}" alt="{e(p["name"])}" loading="lazy" decoding="async"><i class="kf__p" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></span>'
-                f'<span class="kf__t"><strong>{e(p["name"])}</strong><small>{e(ang)}</small><em>{e(p["unter"])}</em></span></a>')
-    staende = sorted({p['stand'] for p in plan if p['stand']})
-    try:
-        import rh_werkzeuge as WK
-        carte = [w for w in WK.WERKZEUGE if w[0] == 'carte'][0]
-        knopf = f'<a class="kf__l" href="{e(carte[6])}" target="_blank" rel="noopener">{e(carte[1])} öffnen</a>' if carte[6] else ''
-    except Exception:
-        knopf = ''
-    zahl = {3: 'Drei', 4: 'Vier', 5: 'Fünf', 6: 'Sechs'}.get(len(plan), str(len(plan)))
-    info = (f'<div class="kf__i"><p class="kf__k">{zahl} Karten, ein Werkzeug</p><h3>Gesetzt im Kartenbrett.</h3>'
-            f'<p>Gerichte, Weine und Preise pflegen Sie im Kartenbrett; daraus entstehen diese Blätter, druckfertig als PDF.</p>'
-            + (f'<p class="kf__k">Stand {staende[-1]}</p>' if staende else '') + knopf + '</div>')
-    neu = f'<div class="faecher faecher--{len(plan)} kf" data-a="auf">' + ''.join(blatt(i, p) for i, p in enumerate(plan)) + (info if len(plan) % 3 else '') + '</div>'
+        n = ETIKETT.get(p['ziel'], p['name'])
+        return (f'<a class="blattk blattk--{i + 1}" style="--j:{i}" href="{e(p["href"])}" target="_blank" rel="noopener">'
+                f'<img src="karten/{p["ziel"]}.webp" width="{p["b"]}" height="{p["h"]}" alt="Idee: {e(n)}" loading="lazy" decoding="async"><span>{e(n)}<b>ansehen</b></span></a>')
+    neu = f'<div class="faecher faecher--{len(plan)}" data-a="auf">' + ''.join(blatt(i, p) for i, p in enumerate(plan)) + '</div>'
     t, n = re.subn(r'<div class="faecher faecher--\d+"[^>]*>.*?</a>\s*</div>', lambda m: neu, t, count=1, flags=re.S)
     if not n:
         return t
-    # Titel und Satz des Kapitels in der Mehrzahl (nur hier; die Seite «Unterlagen» bleibt bei der Röstihüs-Karte)
-    # Titel «Ihre Karten, neu gesetzt.» setzt haus.TITEL_NEU
-    t = t.replace('Die Karte des Röstihüs, neu gesetzt neben den Seiten, wie sie heute auf dem Tisch liegen: die Röstis, die Cordon bleus, der Wein von Fabian und der Apéro.',
-                  'Alle Karten des Hauses, neu gesetzt: die Röstis und Cordon bleus, der Wein von Fabian mit dem Apéro, die Preisliste, die Zuschläge und das Spa im Partnerhotel. '
-                  'Die Karten des Röstihüs liegen in den Unterlagen neben den Seiten, wie sie heute auf dem Tisch liegen.', 1)
     namen = ''.join(f'<span>{e(p["name"])}</span>' for p in plan)
     t = re.sub(r'(<div class="namenzug"[^>]*><div>).*?(</div></div>)', lambda m: m.group(1) + namen * 5 + m.group(2), t, count=1, flags=re.S)
     return t
 
 
 CSS = """
-/* ---------- Kapitel Karten: alle Karten des Hauses mit Angaben (karten_faecher.py, Robert 09.11.2026) ---------- */
-.faecher.kf{position:relative;aspect-ratio:auto;max-width:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:auto;gap:clamp(12px,1.2vw,18px);align-self:stretch}
-.kf .blattk{position:relative;top:auto;left:auto;width:auto;display:flex;flex-direction:column;border-radius:14px;overflow:hidden;background:rgba(255,255,255,.05);
-  box-shadow:inset 0 0 0 1px rgba(255,255,255,.1),0 30px 40px -28px rgba(0,0,0,.8);color:#f6f1e8;text-decoration:none;transform:translateY(60px)}
-.kf.da .blattk,.da .kf .blattk{transform:none}
-.kf.da .blattk:hover{transform:translateY(-6px)}
-.kf .blattk .kf__s{display:block;position:relative;aspect-ratio:210/297;overflow:hidden;background:#f7f3ec}
-.kf .blattk .kf__s img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 0;display:block}
-.kf .blattk .kf__t{position:static;background:none;text-transform:none;letter-spacing:0;font-family:inherit;justify-content:flex-start;display:flex;flex-direction:column;gap:3px;padding:12px 14px 14px}
-.kf .kf__t strong{font-family:var(--serif);font-weight:400;font-size:clamp(1rem,1.15vw,1.25rem);line-height:1.15}
-.kf .kf__t small{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
-.kf .kf__t em{font-style:normal;font-size:.86rem;line-height:1.35;color:rgba(246,241,232,.78)}
-.kf .kf__t b{font-family:var(--mono);font-weight:400;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(246,241,232,.62);margin-top:4px}
-.kf .blattk .kf__t{white-space:normal;overflow:visible}
-.kf__i{display:flex;flex-direction:column;justify-content:center;gap:10px;padding:clamp(16px,1.6vw,24px);border-radius:14px;background:rgba(255,255,255,.04);box-shadow:inset 0 0 0 1px rgba(216,178,100,.28);color:#f6f1e8}
-.kf__i h3{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(1.25rem,1.6vw,1.7rem);line-height:1.12;color:#f6f1e8}
-.kf__i p{margin:0;font-size:.92rem;line-height:1.45;color:rgba(246,241,232,.8)}
-.kf__i .kf__k{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
-.kf__i .kf__l{margin-top:4px;font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#f6f1e8;text-decoration:none;border-bottom:1px solid var(--gold);align-self:flex-start;padding-bottom:3px}
-.kf__i .kf__l:hover{color:var(--gold)}
-@media(max-width:1199px){.faecher.kf{grid-template-columns:1fr 1fr}}
-.kf .kf__p{position:absolute;right:10px;top:10px;width:30px;height:30px;border-radius:50%;background:var(--navy);display:grid;place-items:center;box-shadow:0 6px 12px -6px rgba(0,0,0,.6)}
-.kf .kf__p svg{width:12px;height:12px;fill:none;stroke:#f6f1e8;stroke-width:1.6}
-@media(prefers-reduced-motion:reduce){.kf .blattk{transform:none;transition:none}}
+/* ---------- Kapitel Karten: fünf Blätter schweben im Fächer, zwei Reihen versetzt (karten_faecher.py, Robert 09.11.2026, 16:51) ---------- */
+.faecher--5{aspect-ratio:1/.9}
+.faecher--5 .blattk{width:28%}
+.faecher--5 .blattk--1{left:4%;top:3%;z-index:1}.faecher--5 .blattk--2{left:36%;top:0;z-index:2}.faecher--5 .blattk--3{left:68%;top:4%;z-index:1}
+.faecher--5 .blattk--4{left:20%;top:52%;z-index:3}.faecher--5 .blattk--5{left:52%;top:53%;z-index:3}
+.da .faecher--5 .blattk--1,.faecher--5.da .blattk--1{transform:rotate(-7deg)}.da .faecher--5 .blattk--2,.faecher--5.da .blattk--2{transform:rotate(-1.5deg)}
+.da .faecher--5 .blattk--3,.faecher--5.da .blattk--3{transform:rotate(6deg)}.da .faecher--5 .blattk--4,.faecher--5.da .blattk--4{transform:rotate(3.5deg)}
+.da .faecher--5 .blattk--5,.faecher--5.da .blattk--5{transform:rotate(-4deg)}
+.faecher--5.da .blattk--1:hover{transform:rotate(-7deg) translateY(-18px)}.faecher--5.da .blattk--2:hover{transform:rotate(-1.5deg) translateY(-18px)}
+.faecher--5.da .blattk--3:hover{transform:rotate(6deg) translateY(-18px)}.faecher--5.da .blattk--4:hover{transform:rotate(3.5deg) translateY(-18px)}
+.faecher--5.da .blattk--5:hover{transform:rotate(-4deg) translateY(-18px)}
+.faecher--5 .blattk span{padding:9px 11px}
+@media(max-width:700px){.faecher--5 .blattk span{flex-direction:column;gap:3px;font-size:9px;letter-spacing:.06em;padding:7px 8px}}
 """
 
 
