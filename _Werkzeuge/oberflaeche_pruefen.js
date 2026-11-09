@@ -9,6 +9,8 @@
 //   5 nicht dasselbe kleine Bild in jeder Zeile
 //   6 Laufband: Schrift mittig im sichtbaren Band
 //   7 keine Fehler, kein fehlendes Bild, nichts läuft über den Rand (1440 und 390)
+//   9 kein Knopf, kein Text, keine Tafel wird vom nächsten Abschnitt verdeckt (runde Ecken legen sich darüber) oder vom eigenen Abschnitt abgeschnitten
+//     (Robert 09.11.2026, Chalet Rustica: «Button komplett abgeschnitten … so grundlegende Themen, über die wir gar nicht erst reden müssen»)
 const { chromium } = require('/Users/robertreff/Desktop/Website-Projekte/_Befund-Vorschlaege/node_modules/playwright');
 const arg = process.argv.slice(2);
 const adresse = arg.find(a => /^https?:/.test(a));
@@ -59,16 +61,16 @@ async function pruefe(b, breite) {
       if (ix * iy > 0.04 * Math.min(r1.w * r1.h, r2.w * r2.h)) out.push('2 Zwei Bildschirme liegen übereinander in ' + abschnitt(schirme[a]) + '. Eine Ansicht je Abschnitt.');
     }
     // 3 leere Abschnitte, Platzhalter, leere Tafeln
-    document.querySelectorAll('[class*="--platz"],[class*="--leer"],[class*="platzhalter"],[data-leer]').forEach(e => { if (sicht(e)) out.push('3 Platzhalter statt Inhalt in ' + abschnitt(e) + '.'); });
+    document.querySelectorAll('[class*="--platz"],[class*="--leer"],[class*="platzhalter"],[data-leer]').forEach(e => { if (sicht(e) && !e.closest('form')) out.push('3 Platzhalter statt Inhalt in ' + abschnitt(e) + '.'); });
     document.querySelectorAll('section').forEach(s => {
       if (!sicht(s) || s.getBoundingClientRect().height < 250) return;
       const t = (s.innerText || '').replace(/\s+/g, ' ').trim();
-      if (t.length < 60 && !s.querySelector('img,video,canvas,svg image')) out.push('3 Abschnitt fast leer: ' + name(s) + '.');
+      if (t.length < 60 && !s.querySelector('img,video,canvas,svg image,iframe')) out.push('3 Abschnitt fast leer: ' + name(s) + '.');
     });
     document.querySelectorAll('[class*="tafel"],[class*="karte"],[class*="card"]').forEach(k => {
       if (!sicht(k) || k.getBoundingClientRect().height < 120 || k.querySelector('img')) return;
       const kopie = k.cloneNode(true); kopie.querySelectorAll('button,a').forEach(x => x.remove());
-      if (kopie.textContent.replace(/\s+/g, '').length < 15) out.push('3 Leere Tafel in ' + abschnitt(k) + ' (nur ein Knopf, kein Inhalt).');
+      if (kopie.textContent.replace(/\s+/g, '').length < 15 && k.querySelectorAll('button,a').length <= 1) out.push('3 Leere Tafel in ' + abschnitt(k) + ' (nur ein Knopf, kein Inhalt).');
     });
     // 4 grosse Zahlen lose auf dem Hintergrund
     const hatFlaeche = e => { const s = getComputedStyle(e); const bg = s.backgroundColor; return (bg && bg !== 'transparent' && !/rgba\([^)]*,\s*0\)$/.test(bg)) || s.backgroundImage !== 'none' || s.boxShadow !== 'none' || parseFloat(s.borderTopWidth) > 0 || parseFloat(s.borderLeftWidth) > 0; };
@@ -77,6 +79,8 @@ async function pruefe(b, breite) {
       if (!sicht(e) || e.children.length > 1) return;
       const t = e.textContent.trim(); if (!/^[\d'’.,]+%?$/.test(t)) return;
       if (parseFloat(getComputedStyle(e).fontSize) < 28) return;
+      // Zahl als Wort in einem ganzen Satz (Titel in Wort-Spans zerlegt, z. B. «40 Weltcupsiege») ist keine lose Kennzahl
+      const satz = e.closest('h1,h2,h3,h4,h5,h6,p,blockquote,li'); if (satz && satz !== e && (satz.textContent.match(/[A-Za-zÀ-ÿ]{3,}/g) || []).length >= 3) return;
       let a = e.parentElement, lose = true;
       while (a && a !== document.body) {
         if (a.matches('section,main,header,footer,body')) break;
@@ -94,15 +98,43 @@ async function pruefe(b, breite) {
       if (!sicht(bd) || getComputedStyle(bd).overflow.indexOf('hidden') < 0) return;
       const t = bd.querySelector('li button, li, span'); if (!t) return;
       const r = bd.getBoundingClientRect(); let unten = r.bottom;
-      // Ein Laufband ist ein Schriftstreifen. Bildbänder zum Blättern (Karten mit Fotos, höher als 160 px) sind keins (Beleg 08.11.2026, Werkbank Monte-Moro:
-      // die Ziffer «01» auf dem ersten Bild im Ideen- und Gästeband wurde gegen die Bandmitte gemessen). [data-laufband] wird immer gemessen.
-      if (!bd.hasAttribute('data-laufband') && r.height > 160 && bd.querySelector('img,picture,video')) return;
       const n = bd.nextElementSibling; if (n) { const rn = n.getBoundingClientRect(); if (rn.top < unten && rn.top > r.top) unten = rn.top; }
       const rt = t.getBoundingClientRect(), mitte = (r.top + unten) / 2, tm = (rt.top + rt.bottom) / 2;
       if (Math.abs(mitte - tm) > 3) out.push('6 Laufband: Schrift sitzt ' + Math.round(tm - mitte) + ' px neben der Mitte des sichtbaren Bands (' + name(bd) + ').');
     });
+    // 9 Inhalt vom nächsten Abschnitt verdeckt oder vom eigenen Abschnitt abgeschnitten (Bilder dürfen unter die runde Ecke laufen, Knöpfe und Text nie)
+    {
+      const secs = [...document.querySelectorAll('main > section, main > div, body > footer')].filter(sicht);
+      const INH = 'a, button, h1, h2, h3, h4, p, li, dt, dd, .knopf, .blatt, .tafel-holz, label, input, select, textarea';
+      const gemeldet = new Set();
+      secs.forEach((S, i) => {
+        const N = secs[i + 1], rs = S.getBoundingClientRect(), cs = getComputedStyle(S);
+        const schneidet = /clip|hidden/.test(cs.overflow + cs.overflowY);
+        S.querySelectorAll(INH).forEach(e => {
+          if (!sicht(e) || e.closest('figure')) return;
+          const r0 = e.getBoundingClientRect(), r = { top: r0.top, bottom: r0.bottom, right: r0.right };
+          // nur der sichtbare Teil zählt: Vorfahren mit overflow clip/hidden innerhalb des Abschnitts schneiden ab (z. B. geschlossene Akkordeon-Streifen)
+          for (let a = e.parentElement; a && a !== S; a = a.parentElement) { const ca = getComputedStyle(a); if (/clip|hidden/.test(ca.overflow + ca.overflowY)) { const ra = a.getBoundingClientRect(); r.bottom = Math.min(r.bottom, ra.bottom); r.top = Math.max(r.top, ra.top); } }
+          if (r.bottom - r.top <= 2) return;
+          if (N && getComputedStyle(N).position !== 'fixed') {
+            const rn = N.getBoundingClientRect();
+            if (r.bottom > rn.top + 1 && r.top < rn.top - 2 && +getComputedStyle(N).zIndex >= 0) { const k = '9v' + name(e); if (!gemeldet.has(k)) { gemeldet.add(k); out.push('9 Vom nächsten Abschnitt verdeckt (' + Math.round(r.bottom - rn.top) + ' px): ' + name(e) + ' «' + (e.textContent || '').trim().slice(0, 30) + '» in ' + name(S) + '. Abstand unten vergrössern.'); } }
+          }
+          if (schneidet && (r.bottom > rs.bottom + 1 || r.right > rs.right + 1)) { const k = '9a' + name(e); if (!gemeldet.has(k)) { gemeldet.add(k); out.push('9 Vom eigenen Abschnitt abgeschnitten: ' + name(e) + ' «' + (e.textContent || '').trim().slice(0, 30) + '» in ' + name(S) + '.'); } }
+        });
+      });
+    }
+    // 8 Werkbank, Kapitel Werkzeuge: jedes Werkzeug hat seine Adresse und einen Knopf zum Öffnen (Robert 08.11.2026: «Bei den Werkzeugen fehlen die Buttons … dummer Fehler»)
+    document.querySelectorAll('.ins-t[data-i]').forEach(t => {
+      const n = t.getAttribute('aria-label') || t.dataset.i;
+      if (!t.dataset.url) out.push('8 Werkzeug ohne Adresse in der Werkbank: ' + n + ' (Klick auf den Bildschirm öffnet nichts). Server starten und neu bauen.');
+      if (!t.querySelector('.kn-reihe a[href]')) out.push('8 Werkzeug ohne Knopf «öffnen»: ' + n + '.');
+    });
     return out;
   }, { SN: SCHIRM_NAME.source, SK: SCHIRM_KLASSE.source, GE: GERAET.source });
+  // 8 Jede Werkzeug-Adresse der Werkbank antwortet (sonst öffnet der Knopf eine tote Seite)
+  const wege = await p.evaluate(() => [...new Set([...document.querySelectorAll('.ins-t[data-url]')].map(t => t.dataset.url).filter(Boolean))]).catch(() => []);
+  for (const w of wege) { const r = await p.request.get(w, { timeout: 8000 }).catch(() => null); if (!r || r.status() >= 400) befund.push('8 Werkzeug antwortet nicht: ' + w); }
   await p.close();
   return [...new Set(fehler.map(f => '7 ' + f).concat(befund))].map(x => breite + ' px · ' + x);
 }

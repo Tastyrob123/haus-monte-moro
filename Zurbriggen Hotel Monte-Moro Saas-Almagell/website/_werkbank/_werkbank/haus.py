@@ -468,6 +468,8 @@ def nach_bau():
         if f'id="{_id}"' not in t:
             t = t.replace('</body>', _js + '\n</body>', 1)
     open(seite, 'w', encoding='utf-8').write(t)
+    import kartenzug as _kz   # Bildkarussells heissen «kartenzug», nicht «band» (Nachtrag 09.11.2026, Prüfpunkt 6)
+    _kz.anwenden(_WB)
     import feed_leicht as _fl
     if _fb.BEREIT and _FEED_DA:
         _fl.mach()

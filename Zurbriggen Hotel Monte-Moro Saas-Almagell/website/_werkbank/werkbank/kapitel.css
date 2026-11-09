@@ -534,7 +534,7 @@ html.ins-ruhe :is(.stapel .tel,.runter i,.zeile__z,.namenzug div,.wb-band__zug,.
 /* Werkbank-Regel 1 (Robert 17.10.2026): seitliches Scrollen und Wischen in Bändern und Kacheln bleibt wie im Kit. Behoben ist nur das Hängenbleiben:
    was seitlich scrollt, hat kein eigenes senkrechtes Scrollen (overflow-x:auto macht overflow-y sonst zu auto) und hält das Mausrad nicht fest,
    das senkrechte Scrollen läuft immer an die Seite weiter. Kein wheel-Handler, kein preventDefault. */
-.band,.wahl,.vh-wahl,.ins-reiter,.brett-scroll,.schritte,.bfk-liste,.fb__reiter{overflow-y:hidden!important;overscroll-behavior-y:auto!important}
+.kartenzug,.wahl,.vh-wahl,.ins-reiter,.brett-scroll,.schritte,.bfk-liste,.fb__reiter{overflow-y:hidden!important;overscroll-behavior-y:auto!important}
 .gf__tel .tel>div{overflow-y:hidden!important;overscroll-behavior:auto!important}
 /* Zeichen der Bühne «Einmal ändern» und der Karte: das Medaillon in Gold */
 .fbs__zeichen{fill:currentColor!important;color:var(--gold)}

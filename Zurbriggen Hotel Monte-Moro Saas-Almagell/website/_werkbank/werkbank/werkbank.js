@@ -142,12 +142,12 @@
 
   /* ---------- Bänder zum Blättern ---------- */
   $$('.gang').forEach(function (g) {
-    var band = $('.band', g), balken = $('.gang__b i', g), zahl = $('.gang__z', g), vor = $('[data-vor]', g), zur = $('[data-zur]', g), t = 0;
+    var band = $('.kartenzug', g), balken = $('.gang__b i', g), zahl = $('.gang__z', g), vor = $('[data-vor]', g), zur = $('[data-zur]', g), t = 0;
     function stand() {
       t = 0;
       var max = band.scrollWidth - band.clientWidth, k = [].slice.call(band.children), x = band.scrollLeft;
       if (balken) balken.style.transform = 'scaleX(' + Math.max(0.08, max > 0 ? x / max : 1) + ')';
-      var nr = 1; k.forEach(function (el, i) { if (el.offsetLeft - band.offsetLeft - 60 <= x) nr = i + 1; });
+      var nr = 1; k.forEach(function (el, i) { if (el.offsetLeft - k[0].offsetLeft - 60 <= x) nr = i + 1; });
       if (max > 0 && x >= max - 2) nr = k.length;
       if (zahl) zahl.textContent = ('0' + nr).slice(-2) + ' / ' + ('0' + k.length).slice(-2);
       if (zur) zur.disabled = x <= 2;

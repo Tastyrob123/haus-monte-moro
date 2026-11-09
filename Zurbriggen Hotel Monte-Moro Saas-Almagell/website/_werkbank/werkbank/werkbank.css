@@ -261,9 +261,9 @@ ul,ol{list-style:none}
 
 /* ---------- Band zum Blättern ---------- */
 .gang{position:relative}
-.band{display:flex;gap:clamp(14px,1.6vw,24px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:10px var(--rand) 44px;margin:0 calc(var(--rand)*-1);scroll-padding-inline:var(--rand);overscroll-behavior-x:contain}
-.band::-webkit-scrollbar{display:none}
-.band>*{flex:none;scroll-snap-align:start}
+.kartenzug{display:flex;gap:clamp(14px,1.6vw,24px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:10px var(--rand) 44px;margin:0 calc(var(--rand)*-1);scroll-padding-inline:var(--rand);overscroll-behavior-x:contain}
+.kartenzug::-webkit-scrollbar{display:none}
+.kartenzug>*{flex:none;scroll-snap-align:start}
 .gang__f{display:flex;align-items:center;gap:18px;margin-top:4px}
 .gang__b{flex:1;height:2px;background:rgba(255,255,255,.16);position:relative;overflow:hidden;border-radius:2px}
 .fl--papier .gang__b,.fl--creme .gang__b{background:rgba(12,42,73,.14)}
@@ -902,7 +902,7 @@ body.kino-offen{overflow:hidden}
 @media(max-width:560px){.gruss-u--bild .gruss-u__n{display:block}}
 
 /* ---------- Blätterband: nur waagrecht scrollen, sonst fängt es das Mausrad ab (Fund GBR-Werkbank 10.10.2026: 18 px senkrechter Überlauf, Seite blieb stehen) ---------- */
-.band{overflow-y:hidden;overscroll-behavior-y:auto}
+.kartenzug{overflow-y:hidden;overscroll-behavior-y:auto}
 
 /* Mails (11.10.2026, Grand Beau-Rivage): hochkante Karten im Band, oberer Teil jeder Mail; darunter die Sprachen */
 .ml .idee{width:min(72vw,340px)}
