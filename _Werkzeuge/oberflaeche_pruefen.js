@@ -12,7 +12,7 @@
 //   9 kein Knopf, kein Text, keine Tafel wird vom nächsten Abschnitt verdeckt (runde Ecken legen sich darüber) oder vom eigenen Abschnitt abgeschnitten
 //     (Robert 09.11.2026, Chalet Rustica: «Button komplett abgeschnitten … so grundlegende Themen, über die wir gar nicht erst reden müssen»)
 //  10 keine Leerfläche unter der kürzeren von zwei Tafeln/Spalten nebeneinander: Inhalt verteilt sich über die Höhe, Spalten gleich hoch, letzte Rasterreihe voll
-//     (Robert 09.11.2026, Besucherliste Schlössli: «Da ist so ein Leerbereich unten, den ich nicht haben will … Das kann doch nicht sein, dass sowas jetzt erst bei mir auffällt»)
+//     (Robert 09.11.2026, Besucher Schlössli: «Da ist so ein Leerbereich unten, den ich nicht haben will … Das kann doch nicht sein, dass sowas jetzt erst bei mir auffällt»)
 //  11 Auftritte beim Scrollen: Was unterhalb des ersten Bildschirms steht, schwebt beim Hereinscrollen an seinen Platz (nur Seiten über 1,6 Bildschirme)
 //     (Robert 09.11.2026, Markenbuch und Werkzeuge: «diese Animationen, dieses luxuriöse, edle, überall … Ich habe das Gefühl, das hast du jetzt teilweise überall rausgelöscht»)
 //  12 Zurück-Pfeil aus dem Speicher des Browsers (Safari): Seiten mit Rücksprung stehen danach wieder an der alten Stelle, nicht ganz oben
@@ -242,6 +242,36 @@ async function pruefe(b, breite) {
       const kamen = window.__vor.filter(([e, v]) => e.isConnected && st(e) !== v).length;
       if (!kamen) out.push('11 Nichts schwebt beim Scrollen herein: unterhalb des ersten Bildschirms steht alles still. Auftritte wie in den abgenommenen Häusern einbauen.');
     }
+    // 17 Keine Schrift unter 12,4 px (Robert 09.11.2026, Werkbank Sroka: «solchen kleinen Schriften, die da irgendwo mittig hängen. Mit denen keiner was anfangen kann»)
+    { const klein = {};
+      document.querySelectorAll('body *').forEach(e => {
+        if (e.closest('svg,[aria-hidden="true"],iframe,.ins-sc,.schau')) return;
+        if (![...e.childNodes].some(n => n.nodeType === 3 && n.textContent.trim())) return;
+        const cs = getComputedStyle(e), q = e.getBoundingClientRect();
+        if (q.width < 2 || q.height < 2 || cs.visibility === 'hidden' || +cs.opacity === 0) return;
+        const fs = parseFloat(cs.fontSize);
+        if (fs < 12.4) { const k = (e.className && typeof e.className === 'string' ? '.' + e.className.trim().split(/\s+/)[0] : e.tagName.toLowerCase()); klein[k] = klein[k] || [fs, e.textContent.trim().slice(0, 30)]; }
+      });
+      const ks = Object.entries(klein);
+      if (ks.length) out.push('17 Schrift unter 12,4 px: ' + ks.slice(0, 8).map(([k, [fs, tx]]) => k + ' ' + fs.toFixed(1) + ' px «' + tx + '»').join(' · ') + (ks.length > 8 ? ' · und ' + (ks.length - 8) + ' weitere' : '') + '. Auf mindestens 13 px anheben.'); }
+    // 18 Kein Leerraum über 380 px zwischen zwei Inhalten (Robert 09.11.2026, Werkbank Sroka: «Was ist es da für ein erbärmlicher Leerraum mit Kapitel 5»); Fenster zählen nicht (auch .bruch, so heissen die Fenster im Seiler au Lac, und .durchblick im roots)
+    { const ys = [];
+      document.querySelectorAll('h1,h2,h3,h4,p,li,img,svg,a,button,figure,video,canvas,dt,dd,small,b,span,label,input,textarea,select').forEach(e => {
+        if (e.closest('[aria-hidden="true"]') && !e.matches('img')) return;
+        if (e.closest('.wfen,.standbild,.fenster,[class*="fenster"],.bruch,.durchblick,body > header,body > nav,body > footer,.insel,.leiste')) return;
+        const q = e.getBoundingClientRect(), cs = getComputedStyle(e);
+        if (q.width < 4 || q.height < 4 || cs.visibility === 'hidden' || +cs.opacity === 0 || cs.position === 'fixed') return;
+        if (!e.matches('img,svg,video,canvas,input,textarea,select') && !e.textContent.trim()) return;
+        ys.push([q.top + scrollY, q.bottom + scrollY, e]);
+      });
+      ys.sort((x, y) => x[0] - y[0]);
+      const fen = [...document.querySelectorAll('.wfen,.standbild,.fenster,[class*="fenster"],.bruch,.durchblick')].map(f => { const r = f.getBoundingClientRect(); return [r.top + scrollY, r.bottom + scrollY]; });
+      let ende = ys.length ? ys[0][1] : 0;
+      for (const [a, c, e] of ys) {
+        const luecke = a - ende;
+        if (luecke > 380 && !fen.some(([f0, f1]) => f0 < a && f1 > ende)) { const s = e.closest('section[id]'); out.push('18 Leerraum von ' + Math.round(luecke) + ' px vor «' + (e.textContent.trim().slice(0, 30) || e.tagName.toLowerCase()) + '»' + (s ? ' (#' + s.id + ')' : '') + '. Abstand verkleinern oder die Fläche füllen.'); break; }
+        ende = Math.max(ende, c);
+      } }
     // 8 Werkbank, Kapitel Werkzeuge: jedes Werkzeug hat seine Adresse und einen Knopf zum Öffnen (Robert 08.11.2026: «Bei den Werkzeugen fehlen die Buttons … dummer Fehler»)
     document.querySelectorAll('.ins-t[data-i]').forEach(t => {
       const n = t.getAttribute('aria-label') || t.dataset.i;
