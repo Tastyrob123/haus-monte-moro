@@ -50,16 +50,16 @@
       'font:15px/1.55 "Instrument Sans",system-ui,sans-serif;animation:rdg-auf .42s cubic-bezier(.2,.8,.2,1) both}' +
     '@keyframes rdg-auf{from{transform:translate3d(var(--rx,0),calc(var(--ry,0px) + 14px),0)}to{transform:translate3d(var(--rx,0),var(--ry,0),0)}}' +
     '.rdg-karte{transform:translate3d(var(--rx,0),var(--ry,0),0)}' +
-    '.rdg-zier{display:flex;align-items:center;gap:10px;font:500 10px/1 Open Sans,Georgia,serif;letter-spacing:.2em;text-transform:uppercase;color:#47596b}' +
+    '.rdg-zier{display:flex;align-items:center;gap:10px;font:500 13px/1 Open Sans,Georgia,serif;letter-spacing:.2em;text-transform:uppercase;color:#47596b}' +
     '.rdg-zier i{flex:1;height:1px;background:linear-gradient(90deg,#d9c9ac,rgba(217,201,172,0))}' +
     '.rdg-karte h3{margin:12px 0 6px;font:500 27px/1.12 "Fjalla One",Georgia,serif;color:#0b2137;letter-spacing:0}' +
     '.rdg-karte p{margin:0;color:rgba(6,20,34,.78)}' +
     '.rdg-fuss{display:flex;align-items:center;gap:14px;margin-top:20px}' +
     '.rdg-karte .rdg-weg{display:flex;gap:5px;flex:1 1 auto;min-width:64px}.rdg-karte .rdg-weg b{display:block;height:3px;flex:1 1 0;min-width:6px;max-width:26px;border-radius:2px;background:rgba(11,33,55,.14)}.rdg-karte .rdg-weg b.da{background:#ab905d}' +
-    '.rdg-karte .rdg-zu{flex:none;margin:0;border:0;background:none;padding:6px 2px;font:500 10px/1 "Instrument Sans",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:#47596b;cursor:pointer}' +
+    '.rdg-karte .rdg-zu{flex:none;margin:0;border:0;background:none;padding:6px 2px;font:500 13px/1 "Instrument Sans",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:#47596b;cursor:pointer}' +
     '.rdg-karte .rdg-zu:hover{color:#0b2137}' +
     '.rdg-karte .rdg-los{flex:none;margin:0;display:inline-flex;align-items:center;gap:12px;height:42px;padding:0 6px 0 18px;border:0;border-radius:999px;cursor:pointer;' +
-      'font:500 10px/1 "Instrument Sans",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#e9e1d9!important;' +
+      'font:500 13px/1 "Instrument Sans",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#e9e1d9!important;' +
       'background:linear-gradient(180deg,#394856,#0b2137 55%,#061422);box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 10px 18px -10px rgba(5,14,24,.8)}' +
     '.rdg-karte .rdg-los i{display:grid;margin:0;place-items:center;width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e6dbc8,#d9c9ac 55%,#ab905d);' +
       'box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 3px 6px -2px rgba(0,0,0,.45)}' +
@@ -71,7 +71,7 @@
     '.rdg-karte p{font:15px/1.55 "Instrument Sans",system-ui,sans-serif!important;letter-spacing:0!important;text-transform:none!important}' +
     '.rdg-karte h3{font:500 27px/1.12 "Fjalla One",Georgia,serif!important;letter-spacing:0!important;text-transform:none!important}' +
     '.rdg-karte .rdg-fuss{flex-wrap:nowrap!important}' +
-    '.rdg-karte .rdg-zu,.rdg-karte .rdg-los{font:500 10px/1 "Instrument Sans",ui-monospace,monospace!important;letter-spacing:.14em!important;text-transform:uppercase!important;min-width:0!important;width:auto!important;outline:0;border:0!important;margin:0!important}' +
+    '.rdg-karte .rdg-zu,.rdg-karte .rdg-los{font:500 13px/1 "Instrument Sans",ui-monospace,monospace!important;letter-spacing:.14em!important;text-transform:uppercase!important;min-width:0!important;width:auto!important;outline:0;border:0!important;margin:0!important}' +
     '.rdg-karte .rdg-zu{height:auto!important;padding:6px 2px!important;background:none!important;box-shadow:none!important;color:#47596b!important}' +
     '.rdg-karte .rdg-los{height:42px!important;padding:0 6px 0 18px!important;letter-spacing:.16em!important;border-radius:999px!important}' +
     '.rdg-karte .rdg-los i{width:30px!important;height:30px!important;flex:none!important}' +
@@ -213,10 +213,10 @@
     '@keyframes rdg-schild-auf{from{transform:translate3d(0,calc(100% + 40px),0)}to{transform:translate3d(0,0,0)}}' +
     '.rdg-schild.weg{animation:none;transform:translate3d(0,calc(100% + 60px),0)}' +
     '.rdg-schild__t{display:flex;flex-direction:column;gap:4px;line-height:1}' +
-    '.rdg-schild__t small{font:500 9px/1 Open Sans,Georgia,serif!important;letter-spacing:.2em!important;text-transform:uppercase;color:#47596b}' +
+    '.rdg-schild__t small{font:500 13px/1 Open Sans,Georgia,serif!important;letter-spacing:.2em!important;text-transform:uppercase;color:#47596b}' +
     '.rdg-schild__t b{font:500 19px/1 "Fjalla One",Georgia,serif!important;letter-spacing:0!important;color:#0b2137}' +
     '.rdg-schild .rdg-los{flex:none;margin:0!important;display:inline-flex;align-items:center;gap:10px;height:38px!important;padding:0 5px 0 15px!important;border:0!important;border-radius:999px!important;cursor:pointer;' +
-      'font:500 9.5px/1 "Instrument Sans",ui-monospace,monospace!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:#e9e1d9!important;' +
+      'font:500 13px/1 "Instrument Sans",ui-monospace,monospace!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:#e9e1d9!important;' +
       'background:linear-gradient(180deg,#394856,#0b2137 55%,#061422)!important;box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 8px 16px -10px rgba(5,14,24,.8)!important}' +
     '.rdg-schild .rdg-los i{display:grid;place-items:center;width:28px!important;height:28px!important;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e6dbc8,#d9c9ac 55%,#ab905d);box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 3px 6px -2px rgba(0,0,0,.45);transition:transform .2s}' +
     '.rdg-schild .rdg-los:hover i{transform:translateX(2px)}' +

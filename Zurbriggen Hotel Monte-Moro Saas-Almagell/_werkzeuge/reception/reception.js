@@ -430,12 +430,12 @@ function briefMail(a, e) {
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
 <tr><td style="background:#0b2137;text-align:center;padding:34px 20px 4px"><img src="${wz}marke-haus-weiss.png" width="${Math.round(220 * ((G.zeichen || {}).s || 1))}" alt="Hotel Monte-Moro, Saas-Almagell" style="height:auto;border:0"></td></tr>
 ${KOPF_EIGEN(G, 'haus') ? `<tr><td style="background:#0b2137;${st('haus', 15, "text-align:center;letter-spacing:.2em;text-transform:uppercase;font-weight:400;font-family:'Fjalla One','Arial Narrow',Arial,sans-serif;color:#F5F2EE;padding-top:12px")}">${kt('haus')}</td></tr>` : ''}
-${KOPF_EIGEN(G, 'zeile') ? `<tr><td style="background:#0b2137;${st('zeile', 10.5, "text-align:center;letter-spacing:.24em;text-transform:uppercase;font-family:'Instrument Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#ad9260;padding:8px 20px 30px")}">${kt('zeile')}</td></tr>` : '<tr><td style="background:#0b2137;padding:0 0 30px;font-size:1px;line-height:1px">&nbsp;</td></tr>'}
+${KOPF_EIGEN(G, 'zeile') ? `<tr><td style="background:#0b2137;${st('zeile', 13, "text-align:center;letter-spacing:.24em;text-transform:uppercase;font-family:'Instrument Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#ad9260;padding:8px 20px 30px")}">${kt('zeile')}</td></tr>` : '<tr><td style="background:#0b2137;padding:0 0 30px;font-size:1px;line-height:1px">&nbsp;</td></tr>'}
 <tr><td style="padding:34px 40px 30px">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
 ${mLinie('linie1', '22px 0 24px')}
 ${mLinie('linie2', '0 0 14px')}
-<tr><td style="font-family:'Instrument Sans','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#964e2a">Betreff</td></tr>
+<tr><td style="font-family:'Instrument Sans','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#964e2a">Betreff</td></tr>
 <tr><td style="${st('betreff', 22, serif + ';font-weight:400;color:#091c2f;padding:6px 0 22px;line-height:1.2')}">${t(e.betreff)}</td></tr>
 ${fotos('kopf')}
 ${ab.map((x, n) => `<tr><td dir="auto" style="${st('p' + n, 16, "font-family:'Instrument Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#0e2b49;line-height:1.62;padding-bottom:" + (14 + Math.max(0, (G['p' + n] || {}).mb || 0)) + 'px' + (ab.length > 2 && n === ab.length - 1 ? ';padding-top:8px' : ''))}">${t(x)}</td></tr>${fotos('p' + n)}`).join('\n')}
