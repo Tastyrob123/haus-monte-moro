@@ -1,4 +1,13 @@
-In Arbeit.
+Fertig.
+
+**Punkt 6, Nebenseiten (09.11.2026, 16:30 UTC):** `_Werkzeuge/oberflaeche_pruefen.js` einmal je Seite (1440 und 390), jede Seite einmal im Bild angesehen:
+- Mail-Werkstatt (`/_werkzeuge/imprimerie/mail.html`): BESTANDEN (17 und 18 frei, auch am Handy)
+- Schaufenster-Anleitung (`/_werkzeuge/bureau/anleitung.html`): BESTANDEN
+- Markenbuch-Anleitung (`/_werkzeuge/livre/anleitung.html`): BESTANDEN
+- Besucherliste-Anleitung (`/_werkzeuge/registre/anleitung.html`): BESTANDEN
+- Markenbuch als Buch (`/_werkzeuge/livre/buch.html`): BESTANDEN
+Die Reparaturen stecken in 4b1688c und 0b32d8a; diese Sitzung musste nichts mehr ändern. Kein Abnahme-Tor, kein Messlauf, keine Tafel (Robert-Regel Demo-Mittelweg).
+
 
 **ZUERST: `KORREKTUR-ROBERT.md` NEU Punkt 6 (Robert 09.11.2026 abends): Prüfpunkte 17 (Schrift mindestens 13 px) und 18 (kein Leerraum über 380 px) der neuesten Mac-Fassung von `_Werkzeuge/oberflaeche_pruefen.js` (im Repo) frei machen. Karten bleiben nur Blätter, keine Beschreibungen. Vorher kein «Fertig.».**
 
