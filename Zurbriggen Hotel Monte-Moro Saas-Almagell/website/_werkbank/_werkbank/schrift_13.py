@@ -116,7 +116,12 @@ LUFT = ('<style id="stueck-luft">.stueck.fl{padding-top:calc(var(--abschnitt)*.7
 # Mails: die Spalte der Etiketten «Von/Wann/Betreff» (64 px) fasst «Betreff» in 13 px nicht mehr.
 ETIKETT = '<style id="mb-etikett">.mb-ueber__t small{grid-template-columns:90px minmax(0,1fr)}</style>'
 ZUSATZ = (('drucksachen/index.html', 'stueck-luft', LUFT), ('beigaben/index.html', 'stueck-luft', LUFT),
-          ('mails/index.html', 'mb-etikett', ETIKETT))
+          ('mails/index.html', 'mb-etikett', ETIKETT),
+          # Feed: die Schalter «Heute/Mit den nächsten 30» sperren .1em; in 13 px steht die Schrift sonst 0,6 px links der Mitte.
+          # Im Band über dem Raster (378 px im Handy) fasst die Leiste 13 px nur mit etwas weniger Sperrung und Innenabstand.
+          ('feed/index.html', 'fw-mitte', '<style id="fw-mitte">.fw button{text-indent:.1em}'
+           '.fw.fw--band{letter-spacing:.06em;gap:6px;padding-left:6px;padding-right:6px}'
+           '.fw.fw--band button{padding:0 9px;text-indent:.06em}</style>'))
 
 
 def anwenden(root=ROOT):
