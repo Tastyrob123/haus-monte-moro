@@ -67,10 +67,14 @@ Erledigt:
 - WebKit-Blick über alle 28 Ziele + 9 Website-Seiten, 1440 und 390: 74/74 bestanden (erster Lauf war bei 390 wegen frame-ancestors leer; korrigiert und wiederholt, Bilder angesehen).
 - Augen-Agent Werkbank: 4 Funde, alle behoben (72a1322): Beigaben-Kopf leer → Auslage; Feed am Handy ohne Rückweg und mit angeschnittener Statuszeile (Fehler im Kit `feed.py`, Regelreihenfolge) → behoben; Mail-Band blieb nach Blättern hoch → klappt zu; Aufzählungszeichen im Angebot.
 - Messlauf: Hausdruckerei E-Mail Prüfliste überdeckte Vorschau → eigene Ebene + Regel für geöffnete Aufklapper (4a51537); Werkbank «doppelt» war Fehlalarm der Signatur → Regel geschärft (7112135), Gegenprobe mit Testseite findet echte Doppelungen.
-Läuft: `cloud/schluss.sh` (Werkbank-Unterseiten), Werkbank einzeln neu durchs Tor (Browser stürzte unter Last ab), zwei Augen-Agenten (Werkzeuge 1–4, 5–7).
-Offen, in Reihenfolge: Funde der zwei Agenten reparieren, Messlauf über alles frisch, Tafel nach `ergebnis/laeufe/2026-11-09/`, erste Zeile «Fertig. Geprüft.» mit Belegen.
+- Tor (tor-schnell, 1440/1280/1000/390) über alle 28 Ziele: 0 Funde, nichts unerreicht (Werkbank einzeln wiederholt nach Browser-Absturz unter Last; Unterseiten in zwei Gruppen; Hotelbüro, Schaufenster, Kartenbrett, Rezeption nach den Reparaturen neu).
+- Augen-Agent Werkzeuge 1–4: 6 Punkte; behoben (60be9fb): Zähler-Schrift beim Hochzählen (Hotelbüro, Rezeption), Hinweis «Nichts geändert» bleibt nicht stehen (Schaufenster), Probe-PDF-Meldungen, Text-Einträge doppelt (Kartenbrett). «Heute 0 Besuche» bleibt (siehe Entscheidungen).
+Läuft: Messlauf über alles frisch (`aus-mess/alle`, /tmp/mess.log), Augen-Agent Werkzeuge 5–7.
+Offen, in Reihenfolge: Funde Agent 5–7 reparieren und nachprüfen, Messlauf auswerten, Oberflächenprüfung über alles zum Schluss, Tafel nach `ergebnis/laeufe/2026-11-09/`, erste Zeile «Fertig. Geprüft.» mit Belegen.
 
 ## Entscheidungen der Nacht
+- 09.11.: «Heute 0 Besuche» im Hotelbüro und in der Besucherliste bleibt: die Beispielbesuche von heute erscheinen nur bis zur aktuellen Uhrzeit (meist abends), früh am Morgen ist 0 stimmig und als Beispiel beschriftet.
+- 09.11.: Messlauf-Regel «doppelt» vergleicht, was nach dem Klick im Bild steht; Fehlalarm auf der Werkbank belegt, Gegenprobe mit Testseite findet echte Doppelungen.
 - 09.11.: Prüfskript genau in der Mac-Fassung (153 Zeilen); die frühere Ausnahme der Vorsitzung für Bildbänder fällt weg, stattdessen heissen die Bildkarussells `kartenzug` (sie sind keine Laufbänder).
 - 09.11.: Laufband des Hotelbüros (aria-hidden, Zierband) aus `span` statt Liste; der Prüfpunkt 9 meint Knöpfe und Text im Inhalt.
 - 09.11.: «Website-Revier, nicht Teil des Pakets» war falsch eingeengt: Baustein eingebaut. Datenschutz bleibt im Wortlaut des Hauses; er deckt Anfragen über Formulare schon ab, eine Löschfrist veröffentlicht das Haus nicht, also wird keine erfunden.
