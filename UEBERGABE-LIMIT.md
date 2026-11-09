@@ -1,5 +1,7 @@
 In Prüfung.
 
+**NEU 09.11.2026, 15:34: `KORREKTUR-ROBERT.md` Punkt 5 (Kapitel Karten nie leer: alle Unterlagen als Blätter, Fläche gefüllt mit Angaben; Prüfpunkt 15) umsetzen. Vorher kein «Fertig.».**
+
 **`KORREKTUR-ROBERT.md` umgesetzt und abgehakt (09.11., Nacht 3, Commit 6b420e6); Werkbank BESTANDEN.**
 
 Gegenprüfung läuft (09.11.2026). Stand siehe Abschnitt «Gegenprüfung 09.11.2026».
