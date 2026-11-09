@@ -71,6 +71,10 @@ Keiner – alles fertig und geprüft. Nur noch «Wartet auf Roberts Wort».
   Drucksachen neu gesetzt (`_bau/drucksachen.js`, 0 rote Befunde), Vorschaubilder der Hausdruckerei neu (`vorschau_katalog.js`, `vorschaubilder.js`, Stand v=115/38), Werkbank Drucksachen + Material nachgeführt (587f496).
 - Hinweis für Prüfer: Ganzseiten-Aufnahmen (fullPage) zeigen falsche Überlagerungen in den Seitenleisten und leere Flächen (Einblendung); nur Ansichten mit echtem Scrollen werten.
 
+## Folgesitzung nach Stillstand (session_0189oeKhE5oHiD5mK18i2yjR, 09.11. 01:00 UTC)
+- Letztes Lebenszeichen der Gegenprüfung 20:48 (Funde 3 und 4 repariert, 587f496). Kein Bau-Agent offen; alle acht Reviere haben LIEFERUNG.md. Keiner neu gestartet.
+- Offen war nur: Nachprüfung der Ziele, die nach der Schlussprüfung repariert wurden (77b8f0d, 587f496): hotelbuero, hausdruckerei, hausdruckerei-mail, werkbank, werkbank-drucksachen, werkbank-material. Läuft in `/tmp/gp` (`cloud/schnell.sh`, Log `/tmp/gp/nachlauf.log`), danach Oberflächenprüfung, Auge, Tafel `ergebnis/laeufe/2026-11-09/`.
+
 ## Entscheidungen der Nacht
 - Nachtsitzung: Auftrag sagt Zweig `ergebnis`; die Übergabe lag nur auf `claude/task-o0ores`. Übergabe und Lebenszeichen leben ab jetzt auf `ergebnis`, Code-Reparaturen weiter auf `claude/task-o0ores`.
 - Schaufenster wurde in der Schlussprüfung (16:56) vor der Reparatur 17:57 geprüft: deshalb Nachprüfung in der Nacht.
@@ -79,6 +83,8 @@ Keiner – alles fertig und geprüft. Nur noch «Wartet auf Roberts Wort».
 - Schaufenster «Zeiten & Preise» zeigte «90 .00» (Leser des Stamms setzt Leerschlag für Tags). Korrigiert nur in der Anzeige des Hauses (`bureau/festigkeit.js › zahlwert`), Stamm-Leser unverändert, weil seine Kennungen gespeicherte Änderungen tragen. Schaufenster nach der Schlussprüfung neu prüfen.
 
 - Gegenprüfung: Nur `material_mehr.py` + `papier_nach.py` einzeln laufen lassen entfernt die Knopf-Nachbauten (text-mitte, knopf-mitte) der Papier-Seiten und setzt werkbank.css/js zurück. Deshalb nur der neue Ordner 05 ins bestehende `material/index.html` übernommen, alles andere auf Stand zurückgesetzt.
+
+- Folgesitzung 09.11.: Nachprüfung nur der seit der Schlussprüfung geänderten Ziele, nicht aller 28 (übrige unverändert und grün).
 
 ## Wartet auf Roberts Wort
 - Baustein `reception/baustein/anfrage.js` in die Website, Datenschutz-Satz zu Anfragen/Chat (Website-Revier).
