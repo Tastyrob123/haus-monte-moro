@@ -122,6 +122,18 @@ ZUSATZ = (('drucksachen/index.html', 'stueck-luft', LUFT), ('beigaben/index.html
           ('feed/index.html', 'fw-mitte', '<style id="fw-mitte">.fw button{text-indent:.1em}'
            '.fw.fw--band{letter-spacing:.06em;gap:6px;padding-left:6px;padding-right:6px}'
            '.fw.fw--band button{padding:0 9px;text-indent:.06em}</style>'))
+# Marke, Herkunft der Farben: am Handy zwei Spalten; «daraus: Lärche, Fassade, Wandschindeln» in 13 px Mono
+# ist breiter als die Spalte und lief 5 px in die Nachbarspalte (Tor 09.11., überlappt): «Fassade, Wandschatten» war
+# mit geschütztem Leerzeichen verbunden. Nach dem Komma darf die Zeile jetzt umbrechen; Spalten dürfen schmal werden.
+HER = ('<style id="her-umbruch">.hs2-her figure{min-width:0}'
+       '@media (max-width:600px){.hs2-her figcaption small{letter-spacing:.02em}}</style>')
+ZUSATZ += tuple((rel, 'her-umbruch', HER) for rel in ('werkbank/index.html',))
+HER_TEXT = re.compile(r'(daraus: [^<]*)')
+
+
+def her_text(t):
+    """Geschütztes Leerzeichen nach einem Komma in «daraus: …» wird ein normales (Umbruch am Handy)."""
+    return HER_TEXT.sub(lambda m: m.group(1).replace(', ', ', '), t)
 
 
 def anwenden(root=ROOT):
@@ -138,6 +150,8 @@ def anwenden(root=ROOT):
             continue
         alt = open(f, encoding='utf-8').read()
         neu = text(alt)
+        if rel == 'werkbank/index.html':
+            neu = her_text(neu)
         if neu != alt:
             open(f, 'w', encoding='utf-8').write(neu)
             geaendert.append(rel)
