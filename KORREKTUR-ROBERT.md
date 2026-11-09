@@ -1,0 +1,10 @@
+# Roberts Korrektur 09.11.2026, 10:15 (gilt vor allem anderen)
+
+Robert hat alle drei Zurbriggen-Werkbänke angesehen. Diese Punkte sind Pflicht, bevor «Fertig.» gesetzt werden darf. Nur diese Punkte ändern, alles andere bleibt, wie es ist.
+
+1. **Kein Ticket, kein Billett.** Das «Kursblatt»-Ticket («Meine drei Orte», Hamburg · Koh Phangan · Siargao, mit Abriss und «N° 3 Orte») ganz entfernen, in Brief UND Schluss (`werkbank/index.html`, Quelle `_werkbank/orte_kurs.py` / `brief_blatt.py` bzw. der Bau, der `tk ok ok--brief` und `tk ok ok--schluss` erzeugt). Keine Reiseroute, keine Tasty-Studios-Ticketform. Was danach leer wäre, schliesst sauber an (kein Loch).
+2. **Rechenbeispiel muss bedienbar sein.** Monte-Moro hat den Rechner (`#vt-rechner`, «Ein Rechenbeispiel.», Felder Nächte/Preis/Provision/Anteil) und er funktioniert. Suitenhotel und Wellness haben gar keinen: denselben Rechner dort einbauen, mit den Hauswerten aus dem Repo (Nächte, Preis, Provision belegt, nie geschätzt; fehlt ein Wert, Rechenbeispiel mit klar benannten Beispielzahlen), an derselben Stelle wie bei Monte-Moro. Prüfen durch echtes Tippen in jedes Feld: das Ergebnis ändert sich.
+3. **Draussen: vier Kacheln nebeneinander.** Untersetzer, Drucksachen, Mails, Postkarten stehen heute als vier riesige Kacheln 2×2. Robert will sie als **vier Kacheln in einer Reihe** (am Rechner 4 nebeneinander, am Handy untereinander oder 2×2), jede Kachel mit Bild, Zahl/Titel, Satz, Knopf «… ansehen». Kein Leerraum, gleiche Höhen.
+4. **Preise im Angebot: noch NICHT eintragen.** Robert hat die Preise festgelegt, will sie aber ausdrücklich noch nicht in der Werkbank haben. Nichts am Angebot ändern.
+
+Prüfen: `node _Werkzeuge/oberflaeche_pruefen.js <Werkbank>` muss BESTANDEN melden (Fassung vom Mac, liegt im Repo), dazu Bilder bei 1440 und 390 ansehen. Erledigtes hier mit Beleg abhaken.
