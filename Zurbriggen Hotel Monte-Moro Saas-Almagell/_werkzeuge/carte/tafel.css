@@ -27,7 +27,7 @@ body.lc.wo-app{background:var(--wo-blatt)}
 .lc .modus-g .wo-mk{display:block;margin-bottom:10px}
 .lc .modus.wo-seg{display:grid;grid-template-columns:1fr 1fr;width:100%}
 .lc .modus.wo-seg button{padding:10px 8px;text-align:center}
-.lc .modus__t{margin:10px 6px 0;font-size:12.5px;line-height:1.5;color:var(--wo-leise)}
+.lc .modus__t{margin:10px 6px 0;font-size:13px;line-height:1.5;color:var(--wo-leise)}
 .lc .wo-rand .wege{margin-top:18px}
 
 /* Startbild jeder Ansicht: Angaben der Karte neben dem Knopf */
@@ -35,7 +35,7 @@ body.lc.wo-app{background:var(--wo-blatt)}
 .lc .kopf__zahlen{display:flex;gap:26px;margin:0 0 0 12px;flex-wrap:wrap}
 .lc .kopf__zahlen div{display:flex;flex-direction:column-reverse}
 .lc .kopf__zahlen dd{margin:0;font:var(--wo-titel-g) 24px/1 var(--wo-titel);color:var(--wo-weiss);font-feature-settings:"lnum","tnum"}
-.lc .kopf__zahlen dt{margin-top:6px;font:400 9.5px/1.2 var(--wo-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--wo-messing)}
+.lc .kopf__zahlen dt{margin-top:6px;font:400 13px/1.2 var(--wo-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--wo-messing)}
 .lc .wo-sb.auftritt .wo-sb__foto img{animation:tfoto 2.6s var(--wo-e1) both}
 .lc .wo-sb.auftritt .wo-sb__text{animation:ttext 1.3s var(--wo-e1) .08s both}
 @keyframes tfoto{from{transform:scale(1.1)}to{transform:none}}
@@ -52,7 +52,7 @@ body.lc.wo-app{background:var(--wo-blatt)}
 .lc .r.gewaehlt{box-shadow:inset 3px 0 0 var(--wo-akzent)}
 .lc .vorschau{background:var(--wo-fassade)}
 .lc .ansicht{flex-wrap:wrap}
-.lc .webwahl button{font-size:11.5px}
+.lc .webwahl button{font-size:13px}
 .lc .ansicht button[aria-pressed="true"]{background:var(--wo-nacht)}
 /* Knöpfe im Arbeitsbereich wie auf der Website (montemoro.css .kn): Nacht mit hellem Knauf, hell mit blauem Knauf, Hauptweg Lärche mit hellem Knauf */
 .lc .kn{--o:#15466F;--m:var(--wo-nacht2);--u:var(--wo-nacht);--t:#fff;--ko:#FFFFFF;--ku:var(--wo-papier);--kt:var(--wo-nacht)}

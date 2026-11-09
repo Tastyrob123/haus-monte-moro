@@ -178,7 +178,7 @@
       '<style>' +
       ':host{direction:ltr}' +
       'a{position:relative;overflow:hidden;isolation:isolate;box-sizing:border-box;display:inline-flex;align-items:center;gap:11px;height:44px;padding:0 20px 0 5px;border-radius:999px;' +
-      'font:400 11.5px/1 "DM Mono",ui-monospace,Menlo,"PingFang SC","Apple SD Gothic Neo","Geeza Pro",monospace;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;text-decoration:none;' +
+      'font:400 13px/1 "DM Mono",ui-monospace,Menlo,"PingFang SC","Apple SD Gothic Neo","Geeza Pro",monospace;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;text-decoration:none;' +
       'color:#0A2A4A;background:linear-gradient(180deg,#FFFFFF 0%,#F4F0EB 46%,#E2DAD0 100%);cursor:pointer;-webkit-tap-highlight-color:transparent;' +
       'box-shadow:inset 0 1px 0 rgba(255,255,255,.95),inset 0 -2px 0 rgba(10,42,74,.16),0 0 0 1px rgba(10,42,74,.14),0 1px 1px rgba(0,0,0,.12),0 18px 30px -18px rgba(10,42,74,.45);' +
       'transition:transform .55s cubic-bezier(.32,.72,0,1)}' +
@@ -191,7 +191,7 @@
       '@media (hover:hover){a:hover{transform:translateY(-2px)}a:hover i{transform:translateX(-2px) scale(1.05)}a:hover::after{transform:translateX(360%) skewX(-18deg);transition:transform 1s cubic-bezier(.16,1,.3,1)}}' +
       'a:active{transform:translateY(1px) scale(.985)}' +
       'a:focus-visible{outline:1px solid #C67144;outline-offset:4px}' +
-      '@media (max-width:560px){a{height:40px;gap:9px;padding:0 16px 0 4px;font-size:10.5px}i{width:32px;height:32px}:host([lang="zh"]) a,:host([lang="ko"]) a,:host([lang="ar"]) a{font-size:12px}}' +
+      '@media (max-width:560px){a{height:40px;gap:9px;padding:0 16px 0 4px;font-size:13px}i{width:32px;height:32px}:host([lang="zh"]) a,:host([lang="ko"]) a,:host([lang="ar"]) a{font-size:13px}}' +
       '@media (prefers-reduced-motion:reduce){a,i,a::after{transition:none!important}}' +
       '</style>' +
       '<a part="knopf" href="' + ziel.replace(/"/g, '&quot;') + '"><i aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M13 8H3.5M7.5 4 3.5 8l4 4"/></svg></i><span' + (sp === 'ar' ? ' dir="rtl"' : '') + '>' + TEXT[sp] + '</span></a>';
