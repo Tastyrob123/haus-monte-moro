@@ -1,6 +1,6 @@
 In Prüfung.
 
-Schlussprüfung 08.11.2026, 19:10 UTC: 28 Ziele (sieben Werkzeuge mit Anleitungen, Werkbank mit allen Unterseiten), 413 Zustände bei 1440 (dazu 1280/1000/390), 0 Funde, nichts unerreicht; Oberflächenprüfung 22 × BESTANDEN; Gegenprobe mit dem Auge (über 70 Bilder). Nur Chromium (WebKit in der Cloud nicht ladbar). Wartet auf Roberts Wort (Website-Revier, nicht Teil des Pakets): Baustein `reception/baustein/anfrage.js` in die Website, Datenschutz-Satz zu Anfragen/Chat.
+Gegenprüfung läuft (09.11.2026). Stand siehe Abschnitt «Gegenprüfung 09.11.2026».
 
 # Übergabe (laufend) · Hotel Monte-Moro, Saas-Almagell
 
@@ -52,13 +52,24 @@ Stand: 08.11.2026, Oberchef-Sitzung (Zweig `claude/task-o0ores`).
 ## Nächster genauer Schritt
 Läuft `cloud/schluss.sh` nicht mehr und fehlt `aus-ende/ende.json`: neu starten. Danach Funde reparieren, Fundbilder ansehen, Tafeln nach Zweig `ergebnis` unter `ergebnis/laeufe/2026-11-08/`, Meldung.
 
+## Gegenprüfung 09.11.2026 (Nachtsitzung, Zweig `claude/task-o0ores`)
+Auftrag: «Fertig.» der Vorsitzung jeden Punkt selbst nachprüfen, Fehlendes fertig bauen, dann «Fertig. Geprüft.». NACHTRAG-NACHT.md (main) gilt: `oberflaeche_pruefen.js` in der Mac-Fassung (153 Zeilen, aus Zweig `ergebnis`) muss für die Werkbank BESTANDEN melden.
+Erledigt:
+- Prüfskript vom Mac übernommen (378cb18). Werkbank fiel durch (Prüfpunkt 6 an den Bildkarussells «Ideen»/«Gäste», Klasse `.band`). Jetzt `kartenzug` (`_werkbank/kartenzug.py`, aus `haus.nach_bau` aufgerufen, Kit unverändert) → BESTANDEN. Dabei gefunden und behoben: Zähler «01 / 12» blieb beim Blättern stehen.
+- Hotelbüro fiel durch (Prüfpunkt 9, Laufband als Liste) → Laufband aus `span` statt `li`, Aussehen gleich → BESTANDEN (7bab2b5).
+- Baustein der Rezeption in die Website eingebaut (`website/assets/js/rezeption-weg.js`, über `bau.py`), Weg Anfrage → Eingang und Chat → «Das wurde gefragt» geprüft, Testeinträge gelöscht.
+Offen, in Reihenfolge: WebKit-Ersatzweg (apt `webkit2gtk-driver`), Oberflächenprüfung Rest, Schlussprüfung tor-schnell + Messlauf über alle Ziele frisch, Augen auf Bilder, Tafel nach `ergebnis/laeufe/2026-11-09/`, erste Zeile «Fertig. Geprüft.».
+
 ## Entscheidungen der Nacht
+- 09.11.: Prüfskript genau in der Mac-Fassung (153 Zeilen); die frühere Ausnahme der Vorsitzung für Bildbänder fällt weg, stattdessen heissen die Bildkarussells `kartenzug` (sie sind keine Laufbänder).
+- 09.11.: Laufband des Hotelbüros (aria-hidden, Zierband) aus `span` statt Liste; der Prüfpunkt 9 meint Knöpfe und Text im Inhalt.
+- 09.11.: «Website-Revier, nicht Teil des Pakets» war falsch eingeengt: Baustein eingebaut. Datenschutz bleibt im Wortlaut des Hauses; er deckt Anfragen über Formulare schon ab, eine Löschfrist veröffentlicht das Haus nicht, also wird keine erfunden.
 - Gearbeitet wird auf `claude/task-o0ores` (Auftrag der Folgesitzung), nicht auf main.
 - Geprüft nur in Chromium (WebKit nicht ladbar, siehe Stolpersteine).
 - Schaufenster «Zeiten & Preise» zeigte «90 .00» (Leser des Stamms setzt Leerschlag für Tags). Korrigiert nur in der Anzeige des Hauses (`bureau/festigkeit.js › zahlwert`), Stamm-Leser unverändert, weil seine Kennungen gespeicherte Änderungen tragen. Schaufenster nach der Schlussprüfung neu prüfen.
 
 ## Wartet auf Roberts Wort
-- Baustein `reception/baustein/anfrage.js` in die Website, Datenschutz-Satz zu Anfragen/Chat (Website-Revier).
+- (nichts; Baustein am 09.11. eingebaut)
 
 
 ## Einrichten in einer neuen Sitzung
