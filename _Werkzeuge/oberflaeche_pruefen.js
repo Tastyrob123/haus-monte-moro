@@ -21,8 +21,10 @@
 //     (Robert 09.11.2026, Werkbank Wellness & Spa: «warum fehlt da ein bild» · «warum sieht das so lächerlich leer aus»)
 //  14 Text nie unter einem Nachbarn im selben Abschnitt: keine Zeile läuft hinter ein Blatt, eine Tafel oder ein Bild, das darübergelegt ist
 //     (Robert 09.11.2026, Werkbank Schäfli, Zeile «Taverne zum Schäfli · Oberdorfstrasse 8» unter dem Briefblatt: «Da verschwindet der Text so hinter abgeschnitten, das ist kacke»)
-//  15 Werkbank, Kapitel Unterlagen/Karten: alle Unterlagen des Hauses liegen als Blätter da, nie nur zwei Blätter in leerer Fläche; die Blätter füllen ihre Fläche
+//  15 Werkbank, Kapitel Unterlagen/Karten: alle Unterlagen des Hauses schweben als Blätter im Raum, nie nur zwei Blätter in leerer Fläche; die Blätter füllen ihre Fläche, nie Kacheln oder Beschreibungen (Robert 09.11.2026, 16:51)
 //     (Robert 09.11.2026, Werkbank Wellness & Spa, «Ihre Karten, neu gesetzt»: «zwei Dokumente dort einfach nur erbärmlich leer … nicht zwei dumme Dokumente in der Luft hängen, obwohl es eigentlich mehr sind»)
+//  16 Übersichten mit Häusern: Häuser einer Familie (gleiche Eigentümer, Liste familien.js) stehen zusammen in einem Block wie im Atelier, nie einzeln untereinander
+//     (Robert 09.11.2026, Kunden «Alle Häuser»: «alles untereinander und man checkt halt nicht, was ist jetzt zusammen und was nicht»)
 const { chromium } = require('/Users/robertreff/Desktop/Website-Projekte/_Befund-Vorschlaege/node_modules/playwright');
 const arg = process.argv.slice(2);
 const adresse = arg.find(a => /^https?:/.test(a));
@@ -113,6 +115,7 @@ async function pruefe(b, breite) {
     // 6 Laufband mittig
     document.querySelectorAll('[class*="band"],[class*="laufband"],[class*="marquee"],[class*="ticker"],[data-laufband]').forEach(bd => {
       if (!sicht(bd) || getComputedStyle(bd).overflow.indexOf('hidden') < 0) return;
+      if (/auto|scroll/.test(getComputedStyle(bd).overflowX)) return;   // Bildband zum Wischen (seitlich scrollbar) ist kein Laufband (09.11.2026, Seiler-Zimmer «Weitere Einblicke»)
       const t = bd.querySelector('li button, li, span'); if (!t) return;
       const r = bd.getBoundingClientRect(); let unten = r.bottom;
       const n = bd.nextElementSibling; if (n) { const rn = n.getBoundingClientRect(); if (rn.top < unten && rn.top > r.top) unten = rn.top; }
@@ -216,13 +219,22 @@ async function pruefe(b, breite) {
       const bl = [...f.querySelectorAll('.blattk')].filter(sicht);
       const namen = new Set([...sec.querySelectorAll('.namenzug span')].map(x => x.textContent.trim()).filter(Boolean));
       if (namen.size > bl.length) out.push('15 Kapitel Karten zeigt ' + bl.length + ' Blätter, das Haus hat ' + namen.size + ' Unterlagen (' + [...namen].join(', ') + '). Alle Unterlagen als Blätter auslegen.');
-      else if (bl.length && bl.length < 3) out.push('15 Kapitel Karten: nur ' + bl.length + ' Blätter in der Fläche. Mit Angaben füllen (Seiten, was drinsteht, Stand) oder weitere Blätter des Hauses auslegen, nie zwei Blätter in der Luft.');
+      else if (bl.length && bl.length < 3) out.push('15 Kapitel Karten: nur ' + bl.length + ' Blätter in der Fläche. Weitere Blätter des Hauses im Raum schweben lassen, nie zwei Blätter in der Luft; keine Kacheln oder Beschreibungen dazu.');
+      const text = [...f.querySelectorAll('p,dl,dd,h3,h4,strong,small')].filter(sicht);   // Robert 16:51: nur Blätter, nie Kacheln oder Beschreibungen
+      if (text.length || sec.querySelector('.karten__zahl')) out.push('15 Kapitel Karten trägt Kacheln oder Beschreibungen zu den Blättern (' + (text[0] ? text[0].textContent.trim().slice(0, 40) : 'Zahlenreihe') + ' …). Nur die Blätter im Raum schweben lassen, Text und Knöpfe wie vorher.');
       const k = f.closest('.karten') || sec, kr = k.getBoundingClientRect(), fr = f.getBoundingClientRect();
       if (bl.length && innerWidth >= 900 && kr.height > 300) {   // nur nebeneinander (Text links, Blätter rechts); am Handy steht alles untereinander
         const oben = Math.min(...bl.map(b => b.getBoundingClientRect().top)), unten = Math.max(...bl.map(b => b.getBoundingClientRect().bottom));
         const flaeche = bl.reduce((a, b) => { const r = b.getBoundingClientRect(); return a + r.width * r.height; }, 0), spalte = fr.width * kr.height;
-        if ((unten - oben) < kr.height * 0.6 || flaeche / spalte < 0.35) out.push('15 Kapitel Karten wirkt leer: die Blätter füllen ' + Math.round((unten - oben) / kr.height * 100) + ' % der Höhe neben dem Text und decken ' + Math.round(flaeche / spalte * 100) + ' % ihrer Spalte. Mehr Blätter, grösser, oder Angaben dazu.');
+        if ((unten - oben) < kr.height * 0.6 || flaeche / spalte < 0.35) out.push('15 Kapitel Karten wirkt leer: die Blätter füllen ' + Math.round((unten - oben) / kr.height * 100) + ' % der Höhe neben dem Text und decken ' + Math.round(flaeche / spalte * 100) + ' % ihrer Spalte. Mehr Blätter oder grössere Blätter im Raum, keine Kacheln oder Beschreibungen.');
       }
+    });
+    // 16 Häuser einer Familie stehen zusammen in einem Block (nur Seiten, die familien.js laden und Häuser als [data-kl-haus] zeigen)
+    (window.TASTY_FAMILIEN || []).forEach(f => {
+      const da = f.ids.map(id => document.querySelector('[data-kl-haus="' + id + '"]')).filter(Boolean);
+      if (da.length < 2) return;
+      const bl = new Set(da.map(e => e.closest('[data-kl-familie]')));
+      if (bl.size > 1 || bl.has(null)) out.push('16 Häuser von «' + f.t[0].replace(/\.$/, '') + '» stehen nicht zusammen in einem Block: oben die gemeinsame Startseite, darunter die Häuser, wie im Atelier.');
     });
     // 11 Auftritte beim Scrollen
     if (document.documentElement.scrollHeight > innerHeight * 1.6 && window.__vor && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -240,7 +252,7 @@ async function pruefe(b, breite) {
   }, { SN: SCHIRM_NAME.source, SK: SCHIRM_KLASSE.source, GE: GERAET.source });
   // 8 Jede Werkzeug-Adresse der Werkbank antwortet (sonst öffnet der Knopf eine tote Seite)
   const wege = await p.evaluate(() => [...new Set([...document.querySelectorAll('.ins-t[data-url]')].map(t => t.dataset.url).filter(Boolean))]).catch(() => []);
-  for (const w of wege) { const r = await p.request.get(w, { timeout: 8000 }).catch(() => null); if (!r || r.status() >= 400) befund.push('8 Werkzeug antwortet nicht: ' + w); }
+  for (const w of wege) { const r = await p.request.get(new URL(w, p.url()).href, { timeout: 8000 }).catch(() => null); if (!r || r.status() >= 400) befund.push('8 Werkzeug antwortet nicht: ' + w); }
   // 12 Zurück aus dem Speicher (bfcache): Weggehen, Seite steht oben, pageshow mit persisted muss die alte Stelle wieder herstellen
   if (breite === 1440) {
     const r12 = await p.evaluate(async () => {
