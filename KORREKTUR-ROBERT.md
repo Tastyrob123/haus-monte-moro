@@ -8,3 +8,10 @@ Robert hat alle drei Zurbriggen-Werkbänke angesehen. Diese Punkte sind Pflicht,
 4. **Preise im Angebot: noch NICHT eintragen.** Robert hat die Preise festgelegt, will sie aber ausdrücklich noch nicht in der Werkbank haben. Nichts am Angebot ändern.
 
 Prüfen: `node _Werkzeuge/oberflaeche_pruefen.js <Werkbank>` muss BESTANDEN melden (Fassung vom Mac, liegt im Repo), dazu Bilder bei 1440 und 390 ansehen. Erledigtes hier mit Beleg abhaken.
+
+## Erledigt (Nachtsitzung 09.11.2026)
+- [x] 1. Ticket «Meine drei Orte» in Brief und Schluss entfernt (`_werkbank/orte_kurs.py`, Brief-Fuss einspaltig, nur Unterschrift; Schluss schliesst mit Gruss und Knöpfen). Beleg: `werkbank/index.html` ohne «Kursblatt»/«Koh Phangan»; Bilder 1440/390 angesehen, kein Loch. Commit 6b420e6.
+- [x] 2. Monte-Moro: Rechner `.vt-r__r` mit echtem Tippen geprüft (1440 und 390): Nächte 600→1200, Preis 90→180, Provision 15→30 %, Anteil 25→50 %, jedes Mal ändert sich das Ergebnis (am Ende 600 Nächte, CHF 108’000, CHF 32’400), keine Skriptfehler. Suitenhotel und Wellness liegen nicht in diesem Repo (CLAUDE.md: nur dieses Haus) → dort nicht gebaut.
+- [x] 3. Draussen: vier Kacheln in einer Reihe ab 1200 px (gleich hoch, Bild gleich hoch, Knöpfe auf einer Linie), 2×2 bei 1000, untereinander am Handy (`_werkbank/rh_kapitel.py`). Bilder 1440/1000/390 angesehen.
+- [x] 4. Angebot unverändert.
+- [x] `node _Werkzeuge/oberflaeche_pruefen.js http://127.0.0.1:9388/werkbank/` (Mac-Fassung, 153 Zeilen): BESTANDEN.
