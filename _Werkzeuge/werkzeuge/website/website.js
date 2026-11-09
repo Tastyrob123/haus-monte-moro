@@ -97,7 +97,14 @@ function quit(titel, text, knoepfe = [], attrs = {}) {
   return k;
 }
 function melde(text, opt = {}) {
-  return quit(text, opt.mehr || '', opt.stichwort ? [el('a', { class: 'ws-taste', href: pruefLink(opt.stichwort) }, 'Was tun?')] : [], { 'data-ws-meldung': opt.stichwort || 'hinweis', role: opt.fehler ? 'alert' : 'status' });
+  const k = quit(text, opt.mehr || '', opt.stichwort ? [el('a', { class: 'ws-taste', href: pruefLink(opt.stichwort) }, 'Was tun?')] : [], { 'data-ws-meldung': opt.stichwort || 'hinweis', role: opt.fehler ? 'alert' : 'status' });
+  // ein reiner Hinweis (kein Fehler, nichts zu tun) geht nach sechs Sekunden oder mit der nächsten Eingabe; sonst blieb «Nichts geändert, nichts gespeichert.»
+  // über mehreren Ansichten stehen, neben «1 Eingabe noch nicht gespeichert» (Fund 09.11.2026, Schaufenster Monte-Moro)
+  if (!opt.fehler && !opt.stichwort && !opt.mehr) {
+    const weg = () => { k.remove(); document.removeEventListener('input', weg, true); };
+    setTimeout(weg, 6000); document.addEventListener('input', weg, true);
+  }
+  return k;
 }
 function fehler(e) {
   const text = (e && e.fehler) || (e && e.message) || String(e);

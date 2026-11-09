@@ -82,6 +82,7 @@ function sag(titel, text = '', knoepfe = [], fehl = false, dauer = 0) {
   ort.appendChild(m);
   while (ort.children.length > 2) ort.firstElementChild.remove();
   setTimeout(() => m.remove(), dauer || (fehl ? 12000 : 6000));
+  return m;
 }
 const fehlerSagen = (titel, e) => sag(titel, e.message + (e.stichwort ? ` (${e.stichwort})` : ''), e.stichwort ? [{ t: 'Was tun?', href: '/_werkzeuge/carte/anleitung.html#' + e.stichwort }] : [], true);
 
@@ -127,9 +128,9 @@ function titelVon(n, art) {
   const w = f.find(x => /^(Name|Tag|Rubrik|Titel|Zwischentitel|Überschrift|Gericht)/.test(x.name) && String(x.wert).trim()) || f.find(x => String(x.wert).trim() && !x.preis);
   return w ? String(w.wert).replace(/\s+/g, ' ').trim() : (FN[art] || 'Eintrag');
 }
-function unterVon(n, art) {
+function unterVon(n, art) {   // verglichen mit dem Titel ohne Zeilenumbrüche und doppelte Leerzeichen: Text-Einträge zeigten ihren Satz sonst doppelt (Fund 09.11.2026)
   const f = SATZ.felder(n, art || SATZ.art(n)), t = titelVon(n, art);
-  return f.filter(x => /^(Zutaten|Beschreibung|Zusatz|Hinweis|Angabe|Gericht|Rolle)/.test(x.name) && String(x.wert).trim() && String(x.wert).trim() !== t).map(x => String(x.wert).trim()).join(' · ').slice(0, 160);
+  return f.filter(x => /^(Zutaten|Beschreibung|Zusatz|Hinweis|Angabe|Gericht|Rolle)/.test(x.name) && String(x.wert).trim() && String(x.wert).replace(/\s+/g, ' ').trim() !== t).map(x => String(x.wert).replace(/\s+/g, ' ').trim()).join(' · ').slice(0, 160);
 }
 function vollerGang(r) { const f = SATZ.felder(r.n, r.art).map(x => x.name); return f.includes('Name') && f.includes('Zutaten'); }   // Vorlage für neue Einträge: einer mit Name und Zutaten (nie der Preis allein)
 function gangVon(n, art) { const g = SATZ.felder(n, art || SATZ.art(n)).find(x => x.name === 'Gang'); return g ? String(g.wert).trim() : ''; }
@@ -911,15 +912,16 @@ async function einstFenster() {
 async function probe() {
   if (OFFEN && !(await speichern('Im Entwurf gespeichert', 'Vor der Probe gespeichert.'))) return;
   /* Endprüfung 19.10.2026: die Probe öffnet sich im neuen Tab, sobald sie fertig ist (der Tab wird beim Klick geöffnet, sonst blockt Safari ihn);
-     dazu bleibt die Meldung mit «Probe öffnen» 30 s stehen */
+     dazu bleibt die Meldung mit «Probe öffnen» 12 s stehen (09.11.2026: vorher 30 s, verdeckte am Handy die Karte) */
   let tab = null; try { tab = window.open('', '_blank'); if (tab) tab.document.write('<title>Probe-PDF</title><p style="font:16px system-ui;padding:40px;color:#0C2B5F">Die Probe-PDF wird gedruckt …</p>'); } catch (x) { tab = null; }
-  sag('Probe-PDF wird gedruckt', 'Einen Moment, sie öffnet sich gleich in einem neuen Tab.', [], false, 30000);
+  const warte = sag('Probe-PDF wird gedruckt', 'Einen Moment, sie öffnet sich gleich in einem neuen Tab.', [], false, 30000);
   try {
     const r = await api('probe', { z: Z });
     const url = new URL(r.url, location.href).href;
     if (tab && !tab.closed) tab.location.href = url;
-    sag('Probe-PDF fertig', `${r.seiten} Seiten, ${r.art === 'entwurf' ? 'aus dem Entwurf' : 'wie veröffentlicht'}.${r.warn && r.warn.length ? ' ' + r.warn[0] : ''} Die echte PDF bleibt unverändert.`, [{ t: 'Probe öffnen', href: url }], false, 30000);
-  } catch (e) { if (tab && !tab.closed) tab.close(); fehlerSagen('Keine Probe-PDF', e); }
+    warte.remove();   // «wird gedruckt» geht, sobald die Probe da ist (Fund 09.11.2026: beide Meldungen standen übereinander)
+    sag('Probe-PDF fertig', `${r.seiten} Seiten, ${r.art === 'entwurf' ? 'aus dem Entwurf' : 'wie veröffentlicht'}.${r.warn && r.warn.length ? ' ' + r.warn[0] : ''} Die echte PDF bleibt unverändert.`, [{ t: 'Probe öffnen', href: url }], false, 12000);
+  } catch (e) { warte.remove(); if (tab && !tab.closed) tab.close(); fehlerSagen('Keine Probe-PDF', e); }
 }
 async function veroeffentlichen() {
   if (OFFEN && !(await speichern('Im Entwurf gespeichert', 'Vor dem Veröffentlichen gespeichert.'))) return;

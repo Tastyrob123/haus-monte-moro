@@ -358,3 +358,4 @@ body.ma{margin:0;background:var(--raum);color:var(--tinte);font:400 17px/1.62 va
 @media (max-width:800px){.m-f5__ort>span:first-child{display:block}.m-f5__ort>span:first-child+.rw-pkt{display:none}}
 /* Sperrabstand optisch mittig wie im Kleid (31.10.2026): nur Chromium hängt ihn nach dem letzten Buchstaben an; «Überspringen» im Rundgang rückt dort um den Abstand ein */
 @supports (interpolate-size:allow-keywords){.rdg-karte .rdg-zu{text-indent:.14em}}
+.wo-zl-z,.wo-zl-z>*{font:inherit!important;letter-spacing:inherit!important;text-transform:inherit!important;color:inherit!important;margin:0!important;padding:0!important}   /* beim Hochzählen dieselbe Schrift wie die Zahl, nicht die der Beschriftungs-span (Fund 09.11.2026) */

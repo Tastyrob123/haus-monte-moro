@@ -36,6 +36,7 @@
     + '[data-wo-bw="t"].wo-zl.wo-bw-da .wo-w{animation:wo-bw-hoch 1.25s cubic-bezier(.19,1,.22,1) backwards;--wo-bw-weg:.6em;--wo-bw-kl:1;animation-delay:calc(var(--wo-bw-i,0) * 85ms + var(--z,0) * 95ms)}'
     /* Zahlen laufen hoch: ein unsichtbarer Zwilling mit dem Endwert hält die Breite */
     + '.wo-zl-z{display:inline-grid;justify-items:end}.wo-zl-z>*{grid-area:1/1}.wo-zl-z>[aria-hidden]{visibility:hidden}'
+    + '.wo-zl-z,.wo-zl-z>*{font:inherit!important;letter-spacing:inherit!important;text-transform:inherit!important;color:inherit!important;margin:0!important;padding:0!important}'   /* beim Zählen die Schrift der Zahl, nicht die einer Beschriftungs-span (Fund 09.11.2026, Rezeption «Das wurde gefragt») */
     + '@media (prefers-reduced-motion:reduce){[data-wo-bw],[data-wo-bw] img,[data-wo-bw] .wo-w{animation:none!important;translate:none!important;scale:none!important}}';
 
   /* Was schwebt: Karten und Blätter der Werkzeuge (k, gestaffelt), Zwischentitel (t, zeilenweise), grosse Zahlen (z). Nur Klassen, die es in den
