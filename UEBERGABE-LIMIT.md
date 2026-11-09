@@ -1,5 +1,7 @@
 In Prüfung.
 
+**ZUERST: `KORREKTUR-ROBERT.md` umsetzen (Robert 09.11.2026, 10:15: kein Ticket, Rechenbeispiel bedienbar, Draussen vier Kacheln nebeneinander, keine Preise eintragen). Vorher kein «Fertig.».**
+
 Gegenprüfung der Sitzung session_0189oeKhRzA8vruci5JGApXy läuft auf `claude/task-o0ores` (WebKit über WebKitWebDriver, drei Prüf-Agenten mit den Augen, Schlussprüfung und Messlauf); sie schreibt ihre Tafel nach `ergebnis/laeufe/2026-11-09/` und setzt diese Zeile auf «Fertig.», wenn sie durch ist. Bisheriger Stand:
 
 Werkbank und sieben Werkzeuge Monte-Moro fertig und geprüft. Schlussprüfung 08.11.2026: 28 Ziele, 413 Zustände in 1440/1280/1000/390, 0 Funde, Oberflächenprüfung 22 × BESTANDEN (`ergebnis/laeufe/2026-11-08/`). Nachprüfung 09.11.2026 der danach verbesserten Ziele (Hotelbüro, Hausdruckerei, Hausdruckerei-Mail, Werkbank, Drucksachen, Material): 126 Zustände, 0 Funde, 5 × BESTANDEN (`ergebnis/laeufe/2026-11-09-nachpruefung/`). Nur Chromium (WebKit in der Cloud nicht ladbar). Wartet auf Roberts Wort (Website-Revier, nicht Teil des Pakets): Baustein `reception/baustein/anfrage.js` in die Website, Datenschutz-Satz zu Anfragen/Chat.
