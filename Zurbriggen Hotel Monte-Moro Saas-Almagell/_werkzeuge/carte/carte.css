@@ -307,7 +307,7 @@ body.lc{min-height:100vh;color:var(--tinte);font-family:var(--sans);font-size:15
 .lc .ansicht button{text-box:trim-both cap alphabetic}
 
 /* Messlauf 30.10.2026 (Kriterium 35): gesperrte Schrift in Knöpfen ohne Knauf optisch mittig (Sperrung nach dem letzten Buchstaben ausgleichen); Etikett «Neu» auf Versalhöhe */
-.kn:not(.kn--klein):not(:has(i)){padding-left:22px;padding-right:22px}   /* WebKit hängt keine Sperrung nach dem letzten Buchstaben an: symmetrisch */
+.kn:not(.kn--klein):not(:has(i)){padding-left:22px;padding-right:22px;padding-top:1.2px}   /* WebKit hängt keine Sperrung nach dem letzten Buchstaben an: symmetrisch */
 .kn--klein:not(:has(i)){padding-left:16px;padding-right:16px}
 /* Stamm 31.10.2026 (Cloud-Tor K35, WebKit und Chromium): nur Chromium hängt die Sperrung auch nach dem letzten Buchstaben an; dort rückt die Schrift
    um die halbe Sperrung nach rechts. Erkannt an einer Eigenschaft, die nur Chromium kennt (interpolate-size); «-apple-system-body» kennt das WebKit unter Linux

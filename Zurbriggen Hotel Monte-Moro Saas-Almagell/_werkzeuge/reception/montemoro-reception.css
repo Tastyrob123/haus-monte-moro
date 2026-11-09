@@ -27,7 +27,7 @@
 /* ---------- Eingang: Abteilungen (E15/E22 aus dem Doldenhorn): Rezeption, Event, Personal ---------- */
 .re-abt{display:grid;grid-template-columns:repeat(auto-fit,minmax(82px,1fr));gap:6px;margin:0 0 12px;padding:6px;border-radius:18px;background:#faf8f5;box-shadow:inset 0 0 0 1px rgba(9,28,47,.1),0 14px 26px -22px rgba(11,33,55,.5)}
 .re-abt button{display:flex;align-items:baseline;justify-content:space-between;gap:10px;min-width:0;padding:10px 12px 9px;border:0;border-radius:13px;background:none;text-align:left;color:var(--tinte);cursor:pointer;transition:background-color .3s var(--e1),color .3s var(--e1),transform .4s var(--e2)}
-.re-abt button span{white-space:nowrap;font:400 13px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.re-abt button span{white-space:nowrap;font:400 13px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase}
 .re-abt button i{font:400 19px/1 var(--serif);font-style:normal;color:rgba(9,28,47,.32)}
 .re-abt button i.da{color:var(--tinte)}
 .re-abt button:hover{background:rgba(9,28,47,.04)}
@@ -344,7 +344,7 @@ body.re :is(h1,h2,h3,b,strong,em,i,dt){font-style:normal}
 /* Messlauf 30.10.2026 (Kriterium 35): Schrift optisch mittig: Umschalter (Sperrung ausgleichen), Beispielfragen im Probe-Chat (Zeile auf Versalhöhe) */
 .wahl2 button{padding-left:18px!important;padding-right:18px!important}   /* WebKit hängt keine Sperrung nach dem letzten Buchstaben an: symmetrisch */
 /* Nur Chromium hängt die Sperrung auch nach dem letzten Buchstaben an (Cloud-Fund 31.10.2026, Weiche wie in der Pairing-Karte: interpolate-size kennt nur Chromium) */
-@supports (interpolate-size:allow-keywords){.wahl2 button{padding-left:18.5px!important;padding-right:17.5px!important}}
+@supports (interpolate-size:allow-keywords){.wahl2 button{padding-left:19.2px!important;padding-right:16.8px!important}}
 .probe__fragen span{text-box:trim-both cap alphabetic}
 /* Messlauf 30.10.2026 (Kriterium 5): langer Gruppentitel («Allergien & Unverträglichkeiten») schrumpft nie unter sein längstes Wort, der Zähler rückt daneben bzw. darunter statt darüber */
 .re-gr summary b{min-width:min-content}
@@ -416,7 +416,7 @@ html.probe-offen{overflow:visible}
    und eine Karte mit Hinweis galt als «zerfallen». Ruhiger ist es auch: alle Fotos einer Liste auf einer Oberkante. */
 .re-a>.re-a__bild,.re-a>.re-a__st{align-self:start}
 /* Schrift in den Knöpfen des Werkzeugs optisch mittig (Regel text-mitte, die Schrift sitzt 0,5 px hoch): 1 px mehr oben, 1 px weniger unten */
-.kn{padding-top:1px}
+.kn{padding-top:2.2px}.kn i{margin-top:-1.2px}
 .ws-wahl{padding-top:10px;padding-bottom:10px}
 /* Notiz «Vor dem Senden» (Regel «kante»): Satz und Punkte stehen auf einer Kante, das Kästchen hängt links davor im Rand */
 .re-notiz li{padding-left:0}.re-notiz li::before{left:-16px}
@@ -449,3 +449,9 @@ html.probe-offen{overflow:visible}
 .sb-i__n small,.sb-t__k small{color:var(--wo-akzent)}.sb-i[aria-current] .sb-i__n small{color:var(--wo-g2)}
 .re-abt button span{line-height:1.5;padding-top:1px}
 .fenster__k>h2:first-of-type{padding-right:52px}
+/* Punkt 17 (Robert 09.11.2026, Schrift ab 13 px): in der schmalen Spalte des Eingangs steht der Stand unter der Kennzeile wie am Handy, Sperrung der Versalzeilen enger,
+   die Hinweiszeile im Briefgestalter bricht um statt «…»; so zerfällt und kürzt nichts */
+@media (min-width:1181px){.re-eingang .re-a{grid-template-columns:auto minmax(0,1fr)}.re-eingang .re-a__st{grid-column:2;margin-top:-6px;justify-self:start}}
+.re-a__hinw,.re-a__k{letter-spacing:.08em}
+.gs-hinweis{letter-spacing:.08em}
+.gs-hinweis #gs-name{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.5;text-wrap:pretty}
