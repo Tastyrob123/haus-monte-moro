@@ -1,4 +1,4 @@
-Fertig. Werkbank: https://github.com/Tastyrob123/haus-monte-moro/tree/claude/task-o0ores/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/_werkbank (lokal nach `bash cloud/server.sh`: http://127.0.0.1:9388/werkbank/index.html) · Prüftafel: https://github.com/Tastyrob123/haus-monte-moro/blob/ergebnis/ergebnis/laeufe/2026-11-08/index.html
+In Prüfung.
 
 Schlussprüfung 08.11.2026, 19:10 UTC: 28 Ziele (sieben Werkzeuge mit Anleitungen, Werkbank mit allen Unterseiten), 413 Zustände bei 1440 (dazu 1280/1000/390), 0 Funde, nichts unerreicht; Oberflächenprüfung 22 × BESTANDEN; Gegenprobe mit dem Auge (über 70 Bilder). Nur Chromium (WebKit in der Cloud nicht ladbar). Wartet auf Roberts Wort (Website-Revier, nicht Teil des Pakets): Baustein `reception/baustein/anfrage.js` in die Website, Datenschutz-Satz zu Anfragen/Chat.
 
