@@ -64,8 +64,11 @@ Erledigt:
 - Hausdruckerei: Rest «Violett (Dirty Chicken)» in der Vorlagenwahl und Bezeichnung «Dirty Chicken» entfernt.
 - WebKit-Ersatzweg: `apt-get install webkit2gtk-driver xvfb`, dann `xvfb-run -a node cloud/webkit_blick.js <aus> <urls…>` (MiniBrowser, 390 im iframe, weil das Fenster nicht schmaler als 447 px wird). Lauf über 28 Ziele + 9 Website-Seiten nach `aus-webkit/`.
 - Hauswerte nachgeprüft: 11 Röstis, 5 Cordon bleus mit Preisen im Kartenbrett = `daten.py`.
-Läuft: `cloud/schluss.sh` → `aus-ende/` (/tmp/schluss.log), Messlauf → `aus-mess/alle/` (/tmp/mess.log), drei Prüf-Agenten mit den Augen (Werkzeuge 1–4, 5–7, Werkbank).
-Offen, in Reihenfolge: Funde der Agenten reparieren und nachprüfen, Ergebnis Schluss/Messlauf/WebKit, Tafel nach `ergebnis/laeufe/2026-11-09/`, erste Zeile «Fertig. Geprüft.» mit Belegen.
+- WebKit-Blick über alle 28 Ziele + 9 Website-Seiten, 1440 und 390: 74/74 bestanden (erster Lauf war bei 390 wegen frame-ancestors leer; korrigiert und wiederholt, Bilder angesehen).
+- Augen-Agent Werkbank: 4 Funde, alle behoben (72a1322): Beigaben-Kopf leer → Auslage; Feed am Handy ohne Rückweg und mit angeschnittener Statuszeile (Fehler im Kit `feed.py`, Regelreihenfolge) → behoben; Mail-Band blieb nach Blättern hoch → klappt zu; Aufzählungszeichen im Angebot.
+- Messlauf: Hausdruckerei E-Mail Prüfliste überdeckte Vorschau → eigene Ebene + Regel für geöffnete Aufklapper (4a51537); Werkbank «doppelt» war Fehlalarm der Signatur → Regel geschärft (7112135), Gegenprobe mit Testseite findet echte Doppelungen.
+Läuft: `cloud/schluss.sh` (Werkbank-Unterseiten), Werkbank einzeln neu durchs Tor (Browser stürzte unter Last ab), zwei Augen-Agenten (Werkzeuge 1–4, 5–7).
+Offen, in Reihenfolge: Funde der zwei Agenten reparieren, Messlauf über alles frisch, Tafel nach `ergebnis/laeufe/2026-11-09/`, erste Zeile «Fertig. Geprüft.» mit Belegen.
 
 ## Entscheidungen der Nacht
 - 09.11.: Prüfskript genau in der Mac-Fassung (153 Zeilen); die frühere Ausnahme der Vorsitzung für Bildbänder fällt weg, stattdessen heissen die Bildkarussells `kartenzug` (sie sind keine Laufbänder).
