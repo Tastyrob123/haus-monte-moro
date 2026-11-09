@@ -1,6 +1,6 @@
-In Prüfung.
+Fertig.
 
-Schlussprüfung 08.11.2026, 19:10 UTC: 28 Ziele (sieben Werkzeuge mit Anleitungen, Werkbank mit allen Unterseiten), 413 Zustände bei 1440 (dazu 1280/1000/390), 0 Funde, nichts unerreicht; Oberflächenprüfung 22 × BESTANDEN; Gegenprobe mit dem Auge (über 70 Bilder). Nur Chromium (WebKit in der Cloud nicht ladbar). Wartet auf Roberts Wort (Website-Revier, nicht Teil des Pakets): Baustein `reception/baustein/anfrage.js` in die Website, Datenschutz-Satz zu Anfragen/Chat.
+Werkbank und sieben Werkzeuge Monte-Moro fertig und geprüft. Schlussprüfung 08.11.2026: 28 Ziele, 413 Zustände in 1440/1280/1000/390, 0 Funde, Oberflächenprüfung 22 × BESTANDEN (`ergebnis/laeufe/2026-11-08/`). Nachprüfung 09.11.2026 der danach verbesserten Ziele (Hotelbüro, Hausdruckerei, Hausdruckerei-Mail, Werkbank, Drucksachen, Material): 126 Zustände, 0 Funde, 5 × BESTANDEN (`ergebnis/laeufe/2026-11-09/`). Nur Chromium (WebKit in der Cloud nicht ladbar). Wartet auf Roberts Wort (Website-Revier, nicht Teil des Pakets): Baustein `reception/baustein/anfrage.js` in die Website, Datenschutz-Satz zu Anfragen/Chat.
 
 # Übergabe (laufend) · Hotel Monte-Moro, Saas-Almagell
 
@@ -50,7 +50,7 @@ Stand: 08.11.2026, Oberchef-Sitzung (Zweig `claude/task-o0ores`).
 - Die Folgesitzung prüft Schaufenster und Hausdruckerei nach diesen Reparaturen frisch (tor-schnell, 4 Breiten) und trägt das Ergebnis hier ein; dazu der Messlauf über alle Ziele (`aus-ende/messlauf/alle/`), den die erste Sitzung nicht hat. Tafel `ergebnis` und Meldung an Robert macht die erste Sitzung.
 
 ## Nächster genauer Schritt
-Keiner – alles fertig und geprüft. Nur noch «Wartet auf Roberts Wort».
+Keiner – alles fertig und geprüft (Nachprüfung 09.11. grün). Nur noch «Wartet auf Roberts Wort».
 
 (Früher:) Läuft `cloud/schluss.sh` nicht mehr und fehlt `aus-ende/ende.json`: neu starten. Danach Funde reparieren, Fundbilder ansehen, Tafeln nach Zweig `ergebnis` unter `ergebnis/laeufe/2026-11-08/`, Meldung.
 
@@ -76,7 +76,9 @@ Keiner – alles fertig und geprüft. Nur noch «Wartet auf Roberts Wort».
 - Offen war nur: Nachprüfung der Ziele, die nach der Schlussprüfung repariert wurden (77b8f0d, 587f496): hotelbuero, hausdruckerei, hausdruckerei-mail, werkbank, werkbank-drucksachen, werkbank-material. Läuft in `/tmp/gp` (`cloud/schnell.sh`, Log `/tmp/gp/nachlauf.log`), danach Oberflächenprüfung, Auge, Tafel `ergebnis/laeufe/2026-11-09/`.
 - 00:55: Drucksachen Preisliste Zimmer, Zuschläge, Best of Röstis (beide Seiten) gerendert und angesehen: CHF steht neben der Zahl, Titel vorne/hinten gleich gross. Oberflächenprüfung Hotelbüro, Hausdruckerei, Werkbank, Drucksachen, Material: 5 × BESTANDEN (`/tmp/gp/aus-nach/oberflaeche/`).
 - Hotelbüro tor-schnell: 4 Zustände, 0 Funde; Rundgang «Das Schaufenster, das Kartenbrett, …» angesehen. Werkbank › Material Ordner 05 bei 1440/390 angesehen, 137 Links der Seite antworten 200.
-- Hausdruckerei tor-schnell 40 Zustände, Hausdruckerei-Mail 40 Zustände, je 4 Breiten, 0 Funde; 15 zufällige Bilder (1440/1000/390) angesehen, ohne Befund. Werkbank läuft (~28 s je Zustand), danach werkbank-drucksachen, werkbank-material.
+- Hausdruckerei tor-schnell 40 Zustände, Hausdruckerei-Mail 40 Zustände, je 4 Breiten, 0 Funde; 15 zufällige Bilder (1440/1000/390) angesehen, ohne Befund. Werkbank 40, Drucksachen 1, Material 1 Zustände, je 4 Breiten, 0 Funde; Werkbank-Bilder (1440/390) und Preisliste Zimmer auf der Drucksachen-Seite angesehen, ohne Befund.
+- Prüftafel `ergebnis/laeufe/2026-11-09/index.html` (nur die sechs Ziele, Link zur vollen Tafel vom 08.11.), Startseite des Zweigs verlinkt. Beide Tafeln liefen bei 390 über (Tabelle 525 px): Spalte «Nicht erreicht» am Handy ausgeblendet, Schrift 13 px; auch in `cloud/tafel_sitzung.py` (Zweig `claude/task-o0ores`).
+- Damit fertig. Keine Unteragenten offen.
 
 ## Entscheidungen der Nacht
 - Nachtsitzung: Auftrag sagt Zweig `ergebnis`; die Übergabe lag nur auf `claude/task-o0ores`. Übergabe und Lebenszeichen leben ab jetzt auf `ergebnis`, Code-Reparaturen weiter auf `claude/task-o0ores`.

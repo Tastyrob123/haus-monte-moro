@@ -1,0 +1,94 @@
+{
+ "summe": {
+  "zustaende": 126,
+  "funde": 0,
+  "nicht_erreicht": 0
+ },
+ "ziele": {
+  "hotelbuero": {
+   "zustaende": 4,
+   "breiten": {
+    "1440": 4,
+    "1000": 4,
+    "1280": 4,
+    "390": 4
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9381/_werkzeuge/maison/",
+   "name": "Das Hotelbüro"
+  },
+  "hausdruckerei": {
+   "zustaende": 40,
+   "breiten": {
+    "1440": 40,
+    "1000": 40,
+    "1280": 40,
+    "390": 58
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9387/_werkzeuge/imprimerie/",
+   "name": "Die Hausdruckerei"
+  },
+  "hausdruckerei-mail": {
+   "zustaende": 40,
+   "breiten": {
+    "1440": 40,
+    "1000": 40,
+    "1280": 40,
+    "390": 52
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": null,
+   "url": "http://127.0.0.1:9387/_werkzeuge/imprimerie/mail.html",
+   "name": "Die Hausdruckerei · Mail"
+  },
+  "werkbank": {
+   "zustaende": 40,
+   "breiten": {
+    "1440": 40,
+    "1000": 40,
+    "1280": 40,
+    "390": 40
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9388/werkbank/index.html",
+   "name": "Die Werkbank"
+  },
+  "werkbank-drucksachen": {
+   "zustaende": 1,
+   "breiten": {
+    "1440": 1,
+    "1000": 1,
+    "1280": 1,
+    "390": 1
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9388/drucksachen/index.html",
+   "name": "Die Werkbank · Drucksachen"
+  },
+  "werkbank-material": {
+   "zustaende": 1,
+   "breiten": {
+    "1440": 1,
+    "1000": 1,
+    "1280": 1,
+    "390": 1
+   },
+   "funde": 0,
+   "nicht_erreicht": 0,
+   "oberflaeche": "BESTANDEN",
+   "url": "http://127.0.0.1:9388/material/index.html",
+   "name": "Die Werkbank · Material"
+  }
+ },
+ "hinweis": "Nachprüfung der seit 08.11. geänderten Ziele; übrige Ziele siehe ../2026-11-08/zahlen.json"
+}
