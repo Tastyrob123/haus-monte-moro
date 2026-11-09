@@ -103,7 +103,7 @@
   };
   function handy(fkey, v, t, inh, H) {
     const W = Math.round(H * .485), rand = Math.round(W * .045), sw = W - 2 * rand;
-    const h = document.createElement('span'); h.className = 'handy handy--ganz'; h.style.width = W + 'px'; h.style.height = H + 'px'; h.style.setProperty('--rand', rand + 'px');
+    const h = document.createElement('span'); h.className = 'handy handy--ganz'; h.setAttribute('aria-hidden', 'true');   /* Miniatur im Massstab (Punkt 17) */ h.style.width = W + 'px'; h.style.height = H + 'px'; h.style.setProperty('--rand', rand + 'px');
     const f = DS.FORMATE[fkey], ph = sw * f.h / f.b;
     const post = document.createElement('span'); post.className = 'papier papier--schirm'; post.style.width = sw + 'px'; post.style.height = ph + 'px';
     post.appendChild(vorschau(fkey, v, t, inh, sw * (Math.max(f.b, f.h) + 2 * DS.B) / f.b * (f.b >= f.h ? 1 : f.h / f.h)));
@@ -290,7 +290,7 @@
     k.appendChild(bu);
     k.insertAdjacentHTML('beforeend', `<span class="mk__licht"></span><span class="doc__aktionen">${Object.entries({ umbenennen: 'Umbenennen', kopie: 'Kopie anlegen', pdf: 'PDF speichern', loeschen: 'Löschen' }).map(([x, t]) => `<button data-akt="${x}" title="${t}" aria-label="${t}">${IA[x]}</button>`).join('')}</span>`);
     b.appendChild(k);
-    b.insertAdjacentHTML('beforeend', `<b class="mk__name" data-name>${esc(d.name)}</b><em class="mk__info">${esc(DS.FORMATE[d.formatKey]?.name || '')} · ${d.seiten.length} ${d.seiten.length === 1 ? 'Seite' : 'Seiten'} · ${vorZeit(d.geaendert)}</em>`);
+    b.insertAdjacentHTML('beforeend', `<b class="mk__name" data-name>${esc(d.name)}</b><em class="mk__info">${esc(DS.FORMATE[d.formatKey]?.name || '')} · ${d.seiten.length} ${d.seiten.length === 1 ? 'Seite' : 'Seiten'} · ${vorZeit(d.geaendert)}</em>`);
     return b;
   }
   function neuKarte(i) {
@@ -492,7 +492,7 @@
     Object.entries(attr).forEach(([k, v]) => b.dataset[k] = v);
     const bu = document.createElement('span'); bu.className = 'stueck__buehne'; bu.style.height = Math.ceil(H + 36) + 'px';
     const sa = document.createElement('span'); sa.className = 'stueck__satz'; blaetter.forEach(x => x && sa.appendChild(x)); bu.appendChild(sa); b.appendChild(bu);
-    b.insertAdjacentHTML('beforeend', `<b class="zl__name">${esc(name).replace(/ (\S+)$/, '\u00a0$1')}</b><em class="stueck__format">${esc(info)}</em>${nimm ? `<small class="stueck__satztext stueck__nimm">${esc(nimm)}</small>` : ''}`);
+    b.insertAdjacentHTML('beforeend', `<b class="zl__name">${esc(name).replace(/ (\S+)$/, '\u00a0$1')}</b><em class="stueck__format">${esc(info).replace(/ · /g, "\u00a0· ").replace(/(\d) (?=\S)/g, "$1\u00a0")}</em>${nimm ? `<small class="stueck__satztext stueck__nimm">${esc(nimm)}</small>` : ''}`);
     return b;
   }
   function leerStueck(attr, f, basis, info) {

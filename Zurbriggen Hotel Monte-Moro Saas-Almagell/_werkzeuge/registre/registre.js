@@ -372,8 +372,10 @@ function vergleich(jetzt, vorher, umgekehrt) {
 }
 function saeulen(werte, beschrift, tip, klasse = '', vorher) {
   const max = Math.max(1, ...werte, ...(vorher || []));
+  // Punkt 17 (09.11.2026): jede zweite Beschriftung, vom letzten Tag aus gezählt, trägt «jedezweite»; am Handy steht nur jede zweite (13 px brauchen den Platz)
+  const mit = werte.map((z, i) => beschrift(i) ? i : -1).filter(i => i >= 0), zw = new Set(mit.filter((i, k) => (mit.length - 1 - k) % 2 === 1));
   return `<div class="saeulen ${klasse}" style="--n:${werte.length}" role="img" aria-label="${esc(tip.label)}">
-    ${werte.map((z, i) => `<div class="s" style="--i:${Math.round(i * 30 / werte.length)}" data-t="${esc(tip(i, z))}">${vorher ? `<u style="--h:${(vorher[i] / max).toFixed(3)}"></u>` : ''}<i style="--h:${z ? Math.max(.025, z / max).toFixed(3) : 0}"></i>${beschrift(i) ? `<span>${beschrift(i)}</span>` : ''}</div>`).join('')}
+    ${werte.map((z, i) => `<div class="s" style="--i:${Math.round(i * 30 / werte.length)}" data-t="${esc(tip(i, z))}">${vorher ? `<u style="--h:${(vorher[i] / max).toFixed(3)}"></u>` : ''}<i style="--h:${z ? Math.max(.025, z / max).toFixed(3) : 0}"></i>${beschrift(i) ? `<span${zw.has(i) ? ' class="jedezweite"' : ''}>${beschrift(i)}</span>` : ''}</div>`).join('')}
   </div>`;
 }
 function karteBesuch(b, i, aktiv) {

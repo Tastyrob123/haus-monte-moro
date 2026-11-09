@@ -607,6 +607,7 @@
     p.style.width = (f.b) * S + 'px'; p.style.height = f.h * S + 'px';
     [...p.children].forEach(c => { c.style.left = parseFloat(c.style.left) - B * S + 'px'; c.style.top = parseFloat(c.style.top) - B * S + 'px'; });
     p.style.backgroundPosition = '0 0';
+    p.setAttribute('aria-hidden', 'true');   // Miniatur eines Blatts im Massstab: Bild, keine Lese-Schrift (Punkt 17, 09.11.2026)
     return p;
   }
   function zeichneVorlagen() {

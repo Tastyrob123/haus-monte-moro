@@ -600,7 +600,7 @@ function sichere(j) {
   // nur auf ausdrücklichen Wunsch: eine Datei auf diesem Rechner, nichts auf dem Server
   const html = `<!doctype html><meta charset="utf-8"><title>${esc(t('name'))} · ${esc(j.name)}</title><body style="font:15px/1.6 system-ui;max-width:820px;margin:40px auto;color:#13263A;background:#F5F2EE;padding:0 20px">
     <h1 style="font:400 30px/1.15 'Fjalla One','Arial Narrow',Arial,sans-serif;color:#0A2A4A">${esc(t('pruefung'))}: ${esc(j.name)}</h1><img src="${j.vorschau}" style="max-width:360px;border-radius:12px"><pre style="white-space:pre-wrap;font:14px/1.6 system-ui">${esc(alsText(j))}</pre>
-    <p style="color:#9A4F2B;font-size:12px">${esc(t('name'))} · Hotel Monte-Moro, Saas-Almagell · ${new Date().toLocaleString('de-DE')}</p></body>`;
+    <p style="color:#9A4F2B;font-size:13px">${esc(t('name'))} · Hotel Monte-Moro, Saas-Almagell · ${new Date().toLocaleString('de-DE')}</p></body>`;
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([html], { type: 'text/html' }));
   a.download = 'markenpruefung-montemoro-' + (j.name.replace(/\.[a-z0-9]+$/i, '').replace(/[^a-z0-9äöü_-]+/gi, '-').toLowerCase().slice(0, 60) || 'entwurf') + '.html';

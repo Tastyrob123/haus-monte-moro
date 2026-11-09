@@ -3,14 +3,14 @@
 .pk-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 22px;max-width:980px;margin:6px 0 34px;padding:26px 28px 28px;border-radius:14px;
   background:var(--wo-blatt,#fcfaf9);box-shadow:0 1px 0 #fff inset,0 24px 50px -30px rgba(6,23,41,.45),0 0 0 1px var(--wo-linie,rgba(6,23,41,.14))}
 .pk-form label{display:flex;flex-direction:column;gap:8px;min-width:0}
-.pk-form label>span{font:10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-akzent,#685736)}
+.pk-form label>span{font:13px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-akzent,#685736)}
 .pk-form input,.pk-form textarea,.pk-form select{width:100%;min-width:0;padding:12px 14px;border:0;border-radius:10px;font:400 16px/1.35 var(--sans);color:var(--tinte);
   background:#fff;box-shadow:inset 0 1px 2px rgba(6,23,41,.12),0 0 0 1px var(--wo-linie,rgba(6,23,41,.14))}
 .pk-form textarea{min-height:84px;resize:vertical}
 .pk-form input:focus,.pk-form textarea:focus,.pk-form select:focus{outline:0;box-shadow:inset 0 1px 2px rgba(6,23,41,.12),0 0 0 1.5px var(--messing)}
 .pk-form .pk-breit{grid-column:1/-1}
 .pk-form .pk-unten{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:16px 22px;justify-content:space-between}
-.pk-zahl{display:flex;align-items:center;gap:8px;font:10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-leise,#465462)}
+.pk-zahl{display:flex;align-items:center;gap:8px;font:13px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-leise,#465462)}
 .pk-zahl button{width:40px;height:40px;border:0;border-radius:50%;font:15px var(--mono);color:var(--tinte);background:#fff;box-shadow:0 0 0 1px var(--wo-linie,rgba(6,23,41,.14));cursor:pointer}
 .pk-zahl button.an{color:#fcfaf9;background:var(--navy)}
 .pk-hinweis{grid-column:1/-1;margin:0 0 6px;font:14px/1.5 var(--sans);color:var(--wo-leise,#465462)}
@@ -23,17 +23,17 @@
 @media (hover:hover){.pk-karte:hover .pk-vorn{transform:translateX(-14%) translateY(-6px) rotate(-1.2deg)}}
 .pk-text{display:flex;flex-direction:column;gap:4px;min-width:0}
 .pk-text b{font:400 23px/1.15 var(--serif);color:var(--tinte);font-variation-settings:'SOFT' 100}
-.pk-text small{font:10px/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--wo-leise,#465462)}
+.pk-text small{font:13px/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--wo-leise,#465462)}
 .pk-text em{font-style:normal;font-size:13px;color:var(--wo-akzent,#685736)}
 .pk-auftrag{margin-top:6px;font:13px/1.5 var(--sans);color:var(--wo-leise,#465462)}
-.pk-auftrag summary{cursor:pointer;font:10px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--wo-akzent,#685736)}
+.pk-auftrag summary{cursor:pointer;font:13px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--wo-akzent,#685736)}
 .pk-auftrag p{margin:8px 0 0}
 .pk-los{align-self:flex-start;margin-top:auto}   /* Knöpfe nebeneinander auf einer Linie (Fehlerbuch: Kacheln schliessen unten bündig ab) */
 .pk-leer{grid-column:1/-1;font:16px/1.5 var(--sans);color:var(--wo-leise,#465462)}
 .pk-chips{margin:0 0 12px;align-items:center}
-.pk-chips__n{min-width:96px;font:10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-akzent,#685736)}
+.pk-chips__n{min-width:96px;font:13px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-akzent,#685736)}
 #pkFilter{margin:4px 0 22px}
-.pk-motivzahl{font:10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-leise,#465462);margin:0 0 18px}
+.pk-motivzahl{font:13px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-leise,#465462);margin:0 0 18px}
 @media (max-width:760px){.pk-form{grid-template-columns:1fr;padding:20px 18px}.pk-chips__n{width:100%}}
 
 /* Gestaltung 28.10.2026, Fund 2: «Anlässe der nächsten Wochen» ohne Leerraum. Die grosse Karte reicht über so viele Reihen, wie rechts Karten stehen;
@@ -41,6 +41,7 @@
 #startWochen > .wo:first-child:nth-last-child(3) { grid-row: span 2 }
 #startWochen > .wo:first-child:nth-last-child(2) { grid-row: span 1 }
 #startWochen { grid-template-rows: none; grid-auto-rows: 1fr }
+@media (max-width:760px) { #startWochen { grid-auto-rows: auto } }   /* Handy, eine Spalte: jede Karte so hoch wie ihr Inhalt, kein dunkler Leerraum (09.11.2026) */
 .pk-zuletzt-satz { margin: -6px 0 14px }
 
 /* Abend beschreiben, live (Oberchef 28.10.): Hinweis im Ton des Hauses und Karten «entsteht …», bis Vorder- und Rückseite da sind */
@@ -78,7 +79,7 @@
 .pk-alle__titel { margin: 10px 0 6px; font: 400 34px/1.1 var(--wo-titel); letter-spacing: 0; color: var(--wo-tief, #061729) }
 .pk-abend { display: flex; flex-direction: column; gap: 6px; margin: 34px 0 22px; padding-top: 22px; border-top: 1px solid var(--wo-linie, rgba(6,23,41,.14));
   font: 400 26px/1.15 var(--wo-titel); letter-spacing: 0; color: var(--tinte) }
-.pk-abend small { font: 10px/1.6 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--wo-leise, #465462) }
+.pk-abend small { font: 13px/1.6 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--wo-leise, #465462) }
 @media (min-width: 700px) { #pkAlle .pk-raster[data-n="4"] { grid-template-columns: repeat(2, minmax(270px, 1fr)) } }
 
 /* Vorschläge grösser, Rückseite dicht neben der Vorderseite (Robert 29.10.): das Blattfach ist so breit wie das Paar (plakat.js fachStil) und steht mittig */
@@ -110,14 +111,14 @@
 .bk-felder{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:14px 18px}   /* zwei Spalten nur, wenn die Beispiele ganz hineinpassen (Tor 1280: Platzhalter abgeschnitten) */
 .bk-felder .bk-breit{grid-column:1/-1}
 .bk label{display:flex;flex-direction:column;gap:7px;min-width:0}
-.bk label>span{font:10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-akzent,#685736)}
+.bk label>span{font:13px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-akzent,#685736)}
 .bk input:not([type=range]):not([type=file]),.bk select{width:100%;min-width:0;padding:11px 13px;border:0;border-radius:10px;font:400 16px/1.35 var(--sans);color:var(--tinte);
   background:#fff;box-shadow:inset 0 1px 2px rgba(6,23,41,.12),0 0 0 1px var(--wo-linie,rgba(6,23,41,.14))}
 .bk input:focus-visible,.bk select:focus-visible{outline:0;box-shadow:inset 0 1px 2px rgba(6,23,41,.12),0 0 0 1.5px var(--messing)}
 .bk input[aria-invalid=true]{box-shadow:inset 0 1px 2px rgba(6,23,41,.12),0 0 0 1.5px var(--rot,#a75d35)}
 .bk-reihe{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;margin-bottom:14px}
 .bk .bk-hoch{position:relative;flex-direction:row;align-items:center;justify-content:center;height:44px;padding:0 20px;border-radius:999px;cursor:pointer;
-  font:500 11px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#fcfaf9;background:var(--navy)}
+  font:500 13px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#fcfaf9;background:var(--navy)}
 .bk .bk-hoch>span{font:inherit;letter-spacing:inherit;color:inherit}
 .bk-hoch input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
 .bk-hoch:focus-within{box-shadow:0 0 0 2px var(--messing)}
@@ -138,7 +139,7 @@
 .bk-zeile label.bk-gr{flex:1 1 84px}
 .bk-zeile select{white-space:nowrap;text-overflow:ellipsis}
 .bk-fotowahl{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}
-.bk-fotowahl button{height:36px;padding:0 14px;border:0;border-radius:999px;font:500 11px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--tinte);background:#fff;box-shadow:0 0 0 1px var(--wo-linie,rgba(6,23,41,.14));cursor:pointer}
+.bk-fotowahl button{height:36px;padding:0 14px;border:0;border-radius:999px;font:500 13px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--tinte);background:#fff;box-shadow:0 0 0 1px var(--wo-linie,rgba(6,23,41,.14));cursor:pointer}
 .bk-fotowahl button.an{color:#fcfaf9;background:var(--navy)}
 .bk-fotos .bk-mehrfotos{grid-column:1/-1;justify-self:start}.bk-farbe{display:inline-flex;align-items:center;gap:7px;height:34px;padding:0 11px 0 6px;border:0;border-radius:999px;font:400 13px/1 var(--sans);color:var(--tinte);background:#fff;cursor:pointer;box-shadow:0 0 0 1px var(--wo-linie,rgba(6,23,41,.14))}
 .bk-farbe i{flex:none;width:20px;height:20px;border-radius:50%;background:var(--f);box-shadow:inset 0 0 0 1px rgba(6,23,41,.25)}
@@ -149,16 +150,16 @@
 .bk-pruefung--hinweis{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;color:var(--tinte);background:rgba(167,93,53,.08)}
 .bk-unten{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 20px}
 .bk-formate{display:flex;flex-wrap:wrap;gap:8px}
-.bk-formate button{height:40px;padding:0 16px;border:0;border-radius:999px;font:500 11px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--tinte);background:#fff;box-shadow:0 0 0 1px var(--wo-linie,rgba(6,23,41,.14));cursor:pointer}
+.bk-formate button{height:40px;padding:0 16px;border:0;border-radius:999px;font:500 13px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--tinte);background:#fff;box-shadow:0 0 0 1px var(--wo-linie,rgba(6,23,41,.14));cursor:pointer}
 .bk-formate button.an{color:#fcfaf9;background:var(--navy)}
 #pkVorschlaege{scroll-margin-top:96px}
 /* Schrift optisch mittig (Messlauf text-mitte): Chromium hängt die Sperrung nach dem letzten Buchstaben an, der Einzug gleicht das aus (wie maison.css) */
-@supports (interpolate-size:allow-keywords){.bk .bk-hoch>span{text-indent:.14em}.bk-fotowahl button{text-indent:.1em}.bk-formate button{text-indent:.12em}}
-.bk-formate-titel{flex:0 0 100%;font:10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-akzent,#685736)}
+@supports (interpolate-size:allow-keywords){.bk .bk-hoch>span{text-indent:.14em}.bk-fotowahl button{text-indent:.02em}.bk-formate button{text-indent:.12em}}
+.bk-formate-titel{flex:0 0 100%;font:13px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-akzent,#685736)}
 .bk-vorschau{position:sticky;top:18px;display:flex;flex-direction:column;align-items:center;gap:12px;min-width:0;padding:22px;border-radius:14px;background:var(--creme,#eae2d9)}
 .bk-blatt{display:flex;justify-content:center;width:100%;min-height:260px}
 .bk-blatt .blatt{box-shadow:0 1px 1px rgba(6,23,41,.18),0 18px 34px -16px rgba(6,23,41,.55)}
-.bk-unter{margin:0;text-align:center;font:10px/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--wo-leise,#465462)}
+.bk-unter{margin:0;text-align:center;font:13px/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--wo-leise,#465462)}
 @media (max-width:1099px){.bk{grid-template-columns:minmax(0,1fr)}.bk-vorschau{position:static;order:-1}}
 @media (max-width:640px){.bk-teil{padding:18px 16px 20px}.bk-felder{grid-template-columns:minmax(0,1fr)}.bk-regler{grid-template-columns:minmax(0,1fr)}
   .bk-unten .kn{width:100%;justify-content:space-between}}
@@ -167,5 +168,5 @@
 @supports (interpolate-size:allow-keywords){#bkVorschlag{padding-left:calc(14px + .16em)}}
 /* Monte-Moro (08.11.2026): Grund des Aushangs als drei Farbfelder (Nacht, Papier, Nachtblau) mit Namen */
 #bkGruende{grid-template-columns:repeat(3,minmax(0,120px))}
-.bk-grund--ton{display:grid;justify-items:center;align-content:center;gap:8px;min-height:96px;padding:12px 8px;font:400 10.5px/1.2 var(--wo-mono,'DM Mono',monospace);letter-spacing:.12em;text-transform:uppercase;color:var(--wo-tinte,#0A2A4A)}
+.bk-grund--ton{display:grid;justify-items:center;align-content:center;gap:8px;min-height:96px;padding:12px 8px;font:400 13px/1.2 var(--wo-mono,'DM Mono',monospace);letter-spacing:.12em;text-transform:uppercase;color:var(--wo-tinte,#0A2A4A)}
 .bk-grund--ton i{display:block;width:40px;height:40px;border-radius:50%;background:var(--f);box-shadow:inset 0 0 0 1px rgba(10,42,74,.25)}
