@@ -27,5 +27,5 @@ python3 "$K/bau.py" "$P" | grep -v "Schrift fehlt"                    # die Werk
 node _werkbank/sb_strom.js || true
 python3 _werkbank/objekte_bau.py "$P"
 python3 "$K/bau.py" "$P" | grep -v "Schrift fehlt"
-python3 _werkbank/ruecksprung.py "$P"                                 # zuletzt: Rücksprung auf die alte Höhe in jeder Seite
+python3 "$K/ruecksprung.py" "$P"                                      # zuletzt: Rücksprung des Kits (Fassung mit Merkpunkt, wie geprüft) in jede Seite
 echo "fertig: http://127.0.0.1:9388/werkbank/"

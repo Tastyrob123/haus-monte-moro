@@ -1000,7 +1000,7 @@ body.kino-offen{overflow:hidden}
 @media(min-width:900px){.bf-text{columns:auto!important;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(36px,4.6vw,80px);align-items:stretch}
   .bf-rechts{display:flow-root}.bf-rechts .bf-ich{margin-bottom:0}}
 /* Brief mit den drei Orten (29.10.2026): Kursblatt und Unterschrift in einer Reihe unter dem Gruss, beide auf einer Mitte, kein Loch */
-.bf-fuss__reihe{flex:1 1 100%;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);align-items:center;gap:clamp(22px,3.4vw,56px)}
+.bf-fuss__reihe{flex:1 1 100%;display:grid;grid-template-columns:1fr;   /* ohne Ticket (09.11.2026): nur die Unterschrift */align-items:center;gap:clamp(22px,3.4vw,56px)}
 .bf-fuss__reihe .bf-name{margin:0 auto;align-self:center}
 @media(max-width:759px){.bf-fuss__reihe{grid-template-columns:1fr}.bf-fuss__reihe .bf-name{align-self:center}}
 /* Handy (Oberchef 08.11.): Robert rund über dem letzten Absatz, Text in voller Breite (vorher Spalte von zwei, drei Wörtern) */
