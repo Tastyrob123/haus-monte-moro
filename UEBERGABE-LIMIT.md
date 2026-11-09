@@ -93,7 +93,8 @@ Offen, in Reihenfolge: Funde Agent 5–7 reparieren und nachprüfen, Messlauf au
 - Danach: Funde 5–7 übernehmen, tor-schnell der geänderten Werkzeuge, Oberflächenprüfung über alle 21, Messlauf, Tafel `ergebnis/laeufe/2026-11-09/`, erste Zeile «Fertig.».
 
 - Neue Mac-Fassung `oberflaeche_pruefen.js` (270 Zeilen, Punkte 10–15) kam um 07:45 UTC. Damit repariert: Rücksprung bei «Zurück aus dem Speicher» (Kit `ruecksprung.js`, pageshow), Drucksachen-Kachel, «So geht es weiter», Material (Titelspalte mitlaufend), Befund (Auftritte), Hotelbüro (Fotos 2×3), Kartenbrett (Auftritte), Rezeption (sechs Anfragen). BESTANDEN: Werkbank + 13 Unterseiten (alle 18 Werkbank-Oberflächen), Hotelbüro, Schaufenster, Kartenbrett, Rezeption.
-- Offen: Markenbuch, Besucherliste, Hausdruckerei (Augen-Agent repariert, prüft mit neuer Fassung), dann Tor dieser drei, Oberflächenprüfung über alle 21, Tafel `ergebnis/laeufe/2026-11-09/`.
+- Stand 11:30 UTC (Prüfskript 76b4dfb): 18 von 21 Oberflächen BESTANDEN (alle Werkbank-Seiten, Hotelbüro, Schaufenster, Kartenbrett, Rezeption); Besucherliste und Hausdruckerei BESTANDEN mit den noch nicht eingecheckten Reparaturen des Augen-Agenten; Markenbuch fällt bei 390 noch durch (Punkt 11, Auftritte), Agent arbeitet daran. Tor (aus-ende/): 25 Ziele 0 Funde.
+- Offen: Markenbuch Punkt 11, Agent-Ergebnis übernehmen und committen, Tor für Markenbuch/Besucherliste/Hausdruckerei (+Unterseiten), Tafel `ergebnis/laeufe/2026-11-09/`, dann «Fertig.».
 
 ## Entscheidungen der Nacht
 - 09.11. (Nacht 3): Kapitel Karten: fünf Blätter = die fünf Karten des Kartenbretts (PDF und Vorschau in `werkbank/karten/`, gebaut von `_werkbank/karten_faecher.py`); Seite «Unterlagen» unverändert. Angaben/Kacheln nach Roberts Berichtigung wieder entfernt.
