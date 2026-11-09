@@ -111,11 +111,11 @@ body.ma{margin:0;background:var(--raum);color:var(--tinte);font:400 17px/1.62 va
 
 /* ---------- Laufband (M07): Namen der Werkzeuge und des Hauses, läuft nur im Bild, hält beim Überfahren ---------- */
 .m-band{overflow:hidden;background:var(--schiefer);border-block:1px solid rgba(179,152,103,.4);padding:14px 0 calc(14px + var(--rund));color:#F5F2EE}
-.m-band ul{display:flex;width:max-content;margin:0;padding:0;list-style:none;gap:26px;animation:m-band 70s linear infinite;animation-play-state:paused}
-.m-band.laeuft ul{animation-play-state:running}
-.m-band:hover ul{animation-play-state:paused}
-.m-band li{font:400 15px/1 var(--titel);white-space:nowrap;display:flex;align-items:center}
-.m-band li.p::before{content:"";width:6px;height:6px;transform:rotate(45deg);background:var(--gold-h)}
+.m-band__zug{display:flex;width:max-content;margin:0;padding:0;list-style:none;gap:26px;animation:m-band 70s linear infinite;animation-play-state:paused}
+.m-band.laeuft .m-band__zug{animation-play-state:running}
+.m-band:hover .m-band__zug{animation-play-state:paused}
+.m-band__zug>span{font:400 15px/1 var(--titel);white-space:nowrap;display:flex;align-items:center}
+.m-band__zug>span.p::before{content:"";width:6px;height:6px;transform:rotate(45deg);background:var(--gold-h)}
 @keyframes m-band{to{transform:translateX(-50%)}}
 
 /* ---------- Säle (M08, M09): je Werkzeug ein Abschnitt, schiebt sich als Platte über den vorigen ---------- */
@@ -259,13 +259,13 @@ body.ma{margin:0;background:var(--raum);color:var(--tinte);font:400 17px/1.62 va
 .wo-zl-z{display:inline-grid;justify-items:end}.wo-zl-z>*{grid-area:1/1}.wo-zl-z>[aria-hidden]{visibility:hidden}
 @media (prefers-reduced-motion:reduce){
   .js [data-r],.js .wo-w,.js .m-weg li{transform:none!important;transition:none!important}
-  .m-band ul{animation:none}
+  .m-band__zug{animation:none}
   .knopf,.knopf::after,.rl b{transition:none!important}
 }
 
 /* Linie unter dem Saalkopf: ein ruhiger Punkt in Messing auf der Mitte; im Laufband ein Punkt in Messing als Trenner (keine Zierzeichen) */
 .m-saal__linie i::before{content:'';display:block;width:6px;height:6px;margin:auto;border-radius:50%;background:var(--gold)}
-.m-band li.p::before{content:'';transform:none;width:5px;height:5px;border-radius:50%;background:var(--gold);opacity:.9;align-self:center}
+.m-band__zug>span.p::before{content:'';transform:none;width:5px;height:5px;border-radius:50%;background:var(--gold);opacity:.9;align-self:center}
 .m-fuss__wm{width:clamp(150px,13vw,190px);height:auto;color:#115595}   /* das Logo in Logo-Blau auf Hell (Markenbuch) */
 .ma em,.ma i{font-style:normal}
 

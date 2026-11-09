@@ -990,6 +990,7 @@ def fuss():
 <script src="assets/js/bilder.js?v={V}" defer></script>
 <script src="assets/js/montemoro.js?v={V}" defer></script>
 <script src="assets/js/tiefe.js?v={V}" defer></script>
+<script src="assets/js/rezeption-weg.js?v={V}" defer></script>
 <script src="assets/js/anfrage.js?v={V}" defer></script>
 <script src="assets/js/galerie.js?v={V}" defer></script>
 <script src="assets/js/zimmeransicht.js?v={V}" defer></script>

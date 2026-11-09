@@ -21,7 +21,7 @@ Start aus dem Hausordner: `python3 _werkzeuge/reception/server.py 9384` (liefert
 - **Das weiss der Chat:** Steckbrief mit 70 belegten Zeilen in zehn Bereichen (`steckbrief_bau.py`, jeder Beleg wörtlich in `gast/gast_wissen.txt` / `gast_umgebung.txt`, jede Zahl beim Beleg geprüft).
 - **Beispiele:** sieben Anfragen (Familienzimmer mit Kindern, Wochenende mit Hund, Tisch mit Gluten, Haus Arizona, Spa-Frage, Einzelzimmer auf Englisch mit deutscher Lesefassung, abgelaufene Gratis-Anreise) und zehn Fragen, zwei mit Absicht ohne Antwort (Öffnungszeiten Röstihüs, Check-in). Erfundene Gäste mit example.com bzw. 555-Nummern, als Beispiel beschriftet (`_bau/montemoro_beispiele.py` prüft jede Zahl gegen das Wissen). Nichts als nachgetragen erfunden.
 - **Anleitung** mit zwölf Kapiteln auf das Haus umgeschrieben, Bilder neu (`_bau/anleitung_bilder.js` gegen einen Wegwerf-Server).
-- **Baustein** `baustein/anfrage.js` + `ANLEITUNG.md`: schickt das Anfrage-Fenster auch ausserhalb der Vorschau an die Rezeption und die Chat-Fragen an `/api/frage`; auf der Website nicht eingebaut (Revier Website).
+- **Baustein** `baustein/anfrage.js` + `ANLEITUNG.md`: schickt das Anfrage-Fenster auch ausserhalb der Vorschau an die Rezeption und die Chat-Fragen an `/api/frage`; auf der Website eingebaut am 09.11.2026 (`website/assets/js/rezeption-weg.js`, vor `anfrage.js`), Weg Website → Eingang und Chat → «Das wurde gefragt» geprüft.
 - Speicher-Schlüssel im Browser `reception-montemoro-*`, `rundgang-montemoro-*`.
 
 ## Geprüft (08.11.2026, Chromium; WebKit hier nicht installierbar)
@@ -34,6 +34,4 @@ Start aus dem Hausordner: `python3 _werkzeuge/reception/server.py 9384` (liefert
 
 ## Offen
 
-- Datenschutz-Satz der Website zu Anfragen und Chat-Fragen (Revier Website).
-- Baustein auf der Website nicht eingebaut (Revier Website).
-- WebKit-Lauf nicht möglich in dieser Sitzung.
+- Nichts. Erledigt am 09.11.2026: Baustein auf der Website eingebaut und geprüft; Datenschutz bleibt im Wortlaut des Hauses, der Anfragen über Formulare abdeckt (keine erfundene Frist).

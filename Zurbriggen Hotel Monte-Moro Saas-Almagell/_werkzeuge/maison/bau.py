@@ -428,7 +428,7 @@ def seite(online, v):
     web = '/index.html' if online else '/index.html'      # lokal liefert server.py die Website in der Wurzel aus
 
     insel = ''.join(f'<a class="m-insel__p" href="#{k}"><span class="rl">{e(W[k]["name"])}</span></a>' for k in REIHE)
-    band = ''.join(f'<li>{e(t)}</li><li class="p" aria-hidden="true"></li>' for t in [W[k]['name'] for k in REIHE] + [NAME, RESTAURANT, ORT, TAL, SATZ_HAUS])
+    band = ''.join(f'<span>{e(t)}</span><span class="p" aria-hidden="true"></span>' for t in [W[k]['name'] for k in REIHE] + [NAME, RESTAURANT, ORT, TAL, SATZ_HAUS])
 
     fb = farben()
     farbreihe = (f'<ul class="m-farben" aria-label="Die Farben des Hauses" style="--n:{len(fb)}">' +
@@ -600,7 +600,7 @@ def seite(online, v):
 <main>
 {empfang}
 
-<div class="m-band" data-laufband aria-hidden="true"><ul>{band}{band}</ul></div>
+<div class="m-band" data-laufband aria-hidden="true"><div class="m-band__zug">{band}{band}</div></div>
 {saele}
 </main>
 
