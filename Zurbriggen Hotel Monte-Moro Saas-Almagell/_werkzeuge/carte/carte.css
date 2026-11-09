@@ -365,3 +365,5 @@ aside.wo-rand .wo-rand__kopf>button{padding-left:0;padding-right:0;margin-left:0
 /* Tor K7: kein Wort allein in der letzten Zeile; die letzten zwei Wörter eines Namens hält carte.js (reiheHTML) zusammen */
 /* Monte-Moro 08.11.2026: Absätze der Karte (Zeile, Satz, Hinweis) in der Liste im Lauf des Hauses (Instrument Sans), nicht in der Titelschrift */
 .lc .r--text .r__t b{font-family:var(--sans);font-size:14.5px;line-height:1.5;letter-spacing:0;color:var(--tinte)}
+/* Punkt 17 (13 px): Schrift in den grossen Knöpfen optisch mittig (Tor-Regel text-mitte, 0,6 px zu hoch); der Knauf bleibt, wo er war */
+.kn:not(.kn--klein):has(i){padding-top:1.2px}.kn:not(.kn--klein) i{margin-top:-1.2px}
