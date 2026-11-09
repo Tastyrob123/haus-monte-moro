@@ -31,3 +31,7 @@ body.an{margin:0;background:var(--wo-papier);color:var(--wo-tinte);font:16px/1.6
 /* Zeichen des Hauses: der Bergkamm ist breit (3483 auf 696), er steht als Kamm über der Zeile, nie in einen Kreis gezwängt */
 .an-zeichen{width:92px;height:20px;border-radius:0;box-shadow:none;background:var(--wo-g2);-webkit-mask-size:contain;mask-size:contain}
 @media (max-width:420px){.an-zeichen{width:64px;height:14px}}
+/* Prüfpunkte 4 und 10 (Robert 09.11.2026): die Schrittnummer steht auf einer Plakette in Nacht und Messing statt lose auf dem Papier; Text und Bild stehen mittig zueinander, keine Leerfläche unter dem Text */
+.an-nr{display:inline-grid;place-items:center;min-width:64px;height:64px;padding:0 14px;box-sizing:border-box;margin:0 0 18px;border-radius:var(--wo-r2);font-size:16px;color:var(--wo-g1);background:linear-gradient(180deg,var(--wo-nacht2),var(--wo-nacht) 50%,var(--wo-tief));box-shadow:inset 0 1px 0 rgba(255,255,255,.2),inset 0 0 0 1px color-mix(in srgb,var(--wo-gold) 45%,transparent),0 14px 22px -14px color-mix(in srgb,var(--wo-tief) 70%,transparent)}
+.an-schritt{align-items:center}
+.an-nr>span{font:var(--wo-titel-g) 36px/1 var(--wo-titel);color:var(--wo-g1)}
