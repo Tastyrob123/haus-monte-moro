@@ -1,14 +1,7 @@
-In Prüfung.
+Fertig. Werkbank: http://127.0.0.1:9388/werkbank/ (am Mac nach `bash cloud/server.sh`; Quelle https://github.com/Tastyrob123/haus-monte-moro/tree/claude/task-o0ores/Zurbriggen%20Hotel%20Monte-Moro%20Saas-Almagell/website/_werkbank) · Prüftafel: https://github.com/Tastyrob123/haus-monte-moro/blob/ergebnis/ergebnis/laeufe/2026-11-09/index.html
 
-**NOCH OFFEN zu Punkt 5 (Mac-Chat, 09.11. 17:35): Commit cbae63b hat Angaben je Blatt gebaut (`_werkbank/karten_faecher.py` › `blatt()`: `kf__t` mit `<small>` Seiten · Format · Stand und `<em>` Inhalt). Das hat Robert um 16:51 ausdrücklich verboten. Entfernen: je Blatt nur noch das Etikett wie vorher im Fächer (Name und «ansehen»), keine Seiten, kein Format, kein Stand, kein Inhalt, keine Zahlenreihe. Die fünf Blätter bleiben. Danach Prüfpunkt 15 frei, dann erst «Fertig.».**
-
-**ZUERST: `KORREKTUR-ROBERT.md` Punkt 5 BERICHTIGT (Robert 09.11.2026, 16:51): im Kapitel «Ihre Karten» nur mehr Blätter im Raum schweben lassen (alle Unterlagen), KEINE Kacheln, KEINE Beschreibungen oder Angaben je Blatt, keine Zahlenreihe; schon Gebautes davon rückgängig. Punkte 1–4 bleiben. Vorher kein «Fertig.».**
-
-**Punkt 5 BERICHTIGT umgesetzt (Nacht 3, nach Roberts 16:51): nur fünf Blätter im Fächer mit Etikett wie vorher, keine Kacheln/Angaben; Titel, Text, Knöpfe wie vorher; Prüfpunkt 15 (Fassung 76b4dfb) frei.**
-
-**`KORREKTUR-ROBERT.md` umgesetzt und abgehakt (09.11., Nacht 3, Commit 6b420e6); Werkbank BESTANDEN.**
-
-Gegenprüfung läuft (09.11.2026). Stand siehe Abschnitt «Gegenprüfung 09.11.2026».
+Geprüft 09.11.2026, 12:15 UTC (Nachtsitzung 3): Roberts Korrekturen 1–5 umgesetzt und abgehakt (KORREKTUR-ROBERT.md). Abnahme-Tor über alle 28 Ziele (1440/1280/1000/390): 423 Zustände, 0 Funde, nichts unerreicht. `oberflaeche_pruefen.js` in der jüngsten Mac-Fassung (76b4dfb, 270 Zeilen) über alle 21 Oberflächen: 21 × BESTANDEN. Messlauf über alle 28 Ziele: 0 Funde. WebKit-Blick auf die geänderten Oberflächen: BESTANDEN. Augen: Bilder 1440/1000/390 aller geänderten Stellen, je 15 Zustandsbilder Markenbuch, Besucherliste, Hausdruckerei.
+Wartet auf Roberts Wort: nichts.
 
 # Übergabe (laufend) · Hotel Monte-Moro, Saas-Almagell
 
