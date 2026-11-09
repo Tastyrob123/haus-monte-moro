@@ -324,6 +324,11 @@
     $('#mlFenster').addEventListener('click', () => { const w = window.open('', '_blank'); if (w) { w.document.open(); w.document.write(DSMAIL.html(doc, { basis: LOKAL, M })); w.document.close(); } });
     document.addEventListener('click', e => { const p = $('#mlPruefen'); if (p.open && !e.target.closest('#mlPruefen')) p.open = false; });
     document.body.classList.add('an');
+    /* Punkt 11 (09.11.2026): am Handy gleitet, was unter dem ersten Bild steht, beim Hereinscrollen kurz an seinen Platz (deckend, nur translate) */
+    if (matchMedia('(max-width:980px)').matches && 'IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('ml-da'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
+      document.querySelectorAll('.ml-links > *, .ml-rechts > *, .ml-mitte').forEach(x => { if (x.getBoundingClientRect().top > innerHeight) { x.classList.add('ml-nach'); io.observe(x); } });
+    }
     /* K5 (Tor 2, 30.10.2026): reicht die mittlere Spalte nicht (z. B. 1000 px), wird die Vorschau als Ganzes kleiner, nie angeschnitten und nie seitlich scrollend */
     let passt = false;
     const passe = () => { if (passt) return; const m = $('.ml-mitte'), b = $('#mlBuehne'); if (!m || !b) return; passt = true;

@@ -329,3 +329,8 @@
 /* Punkt 17 (09.11.2026): Kopf 981–1200 px mit 13 px: engere Sperrung, damit «Als Datei speichern» ganz im Bild bleibt */
 @media (max-width:1200px) and (min-width:981px){.ml-kopf .kn,.ml-kopf .ms-kn-gold{letter-spacing:.04em}.ml-kopf .ms-kn-gold{gap:8px}.ml-links h3,.ml-rechts h3{letter-spacing:.12em}}
 @media (max-width:600px){.ml-kopf .kn,.ml-kopf .ms-kn-gold{letter-spacing:.07em}}   /* Handy: Kopf mit 13 px weiter in zwei Reihen und dem Speichern-Knopf */
+/* Punkt 18 (09.11.2026): am Handy erst Vorlagen und Einstellungen, die Vorschau der E-Mail als Ganzes danach (sonst steht die Vorschau als 1600 px hohe Fläche zwischen den Bedienteilen) */
+@media (max-width:980px){.ml{display:flex;flex-direction:column}.ml-kopf{order:0}.ml-links{order:1}.ml-rechts{order:2}.ml-mitte{order:3}}
+/* Punkt 11: Auftritt beim Hereinscrollen (mail.js) */
+.ml-nach{translate:0 24px;transition:translate .9s var(--e1)}.ml-nach.ml-da{translate:none}
+@media (prefers-reduced-motion:reduce){.ml-nach{translate:none;transition:none}}

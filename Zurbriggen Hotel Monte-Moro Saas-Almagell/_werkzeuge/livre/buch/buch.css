@@ -98,13 +98,13 @@ button{font:inherit;color:inherit}
 @media (max-width:900px){.drei{grid-template-columns:minmax(0,1fr)}}
 
 /* Fenster: Foto über die Breite, ein Satz */
-.fenster{background:var(--nacht)}
-.fenster__f{position:relative;height:min(67vh,624px);overflow:hidden}
-.fenster__b,.fenster__b img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.fenster__b::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,27,46,.82),rgba(7,27,46,.35) 55%,rgba(7,27,46,.1))}
-.fenster__t{position:relative;z-index:1;width:var(--innen);height:100%;margin:0 auto;display:flex;flex-direction:column;justify-content:center;gap:16px}
-.fenster__s{max-width:12em;font:400 clamp(38px,5.4vw,78px)/1.04 var(--titel);color:var(--text);text-wrap:balance}
-.fenster__u{font:400 13px/1.5 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--laerche)}
+.durchblick{background:var(--nacht)}
+.durchblick__f{position:relative;height:min(67vh,624px);overflow:hidden}
+.durchblick__b,.durchblick__b img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.durchblick__b::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,27,46,.82),rgba(7,27,46,.35) 55%,rgba(7,27,46,.1))}
+.durchblick__t{position:relative;z-index:1;width:var(--innen);height:100%;margin:0 auto;display:flex;flex-direction:column;justify-content:center;gap:16px}
+.durchblick__s{max-width:12em;font:400 clamp(38px,5.4vw,78px)/1.04 var(--titel);color:var(--text);text-wrap:balance}
+.durchblick__u{font:400 13px/1.5 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--laerche)}
 
 /* Zeichen */
 .lockups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,28px)}
@@ -193,7 +193,7 @@ button{font:inherit;color:inherit}
 /* Bilder */
 .mosaik{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:clamp(180px,20vw,280px);gap:10px}
 .mosaik figure{overflow:hidden;border-radius:14px;background:var(--nachtblau)}
-.mosaik figure:nth-child(1){grid-row:span 2}
+.mosaik figure:nth-child(1){grid-column:1;grid-row:span 2}   /* das grosse Bild fest in der ersten Spalte über zwei Reihen: 1 + 4 Bilder füllen drei Spalten ganz */
 .mosaik img{width:100%;height:100%;object-fit:cover}
 .regel-liste{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 32px;margin-top:28px;padding:0;list-style:none;color:var(--text2);font-size:16px}
 .regel-liste b{font-weight:600;color:var(--text)}
@@ -253,7 +253,7 @@ button{font:inherit;color:inherit}
 .bewegt [data-t] .w{display:inline-block}
 .bewegt [data-t]:not(.da) .w{translate:0 .6em}
 .bewegt [data-t].da:not(.steht) .w{animation:bu-hoch 1.25s cubic-bezier(.19,1,.22,1) backwards;--weg:.6em;--kl:1;animation-delay:calc(var(--i,0) * 85ms + var(--z,0) * 95ms)}
-.bewegt .fenster[data-z].da:not(.steht) .fenster__b img{animation:bu-zoom 2.6s cubic-bezier(.19,1,.22,1) backwards}
+.bewegt .durchblick[data-z].da:not(.steht) .durchblick__b img{animation:bu-zoom 2.6s cubic-bezier(.19,1,.22,1) backwards}
 @media (prefers-reduced-motion:reduce){.bewegt [data-r],.bewegt [data-t] .w,.bewegt img{animation:none!important;translate:none!important;scale:none!important}}
 
 /* ---------- Druck: A4 quer, je Kapitel eine Seite, nichts zerschnitten */
@@ -262,11 +262,11 @@ button{font:inherit;color:inherit}
   html,body{background:#fff}
   .leiste,.meldung,.titel__kn{display:none!important}
   .hell::before,.creme2::before{display:none}
-  .blatt,.titel,.fenster,.fuss{break-before:page;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .blatt,.titel,.durchblick,.fuss{break-before:page;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .titel{break-before:auto}
   .blatt{padding:12mm 0}
   .in,.titel__in,.index{width:100%}
-  .fenster__f{height:170mm}
+  .durchblick__f{height:170mm}
   [data-r],[data-t] .w,img{transform:none!important;translate:none!important;scale:none!important;animation:none!important}
   .k3,.lock,.regel,.fa,.k4,.ton,.probe,.platte,.mosaik figure{break-inside:avoid}
   .mosaik{grid-auto-rows:60mm}

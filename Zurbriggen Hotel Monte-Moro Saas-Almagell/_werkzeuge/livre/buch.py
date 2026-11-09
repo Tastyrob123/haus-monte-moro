@@ -116,9 +116,9 @@ def seite():
   </div>
 </div></section>'''
 
-    fenster = lambda k, satz, unter, pos='50% 50%': f'''<section class="fenster" data-z aria-label="{e(satz)}"><div class="fenster__f">
-  <div class="fenster__b">{bild(k, None, pos, True, False)}</div>
-  <div class="fenster__t"><p class="fenster__s" data-t>{e(satz)}</p><p class="fenster__u" data-r>{e(unter)}</p></div></div></section>'''
+    fenster = lambda k, satz, unter, pos='50% 50%': f'''<section class="durchblick" data-z aria-label="{e(satz)}"><div class="durchblick__f">
+  <div class="durchblick__b">{bild(k, None, pos, True, False)}</div>
+  <div class="durchblick__t"><p class="durchblick__s" data-t>{e(satz)}</p><p class="durchblick__u" data-r>{e(unter)}</p></div></div></section>'''
 
     nein = lambda klasse, text: f'<figure class="nein nein--{klasse}"><div>{marke("blau")}</div><figcaption>{nb(text)}</figcaption></figure>'
     zeichen = f'''<section class="blatt dunkel" id="zeichen"><div class="in">

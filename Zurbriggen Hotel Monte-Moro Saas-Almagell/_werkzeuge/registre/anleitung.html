@@ -49,6 +49,8 @@ main{max-width:1180px;margin:0 auto;padding:0 28px 120px}
 .inhalt>p{max-width:60ch;color:var(--leise)}
 .themen{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:30px}
 .thema{background:var(--blatt);border-radius:18px;box-shadow:inset 0 0 0 1px var(--linie);padding:22px 24px}
+/* Punkt 10 (09.11.2026): neben einem längeren Thema steht die Liste unten, die Tafeln einer Reihe sind ohne Leerfläche gefüllt */
+.themen .thema{display:flex;flex-direction:column}.themen .thema ol{margin-top:auto;padding-top:12px}
 .thema h3{font-size:1.35rem;line-height:1.15;display:grid;gap:3px}.thema h3 small{font:400 13px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}.thema h3 em{font:13px var(--mono);font-style:normal;color:var(--leise)}
 .thema ol{margin-top:12px;display:grid;gap:2px}
 .thema a{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:10px;align-items:baseline;padding:9px 6px;border-radius:12px;transition:background-color .3s}
