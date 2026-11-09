@@ -2,7 +2,7 @@ In Prüfung.
 
 **ZUERST: `KORREKTUR-ROBERT.md` Punkt 5 BERICHTIGT (Robert 09.11.2026, 16:51): im Kapitel «Ihre Karten» nur mehr Blätter im Raum schweben lassen (alle Unterlagen), KEINE Kacheln, KEINE Beschreibungen oder Angaben je Blatt, keine Zahlenreihe; schon Gebautes davon rückgängig. Punkte 1–4 bleiben. Vorher kein «Fertig.».**
 
-**NEU 09.11.2026, 15:34: `KORREKTUR-ROBERT.md` Punkt 5 (Kapitel Karten nie leer: alle Unterlagen als Blätter, Fläche gefüllt mit Angaben; Prüfpunkt 15) umsetzen. Vorher kein «Fertig.».**
+**Punkt 5 (Kapitel Karten) umgesetzt (cbae63b): fünf Karten des Kartenbretts als Blätter mit Seiten, Format, Stand, Inhalt; sechstes Feld «Gesetzt im Kartenbrett.»; Prüfpunkt 15 frei.**
 
 **`KORREKTUR-ROBERT.md` umgesetzt und abgehakt (09.11., Nacht 3, Commit 6b420e6); Werkbank BESTANDEN.**
 
@@ -90,7 +90,13 @@ Offen, in Reihenfolge: Funde Agent 5–7 reparieren und nachprüfen, Messlauf au
 - Läuft: Augen-Agent 5–7 (repariert in livre/registre, noch nicht committet).
 - Danach: Funde 5–7 übernehmen, tor-schnell der geänderten Werkzeuge, Oberflächenprüfung über alle 21, Messlauf, Tafel `ergebnis/laeufe/2026-11-09/`, erste Zeile «Fertig.».
 
+- Neue Mac-Fassung `oberflaeche_pruefen.js` (270 Zeilen, Punkte 10–15) kam um 07:45 UTC. Damit repariert: Rücksprung bei «Zurück aus dem Speicher» (Kit `ruecksprung.js`, pageshow), Drucksachen-Kachel, «So geht es weiter», Material (Titelspalte mitlaufend), Befund (Auftritte), Hotelbüro (Fotos 2×3), Kartenbrett (Auftritte), Rezeption (sechs Anfragen). BESTANDEN: Werkbank + 13 Unterseiten (alle 18 Werkbank-Oberflächen), Hotelbüro, Schaufenster, Kartenbrett, Rezeption.
+- Offen: Markenbuch, Besucherliste, Hausdruckerei (Augen-Agent repariert, prüft mit neuer Fassung), dann Tor dieser drei, Oberflächenprüfung über alle 21, Tafel `ergebnis/laeufe/2026-11-09/`.
+
 ## Entscheidungen der Nacht
+- 09.11. (Nacht 3): Kapitel Karten zeigt die fünf Karten des Kartenbretts (Röstihüs, Wein/Apéro, Preisliste, Zuschläge, Spa); Preisliste/Zuschläge/Spa haben keine heutige Fassung, darum nur im Kapitel (PDF in `werkbank/karten/`), Seite «Unterlagen» unverändert. Sechstes Feld: Hinweis aufs Kartenbrett, damit das Raster voll ist.
+- 09.11. (Nacht 3): Kit-`ruecksprung.js` ergänzt (pageshow persisted); die Meldung des Prüfskripts verweist selbst auf diese Datei.
+- 09.11. (Nacht 3): «So geht es weiter» (Angebot): nur Zeilenabstand verteilt, Inhalt und Preise unverändert (Korrektur 4).
 - 09.11. (Nacht 3): Korrektur Punkt 2 betrifft Suitenhotel und Wellnesshotel; die liegen nicht in diesem Repo und werden laut CLAUDE.md hier nicht angefasst. Für Monte-Moro: Rechner `#vt-rechner` bleibt, wird mit echtem Tippen geprüft.
 - 09.11. (Nacht 3): Korrektur Punkt 4: am Angebot nichts geändert.
 - 09.11. (Nacht 3): Vier Kacheln nebeneinander ab 1200 px (1280/1440); bei 1000 px 2×2, weil der Knopf «Untersetzer ansehen» in einem Viertel nicht Platz hätte; Handy untereinander.
