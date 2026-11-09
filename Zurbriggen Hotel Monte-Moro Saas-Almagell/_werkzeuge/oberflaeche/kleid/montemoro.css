@@ -183,7 +183,7 @@ b,strong{font-weight:500}
 /* Schrift optisch mittig in Knöpfen und Pillen (Messlauf-Regel text-mitte). text-box schneidet die Zeile auf Versalhöhe und Grundlinie zu,
    dann zentriert der Knopf genau die Buchstaben. Ohne text-box (ältere Browser) ein kleiner gemessener Ausgleich. */
 .wo-kn>span,.wo-re>span,.wo-kopf__ber>span{text-box:trim-both cap alphabetic}
-.wo-re .wo-zahl{display:block;height:auto;padding:7px 6.5px 7px 7.5px;line-height:1;text-align:center;text-box:trim-both cap alphabetic}
+.wo-re .wo-zahl{display:block;height:auto;padding:7px 6.75px 7px 7.25px;line-height:1;text-align:center;text-box:trim-both cap alphabetic}
 @supports not (text-box:trim-both cap alphabetic){.wo-kn>span,.wo-re>span,.wo-kopf__ber>span{position:relative;top:.05em}}
 
 /* Messlauf (Regel einzelwort): kein einzelnes Wort allein in der letzten Titelzeile */

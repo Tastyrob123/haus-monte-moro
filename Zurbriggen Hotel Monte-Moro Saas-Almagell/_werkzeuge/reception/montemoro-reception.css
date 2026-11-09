@@ -455,3 +455,4 @@ html.probe-offen{overflow:visible}
 .re-a__hinw,.re-a__k{letter-spacing:.08em}
 .gs-hinweis{letter-spacing:.08em}
 .gs-hinweis #gs-name{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.5;text-wrap:pretty}
+@media (max-width:760px){.re-abt button span{letter-spacing:0}.re-a__hinw,.re-a__k{letter-spacing:.02em}}
