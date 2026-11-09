@@ -34,10 +34,10 @@
     '.rdg-karte p{margin:0;color:rgba(19,38,58,.78)}' +
     '.rdg-fuss{display:flex;align-items:center;gap:14px;margin-top:20px}' +
     '.rdg-karte .rdg-weg{display:flex;gap:5px;flex:1 1 auto;min-width:64px}.rdg-karte .rdg-weg b{display:block;height:3px;flex:1 1 0;min-width:6px;max-width:26px;border-radius:2px;background:rgba(19,38,58,.14)}.rdg-karte .rdg-weg b.da{background:#9A4F2B}' +
-    '.rdg-karte .rdg-zu{flex:none;margin:0;border:0;background:none;padding:6px 2px;font:400 13px/1 "DM Mono",ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#0D3F6F;cursor:pointer}' +
+    '.rdg-karte .rdg-zu{flex:none;margin:0;border:0;background:none;padding:6px 2px;font:400 13px/1 "DM Mono",ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:#0D3F6F;cursor:pointer}' +
     '.rdg-karte .rdg-zu:hover{color:#0A2A4A}' +
     '.rdg-karte .rdg-los,.rdg-schild .rdg-los{flex:none;margin:0;display:inline-flex;align-items:center;gap:12px;height:42px;padding:0 6px 0 18px;border:0;border-radius:999px;cursor:pointer;' +
-      'font:400 13px/1 "DM Mono",ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#FBF9F5;' +
+      'font:400 13px/1 "DM Mono",ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;color:#FBF9F5;' +
       'background:linear-gradient(180deg,#0D3F6F,#0A2A4A 46%,#071B2E);box-shadow:0 1px 0 rgba(255,255,255,.26) inset,0 -3px 0 rgba(0,0,0,.5) inset,0 10px 18px -10px rgba(10,42,74,.8)}' +
     '.rdg-karte .rdg-los i,.rdg-schild .rdg-los i{display:grid;margin:0;place-items:center;width:30px;height:30px;border-radius:50%;background:linear-gradient(180deg,#FFFFFF,#EFE9E1);' +
       'box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 -2px 0 rgba(0,0,0,.22) inset;transition:transform .2s}' +

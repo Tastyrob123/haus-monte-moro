@@ -71,9 +71,9 @@
     '.rdg-karte p{font:15px/1.55 "Instrument Sans",system-ui,sans-serif!important;letter-spacing:0!important;text-transform:none!important}' +
     '.rdg-karte h3{font:500 27px/1.12 "Fjalla One",Georgia,serif!important;letter-spacing:0!important;text-transform:none!important}' +
     '.rdg-karte .rdg-fuss{flex-wrap:nowrap!important}' +
-    '.rdg-karte .rdg-zu,.rdg-karte .rdg-los{font:500 13px/1 "Instrument Sans",ui-monospace,monospace!important;letter-spacing:.14em!important;text-transform:uppercase!important;min-width:0!important;width:auto!important;outline:0;border:0!important;margin:0!important}' +
+    '.rdg-karte .rdg-zu,.rdg-karte .rdg-los{font:500 13px/1 "Instrument Sans",ui-monospace,monospace!important;letter-spacing:.08em!important;text-transform:uppercase!important;min-width:0!important;width:auto!important;outline:0;border:0!important;margin:0!important}' +
     '.rdg-karte .rdg-zu{height:auto!important;padding:6px 2px!important;background:none!important;box-shadow:none!important;color:#47596b!important}' +
-    '.rdg-karte .rdg-los{height:42px!important;padding:0 6px 0 18px!important;letter-spacing:.16em!important;border-radius:999px!important}' +
+    '.rdg-karte .rdg-los{height:42px!important;padding:0 6px 0 18px!important;letter-spacing:.08em!important;border-radius:999px!important}' +
     '.rdg-karte .rdg-los i{width:30px!important;height:30px!important;flex:none!important}' +
     '@media (max-width:700px){.rdg-karte{left:16px!important;right:16px;top:auto!important;bottom:16px;width:auto;--rx:0!important;--ry:0!important}}' +
     '@media (prefers-reduced-motion:reduce){.rdg-karte{animation:none}}';
