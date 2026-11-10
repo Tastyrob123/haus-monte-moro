@@ -456,3 +456,6 @@ html.probe-offen{overflow:visible}
 .gs-hinweis{letter-spacing:.08em}
 .gs-hinweis #gs-name{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.5;text-wrap:pretty}
 @media (max-width:760px){.re-abt button span{letter-spacing:0}.re-a__hinw,.re-a__k{letter-spacing:.02em}}
+/* Übersicht: «Zuletzt angefragt» hebt sich mit eigener Fläche ab (Robert 10.11.2026) */
+.re-start > .re-start__sp:first-child{padding:clamp(20px,2vw,30px);border-radius:var(--wo-r1,26px);background:linear-gradient(180deg,#e7ddd0,#dfd3c3);box-shadow:inset 0 0 0 1px rgba(154,79,43,.18),0 24px 40px -30px rgba(7,27,46,.35)}
+.re-start > .re-start__sp:first-child .wo-zw{margin-top:0}
