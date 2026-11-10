@@ -13,10 +13,11 @@ CSS = """.tm{position:relative}
   .mb-kn>span{position:relative;top:.9px}
   .sbf-z>.tm{top:.6px}
 }
-.rund[aria-label^="Zur"] svg,.rund[aria-label^="Vorig"] svg,.pf[aria-label^="Vorig"] svg{transform:translateX(.5px)}
-.rund[aria-label^="Weiter"] svg,.rund[aria-label^="Nächst"] svg,.pf[aria-label^="Nächst"] svg{transform:translateX(-.5px)}
-@supports (font:-apple-system-body){.pf[aria-label^="Vorig"] svg{transform:translate(.6px,.5px)}.pf[aria-label^="Nächst"] svg{transform:translate(-.6px,.5px)}}
-@supports not (font:-apple-system-body){.pf[aria-label^="Vorig"] svg{transform:translateX(.6px)}.pf[aria-label^="Nächst"] svg{transform:translateX(-.6px)}}"""
+.rund[aria-label^="Zur"] svg,.rund[aria-label^="Vorig"] svg,.pf[aria-label^="Vorig"] svg{position:relative;left:.5px}
+.rund[aria-label^="Weiter"] svg,.rund[aria-label^="Nächst"] svg,.pf[aria-label^="Nächst"] svg{position:relative;left:-.5px}
+@supports (font:-apple-system-body){.pf[aria-label^="Vorig"] svg{left:.6px;top:.5px}.pf[aria-label^="Nächst"] svg{left:-.6px;top:.5px}}
+@supports not (font:-apple-system-body){.pf[aria-label^="Vorig"] svg{left:.6px}.pf[aria-label^="Nächst"] svg{left:-.6px}}
+.rund[disabled],.pf[disabled]{transition:none}"""
 JS = ("(function(){function t(){document.querySelectorAll('.kn,.sbf-z,.wahl button,.vh-wahl button,.uwahl button,.uschalter button').forEach(function(k){"
       "var n=k.firstChild;if(n&&n.nodeType===3&&n.textContent.trim()){var s=document.createElement('span');s.className='tm';s.textContent=n.textContent;k.replaceChild(s,n)}})}"
       "t();addEventListener('load',t)})();")

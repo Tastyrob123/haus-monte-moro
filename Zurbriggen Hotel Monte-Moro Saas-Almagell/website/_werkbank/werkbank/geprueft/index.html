@@ -47,10 +47,11 @@
   .mb-kn>span{position:relative;top:.9px}
   .sbf-z>.tm{top:.6px}
 }
-.rund[aria-label^="Zur"] svg,.rund[aria-label^="Vorig"] svg,.pf[aria-label^="Vorig"] svg{transform:translateX(.5px)}
-.rund[aria-label^="Weiter"] svg,.rund[aria-label^="Nächst"] svg,.pf[aria-label^="Nächst"] svg{transform:translateX(-.5px)}
-@supports (font:-apple-system-body){.pf[aria-label^="Vorig"] svg{transform:translate(.6px,.5px)}.pf[aria-label^="Nächst"] svg{transform:translate(-.6px,.5px)}}
-@supports not (font:-apple-system-body){.pf[aria-label^="Vorig"] svg{transform:translateX(.6px)}.pf[aria-label^="Nächst"] svg{transform:translateX(-.6px)}}</style><script id="text-mitte-js">(function(){function t(){document.querySelectorAll('.kn,.sbf-z,.wahl button,.vh-wahl button,.uwahl button,.uschalter button').forEach(function(k){var n=k.firstChild;if(n&&n.nodeType===3&&n.textContent.trim()){var s=document.createElement('span');s.className='tm';s.textContent=n.textContent;k.replaceChild(s,n)}})}t();addEventListener('load',t)})();</script><style id="knopf-mitte">/* knopf-mitte (Werkbank Papier, 31.10.2026): Beschriftung optisch mittig in Knöpfen, in Chromium und WebKit gleich, ohne Ausgleich je Engine.
+.rund[aria-label^="Zur"] svg,.rund[aria-label^="Vorig"] svg,.pf[aria-label^="Vorig"] svg{position:relative;left:.5px}
+.rund[aria-label^="Weiter"] svg,.rund[aria-label^="Nächst"] svg,.pf[aria-label^="Nächst"] svg{position:relative;left:-.5px}
+@supports (font:-apple-system-body){.pf[aria-label^="Vorig"] svg{left:.6px;top:.5px}.pf[aria-label^="Nächst"] svg{left:-.6px;top:.5px}}
+@supports not (font:-apple-system-body){.pf[aria-label^="Vorig"] svg{left:.6px}.pf[aria-label^="Nächst"] svg{left:-.6px}}
+.rund[disabled],.pf[disabled]{transition:none}</style><script id="text-mitte-js">(function(){function t(){document.querySelectorAll('.kn,.sbf-z,.wahl button,.vh-wahl button,.uwahl button,.uschalter button').forEach(function(k){var n=k.firstChild;if(n&&n.nodeType===3&&n.textContent.trim()){var s=document.createElement('span');s.className='tm';s.textContent=n.textContent;k.replaceChild(s,n)}})}t();addEventListener('load',t)})();</script><style id="knopf-mitte">/* knopf-mitte (Werkbank Papier, 31.10.2026): Beschriftung optisch mittig in Knöpfen, in Chromium und WebKit gleich, ohne Ausgleich je Engine.
    Senkrecht: statt .tm{top:.7px} nur für Chromium (text_mitte.py) wird die Beschriftung auf Versalhöhe und Grundlinie beschnitten
    (text-box: trim-both cap alphabetic); der Knopf zentriert dann genau die Versalien, unabhängig von Zeilenhöhe und Metrik der Engine.
    Waagrecht: Chromium setzt die Sperrung auch hinter den letzten Buchstaben, WebKit nicht. knopf_mitte.js stellt den letzten Buchstaben
