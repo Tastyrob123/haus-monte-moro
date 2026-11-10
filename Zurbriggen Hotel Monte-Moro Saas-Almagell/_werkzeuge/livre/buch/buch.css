@@ -276,7 +276,9 @@ button{font:inherit;color:inherit}
 /* Rasterspalten nie breiter als der Platz (WebKit) */
 .drei>*,.vier>*,.lockups>*,.regeln>*,.formen>*,.zwei>*,.fg>*,.fg__f>*,.satzreihe>*,.mosaik>*,.titel__in>*,.index>*,.neine>*,.tapeten>*{min-width:0}
 .probe--titel .p1{line-height:1.16}   /* keine überlappenden Buchstaben (Robert 10.11.2026) */
-/* Farben füllen sich beim Hereinscrollen von links nach rechts, wie auf der Werkbank (Robert 10.11.2026) */
+
+/* Farben der Hausregeln wie auf der Werkbank (Robert 10.11.2026): die Kacheln füllen ihre Reihe ganz aus, jede Farbfläche wächst beim Hereinscrollen von links nach rechts */
+.fg__f{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))!important}
 @keyframes bu-fuell{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
 .bewegt .fa[data-r]:not(.da) .fa__f{clip-path:inset(0 100% 0 0)}
 .bewegt .fa[data-r].da:not(.steht) .fa__f{animation:bu-fuell 1.15s cubic-bezier(.19,1,.22,1) backwards;animation-delay:calc(.35s + var(--k,0) * .09s)}
