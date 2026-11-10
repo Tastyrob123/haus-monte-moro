@@ -467,3 +467,4 @@ html.probe-offen{overflow:visible}
 
 
 .re-start > .re-start__sp:first-child .wo-zw{margin-top:0}
+.re-start > .re-start__sp:last-child .re-q .re-a__n>small{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}   /* Übersicht: Antwort als Vorschau in drei Zeilen, ganz im Bereich «Das wurde gefragt» */
