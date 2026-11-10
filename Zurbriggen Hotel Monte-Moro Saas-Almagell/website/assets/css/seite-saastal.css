@@ -117,3 +117,6 @@
     mask:var(--grat-maske) top/100% var(--gh) no-repeat,linear-gradient(#000 0 0) 0 calc(var(--gh) - 1px)/100% 100% no-repeat}
   .st-naht{display:none}
 }
+/* Keine überlappenden Buchstaben (Robert 10.11.2026) */
+.st-ziel__t{line-height:1.16}
+.st-gross{line-height:1.16}

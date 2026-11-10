@@ -883,3 +883,5 @@ html.gal-offen{overflow:hidden}
   .rk__titel{break-after:avoid;-webkit-column-break-after:avoid}
   .rk__sp+.rk__sp>.rk__titel:first-child{margin-top:38px}
 }
+/* Keine überlappenden Buchstaben (Robert 10.11.2026) */
+.bl__name{line-height:1.16}

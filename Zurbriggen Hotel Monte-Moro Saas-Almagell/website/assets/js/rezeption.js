@@ -38,9 +38,21 @@
   function bild(q) { for (var i = 0; i < BILD.length; i++) if (BILD[i][0].test(q)) return BILD[i][1]; return 'haus-sommer-g'; }
   function vorschlaege(liste, mitBild) { vorschlag.className = 'chat__vorschlag' + (mitBild ? ' chat__vorschlag--bilder' : ''); vorschlag.innerHTML = liste.map(function (q) { return '<button type="button">' + (mitBild ? '<img src="assets/img/' + bild(q) + '-s.webp" alt="" loading="lazy" decoding="async">' : '') + '<span>' + esc(q) + '</span></button>'; }).join(''); }
   /* Antworten mit Aufzählung (Teile mit Strichpunkt) als gesetzte Liste statt als ein langer Satz */
-  function antwortHtml(a) { var t = String(a).replace(/\.\s*$/, ''), k = t.indexOf(': '), kopf = k > 0 && k < 40 ? t.slice(0, k) : '', rest = kopf ? t.slice(k + 2) : t, teile = rest.split(/;\s*/);
-    if (teile.length < 3) return '<p>' + esc(a) + '</p>';
-    return (kopf ? '<p class="chat__kopf">' + esc(kopf) + '</p>' : '') + '<ul class="chat__liste">' + teile.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>'; }
+  /* Robert 10.11.2026: jede Antwort übersichtlich, nie ein Textblock. Aufzählungen (Strichpunkte) als Liste mit Überschrift; sonst der erste Satz als fette Kernaussage,
+     jeder weitere Satz als eigene Zeile; Zeiten, Preise, Minuten und Zahlen hervorgehoben. Nur Umbruch und Auszeichnung, der Wortlaut des Hauses bleibt. */
+  function hebe(t) { return esc(t).replace(/(\b\d{1,2}[.:]\d{2}\s?Uhr\b|\b\d{1,2}[.:]\d{2}\b|CHF\s?\d[\d'.,–-]*|\b\d+[.,]?\d*\s?(?:Min\.|Minuten|Nächte|Nacht|km|m²|m2|%|Jahre)|\bMo\s?-\s?Sa\b)/g, '<b>$1</b>'); }
+  function antwortHtml(a) {
+    var t = String(a).replace(/\[/g, '(').replace(/\]/g, ')').trim(), k = t.indexOf(': '), kopf = k > 0 && k < 40 ? t.slice(0, k) : '', rest = kopf ? t.slice(k + 2) : t, teile = rest.replace(/\.\s*$/, '').split(/;\s*|\s+·\s+/);
+    if (teile.length >= 3) return (kopf ? '<p class="chat__kopf">' + esc(kopf) + '</p>' : '') + '<ul class="chat__liste">' + teile.map(function (x) { return '<li>' + hebe(x) + '</li>'; }).join('') + '</ul>';
+    if (kopf && !/[.!?]\s+[A-ZÄÖÜ]/.test(rest)) return '<p class="chat__kopf">' + esc(kopf) + '</p><p class="chat__wert">' + hebe(rest.charAt(0).toUpperCase() + rest.slice(1)) + '</p>';   /* «Kidsclub: täglich …» als Überschrift und Angabe */
+    /* lange Aufzählung in einem Satz («Das Angebot reicht vom Schwimmbad …, Whirlpool, … bis hin zum Beautysalon»): Einleitung als Kernaussage, die Teile als Liste */
+    var m = t.match(/^(.{6,60}?)\s+(?:reicht vom|reicht von|umfasst|bietet)\s+(.+)$/);
+    if (m && (m[2].match(/,/g) || []).length >= 3) { var st = m[2].replace(/\.\s*$/, '').split(/,\s*|\s+über\s+|\s+bis hin zum\s+|\s+bis hin zur\s+/).filter(Boolean);
+      return '<p class="chat__kern">' + esc(m[1]) + ':</p><ul class="chat__liste">' + st.map(function (x) { return '<li>' + hebe(x.charAt(0).toUpperCase() + x.slice(1)) + '</li>'; }).join('') + '</ul>'; }
+    var saetze = t.split(/(?<=[.!?])\s+(?=[A-ZÄÖÜ(«])/).filter(Boolean);
+    if (saetze.length < 2) return '<p class="chat__kern">' + hebe(t) + '</p>';
+    return '<p class="chat__kern">' + hebe(saetze[0]) + '</p><ul class="chat__liste">' + saetze.slice(1).map(function (x) { return '<li>' + hebe(x) + '</li>'; }).join('') + '</ul>';
+  }
   function antworte(frage) {
     nachricht('<p>' + esc(frage) + '</p>', 'gast');
     hol().then(function () {

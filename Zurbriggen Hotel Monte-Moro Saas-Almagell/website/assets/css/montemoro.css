@@ -553,3 +553,13 @@ figcaption{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:60px 24px
 .chat__willkommen figcaption{padding:0;background:none;color:var(--papier);pointer-events:none}
 .chat{max-height:min(790px,calc(100svh - 100px))}.chat__willkommen{aspect-ratio:16/8.6}
 .chat{max-height:min(760px,calc(100svh - 170px))}.chat__willkommen{aspect-ratio:16/7.8}.chat__willkommen::after{background:linear-gradient(180deg,rgba(7,27,46,0) 15%,rgba(7,27,46,.9))}@media (max-width:640px){.chat{max-height:calc(100svh - 150px)}}
+/* Keine überlappenden oder abgeschnittenen Buchstaben (Robert 10.11.2026, «Entspannung pur»): Titel mit Luft für Ober- und Unterlängen, Schlitz der Titelzeilen fasst die ganze Schrift */
+.d1,.d2,.d3{line-height:1.1}
+@media (prefers-reduced-motion:no-preference){.js .zl{padding:.22em 0 .16em;margin:-.22em 0 -.16em}}
+.d1,.d2,.d3{line-height:1.16}
+.chat__kern{margin:0 0 10px;font-weight:600;color:var(--nacht);line-height:1.5}
+.chat__kern:last-child{margin-bottom:0}
+.chat__m--haus b{font-weight:600;color:var(--laerche-tief)}
+.chat__kern b{color:var(--laerche-tief)}
+.chat__liste li+li{padding-top:2px;border-top:0}
+.chat__wert{margin:0;line-height:1.5}
