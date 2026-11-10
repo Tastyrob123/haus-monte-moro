@@ -33,14 +33,21 @@
   }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function nachricht(html, wer) { var m = document.createElement('div'); m.className = 'chat__m chat__m--' + wer; m.innerHTML = html; verlauf.insertBefore(m, vorschlag); verlauf.scrollTop = verlauf.scrollHeight; }
-  function vorschlaege(liste) { vorschlag.innerHTML = liste.map(function (q) { return '<button type="button">' + esc(q) + '</button>'; }).join(''); }
+  /* Robert 10.11.2026: beim Öffnen begrüssen Fotos des Hauses, keine Textzeilen; Bild je Thema der Frage, nur Fotos der Website */
+  var BILD = [[/preis|inbegriffen|inklusive/i, 'tal-sommer'], [/spa|sauna|wellness/i, 'spa-garten'], [/zug|anreise|postauto/i, 'tal-dorf'], [/hund|tier/i, 'balkon'], [/r(ö|oe)sti|essen|restaurant/i, 'roesti-tische'], [/kid|kinder/i, 'haus-winter-g']];
+  function bild(q) { for (var i = 0; i < BILD.length; i++) if (BILD[i][0].test(q)) return BILD[i][1]; return 'haus-sommer-g'; }
+  function vorschlaege(liste, mitBild) { vorschlag.className = 'chat__vorschlag' + (mitBild ? ' chat__vorschlag--bilder' : ''); vorschlag.innerHTML = liste.map(function (q) { return '<button type="button">' + (mitBild ? '<img src="assets/img/' + bild(q) + '-s.webp" alt="" loading="lazy" decoding="async">' : '') + '<span>' + esc(q) + '</span></button>'; }).join(''); }
+  /* Antworten mit Aufzählung (Teile mit Strichpunkt) als gesetzte Liste statt als ein langer Satz */
+  function antwortHtml(a) { var t = String(a).replace(/\.\s*$/, ''), k = t.indexOf(': '), kopf = k > 0 && k < 40 ? t.slice(0, k) : '', rest = kopf ? t.slice(k + 2) : t, teile = rest.split(/;\s*/);
+    if (teile.length < 3) return '<p>' + esc(a) + '</p>';
+    return (kopf ? '<p class="chat__kopf">' + esc(kopf) + '</p>' : '') + '<ul class="chat__liste">' + teile.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>'; }
   function antworte(frage) {
     nachricht('<p>' + esc(frage) + '</p>', 'gast');
     hol().then(function () {
       var t = suche(frage);
       if (t.length && t[0].s > 1.1) {
         var e = t[0].e;
-        nachricht('<p>' + esc(e.a) + '</p><small>Aus «' + esc(e.k) + '» · Haben wir Ihre Frage beantwortet?</small>', 'haus');
+        nachricht(antwortHtml(e.a) + '<small>Aus «' + esc(e.k) + '» · Haben wir Ihre Frage beantwortet?</small>', 'haus');
         vorschlaege(t.slice(1, 4).map(function (x) { return x.e.q; }));
       } else {
         nachricht('<p>Dazu steht in unseren Antworten nichts Genaues. Die Rezeption hilft Ihnen gern weiter: <a href="tel:' + W.telefon.replace(/\s/g, '') + '">' + esc(W.telefon) + '</a> oder <a href="mailto:' + W.mail + '?subject=' + encodeURIComponent('Frage') + '&body=' + encodeURIComponent(frage) + '">' + esc(W.mail) + '</a>.</p>', 'haus');
@@ -48,11 +55,11 @@
       }
     });
   }
-  function auf() { box.hidden = false; requestAnimationFrame(function () { box.classList.add('auf'); }); hol(); if (!vorschlag.children.length) vorschlaege(['Was ist im Preis inbegriffen?', 'Was kostet das Spa nebenan?', 'Wie komme ich mit dem Zug zu Ihnen?', 'Sind Hunde erlaubt?']); setTimeout(function () { feld.focus({ preventScroll: true }); }, 300); }
+  function auf() { box.hidden = false; requestAnimationFrame(function () { box.classList.add('auf'); }); hol(); if (!vorschlag.children.length) vorschlaege(['Was ist im Preis inbegriffen?', 'Was kostet das Spa nebenan?', 'Wie komme ich mit dem Zug zu Ihnen?', 'Sind Hunde erlaubt?'], true); setTimeout(function () { feld.focus({ preventScroll: true }); }, 300); }
   function zu() { box.classList.remove('auf'); setTimeout(function () { box.hidden = true; }, 350); }
   knopf.addEventListener('click', function () { box.hidden ? auf() : zu(); });
   box.querySelector('[data-chat-zu]').addEventListener('click', zu);
-  vorschlag.addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) antworte(b.textContent); });
+  vorschlag.addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) antworte(b.textContent.trim()); });
   function hoehe() { feld.style.height = 'auto'; feld.style.height = Math.min(feld.scrollHeight, parseFloat(getComputedStyle(feld).lineHeight) * 5 + 22) + 'px'; }
   feld.addEventListener('input', hoehe);
   feld.addEventListener('keydown', function (e) { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event('submit')); } });

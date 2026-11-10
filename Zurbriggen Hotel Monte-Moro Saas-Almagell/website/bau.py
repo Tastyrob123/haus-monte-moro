@@ -140,7 +140,8 @@ def kopf(titel_, beschr, aktiv=''):
 def chat_html():
     return ('<button class="chat-knopf weg" type="button" data-chat-auf aria-label="Fragen an die Rezeption"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg><span>Fragen an die Rezeption</span></button>'
             '<section class="chat" data-chat aria-label="Rezeption im Chat" hidden><header><b>Rezeption</b><small>Hotel Monte-Moro</small><button type="button" data-chat-zu aria-label="Schliessen">×</button></header>'
-            '<div class="chat__verlauf" data-chat-verlauf><div class="chat__m chat__m--haus"><p>Guten Tag. Was möchten Sie über Ihren Aufenthalt wissen?</p></div><div class="chat__vorschlag" data-chat-vorschlag></div></div>'
+            '<div class="chat__verlauf" data-chat-verlauf><figure class="chat__willkommen"><img src="assets/img/haus-sommer-g-m.webp" width="900" height="600" alt="Das Hotel Monte-Moro im Sommer, mit der Sonnenterrasse" loading="lazy" decoding="async">'
+            '<figcaption><small>Rezeption · Saas-Almagell</small><span>Guten Tag. Was möchten Sie über Ihren <em>Aufenthalt</em> wissen?</span></figcaption></figure><div class="chat__vorschlag" data-chat-vorschlag></div></div>'
             '<form class="chat__eingabe" data-chat-form><textarea rows="1" placeholder="Ihre Frage" aria-label="Ihre Frage" data-chat-feld></textarea><button type="submit" aria-label="Senden"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button></form>'
             '<p class="chat__fuss">Antwortet aus den Angaben des Hauses. Fragen, die dort nicht stehen, gehen an die Rezeption.</p></section>')
 

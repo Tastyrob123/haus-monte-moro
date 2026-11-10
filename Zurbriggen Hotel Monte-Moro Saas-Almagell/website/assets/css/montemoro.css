@@ -511,3 +511,45 @@ figcaption{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:60px 24px
 .recht--404{min-height:max(78svh,560px);display:grid;align-content:center}
 .recht--404 .recht__kopf{margin-bottom:0}
 .recht--404 .kn-reihe{margin-top:18px}
+
+/* Rezeption im Chat, schöner gesetzt (Robert 10.11.2026): grösseres Fenster, beim Öffnen ein Foto des Hauses mit dem Gruss, die Fragen als Fotokacheln, Aufzählungen als Liste */
+.chat{width:min(440px,calc(100% - 32px));max-height:min(720px,calc(100svh - 110px));border-radius:22px;box-shadow:0 60px 100px -36px rgba(7,27,46,.7),0 0 0 1px rgba(10,42,74,.08)}
+.chat header{padding:18px 22px}
+.chat__verlauf{padding:14px;gap:12px}
+.chat__willkommen{position:relative;margin:0;border-radius:16px;overflow:hidden;aspect-ratio:16/10;background:var(--nacht)}
+.chat__willkommen img{width:100%;height:100%;object-fit:cover;display:block}
+.chat__willkommen::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,27,46,0) 30%,rgba(7,27,46,.82))}
+.chat__willkommen figcaption{position:absolute;z-index:1;left:18px;right:18px;bottom:16px;color:var(--papier)}
+.chat__willkommen small{display:block;margin-bottom:8px;font:400 10px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--messing)}
+.chat__willkommen span{display:block;font:400 1.55rem/1.12 var(--titel);text-wrap:balance}
+.chat__willkommen em{font-style:normal;color:#E4A27C}
+.chat__vorschlag{display:flex;flex-wrap:wrap;gap:8px;border-top:0}
+.chat__vorschlag button{padding:9px 14px;border:0;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1px rgba(10,42,74,.14);font-size:.86rem;line-height:1.3;color:var(--nacht);text-align:left;transition:box-shadow .4s ease,color .4s ease}
+.chat__vorschlag button:hover{color:var(--laerche-tief);box-shadow:inset 0 0 0 1px rgba(154,79,43,.5)}
+.chat__vorschlag--bilder{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.chat__vorschlag--bilder button{position:relative;padding:0;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:var(--nacht);box-shadow:0 14px 24px -16px rgba(7,27,46,.6)}
+.chat__vorschlag--bilder img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 2.2s cubic-bezier(.33,0,.2,1)}
+.chat__vorschlag--bilder button::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,27,46,0) 35%,rgba(7,27,46,.85))}
+.chat__vorschlag--bilder span{position:absolute;z-index:1;left:12px;right:12px;bottom:10px;font:400 1rem/1.15 var(--titel);color:var(--papier);text-wrap:balance}
+.chat__vorschlag--bilder button:hover img{transform:scale(1.04)}
+.chat__vorschlag--bilder button:hover{color:inherit;box-shadow:0 14px 24px -16px rgba(7,27,46,.6)}
+.chat__m{max-width:92%;padding:14px 16px;border-radius:14px}
+.chat__m--gast{border-radius:14px 14px 4px 14px}
+.chat__m--haus{border-radius:14px 14px 14px 4px}
+.chat__kopf{margin:0 0 8px;font:400 1.15rem/1.2 var(--titel);color:var(--nacht)}
+.chat__liste{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.chat__liste li{position:relative;padding-left:22px;line-height:1.45}
+.chat__liste li::before{content:"";position:absolute;left:2px;top:.42em;width:10px;height:6px;border-left:1.5px solid var(--laerche);border-bottom:1.5px solid var(--laerche);transform:rotate(-45deg)}
+.chat__eingabe{padding:12px 14px}
+.chat__eingabe textarea{border-radius:12px}
+.chat__eingabe button{border-radius:12px}
+@media (max-width:640px){.chat{right:12px;width:calc(100% - 24px);bottom:76px}.chat__willkommen span{font-size:1.35rem}}
+.chat__verlauf{display:flex;flex-direction:column;align-items:stretch}
+.chat__verlauf>*{flex-shrink:0}
+.chat__m--haus{align-self:flex-start}.chat__m--gast{align-self:flex-end}
+.chat__willkommen figcaption{font:inherit;letter-spacing:normal;text-transform:none;text-align:left}
+.chat__willkommen span{text-transform:none;letter-spacing:normal}
+.chat__vorschlag--bilder button{min-height:0}
+.chat__willkommen figcaption{padding:0;background:none;color:var(--papier);pointer-events:none}
+.chat{max-height:min(790px,calc(100svh - 100px))}.chat__willkommen{aspect-ratio:16/8.6}
+.chat{max-height:min(760px,calc(100svh - 170px))}.chat__willkommen{aspect-ratio:16/7.8}.chat__willkommen::after{background:linear-gradient(180deg,rgba(7,27,46,0) 15%,rgba(7,27,46,.9))}@media (max-width:640px){.chat{max-height:calc(100svh - 150px)}}
