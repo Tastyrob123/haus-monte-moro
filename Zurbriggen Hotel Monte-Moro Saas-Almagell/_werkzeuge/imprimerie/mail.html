@@ -81,5 +81,8 @@ document.write('<link rel="stylesheet" href="haeuser/'+h+'/hell.css?v=6-mm3"><sc
 <script src="katalog.js?v=35-mm2"></script>
 <script src="mail-satz.js?v=5-mm3"></script>
 <script src="mail.js?v=18-mm3"></script>
+<script>/* Auftritte wie in den übrigen Werkzeugen (Robert 10.11.2026, Prüfpunkt 11): die Teile der rechten Spalte schweben beim Hereinscrollen herauf (Kleid: oberflaeche/bewegung.js) */
+document.querySelectorAll('.ml-rechts > *').forEach(function (e) { if (!/^(DIALOG|SCRIPT)$/.test(e.tagName)) e.classList.add('mw-t'); });
+(function () { var s = document.createElement('script'); s.src = '/assets/oberflaeche/bewegung.js'; s.async = true; document.body.appendChild(s); })();</script>
 </body>
 </html>

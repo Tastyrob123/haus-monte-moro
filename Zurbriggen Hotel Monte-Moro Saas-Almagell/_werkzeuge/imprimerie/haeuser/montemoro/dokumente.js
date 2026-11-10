@@ -29,6 +29,7 @@
     return m[1];
   }
   function tx(c, rolle, text, w, gr, farbe, o = {}) {
+    if (/^(titel|plakat|plakatfett)$/.test(rolle) && (o.zeile || 1.2) < 1.14) o = Object.assign({}, o, { zeile: 1.14 });   // Robert 10.11.2026: mehrzeilige Titel nie mit überlappenden Buchstaben (Fjalla One braucht 1,12)
     if (c.fk === undefined && c.M) erweitere(c);
     if (o.slot !== null && o.slot !== undefined || rolle !== 'mono') gr = Math.max(gr, mindest(c, rolle, o.slot));
     else if (druck(c)) gr = Math.max(gr, DRUCK_MIN);
