@@ -119,7 +119,7 @@ CSS = """
   .bf-rechts{display:flow-root}.bf-rechts .bf-ich{margin-bottom:0}}
 /* Brief mit den drei Orten (29.10.2026): Kursblatt und Unterschrift in einer Reihe unter dem Gruss, beide auf einer Mitte, kein Loch */
 .bf-fuss__reihe{flex:1 1 100%;display:grid;grid-template-columns:1fr;   /* ohne Ticket (09.11.2026): nur die Unterschrift */align-items:center;gap:clamp(22px,3.4vw,56px)}
-.bf-fuss__reihe .bf-name{margin:0 auto;align-self:center}
+.bf-fuss__reihe .bf-name{margin:0 0 0 auto;align-self:center;justify-self:end}   /* Robert 10.11.2026: Unterschrift rechtsbündig, nicht mittig */
 @media(max-width:759px){.bf-fuss__reihe{grid-template-columns:1fr}.bf-fuss__reihe .bf-name{align-self:center}}
 /* Handy (Oberchef 08.11.): Robert rund über dem letzten Absatz, Text in voller Breite (vorher Spalte von zwei, drei Wörtern) */
 @media(max-width:759px){.bf-rechts .bf-stuetze{display:none!important}.bf-rechts .bf-ich{float:none!important;shape-outside:none!important;margin:0 0 18px!important}}
