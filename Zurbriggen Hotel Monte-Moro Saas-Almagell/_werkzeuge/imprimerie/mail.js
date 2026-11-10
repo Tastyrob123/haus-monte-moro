@@ -125,7 +125,7 @@
   }
   function rahmenGeladen() {
     const f = $('#mlRahmen'), d = f.contentDocument; if (!d || !d.body) return;
-    const hoehe = () => { f.style.height = Math.max(600, d.documentElement.scrollHeight) + 'px'; };
+    const hoehe = () => { const t = d.body && d.body.querySelector('table'); f.style.height = Math.max(600, Math.ceil(t ? t.getBoundingClientRect().height : d.documentElement.scrollHeight)) + 'px'; };   /* Höhe der E-Mail selbst: sonst blieb unter dem Fuss ein leerer Streifen bis 1600 px (Robert 10.11.2026) */
     hoehe(); d.querySelectorAll('img').forEach(i => i.complete || i.addEventListener('load', hoehe));
     if (d.fonts) d.fonts.ready.then(hoehe);
     if (wahl != null) { const el = d.querySelector(`[data-b="${wahl}"]`); if (el) el.classList.add('an'); }

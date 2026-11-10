@@ -135,6 +135,11 @@
   }
   function verdrahten() {
     $('#pkForm') && $('#pkForm').addEventListener('submit', vorschlagen);
+    /* Robert 10.11.2026: aus dem Baukasten direkt im Editor weiter gestalten (Texte verschieben, Grössen, Foto), nicht an die festen Felder gebunden */
+    const ed = $('#pkEditor'); if (ed) ed.addEventListener('click', () => {
+      if ($('#pkThema').value.trim().length < 2) { $('#pkThema').setAttribute('aria-invalid', 'true'); $('#pkThema').focus(); return; }
+      DSStudio.oeffne(bauDoc(zustand().format)); if (window.DSStart && DSStart.offen()) DSStart.zu();
+    });
     ['pkThema', 'pkGast', 'pkZusatz', 'pkFreitag'].forEach(id => { const e = $('#' + id); if (e) e.addEventListener('input', () => { e.removeAttribute('aria-invalid'); vorschau(); }); });
     const d = $('#bkDatei'); if (d) d.addEventListener('change', hochladen);
     document.querySelectorAll('[data-bkformat]').forEach(b => b.addEventListener('click', () => { zustand().format = b.dataset.bkformat; document.querySelectorAll('[data-bkformat]').forEach(x => { x.classList.toggle('an', x === b); x.setAttribute('aria-pressed', x === b); }); vorschau(); }));

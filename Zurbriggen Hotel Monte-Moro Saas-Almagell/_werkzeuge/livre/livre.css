@@ -675,3 +675,9 @@ body.li{background:linear-gradient(rgba(245,242,238,.86),rgba(245,242,238,.86)),
 .li-tafel figcaption small{text-wrap:balance}
 /* Punkt 17 (09.11.2026): «PNG» und «SVG» mit 13 px stehen in der schmalen Tafel weiter nebeneinander */
 .li-tafel .li-kn{gap:6px}.li-tafel .li-kn .kn--klein{padding-left:12px;gap:6px}
+
+/* Keine schmale Textspalte (Robert 10.11.2026, «ein, zwei Wörter … in keinem Werkzeug»): die drei Kacheln der Lage stehen untereinander, sobald eine Kachel zu schmal für ihren Satz würde */
+@media (max-width:1180px){
+  .wo-lage{grid-template-columns:minmax(0,1fr)}
+  .wo-lage>.wo-lg+.wo-lg{border-left:0;border-top:1px solid var(--wo-linie-d)}
+}

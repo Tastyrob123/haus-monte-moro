@@ -108,7 +108,7 @@ CSS = """
 /* ---------- Fuss «Alles auf einen Blick» als Fächer (fuss_faecher.py, 12.10.2026): nur transform und opacity ---------- */
 .fuss:has(.wf){background:linear-gradient(rgba(23,13,6,.8),rgba(23,13,6,.8)),var(--muster) 50% 0/var(--musterb) auto,var(--tief)}
 .fuss .wf{display:block;text-align:center;overflow:hidden}
-.fuss .wf .wege__t{display:block;font-family:var(--serif);font-weight:700;font-size:clamp(2.1rem,5.5vw,5.9rem);line-height:1.04;margin:0;color:#fbf5ea}
+.fuss .wf .wege__t{display:block;font-family:var(--serif);font-weight:700;font-size:clamp(2.1rem,5.5vw,5.9rem);line-height:1.16;margin:0;color:#fbf5ea}
 .wf .wfa{position:relative;margin-top:clamp(10px,1.6vw,30px);outline:none}
 .wf .wfa__b{position:relative;height:clamp(240px,34vw,500px)}
 .wf .wfa__b::before{content:'';position:absolute;left:50%;top:50%;width:min(70vw,760px);height:min(52vw,560px);transform:translate(-50%,-50%);border-radius:50%;

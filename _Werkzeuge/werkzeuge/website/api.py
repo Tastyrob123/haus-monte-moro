@@ -562,10 +562,13 @@ def _unesc(s):
 # ------------------------------------------------------------------ Vorschau einer Seite
 VORSCHAU = r'''<style>
 [data-ws-e]{cursor:text}
-.ws-an [data-ws-e]:hover{outline:1px dashed var(--ws-a,currentColor)!important;outline-offset:3px}
-.ws-an img[data-ws-b]:hover{outline:2px dashed var(--ws-a,currentColor)!important;outline-offset:-2px;cursor:pointer}
+.ws-an [data-ws-e]:hover{outline:1.5px solid var(--ws-k,#C67144)!important;outline-offset:4px;border-radius:2px}
+.ws-an img[data-ws-b]:hover{outline:2px solid var(--ws-k,#C67144)!important;outline-offset:-2px;cursor:pointer}
 .ws-an [data-ws-zu]:hover{outline-style:dotted!important;cursor:not-allowed}
-[data-ws-e].ws-wahl,[data-ws-b].ws-wahl{outline:2px solid var(--ws-a,currentColor)!important;outline-offset:3px}
+/* Robert 10.11.2026: die angeklickte Stelle in der Vorschau deutlich (Akzentfarbe des Hauses, Schein, Etikett «Wird bearbeitet»), nicht ein kaum sichtbarer heller Rahmen */
+[data-ws-e].ws-wahl,[data-ws-b].ws-wahl,.ws-an [data-ws-e].ws-wahl:hover,.ws-an img[data-ws-b].ws-wahl:hover{outline:4px solid var(--ws-k,#C67144)!important;outline-offset:6px;border-radius:2px;box-shadow:0 0 0 14px rgba(198,113,68,.16),0 0 40px 12px rgba(198,113,68,.24)!important;transition:outline-offset .4s ease,box-shadow .4s ease}
+img[data-ws-b].ws-wahl,.ws-an img[data-ws-b].ws-wahl:hover{outline-offset:-3px;box-shadow:0 0 0 6px rgba(198,113,68,.28),0 0 34px 10px rgba(198,113,68,.25)!important}
+.ws-etikett{position:absolute;z-index:2147483646;pointer-events:none;padding:9px 15px 8px;border-radius:999px;background:var(--ws-k,#C67144);color:#fff;font:500 17px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;box-shadow:0 8px 18px -8px rgba(0,0,0,.45)}
 .ws-vgl [data-ws-neu]{outline:3px solid var(--ws-p,currentColor)!important;outline-offset:3px}
 [data-ws-blk].ws-blk{outline:2px dashed var(--ws-p,currentColor)!important;outline-offset:4px}
 </style>
@@ -583,11 +586,14 @@ document.addEventListener('click',function(ev){var z=ev.target.nodeType===1?ev.t
  if(a){var h=a.getAttribute('href')||'';if(/^[\w\-]+\.html(#.*)?$/.test(h))P.postMessage({ws:'gehe',seite:h.split('#')[0]},'*')}
 },true);
 document.addEventListener('submit',function(ev){ev.preventDefault()},true);
+var ET=null;function etikett(el){if(!el){if(ET){ET.remove();ET=null}return}ET=document.createElement('div');ET.className='ws-etikett';ET.textContent='Wird bearbeitet';document.body.appendChild(ET);
+ function lege(){if(!ET||!el.isConnected)return;var r=el.getBoundingClientRect(),img=el.tagName==='IMG';ET.style.left=Math.max(4,r.left+window.scrollX+(img?10:-5))+'px';ET.style.top=Math.max(4,r.top+window.scrollY+(img?10:-5)-(img?0:ET.offsetHeight+4))+'px'}
+ lege();setTimeout(lege,400);setTimeout(lege,1200);window.addEventListener('resize',lege)}
 function finde(d){return document.querySelector(d.b?'[data-ws-b="'+d.b+'"][data-ws-bn="'+d.n+'"]':d.blk?'[data-ws-blk="'+d.blk+'"][data-ws-bln="'+d.n+'"]':'[data-ws-e="'+d.h+'"][data-ws-n="'+d.n+'"]')}
 window.addEventListener('message',function(ev){var d=ev.data||{};
- if(d.ws==='farben'){document.documentElement.style.setProperty('--ws-a',d.a);document.documentElement.style.setProperty('--ws-p',d.p)}
- if(d.ws==='zeige'){[].forEach.call(document.querySelectorAll('.ws-wahl,.ws-blk'),function(x){x.classList.remove('ws-wahl','ws-blk')});
-  var el=finde(d);if(el){el.classList.add(d.blk?'ws-blk':'ws-wahl');if(!d.still){var r=el.getBoundingClientRect();window.scrollTo(0,Math.max(0,r.top+window.scrollY-(window.innerHeight-Math.min(r.height,window.innerHeight))/2))}}
+ if(d.ws==='farben'){document.documentElement.style.setProperty('--ws-a',d.a);document.documentElement.style.setProperty('--ws-p',d.p);if(d.k)document.documentElement.style.setProperty('--ws-k',d.k)}
+ if(d.ws==='zeige'){[].forEach.call(document.querySelectorAll('.ws-wahl,.ws-blk'),function(x){x.classList.remove('ws-wahl','ws-blk')});etikett(null);
+  var el=finde(d);if(el){el.classList.add(d.blk?'ws-blk':'ws-wahl');if(!d.blk)etikett(el);if(!d.still){var r=el.getBoundingClientRect();window.scrollTo(0,Math.max(0,r.top+window.scrollY-(window.innerHeight-Math.min(r.height,window.innerHeight))/2))}}
   P.postMessage({ws:'gezeigt',da:!!el,key:d.key||''},'*')}
  if(d.ws==='tippe'){var e2=finde(d);if(e2)e2.innerHTML=d.html}
  if(d.ws==='oben'){window.scrollTo(0,d.y||0)}

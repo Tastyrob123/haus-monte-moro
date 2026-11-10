@@ -130,9 +130,9 @@ ${ed ? `[data-b]{cursor:pointer;transition:box-shadow .2s}[data-b]:hover{box-sha
 </style>
 </head>
 <body style="margin:0;padding:0;background:${C.navy}" bgcolor="${C.navy}">
-<!--[if gte mso 9]><v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t"><v:fill type="tile" src="${tap}" color="${C.navy}"/></v:background><![endif]-->
+<!--[if gte mso 9]><v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t"><v:fill type="solid" color="${C.navy}"/></v:background><![endif]-->
 ${pre ? `<div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;mso-hide:all;color:${C.navy}">${esc(pre)}${'&#8199;&#847; '.repeat(60)}</div>` : ''}
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="${C.navy}" background="${tap}" style="background:${C.navy} url('${tap}') repeat">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="${C.navy}" style="background:${C.navy};border-collapse:collapse">   <!-- einfarbig: die gekachelte Tapete zeigte ihre Kanten als Raster und hörte vor dem Ende auf (Robert 10.11.2026, «blauer Rahmen») -->
 <tr><td align="center" class="aussen" style="padding:0 12px">
 <!--[if mso]><table role="presentation" width="${BREITE}" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:${BREITE}px;margin:0 auto">

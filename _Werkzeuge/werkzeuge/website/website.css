@@ -389,3 +389,13 @@
 .ws-hoch{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:4px 0 2px}
 .ws-hoch .ws-taste{cursor:pointer}
 @media (max-width:640px){.ws-gt__bild{width:72px;height:54px}.ws-gt__kopf{gap:12px}}
+
+/* Wechsel der Bereiche ohne Schrift über Schrift (Robert 10.11.2026: «dass sich die Schriften und Texte auch nochmal so überlappen, weil die so von unten reingeflogen kommen»):
+   die linke Leiste blendet nur ein, ohne Verschieben; im Inhalt kommt jedes Stück aus der Durchsicht, so liegt beim Steigen nie deckende Schrift auf anderer */
+@keyframes ws-bw-ein{from{opacity:0}}
+@keyframes ws-bw-hoch{from{opacity:0;translate:0 var(--wo-bw-weg,38px);scale:var(--wo-bw-kl,.975)}}
+.wo-rand [data-wo-bw],.wo-rand [data-wo-bw]:not(.wo-bw-da),.wo-rand [data-wo-bw] .wo-w{translate:none!important;scale:none!important}
+.wo-rand [data-wo-bw].wo-bw-da,.wo-rand [data-wo-bw].wo-bw-da .wo-w{animation:ws-bw-ein .55s ease backwards!important}
+.ws [data-wo-bw]:not([data-wo-bw="z"]):not([data-wo-bw="t"]).wo-bw-da{animation-name:ws-bw-hoch!important}
+.ws [data-wo-bw="t"].wo-zl.wo-bw-da .wo-w{animation-name:ws-bw-hoch!important}
+@media (prefers-reduced-motion:reduce){.wo-rand [data-wo-bw].wo-bw-da,.ws [data-wo-bw].wo-bw-da{animation:none!important}}

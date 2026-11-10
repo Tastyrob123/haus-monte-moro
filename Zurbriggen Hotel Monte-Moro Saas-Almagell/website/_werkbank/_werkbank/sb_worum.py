@@ -94,4 +94,5 @@ CSS = '''
 .vt-gr li{display:grid;grid-template-columns:clamp(92px,9vw,128px) 1fr;column-gap:16px;align-items:start}
 .vt-gr li>.vt-gb{grid-row:1/span 2;display:block;border-radius:12px;overflow:hidden;aspect-ratio:3/2}.vt-gr li>.vt-gb img{display:block;width:100%;height:100%;object-fit:cover}
 .vt-gr li>b,.vt-gr li>span:not(.vt-gb){grid-column:2}
+@media(max-width:560px){.vt-gr li{grid-template-columns:72px minmax(0,1fr);align-items:center;row-gap:8px}.vt-gr li>.vt-gb{grid-row:1}.vt-gr li>span:not(.vt-gb){grid-column:1/-1}}   /* Robert 10.11.2026: am Handy Bild über dem Text, keine schmale Spalte */
 '''

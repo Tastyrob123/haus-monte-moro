@@ -50,7 +50,7 @@ body.ws.wo-app{background-color:var(--wo-papier);background-image:var(--wo-tapet
 
 /* Bereich-Kacheln der Übersicht mit Foto (Fehlerbuch 10a «Bilder in jeder Liste»): website.css setzt .ws-bk auf display:block (Stamm-Fassung),
    damit fiel das Foto der Rahmen-Kachel .wo-bk (Raster 132 px + Text) auf Breite null. Hier gilt wieder das Raster des Rahmens. */
-.wo-app .wo-ber > .wo-bk.ws-bk{display:grid;padding:0;border-radius:var(--wo-r2)}
+.wo-app .wo-ber > .wo-bk.ws-bk{display:flex;flex-wrap:wrap;padding:0;border-radius:var(--wo-r2)}   /* Bild über dem Text, sobald die Kachel schmal wird (Robert 10.11.2026) */
 .wo-app .wo-ber > .wo-bk.ws-bk .wo-bk__b{display:block}
 
 /* Knöpfe des Stamms (.kn) im Startbild einer Ansicht («Veröffentlichen» im Entwurf, Weg zur Tafel): grund.css nimmt Knöpfen im Rahmen den Innenabstand,

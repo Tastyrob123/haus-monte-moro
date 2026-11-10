@@ -431,13 +431,13 @@
       const mt = (MIND[c.fk || ''] || [0, 0])[1] || xg, zl = (i.text ? xg : Math.min(xg, mt, mg)) * 1.35, lu = v => Math.min(v, zl * 2.2);   // Luft nie über 2,2 Textzeilen
       return sauber([
         !o.ohneZeichen && zeichen(c, zw, null, L ? { x: o.links } : {}), !o.ohneZeichen && lu(zw * .42),
-        i.ueber && tx(c, 'mono', i.ueber, bw, mg, c.T.mono, p({ slot: 'ueber' })), i.ueber && lu(tg * .38),
+        i.ueber && tx(c, 'mono', i.ueber, bw, Math.max(mg * 1.6, xg * 1.05), c.T.mono, p({ slot: 'ueber' })), i.ueber && lu(tg * .38),   /* Robert 10.11.2026: kleine Zeile lesbar gross */
         titel, lu(titel.gr * .5), linie(c, .08 * u, L ? { x: o.links } : {}), lu(titel.gr * .55),   // grosse Titel: Luft nie über zwei Textzeilen
         i.wann && tx(c, 'mono', i.wann, bw, mg * 1.25, c.T.mono, p({ slot: 'wann', sperr: .08 })), i.wann && lu(xg * .5),
         i.wo && ausgewogen(c, gliederSatz(tx(c, 'kursiv', i.wo, bw, xg, c.T.text, p({ slot: 'wo' })))), i.wo && lu(xg * 1.2),
         i.unter && ausgewogen(c, gliederSatz(tx(c, 'mono', i.unter, bw, mg, c.T.mono, p({ slot: 'unter' })))), i.unter && lu(xg * 1.1),
         i.text && ausgewogen(c, gliederSatz(tx(c, 'text', i.text, o.textVoll ? bw : Math.min(bw, c.quer ? .72 * c.w : .74 * u + 10), xg, c.T.text, p({ slot: 'text', zeile: 1.45 })))), i.text && lu(xg * 1.4),
-        i.aktion && tx(c, 'mono', i.aktion, bw, mg, c.T.mono, p({ slot: 'aktion' })),
+        i.aktion && tx(c, 'mono', i.aktion, bw, Math.max(mg * 1.6, xg * 1.05), c.T.mono, p({ slot: 'aktion' })),   /* Robert 10.11.2026: Zusatzzeile lesbar gross */
       ]).map(e => { if (MX != null && e && typeof e === 'object') e.x = +(MX - e.w / 2).toFixed(2); return e; });   // Spaltenmitte
     };
   }

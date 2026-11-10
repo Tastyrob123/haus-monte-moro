@@ -14,7 +14,7 @@
    "text": "Über ein Formular der Website (Seite Röstihüs): Betreff: Tisch im Röstihüs\nTag: Sa, 14. November 2026\nUhrzeit: 19:00 Uhr\nPersonen: 4\nIhre Nachricht: Wir freuen uns auf Röstis. Eine von uns isst kein Gluten."
   }
  ],
- "status": "neu",
+ "status": "gelesen",
  "beispiel": true,
  "an": "Telefon +41 27 957 10 12 · info@monte-moro.ch",
  "abteilung": "Röstihüs",
@@ -24,5 +24,13 @@
  "nachricht": "Betreff: Tisch im Röstihüs\nTag: Sa, 14. November 2026\nUhrzeit: 19:00 Uhr\nPersonen: 4\nIhre Nachricht: Wir freuen uns auf Röstis. Eine von uns isst kein Gluten.",
  "formular": "tisch",
  "uhrzeit": "19:00 Uhr",
- "entwurf": null
+ "entwurf": {
+  "betreff": "Ihr Tisch im Röstihüs",
+  "text": "Guten Tag Claudia Imboden,\n\nherzlichen Dank für Ihre Reservierung. Wir freuen uns, Sie am Sa, 14. November 2026 im Röstihüs zu begrüssen, 4 Personen [Tisch prüfen].\n\nAuf unserer Karte stehen elf Röstis und fünf Cordon bleus, dazu Walliser Weine und der Hotelwein, den Fabian selbst kreiert hat.\n\nDamit wir Ihren Tisch in Ruhe vorbereiten können:\n- an welchem Tag\n- um welche Uhrzeit\n- für wie viele Personen\n\nHerzliche Grüsse aus Saas-Almagell\n\nEsther und Fabian Zurbriggen\nHotel Monte-Moro",
+  "team": "Grundlage: Röstihüs (Website)\nOffen: freier Tisch, Öffnungszeiten (nicht veröffentlicht)",
+  "vorlage": "tisch",
+  "absender": "Telefon +41 27 957 10 12 · info@monte-moro.ch",
+  "zeit": "2026-11-10T15:07:29+08:00",
+  "fassung": 1
+ }
 }

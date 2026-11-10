@@ -579,7 +579,7 @@ html.ins-ruhe :is(.stapel .tel,.runter i,.zeile__z,.namenzug div,.wb-band__zug,.
    Porträt rund rechts, Unterschrift rechtsbündig, darunter klein Name, Tasty Studios, Hamburg (Master Website-Bau 2, Robert 17.10.2026) */
 .schluss__b{filter:brightness(.5) saturate(.92)}
 .rh-gruss{display:flex;flex-direction:column;align-items:center;max-width:560px;margin:clamp(26px,3vw,44px) auto 0;text-align:center}   /* Robert 29.10.2026: alles auf einer Mitte */
-.rh-gruss__t{display:flex;align-items:center;gap:clamp(16px,1.6vw,24px);margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(1.3rem,1.8vw,1.8rem);color:#f5f2ee;text-shadow:0 2px 14px rgba(3,9,15,.85)}
+.rh-gruss__t{display:flex;align-items:center;gap:clamp(16px,1.6vw,24px);margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(1.3rem,1.8vw,1.8rem);color:#f5f2ee;text-shadow:0 1px 3px rgba(3,9,15,.5)}
 .rh-gruss__b{display:block;width:clamp(78px,6.6vw,104px);aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 0 0 1px rgba(3,9,15,.3),0 0 0 5px #f5f2ee,0 0 0 6px rgba(179,152,103,.6),0 18px 24px -14px rgba(0,0,0,.7)}
 .rh-gruss__b img{display:block;width:100%;height:100%;object-fit:cover}
 .rh-gruss__n{display:flex;flex-direction:column;align-items:center;gap:4px;margin:clamp(16px,2vw,24px) 0 0}   /* Robert 18.10.2026: kleiner, nicht am Rand, Luft */
@@ -590,3 +590,6 @@ html.ins-ruhe :is(.stapel .tel,.runter i,.zeile__z,.namenzug div,.wb-band__zug,.
 /* Register: Ziffern und Kopf im Kleid des Hauses */
 .rgw .wfa__texte h3{font-weight:400}
 .kap--k .kap__z{display:block;margin:10px auto 8px}
+
+@media(max-width:560px){.vt-gr li{grid-template-columns:72px minmax(0,1fr);align-items:center;row-gap:8px}.vt-gr li>.vt-gb{grid-row:1}.vt-gr li>span:not(.vt-gb){grid-column:1/-1}}   /* Robert 10.11.2026: am Handy Bild über dem Text, keine schmale Spalte */
+@media(max-width:560px){.fbz{grid-template-columns:minmax(0,1fr);row-gap:14px}}   /* Robert 10.11.2026: am Handy Bild über dem Text, keine schmale Spalte */

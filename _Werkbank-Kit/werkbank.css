@@ -46,7 +46,7 @@ ul,ol{list-style:none}
 .t3{font-size:clamp(1.36rem,1.9vw,1.9rem);line-height:1.16}
 .t1 em,.t2 em,.t3 em{font-style:normal;color:var(--gold)}
 .fl--papier em,.fl--creme em{color:var(--taupe)}
-.z{display:block;overflow:hidden;padding:.16em .04em .14em;margin:-.16em -.04em -.14em}
+.z{display:block;overflow:hidden;padding:.22em .04em .3em;margin:-.22em -.04em -.3em}
 .z>span{display:block;transform:translateY(112%);transition:transform 1.3s var(--e1);transition-delay:calc(var(--vz,0ms) + var(--n,0)*120ms)}
 .da .z>span,.z.da>span{transform:none}
 .z:nth-child(2)>span{--n:1}.z:nth-child(3)>span{--n:2}

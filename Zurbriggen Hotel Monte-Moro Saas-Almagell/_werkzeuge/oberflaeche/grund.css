@@ -333,3 +333,7 @@ body.wo-app{margin:0;overflow-x:hidden}
   .wo-leiste .wo-kn--wartet i,.wo-leiste .wo-kn--fertig i{color:#fff;background:none}
 }
 @media (prefers-reduced-motion:reduce){ .wo-app [class^="wo-"],.wo-app [class*=" wo-"]{transition:none!important;animation:none!important} }
+/* Keine schmale Textspalte (Robert 10.11.2026, Schaufenster: «ein, zwei Wörter … in keinem Werkzeug»): eine Kachel mit Bild stellt das Bild über den Text, sobald neben dem Bild keine ~28 Zeichen je Zeile Platz haben */
+.wo-bk{display:flex;flex-wrap:wrap;align-items:stretch}
+.wo-bk__b{flex:1 1 132px;min-height:138px}
+.wo-bk__t{flex:999 1 270px}

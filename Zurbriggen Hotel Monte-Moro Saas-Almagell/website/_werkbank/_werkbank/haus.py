@@ -405,7 +405,7 @@ CSS += '''
 html.cv-alle main>section.fl:not(#brief){content-visibility:visible}
 @media(min-width:760px){.vh-wahl>:first-child,#seiten .wahl>:first-child{margin-left:auto}.vh-wahl>:last-child,#seiten .wahl>:last-child{margin-right:auto}}
 @media(max-width:480px){.kn{max-width:100%;height:auto;min-height:54px;padding-top:9px;padding-bottom:9px;white-space:normal;line-height:1.35;text-align:left}.kn i{flex:none}.kn-reihe{max-width:100%}}
-.schluss .zt,.schluss .lauf p,.schluss .kap span{text-shadow:0 1px 2px rgba(7,27,46,.9),0 2px 16px rgba(7,27,46,.8),0 0 42px rgba(7,27,46,.55)}
+.schluss .zt{text-shadow:0 1px 3px rgba(7,27,46,.45)}.schluss .lauf p,.schluss .kap span{text-shadow:0 1px 2px rgba(7,27,46,.55),0 2px 12px rgba(7,27,46,.35)}
 '''
 
 

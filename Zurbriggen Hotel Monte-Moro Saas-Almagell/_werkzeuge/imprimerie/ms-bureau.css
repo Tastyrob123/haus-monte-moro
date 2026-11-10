@@ -274,3 +274,8 @@ body.startoffen > .studio, body.startoffen > header.kopf { visibility: hidden; t
 #start .stueck--vorlage:has(.papier--neu) .stueck__format{letter-spacing:.06em}
 /* Punkt 17 (09.11.2026): Formatzeile der Arten in 13 px hält Abstand zum Rand der Karte (bricht sonst ausgewogen um) */
 #arten .stueck__format{padding-inline:8px;text-wrap:balance}
+
+/* Wege unten links mit Luft zum Rand, nie abgeschnitten (Robert 10.11.2026) */
+#start .ms-fuss .ms-wege{flex-wrap:wrap;gap:8px;margin:12px 0 4px;padding:0 6px}
+/* Baukasten: «Im Editor gestalten» neben «Aushänge anlegen» */
+.bk-unten .pk-editor{margin-left:auto}

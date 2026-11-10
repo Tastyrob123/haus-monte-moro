@@ -14,7 +14,7 @@
    "text": "Über ein Formular der Website (Seite Zimmer): Betreff: Familienzimmer\nIhre Nachricht: Wir möchten vom 26. bis 30. Dezember 2026 mit zwei Kindern (5 und 9 Jahre) kommen, gern mit Halbpension."
   }
  ],
- "status": "neu",
+ "status": "gelesen",
  "beispiel": true,
  "an": "Telefon +41 27 957 10 12 · info@monte-moro.ch",
  "abteilung": "Zimmer",
@@ -23,5 +23,13 @@
  "web": true,
  "nachricht": "Betreff: Familienzimmer\nIhre Nachricht: Wir möchten vom 26. bis 30. Dezember 2026 mit zwei Kindern (5 und 9 Jahre) kommen, gern mit Halbpension.",
  "formular": "zimmer",
- "entwurf": null
+ "entwurf": {
+  "betreff": "Ihr Aufenthalt im Hotel Monte-Moro",
+  "text": "Guten Tag Anna Meier,\n\nherzlichen Dank für Ihre Anfrage und Ihr Interesse an unserem Haus in Saas-Almagell.\n\nGern schauen wir, welches Zimmer für Sie frei ist [Zimmer prüfen]. Ein Zimmer mit Frühstück kostet bei uns ab CHF 90.00 pro Person und Tag, mit Halbpension (4 Gänge) ab CHF 120.00. Inklusive sind die Postautos im ganzen Saastal und im Sommer alle Bergbahnen im Saastal (ohne Metro Alpin).\n\nFür Ihre Kinder ist der Kidsclub täglich von Montag bis Samstag, 16:30 bis 21:00 Uhr, offen und im Preis inbegriffen.\n\nDamit wir Ihnen ein genaues Angebot machen können:\n- Anreise und Abreise\n- wie viele Erwachsene und Kinder (mit Alter)\n- Zimmer mit Frühstück oder mit Halbpension\n\nHerzliche Grüsse aus Saas-Almagell\n\nEsther und Fabian Zurbriggen\nHotel Monte-Moro",
+  "team": "Grundlage: Preise (Website)\nOffen: freies Zimmer, Zeitraum, Anzahl Gäste\nHinweise: Mit Kindern: im Zimmer der Eltern pro Kind und Tag mit Halbpension bis 5 Jahre CHF 50.00 · 6 Jahre CHF 60.00 · 7 Jahre CHF 70.00 · 8 Jahre CHF 80.00 · 9 - 16 Jahre CHF 90.00; Kidsclub Mo - Sa 16:30 bis 21:00 Uhr inklusive",
+  "vorlage": "zimmer",
+  "absender": "Telefon +41 27 957 10 12 · info@monte-moro.ch",
+  "zeit": "2026-11-10T15:07:18+08:00",
+  "fassung": 1
+ }
 }

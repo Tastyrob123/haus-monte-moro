@@ -419,7 +419,7 @@ function vorschau(zustand, seite, sprache, kopfzeile) {
     frame.style.transform = m === 1 ? 'none' : 'scale(' + m + ')';
   };
   v.sende = d => { if (frame.contentWindow) frame.contentWindow.postMessage(d, '*'); };
-  v.farben = () => { const c = getComputedStyle(document.documentElement); v.sende({ ws: 'farben', a: c.getPropertyValue('--strich').trim(), p: c.getPropertyValue('--punkt').trim() }); };
+  v.farben = () => { const c = getComputedStyle(document.documentElement); v.sende({ ws: 'farben', a: c.getPropertyValue('--strich').trim(), p: c.getPropertyValue('--punkt').trim(), k: c.getPropertyValue('--akzent').trim() }); };
   v.lade = async halten => {
     const y = halten && frame.contentWindow ? frame.contentWindow.scrollY : 0;
     const lauf = ++v.lauf_;

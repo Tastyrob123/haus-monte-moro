@@ -232,6 +232,7 @@ CSS = '''
   .fbs__t span{max-width:none}
   .fbz__ok{width:24px;height:24px;inset-inline-end:-7px;top:-7px}
 }
+@media(max-width:560px){.fbz{grid-template-columns:minmax(0,1fr);row-gap:14px}}   /* Robert 10.11.2026: am Handy Bild über dem Text, keine schmale Spalte */
 '''
 
 JS = '''<script id="fluss-auftritt">

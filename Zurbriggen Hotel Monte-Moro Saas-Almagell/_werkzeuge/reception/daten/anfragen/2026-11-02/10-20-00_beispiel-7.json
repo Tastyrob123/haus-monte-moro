@@ -14,7 +14,7 @@
    "text": "Über ein Formular der Website (Seite Preise): Betreff: Frage zu den Preisen\nIhre Nachricht: Gilt die Gratis-Anreise mit dem Zug auch im Dezember noch?"
   }
  ],
- "status": "neu",
+ "status": "gelesen",
  "beispiel": true,
  "an": "Telefon +41 27 957 10 12 · info@monte-moro.ch",
  "abteilung": "Nachrichten",
@@ -23,5 +23,13 @@
  "web": true,
  "nachricht": "Betreff: Frage zu den Preisen\nIhre Nachricht: Gilt die Gratis-Anreise mit dem Zug auch im Dezember noch?",
  "formular": "allgemein",
- "entwurf": null
+ "entwurf": {
+  "betreff": "Ihre Nachricht an das Hotel Monte-Moro",
+  "text": "Guten Tag Peter Schmid,\n\nherzlichen Dank für Ihre Nachricht.\n\nGern beantworten wir Ihre Frage persönlich [Antwort des Teams].\n\nFür alles Weitere erreichen Sie uns jederzeit an der Rezeption.\n\nHerzliche Grüsse aus Saas-Almagell\n\nEsther und Fabian Zurbriggen\nHotel Monte-Moro",
+  "team": "Grundlage: Kontakt (Website)\nOffen: Antwort auf die Frage",
+  "vorlage": "",
+  "absender": "Telefon +41 27 957 10 12 · info@monte-moro.ch",
+  "zeit": "2026-11-10T15:07:41+08:00",
+  "fassung": 1
+ }
 }
