@@ -553,3 +553,12 @@ try:
     _mp.anwenden(sys.modules[__name__])
 except Exception as _f:   # ohne Papier-Werte baut der Kern mit den eigenen
     print('mit_papier nicht angewendet:', _f)
+
+# Fenster lesbar und Kapitel als runde Flächen (Robert 10.11.2026, Vorlage Wellness 8fe3631): am Ende jedes Baus über alle Seiten der Werkbank
+_nach_bau_vorher = nach_bau
+
+
+def nach_bau():
+    _nach_bau_vorher()
+    import fenster_lesbar as _fl, abschnitt_kanten as _ak2
+    _fl.anwenden(ROOT); _ak2.anwenden(ROOT)
