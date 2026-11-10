@@ -84,7 +84,7 @@ setze('direkt',nf.format(direkt));setze('umsatz',nf.format(umsatz));setze('bleib
 
 CSS = '''
 /* Blatt des Rechenbeispiels (Bauart des Blatts aus dem Stamm) */
-.ag-blatt{position:relative;padding:clamp(28px,3.8vw,64px);border-radius:clamp(22px,2.4vw,34px);background:linear-gradient(rgba(245,242,238,.95),rgba(245,242,238,.95)),var(--weiss) url(/werkbank/eigen/tapete-hell.svg) 50% 0/240px auto;color:var(--tinte);box-shadow:inset 0 1px 0 #fff,0 50px 70px -46px rgba(7,27,46,.95)}
+.ag-blatt{position:relative;padding:clamp(28px,3.8vw,64px);border-radius:clamp(22px,2.4vw,34px);background:linear-gradient(rgba(245,242,238,.95),rgba(245,242,238,.95)),var(--weiss) url(../werkbank/eigen/tapete-hell.svg) 50% 0/240px auto;color:var(--tinte);box-shadow:inset 0 1px 0 #fff,0 50px 70px -46px rgba(7,27,46,.95)}
 .ag-blatt::before,.ag-blatt::after{content:"";position:absolute;pointer-events:none;border:1px solid rgba(179,152,103,.55);border-radius:clamp(14px,1.6vw,24px);inset:clamp(10px,1.1vw,16px)}
 .ag-blatt::after{inset:clamp(15px,1.5vw,22px);border-color:rgba(179,152,103,.25);border-radius:clamp(11px,1.3vw,19px)}
 .ag-r__n{margin:0 0 12px;font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--taupe)}

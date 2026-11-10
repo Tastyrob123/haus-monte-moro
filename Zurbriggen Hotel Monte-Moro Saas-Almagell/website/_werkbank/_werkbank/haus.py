@@ -70,7 +70,7 @@ os.makedirs(_EI, exist_ok=True)
 for _q, _z in (('tapete-dunkel.svg', 'tapete-dunkel.svg'), ('tapete-hell.svg', 'tapete-hell.svg')):
     _t = open(os.path.join(WEB, 'assets', 'zeichen', _q), encoding='utf-8').read()
     open(os.path.join(_EI, _z), 'w', encoding='utf-8').write(_re.sub(r'<rect width="480" height="480" fill="#[0-9A-Fa-f]{6}"/>', '', _t, count=1))
-MUSTER = 'url(/werkbank/eigen/tapete-dunkel.svg)'
+MUSTER = 'url(../werkbank/eigen/tapete-dunkel.svg)'
 MUSTER_B = '240px'
 MUSTER_DRUCK = '18mm'
 # Das Zeichen: der Bergkamm aus dem Logo (Kleid der Werkzeuge), unverändert übernommen, nie nachgezeichnet. Breit (viewBox 3483 × 696).
@@ -331,7 +331,7 @@ CSS += '''
 .fl--nacht.tapete-leicht{--tl:rgba(10,42,74,.25)}
 .fl--blau.tapete-leicht{--tl:rgba(17,85,149,.2)}
 .fl--tief.tapete-leicht{--tl:rgba(7,27,46,.25)}
-.tapete-hell{background-image:url(/werkbank/eigen/tapete-hell.svg);background-size:240px auto;background-position:50% 0}
+.tapete-hell{background-image:url(../werkbank/eigen/tapete-hell.svg);background-size:240px auto;background-position:50% 0}
 /* ---------- Titel wie auf der Website: Fjalla One, eine Stärke, normale Schreibung, Betonung nur über die Farbe, nie fett, nie kursiv ---------- */
 .zt,.t1,.t2,.t3,.wfen__t,.ins-t h3,.rgw .wfa__texte h3,.sbf-text h3,.hs2-ww+small{font-weight:400!important}
 .zt{text-transform:none;letter-spacing:0}

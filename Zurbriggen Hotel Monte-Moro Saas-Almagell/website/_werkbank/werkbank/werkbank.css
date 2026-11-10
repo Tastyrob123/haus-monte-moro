@@ -12,7 +12,7 @@
   --mono:'DM Mono',ui-monospace,'SF Mono',Menlo,monospace;
   --e1:cubic-bezier(.16,1,.3,1); --e2:cubic-bezier(.32,.72,0,1); --e3:cubic-bezier(.34,1.3,.5,1);
   --rand:clamp(20px,4.6vw,76px); --max:1480px; --abschnitt:clamp(92px,10.6vw,172px); --rund:clamp(26px,3.4vw,52px);
-  --muster:url(/werkbank/eigen/tapete-dunkel.svg); --musterb:240px;
+  --muster:url(../werkbank/eigen/tapete-dunkel.svg); --musterb:240px;
 }
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-padding-top:96px;overflow-x:clip}
@@ -1054,7 +1054,7 @@ body.kino-offen{overflow:hidden}
 .fl--nacht.tapete-leicht{--tl:rgba(10,42,74,.25)}
 .fl--blau.tapete-leicht{--tl:rgba(17,85,149,.2)}
 .fl--tief.tapete-leicht{--tl:rgba(7,27,46,.25)}
-.tapete-hell{background-image:url(/werkbank/eigen/tapete-hell.svg);background-size:240px auto;background-position:50% 0}
+.tapete-hell{background-image:url(../werkbank/eigen/tapete-hell.svg);background-size:240px auto;background-position:50% 0}
 /* ---------- Titel wie auf der Website: Fjalla One, eine Stärke, normale Schreibung, Betonung nur über die Farbe, nie fett, nie kursiv ---------- */
 .zt,.t1,.t2,.t3,.wfen__t,.ins-t h3,.rgw .wfa__texte h3,.sbf-text h3,.hs2-ww+small{font-weight:400!important}
 .zt{text-transform:none;letter-spacing:0}
