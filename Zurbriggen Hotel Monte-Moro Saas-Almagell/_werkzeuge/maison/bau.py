@@ -23,6 +23,11 @@ ROOT = os.path.dirname(WZ)                             # Projektordner des Hause
 WEB = os.path.join(ROOT, 'website')
 QUELLE = os.path.join(HIER, 'quelle')
 ROH = os.path.join(HIER, 'roh')
+GERAET_Q = os.path.join(WEB, '_werkbank', '_werkbank', 'geraete', 'laptop-geraet.png')
+try:
+    GERAET_J = json.load(open(os.path.join(WEB, '_werkbank', '_werkbank', 'geraete', 'laptop.json'), encoding='utf-8'))
+except (OSError, ValueError):
+    GERAET_J = {'groesse': [2000, 1673], 'schirm': [0.097242, 0.020296, 0.805516, 0.623256]}
 PORT = 9381                                             # Prüfserver des Hotelbüros (server.py)
 PF = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>'
 
@@ -200,6 +205,13 @@ FARBE = {}   # Platzhalter in der Motivfarbe statt Schwarz (Fund Oberchef 29.10.
 def bilder(ziel):
     BILDER.clear(); FEHLT.clear()
     from PIL import Image
+    # Blender-Laptop der Werkbank (geraete/laptop-geraet.png, Lage des Bildschirms aus laptop.json), Robert 10.11.2026: jedes Werkzeug im Gerät
+    if os.path.exists(GERAET_Q):
+        z = os.path.join(ziel, 'img', 'geraet-laptop.webp')
+        if not os.path.exists(z) or os.path.getmtime(z) < os.path.getmtime(GERAET_Q):
+            os.makedirs(os.path.dirname(z), exist_ok=True)
+            g = Image.open(GERAET_Q).convert('RGBA'); g.resize((1600, round(g.height * 1600 / g.width)), Image.LANCZOS).save(z, quality=88, method=6)
+        BILDER['geraet-laptop'] = (1600, round(GERAET_J['groesse'][1] * 1600 / GERAET_J['groesse'][0]))
     for k, (f, pos, pos_h) in FENSTER.items():
         q = web_bild(f); w, h = Image.open(q).size
         px, py = (float(x.rstrip('%')) / 100 for x in pos.split()); hy = float(pos_h.split()[1].rstrip('%')) / 100
@@ -306,9 +318,9 @@ def tafel_zeilen(k):
     return [(s, t, re.sub(r'\{(\w+)\}', lambda m: (nm[m.group(1)][0].lower() + nm[m.group(1)][1:]) if m.group(1) in nm else m.group(0), x)) for s, t, x in z]
 
 
-def tafel(k, i=0, extra=''):
+def tafel(k, i=0, extra='', cls=''):
     z = ''.join(f'<div class="m-tafel__z"><i>{I[s]}</i><p><b>{e(t)}</b>{ui(e(x, quote=False), k)}</p></div>' for s, t, x in tafel_zeilen(k))
-    return f'<div class="m-tafel" data-r style="--i:{i}"><p class="m-tafel__kopf"><span>So geht’s</span></p>{z}{extra}</div>'
+    return f'<div class="m-tafel {cls}" data-r style="--i:{i}"><p class="m-tafel__kopf"><span>So geht’s</span></p>{z}{extra}</div>'
 
 
 class Bau:
@@ -338,18 +350,30 @@ def lamm(c):
     return f'<svg class="{c}" viewBox="{LAMM_VB}" fill="currentColor" aria-hidden="true">{LAMM}</svg>'
 
 
-def schirm(n, k, leiste, alt, i=0, sizes='(max-width:1000px) 92vw, 60vw'):
+def schirm(n, k, leiste, alt, i=0, sizes='(max-width:1000px) 92vw, 60vw', cls=''):
     leiste = leiste.removeprefix(f'{ZENTRALE} · ')   # Abnahme-Tor 30.10.2026 (K2): man steht schon im Hotelbüro; Werkzeug · Bereich passt bei jeder Breite ganz in die Leiste
     name = 'schirm-' + n
     if name not in BILDER:
         if Bau.online:
             return ''
-        return (f'<figure class="m-schirm m-schirm--platz" data-r="schweb" style="--i:{i}" data-platz="{e(n)}"><div class="m-schirm__leiste" aria-hidden="true"><span>{e(leiste)}</span></div>'
+        return (f'<figure class="m-schirm m-schirm--platz {cls}" data-r="schweb" style="--i:{i}" data-platz="{e(n)}"><div class="m-schirm__leiste" aria-hidden="true"><span>{e(leiste)}</span></div>'
                 f'<div class="m-platz">{lamm("")}<b>Bildschirm folgt</b><p>{e(W[k]["name"])} wird gerade gebaut. Sobald es vorliegt, steht hier sein echter Bildschirm.</p>'
                 f'<small>Platzhalter, nur lokal</small></div></figure>')
     b = BILDER[name]
-    return (f'<figure class="m-schirm" data-r="schweb" style="--i:{i}"><div class="m-schirm__leiste" aria-hidden="true"><span>{e(leiste)}</span></div>'
+    return (f'<figure class="m-schirm {cls}" data-r="schweb" style="--i:{i}"><div class="m-schirm__leiste" aria-hidden="true"><span>{e(leiste)}</span></div>'
             f'<img src="img/{name}.webp" srcset="img/{name}-s.webp 1200w, img/{name}.webp {b[0]}w" sizes="{sizes}" width="{b[0]}" height="{b[1]}" alt="{e(alt)}" loading="eager" decoding="sync"></figure>')
+
+
+def geraet(n, k, alt, i=0, sizes='(max-width:1000px) 92vw, 58vw'):
+    """Ein Bildschirm des Werkzeugs im Blender-Laptop (je Saal eine Ansicht, kein zweiter Bildschirm darüber)."""
+    name = 'schirm-' + n
+    if name not in BILDER or 'geraet-laptop' not in BILDER:
+        return schirm(n, k, W[k]['name'], alt, i, sizes)
+    b, (gw, gh) = BILDER[name], BILDER['geraet-laptop']
+    x, y, w, h = (v * 100 for v in GERAET_J['schirm'])
+    return (f'<figure class="m-geraet" data-r="schweb" style="--i:{i};aspect-ratio:{gw}/{gh}">'
+            f'<div class="m-geraet__s" style="left:{x:.4f}%;top:{y:.4f}%;width:{w:.4f}%;height:{h:.4f}%"><img src="img/{name}.webp" srcset="img/{name}-s.webp 1200w, img/{name}.webp {b[0]}w" sizes="{sizes}" width="{b[0]}" height="{b[1]}" alt="{e(alt)}" loading="eager" decoding="sync"></div>'
+            f'<img class="m-geraet__g" src="img/geraet-laptop.webp" width="{gw}" height="{gh}" alt="" loading="eager" decoding="sync"></figure>')
 
 
 def stueck_bild(name, alt, cls='', i=0):
@@ -437,15 +461,25 @@ def seite(online, v):
     def zwei(a, b):
         return f'<div class="m-schirme{" m-schirme--zwei" if b else ""}">{a}{b}</div>'
 
+    def stk(vor, k, art, start):   # Stücke (Karten, Drucksachen) als Blätter vor dem Laptop, Namen aus der Lieferung des Werkzeugs
+        n = sorted(b for b in BILDER if b.startswith(vor))[:3]
+        try:
+            alt = json.load(open(os.path.join(ROH, 'karten' if k == 'carte' else 'druck', 'namen.json'), encoding='utf-8'))
+        except (OSError, ValueError):
+            alt = {}
+        return ''.join(stueck_bild(b, W[k]['name'] + ': ' + alt.get(b[len(vor):], b[len(vor):].replace('-', ' ')), f'{art}-{"abc"[x]}', start + x) for x, b in enumerate(n))
+
+    fotos = ''.join(stueck_bild('archiv-' + n, BILDER_W[n]['alt'], f'm-stueck--foto m-stueck--f-{"abc"[x]}', x + 1) for x, n in enumerate(ARCHIV[:3]))
+    # Säle (Robert 10.11.2026, «schöner gescreent» wie in der Werkbank): je Werkzeug ein Blender-Laptop mit einer Ansicht, Blätter und Fotos davor, daneben «So geht’s» und der Stand
     saele = f'''
 <section class="m-saal tapete" id="bureau">
   <div class="innen">
   {saal_kopf('bureau', 0)}
-  <div class="m-saal__feld">
-    <div class="m-saal__links">{zwei(schirm('bureau', 'bureau', f'{ZENTRALE} · {W["bureau"]["name"]} · Übersicht', W['bureau']['name'] + ': die Übersicht mit allen Bereichen der Website', 0), '')}{stuecke('bureau')}</div>
-    <div>
+  <div class="m-buehne">
+    <div class="m-buehne__bild">{geraet('bureau', 'bureau', W['bureau']['name'] + ': die Übersicht mit allen Bereichen der Website', 0)}</div>
+    <div class="m-buehne__text">
       {tafel('bureau', 1)}
-      <div class="m-tafel m-tafel--stand" data-r style="--i:2;margin-top:18px">
+      <div class="m-tafel m-tafel--stand" data-r style="--i:2">
         <div class="m-zahlen"><div class="m-zahl"><b data-zahl="bereiche">–</b><span>Bereiche</span></div><div class="m-zahl"><b data-zahl="seiten">–</b><span>Seiten</span></div></div>
         <p class="m-tafel__stand" data-stand="bureau">&nbsp;</p>
         {knopf(W['bureau']['name'] + ' öffnen', auf['bureau'], 'knopf--dunkel')}
@@ -458,11 +492,11 @@ def seite(online, v):
 <section class="m-saal dunkel" id="carte">
   <div class="innen">
   {saal_kopf('carte', 1)}
-  <div class="m-saal__feld">
-    <div class="m-saal__links">{zwei(schirm('carte', 'carte', f'{ZENTRALE} · {W["carte"]["name"]}', W['carte']['name'] + ': links die Gerichte, rechts die Karte, wie sie gedruckt wird', 0), '')}{stuecke('carte')}</div>
-    <div>
+  <div class="m-buehne m-buehne--spiegel">
+    <div class="m-buehne__bild m-buehne__bild--blaetter">{geraet('carte', 'carte', W['carte']['name'] + ': links die Gerichte, rechts die Karte, wie sie gedruckt wird', 0)}{stk('karte-', 'carte', 'm-stueck--k', 1)}</div>
+    <div class="m-buehne__text">
       {tafel('carte', 1)}
-      <div class="m-tafel m-tafel--stand" data-r style="--i:2;margin-top:18px">
+      <div class="m-tafel m-tafel--stand" data-r style="--i:2">
         <div class="m-zahlen"><div class="m-zahl"><b data-zahl="karten">–</b><span>Karten</span></div><div class="m-zahl"><b data-zahl="entwurf">–</b><span>Offene Entwürfe</span></div></div>
         {knopf(W['carte']['name'] + ' öffnen', auf['carte'], 'knopf--dunkel')}
       </div>
@@ -474,11 +508,11 @@ def seite(online, v):
 <section class="m-saal creme" id="imprimerie">
   <div class="innen">
   {saal_kopf('imprimerie', 2)}
-  <div class="m-saal__feld">
-    <div class="m-saal__links">{zwei(schirm('imprimerie', 'imprimerie', f'{ZENTRALE} · {W["imprimerie"]["name"]}', W['imprimerie']['name'] + ': die Übersicht mit den Vorlagen des Hauses', 0), '')}{stuecke('imprimerie')}</div>
-    <div>
+  <div class="m-buehne">
+    <div class="m-buehne__bild m-buehne__bild--blaetter">{geraet('imprimerie', 'imprimerie', W['imprimerie']['name'] + ': die Übersicht mit den Vorlagen des Hauses', 0)}{stk('druck-', 'imprimerie', 'm-stueck--d', 1)}</div>
+    <div class="m-buehne__text">
       {tafel('imprimerie', 1)}
-      <div data-r style="--i:2;margin-top:22px">{knopf(W['imprimerie']['name'] + ' öffnen', auf['imprimerie'], 'knopf--dunkel', neu=True)}<p class="m-hinweis" data-stand="imprimerie-kurz">&nbsp;</p></div>
+      <div class="m-buehne__knopf" data-r style="--i:2">{knopf(W['imprimerie']['name'] + ' öffnen', auf['imprimerie'], 'knopf--dunkel', neu=True)}<p class="m-hinweis" data-stand="imprimerie-kurz">&nbsp;</p></div>
     </div>
   </div>
   </div>
@@ -487,11 +521,11 @@ def seite(online, v):
 <section class="m-saal dunkel" id="reception">
   <div class="innen">
   {saal_kopf('reception', 3)}
-  <div class="m-saal__feld">
-    <div class="m-saal__links">{zwei(schirm('reception', 'reception', f'{ZENTRALE} · {W["reception"]["name"]} · Eingang', W['reception']['name'] + ': Eingang mit den Anfragen und was Gäste gefragt haben', 0), '')}{stuecke('reception')}</div>
-    <div>
+  <div class="m-buehne m-buehne--spiegel">
+    <div class="m-buehne__bild">{geraet('reception', 'reception', W['reception']['name'] + ': Eingang mit den Anfragen und was Gäste gefragt haben', 0)}</div>
+    <div class="m-buehne__text">
       {tafel('reception', 1, '<p class="m-tafel__stand" data-stand="reception">&nbsp;</p>')}
-      <p data-r style="--i:2;margin-top:22px">{knopf(W['reception']['name'] + ' öffnen', auf['reception'])}</p>
+      <div class="m-buehne__knopf" data-r style="--i:2">{knopf(W['reception']['name'] + ' öffnen', auf['reception'])}</div>
     </div>
   </div>
   </div>
@@ -500,11 +534,11 @@ def seite(online, v):
 <section class="m-saal tapete" id="livre">
   <div class="innen">
   {saal_kopf('livre', 4)}
-  <div class="m-saal__feld">
-    <div class="m-saal__links">{zwei(schirm('livre-fotos', 'livre', f'{ZENTRALE} · {W["livre"]["name"]} · Fotos', W['livre']['name'] + ': die Fotos des Hauses', 0), schirm('livre-marke', 'livre', f'{ZENTRALE} · {W["livre"]["name"]} · Logo & Dateien', W['livre']['name'] + ': Wortmarke und Farben als Dateien', 1, '(max-width:1000px) 92vw, 30vw') if 'schirm-livre-marke' in BILDER else '')}{stuecke('livre')}</div>
-    <div>
+  <div class="m-buehne">
+    <div class="m-buehne__bild m-buehne__bild--blaetter">{geraet('livre-fotos', 'livre', W['livre']['name'] + ': die Fotos des Hauses', 0)}{fotos}</div>
+    <div class="m-buehne__text">
       {tafel('livre', 1)}
-      <div data-r style="--i:2;margin-top:22px">{knopf(W['livre']['name'] + ' öffnen', auf['livre'], 'knopf--dunkel')}<p class="m-hinweis" data-stand="livre">&nbsp;</p></div>
+      <div class="m-buehne__knopf" data-r style="--i:2">{knopf(W['livre']['name'] + ' öffnen', auf['livre'], 'knopf--dunkel')}<p class="m-hinweis" data-stand="livre">&nbsp;</p></div>
     </div>
   </div>
   {farbreihe}
@@ -514,11 +548,11 @@ def seite(online, v):
 <section class="m-saal creme" id="registre">
   <div class="innen">
   {saal_kopf('registre', 5)}
-  <div class="m-saal__feld">
-    <div class="m-saal__links">{zwei(schirm('registre', 'registre', f'{ZENTRALE} · {W["registre"]["name"]} · Beispielwerte', W['registre']['name'] + ' mit Beispielwerten: Besuche je Tag, Herkunft und die meistbesuchten Seiten', 0), '')}{stuecke('registre')}</div>
-    <div>
+  <div class="m-buehne m-buehne--spiegel">
+    <div class="m-buehne__bild">{geraet('registre', 'registre', W['registre']['name'] + ' mit Beispielwerten: Besuche je Tag, Herkunft und die meistbesuchten Seiten', 0)}</div>
+    <div class="m-buehne__text">
       {tafel('registre', 1)}
-      <div class="m-tafel" data-r style="--i:2;margin-top:18px">
+      <div class="m-tafel m-tafel--stand" data-r style="--i:2">
         <div class="m-zahlen"><div class="m-zahl"><b data-zahl="reg-besuche">–</b><span>Besuche</span></div><div class="m-zahl"><b data-zahl="reg-seiten">–</b><span>Seiten angesehen</span></div><div class="m-zahl"><b data-zahl="reg-laender">–</b><span>Länder</span></div></div>
         <p class="m-hinweis" data-stand="besuche">&nbsp;</p>
         {knopf(W['registre']['name'] + ' öffnen', auf['registre'], 'knopf--dunkel')}
@@ -534,6 +568,8 @@ def seite(online, v):
   </ol>
   </div>
 </section>'''
+
+
 
     anl = [(W[k]['name'], A[k]['anl']) for k in REIHE if A[k]['anl']]
     anleitungen = ''.join(f'<a href="{e(h)}" target="_blank" rel="noopener">{e(n)}, Schritt für Schritt</a>' for n, h in anl) or \

@@ -361,3 +361,47 @@ body.ma{margin:0;background:var(--raum);color:var(--tinte);font:400 17px/1.62 va
 /* Sperrabstand optisch mittig wie im Kleid (31.10.2026): nur Chromium hängt ihn nach dem letzten Buchstaben an; «Überspringen» im Rundgang rückt dort um den Abstand ein */
 @supports (interpolate-size:allow-keywords){.rdg-karte .rdg-zu{text-indent:.14em}}
 .wo-zl-z,.wo-zl-z>*{font:inherit!important;letter-spacing:inherit!important;text-transform:inherit!important;color:inherit!important;margin:0!important;padding:0!important}   /* beim Hochzählen dieselbe Schrift wie die Zahl, nicht die der Beschriftungs-span (Fund 09.11.2026) */
+
+/* ---------- Säle (Robert 10.11.2026: «schöner gescreent»): je Werkzeug ein Blender-Laptop, Blätter und Fotos davor, daneben «So geht’s» und der Stand ---------- */
+.m-buehne{display:grid;grid-template-columns:minmax(0,1.62fr) minmax(0,1fr);gap:clamp(28px,3.6vw,64px);align-items:center;margin-top:clamp(40px,4vw,60px)}
+.m-buehne--spiegel{grid-template-columns:minmax(0,1fr) minmax(0,1.62fr)}
+.m-buehne--spiegel .m-buehne__bild{order:2}
+.m-buehne__bild{position:relative;min-width:0}
+.m-buehne__text{display:grid;gap:18px;min-width:0}
+.m-buehne .m-zahlen{margin-top:0}
+.m-buehne .m-tafel--stand .m-tafel__stand,.m-buehne .m-tafel--stand .m-hinweis{margin-top:12px}
+.m-buehne .m-tafel--stand .knopf{margin-top:16px}
+.m-buehne .m-tafel--stand .m-tafel__stand:first-child,.m-buehne .m-tafel--stand .knopf:first-child{margin-top:0}
+.m-geraet{position:relative;margin:0;width:104%;margin-left:-2%;filter:drop-shadow(0 50px 50px rgba(7,27,46,.32))}
+.dunkel .m-geraet{filter:drop-shadow(0 50px 60px rgba(0,0,0,.6))}
+.m-geraet__s{position:absolute;z-index:1;overflow:hidden;border-radius:1.6% 1.6% 0 0/2.4% 2.4% 0 0;background:#081d32}
+.m-geraet__s img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 0}
+.m-geraet__g{position:relative;z-index:2;display:block;width:100%;height:auto;pointer-events:none}
+.js .m-geraet .m-geraet__s img{transform:scale(1.06);transition:transform 2.2s cubic-bezier(.22,.61,.36,1)}
+.js .m-geraet.da .m-geraet__s img{transform:none}
+/* Blätter und Fotos vor dem Laptop, leicht gedreht wie auf dem Tisch */
+.m-buehne__bild--blaetter{padding-bottom:6%}
+.m-buehne__bild .m-stueck{position:absolute;z-index:3;margin:0;border-radius:3px}
+.m-stueck--k-a,.m-stueck--d-a{left:-3%;bottom:-2%;width:19%;rotate:-6deg}
+.m-stueck--k-b,.m-stueck--d-b{left:12%;bottom:-6%;width:19%;rotate:3deg}
+.m-stueck--k-c{left:27%;bottom:-3%;width:15%;rotate:-2deg}
+.m-stueck--d-c{left:25%;bottom:-4%;width:24%;rotate:-2.5deg}
+.m-buehne--spiegel .m-stueck--k-a{left:auto;right:28%}
+.m-buehne--spiegel .m-stueck--k-b{left:auto;right:13%}
+.m-buehne--spiegel .m-stueck--k-c{left:auto;right:-3%}
+.m-stueck--f-a{left:-3%;bottom:-3%;width:17%;rotate:-5deg}
+.m-stueck--f-b{left:11%;bottom:-7%;width:17%;rotate:3deg}
+.m-stueck--f-c{left:25%;bottom:-4%;width:17%;rotate:-1.5deg}
+.m-buehne__bild .m-stueck--foto{aspect-ratio:3/4;padding:5px 5px 18px;background:#fff}
+.m-buehne__bild .m-stueck--foto img{height:100%;object-fit:cover;border-radius:1px}
+@media (max-width:1000px){
+  .m-buehne,.m-buehne--spiegel{grid-template-columns:1fr}
+  .m-buehne--spiegel .m-buehne__bild{order:0}
+  .m-geraet{width:100%;margin-left:0}
+  .m-stueck--k-c,.m-stueck--d-c,.m-stueck--f-c{display:none}
+  .m-stueck--k-a,.m-stueck--d-a,.m-stueck--f-a,.m-buehne--spiegel .m-stueck--k-a{left:0;right:auto;width:24%}
+  .m-stueck--k-b,.m-stueck--d-b,.m-stueck--f-b,.m-buehne--spiegel .m-stueck--k-b{left:20%;right:auto;width:24%}
+}
+.m-buehne:has(.m-stueck--foto){margin-bottom:clamp(48px,5vw,80px)}
+.m-buehne__knopf{padding:4px 2px 0}
+.m-buehne__knopf .m-hinweis{margin-top:12px}
