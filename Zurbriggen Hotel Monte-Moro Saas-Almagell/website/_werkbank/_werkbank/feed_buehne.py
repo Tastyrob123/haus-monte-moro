@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Werkbank Hotel Monte-Moro (Vorlage des Werkbank-Kits), Abschnitt Instagram (Master 5b Punkt 16): das Handy als Gerät in der Mitte,
-ringsum acht Beiträge als Polaroids aus den nächsten 30 Beiträgen (feed_daten.py, Werkbank Papier 08.11.2026): das Haus im Sommer und im Winter,
+ringsum acht Beiträge als Polaroids aus den nächsten 45 Beiträgen (feed_daten.py, Werkbank Papier 08.11.2026): das Haus im Sommer und im Winter,
 das Röstihüs, das Stübli, das Frühstück, Murmeltiere, der Mattmarksee und der Satz des Hauses.
 
 Bauart des Handys wie in der Vorlage (frontales Gehäuse, der Bildschirm ist ein Rechteck): das Gehäuse hat ein Loch, der Feed liegt als

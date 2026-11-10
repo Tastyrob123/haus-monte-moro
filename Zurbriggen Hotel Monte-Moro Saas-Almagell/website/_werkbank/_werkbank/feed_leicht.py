@@ -150,7 +150,7 @@ def kleid(t):
     """Schriftfamilien des Kits heissen nach dem, was sie sind (Fjalla One statt der Kit-Titelschrift), keine Kapitelnummer «00»."""
     t = t.replace("'Baskerville CE'", "'Fjalla One'").replace('"Baskerville CE"', '"Fjalla One"')
     t = re.sub(r'<p class="kap"><b style="font-weight:400">0+</b><i></i>', '<p class="kap">', t)
-    t = t.replace('Die nächsten 60 · Euer Feed heute', 'Die nächsten 30 · Ihr Feed heute')
+    t = t.replace('Die nächsten 60 · Euer Feed heute', 'Die nächsten 45 · Ihr Feed heute')
     return t
 
 

@@ -5,12 +5,12 @@ Das Profil heute: @hotelmonte_moro, «Hotel Monte Moro | Restaurant Röstihüs |
 (_quelle/extern/ig/profil.txt). Neuester eigener Beitrag: 21.09.2026. Im Profil der Werkbank stehen die zehn eigenen Beiträge mit Bild aus
 _quelle/extern/ig/ (herkunft.json, nur Konto hotelmonte_moro) unter den neuen (feed_leicht.py).
 
-Konzept «Am Grat»: Das Haus erzählt sich in drei Kapiteln, je ein Panorama des Saastals über eine ganze Reihe (drei Beiträge ergeben ein Bild,
-wie die Grat-Kante der Website die Fotos oben fasst): Sommer im Tal, Winter auf den Gletschern, der Stausee Mattmark. Dazwischen je zwei
+Konzept «Am Grat»: Das Haus erzählt sich in vier Kapiteln, je ein Panorama des Saastals über eine ganze Reihe (drei Beiträge ergeben ein Bild,
+wie die Grat-Kante der Website die Fotos oben fasst): Sommer im Tal, Winter auf den Gletschern, der Stausee Mattmark, Saas-Almagell am Abend. Dazwischen je zwei
 Reihen aus dem Haus: Zimmer, Frühstück, Röstihüs, Stübli, Empfang, und je Reihe genau eine Tafel mit einem Satz der Website
 («Mehr erleben, weniger zahlen.», «Bei uns scheint fast immer die Sonne.», «Zwei Minuten bis zum Lift.», «Es lebe die Tradition!»,
 «Wein von Fabian.», «Willkommen im Monte-Moro.») und einmal der Bon der Rezeption mit allem, was inklusive ist. Der Platz der Tafel wandert.
-30 Beiträge, nur Fotos der Website (website/assets/img, keine Gästefotos, nichts Erzeugtes, nichts, was schon gepostet ist: feed_bestand.py).
+45 Beiträge (15 Dreierreihen, Robert 10.11.2026), nur Fotos der Website (website/assets/img, keine Gästefotos, nichts Erzeugtes, nichts, was schon gepostet ist: feed_bestand.py).
 Kleid: Nacht und Papier, Lärche nur im Bergkamm und im letzten Wort, Messing als feine Linie; Fjalla One, Instrument Sans, DM Mono.
 Texte zu den Beiträgen: Tasty Studios, nur mit Fakten aus website/inhalt/daten.py; Sie-Ansprache, Schweizer Schreibung."""
 import os
@@ -58,10 +58,10 @@ TON = (.99, 1.03, 1.0, 1.0)
 REGEL = 'bogen'
 SEITE = dict(
     titel=['Am', 'Grat.'],
-    text1='Ihr Feed bleibt, wie er ist. Darauf bauen die nächsten 30 Beiträge auf: drei Kapitel, je mit einem Panorama des Saastals über eine ganze Reihe, '
-          'dem Sommer im Tal, dem Winter auf den Gletschern und dem Stausee Mattmark. Dazwischen das Haus, das Röstihüs, das Stübli und je eine Tafel mit einem Satz Ihrer Website.',
-    text2='Kein Foto, das schon auf Ihrem Profil steht, kommt noch einmal vor. Mit dem Schalter sehen Sie Ihren Feed heute und mit den nächsten 30; die Nummern zeigen die Reihenfolge zum Posten.',
-    aufbau='Drei Panoramen über je eine Reihe, dazwischen Haus und Röstihüs, je Reihe eine Tafel',
+    text1='Ihr Feed bleibt, wie er ist. Darauf bauen die nächsten 45 Beiträge auf: vier Kapitel, je mit einem Panorama über eine ganze Reihe, '
+          'dem Sommer im Tal, dem Winter auf den Gletschern, dem Stausee Mattmark und Saas-Almagell am Abend. Dazwischen das Haus, das Röstihüs, das Stübli und je eine Tafel mit einem Satz Ihrer Website.',
+    text2='Kein Foto, das schon auf Ihrem Profil steht, kommt noch einmal vor. Mit dem Schalter sehen Sie Ihren Feed heute und mit den nächsten 45; die Nummern zeigen die Reihenfolge zum Posten.',
+    aufbau='Vier Panoramen über je eine Reihe, dazwischen Haus und Röstihüs, je Reihe eine Tafel',
     texte='Ideen von mir, die Sätze auf den Tafeln stammen von Ihrer Website',
     bilder='Ihre eigenen Fotos von der Website, die noch nie gepostet wurden')
 
@@ -151,6 +151,24 @@ STUECKE = [
     (9, 1, 1, T(tafel('Willkommen <em>im Monte-Moro.</em>', 'Ihre Gastgeber Esther und Fabian Zurbriggen.', '', 'w', '', True)),
      ['Willkommen im Monte-Moro. Ihre Gastgeber Esther und Fabian Zurbriggen.']),
     (9, 2, 1, F('fr-detail', .5, .5), ['Konfitüren und Brot am Buffet. Guten Morgen aus Saas-Almagell.']),
+    # Robert 10.11.2026: «so 45 Posts, dass es Sinn macht und mit den 3er-Reihen aufgeht»: zwei Reihen mehr im dritten Kapitel, dazu ein viertes Kapitel
+    (10, 0, 1, F('gondel', .5, .5), ['Die geschmückten Gondeln vor dem Röstihüs. Hier beginnt der Abend.']),
+    (10, 1, 1, F('z-licht', .5, .5), ['Morgenlicht im Zimmer. Alle Zimmer mit Dusche oder Bad, WC, Haarfön, TV, Safe und Balkon.']),
+    (10, 2, 1, T(tafel('Platz für <em>die ganze Familie.</em>', 'Familienzimmer und Familienkombinationen, ideal für 3 bis 6 Personen.', 'Hotel Monte-Moro')),
+     ['Gemütliche, komfortable Familienzimmer und Familienkombinationen, ideal für 3 bis 6 Personen. Kinder im Zimmer der Eltern mit Halbpension.']),
+    (11, 0, 1, T(tafel('Mit Liebe <em>und Herz.</em>', 'Schweizer Spezialitäten aus den besten regionalen Produkten.', 'Restaurant Röstihüs', 'w')),
+     ['Im Röstihüs kochen wir Schweizer Spezialitäten mit Liebe, Herz und den besten regionalen Produkten.']),
+    (11, 1, 1, F('roesti-orange', .5, .5), ['Gedeckte Tische im Röstihüs. Dazu Walliser Weine und frisches Appenzeller Bier.']),
+    (11, 2, 1, F('bergbach', .5, .5), ['Ein Bergbach zwischen den Felsen. Über 250 km Wanderwege führen durchs Saastal.']),
+    (12, 0, 3, F('dorf-nacht', .5, .5), ['Saas-Almagell am Abend.', 'Das Hotel Monte-Moro liegt an bester Lage im Dorf.', 'Drei Gehminuten bis in den Dorfkern. Gute Nacht aus dem Saastal.']),
+    (13, 0, 1, F('raclette', .5, .5), ['Raclette im Monte-Moro. Einmal in der Woche ist Racletteabend für alle mit Halbpension.']),
+    (13, 1, 1, T(tafel('Abends <em>im Kidsclub.</em>', 'Montag bis Samstag von 16.30 bis 21.00 Uhr, inklusive.', 'Hotel Monte-Moro')),
+     ['Der Kidsclub ist Montag bis Samstag von 16.30 bis 21.00 Uhr für unsere kleinen Gäste da, inklusive.']),
+    (13, 2, 1, F('spielburg', .5, .5), ['Die Spielburg vor dem Haus.']),
+    (14, 0, 1, F('winterweg', .5, .5), ['Zu Fuss durch den Schnee. Schneeschuhlaufen gehört zu den Erlebnissen im Saastal.']),
+    (14, 1, 1, F('roesti-stube', .5, .5), ['Im Röstihüs. Unsere Gäste sagen, hier gebe es die wohl besten Röstis und Cordon bleus der Region.']),
+    (14, 2, 1, T(tafel('Raclette <em>im Stübli.</em>', 'Einmal in der Woche, für alle mit Halbpension.', 'Restaurant Röstihüs', 'w')),
+     ['Raclette im Stübli: einmal in der Woche für alle Gäste mit Halbpension. Raclette gross mit Pellkartoffeln.']),
 ]
 
 BOGEN = []
@@ -158,7 +176,7 @@ for _r, _c, _w, _st, _texte in STUECKE:
     _kurz = os.path.basename(_st['bild']).rsplit('-', 1)[0] if _st['art'] == 'foto' else f'tafel{_r}{_c}'
     BOGEN.append(dict(id=f'{_r + 1:02d}{_c + 1}-{_kurz}', r=_r, c=_c, w=_w, h=1, texte=_texte, **_st))
 P = feed_bogen.p_liste(BOGEN)
-assert len(P) == 30, len(P)
+assert len(P) == 45, len(P)
 BISHER = 19   # Beiträge auf @hotelmonte_moro heute (profil.txt); im Profil der Werkbank stehen die zehn eigenen mit Bild unter den neuen
 PROFIL['zahlen']['beitraege'] = str(len(P) + BISHER)
 IG_BESTAND = ['../../_quelle/extern/ig/ig-*.jpg']   # alle Bilder aus dem Instagram-Material (auch die des Partnerhotels) für den Abgleich

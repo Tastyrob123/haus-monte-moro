@@ -1,5 +1,5 @@
 {
- "reihen": 10,
+ "reihen": 15,
  "stuecke": [
   {
    "id": "011-tal-sommer",
@@ -8,7 +8,7 @@
    "w": 3,
    "h": 1,
    "art": "foto",
-   "bild": "/home/user/haus-monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/tal-sommer-x.webp"
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/tal-sommer-x.webp"
   },
   {
    "id": "021-haus-sommer-g",
@@ -17,7 +17,7 @@
    "w": 1,
    "h": 1,
    "art": "foto",
-   "bild": "/home/user/haus-monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/haus-sommer-g-x.webp"
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/haus-sommer-g-x.webp"
   },
   {
    "id": "022-tafel11",
@@ -35,7 +35,7 @@
    "w": 1,
    "h": 1,
    "art": "foto",
-   "bild": "/home/user/haus-monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/roesti-raum-x.webp"
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/roesti-raum-x.webp"
   },
   {
    "id": "031-tafel20",
@@ -53,7 +53,7 @@
    "w": 1,
    "h": 1,
    "art": "foto",
-   "bild": "/home/user/haus-monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/fr-tisch-x.webp"
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/fr-tisch-x.webp"
   },
   {
    "id": "033-balkon",
@@ -62,7 +62,7 @@
    "w": 1,
    "h": 1,
    "art": "foto",
-   "bild": "/home/user/haus-monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/balkon-x.webp"
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/balkon-x.webp"
   },
   {
    "id": "041-alpenrosen",
@@ -71,7 +71,7 @@
    "w": 1,
    "h": 1,
    "art": "foto",
-   "bild": "/home/user/haus-monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/alpenrosen-x.webp"
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/alpenrosen-x.webp"
   },
   {
    "id": "042-murmeltiere",
@@ -80,7 +80,7 @@
    "w": 1,
    "h": 1,
    "art": "foto",
-   "bild": "/home/user/haus-monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/murmeltiere-x.webp"
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/murmeltiere-x.webp"
   },
   {
    "id": "043-tafel32",
@@ -98,7 +98,7 @@
    "w": 3,
    "h": 1,
    "art": "foto",
-   "bild": "/home/user/haus-monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/gletscher-x.webp"
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/gletscher-x.webp"
   },
   {
    "id": "061-haus-winter-g",
@@ -107,7 +107,7 @@
    "w": 1,
    "h": 1,
    "art": "foto",
-   "bild": "/home/user/haus-monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/haus-winter-g-x.webp"
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/haus-winter-g-x.webp"
   },
   {
    "id": "062-tafel51",
@@ -125,7 +125,7 @@
    "w": 1,
    "h": 1,
    "art": "foto",
-   "bild": "/home/user/haus-monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/dorf-winter-x.webp"
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/dorf-winter-x.webp"
   },
   {
    "id": "071-tafel60",
@@ -143,7 +143,7 @@
    "w": 1,
    "h": 1,
    "art": "foto",
-   "bild": "/home/user/haus-monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/stuebli-x.webp"
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/stuebli-x.webp"
   },
   {
    "id": "073-z-hell",
@@ -152,7 +152,7 @@
    "w": 1,
    "h": 1,
    "art": "foto",
-   "bild": "/home/user/haus-monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/z-hell-x.webp"
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/z-hell-x.webp"
   },
   {
    "id": "081-empfang",
@@ -161,7 +161,7 @@
    "w": 1,
    "h": 1,
    "art": "foto",
-   "bild": "/home/user/haus-monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/empfang-x.webp"
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/empfang-x.webp"
   },
   {
    "id": "082-see-blumen",
@@ -170,7 +170,7 @@
    "w": 1,
    "h": 1,
    "art": "foto",
-   "bild": "/home/user/haus-monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/see-blumen-x.webp"
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/see-blumen-x.webp"
   },
   {
    "id": "083-tafel72",
@@ -188,7 +188,7 @@
    "w": 3,
    "h": 1,
    "art": "foto",
-   "bild": "/home/user/haus-monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/stausee-x.webp"
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/stausee-x.webp"
   },
   {
    "id": "101-wasserfall",
@@ -197,7 +197,7 @@
    "w": 1,
    "h": 1,
    "art": "foto",
-   "bild": "/home/user/haus-monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/wasserfall-x.webp"
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/wasserfall-x.webp"
   },
   {
    "id": "102-tafel91",
@@ -215,7 +215,124 @@
    "w": 1,
    "h": 1,
    "art": "foto",
-   "bild": "/home/user/haus-monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/fr-detail-x.webp"
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/fr-detail-x.webp"
+  },
+  {
+   "id": "111-gondel",
+   "r": 11,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/gondel-x.webp"
+  },
+  {
+   "id": "112-z-licht",
+   "r": 11,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/z-licht-x.webp"
+  },
+  {
+   "id": "113-tafel102",
+   "r": 11,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "121-tafel110",
+   "r": 12,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "122-roesti-orange",
+   "r": 12,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/roesti-orange-x.webp"
+  },
+  {
+   "id": "123-bergbach",
+   "r": 12,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/bergbach-x.webp"
+  },
+  {
+   "id": "131-dorf-nacht",
+   "r": 13,
+   "c": 1,
+   "w": 3,
+   "h": 1,
+   "art": "foto",
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/dorf-nacht-x.webp"
+  },
+  {
+   "id": "141-raclette",
+   "r": 14,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/raclette-x.webp"
+  },
+  {
+   "id": "142-tafel131",
+   "r": 14,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "143-spielburg",
+   "r": 14,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/spielburg-x.webp"
+  },
+  {
+   "id": "151-winterweg",
+   "r": 15,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/winterweg-x.webp"
+  },
+  {
+   "id": "152-roesti-stube",
+   "r": 15,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "/Users/robertreff/Desktop/Website-Projekte/_Pruefstand-Zurbriggen-Werkbaenke/monte-moro/Zurbriggen Hotel Monte-Moro Saas-Almagell/website/assets/img/roesti-stube-x.webp"
+  },
+  {
+   "id": "153-tafel142",
+   "r": 15,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
   }
  ]
 }
