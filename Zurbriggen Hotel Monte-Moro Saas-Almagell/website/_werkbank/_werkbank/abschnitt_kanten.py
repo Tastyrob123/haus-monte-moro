@@ -9,8 +9,9 @@ import glob, os, re, sys
 
 DUNKEL = ['nacht', 'navy', 'tief', 'blau']
 HELL = ['papier', 'creme']
-CSS = ('.blatt{box-shadow:0 -1px 0 rgba(255,255,255,.07),0 -22px 46px -26px rgba(0,0,0,.55)}'
-       '.fl--papier.blatt,.fl--creme.blatt{box-shadow:0 -1px 0 rgba(255,255,255,.5),0 -22px 46px -26px rgba(0,0,0,.45)}')
+# Schatten fein und bis an den Rand (ohne negative Ausdehnung), sonst bleiben die runden Ecken hell stehen (Robert 10.11.2026: «zu krass und künstlich»)
+CSS = ('.blatt{box-shadow:0 -1px 0 rgba(255,255,255,.04),0 -4px 12px rgba(0,0,0,.1)}'
+       '.fl--papier.blatt,.fl--creme.blatt{box-shadow:0 -1px 0 rgba(255,255,255,.35),0 -4px 12px rgba(0,0,0,.07)}')
 BLOCK = '<style id="abschnitt-kanten">' + CSS + '</style>'
 SEC = re.compile(r'<section class="fl fl--([a-z]+)((?: [^"]*)?) blatt([^"]*)"')
 
