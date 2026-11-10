@@ -40,3 +40,4 @@ timeout 300 $M _werkbank/material_mehr.py "$P"
 timeout 120 python3 _werkbank/papier_nach.py
 timeout 120 python3 _werkbank/schrift_13.py                                    # keine Lese-Schrift unter 13 px, Luft zwischen den Kartons (Prüfpunkte 17/18)
 echo "Papier fertig: http://127.0.0.1:9388/drucksachen/index.html"
+python3 _werkbank/wege_website.py                                     # Wege zur Website auf den echten Ort (Robert 10.11.2026: jeder Knopf kommt an, unter jeder Adresse)

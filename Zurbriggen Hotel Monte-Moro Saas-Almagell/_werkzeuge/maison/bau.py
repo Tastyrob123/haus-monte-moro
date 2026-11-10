@@ -137,7 +137,7 @@ def wege(online):
     for k in REIHE:
         d = sw.get(k) or {}
         if online:
-            auf = d.get('online') or '../werkbank/index.html#werkzeuge'
+            auf = d.get('online') or '../../../website/_werkbank/werkbank/index.html#werkzeuge'   # Weg wie im Ordner des Hauses: geht lokal (jeder Server) und online gleich (Robert 10.11.2026: jeder Knopf kommt an)
             stand = d.get('stand_online') or ''
         else:
             auf = (d.get('adresse') or f'http://127.0.0.1:{PORTS[k]}/_werkzeuge/{k}/') if geliefert(k) else ''
@@ -449,7 +449,7 @@ def seite(online, v):
     UI.clear()
     A = wege(online)
     auf = {k: A[k]['auf'] for k in REIHE}
-    web = '/index.html' if online else '/index.html'      # lokal liefert server.py die Website in der Wurzel aus
+    web = '../../../website/index.html' if online else '../../website/index.html'   # Weg wie im Ordner des Hauses (server.py liefert /website/ mit aus); «/index.html» landete unter dem Kette-Server auf dessen Startseite (Robert 10.11.2026)
 
     insel = ''.join(f'<a class="m-insel__p" href="#{k}"><span class="rl">{e(W[k]["name"])}</span></a>' for k in REIHE)
     band = ''.join(f'<span>{e(t)}</span><span class="p" aria-hidden="true"></span>' for t in [W[k]['name'] for k in REIHE] + [NAME, RESTAURANT, ORT, TAL, SATZ_HAUS])

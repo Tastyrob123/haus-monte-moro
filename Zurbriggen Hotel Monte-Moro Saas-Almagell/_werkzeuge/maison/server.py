@@ -40,7 +40,7 @@ class H(http.server.SimpleHTTPRequestHandler):
 
     def translate_path(self, path):
         p = unquote(urlparse(path).path)
-        for vor, ordner in (('/assets/oberflaeche/', OF), ('/_werkzeuge/', WZ)):
+        for vor, ordner in (('/assets/oberflaeche/', OF), ('/_werkzeuge/', WZ), ('/website/', WEB)):   # /website/: gleicher Weg wie im Ordner des Hauses (Knöpfe «Website ansehen»)
             if p.startswith(vor):
                 z = os.path.normpath(os.path.join(ordner, p[len(vor):]))
                 return z if z == ordner or z.startswith(ordner + os.sep) else os.path.join(WEB, '.gesperrt')

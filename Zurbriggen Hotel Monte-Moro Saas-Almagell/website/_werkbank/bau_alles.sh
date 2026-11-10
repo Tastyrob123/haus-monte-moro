@@ -30,4 +30,5 @@ python3 _werkbank/objekte_bau.py "$P"
 python3 "$K/bau.py" "$P" | grep -v "Schrift fehlt"
 python3 "$K/ruecksprung.py" "$P"                                      # zuletzt: Rücksprung des Kits (Fassung mit Merkpunkt, wie geprüft) in jede Seite
 python3 _werkbank/schrift_13.py "$P"                                  # ganz zuletzt: keine Lese-Schrift unter 13 px, Luft zwischen den Kartons (Prüfpunkte 17/18)
+python3 _werkbank/wege_website.py                                     # Wege zur Website auf den echten Ort (Robert 10.11.2026: jeder Knopf kommt an, unter jeder Adresse)
 echo "fertig: http://127.0.0.1:9388/werkbank/"
