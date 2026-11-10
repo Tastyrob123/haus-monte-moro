@@ -141,7 +141,7 @@ button{font:inherit;color:inherit}
 .fg{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,2fr);gap:20px clamp(24px,3vw,48px);padding:28px 0;border-top:1px solid rgba(10,42,74,.14)}
 .fg__t h3{font:400 26px/1.15 var(--titel);margin-bottom:8px;color:var(--nacht)}
 .fg__t p{color:var(--dunkel2);font-size:15.5px}
-.fg__f{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}   /* Robert 10.11.2026: die Farben füllen die Reihe von links nach rechts */
+.fg__f{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
 .fa{display:flex;flex-direction:column;padding:0;border:0;border-radius:14px;overflow:hidden;cursor:pointer;text-align:left;background:#fff;box-shadow:0 0 0 1px rgba(10,42,74,.1),0 14px 26px -18px rgba(10,42,74,.5);transition:transform .6s var(--k)}
 .fa:hover{transform:translateY(-2px)}
 .fa:focus-visible{outline:1px solid var(--laerche-t);outline-offset:3px}
@@ -276,3 +276,9 @@ button{font:inherit;color:inherit}
 /* Rasterspalten nie breiter als der Platz (WebKit) */
 .drei>*,.vier>*,.lockups>*,.regeln>*,.formen>*,.zwei>*,.fg>*,.fg__f>*,.satzreihe>*,.mosaik>*,.titel__in>*,.index>*,.neine>*,.tapeten>*{min-width:0}
 .probe--titel .p1{line-height:1.16}   /* keine überlappenden Buchstaben (Robert 10.11.2026) */
+/* Farben füllen sich beim Hereinscrollen von links nach rechts, wie auf der Werkbank (Robert 10.11.2026) */
+@keyframes bu-fuell{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+.bewegt .fa[data-r]:not(.da) .fa__f{clip-path:inset(0 100% 0 0)}
+.bewegt .fa[data-r].da:not(.steht) .fa__f{animation:bu-fuell 1.15s cubic-bezier(.19,1,.22,1) backwards;animation-delay:calc(.35s + var(--k,0) * .09s)}
+.fg__f>.fa:nth-child(1){--k:0}.fg__f>.fa:nth-child(2){--k:1}.fg__f>.fa:nth-child(3){--k:2}.fg__f>.fa:nth-child(4){--k:3}.fg__f>.fa:nth-child(5){--k:4}.fg__f>.fa:nth-child(6){--k:5}
+@media (prefers-reduced-motion:reduce){.bewegt .fa .fa__f{animation:none!important;clip-path:none!important}}
