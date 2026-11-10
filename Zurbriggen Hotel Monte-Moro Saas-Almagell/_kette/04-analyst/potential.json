@@ -35,7 +35,7 @@
      "Ganz oben liest sie vom Sommer und von der Gratis-Anreise bis 31. Oktober.",
      "Den «Top Winterzauber» findet sie nur, wenn sie unter «Aktuelles» weitersucht."
     ],
-    "fuer_gaeste": "Wer im Winter kommt, sieht zuerst ein Angebot, das für ihn nicht mehr gilt.",
+    "fuer_gaeste": "Wer im Winter kommt, sieht gleich das Angebot, das für seine Reise gilt.",
     "fuer_das_haus": "Ab dem 1. November kann die schönste Stelle der Seite schon den Winter zeigen, den man jetzt bucht.",
     "stelle_im_geraet_prozent": [
      24.69,
@@ -77,7 +77,7 @@
      "Sie liest von 4½-Zimmer-Wohnungen und scrollt nach dem Preis.",
      "Nach dem Satz zum Parkplatz endet die Seite, ohne Preis und ohne Knopf zum Anfragen."
     ],
-    "fuer_gaeste": "Wer die Wohnung will, muss den Weg zum Kontaktformular selbst finden.",
+    "fuer_gaeste": "Wer eine Wohnung sucht, fragt sie direkt auf ihrer Seite an.",
     "fuer_das_haus": "Mit Grösse, Preis und Anfrage auf ihrer Seite finden die Wohnungen leichter ihre Gäste.",
     "stelle_im_geraet_prozent": [
      44.79,
@@ -120,7 +120,7 @@
      "Die Zimmerseite zeigt Fotos und zwei Absätze für alle Zimmer.",
      "Grösse und Betten sieht er erst, wenn er unter «Buchen» Daten eingibt."
     ],
-    "fuer_gaeste": "Wer sich zuerst umsehen will, bekommt seine Antwort erst beim Buchen.",
+    "fuer_gaeste": "Wer sich zuerst umsehen will, sieht jedes Zimmer schon vor dem Buchen.",
     "fuer_das_haus": "Die Antworten zu den Zimmern sind schon geschrieben; auf der Zimmerseite nehmen sie Ihrem Telefon manche Frage ab.",
     "stelle_im_geraet_prozent": [
      9.86,
@@ -156,7 +156,7 @@
      "Die Seite öffnet sich auf 80 Prozent verkleinert.",
      "Um die Preise zu lesen, zieht er sie mit zwei Fingern grösser."
     ],
-    "fuer_gaeste": "Unterwegs liest sich die Seite mühsam, gerade dort, wo es um Preise geht.",
+    "fuer_gaeste": "Auch unterwegs liest sich die Seite leicht, gerade dort, wo es um Preise geht.",
     "fuer_das_haus": "Gäste, die unterwegs buchen, kommen auf dem Telefon mit einem Griff zu Ihren Preisen.",
     "stelle_im_geraet_prozent": [
      11.51,
@@ -193,7 +193,7 @@
      "Auf der Restaurantseite finden sie Karte, Telefon und Reservierung.",
      "Ob das Röstihüs heute offen hat, steht nirgends, also rufen sie an."
     ],
-    "fuer_gaeste": "Spontan vorbeikommen geht nur mit einem Anruf vorher.",
+    "fuer_gaeste": "Wer spontan Lust auf Rösti hat, sieht gleich, wann er willkommen ist.",
     "fuer_das_haus": "Mit den Öffnungszeiten auf der Seite wissen auch Tagesgäste und Gäste anderer Häuser, wann das Röstihüs sie erwartet.",
     "stelle_im_geraet_prozent": [
      30.0,
@@ -236,7 +236,7 @@
      "Auf der Startseite hat er von zwölf Röstis und sieben Cordon Bleus gelesen.",
      "Auf der Karte zählt er elf und fünf."
     ],
-    "fuer_gaeste": "Die Karte hält weniger, als die Startseite verspricht.",
+    "fuer_gaeste": "Startseite und Karte erzählen dann dieselbe Geschichte.",
     "fuer_das_haus": "Eine Zahl, die überall stimmt, unterstreicht genau das, wofür das Röstihüs bekannt ist.",
     "stelle_im_geraet_prozent": [
      9.86,
@@ -280,7 +280,7 @@
      "Im Fuss findet er Postleitzahl und Ort, aber keine Strasse.",
      "«Anfahrt berechnen» führt zur Talstrasse 129, Google kennt die Furusandstrasse 12."
     ],
-    "fuer_gaeste": "Wer die Adresse abschreiben will, findet sie auf Ihrer Seite nicht.",
+    "fuer_gaeste": "Wer die Adresse sucht, findet sie auf Ihrer Seite auf einen Blick.",
     "fuer_das_haus": "Mit Ihrer Adresse an jeder Stelle bestimmen Sie selbst, wie Gäste und Portale Sie finden.",
     "stelle_im_geraet_prozent": [
      9.86,
@@ -323,7 +323,7 @@
      "Auf der Wellnessseite liest er 1000 m², bei der Winterpauschale 1100 m².",
      "Welche Zahl gilt, kann er nicht wissen."
     ],
-    "fuer_gaeste": "Zwei Zahlen für dasselbe Spa lassen den Gast bei beiden zweifeln.",
+    "fuer_gaeste": "Eine klare Zahl für das Spa gibt dem Gast ein sicheres Bild.",
     "fuer_das_haus": "Die Grösse ist ein Argument für Ihr Haus. Mit einer Zahl überzeugt sie mehr.",
     "stelle_im_geraet_prozent": [
      66.58,
@@ -359,7 +359,7 @@
      "Im Dezember wird ein Kind krank, und sie sucht, was eine Absage kostet.",
      "Unter «Menü» stehen Impressum und Datenschutz, sonst nichts. Sie ruft an."
     ],
-    "fuer_gaeste": "Wer absagen muss, erfährt erst am Telefon, was gilt.",
+    "fuer_gaeste": "Wer absagen muss, weiss schon vorher, was gilt.",
     "fuer_das_haus": "Eine klare Zeile auf der Seite beantwortet Fragen zur Absage, bevor jemand anrufen muss.",
     "stelle_im_geraet_prozent": [
      9.86,
@@ -402,7 +402,7 @@
      "Ihre Namen findet er einmal, klein im Fuss.",
      "Dass Fabian die Hotelweine kreiert hat und Sie auch Gastgeber des Loft-Suite Hotels sind, erfährt er nicht."
     ],
-    "fuer_gaeste": "Was das Haus persönlich macht, entdeckt der Gast erst vor Ort.",
+    "fuer_gaeste": "Was das Haus persönlich macht, spürt der Gast schon auf der Seite.",
     "fuer_das_haus": "Gäste, die gern wiederkommen, finden so auch den Weg zu Ihrem zweiten Haus im Dorf.",
     "stelle_im_geraet_prozent": [
      9.86,
@@ -438,7 +438,7 @@
      "In den Reitern liest er die Titel der Seiten.",
      "Bei Ihnen steht dort zuerst «Aktuelles», nicht der Name des Hauses."
     ],
-    "fuer_gaeste": "Ihr Haus ist im Reiter und in der Trefferliste schwerer wiederzufinden.",
+    "fuer_gaeste": "Ihr Haus ist im Reiter und in der Trefferliste sofort wiederzufinden.",
     "fuer_das_haus": "Mit dem Namen Ihres Hauses im Titel steht er bei Google gleich als Überschrift Ihres Treffers.",
     "stelle_im_geraet_prozent": [
      18.56,
@@ -481,7 +481,7 @@
      "Im Restaurant tippt er auf «menu».",
      "Es öffnet sich die deutsche Karte: «Mit Apfelmus und Calvados flambiert»."
     ],
-    "fuer_gaeste": "Wer kein Deutsch liest, versteht die Karte nicht, und den Datenschutz auch nicht.",
+    "fuer_gaeste": "Auch wer kein Deutsch liest, versteht die Karte und alles Wichtige.",
     "fuer_das_haus": "Englische Gäste lesen die Karte dann in ihrer Sprache, genau wie den Rest Ihrer Seite.",
     "stelle_im_geraet_prozent": [
      31.64,
