@@ -36,7 +36,7 @@
      "Den «Top Winterzauber» findet sie nur, wenn sie unter «Aktuelles» weitersucht."
     ],
     "fuer_gaeste": "Wer im Winter kommt, sieht zuerst ein Angebot, das für ihn nicht mehr gilt.",
-    "fuer_das_haus": "Die beste Stelle der Seite wirbt ab dem 1. November für nichts, was man buchen kann.",
+    "fuer_das_haus": "Ab dem 1. November kann die schönste Stelle der Seite schon den Winter zeigen, den man jetzt bucht.",
     "stelle_im_geraet_prozent": [
      24.69,
      35.88,
@@ -78,7 +78,7 @@
      "Nach dem Satz zum Parkplatz endet die Seite, ohne Preis und ohne Knopf zum Anfragen."
     ],
     "fuer_gaeste": "Wer die Wohnung will, muss den Weg zum Kontaktformular selbst finden.",
-    "fuer_das_haus": "Anfragen für die Wohnungen kommen nur von Gästen, die weitersuchen.",
+    "fuer_das_haus": "Mit Grösse, Preis und Anfrage auf ihrer Seite finden die Wohnungen leichter ihre Gäste.",
     "stelle_im_geraet_prozent": [
      44.79,
      57.62,
@@ -121,7 +121,7 @@
      "Grösse und Betten sieht er erst, wenn er unter «Buchen» Daten eingibt."
     ],
     "fuer_gaeste": "Wer sich zuerst umsehen will, bekommt seine Antwort erst beim Buchen.",
-    "fuer_das_haus": "Fragen zu den Zimmern landen am Telefon, obwohl die Antworten schon geschrieben sind.",
+    "fuer_das_haus": "Die Antworten zu den Zimmern sind schon geschrieben; auf der Zimmerseite nehmen sie Ihrem Telefon manche Frage ab.",
     "stelle_im_geraet_prozent": [
      9.86,
      42.09,
@@ -157,7 +157,7 @@
      "Um die Preise zu lesen, zieht er sie mit zwei Fingern grösser."
     ],
     "fuer_gaeste": "Unterwegs liest sich die Seite mühsam, gerade dort, wo es um Preise geht.",
-    "fuer_das_haus": "Wer auf dem Telefon bucht, braucht für jeden Preis einen Handgriff mehr.",
+    "fuer_das_haus": "Gäste, die unterwegs buchen, kommen auf dem Telefon mit einem Griff zu Ihren Preisen.",
     "stelle_im_geraet_prozent": [
      11.51,
      10.26,
@@ -194,7 +194,7 @@
      "Ob das Röstihüs heute offen hat, steht nirgends, also rufen sie an."
     ],
     "fuer_gaeste": "Spontan vorbeikommen geht nur mit einem Anruf vorher.",
-    "fuer_das_haus": "Tagesgäste und Gäste anderer Häuser sehen nicht, wann sie willkommen sind.",
+    "fuer_das_haus": "Mit den Öffnungszeiten auf der Seite wissen auch Tagesgäste und Gäste anderer Häuser, wann das Röstihüs sie erwartet.",
     "stelle_im_geraet_prozent": [
      30.0,
      52.21,
@@ -237,7 +237,7 @@
      "Auf der Karte zählt er elf und fünf."
     ],
     "fuer_gaeste": "Die Karte hält weniger, als die Startseite verspricht.",
-    "fuer_das_haus": "Eine Zahl, die nicht stimmt, fällt gerade bei dem auf, wofür das Röstihüs bekannt sein will.",
+    "fuer_das_haus": "Eine Zahl, die überall stimmt, unterstreicht genau das, wofür das Röstihüs bekannt ist.",
     "stelle_im_geraet_prozent": [
      9.86,
      79.06,
@@ -281,7 +281,7 @@
      "«Anfahrt berechnen» führt zur Talstrasse 129, Google kennt die Furusandstrasse 12."
     ],
     "fuer_gaeste": "Wer die Adresse abschreiben will, findet sie auf Ihrer Seite nicht.",
-    "fuer_das_haus": "Welche Adresse bei Gästen und Portalen ankommt, entscheiden andere.",
+    "fuer_das_haus": "Mit Ihrer Adresse an jeder Stelle bestimmen Sie selbst, wie Gäste und Portale Sie finden.",
     "stelle_im_geraet_prozent": [
      9.86,
      63.18,
@@ -360,7 +360,7 @@
      "Unter «Menü» stehen Impressum und Datenschutz, sonst nichts. Sie ruft an."
     ],
     "fuer_gaeste": "Wer absagen muss, erfährt erst am Telefon, was gilt.",
-    "fuer_das_haus": "Jede Absage beginnt mit einer Frage, die eine Zeile auf der Seite beantworten könnte.",
+    "fuer_das_haus": "Eine klare Zeile auf der Seite beantwortet Fragen zur Absage, bevor jemand anrufen muss.",
     "stelle_im_geraet_prozent": [
      9.86,
      60.58,
@@ -403,7 +403,7 @@
      "Dass Fabian die Hotelweine kreiert hat und Sie auch Gastgeber des Loft-Suite Hotels sind, erfährt er nicht."
     ],
     "fuer_gaeste": "Was das Haus persönlich macht, entdeckt der Gast erst vor Ort.",
-    "fuer_das_haus": "Gäste, die gern wiederkommen, finden den Weg zu Ihrem zweiten Haus im Dorf nicht.",
+    "fuer_das_haus": "Gäste, die gern wiederkommen, finden so auch den Weg zu Ihrem zweiten Haus im Dorf.",
     "stelle_im_geraet_prozent": [
      9.86,
      60.93,
@@ -439,7 +439,7 @@
      "Bei Ihnen steht dort zuerst «Aktuelles», nicht der Name des Hauses."
     ],
     "fuer_gaeste": "Ihr Haus ist im Reiter und in der Trefferliste schwerer wiederzufinden.",
-    "fuer_das_haus": "Google zeigt meist genau diesen Titel als Überschrift Ihres Treffers.",
+    "fuer_das_haus": "Mit dem Namen Ihres Hauses im Titel steht er bei Google gleich als Überschrift Ihres Treffers.",
     "stelle_im_geraet_prozent": [
      18.56,
      7.77,
@@ -482,7 +482,7 @@
      "Es öffnet sich die deutsche Karte: «Mit Apfelmus und Calvados flambiert»."
     ],
     "fuer_gaeste": "Wer kein Deutsch liest, versteht die Karte nicht, und den Datenschutz auch nicht.",
-    "fuer_das_haus": "Englische Gäste kommen bis zur Karte und stehen dort vor der Sprache.",
+    "fuer_das_haus": "Englische Gäste lesen die Karte dann in ihrer Sprache, genau wie den Rest Ihrer Seite.",
     "stelle_im_geraet_prozent": [
      31.64,
      51.3,
