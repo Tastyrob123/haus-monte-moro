@@ -220,3 +220,6 @@ textarea.ws-langfeld{display:block;width:100%;box-sizing:border-box;resize:none;
 @media (max-width: 560px){
 .ws-leiste .kn{font-size:13px}
 }
+/* Übersicht «Die Website, Bereich für Bereich»: Bild immer oben, das Bild nimmt die übrige Höhe der Reihe, unter dem Text bleibt keine Leerfläche (Robert 10.11.2026) */
+.wo-app .wo-ber.ws-bereiche > .wo-bk.ws-bk{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(150px,1fr) auto}
+.wo-app .wo-ber.ws-bereiche > .wo-bk.ws-bk .wo-bk__b{min-height:150px}

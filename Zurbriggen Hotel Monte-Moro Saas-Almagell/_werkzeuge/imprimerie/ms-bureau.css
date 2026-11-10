@@ -279,3 +279,5 @@ body.startoffen > .studio, body.startoffen > header.kopf { visibility: hidden; t
 #start .ms-fuss .ms-wege{flex-wrap:wrap;gap:8px;margin:12px 0 4px;padding:0 6px}
 /* Baukasten: «Im Editor gestalten» neben «Aushänge anlegen» */
 .bk-unten .pk-editor{margin-left:auto}
+/* Auf der hellen Bühne kein Schatten hinter der Schrift (Robert 10.11.2026: «die Schatten zu sehr hinter dem Text … eleganter») */
+.start__wahl .ms-tafel :is(h1,h2,h3,p){text-shadow:0 1px 3px rgba(0,0,0,.35)!important}
