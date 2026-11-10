@@ -1,4 +1,4 @@
-In Arbeit.
+Fertig. Am Mac geprüft 09.11.2026, 23:30 (Stand f2d7246). Roberts weitere Korrekturen laufen im Mac-Chat auf Zweig bearbeitung-werkbank.
 
 **ZUERST: `KORREKTUR-ROBERT.md` NEU Punkt 6 (Robert 09.11.2026 abends): Prüfpunkte 17 (Schrift mindestens 13 px) und 18 (kein Leerraum über 380 px) der neuesten Mac-Fassung von `_Werkzeuge/oberflaeche_pruefen.js` (im Repo) frei machen. Karten bleiben nur Blätter, keine Beschreibungen. Vorher kein «Fertig.».**
 
