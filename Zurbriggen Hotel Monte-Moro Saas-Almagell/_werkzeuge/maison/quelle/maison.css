@@ -425,3 +425,18 @@ body.ma{margin:0;background:var(--raum);color:var(--tinte);font:400 17px/1.62 va
 /* Vorschau im Kopf (Varone, roots): flacher Bildschirm statt Laptop */
 .hz-geraet.hz-geraet--flach{aspect-ratio:auto;height:auto;width:100%;max-width:100%;filter:drop-shadow(0 26px 30px rgba(0,0,0,.45))}
 .hz-geraet--flach img{display:block;width:100%;height:auto}
+/* Robert 14.11.2026 «nicht richtig gesetzte Buttons … Leerräume» (Vorlage Chalet Rustica): beide Spalten mittig zueinander, Bildschirm-Spalte so hoch wie die Tafeln */
+@media (min-width:1001px){.m-saal__feld:has(.m-schirme),.m-buehne:has(.m-schirme){align-items:center}}
+.m-schirme--zwei{padding-bottom:clamp(120px,17vw,260px)}
+.m-schirme .m-schirm--haupt{width:94%}
+.m-schirme--zwei .m-schirm--neben{right:-1%;width:60%}
+@media (max-width:1000px){.m-schirme--zwei{padding-bottom:0}.m-schirme .m-schirm--haupt{width:100%}}
+.m-schirme{display:block!important}   /* ältere Regel legte die zwei Bildschirme in ein Raster nebeneinander (wie Rustica aufgehoben) */
+/* ---- Spaltenhöhe je Saal (kontrollpanel_spalten.js) ---- */
+@media (min-width:1001px){#bureau .m-schirme--zwei{padding-bottom:clamp(175px,22.13vw,398px)}
+#carte .m-schirme--zwei{padding-bottom:clamp(100px,12.68vw,228px)}
+#imprimerie .m-schirme--zwei{padding-bottom:clamp(33px,4.17vw,75px)}
+#reception .m-schirme--zwei{padding-bottom:clamp(143px,18.05vw,325px)}
+#livre .m-schirme--zwei{padding-bottom:0}#livre .m-schirme--zwei .m-schirm--neben{display:none}
+#registre .m-schirme--zwei{padding-bottom:clamp(144px,18.19vw,327px)}}
+/* ---- Ende Spaltenhöhe je Saal ---- */
