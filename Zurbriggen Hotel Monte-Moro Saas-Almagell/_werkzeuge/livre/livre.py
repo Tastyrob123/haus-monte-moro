@@ -3,7 +3,7 @@
 server.py (nur auf diesem Rechner) unter …/api/<was>:
 
    GET  bild?k=<foto>&f=instagram|story|web|druck[&x=0..1][&y=0..1]   das Foto in fertiger Grösse als Download
-   GET  stand                                                           Zahlen für das Hotelbüro (Fotos, Dateien) und welche Fotos kein Original haben
+   GET  stand                                                           Zahlen für Kontrollpanel (Fotos, Dateien) und welche Fotos kein Original haben
    POST pruefen  {name, typ, daten (data-URL), sprache}                 Markenprüfung eines Entwurfs
    POST fehler   {zeit, art, text, wo, seite, browser}                  Skriptfehler aus dem Browser (R03)
 

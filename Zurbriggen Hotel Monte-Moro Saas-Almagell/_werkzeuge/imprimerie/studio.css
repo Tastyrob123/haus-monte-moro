@@ -1,4 +1,4 @@
-/* Die Hausdruckerei · Oberfläche (Kern des Stammhauses), Kleid des Hotel Monte-Moro, Saas-Almagell (Robert 11.10.2026: «richtig edel, richtig geil animiert»).
+/* Drucksachen & Feed · Oberfläche (Kern des Stammhauses), Kleid des Hotel Monte-Moro, Saas-Almagell (Robert 11.10.2026: «richtig edel, richtig geil animiert»).
    Raum: Marine mit der Tapete des Hauses, darauf zwei Platten aus Papier (Entwerfen, Anpassen), dazwischen die Bühne mit Inseln aus Marine.
    Bausteine aus der Website des Hauses: Knöpfe mit Tiefe und Goldknauf, Glanzkante, Platte und Kuhle, runde Tasten, Auswahllisten im Hausstil.
    Bewegung nur über transform und opacity. Vorher-Stand: _qa/studio-vor-edel.css */
@@ -1127,7 +1127,7 @@ html.start-gleich .studio{visibility:hidden}
 @media (hover:none){.kv__nimm{opacity:1;transform:translate(-50%,0)}}
 .kv .mk__k{height:250px}
 
-/* ---------- Kopf wie Le Bureau (12.10.2026): «Die Hausdruckerei» gross in Gold, Marke führt zur Übersicht, runde Tasten mit Schild, Speichern dunkel mit Goldknauf ---------- */
+/* ---------- Kopf wie Le Bureau (12.10.2026): «Drucksachen & Feed» gross in Gold, Marke führt zur Übersicht, runde Tasten mit Schild, Speichern dunkel mit Goldknauf ---------- */
 .kopf__marke{border:0;background:none;padding:0;color:inherit;text-align:left;cursor:pointer}
 .kopf__marke b{font-size:15px;letter-spacing:.24em}
 .kopf__marke small{letter-spacing:.26em}
@@ -1290,7 +1290,7 @@ body.ig-offen{overflow:hidden}
 .mb__datei small{display:block;font:13px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--taupe-tief)}
 .mb__datei--d>span{background:#061729 url('haeuser/montemoro/tapete-ui-dunkel.webp') 0 0/224px auto;box-shadow:inset 0 0 0 1px rgba(206,190,160,.3),0 10px 16px -10px rgba(0,0,0,.5)}
 
-/* ---------- Le Livre in Die Hausdruckerei (12.10.2026): Ansicht auf der Startseite, Fach im Editor, Markenprüfung ---------- */
+/* ---------- Le Livre in Drucksachen & Feed (12.10.2026): Ansicht auf der Startseite, Fach im Editor, Markenprüfung ---------- */
 .ms-rund{flex:none;position:relative}
 .ms-rund svg{width:17px;height:17px;stroke-width:1.6}
 .insel button[data-livre].an,.kopf .rund[data-livre].an{color:#061729;background:linear-gradient(180deg,#FFFFFF,#EFE9E1)}

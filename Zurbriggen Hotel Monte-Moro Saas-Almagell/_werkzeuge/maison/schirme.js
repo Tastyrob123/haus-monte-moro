@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* Bildschirme der Werkzeuge für das Hotelbüro · Hotel Monte-Moro (M08, M23): unsichtbar in Chromium, 1440 × 932 @2x, feste Uhr (UHR, Zürich), nach roh/<name>.png.
+/* Bildschirme der Werkzeuge für Kontrollpanel · Hotel Monte-Moro (M08, M23): unsichtbar in Chromium, 1440 × 932 @2x, feste Uhr (UHR, Zürich), nach roh/<name>.png.
    Alle Aufnahmen in einem Befehl: bash _werkzeuge/maison/_bau/aufnahmen.sh
    Adresse je Werkzeug aus stand_wege.json; nur Werkzeuge, deren Server antwortet. Jede Anfrage ausser GET/HEAD wird abgewiesen (nichts wird geschrieben),
    ebenso jeder KI-Weg. Weitere Ansichten je Werkzeug (zweiter Bildschirm) über ansichten.json: {"livre-marke": {"von": "livre", "klick": "Text"}}.

@@ -23,13 +23,13 @@ Für die Werkzeuge heisst das (Aufbau und Funktionen aus dem Stamm bleiben, Inha
 
 | Agent | Werkzeug (Name) | Revier (nur hier schreiben) | Port | Schlüssel im Tor |
 |---|---|---|---|---|
-| mm-maison | Das Hotelbüro (Zentrale) | `_werkzeuge/maison/` **und** `_werkzeuge/oberflaeche/` (einziger Schreiber) | 9381 | `hotelbuero` |
-| mm-bureau | Das Schaufenster (Website pflegen) | `_werkzeuge/bureau/` | 9382 | `schaufenster`, `schaufenster-anleitung` |
-| mm-carte | Das Kartenbrett (Karten und Preislisten) | `_werkzeuge/carte/` | 9383 | `kartenbrett`, `kartenbrett-anleitung` |
+| mm-maison | Kontrollpanel (Zentrale) | `_werkzeuge/maison/` **und** `_werkzeuge/oberflaeche/` (einziger Schreiber) | 9381 | `hotelbuero` |
+| mm-bureau | Website bearbeiten (Website pflegen) | `_werkzeuge/bureau/` | 9382 | `schaufenster`, `schaufenster-anleitung` |
+| mm-carte | Karten & Preislisten (Karten und Preislisten) | `_werkzeuge/carte/` | 9383 | `kartenbrett`, `kartenbrett-anleitung` |
 | mm-reception | Die Rezeption (Gästen antworten) | `_werkzeuge/reception/` | 9384 | `rezeption`, `rezeption-anleitung` |
 | mm-livre | Das Markenbuch (Marke und Bilder) | `_werkzeuge/livre/` | 9385 | `markenbuch`, `markenbuch-buch`, `markenbuch-anleitung` |
-| mm-registre | Die Besucherliste (Besuche) | `_werkzeuge/registre/` | 9386 | `besucherliste`, `besucherliste-anleitung` |
-| mm-imprimerie | Die Hausdruckerei (Drucksachen) | `_werkzeuge/imprimerie/` | 9387 | `hausdruckerei`, `hausdruckerei-mail` |
+| mm-registre | Besucher (Besuche) | `_werkzeuge/registre/` | 9386 | `besucherliste`, `besucherliste-anleitung` |
+| mm-imprimerie | Drucksachen & Feed (Drucksachen) | `_werkzeuge/imprimerie/` | 9387 | `hausdruckerei`, `hausdruckerei-mail` |
 | mm-werkbank | Die Werkbank | `website/_werkbank/` | 9388 | `werkbank*` |
 
 Oberchef: Ziellisten `_Werkzeuge/abnahme-tor/ziele-monte-moro.json`, `_Werkzeuge/messlauf/ziele-monte-moro.json`, `cloud/`, Pushes, Paketprüfung. `website/` (die Website selbst) und `Familie Zurbriggen/` ändert **niemand** (nur lesen).
@@ -50,7 +50,7 @@ Gleicher Aufbau, gleiche Wege, gleiche Funktionen wie im Stamm. Das Kleid kommt 
 
 ## Namen der Werkzeuge
 
-Nur über `WO.name('<teil>')` bzw. `WO_HAUS.namen` (eine Stelle: `kleid/montemoro.js`), nie fest schreiben: **Das Hotelbüro · Das Schaufenster · Das Kartenbrett · Die Rezeption · Das Markenbuch · Die Besucherliste · Die Hausdruckerei**. Python-Seiten lesen sie aus `kleid/montemoro.js` (Regex auf `namen:`). Grammatik mit Artikel im richtigen Fall («im Kartenbrett», «in der Rezeption», «in der Hausdruckerei»). Dateien, Ordner, Ports bleiben (maison, bureau, carte …).
+Nur über `WO.name('<teil>')` bzw. `WO_HAUS.namen` (eine Stelle: `kleid/montemoro.js`), nie fest schreiben: **Kontrollpanel · Website bearbeiten · Karten & Preislisten · Die Rezeption · Das Markenbuch · Besucher · Drucksachen & Feed**. Python-Seiten lesen sie aus `kleid/montemoro.js` (Regex auf `namen:`). Grammatik mit Artikel im richtigen Fall («in Karten & Preislisten», «in der Rezeption», «in Drucksachen & Feed»). Dateien, Ordner, Ports bleiben (maison, bureau, carte …).
 
 ## Texte
 
@@ -77,4 +77,4 @@ node _Werkzeuge/abnahme-tor/tor-schnell.js _Werkzeuge/abnahme-tor/ziele-monte-mo
 
 ## Reihenfolge
 
-Hotelbüro, Schaufenster, Kartenbrett, Rezeption, Markenbuch, Besucherliste, Hausdruckerei laufen parallel; die Werkbank baut Rahmen und Seiten sofort und holt die Bildschirme der Werkzeuge, sobald sie fertig sind. Am Ende Prüfung über alles (Oberchef).
+Kontrollpanel, Schaufenster, Karten & Preislisten, Rezeption, Markenbuch, Besucher, Drucksachen & Feed laufen parallel; die Werkbank baut Rahmen und Seiten sofort und holt die Bildschirme der Werkzeuge, sobald sie fertig sind. Am Ende Prüfung über alles (Oberchef).

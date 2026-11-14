@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Das Kartenbrett · Hotel Monte-Moro, Saas-Almagell: feste Schnitte für den PDF-Satz (08.11.2026, Muster des Stamms).
+"""Karten & Preislisten · Hotel Monte-Moro, Saas-Almagell: feste Schnitte für den PDF-Satz (08.11.2026, Muster des Stamms).
 Chromium bettet variable Schriften im PDF als «Type 3» ein; die Apple-Vorschau zeigt sie dann weich (Fehlerbuch 10a, 21.10.2026). Darum setzt der
 Satz feste Schnitte (TrueType je Stärke, Lizenz SIL OFL wie das Original). Quelle: die Schriften der Website (website/assets/fonts/, woff2):
   · Fjalla One 400 (Titel, eine Stärke)

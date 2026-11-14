@@ -91,9 +91,9 @@
     h: { haus: 'Fotos des Hauses', frei: 'Frei lizenziert', ki: 'Mit KI erzeugt' },
     ki: 'Dieses Bild ist mit KI erzeugt und zeigt kein echtes Gericht oder Getränk des Hauses. Für Werbung nur mit diesem Hinweis oder nach einem echten Foto.',
   };
-  // Das Markenbuch liegt neben der Hausdruckerei: lokal /_werkzeuge/livre/, online /werkzeuge/livre/. Auf dem Prüfserver (:9387) liest die Hausdruckerei
+  // Das Markenbuch liegt neben Drucksachen & Feed: lokal /_werkzeuge/livre/, online /werkzeuge/livre/. Auf dem Prüfserver (:9387) liest Drucksachen & Feed
   // dieselben Dateien unter demselben Weg; die Seite des Markenbuchs öffnet dann auf dessen eigenem Server.
-  // Unter drucksachen-studio.vercel.app steht Die Hausdruckerei allein, ohne Le Livre daneben: dort keine Abfrage (gab bei jedem Öffnen eine 404-Meldung,
+  // Unter drucksachen-studio.vercel.app steht Drucksachen & Feed allein, ohne Le Livre daneben: dort keine Abfrage (gab bei jedem Öffnen eine 404-Meldung,
   // Aussen-Prüfung 14.10.2026), und «Le Livre öffnen» führt zum Markenbuch unter der Adresse des Hauses.
   DS.ALLEIN = location.hostname === 'drucksachen-studio.vercel.app';
   DS.regelSichtbar = r => String(r || '').replace(/\s*Kein Hotel, keine Zimmer\..*$/, '').trim();
@@ -122,7 +122,7 @@
       const r = await fetch(DS.LIVRE + 'livre.json');   // der Server sagt no-cache; so trifft der Abruf das Vorladen in index.html (30.10.)
       if (!r.ok || !(r.headers.get('content-type') || '').includes('json')) return null;
       const L = await r.json();
-      /* Monte-Moro (08.11.2026): die Hausdruckerei arbeitet mit ihrer eigenen Kopie der Fotos (haeuser/montemoro/, bau.py aus website/assets/img);
+      /* Monte-Moro (08.11.2026): Drucksachen & Feed arbeitet mit ihrer eigenen Kopie der Fotos (haeuser/montemoro/, bau.py aus website/assets/img);
          das Markenbuch liefert nur dann Fotos, wenn es ausdrücklich dieses Haus nennt und dieselben Schlüssel kennt */
       if (!/Monte-Moro/.test(L.haus || '') || !L.hausdruckerei) throw new Error('Markenbuch eines anderen Hauses');
       return L && Array.isArray(L.fotos) && L.fotos.length ? L : null;

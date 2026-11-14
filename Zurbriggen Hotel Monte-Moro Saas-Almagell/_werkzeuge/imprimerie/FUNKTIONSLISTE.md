@@ -1,4 +1,4 @@
-# Die Hausdruckerei · Hotel Monte-Moro, Saas-Almagell · Funktionsliste
+# Drucksachen & Feed · Hotel Monte-Moro, Saas-Almagell · Funktionsliste
 
 Gleiche Funktionen und Wege wie die Plakatwerkstatt des Culinarium (Stamm, I01–I18), umgekleidet auf das Monte-Moro. Geprüft wird mit dem schnellen Abnahme-Tor
 (`_Werkzeuge/abnahme-tor/tor-schnell.js`, Schlüssel `hausdruckerei` und `hausdruckerei-mail`, Chromium, 1440/1280/1000/390), Ergebnis in `LIEFERUNG.md`.
@@ -20,4 +20,4 @@ Gleiche Funktionen und Wege wie die Plakatwerkstatt des Culinarium (Stamm, I01�
 | Druck | Druckprüfung, Stilprüfung gegen `stilblatt.json`, PDF mit 3 mm Beschnitt und eingebetteten Schriften (TrueType), PNG je Seite, Arbeitsdatei |
 | Drucksachen | 34 fertige Drucksachen als PDF und Vorschaubild in `haeuser/montemoro/drucksachen/` (`LISTE.md`, `liste.json`) |
 | Hilfe | Begrüssung, Führung mit neun Kurzfilmen, Demo-Video mit Kapiteln, Tastenkürzel |
-| Rahmen | Fehlermelder, Startfehler-Tür, «Zur Werkbank», Prüfseite, Wege zum Hotelbüro, zur Website und zur Prüfung |
+| Rahmen | Fehlermelder, Startfehler-Tür, «Zur Werkbank», Prüfseite, Wege zu Kontrollpanel, zur Website und zur Prüfung |

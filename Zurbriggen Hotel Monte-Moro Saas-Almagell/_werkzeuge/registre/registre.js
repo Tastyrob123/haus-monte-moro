@@ -1,8 +1,8 @@
-/* Die Besucherliste (Le Registre) · Hotel Monte-Moro, Saas-Almagell (Tasty Studios, 08.11.2026, Werkzeug 6). Das Haus sieht, wer seine Website besucht:
+/* Besucher (Le Registre) · Hotel Monte-Moro, Saas-Almagell (Tasty Studios, 08.11.2026, Werkzeug 6). Das Haus sieht, wer seine Website besucht:
    woher (Land, Ort), wann (Tag, Uhrzeit, Wochentag), was (Seiten, Zeit je Seite), wie es sich entwickelt (Verlauf) und ob ein Besuch
    weiterführt (Zimmer angefragt, «Zimmer buchen» bei seekda, Tisch im Röstihüs, Anruf, E-Mail, Chat der Rezeption, weiter zur Familie Zurbriggen).
    Nie ein Name, keine Adresse der Verbindung, kein Cookie.
-   Stamm: die Besucherliste der Häuser (28.10.2026, von Robert abgenommen): Aufbau, Funktionen und Wege gleich, Inhalt und Kleid des
+   Stamm: Besucher der Häuser (28.10.2026, von Robert abgenommen): Aufbau, Funktionen und Wege gleich, Inhalt und Kleid des
    Hotel Monte-Moro (Nacht und Papier, Lärche als Akzent, Messing nur als Linie; Fjalla One, Instrument Sans, DM Mono; der Bergkamm aus dem Logo).
    Eigener Zähl-Schlüssel und eigener Speicher, nie gemeinsam mit einem anderen Haus (Werkzeug-Master 3, Robert 17.10.2026).
    Server-Teil: registre.py über /api/registre (lokal server.py). Ohne Server-Teil liest das Werkzeug beispiel/<tage>.json und schiebt die Tage auf heute.
@@ -40,8 +40,8 @@ const TITEL = Object.fromEntries(BEREICHE.filter(x => x[0]).map(x => [x[0], x[1]
 /* Orte im Kanton Wallis (soweit sie unter den Orten vorkommen können) für «Aus dem Wallis» */
 const WALLIS = ['Saas-Almagell', 'Saas-Grund', 'Saas-Fee', 'Saas-Balen', 'Visp', 'Brig-Glis', 'Brig', 'Naters', 'Stalden', 'Zermatt', 'Leuk', 'Raron', 'Sion', 'Sitten', 'Sierre', 'Siders', 'Martigny', 'Monthey'];
 const WTAG = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'];
-/* Das Hotelbüro (La Maison): lokal liegt es neben der Besucherliste (_werkzeuge/maison/), online unter /maison/ (Andock-Datei des Hotelbüros: statik → maison) */
-/* Lokal immer auf seinem eigenen Server (127.0.0.1, Port aus dem Kleid), nie auf dem Port der Besucherliste: dort fehlen seine Stand-Wege (Fehlerbuch 10a, frühere Häuser 21.10.2026) */
+/* Kontrollpanel (La Maison): lokal liegt es neben Besucher (_werkzeuge/maison/), online unter /maison/ (Andock-Datei Kontrollpanel: statik → maison) */
+/* Lokal immer auf seinem eigenen Server (127.0.0.1, Port aus dem Kleid), nie auf dem Port Besucher: dort fehlen seine Stand-Wege (Fehlerbuch 10a, frühere Häuser 21.10.2026) */
 const MAISON = /\/_werkzeuge\/registre\//.test(location.pathname)
   ? (/^(localhost|127\.0\.0\.1)$/.test(location.hostname) && window.WO_HAUS && WO_HAUS.ports ? 'http://127.0.0.1:' + WO_HAUS.ports.zentrale + '/_werkzeuge/maison/' : '../maison/') : '../../maison/';
 const MERK = 'montemoro-nicht-zaehlen';   /* dieselbe Marke liest messung.js auf der Website (gleiche Adresse vorausgesetzt) */
@@ -218,14 +218,14 @@ function werteAus(sum) {
    Ids, data-gehe und die Klick-Handler bleiben wie in den früheren Häusern. */
 const STUBE = MAISON;
 /* Namen der Werkzeuge: nur aus dem Kleid des Hauses (kleid/montemoro.js → WO_HAUS.namen, einzige Stelle, gepflegt vom Chat der Zentrale), hier nie abgetippt.
-   NAME gross am Satzanfang («Die Besucherliste»), KLEIN im Satz («die Besucherliste»; nur Nominativ und Akkusativ, damit jeder Artikel passt). */
+   NAME gross am Satzanfang («Besucher»), KLEIN im Satz («Besucher»; nur Nominativ und Akkusativ, damit jeder Artikel passt). */
 const NAME = WO.name('besuche'), KLEIN = NAME.replace(/^(Die|Das|Der) /, m => m.toLowerCase()), STUBE_N = WO.name('zentrale');
 function kopfLeiste() {
   const u = S.d.summe;
   $('#kopf').innerHTML = WO.kopf({ werkzeug: 'besuche', unter: 'Website', titel: TITEL[S.ansicht] || NAME,
     stand: S.beispiel ? 'Beispielwerte · keine echten Besuche' : u.heute ? mal(u.heute, 'Ein Besuch heute', 'Besuche heute') : 'Heute noch kein Besuch',
     anleitung: 'anleitung.html', website: '../../index.html', markeHref: '#start', marke: `data-gehe="start" aria-label="${esc(NAME)}, Übersicht"` });
-  /* Das Hotelbüro: lokal _werkzeuge/maison/, online /maison/ (Werkzeug-Master Abschnitt 9); das Kleid kennt nur den lokalen Weg */
+  /* Kontrollpanel: lokal _werkzeuge/maison/, online /maison/ (Werkzeug-Master Abschnitt 9); das Kleid kennt nur den lokalen Weg */
   $$('#kopf a.wo-kn--rund').forEach(a => { if (/\/_?werkzeuge\/maison\/$|\/maison\/$/.test(a.getAttribute('href') || '')) { a.href = STUBE; a.dataset.tip = STUBE_N; a.setAttribute('aria-label', STUBE_N + ', zu allen Werkzeugen'); } });
   $$('#kopf [data-gehe]').forEach(a => a.onclick = e => { e.preventDefault(); gehe(a.dataset.gehe); });
   $$('#kopf a.wo-kn').forEach(a => { const t = (a.textContent || '').trim(); if (t && !a.getAttribute('aria-label')) a.setAttribute('aria-label', t); });   /* registre-haus.css blendet die Beschriftung des runden Knopfs aus, der Name bleibt */
@@ -323,7 +323,7 @@ function beispiel(an) {
 
 /* ---------- Datenexport (Website-Bau-Master 9d Punkt 21, Prüfung 16.10.2026): alle Besuche des Zeitraums als Tabelle, ohne uns ----------
    Echte Werte (mit Schlüssel): der Dienst gibt alle Besuche des Zeitraums heraus (?export=1), nicht nur die neuesten 400. Beispielwerte: was die Liste zeigt,
-   im Dateinamen und in der ersten Spalte als Beispiel gekennzeichnet. Nur Angaben, die die Besucherliste ohnehin zeigt: kein Name, keine Adresse, kein Kürzel. */
+   im Dateinamen und in der ersten Spalte als Beispiel gekennzeichnet. Nur Angaben, die Besucher ohnehin zeigt: kein Name, keine Adresse, kein Kürzel. */
 function zelle(x) {
   let t = String(x == null ? '' : x);
   if (/^[=+\-@\t\r]/.test(t)) t = "'" + t;   /* keine Formeln in Excel (CSV-Einschleusung) */

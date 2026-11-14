@@ -3,9 +3,9 @@ tags: [projekt, website]
 status: aktiv
 ---
 
-# Lieferung Das Kartenbrett (Karten und Preislisten) · Hotel Monte-Moro, Saas-Almagell (08.11.2026, mm-carte)
+# Lieferung Karten & Preislisten (Karten und Preislisten) · Hotel Monte-Moro, Saas-Almagell (08.11.2026, mm-carte)
 
-Kopie des Kartenwerkzeugs aus dem Stamm (Culinarium → Wild Side), umgekleidet ins Kleid des Monte-Moro und mit den Karten und Preislisten des Hauses gefüllt («kopieren, umkleiden, Hauswerte eintragen»). Name nur aus `_werkzeuge/oberflaeche/kleid/montemoro.js` (**Das Kartenbrett**; Ordner, Adressen und Schlüssel bleiben `carte`).
+Kopie des Kartenwerkzeugs aus dem Stamm (Culinarium → Wild Side), umgekleidet ins Kleid des Monte-Moro und mit den Karten und Preislisten des Hauses gefüllt («kopieren, umkleiden, Hauswerte eintragen»). Name nur aus `_werkzeuge/oberflaeche/kleid/montemoro.js` (**Karten & Preislisten**; Ordner, Adressen und Schlüssel bleiben `carte`).
 
 **Werkzeug:** http://127.0.0.1:9383/_werkzeuge/carte/ · **Anleitung:** http://127.0.0.1:9383/_werkzeuge/carte/anleitung.html · **Prüfung:** http://127.0.0.1:9383/_werkzeuge/carte/pruefung.html
 
@@ -25,7 +25,7 @@ Fünf Karten, je ein Blatt bzw. eine PDF im Satz des Hauses, links im Rand in zw
 - **Werkzeug** wie im Stamm (Master 4.3): Einfach / Fortgeschritten, Entwurf, Quittung, Rückgängig, Vorher/nachher, Probe-PDF, Veröffentlichen mit Wort-für-Wort-Prüfung, frühere Fassungen, Protokoll, Prüfseite, Export, Rundgang, Zur Werkbank (9388), Ansicht Website (Röstihüs, Preise, Spa; rollt zur Karte, zur Preisliste bzw. zu den Tarifen). Sie-Form, Schweizer Schreibung. Gestalten mit den Schriften und Farben des Hauses (Fjalla One, Instrument Sans, DM Mono; Nacht, Logo-Blau, Tinte, Grau, Lärche, Lärche tief, Messing, Papier). Preise im Fenster in der Schreibweise des Hauses («25» → «25.–» bzw. «CHF 25.00» je nach Karte). Fotos je Karte aus `website/assets/img/` (gedeckte Tische im Röstihüs, Raclettestübli, Frühstücksbuffet, Kinder beim Rodeln, Ruheraum im Spa), klein `bilder/z/`, gross `bilder/g/`.
 - **Jede Karte einmal veröffentlicht** (08.11.2026, «Team Monte-Moro · Direktion», Protokoll «Erste PDF»): `_daten/live/<karte>.pdf` steht bereit, das Werkzeug zeigt «Alles veröffentlicht · PDF vom 08.11.2026».
 - **Eine Quelle für Karte und Website (C27):** jedes Veröffentlichen schreibt `anschluss/karten.json`.
-- **Demo-Sperre:** Datei `DEMO` liegt; das Kartenbrett schreibt nie in `website/`. Die ganze Speisekarte der Website (`assets/pdf/speisekarte.pdf`) wird auch mit Anschluss nie überschrieben.
+- **Demo-Sperre:** Datei `DEMO` liegt; Karten & Preislisten schreibt nie in `website/`. Die ganze Speisekarte der Website (`assets/pdf/speisekarte.pdf`) wird auch mit Anschluss nie überschrieben.
 - Die Wochenkarte des Stamms (Kennung `abend`) führt das Haus nicht; ihr Code bleibt ruhend und wird nur aktiv, wenn `_daten/quelle/abend.json` liegt.
 
 ## Starten und neu bauen
@@ -53,7 +53,7 @@ Letzter Lauf 08.11.2026 (Chromium; WebKit in dieser Sitzung nicht installiert), 
 
 - **Öffnungszeiten und Ruhetage des Röstihüs** stehen in `OFFEN` (daten.py): auf keiner Karte.
 - **Übrige Rubriken der Speisekarte** (Vorspeisen, Suppen, Warme Speisen, Kinderkarte, Weine, Getränke) sind belegt, aber nicht Teil des Auftrags; sie lassen sich mit `karten_lesen.py` wörtlich aus dem Beleg nachziehen.
-- **Website liest das Kartenbrett noch nicht:** Einbau von `karten.json` in den Bau der Website (Revier `website/`, mit Auftrag und ohne DEMO).
+- **Website liest Karten & Preislisten noch nicht:** Einbau von `karten.json` in den Bau der Website (Revier `website/`, mit Auftrag und ohne DEMO).
 - **Kleid (für mm-maison):** nichts fehlte; im eigenen CSS gelöst: Knopf-Grundlinie DM Mono (`.kn{padding-top:1px}`), `.lc .wo-sb__zier .nw{white-space:nowrap}` (die Zier des Startbilds bricht sonst «Monte-Moro» am Bindestrich).
-- **Prüfregel (für den Oberchef):** `oberflaeche_pruefen.js` Regel 3 «Abschnitt fast leer» zählt ein `iframe` nicht als Inhalt; die Vorschau des Kartenbretts (Karte im Rahmen) fiel deshalb zuerst durch. Gelöst mit einer sinnvollen Kopfzeile («Vorschau: <Karte> · n Seiten, so wie in der PDF»); Vorschlag: `iframe` in die Liste `img,video,canvas,svg image` aufnehmen.
+- **Prüfregel (für den Oberchef):** `oberflaeche_pruefen.js` Regel 3 «Abschnitt fast leer» zählt ein `iframe` nicht als Inhalt; die Vorschau Karten & Preislisten (Karte im Rahmen) fiel deshalb zuerst durch. Gelöst mit einer sinnvollen Kopfzeile («Vorschau: <Karte> · n Seiten, so wie in der PDF»); Vorschlag: `iframe` in die Liste `img,video,canvas,svg image` aufnehmen.
 - **Online** nicht gebaut und nicht hochgeladen (Auftrag).

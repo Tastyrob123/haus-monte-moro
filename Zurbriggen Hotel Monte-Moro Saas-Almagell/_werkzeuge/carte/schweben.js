@@ -1,5 +1,5 @@
-/* Das Kartenbrett · Hotel Monte-Moro, Saas-Almagell (08.11.2026): Kopie von studio/schweben.js des Stamms (16.10.2026). */
-/* Schweben für die Werkzeuge (Gefühl der Carlton-Seiten, wie in der Besucherliste). Gehört zu schweben.css.
+/* Karten & Preislisten · Hotel Monte-Moro, Saas-Almagell (08.11.2026): Kopie von studio/schweben.js des Stamms (16.10.2026). */
+/* Schweben für die Werkzeuge (Gefühl der Carlton-Seiten, wie in Besucher). Gehört zu schweben.css.
    Einbinden am Ende der Seite: <script src="../studio/schweben.js" data-wurzel="#ansicht" data-blaetter="…" data-kacheln="…" data-zeilen="…" data-zahlen="…"></script>
    blaetter: einzelne Blätter, kacheln: Reihen von Kacheln (Staffel), zeilen: viele gleiche Zeilen (nur einblenden), zahlen: grosse Zahlen (Zoom).
    Tut etwas nur kurz nach dem Laden und nach einem Klick (Ansichtswechsel); alles, was beim Tippen oder Neuzeichnen später dazukommt, steht sofort ruhig da. */

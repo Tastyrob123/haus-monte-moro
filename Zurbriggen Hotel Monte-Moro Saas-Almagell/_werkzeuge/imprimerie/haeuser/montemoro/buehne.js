@@ -1,13 +1,13 @@
-/* Die Hausdruckerei des Hotel Monte-Moro, Saas-Almagell: Bühne über jeder Ansicht und Knopf zurück zum Hotelbüro (Robert 15.10.2026).
-   «Heroes richtig schön, geil, luxuriös, edel», Vorbild das Schaufenster der Häuser: blaue Tafel mit Tapete, Goldrahmen innen,
+/* Drucksachen & Feed des Hotel Monte-Moro, Saas-Almagell: Bühne über jeder Ansicht und Knopf zurück zu Kontrollpanel (Robert 15.10.2026).
+   «Heroes richtig schön, geil, luxuriös, edel», Vorbild Website bearbeiten der Häuser: blaue Tafel mit Tapete, Goldrahmen innen,
    Foto des Hauses rechts mit weichem Übergang, Titel links. Gleiche Sprache wie die Bühne der übrigen Werkzeuge.
-   «In allen Tools zurück ins Hotelbüro kommen» → runder Knopf mit Haus in beiden Kopfzeilen.
+   «In allen Tools zurück ins Kontrollpanel kommen» → runder Knopf mit Haus in beiden Kopfzeilen.
    Nur für dieses Haus geladen (index.html, HAUS_STIL). Entfernen = vorheriger Stand. */
 (function () {
   var BASIS = 'haeuser/montemoro/kopf/';
   /* Foto je Ansicht (1200 px, haeuser/montemoro/kopf/, gebaut von bau.py) */
   var FOTO = { msStart: 'haus-sommer', msAbend: 'stuebli', msMotive: 'tal-sommer', msEvents: 'alpenrosen', msAbteilungen: 'roesti-raum', msHinweise: 'empfang', msNewsletter: 'dorf-nacht', msFotos: 'balkon', msMarke: 'gondel', msLivre: 'haus-winter-g', msMeine: 'z-licht', msFreigegeben: 'fr-tisch', msNeu: 'mattmark', weg: 'z-sessel', entwuerfe: 'roesti-abend' };
-  /* Das Hotelbüro: liegt wie die Hausdruckerei unter _werkzeuge/ (lokal /_werkzeuge/maison/ auf deren Server :9381, online /maison/) */
+  /* Kontrollpanel: liegt wie Drucksachen & Feed unter _werkzeuge/ (lokal /_werkzeuge/maison/ auf deren Server :9381, online /maison/) */
   var MAISON = location.port === '9387' ? 'http://127.0.0.1:9381/_werkzeuge/maison/' : /\/_werkzeuge\//.test(location.pathname) ? '../maison/' : '/maison/';
   /* R05: die Website des Hauses (lokal auf ihrem Server :8766 (WO_HAUS.ports.website_lokal), online dieselbe Adresse) */
   var WEBSITE = location.port === '9387' ? 'http://127.0.0.1:' + ((window.WO_HAUS && WO_HAUS.ports && WO_HAUS.ports.website_lokal) || 8766) + '/' : '/';
@@ -71,7 +71,7 @@
   }
   function knopf(cls) {
     var a = document.createElement('a'); a.className = 'rund ' + cls; a.href = MAISON;
-    var hb = (window.WO && WO.name) ? WO.name('zentrale') : 'Das Hotelbüro'; a.setAttribute('aria-label', 'Zurück zum ' + hb.replace(/^Das /, '')); a.setAttribute('data-tip', hb); a.innerHTML = HAUS;
+    var hb = (window.WO && WO.name) ? WO.name('zentrale') : 'Kontrollpanel'; a.setAttribute('aria-label', 'Zurück zum ' + hb.replace(/^Das /, '')); a.setAttribute('data-tip', hb); a.innerHTML = HAUS;
     return a;
   }
   function maison() {

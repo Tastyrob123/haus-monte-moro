@@ -1,4 +1,4 @@
-/* Das Schaufenster · Hotel Monte-Moro: Kopie von schweben.js aus dem Stamm der sieben Werkzeuge (08.11.2026), unverändert in der Wirkung. */
+/* Website bearbeiten · Hotel Monte-Moro: Kopie von schweben.js aus dem Stamm der sieben Werkzeuge (08.11.2026), unverändert in der Wirkung. */
 /* Schweben für die Werkzeuge (Gefühl der Carlton-Seiten, wie in Le Registre). Gehört zu schweben.css.
    Einbinden am Ende der Seite: <script src="../studio/schweben.js" data-wurzel="#ansicht" data-blaetter="…" data-kacheln="…" data-zeilen="…" data-zahlen="…"></script>
    blaetter: einzelne Blätter, kacheln: Reihen von Kacheln (Staffel), zeilen: viele gleiche Zeilen (nur einblenden), zahlen: grosse Zahlen (Zoom).

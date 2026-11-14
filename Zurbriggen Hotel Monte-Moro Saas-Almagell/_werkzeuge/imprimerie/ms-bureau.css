@@ -1,6 +1,6 @@
-/* Die Hausdruckerei, Startseite im Stil von Le Bureau (Robert 12.10.2026: alle Werkzeuge «mit diesen blauen und den Buttons» wie Le Bureau).
+/* Drucksachen & Feed, Startseite im Stil von Le Bureau (Robert 12.10.2026: alle Werkzeuge «mit diesen blauen und den Buttons» wie Le Bureau).
    Liegt über studio.css (entfernen = vorheriger Stand). Raum Marine mit Tapete, Kopfleiste als Insel mit Goldkante über die ganze Breite
-   (Zeichen + «Die Hausdruckerei» links, Suche, «Neu» rechts), Seitenleiste und Arbeitsfläche als Papierplatten mit Tiefe. Inhalte und Funktionen unverändert.
+   (Zeichen + «Drucksachen & Feed» links, Suche, «Neu» rechts), Seitenleiste und Arbeitsfläche als Papierplatten mit Tiefe. Inhalte und Funktionen unverändert.
    Der Editor (Kopf, Platten links und rechts, Bühne) hatte diese Form schon und bleibt, wie er ist. */
 :root{--mb-platte:linear-gradient(180deg,#fcfaf9,#eee8e0 55%,#eae2d8);
   --mb-platte-s:inset 0 1px 0 #fff,inset 0 0 0 1px rgba(104,87,54,.18),0 1.5px 0 rgba(125,104,65,.35),0 40px 60px -34px rgba(0,0,0,.75),0 14px 26px -16px rgba(0,0,0,.45);

@@ -1,6 +1,6 @@
 {
- "name": "Das Kartenbrett",
- "hinweis": "montemoro-carte, 08.11.2026: Online-Teil NICHT gebaut und nicht hochgeladen (Auftrag: nichts online). Diese Andock-Datei nennt nur Stand-Weg und Prüfweg für das Hotelbüro (M13).",
+ "name": "Karten & Preislisten",
+ "hinweis": "montemoro-carte, 08.11.2026: Online-Teil NICHT gebaut und nicht hochgeladen (Auftrag: nichts online). Diese Andock-Datei nennt nur Stand-Weg und Prüfweg für Kontrollpanel (M13).",
  "stand": "/_werkzeuge/carte/api/status",
  "pruefung": {"weg": "/_werkzeuge/carte/", "kurz": false}
 }

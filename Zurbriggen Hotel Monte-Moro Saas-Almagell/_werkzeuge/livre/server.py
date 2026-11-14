@@ -4,11 +4,11 @@
    python3 _werkzeuge/livre/server.py [port]           danach http://127.0.0.1:9385/_werkzeuge/livre/
    LIVRE_KI=1 python3 _werkzeuge/livre/server.py       Markenprüfung mit Claude (nur auf Roberts Wort, Regel 54); ohne den Schalter Probe-Antwort
 
-GET  /_werkzeuge/livre/api/stand                                   Zahlen für das Hotelbüro (Fotos, Dateien), Fotos ohne Original
+GET  /_werkzeuge/livre/api/stand                                   Zahlen für Kontrollpanel (Fotos, Dateien), Fotos ohne Original
 GET  /_werkzeuge/livre/api/bild?k=<foto>&f=instagram|story|web|druck[&x=0..1][&y=0..1]   das Foto in fertiger Grösse als Download
 POST /_werkzeuge/livre/api/pruefen {name, typ, daten, sprache}    Markenprüfung; nichts wird gespeichert
 POST /_werkzeuge/livre/api/fehler  {zeit, art, text, wo, seite, browser}   Skriptfehler aus dem Browser (R03), nach _werkzeuge/livre/_qa/fehler.jsonl
-GET  /marke/livre.json                                             dieselbe livre.json (Stand-Weg des Hotelbüros, Master 4.1); /marke/api/… = /_werkzeuge/livre/api/…
+GET  /marke/livre.json                                             dieselbe livre.json (Stand-Weg Kontrollpanel, Master 4.1); /marke/api/… = /_werkzeuge/livre/api/…
 
 Sicherheit (Master Werkzeug-Bau L12, Muster Carlton-Livre): nur Anfragen vom eigenen Rechner (403), nur mit eigener Adresse im Host (421), Schreibwege nur
 von der eigenen Seite (Origin/Sec-Fetch-Site, 403), Grenzen je Minute nur auf die Wege des Werkzeugs (429), Grösse (413), nur JSON (415), gesperrte Pfade
@@ -141,7 +141,7 @@ class H(http.server.SimpleHTTPRequestHandler):
                 return self._senden(400, {'fehler': str(e)})
             except Exception as e:  # noqa: BLE001
                 return self._senden(500, {'fehler': 'SERVER · ' + type(e).__name__})
-        if u.path == '/marke/livre.json':            # Stand-Weg des Hotelbüros (Master 4.1), dieselbe Datei
+        if u.path == '/marke/livre.json':            # Stand-Weg Kontrollpanel (Master 4.1), dieselbe Datei
             self.path = '/_werkzeuge/livre/livre.json' + (('?' + u.query) if u.query else '')
             u = urllib.parse.urlparse(self.path)
         if gesperrt(u.path):

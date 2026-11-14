@@ -247,14 +247,14 @@ def wache(kopf, ip, groesse=GROESSE, zaehlen=True):
     """Vor jedem Aufruf der KI (online und lokal gleich, Prüfung 16.10.2026, Master Werkzeug-Bau 5.2/5.3):
     nur von der eigenen Seite (Origin = Host, Sec-Fetch-Site nicht cross-site) → 403, nur JSON → 415, höchstens GROESSE Bytes → 413,
     höchstens 40 Entwürfe je Stunde und Absender → 429. Gibt (code, meldung) oder None zurück. Rollen gibt es hier keine:
-    Die Hausdruckerei ändert nichts auf der Website, jede Drucksache bleibt im Browser des Hauses."""
+    Drucksachen & Feed ändert nichts auf der Website, jede Drucksache bleibt im Browser des Hauses."""
     from urllib.parse import urlparse
     host = (kopf.get('x-forwarded-host') or kopf.get('host') or '').split(',')[0].strip().lower()
     herkunft = (kopf.get('origin') or '').strip().lower()
     if herkunft and herkunft != 'null' and urlparse(herkunft).netloc != host:
-        return 403, 'HERKUNFT · Anfragen nur von der Seite der Hausdruckerei.'
+        return 403, 'HERKUNFT · Anfragen nur von der Seite Drucksachen & Feed.'
     if (kopf.get('sec-fetch-site') or '').lower() == 'cross-site':
-        return 403, 'HERKUNFT · Anfragen nur von der Seite der Hausdruckerei.'
+        return 403, 'HERKUNFT · Anfragen nur von der Seite Drucksachen & Feed.'
     if 'application/json' not in (kopf.get('content-type') or '').lower():
         return 415, 'FORM · Erwartet wird JSON.'
     try:

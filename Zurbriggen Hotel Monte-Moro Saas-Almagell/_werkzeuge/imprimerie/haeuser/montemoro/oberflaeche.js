@@ -1,6 +1,6 @@
-/* Die Hausdruckerei des Hotel Monte-Moro, Saas-Almagell (28.10.2026, Hausschicht übernommen): Werkzeug-Oberfläche «Die Bühne».
-   Gleicher Weg wie die Hausdruckerei des Landgasthof Ruedihus (haeuser/ruedihus/oberflaeche.js dort, nur gelesen und übernommen).
-   Die Hausdruckerei hat ein eigenes Gerüst (Übersicht #start mit .ms-leiste/.ms-kopf, Arbeitsfläche mit header.kopf/aside.links); der Kern
+/* Drucksachen & Feed des Hotel Monte-Moro, Saas-Almagell (28.10.2026, Hausschicht übernommen): Werkzeug-Oberfläche «Die Bühne».
+   Gleicher Weg wie Drucksachen & Feed des Landgasthof Ruedihus (haeuser/ruedihus/oberflaeche.js dort, nur gelesen und übernommen).
+   Drucksachen & Feed hat ein eigenes Gerüst (Übersicht #start mit .ms-leiste/.ms-kopf, Arbeitsfläche mit header.kopf/aside.links); der Kern
    (_Drucksachen-Studio, über Carlton und Doldenhorn) bleibt unberührt. Diese Hausschicht legt nur an, was in allen Werkzeugen des Hauses gleich ist:
    die Marke im Kopf (Zeichen, Name in der Titelschrift, Unterzeile), die runden Knöpfe und «Website ansehen» als goldene Pille, die Startbilder
    (Übersicht «voll» mit dem Haus, jede Ansicht «buehne» mit ihrem Raum). Ids, Knoten und Handler bleiben: Knöpfe und Felder werden nur umgehängt.
@@ -32,7 +32,7 @@
         b.innerHTML = MARKE(); ms.insertBefore(b, z); z.hidden = true; n.hidden = true; ms.__wo = 1;
       }
     }
-    [].forEach.call(document.querySelectorAll('.ms-kopf .rund, .kopf__werk .rund'), function (r) { r.classList.add('ws-rund'); /* eigene Klasse: .wo-kn des Pakets würde die Anzeige der Hausdruckerei (verborgene Knöpfe am Handy) überstimmen */ });
+    [].forEach.call(document.querySelectorAll('.ms-kopf .rund, .kopf__werk .rund'), function (r) { r.classList.add('ws-rund'); /* eigene Klasse: .wo-kn des Pakets würde die Anzeige Drucksachen & Feed (verborgene Knöpfe am Handy) überstimmen */ });
     var web = document.querySelector('.ms-kopf .zur-website');
     if (web && !web.__wo) {
       web.__wo = 1;

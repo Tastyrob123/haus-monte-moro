@@ -1,4 +1,4 @@
-// _bau/blick.js · schneller Blick auf eine Seite (Hotelbüro, mm-maison): Bildschirmbild, Konsolenfehler, fehlgeschlagene Anfragen.
+// _bau/blick.js · schneller Blick auf eine Seite (Kontrollpanel, mm-maison): Bildschirmbild, Konsolenfehler, fehlgeschlagene Anfragen.
 // node blick.js <adresse> <ausgabe.png> [breite=1440] [hoehe=932] [ganz=0] [klick-selektor]
 const { chromium } = require('playwright');
 (async () => {

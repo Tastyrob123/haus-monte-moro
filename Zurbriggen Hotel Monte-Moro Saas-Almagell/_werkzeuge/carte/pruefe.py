@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Das Kartenbrett · Hotel Monte-Moro, Saas-Almagell — Prüfungen der Karten (08.11.2026, Vorlage: pruefe.py des Stamms). Für «wortlaut» muss der Server laufen (python3 _werkzeuge/carte/serve.py, Port aus CARTE_PORT, Standard 9383).
+"""Karten & Preislisten · Hotel Monte-Moro, Saas-Almagell — Prüfungen der Karten (08.11.2026, Vorlage: pruefe.py des Stamms). Für «wortlaut» muss der Server laufen (python3 _werkzeuge/carte/serve.py, Port aus CARTE_PORT, Standard 9383).
 
-    python3 _werkzeuge/carte/pruefe.py rund        Satz des Kartenbretts = Satz des Projekts, Zeichen für Zeichen (satz.js dokument() gegen satz/u-<karte>.html, Grundstand)
+    python3 _werkzeuge/carte/pruefe.py rund        Satz Karten & Preislisten = Satz des Projekts, Zeichen für Zeichen (satz.js dokument() gegen satz/u-<karte>.html, Grundstand)
     python3 _werkzeuge/carte/pruefe.py wortlaut    jede Karte aus dem veröffentlichten Stand drucken und Wort für Wort gegen ihre Quelle prüfen
                                                    (_daten/quelle/<karte>.json): gezählt je Wort, Gross und Klein gleich; erlaubt dazu nur, was der Satz
                                                    bewusst gibt (nichts: auch die Fusszeile steht in der Quelle)
@@ -97,7 +97,7 @@ def wortlaut():
 
 
 def website():
-    """Daten des Kartenbretts (Stand) in der Form der Website (web.py zeilen) = Quelle (karten_lesen.py); Zutaten: « · » der Karte = « | » der Quelle."""
+    """Daten Karten & Preislisten (Stand) in der Form der Website (web.py zeilen) = Quelle (karten_lesen.py); Zutaten: « · » der Karte = « | » der Quelle."""
     import carte, web
     ok = True
     n = lambda t: re.sub(r'\s*[|·]\s*', ' | ', (t or '').strip())

@@ -1,4 +1,4 @@
-/* «Zur Werkbank» (R19) · Das Hotelbüro von Hotel Monte-Moro: Kopie des Bausteins der Häuser, Schlüssel des Hauses «montemoro-wb». Gebaut von bau.py. */
+/* «Zur Werkbank» (R19) · Kontrollpanel von Hotel Monte-Moro: Kopie des Bausteins der Häuser, Schlüssel des Hauses «montemoro-wb». Gebaut von bau.py. */
 /* «Zur Werkbank» (Robert 12.10.2026): ein Knopf unten links auf jeder Seite, die man aus der Werkbank heraus öffnet.
    Eine Datei für alle Seiten, sie bringt Aussehen und Verhalten selbst mit (eigener Schattenbaum, kein Stylesheet der Seite greift hinein).
 

@@ -1,4 +1,4 @@
-/* Die Hausdruckerei · Hotel Monte-Moro: die fertigen Drucksachen des Hauses als PDF (3 mm Beschnitt, Schriften eingebettet) und Vorschaubild,
+/* Drucksachen & Feed · Hotel Monte-Moro: die fertigen Drucksachen des Hauses als PDF (3 mm Beschnitt, Schriften eingebettet) und Vorschaubild,
    gesetzt mit dem Werkzeug selbst (DS.dokument, DS.pdf, DS.png) aus dem Katalog des Hauses (katalog.js). Dazu Druckprüfung und Stilprüfung je Stück.
    Aufruf (Server :9387 läuft):  NODE_PATH=$(npm root -g) node _bau/drucksachen.js   → haeuser/montemoro/drucksachen/ + LISTE.md */
 const { chromium } = require('playwright');
@@ -73,7 +73,7 @@ const STUECKE = [   // [Datei, Abteilung, Vorlage, was, Format (sonst das der Vo
   fs.writeFileSync(path.join(ZIEL, 'liste.json'), JSON.stringify(zeilen, null, 1));
   const ABT = { roestihues: 'Röstihüs', inklusive: 'Preise & Inklusive', abende: 'Racletteabend & Kidsclub', zimmer: 'Im Zimmer', saastal: 'Saastal & Anreise', haus: 'Das Haus & Geschenke' };
   const md = ['---', 'tags: [projekt, website]', 'status: aktiv', '---', '', '# Drucksachen · Hotel Monte-Moro, Saas-Almagell', '',
-    'Gesetzt mit der Hausdruckerei (`_werkzeuge/imprimerie/`, Aufruf `NODE_PATH=$(npm root -g) node _bau/drucksachen.js`), Inhalte nur aus `website/inhalt/daten.py` und den Seiten der Website (`bau_vorlagen.py`).',
+    'Gesetzt mit Drucksachen & Feed (`_werkzeuge/imprimerie/`, Aufruf `NODE_PATH=$(npm root -g) node _bau/drucksachen.js`), Inhalte nur aus `website/inhalt/daten.py` und den Seiten der Website (`bau_vorlagen.py`).',
     'PDF mit 3 mm Beschnitt und eingebetteten Schriften der Website (Fjalla One, Instrument Sans, DM Mono als TrueType), Vorschaubild 1200 px breit (JPG). Druck- und Stilprüfung je Stück: ' + (zeilen.every(x => !x.rot.length) ? 'ohne roten Befund.' : 'siehe liste.json.'), '',
     '| Datei | Drucksache | Abteilung | Was | Format | Seiten | Vorschau |', '|---|---|---|---|---|---|---|',
     ...zeilen.map(x => `| \`${x.pdf}\` | ${x.n} | ${ABT[x.abt] || x.abt} | ${x.was} | ${x.format} | ${x.seiten} | ${x.vorschau.map(v => '\`' + v + '\`').join(', ')} |`), '',

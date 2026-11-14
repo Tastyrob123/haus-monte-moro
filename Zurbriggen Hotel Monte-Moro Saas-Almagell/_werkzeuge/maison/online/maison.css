@@ -1,9 +1,9 @@
-/* Das Hotelbüro · Hotel Monte-Moro mit Restaurant Röstihüs, Saas-Almagell (mm-maison 08.11.2026). Quelle für bau.py, nicht die Ausgabe. Aufbau und Wege wie die
+/* Kontrollpanel · Hotel Monte-Moro mit Restaurant Röstihüs, Saas-Almagell (mm-maison 08.11.2026). Quelle für bau.py, nicht die Ausgabe. Aufbau und Wege wie die
    abgenommene Zentrale des Stamms der Häuser, Kleid aus der gebauten Website (website/assets/css/montemoro.css :root, Markenbuch Farbwelt A):
    Nacht #0A2A4A, Nachtblau #0D3F6F, Tiefnacht #071B2E als dunkle Flächen; Papier #F5F2EE und Creme #EFE9E1 als Raum; Lärche #C67144 nur als Akzent
    (Hauptknopf, Bergkamm, Betonung im letzten Wort eines Titels), Lärche tief #9A4F2B für kleine Zeilen auf Hell; Messing #B39867 nur für feine Linien und kleine Zeilen auf Dunkel.
    Titel Fjalla One (eine Stärke, normale Schreibung), Lauf Instrument Sans 400, kleine Zeilen und Knöpfe DM Mono in Versalien gesperrt.
-   Knöpfe als Pille mit Lichtkante und rundem Knauf wie die Website (.kn). Empfang: fünf hohe Fenster mit Fotos des Hauses, darüber das Logo und «Das Hotelbüro».
+   Knöpfe als Pille mit Lichtkante und rundem Knauf wie die Website (.kn). Empfang: fünf hohe Fenster mit Fotos des Hauses, darüber das Logo und «Kontrollpanel».
    Bewegung nur transform/opacity, langsam und weich. */
 
 @font-face{font-family:'Fjalla One';src:url(schrift/FjallaOne-400.woff2) format('woff2');font-weight:400;font-display:swap}   /* swap: der Titel wartet nie auf die Schrift */
@@ -134,7 +134,7 @@ body.ma{margin:0;background:var(--raum);color:var(--tinte);font:400 17px/1.62 va
 .m-saal__feld{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:clamp(24px,3.4vw,56px);align-items:start;margin-top:clamp(36px,3.4vw,52px)}
 @media (max-width:1000px){.m-saal__feld{grid-template-columns:1fr}}
 /* Gestaltung 28.10.2026: die rechte Spalte (So geht’s, Zahlen, Knopf) läuft neben den Stücken mit, statt eine leere Fläche neben der langen linken Spalte zu lassen */
-@media (min-width:1001px){.m-saal__feld>div:last-child{position:sticky;top:clamp(24px,5vh,56px)}}
+@media (min-width:1001px){.m-saal__feld>div:last-child{position:relative}}
 /* Bildschirm des Werkzeugs: Fensterleiste und echte Aufnahme */
 .m-schirm{margin:0;border-radius:var(--rund);overflow:hidden;background:#fff;box-shadow:0 46px 80px -46px rgba(7,27,46,.6),0 0 0 1px rgba(7,27,46,.08)}
 .dunkel .m-schirm{box-shadow:0 46px 80px -40px rgba(0,0,0,.85),0 0 0 1px rgba(179,152,103,.25)}
@@ -251,7 +251,7 @@ body.ma{margin:0;background:var(--raum);color:var(--tinte);font:400 17px/1.62 va
   .js .m-f5__titel.wo-zl .wo-w{display:inline-block;animation:m5auf .8s cubic-bezier(.16,1,.3,1) both;animation-delay:calc(.1s + var(--z,0) * .1s)}
   /* Die Fotos der fünf Fenster zoomen ein, sobald sie geladen sind (scale, getrennt vom Zoom beim Zeigen) */
   .js .m-f5__k img.da{animation:m5zoom 1.9s cubic-bezier(.16,1,.3,1) both}
-  /* Die Wegstufen der Besucherliste steigen gestaffelt */
+  /* Die Wegstufen Besucher steigen gestaffelt */
   .js .m-weg[data-r]{transform:none}
   .js .m-weg li{transform:translate3d(0,40px,0);transition:transform .85s cubic-bezier(.22,.61,.36,1);transition-delay:calc(var(--i,0) * 110ms)}
   .js .m-weg.da li{transform:none}
@@ -276,8 +276,8 @@ body.ma{margin:0;background:var(--raum);color:var(--tinte);font:400 17px/1.62 va
 .ma b,.ma strong{font-weight:inherit}
 
 /* ---------- Empfang mit fünf hohen Fenstern (Robert 29.10.2026, nach der Zentrale eines anderen Hauses gebaut) ----------
-   Fünf hohe Fenster über die ganze Höhe, je Werkzeug ein Foto des Hauses; darüber in der Mitte das Logo, «Das Hotelbüro», Gruss, Datum und die
-   Zahlenzeile der Besucherliste. Bewegung: die Fenster schweben gestaffelt herauf, die Schrift folgt (nur transform), erst wenn die Fotos
+   Fünf hohe Fenster über die ganze Höhe, je Werkzeug ein Foto des Hauses; darüber in der Mitte das Logo, «Kontrollpanel», Gruss, Datum und die
+   Zahlenzeile Besucher. Bewegung: die Fenster schweben gestaffelt herauf, die Schrift folgt (nur transform), erst wenn die Fotos
    dekodiert sind. Trennlinien in Messing, getrennt wird mit «·», keine «x». */
 .m-f5{position:relative;display:block;min-height:max(100svh,720px);padding:0;overflow:hidden;background:var(--tief)}
 .m-f5__reihe{position:absolute;inset:0}
@@ -405,3 +405,23 @@ body.ma{margin:0;background:var(--raum);color:var(--tinte);font:400 17px/1.62 va
 .m-buehne:has(.m-stueck--foto){margin-bottom:clamp(48px,5vw,80px)}
 .m-buehne__knopf{padding:4px 2px 0}
 .m-buehne__knopf .m-hinweis{margin-top:12px}
+
+/* 14.11.2026: nichts läuft beim Scrollen mit (Robert: «ein PC, der mitgeht … niemals die Aufgabe»), wie beim Vorbild La Maison des Rivage */
+/* ---------- Säle wie beim Vorbild (14.11.2026): zwei flache Bildschirme schweben frei in den Saal, der grosse von links, der zweite
+   von rechts unten darüber; kein Laptop, kein Gerät, nichts klebt beim Scrollen. ---------- */
+.m-schirme{position:relative}
+.m-schirme--zwei{padding-bottom:clamp(90px,11vw,170px)}
+.m-schirme .m-schirm--haupt{position:relative;width:88%;z-index:1}
+.m-schirme--zwei .m-schirm--neben{position:absolute;right:0;bottom:0;width:52%;z-index:2}
+.m-schirme .m-schirm__leiste span{font:400 10px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;white-space:nowrap;margin:0 auto}
+.m-schirme .m-schirm img{display:block;width:100%;height:auto;max-width:100%;transform:none}
+.m-schirme .m-schirm>div:not(.m-schirm__leiste){position:relative;inset:auto;width:100%;height:auto}
+@media (max-width:1000px){.m-schirme--zwei{padding-bottom:0}.m-schirme .m-schirm--haupt{width:100%}.m-schirme--zwei .m-schirm--neben{display:none}}
+@media (prefers-reduced-motion:no-preference){
+  .js .m-schirme .m-schirm--haupt[data-r="schweb"]:not(.da){transform:translate3d(-140px,60px,0) scale(.96)}
+  .js .m-schirme .m-schirm--neben[data-r="schweb"]:not(.da){transform:translate3d(140px,60px,0) scale(.96)}
+  .js .m-schirme .m-schirm[data-r="schweb"]{transition:transform 1.1s cubic-bezier(.16,1,.3,1);transition-delay:calc(var(--i,0)*140ms)}
+}
+/* Vorschau im Kopf (Varone, roots): flacher Bildschirm statt Laptop */
+.hz-geraet.hz-geraet--flach{aspect-ratio:auto;height:auto;width:100%;max-width:100%;filter:drop-shadow(0 26px 30px rgba(0,0,0,.45))}
+.hz-geraet--flach img{display:block;width:100%;height:auto}

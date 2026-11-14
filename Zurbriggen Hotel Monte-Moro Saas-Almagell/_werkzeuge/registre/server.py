@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Die Besucherliste (Le Registre) · Hotel Monte-Moro, Saas-Almagell, lokaler Server (Port 9386): liefert aus dem Projekt des Hauses nur, was das Werkzeug braucht (lesend),
+"""Besucher (Le Registre) · Hotel Monte-Moro, Saas-Almagell, lokaler Server (Port 9386): liefert aus dem Projekt des Hauses nur, was das Werkzeug braucht (lesend),
 und /api/registre.   python3 server.py [port]      danach http://127.0.0.1:9386/_werkzeuge/registre/
-Kopie des server.py der Besucherliste aus dem Stamm der Häuser (nur kopiert).
+Kopie des server.py Besucher aus dem Stamm der Häuser (nur kopiert).
 Die Website liegt in website/ neben _werkzeuge/. /_werkzeuge/… kommt aus dem Projekt, alles andere (/assets/, die Seiten) aus website/.
 Die Oberfläche der Häuser (/assets/oberflaeche/) liegt unter _werkzeuge/oberflaeche/ (Kleid montemoro, gemeinsam für alle Werkzeuge des Hauses,
-einziger Schreiber ist das Hotelbüro «mm-maison»). Sie gewinnt auch, wenn in website/assets/oberflaeche/ eine Kopie liegt; website/ ist nur Rückfall.
+einziger Schreiber ist Kontrollpanel «mm-maison»). Sie gewinnt auch, wenn in website/assets/oberflaeche/ eine Kopie liegt; website/ ist nur Rückfall.
 
 GET  /api/registre?tage=30       Vorführ-Betrieb: jeder bekommt Beispielwerte (als Beispiel gekennzeichnet).
      &k=<Schlüssel>              echte Werte (Schlüssel nur in ~/Desktop/Website-Projekte/_Schluessel/monte-moro-registre.txt; seine Prüfsumme steht in anschluss.py).
@@ -135,5 +135,5 @@ class S(socketserver.ThreadingMixIn, http.server.HTTPServer):
 
 
 if __name__ == '__main__':
-    print(f'Die Besucherliste · Hotel Monte-Moro, Saas-Almagell: http://127.0.0.1:{PORT}/_werkzeuge/registre/', flush=True)
+    print(f'Besucher · Hotel Monte-Moro, Saas-Almagell: http://127.0.0.1:{PORT}/_werkzeuge/registre/', flush=True)
     S(('127.0.0.1', PORT), H).serve_forever()

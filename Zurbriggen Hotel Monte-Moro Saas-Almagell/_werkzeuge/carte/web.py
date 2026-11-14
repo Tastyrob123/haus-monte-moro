@@ -1,4 +1,4 @@
-"""Das Kartenbrett · Hotel Monte-Moro, Saas-Almagell — die Karten als Daten für die Website (08.11.2026, C27 in der Form des Hauses;
+"""Karten & Preislisten · Hotel Monte-Moro, Saas-Almagell — die Karten als Daten für die Website (08.11.2026, C27 in der Form des Hauses;
 Vorlage: web.py des Stamms).
 
 Die Website zeigt die Karte des Röstihüs (roestihues.html), die Preisliste (preise.html) und die Tarife des Spa (spa.html), gebaut aus
@@ -6,7 +6,7 @@ website/inhalt/daten.py (ROESTIS, CORDON, HOTELWEINE, SPRITZ, KOPF, RACLETTE, PR
 Dieses Modul liest aus jeder veröffentlichten Karte ihre Rubriken mit Name, Zutaten und Preis (zeilen) und schreibt alle Karten nach karten.json:
   _werkzeuge/carte/anschluss/karten.json          immer nach dem Veröffentlichen (im Revier des Werkzeugs, ändert die Website nicht)
   _kette/10-kartenmacher/karten.json               Paket der Kette, Station 10 (python3 _werkzeuge/carte/web.py kette)
-Die Website liest die Datei erst, wenn ihr Bau sie vor daten.py nimmt (Einbau in website/, nicht Revier des Kartenbretts; bis dahin bleibt
+Die Website liest die Datei erst, wenn ihr Bau sie vor daten.py nimmt (Einbau in website/, nicht Revier Karten & Preislisten; bis dahin bleibt
 jede Seite Byte für Byte, wie sie ist). Eine Wochenkarte (Art «abend» des Stamms) stünde unter «karte»; das Haus führt keine."""
 import datetime, json, os, re, sys
 
@@ -71,7 +71,7 @@ def zeilen(d):
 
 def karten_json(K, ziele, lies):
     """Alle veröffentlichten Karten (Stand) in der Form der Website."""
-    aus = {'stand': datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), 'quelle': 'Das Kartenbrett (_werkzeuge/carte/_daten/stand/)', 'karten': {}, 'karte': None}
+    aus = {'stand': datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), 'quelle': 'Karten & Preislisten (_werkzeuge/carte/_daten/stand/)', 'karten': {}, 'karte': None}
     for z in ziele:
         s = lies(os.path.join(K, 'stand', z + '.json'))
         if not s:

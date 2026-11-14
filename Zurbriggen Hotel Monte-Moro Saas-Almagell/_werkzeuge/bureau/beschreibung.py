@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Beschreibung des Hotel Monte-Moro für den Schreibtisch des Stamms (Das Schaufenster · Website pflegen), 08.11.2026.
+"""Beschreibung des Hotel Monte-Moro für den Schreibtisch des Stamms (Website bearbeiten · Website pflegen), 08.11.2026.
 Vorlage: dieselbe Datei des Stamms der sieben Werkzeuge (Beschreibung eines Hauses für den Schreibtisch), Hauswerte des Monte-Moro.
    python3 _werkzeuge/bureau/beschreibung.py          schreibt beide Dateien neu und legt die Probe-Kopie an, falls sie fehlt
    python3 _werkzeuge/bureau/beschreibung.py --pruef  zeigt nur, was geschrieben würde
-Der Server des Schaufensters (serve.py) ruft anlegen() beim Start selbst auf; die beiden Dateien entstehen so auch auf einem frischen Rechner.
+Der Server Website bearbeiten (serve.py) ruft anlegen() beim Start selbst auf; die beiden Dateien entstehen so auch auf einem frischen Rechner.
 
 Schreibt (Master Werkzeug-Bau 4.2 L17/L18):
   _Werkzeuge/haeuser/montemoro/haus.json                 Kennung, Name, Welt, Quelle
@@ -96,14 +96,14 @@ def beschreibung():
         if not foto_da(f, sei if k != 'recht' else ['index.html', 'anreise.html']):
             sys.exit(f'Foto «{f}» des Bereichs {n} steht auf keiner seiner Seiten.')
     return {
-        '_lies_mich': 'Beschreibung des Hauses für das Werkzeug «website» (Das Schaufenster · Website pflegen). Hotel Monte-Moro mit Restaurant Röstihüs, '
+        '_lies_mich': 'Beschreibung des Hauses für das Werkzeug «website» (Website bearbeiten · Website pflegen). Hotel Monte-Moro mit Restaurant Röstihüs, '
                       'Saas-Almagell (Familie Zurbriggen), nur Deutsch. Jeder Text, jede Zahl, jedes Foto wird aus den gebauten Seiten gelesen '
                       '(website/ des Projekts, nie geschrieben). Läuft im Rahmen des Hauses: http://127.0.0.1:9382/_werkzeuge/bureau/ '
                       '(Zurbriggen Hotel Monte-Moro Saas-Almagell/_werkzeuge/bureau/). Geschrieben von _werkzeuge/bureau/beschreibung.py, nie von Hand ändern.',
         'seiten': [dict({'datei': d}, **({'foto': FOTO_SEITE[d]} if d in FOTO_SEITE else {})) for d in s],
         'sprachen': [],
         'kopie': {'unter': 'website', 'ordner': ['assets']},
-        # Die Karte des Röstihüs (Röstis, Cordon bleus, Hotelweine, Spritz, Dessert, Raclette) kommt aus dem Kartenbrett: hier gesperrt, mit Weg dorthin
+        # Die Karte des Röstihüs (Röstis, Cordon bleus, Hotelweine, Spritz, Dessert, Raclette) kommt aus Karten & Preislisten: hier gesperrt, mit Weg dorthin
         'gesperrt': [{'wahl': '#karte .rk, #roestihues .buch, #wein .wein__glaeser, #stube .bl__zeilen', 'werkzeug': 'karten'}],
         # Was das Haus nicht mehr zeigt oder doppelt führt und nie hier geändert wird: die Gratis-Anreise (abgelaufen am 31.10.2026, die Seite blendet sie
         # über data-bis aus), Zeichen der Familie (Pinselstrich), das Familienband (gehört der Familie, nicht diesem Haus) und das Fenster der Rezeption

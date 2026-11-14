@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-/* Das gesetzte Blatt einer Karte aus dem Kartenbrett als Bild (für die Stücke im Saal des Hotelbüros, wenn es noch keine PDF gibt).
-   node _werkzeuge/maison/kartenblatt.js <ziel> <aus.png>   — öffnet das Kartenbrett auf #<ziel>, nur GET, und nimmt das Blatt der Vorschau auf. */
+/* Das gesetzte Blatt einer Karte aus Karten & Preislisten als Bild (für die Stücke im Saal Kontrollpanel, wenn es noch keine PDF gibt).
+   node _werkzeuge/maison/kartenblatt.js <ziel> <aus.png>   — öffnet Karten & Preislisten auf #<ziel>, nur GET, und nimmt das Blatt der Vorschau auf. */
 const pw = require('playwright');
 (async () => {
   const [ziel, aus] = process.argv.slice(2);

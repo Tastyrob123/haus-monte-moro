@@ -1,6 +1,6 @@
 /* kleid/montemoro.js · Hauswerte für oberflaeche.js (Hotel Monte-Moro mit Restaurant Röstihüs, Saas-Almagell; Gastgeber Esther und Fabian Zurbriggen; Oberchef 08.11.2026).
    Im <head> VOR allen Stilen laden (ohne defer). Rahmen «Die Bühne»: Kopf dunkel wie die Nacht über dem Saastal (#0A2A4A, Markenbuch Farbwelt A), Raum hell wie das Papier (#F5F2EE).
-   Liegt unter _werkzeuge/oberflaeche/ und wird von den Werkzeug-Servern unter /assets/oberflaeche/ ausgeliefert (einziger Schreiber: Hotelbüro bzw. Oberchef).
+   Liegt unter _werkzeuge/oberflaeche/ und wird von den Werkzeug-Servern unter /assets/oberflaeche/ ausgeliefert (einziger Schreiber: Kontrollpanel bzw. Oberchef).
    Fotos und Schriften kommen aus der Website (/assets/img/<schlüssel>-<s|m|l|x>.webp = 480/900/1440/2200 px, /assets/fonts/), Zeichen und Wortmarke aus dem Markenbuch (_kette/05-markenbauer/marke/zeichen/). */
 window.WO_HAUS = { kurz: 'montemoro', name: 'Monte-Moro', voll: 'Hotel Monte-Moro', ort: 'Saas-Almagell', bar: 'Hotel Monte-Moro', welt: 'hotel', rahmen: 'buehne', anrede: 'sie',   /* das Haus siezt (Website) */
   /* Aussenfoto des Startbilds: das Haus im Sommer mit den Balkonen aus Lärche (Bildregister der Website, Schlüssel «haus-sommer») */
@@ -9,7 +9,7 @@ window.WO_HAUS = { kurz: 'montemoro', name: 'Monte-Moro', voll: 'Hotel Monte-Mor
   /* Zeichen: der Bergkamm aus dem Logo des Hauses (Markenbuch, bergkamm-*.svg, nachgezogen), Wortmarke: das ganze Logo «Monte Moro Saas-Almagell» (wortmarke-*.svg) */
   zeichen: '/assets/oberflaeche/kleid/montemoro-zeichen.svg', zeichenMass: 5.004, wortmarke: '/assets/oberflaeche/kleid/montemoro-marke.svg#wm', wortmarkeMass: 2.444,   /* Breite : Höhe (Bergkamm viewBox 3483 × 696, Logo 3483 × 1425); oberflaeche.js setzt zeichenMass als aspect-ratio */
   /* Namen der sieben Werkzeuge: die EINE Stelle (Oberchef 08.11.2026, Welt des Hotels; Dateien, Schlüssel und Adressen bleiben: maison, bureau, carte …) */
-  namen: { zentrale: 'Das Hotelbüro', website: 'Das Schaufenster', karten: 'Das Kartenbrett', gaeste: 'Die Rezeption', marke: 'Das Markenbuch', besuche: 'Die Besucherliste', druck: 'Die Hausdruckerei' },
+  namen: { zentrale: 'Kontrollpanel', website: 'Website bearbeiten', karten: 'Karten & Preislisten', gaeste: 'Anfragen & Chat', marke: 'Das Markenbuch', besuche: 'Besucher', druck: 'Drucksachen & Feed' },
   saetze: { zentrale: 'Hier beginnt alles: ein Blick auf alle Werkzeuge und ihren Stand.',
     website: 'Die Website selbst pflegen: Texte, Fotos, Zimmer, Preise, Hinweise.',
     karten: 'Die Karte des Röstihüs und die Preislisten des Hotels schreiben, daraus entstehen Karte und PDF.',

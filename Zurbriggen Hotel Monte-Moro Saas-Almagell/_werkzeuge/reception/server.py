@@ -4,7 +4,7 @@ Stamm: das Gästebuch des Culinarium Hannover, über Wild Side (08.11.2026); Auf
 
 Ein Server für drei Dinge:
   /                               die Website aus website/ des Hauses, nur lesen (Anfrage-Fenster auf jeder Seite, Rezeption im Chat)
-  /assets/oberflaeche/            das gemeinsame Kleid der Werkzeuge des Hauses (_werkzeuge/oberflaeche/, nur lesen; einziger Schreiber das Hotelbüro)
+  /assets/oberflaeche/            das gemeinsame Kleid der Werkzeuge des Hauses (_werkzeuge/oberflaeche/, nur lesen; einziger Schreiber Kontrollpanel)
   /api/gast                       der Chat («Chat ausprobieren»): gast/gast.py mit dem Wissen des Hauses, dazu reception.py
   /api/anfragen                   das Anfrage-Fenster der Website (assets/js/anfrage.js, «Anfrage senden»): landet gleich im Eingang
   /api/frage                      eine Frage an die Rezeption im Chat der Website (gleiche Antwort wie assets/js/rezeption.js), kommt unter «Das wurde gefragt»

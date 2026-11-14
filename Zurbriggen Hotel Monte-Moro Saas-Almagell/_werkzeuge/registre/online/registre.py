@@ -1,6 +1,6 @@
-"""Die Besucherliste (Le Registre) · Hotel Monte-Moro, Saas-Almagell online (Vercel-Funktion /api/registre, 08.11.2026). Kopie der Besucherliste aus dem Stamm der Häuser
+"""Besucher (Le Registre) · Hotel Monte-Moro, Saas-Almagell online (Vercel-Funktion /api/registre, 08.11.2026). Kopie Besucher aus dem Stamm der Häuser
 (_werkzeuge/registre/online/registre.py, dort aus den früheren Häusern übernommen, nur kopiert).
-GET   ?tage=30            Vorführ-Betrieb: Beispielwerte (registre.ablage_heute, dieselbe Rechnung wie das Werkzeug ohne Server-Teil und das Hotelbüro)
+GET   ?tage=30            Vorführ-Betrieb: Beispielwerte (registre.ablage_heute, dieselbe Rechnung wie das Werkzeug ohne Server-Teil und Kontrollpanel)
       &k=<Schlüssel>      echte Werte (Prüfsumme unten; Schlüssel nur in ~/Desktop/Website-Projekte/_Schluessel/monte-moro-registre.txt)
 POST                      eine Zeile von assets/js/messung.js (Website, Quelle vorschlag/messung.js); ?fehler=1 Skriptfehler des Werkzeugs, nur ins Protokoll
 Speicher: nur ein EIGENER privater Blob-Speicher mit REGISTRE_READ_WRITE_TOKEN (Master 4.6: damit Le Registre die anderen Werkzeuge nicht scharf
@@ -116,7 +116,7 @@ class handler(BaseHTTPRequestHandler):
         roh = self.rfile.read(n) if n else b''
         _, q = SP.weg_von(self.path)
         if (q.get('fehler') or [''])[0]:
-            print('Die Besucherliste, Fehler im Browser:', roh.decode('utf-8', 'replace')[:300].replace('\n', ' '))
+            print('Besucher, Fehler im Browser:', roh.decode('utf-8', 'replace')[:300].replace('\n', ' '))
         else:
             try:
                 RG.melde(roh, self._wer(), h.get('User-Agent') or '', h.get('x-vercel-ip-country') or '',

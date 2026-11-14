@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Die Besucherliste (Le Registre) · Hotel Monte-Moro, Saas-Almagell (Tasty Studios, 08.11.2026, Werkzeug 6): das Haus sieht, wer seine Website besucht.
+"""Besucher (Le Registre) · Hotel Monte-Moro, Saas-Almagell (Tasty Studios, 08.11.2026, Werkzeug 6): das Haus sieht, wer seine Website besucht.
 Je Besuch: Land und Ort, Tag und Uhrzeit, Gerät, Sprache des Browsers, woher der Gast kam, welche Seiten er in welcher Reihenfolge ansah, wie lange
 jede Seite sichtbar war und ob er ein Zimmer anfragte (Fenster «Anfrage» der Website), auf «Zimmer buchen» ging (Buchung bei seekda), einen Tisch im
 Röstihüs anfragte, das Haus anrief oder anschrieb, den Chat der Rezeption öffnete oder zur Familie Zurbriggen weiterging (Spa nebenan, Familienband).
 Nie ein Name, nie eine Adresse der Verbindung, kein Cookie.
 
-Stamm: die Besucherliste der Häuser (28.10.2026, von Robert abgenommen); Aufbau, Funktionen und Wege unverändert.
+Stamm: Besucher der Häuser (28.10.2026, von Robert abgenommen); Aufbau, Funktionen und Wege unverändert.
 Angepasst an das Hotel Monte-Moro mit Restaurant Röstihüs (Familie Zurbriggen, Gastgeber Esther und Fabian Zurbriggen): Seiten der Website (Zimmer, Preise,
 Saastal, Spa nebenan, Röstihüs, Anreise), Wege des Hauses (Anfrage-Fenster, «Zimmer buchen» bei seekda, Tisch im Röstihüs, Telefon, E-Mail, Chat der Rezeption,
 Familie Zurbriggen), Herkunftsnamen und Beispielorte für ein Hotel im Saastal, Uhrzeit Europe/Zurich, Sprache = Sprache des Browsers (die Website gibt es auf Deutsch).
@@ -263,7 +263,7 @@ def werte_aus(summe):
 
 
 def stand(tage=30, beispiel=False, ablage=False):
-    """Alles, was die Besucherliste zeigt, für die letzten Tage (heute eingeschlossen) und zum Vergleich den gleich langen Zeitraum davor.
+    """Alles, was Besucher zeigt, für die letzten Tage (heute eingeschlossen) und zum Vergleich den gleich langen Zeitraum davor.
     Nichts geschätzt: wo nichts gemessen ist, steht None."""
     try:
         tage = max(1, min(366, int(tage)))
@@ -357,7 +357,7 @@ def stand(tage=30, beispiel=False, ablage=False):
     return aus
 
 
-# ---- Beispielwerte: erfunden, damit das Haus sieht, wie die Besucherliste mit Besuchen aussieht. Immer als Beispiel gekennzeichnet.
+# ---- Beispielwerte: erfunden, damit das Haus sieht, wie Besucher mit Besuchen aussieht. Immer als Beispiel gekennzeichnet.
 # Orte und Herkunft passend zu einem Hotel im Saastal: die meisten Besuche aus der Deutschschweiz (Zürich, Bern, Basel, Luzern …) und aus dem Wallis,
 # dazu die Romandie und das Tessin, Süddeutschland und das übrige Deutschland, Norditalien über den Monte-Moro-Pass, wenige von weiter her.
 # Gefunden über Google, Booking.com, Schweiz Tourismus, die Ferienregion Saas-Fee/Saastal und Instagram; oft am Rechner (Ferien plant man in Ruhe),
@@ -482,7 +482,7 @@ def ausfuhr(tage=30):
 
 def ablage_heute(tage=30, heute=None, uhr=None):
     """Die abgelegten Beispielwerte (beispiel/<tage>.json), auf heute geschoben und auf die jetzige Uhrzeit in Saas-Almagell (Europe/Zurich) gekürzt.
-    Dieselbe Rechnung wie registre.js (ablageLaden, kuerzen), damit die Besucherliste und das Hotelbüro dieselben Beispielzahlen zeigen.
+    Dieselbe Rechnung wie registre.js (ablageLaden, kuerzen), damit Besucher und Kontrollpanel dieselben Beispielzahlen zeigen.
     Fehlt die Datei: Beispielwerte frisch gerechnet (stand)."""
     try:
         tage = int(tage)

@@ -1,4 +1,4 @@
-/* Das Kartenbrett · Prüfseite (16.10.2026, R23): läuft ohne carte.js. Liest /_werkzeuge/carte/api/pruefung, zeigt Browser, Server, Karten, Druck,
+/* Karten & Preislisten · Prüfseite (16.10.2026, R23): läuft ohne carte.js. Liest /_werkzeuge/carte/api/pruefung, zeigt Browser, Server, Karten, Druck,
    Sicherungen und Fehler; Reparaturen (nur Direktion) mit zwei Klicks. */
 (function () {
   'use strict';

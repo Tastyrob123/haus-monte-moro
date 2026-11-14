@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prüfserver des Hotelbüros (La Maison) · Hotel Monte-Moro, Saas-Almagell (nur zum Bedienen und Prüfen; Kopie des Stamms vom 28.10.2026).
+"""Prüfserver Kontrollpanel (La Maison) · Hotel Monte-Moro, Saas-Almagell (nur zum Bedienen und Prüfen; Kopie des Stamms vom 28.10.2026).
 
   python3 _werkzeuge/maison/server.py [port]      Standard 9381
 
@@ -92,5 +92,5 @@ class S(socketserver.ThreadingTCPServer):
 
 if __name__ == '__main__':
     with S(('127.0.0.1', PORT), H) as httpd:
-        print(f'Das Hotelbüro · Hotel Monte-Moro, Prüfserver auf http://127.0.0.1:{PORT}/_werkzeuge/maison/ (Wurzel {WURZEL})', flush=True)
+        print(f'Kontrollpanel · Hotel Monte-Moro, Prüfserver auf http://127.0.0.1:{PORT}/_werkzeuge/maison/ (Wurzel {WURZEL})', flush=True)
         httpd.serve_forever()

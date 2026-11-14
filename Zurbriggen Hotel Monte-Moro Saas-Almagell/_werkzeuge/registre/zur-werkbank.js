@@ -1,4 +1,4 @@
-/* «Zur Werkbank» (R19) · Die Besucherliste des Hotel Monte-Moro (08.11.2026): Kopie aus dem Stamm, im Kleid des Hauses (Knopf «kn--nacht» der Website:
+/* «Zur Werkbank» (R19) · Besucher des Hotel Monte-Moro (08.11.2026): Kopie aus dem Stamm, im Kleid des Hauses (Knopf «kn--nacht» der Website:
    Pille in Nacht mit Lichtkante, runder heller Knauf mit Pfeil, DM Mono in Versalien gesperrt), Schlüssel des Hauses «montemoro-wb».
    Einzige Änderung: die Wurzel des Hauses wird auch aus _werkzeuge/registre/ (lokal) und werkzeuge/registre/ (online) erkannt (F78). */
 /* «Zur Werkbank» (Robert 12.10.2026): ein Knopf unten links auf jeder Seite, die man aus der Werkbank heraus öffnet.

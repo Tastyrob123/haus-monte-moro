@@ -5,7 +5,7 @@ status: aktiv
 
 # Drucksachen · Hotel Monte-Moro, Saas-Almagell
 
-Gesetzt mit der Hausdruckerei (`_werkzeuge/imprimerie/`, Aufruf `NODE_PATH=$(npm root -g) node _bau/drucksachen.js`), Inhalte nur aus `website/inhalt/daten.py` und den Seiten der Website (`bau_vorlagen.py`).
+Gesetzt mit Drucksachen & Feed (`_werkzeuge/imprimerie/`, Aufruf `NODE_PATH=$(npm root -g) node _bau/drucksachen.js`), Inhalte nur aus `website/inhalt/daten.py` und den Seiten der Website (`bau_vorlagen.py`).
 PDF mit 3 mm Beschnitt und eingebetteten Schriften der Website (Fjalla One, Instrument Sans, DM Mono als TrueType), Vorschaubild 1200 px breit (JPG). Druck- und Stilprüfung je Stück: ohne roten Befund.
 
 | Datei | Drucksache | Abteilung | Was | Format | Seiten | Vorschau |

@@ -1,4 +1,4 @@
-/* Kurzfilme der Führung (hilfe/schritt-1…9.mp4 + .jpg) und Demo-Video (hilfe/demo.mp4, demo-poster.jpg, kapitel.json), aufgenommen an der Hausdruckerei
+/* Kurzfilme der Führung (hilfe/schritt-1…9.mp4 + .jpg) und Demo-Video (hilfe/demo.mp4, demo-poster.jpg, kapitel.json), aufgenommen an Drucksachen & Feed
    des Hotel Monte-Moro (Server :9387, Probe ohne KI). Playwright nimmt WebM auf, ffmpeg schneidet um das Ziel und wandelt in H.264.
    NODE_PATH=$(npm root -g) node _bau/filme.js */
 const { chromium } = require('playwright'); const fs = require('fs'), path = require('path'), { execFileSync } = require('child_process');

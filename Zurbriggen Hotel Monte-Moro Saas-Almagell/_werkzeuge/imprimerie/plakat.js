@@ -1,4 +1,4 @@
-/* Die Hausdruckerei · Hotel Monte-Moro (08.11.2026, Form der Hausdruckerei des Stammhauses): zwei Ansichten.
+/* Drucksachen & Feed · Hotel Monte-Moro (08.11.2026, Form Drucksachen & Feed des Stammhauses): zwei Ansichten.
    1. «Bergbilder» (#msMotive): Fotos des Saastals und des Hauses (motive.json, aus bau.py), jedes gleich als Aushang mit der Grat-Kante der Website;
       «Als Aushang öffnen» öffnet es im Editor.
    2. «Aushang anlegen» (#msAbend): Baukasten mit Live-Vorschau: Etikett, Titel, Satz und Zusatzzeile, ein Foto (Bergbild, Foto des Hauses oder eigenes),

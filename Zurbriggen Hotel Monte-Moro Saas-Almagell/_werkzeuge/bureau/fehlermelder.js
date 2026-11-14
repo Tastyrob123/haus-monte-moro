@@ -1,4 +1,4 @@
-/* fehlermelder.js · Das Schaufenster des Hotel Monte-Moro (08.11.2026; Kopie aus dem Stamm der sieben Werkzeuge), Master Werkzeug-Bau R03: vor allem anderen geladen. Skriptfehler gehen an den Server des Werkzeugs
+/* fehlermelder.js · Website bearbeiten des Hotel Monte-Moro (08.11.2026; Kopie aus dem Stamm der sieben Werkzeuge), Master Werkzeug-Bau R03: vor allem anderen geladen. Skriptfehler gehen an den Server des Werkzeugs
    (/_werkzeuge/bureau/api/fehler, dort unter einem Schloss angehängt) und in den Browser (localStorage «ws-fehler», liest die Prüfseite).
    Netzfehler werden nie gemeldet, höchstens 20 je Seite, ein eigener Fehlschlag wird nie erneut gemeldet (Safari-Schleife 15.10.: 9'969 Fehler). */
 (function () {

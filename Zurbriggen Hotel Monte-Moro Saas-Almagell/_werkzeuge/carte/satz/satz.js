@@ -1,4 +1,4 @@
-/* Das Kartenbrett · Hotel Monte-Moro, Saas-Almagell — Satz der Karte (08.11.2026, Kopie aus dem Stamm der Häuser). Eine Datei für drei Stellen: die Vorschau im Werkzeug, die Druckseite (PDF) und die Prüfung im Rundlauf (node).
+/* Karten & Preislisten · Hotel Monte-Moro, Saas-Almagell — Satz der Karte (08.11.2026, Kopie aus dem Stamm der Häuser). Eine Datei für drei Stellen: die Vorschau im Werkzeug, die Druckseite (PDF) und die Prüfung im Rundlauf (node).
    Die Karte liegt als Baum aus dem Satz vor, den satz_bau.py aus den Daten des Hauses setzt (einlesen.py): Seiten, Elemente mit ihren Merkmalen,
    Texte und feste Teile (Logo, Bergkamm). Aus denselben Daten entsteht hier Zeichen für Zeichen dasselbe HTML wie in satz/u-<karte>.html
    (geprüft mit pruefe.py rund). Gestalten (Fortgeschritten) legt sich als Stil über ein Element, ohne den Satz zu ändern.

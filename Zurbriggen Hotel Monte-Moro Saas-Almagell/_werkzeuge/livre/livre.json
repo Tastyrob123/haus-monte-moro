@@ -3286,13 +3286,13 @@
   }
  ],
  "namen": {
-  "zentrale": "Das Hotelbüro",
-  "website": "Das Schaufenster",
-  "karten": "Das Kartenbrett",
-  "gaeste": "Die Rezeption",
+  "zentrale": "Kontrollpanel",
+  "website": "Website bearbeiten",
+  "karten": "Karten & Preislisten",
+  "gaeste": "Anfragen & Chat",
   "marke": "Das Markenbuch",
-  "besuche": "Die Besucherliste",
-  "druck": "Die Hausdruckerei"
+  "besuche": "Besucher",
+  "druck": "Drucksachen & Feed"
  },
  "zusammen": {
   "haus-winter-g": "haus-winter-b",

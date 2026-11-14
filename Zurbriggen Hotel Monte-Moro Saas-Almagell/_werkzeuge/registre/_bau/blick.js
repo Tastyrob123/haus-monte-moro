@@ -1,4 +1,4 @@
-// Bildschirmfotos der Besucherliste für das Auge: node _bau/blick.js <ausordner> [breite] [ansichten …]
+// Bildschirmfotos Besucher für das Auge: node _bau/blick.js <ausordner> [breite] [ansichten …]
 // Je Ansicht ein ganzes Seitenbild, dazu Konsolenfehler und fehlende Dateien (404) als Liste.
 const { chromium } = require('playwright');
 const path = require('path'), fs = require('fs');

@@ -1,4 +1,4 @@
-"""Die Besucherliste (Le Registre) · Hotel Monte-Moro, Saas-Almagell: der Dienst /api/registre als zwei Funktionen, damit der eigene Server des Werkzeugs (server.py,
+"""Besucher (Le Registre) · Hotel Monte-Moro, Saas-Almagell: der Dienst /api/registre als zwei Funktionen, damit der eigene Server des Werkzeugs (server.py,
 Port 9386) und später der Hausserver (Anschluss bei der Auslieferung) genau dasselbe antworten. Online antwortet online/registre.py (gleiche Regeln, eigener Speicher).
 
   antwort_get(query)                      → (code, daten)   Vorführung: Beispielwerte (ablage_heute); mit ?k=<Schlüssel> echte Werte; ?export=1 nur mit Schlüssel
@@ -42,7 +42,7 @@ def antwort_post(query, roh, ip, ua):
     if len(roh or b'') > 300:
         return 413, {'fehler': 'GROESSE · Eine Zeile hat höchstens 300 Zeichen.'}
     if 'fehler=1' in (query or ''):   # Fehlermelder des Werkzeugs: nur ins Protokoll, nichts gespeichert
-        sys.stderr.write('Die Besucherliste, Fehler im Browser: ' + (roh or b'').decode('utf-8', 'replace')[:300].replace('\n', ' ') + '\n')
+        sys.stderr.write('Besucher, Fehler im Browser: ' + (roh or b'').decode('utf-8', 'replace')[:300].replace('\n', ' ') + '\n')
         return 204, None
     try:
         RG.melde(roh, ip, ua or '', *ORT_LOKAL)

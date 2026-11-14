@@ -1,4 +1,4 @@
-/* Das Kartenbrett · Hotel Monte-Moro, Saas-Almagell (08.11.2026, Kopie aus dem Stamm der Häuser). Arbeitsbereich (Liste, Vorschau, Gestalten, Fenster,
+/* Karten & Preislisten · Hotel Monte-Moro, Saas-Almagell (08.11.2026, Kopie aus dem Stamm der Häuser). Arbeitsbereich (Liste, Vorschau, Gestalten, Fenster,
    Quittungen) im Kleid des Hauses (_werkzeuge/oberflaeche/kleid/montemoro.css, Markenbuch): Nacht und Nachtblau als dunkle Fläche, Lärche als Akzent
    und Hauptknopf, Messing nur für feine Linien, Papier als Raum; Titel in Fjalla One (eine Stärke), Lauf in Instrument Sans, kleine Zeilen und Zahlen
    in DM Mono. Farben nur über die Variablen --wo-* des Kleids (mit dem Wert des Markenbuchs als Ersatz für Seiten ohne Kleid: Anleitung, Prüfung). Nie fett, nie kursiv. Den Rahmen (Kopf, Rand, Startbild, Leiste) liefert die Werkzeug-Oberfläche
@@ -345,12 +345,12 @@ aside.wo-rand .modus__t{text-wrap:pretty}   /* Tor 5 30.10.2026 (K7): kein Wort 
 .gesund div span{text-wrap:balance}   /* «2023» nie allein in der zweiten Zeile */
 .fenster .satz{text-wrap:pretty}
 /* Stamm 31.10.2026 (Tor K2): eine Titelschrift ragte über die Zeilenhöhe 1,1 hinaus, der Titel in der Mitte des Kopfs galt als «gekürzt»; Raum oben und unten
-   wie im Schaufenster (bureau.css), ohne die Höhe des Kopfs zu ändern */
+   wie in Website bearbeiten (bureau.css), ohne die Höhe des Kopfs zu ändern */
 @media (min-width:901px){#oben .wo-kopf__mitte b{padding-block:5px;margin-block:-5px}}
 /* Stamm 31.10.2026 (Tor K2 «randlos», 901–1240 px): «Website ansehen» ist dort nur der runde Knauf (kleid/montemoro.css); die verborgene Beschriftung
    misst sonst mit ihrer vollen Breite über den Knopf hinaus. Für Vorleseprogramme bleibt der Name am Link (aria-label in carte.js). */
 @media (min-width:901px) and (max-width:1240px){.wo-kopf .wo-kn--gold.wo-kn--klein>span{font-size:0;letter-spacing:0}}
-/* Tor K6 (390): im aufgeklappten Rand stehen Protokoll und Zustand auf derselben linken Kante wie «Das Hotelbüro» */
+/* Tor K6 (390): im aufgeklappten Rand stehen Protokoll und Zustand auf derselben linken Kante wie «Kontrollpanel» */
 aside.wo-rand .wo-rand__kopf>button{padding-left:0;padding-right:0;margin-left:0}
 /* Tor K35: Wahl der Rubrik («Neuer Eintrag»): das Bild der Rubrik passt ganz in den Knopf (Werte nachgemessen im Kleid des Hauses) */
 .lc .chips.g-wahl button{height:auto;min-height:48px;padding:4px 18px 4px 4px}   /* Monte-Moro 08.11.2026 nachgemessen: Instrument Sans mittig */

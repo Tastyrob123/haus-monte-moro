@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Die Hausdruckerei · Hotel Monte-Moro, Saas-Almagell: Katalog und Vorlagen des Hauses.
+"""Drucksachen & Feed · Hotel Monte-Moro, Saas-Almagell: Katalog und Vorlagen des Hauses.
    python3 bau_vorlagen.py → katalog.js, haeuser/montemoro/vorlagen/*.json + index.json, Beispielinhalte in start.js (INHALT) und vorlagen.js (DS.BEISPIEL).
 Alle Hauswerte (Preise, Röstis, Cordon bleus, Hotelweine, Inklusive, Zuschläge, Kinderpreise, Spa-Tarife, Anreise, Kontakt) kommen aus website/inhalt/daten.py
 (als Daten gelesen, nie abgetippt), die Sätze aus daten.py und den Seiten der Website (website/*.html). Was in OFFEN steht (Öffnungszeiten des Röstihüs, Strasse,
@@ -341,7 +341,7 @@ def schreiben():
         index.append({"art": art, "format": ART_FORMAT[art], "zahl": len(l), "gruppe": GRUPPE_NAME[art]})
     json.dump(index, open(os.path.join(vd, 'index.json'), 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
     J = lambda o: json.dumps(o, ensure_ascii=False, separators=(',', ':'))
-    kat = ("/* Die Hausdruckerei · Hotel Monte-Moro, Saas-Almagell · Katalog des Hauses. GESCHRIEBEN VON bau_vorlagen.py, nicht von Hand ändern.\n"
+    kat = ("/* Drucksachen & Feed · Hotel Monte-Moro, Saas-Almagell · Katalog des Hauses. GESCHRIEBEN VON bau_vorlagen.py, nicht von Hand ändern.\n"
            "   Fertig gesetzte Vorlagen nur aus dem, was das Haus selbst sagt (website/inhalt/daten.py, Seiten der Website); jede öffnet ohne KI und ohne Kosten. */\n(function () {\n"
            f"  const ABTEILUNGEN = {J(ABTEILUNGEN)};\n  const HINWEISE = {J(HINWEISE)};\n  const NEWSLETTER = {J(NEWSLETTER)};\n  const ANLAESSE = {J(ANLAESSE)};\n"
            f"  const MOTIVE = {J(MOTIVE)};\n  const motive = a => MOTIVE[a.k] || [];\n  window.DSKATALOG = {{ ABTEILUNGEN, HINWEISE, ANLAESSE, motive, NEWSLETTER }};\n}})();\n")

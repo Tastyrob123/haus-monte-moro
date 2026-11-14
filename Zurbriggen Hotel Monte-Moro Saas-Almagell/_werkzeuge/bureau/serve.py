@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Das Schaufenster (Website pflegen, Arbeitsname Le Bureau) · Hotel Monte-Moro, Saas-Almagell — eigener Server (08.11.2026, Vorlage: der Stamm der sieben Werkzeuge).
+"""Website bearbeiten (Website pflegen, Arbeitsname Le Bureau) · Hotel Monte-Moro, Saas-Almagell — eigener Server (08.11.2026, Vorlage: der Stamm der sieben Werkzeuge).
 python3 _werkzeuge/bureau/serve.py [port]   (Standard 9382, aus dem Hausordner)
 
 Das Werkzeug selbst ist der Schreibtisch des Stamms (_Werkzeuge/werkzeuge/website/, Schicht über den gebauten Seiten, Probe-Kopie
@@ -8,7 +8,7 @@ _probe/montemoro/, Speicher _Werkzeuge/daten/). Dieser Server legt den Rahmen de
   /_werkzeuge/bureau/…        Seite des Werkzeugs (index.html, bureau.css) aus diesem Ordner
   /assets/oberflaeche/…        gemeinsamer Werkzeug-Rahmen des Hauses (_werkzeuge/oberflaeche/, Kleid montemoro)
   /assets/…                    Schriften und Fotos der Website (website/assets/, nur gelesen): /assets/img/<schlüssel>-<s|m|l|x>.webp, /assets/fonts/
-  /_werkzeuge/bureau/api/ueberblick   Stand-Weg für das Hotelbüro
+  /_werkzeuge/bureau/api/ueberblick   Stand-Weg für Kontrollpanel
   alles andere                 wie der Server des Stamms (unterbau/serve.py): /api/…, /stamm/…, /werkzeuge/website/…, /haeuser/…
 Die Website des Hauses (website/) wird nie geschrieben: Veröffentlichen schreibt nur in die Probe-Kopie des Stamms.
 Sicherheit (Master Werkzeug-Bau 5.2/5.3, S01–S03): hört nur auf 127.0.0.1, nur Anfragen an diese Adresse (421), schreibende Wege nur von der
@@ -200,7 +200,7 @@ class Antwort(stamm.Antwort):
         return roh.encode('utf-8')
 
     def _ueberblick(self):
-        """Stand-Weg für das Hotelbüro (Master 4.1): {aenderungen, zuletzt:{zeit}, bereiche, seiten} aus dem Stamm (/api/x/website/ueberblick/montemoro)."""
+        """Stand-Weg für Kontrollpanel (Master 4.1): {aenderungen, zuletzt:{zeit}, bereiche, seiten} aus dem Stamm (/api/x/website/ueberblick/montemoro)."""
         try:
             status, s = stamm._werkzeug_api('website').bearbeite('GET', ['ueberblick', 'montemoro'], {}, stamm.speicher)
         except Exception as e:   # noqa: BLE001  (der Stand-Weg antwortet immer, die Zentrale zeigt dann «antwortet nicht» nicht fälschlich)
@@ -298,5 +298,5 @@ if __name__ == '__main__':
     except SystemExit as e:
         print('Beschreibung nicht geschrieben:', e)
     os.chdir(STAMM)
-    print(f'Das Schaufenster (Monte-Moro) auf http://127.0.0.1:{PORT}/_werkzeuge/bureau/')
+    print(f'Website bearbeiten (Monte-Moro) auf http://127.0.0.1:{PORT}/_werkzeuge/bureau/')
     ThreadingHTTPServer(('127.0.0.1', PORT), Antwort).serve_forever()

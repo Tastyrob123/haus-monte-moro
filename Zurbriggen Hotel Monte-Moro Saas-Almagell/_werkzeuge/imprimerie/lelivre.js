@@ -1,4 +1,4 @@
-/* Die Hausdruckerei · Le Livre im Haus (Robert 12.10.2026: «von Die Hausdruckerei aus auf Le Livre zugreifen, ich arbeite ja mit meinen Visuals in Die Hausdruckerei»).
+/* Drucksachen & Feed · Le Livre im Haus (Robert 12.10.2026: «von Drucksachen & Feed aus auf Le Livre zugreifen, ich arbeite ja mit meinen Visuals in Drucksachen & Feed»).
    1. Startseite: eigener Punkt «Le Livre» (und runde Taste oben) mit Bildarchiv, Logo und Dateien, Farben zum Kopieren.
    2. Editor: Fach «Le Livre» neben den Werkzeugen. Foto, Logo, Wortmarke, Zeichen, Tapete per Klick einsetzen oder aufs Blatt ziehen;
       Farbe per Klick auf das gewählte Element (sonst auf den Grund der Seite).
@@ -31,7 +31,7 @@
     const box = $('#msLivre'); if (!box || !L()) return;
     if (!box.dataset.gebaut) {
       box.dataset.gebaut = 1;
-      box.innerHTML = `<div class="ms-titel"><h1>Logo &amp; Farben</h1><span class="ms-leise">Das Markenbuch des Hauses, hier in der Hausdruckerei: Fotos, Logo und Dateien, Farben. Was Sie hier sehen, ist dieselbe Quelle wie im Markenbuch.</span></div>
+      box.innerHTML = `<div class="ms-titel"><h1>Logo &amp; Farben</h1><span class="ms-leise">Das Markenbuch des Hauses, hier in Drucksachen & Feed: Fotos, Logo und Dateien, Farben. Was Sie hier sehen, ist dieselbe Quelle wie im Markenbuch.</span></div>
         <div class="ll-kopf"><div class="ms-chips ll-reiter">${[['bilder', 'Bildarchiv'], ['dateien', 'Logo und Dateien'], ['farben', 'Farben']].map(([k, t]) => `<button data-llreiter="${k}">${t}</button>`).join('')}</div>
           <a class="ms-lnk" href="${DS.livreSeite()}" target="_blank" rel="noopener"><span>Das Markenbuch öffnen</span>${IC.pfeil}</a></div>
         <div class="ll-fach" data-llfach="bilder"><div id="llBilderPlatz"></div></div>
@@ -168,7 +168,7 @@
     }, true);
   }
 
-  /* ================= Markenprüfung aus Die Hausdruckerei ================= */
+  /* ================= Markenprüfung aus Drucksachen & Feed ================= */
   let platte = null;
   async function pruefen() {
     const st = S(), doc = st.doc();

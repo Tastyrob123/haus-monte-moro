@@ -1,5 +1,5 @@
-/* Das Kartenbrett · Fehlermelder (16.10.2026, R03, nach dem Fehlermelder des Stamms).
-   Läuft als erstes Skript jeder Seite des Kartenbretts: Skriptfehler und unbehandelte Versprechen gehen in den Browser (localStorage «lc-fehler»,
+/* Karten & Preislisten · Fehlermelder (16.10.2026, R03, nach dem Fehlermelder des Stamms).
+   Läuft als erstes Skript jeder Seite Karten & Preislisten: Skriptfehler und unbehandelte Versprechen gehen in den Browser (localStorage «lc-fehler»,
    die letzten 30) und an den Server (api/fehler → browserfehler.jsonl, «Prüfung» zeigt beide). Netzfehler werden nie gemeldet, höchstens
    20 je Seite, und scheitert die Meldung selbst, wird das nicht noch einmal gemeldet (Safari, 15.10.2026: eine Meldung meldete sich 9'969 Mal). */
 (function () {

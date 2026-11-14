@@ -648,7 +648,7 @@
     try {
       const keys = await DS.eigene.hinzu(ST.M, dateien, t => melde(t, 30000));
       if (!keys.length) { melde('Keine Bilddatei gefunden. Bitte JPG, PNG oder HEIC wählen.'); return; }
-      melde((keys.length === 1 ? 'Foto hinzugefügt. Es liegt unter «Eigene Fotos».' : `${keys.length} Fotos hinzugefügt. Sie liegen unter «Eigene Fotos».`) + (keys.fluechtig ? ' Dieser Browser legt Fotos nicht ab (privates Fenster?): es bleibt nur, bis Sie die Hausdruckerei schliessen. Für immer: als Arbeitsdatei sichern.' : ''), keys.fluechtig ? 10000 : 4000);
+      melde((keys.length === 1 ? 'Foto hinzugefügt. Es liegt unter «Eigene Fotos».' : `${keys.length} Fotos hinzugefügt. Sie liegen unter «Eigene Fotos».`) + (keys.fluechtig ? ' Dieser Browser legt Fotos nicht ab (privates Fenster?): es bleibt nur, bis Sie Drucksachen & Feed schliessen. Für immer: als Arbeitsdatei sichern.' : ''), keys.fluechtig ? 10000 : 4000);
       ST.fotoGruppe = DS.eigene.GRUPPE; ST.fotoLage = 'alle'; $('#fotoSuche').value = '';
       if (aufsBlatt) {
         const el = ST.sel && elById(ST.sel);
@@ -871,7 +871,7 @@
   async function start() {
     const M = await DS.ladeMarke(HAUS);
     ST.M = M;
-    document.title = `${(window.WO && WO.name ? WO.name('druck') : 'Die Hausdruckerei')} · ${M.voll || M.name}`;
+    document.title = `${(window.WO && WO.name ? WO.name('druck') : 'Drucksachen & Feed')} · ${M.voll || M.name}`;
     $('#kopfName').textContent = M.name;
     $('#kopfZeichen').innerHTML = DS.zeichenSvg(M, 'currentColor');
     $('#inselZeichen').innerHTML = DS.zeichenSvg(M, 'currentColor');

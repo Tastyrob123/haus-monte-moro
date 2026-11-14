@@ -1,4 +1,4 @@
-// Das Kartenbrett · Druck einer Karte als PDF (wie _werkbank/satz_druck_datei.js, mit dem die PDFs der Website gedruckt sind): node drucke.js <karte> <stand|entwurf|…> <ziel.pdf>
+// Karten & Preislisten · Druck einer Karte als PDF (wie _werkbank/satz_druck_datei.js, mit dem die PDFs der Website gedruckt sind): node drucke.js <karte> <stand|entwurf|…> <ziel.pdf>
 // Öffnet satz/blatt.html auf dem eigenen Server (CARTE_PORT, Standard 9383), wartet, bis der Satz steht, und druckt. Letzte Zeile: Bericht als JSON.
 const path = require('path'), fs = require('fs');
 const { chromium } = (() => { try { return require(path.join(process.env.HOME, 'Desktop/Apps & Tools/Tasty Website Builder/node_modules/playwright')); } catch (e) { return require('playwright'); } })();   // Mac oder Cloud

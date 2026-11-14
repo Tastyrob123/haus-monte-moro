@@ -1,4 +1,4 @@
-/* Die Hausdruckerei des Hotel Monte-Moro, Saas-Almagell (Satz des Stammhauses, 29.10.2026, umgekleidet 08.11.2026): Satz der Dokumente (29.10.2026, Auftrag Oberchef nach Roberts «Alle Dokumente müssen nochmal
+/* Drucksachen & Feed des Hotel Monte-Moro, Saas-Almagell (Satz des Stammhauses, 29.10.2026, umgekleidet 08.11.2026): Satz der Dokumente (29.10.2026, Auftrag Oberchef nach Roberts «Alle Dokumente müssen nochmal
    … schöner gemacht werden»). Ersetzt für dieses Haus einzelne Aufbauten aus vorlagen.js; jedes andere Haus behält den Kern (ALT).
    Regeln stehen in STILBLATT-DRUCKSACHEN.md und stilblatt.json im selben Ordner:
    - Komposition als Einheit: Zeichen und Inhalt bilden eine Gruppe, die Gruppe steht auf der optischen Mitte (leicht über der geometrischen).

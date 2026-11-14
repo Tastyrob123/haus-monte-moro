@@ -1,4 +1,4 @@
-"""Das Kartenbrett · Hotel Monte-Moro, Saas-Almagell — Server-Teil (08.11.2026). Kopie aus dem Stamm der Häuser, auf die Karten und Preislisten
+"""Karten & Preislisten · Hotel Monte-Moro, Saas-Almagell — Server-Teil (08.11.2026). Kopie aus dem Stamm der Häuser, auf die Karten und Preislisten
 des Hauses umgeschrieben: die Röstihüs-Karte, Wein und Apéro, die Preisliste, Zuschläge und Kinder, das Spa im Partnerhotel (Satz aus der Website,
 karten_lesen.py → satz_bau.py → einlesen.py). Eine Wochenkarte (Kennung «abend» des Stamms) führt das Haus nicht. Eingehängt in _werkzeuge/carte/serve.py unter /_werkzeuge/carte/api/.
 
@@ -657,13 +657,13 @@ def _veroeffentlichen(z, e, s, wer, rolle):
 
 # Wo die Website die PDF der Karte zeigen würde: website/unterlagen/pdf/<karte>.pdf, eine Quelle für Werkzeug, Website und PDF (Robert 17.10.2026:
 # «Die Karten sind die eine Quelle der Speisekarten»). Die Website verlinkt heute die ganze Speisekarte des Hauses (assets/pdf/speisekarte.pdf,
-# Stand 18.11.2024); die bleibt unberührt, denn das Kartenbrett führt nur einen Teil davon. Mit Anschluss liest die Website die Karten aus karten.json
+# Stand 18.11.2024); die bleibt unberührt, denn Karten & Preislisten führt nur einen Teil davon. Mit Anschluss liest die Website die Karten aus karten.json
 # (C27, Einbau in website/ offen, Revier der Website).
 WEBSITE_PDF = {z: (None, None) for z in ZIELE}   # die Speisekarte der Website wird nie überschrieben
 
 
 def website_pdfs(z):
-    """Die Dateien der Website für die PDF dieser Karte. Hat das Schaufenster die Angabe «… als PDF» auf eine andere eigene Datei gestellt, gilt diese."""
+    """Die Dateien der Website für die PDF dieser Karte. Hat Website bearbeiten die Angabe «… als PDF» auf eine andere eigene Datei gestellt, gilt diese."""
     feld, std = WEBSITE_PDF[z]
     ziel = std
     if feld:
@@ -680,7 +680,7 @@ def website_pdfs(z):
 def _anschluss(z, live):
     """Nach dem Veröffentlichen: karten.json im Revier des Werkzeugs immer neu (web.py, C27: die Karten in der Form der Website). Mit Anschluss geht
     die PDF zusätzlich nach website/unterlagen/pdf/<karte>.pdf (die vorige liegt im Verlauf). Solange die Datei DEMO liegt oder der Anschluss aus ist
-    (Standard: die Website ist eine Designstudie und wird nicht still verändert), schreibt das Kartenbrett nie in website/."""
+    (Standard: die Website ist eine Designstudie und wird nicht still verändert), schreibt Karten & Preislisten nie in website/."""
     try:
         import web
         teil = web.anschliessen(K, ZIELE, _lies)
@@ -827,13 +827,13 @@ def werkzeugname():
     try:
         with open(os.path.join(_WURZEL, '_werkzeuge', 'oberflaeche', 'kleid', 'montemoro.js'), encoding='utf-8') as f:
             m = re.search(r"namen:\s*\{[^}]*?karten:\s*'([^']+)'", f.read())
-        return m.group(1) if m else 'Das Kartenbrett'
+        return m.group(1) if m else 'Karten & Preislisten'
     except OSError:
-        return 'Das Kartenbrett'
+        return 'Karten & Preislisten'
 
 
 def export():
-    """Alle Daten des Kartenbretts in einer Datei (Master 9d Nr. 21): je Karte Stand, Entwurf und Ursprung, dazu Verlauf, Einstellungen, Protokoll."""
+    """Alle Daten Karten & Preislisten in einer Datei (Master 9d Nr. 21): je Karte Stand, Entwurf und Ursprung, dazu Verlauf, Einstellungen, Protokoll."""
     karten = {}
     for z in ZIELE:
         try:

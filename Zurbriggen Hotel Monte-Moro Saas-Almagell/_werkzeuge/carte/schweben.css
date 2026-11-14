@@ -1,5 +1,5 @@
-/* Das Kartenbrett · Hotel Monte-Moro, Saas-Almagell (08.11.2026): Kopie von studio/schweben.css des Stamms (16.10.2026), unverändert in der Wirkung. */
-/* Schweben, Pulsieren, Zoom für die Werkzeuge (Gefühl der Carlton-Seiten, wie in der Besucherliste). Gehört zu schweben.js.
+/* Karten & Preislisten · Hotel Monte-Moro, Saas-Almagell (08.11.2026): Kopie von studio/schweben.css des Stamms (16.10.2026), unverändert in der Wirkung. */
+/* Schweben, Pulsieren, Zoom für die Werkzeuge (Gefühl der Carlton-Seiten, wie in Besucher). Gehört zu schweben.js.
    Jedes Blatt trägt data-sw. Wo der Browser Scroll-Zeitachsen kann, wird es am Scrollen aus der Tiefe hochgeführt (sw-zug, gebunden an den Einzug
    entry 0% bis 100%, nichts bleibt am Seitenende hängen); im Bild (.sw-da) federt es zusätzlich nach der Uhr in seine Grösse (sw-puls).
    Viele gleiche Zeilen (data-sw="z") blenden nur sanft ein. Nur translate, scale, opacity. Muss nach studio.css geladen werden. */

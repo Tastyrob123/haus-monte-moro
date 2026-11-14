@@ -1,4 +1,4 @@
-/* Das Kartenbrett · Blatt: setzt eine Karte mit satz.js. Zwei Arten:
+/* Karten & Preislisten · Blatt: setzt eine Karte mit satz.js. Zwei Arten:
    Druck   blatt.html?z=<karte>&q=stand|entwurf|grundstand|verlauf:<datei>&druck=1 → window.CARTE_FERTIG für drucke.js
    Vorschau (im Werkzeug, als Rahmen): Daten kommen per postMessage, Text ist markiert (data-k), Klicks und Geschriebenes gehen zurück.
    Danach wird jede Seite so gross gesetzt, wie ihr Inhalt es zulässt (wie _werkbank/satz_druck_datei.js, mit dem die PDFs der Website gedruckt sind).
@@ -287,7 +287,7 @@
     document.execCommand('insertText', false, (ev.clipboardData.getData('text/plain') || '').replace(/\s+/g, ' '));
   });
   document.addEventListener('focusout', function (ev) { if (ev.target.closest && ev.target.closest('[data-k]')) an('fertig-geschrieben', {}); });
-  /* ---------------------------------------------------------------- Freie Anordnung im Modus «Fortgeschritten» (1:1 nach das Kartenbrett des Stamms,
+  /* ---------------------------------------------------------------- Freie Anordnung im Modus «Fortgeschritten» (1:1 nach Karten & Preislisten des Stamms,
      anordnen.js 15./16.10.2026). Ein Klick wählt ein Element der Seite (Rubrik, Gericht, Zeile, Hinweis, Text, Linie, Logo, Band, Kopfzeile, Zeichen,
      Fusszeile). Ziehen verschiebt es, mit Einrasten an Seitenmitte, Satzspiegel, Seitenrand und den anderen Elementen (rote Hilfslinien, Alt hält es an).
      Die vier Ecken machen es grösser oder kleiner im Verhältnis (40–300 %), die gegenüberliegende Ecke bleibt stehen; Linien haben Griffe an den Enden

@@ -3,7 +3,7 @@
 //   → ansichten/Werkzeuge/<schlüssel>.jpg (Rechner 1440 × 900, doppelte Dichte), <schlüssel>-2.jpg (eine Bildschirmhöhe weiter), ansichten/Werkzeuge-Handy/<schlüssel>.jpg (390 × 844)
 // Nur ansehen: nichts wird gespeichert, nichts abgeschickt. --alle nimmt auch Werkzeuge, die noch «läuft» melden (Probebild, nie für die Meldung).
 const path = require('path'), fs = require('fs');
-let PW; try { PW = require('playwright'); } catch (e) { PW = require('/opt/node-tools/node_modules/playwright'); }
+let PW; try { PW = require('playwright'); } catch (e) { PW = require(require('path').join(process.env.HOME, 'Desktop/Apps & Tools/Tasty Website Builder/node_modules/playwright')); }
 const { chromium } = PW;
 const HIER = __dirname, PROJEKT = path.join(HIER, '..', '..', '..');   // _werkbank liegt in website/_werkbank
 const TEIL = { maison: 'zentrale', bureau: 'website', carte: 'karten', reception: 'gaeste', livre: 'marke', registre: 'besuche', imprimerie: 'druck' };

@@ -1,4 +1,4 @@
-/* Hausdruckerei · Ansichten «Aushang anlegen» und «Bergbilder» (plakat.js), Hotel Monte-Moro 08.11.2026 (Form der Vorlage vom 31.10.2026). Farben und Schriften aus dem Kleid (--wo-*) und
+/* Drucksachen & Feed · Ansichten «Aushang anlegen» und «Bergbilder» (plakat.js), Hotel Monte-Moro 08.11.2026 (Form der Vorlage vom 31.10.2026). Farben und Schriften aus dem Kleid (--wo-*) und
    dem Kern (--navy, --messing, --tinte …); Bewegung nur transform/opacity. Keine Pillen-Reihen als Zierde: die Chips sind Filter, wie überall im Kern. */
 .pk-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 22px;max-width:980px;margin:6px 0 34px;padding:26px 28px 28px;border-radius:14px;
   background:var(--wo-blatt,#fcfaf9);box-shadow:0 1px 0 #fff inset,0 24px 50px -30px rgba(6,23,41,.45),0 0 0 1px var(--wo-linie,rgba(6,23,41,.14))}

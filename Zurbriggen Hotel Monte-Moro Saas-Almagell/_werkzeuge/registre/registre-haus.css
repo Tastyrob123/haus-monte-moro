@@ -1,6 +1,6 @@
-/* Die Besucherliste · Hotel Monte-Moro, Saas-Almagell: Anschluss an die Oberfläche der Häuser (08.11.2026, Stamm der Häuser mit den Funden der
+/* Besucher · Hotel Monte-Moro, Saas-Almagell: Anschluss an die Oberfläche der Häuser (08.11.2026, Stamm der Häuser mit den Funden der
    Abnahme-Tore 30./31.10.2026). Rahmen, Kopf, Rand, Leiste und Startbild kommen aus /assets/oberflaeche/ (grund.css, rahmen-buehne.css, kleid/montemoro.css).
-   Hier steht nur, was die Besucherliste darin eigen hat: die Kennzahlen im Startbild (Zahl in Fjalla One, darunter das Etikett in DM Mono gesperrt),
+   Hier steht nur, was Besucher darin eigen hat: die Kennzahlen im Startbild (Zahl in Fjalla One, darunter das Etikett in DM Mono gesperrt),
    der Zeitraum, der Bergkamm als Zeichen, der Raum ohne eigene Scrollfläche. Geladen nach dem Kleid. Bewegung nur über transform und opacity (Regel 55). */
 
 /* Raum: die Seite scrollt als Ganzes, nie eine Fläche für sich (UMSTELLUNG.md, Prüfen Punkt 3) */
@@ -57,7 +57,7 @@
 .trichter span,.trichter b{color:var(--tinte)!important;mix-blend-mode:normal!important}
 .trichter em{color:rgba(19,38,58,.66)!important;mix-blend-mode:normal!important}
 
-/* Handy: die Zierzeile «Die Besucherliste · Monte-Moro» bricht um statt abgeschnitten zu enden (am Rechner passt sie in eine Zeile) */
+/* Handy: die Zierzeile «Besucher · Monte-Moro» bricht um statt abgeschnitten zu enden (am Rechner passt sie in eine Zeile) */
 @media (max-width:600px){
   .wo-sb .wo-sb__zier span{white-space:normal;overflow:visible;line-height:1.6}
   .wo-sb .wo-sb__zier i{display:none}

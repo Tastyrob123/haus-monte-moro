@@ -1,4 +1,4 @@
-/* Kurzer Rundgang durch das Schaufenster · Hotel Monte-Moro (08.11.2026; Kopie aus dem Stamm der sieben Werkzeuge). Master Werkzeug-Bau R18, Fehlerbuch 10a:
+/* Kurzer Rundgang durch Website bearbeiten · Hotel Monte-Moro (08.11.2026; Kopie aus dem Stamm der sieben Werkzeuge). Master Werkzeug-Bau R18, Fehlerbuch 10a:
    Robert 16.10.2026: «einmal ganz kurz zeigen, hier kannst du das machen, da das, damit man weiss, wo man gelandet ist». Erklärt was und wozu, nie die Bedienung.
    Kein Start von selbst: beim ersten Öffnen erscheint unten rechts ein Schild «Kurzer Rundgang», fest über der Leiste (Fehlerbuch 10a, 20.10.2026:
    gesetzt beim Erscheinen und bei geänderter Fenstergrösse, nie nach dem Inhalt darunter). Wieder aufrufen: «Kurzer Rundgang» im Rand oder ?rundgang.
@@ -6,7 +6,7 @@
 (function () {
   var Q = new URLSearchParams(location.search), ERZWINGEN = Q.has('rundgang');
   if (window.self !== window.top && !ERZWINGEN) return;
-  var NAME = (window.WO && WO.name('website')) || 'Website pflegen';   /* Name aus der einen Stelle (kleid/montemoro.js), im Satz mit kleinem Artikel: «Das ist das Schaufenster» */
+  var NAME = (window.WO && WO.name('website')) || 'Website pflegen';   /* Name aus der einen Stelle (kleid/montemoro.js), im Satz mit kleinem Artikel: «Das ist Website bearbeiten» */
   var IM_SATZ = NAME.replace(/^(Der|Die|Das) /, function (a) { return a.toLowerCase(); });
   var G = { name: NAME, schritte: [
     { ziel: ['#ws-mitte .wo-sb', '#ws-kopf'], titel: 'Das ist ' + IM_SATZ,

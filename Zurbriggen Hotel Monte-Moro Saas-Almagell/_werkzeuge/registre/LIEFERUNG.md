@@ -3,17 +3,17 @@ tags: [projekt, website]
 status: aktiv
 ---
 
-# Lieferung · Die Besucherliste (Le Registre, Besuche) · Hotel Monte-Moro, Saas-Almagell
+# Lieferung · Besucher (Le Registre, Besuche) · Hotel Monte-Moro, Saas-Almagell
 
 Stand 08.11.2026 (Agent «mm-registre»), lokal, nichts online, nichts verschickt.
 
 **Werkzeug:** http://127.0.0.1:9386/_werkzeuge/registre/ (Server aus dem Hausordner: `python3 _werkzeuge/registre/server.py 9386`; Bilder ohne Tagesgruss: `?gruss=tag`)
 **Anleitung:** http://127.0.0.1:9386/_werkzeuge/registre/anleitung.html (zehn Kapitel, Bilder neu aus dem Werkzeug aufgenommen)
-**Stand-Weg für das Hotelbüro:** http://127.0.0.1:9386/api/registre?tage=30&beispiel=1
+**Stand-Weg für Kontrollpanel:** http://127.0.0.1:9386/api/registre?tage=30&beispiel=1
 
 ## Was steht
 
-- **Aufbau und Funktionen aus dem Stamm** (Besucherliste der Häuser, 28.10.2026 von Robert abgenommen): acht Ansichten (Übersicht; Besuche, Herkunft, Zeit; Seiten, Verlauf, Zur Buchung; So wird gezählt), Zeitraum 7/30/90 Tage, Besuchskarte mit Weg durch die Website, «Als Tabelle sichern», Rundgang, «Zur Werkbank», Startfehler-Tür, Fehlermelder. Rechnung (registre.py / registre.js) unverändert, nur die Hauswerte getauscht.
+- **Aufbau und Funktionen aus dem Stamm** (Besucher der Häuser, 28.10.2026 von Robert abgenommen): acht Ansichten (Übersicht; Besuche, Herkunft, Zeit; Seiten, Verlauf, Zur Buchung; So wird gezählt), Zeitraum 7/30/90 Tage, Besuchskarte mit Weg durch die Website, «Als Tabelle sichern», Rundgang, «Zur Werkbank», Startfehler-Tür, Fehlermelder. Rechnung (registre.py / registre.js) unverändert, nur die Hauswerte getauscht.
 - **Kleid des Hauses:** Rahmen aus `_werkzeuge/oberflaeche/` (Kleid `montemoro`, Bergkamm als Zeichen, `WO.name('besuche')`); eigene Teile in `registre.css`/`registre-haus.css` nur über `--wo-*`: Nacht/Nachtblau, Papier, Lärche als Akzent (erste Balken, Siegel, «Zur Buchung»), Messing nur als Linie; Fjalla One (Titel, Akzent nur auf dem letzten Wort), Instrument Sans, DM Mono (Etiketten, Zahlen). Knöpfe überall `WO.knopf`; Rundgang-Karte und «Zur Werkbank» mit Lärche- bzw. Nacht-Pille und hellem Knauf.
 - **Bühnen** je Ansicht mit Fotos der Website (`/assets/img/<schlüssel>-s/-m.webp`, Alt-Text aus `inhalt/bilder.py`): Übersicht das Haus im Sommer, Besuche die Rezeption mit dem Bergkamm, Herkunft Saas-Almagell im Saastal, Zeit das Dorf am Abend, Seiten der Blick vom Balkon, Verlauf die Gletscher, Zur Buchung ein helles Doppelzimmer, So wird gezählt die Stube aus Holz. Keines ist zugleich Seitenbild.
 - **Seiten der Website** (`python3 registre.py seiten`, Namen aus der Leiste der Website): Startseite, Zimmer, Preise, Saastal, Spa, Röstihüs, Anreise, Impressum und Bildnachweis, Datenschutz; je Seite ihr erstes Foto (Familienfotos ausgenommen).

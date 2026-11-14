@@ -1,4 +1,4 @@
-/* anleitung.css · Anleitung zum Schaufenster des Hotel Monte-Moro (08.11.2026). Kopf dunkel in der Nacht über dem Saastal, Raum hell im Papier (Werkzeuge hell), Werte nur aus dem Kleid. */
+/* anleitung.css · Anleitung zu Website bearbeiten des Hotel Monte-Moro (08.11.2026). Kopf dunkel in der Nacht über dem Saastal, Raum hell im Papier (Werkzeuge hell), Werte nur aus dem Kleid. */
 body.an{margin:0;background:var(--wo-papier);color:var(--wo-tinte);font:16px/1.6 var(--wo-sans)}
 .an-kopf{position:sticky;top:0;z-index:5;background:var(--wo-tapete);border-bottom:1px solid var(--wo-linie-d)}
 .an-kopf__in{max-width:1180px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}

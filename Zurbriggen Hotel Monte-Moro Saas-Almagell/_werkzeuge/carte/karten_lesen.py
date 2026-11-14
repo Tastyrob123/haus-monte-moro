@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Das Kartenbrett · Hotel Monte-Moro, Saas-Almagell: liest die Karten und Preislisten des Hauses aus der Website (08.11.2026, C26 in der Form des Hauses).
+"""Karten & Preislisten · Hotel Monte-Moro, Saas-Almagell: liest die Karten und Preislisten des Hauses aus der Website (08.11.2026, C26 in der Form des Hauses).
 Vorlage: karten_lesen.py des Stamms (dort je Abend eine Menükarte).
 
 Nichts wird abgetippt. website/inhalt/daten.py wird als Text gelesen (ast, nie importiert) und geschrieben nach _daten/quelle/<karte>.json:

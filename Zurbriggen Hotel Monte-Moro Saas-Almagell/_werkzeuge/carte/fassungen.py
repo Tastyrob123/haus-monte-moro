@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Das Kartenbrett: ?v= an jedem eingebundenen Skript und Stilblatt aus dem Inhalt der Datei (M20, nie von Hand).
+"""Karten & Preislisten: ?v= an jedem eingebundenen Skript und Stilblatt aus dem Inhalt der Datei (M20, nie von Hand).
     python3 _werkzeuge/carte/fassungen.py      schreibt index.html, anleitung.html, pruefung.html, satz/blatt.html neu"""
 import hashlib, os, re
 

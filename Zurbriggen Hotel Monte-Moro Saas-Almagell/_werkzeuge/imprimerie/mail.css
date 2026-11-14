@@ -1,4 +1,4 @@
-/* Die Hausdruckerei · Newsletter-Baukasten. Gleiche Form wie die Startseite im Stil von Le Bureau (ms-bureau.css): Raum Marine mit Tapete,
+/* Drucksachen & Feed · Newsletter-Baukasten. Gleiche Form wie die Startseite im Stil von Le Bureau (ms-bureau.css): Raum Marine mit Tapete,
    Kopfleiste als Insel mit Goldkante, links und rechts Papierplatten, in der Mitte die Mail auf der Tapete wie im Posteingang.
    Bausteine aus studio.css: .kn, .ms-kn-gold, .rund, .haken, .ms-chips, .ms-suche, .ms-lnk, Kuhlen für Felder. Bewegung nur transform/opacity. */
 @font-face{font-family:'DS-titel';src:url('haeuser/montemoro/schriften/FjallaOne-400.woff2') format('woff2');font-display:swap}

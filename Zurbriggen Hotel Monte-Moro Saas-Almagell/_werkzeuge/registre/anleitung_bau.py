@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Baut anleitung.html (Anleitung Die Besucherliste · Hotel Monte-Moro, Saas-Almagell) aus den Texten unten. Vorlage: die Anleitung der Besucherliste
+"""Baut anleitung.html (Anleitung Besucher · Hotel Monte-Moro, Saas-Almagell) aus den Texten unten. Vorlage: die Anleitung Besucher
 im Stamm der Häuser (zehn Kapitel in vier Themen), Bild gross mit Klick und Esc, «Gut zu wissen» je Kapitel, im Kleid des Hotel Monte-Moro.
 Bilder: node anleitung_bilder.js (anleitung/k01.jpg …). python3 anleitung_bau.py"""
 import html, os, re

@@ -1,9 +1,9 @@
-/* Die Besucherliste (Le Registre) · Hotel Monte-Moro, Saas-Almagell: Zählung auf der Website (Tasty Studios, 08.11.2026). Quelle dieser Datei; auf der
+/* Besucher (Le Registre) · Hotel Monte-Moro, Saas-Almagell: Zählung auf der Website (Tasty Studios, 08.11.2026). Quelle dieser Datei; auf der
    Website liegt sie als assets/js/messung.js, auf jeder Seite vor </body> als <script src="assets/js/messung.js?v=…" defer></script>, nach anfrage.js.
-   Den Einbau in bau.py (Fuss) macht der Bau der Website (Revier website/, erst auf Roberts Wort); hier nur die Quelle. Vorbild: messung.js der Besucherliste
+   Den Einbau in bau.py (Fuss) macht der Bau der Website (Revier website/, erst auf Roberts Wort); hier nur die Quelle. Vorbild: messung.js Besucher
    im Stamm der Häuser (nur kopiert), Ereignisse aus den Wegen der Website des Monte-Moro.
 
-   Je Seite geht eine Zeile an /api/registre (lokal der Server der Besucherliste, online die Funktion api/registre.py, gleiche Adresse):
+   Je Seite geht eine Zeile an /api/registre (lokal der Server Besucher, online die Funktion api/registre.py, gleiche Adresse):
        r1 <seitenaufruf> <datei> <sprache> <geraet> <sekunden> <ereignisse|-> <herkunft|->
    einmal beim Öffnen (0 Sekunden), bei jedem gezählten Klick und beim Verlassen (Sekunden, in denen die Seite sichtbar war).
    Ohne Cookies und ohne Kennung im Gerät: «seitenaufruf» ist eine Zufallsfolge, die nur in dieser Variablen lebt und mit der Seite endet.

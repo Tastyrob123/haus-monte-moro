@@ -136,7 +136,7 @@
     const { PDFDocument, rgb, cmyk } = PDFLib;
     const pdf = await PDFDocument.create();
     pdf.registerFontkit(fontkit);
-    pdf.setTitle(doc.name); pdf.setAuthor(M.name); pdf.setCreator('Die Hausdruckerei · Hotel Monte-Moro'); pdf.setProducer('Die Hausdruckerei');
+    pdf.setTitle(doc.name); pdf.setAuthor(M.name); pdf.setCreator('Drucksachen & Feed · Hotel Monte-Moro'); pdf.setProducer('Drucksachen & Feed');
     const B = DS.B, R = o.marken ? 10 : 0, f = doc.format;
     const fonts = {}, zeichensatz = {};
     const font = async rolle => {

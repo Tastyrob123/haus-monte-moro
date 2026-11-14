@@ -1,4 +1,4 @@
-/* Anleitung Die Besucherliste · Hotel Monte-Moro: Bild gross mit Klick, Esc schliesst; das Zeichen des Hauses (der Bergkamm aus dem Logo, oberflaeche/kleid/montemoro-zeichen.svg)
+/* Anleitung Besucher · Hotel Monte-Moro: Bild gross mit Klick, Esc schliesst; das Zeichen des Hauses (der Bergkamm aus dem Logo, oberflaeche/kleid/montemoro-zeichen.svg)
    (eigene Datei: online laufen eingebettete Skripte ohne Prüfsumme nicht). */
 (function () {
   var g = document.getElementById('gross'), im = g.querySelector('img');

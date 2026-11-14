@@ -1,4 +1,4 @@
-/* Das Kartenbrett · Hotel Monte-Moro, Saas-Almagell — Bedienung (08.11.2026, Kopie aus dem Stamm der Häuser). Karten und Preislisten des Hauses:
+/* Karten & Preislisten · Hotel Monte-Moro, Saas-Almagell — Bedienung (08.11.2026, Kopie aus dem Stamm der Häuser). Karten und Preislisten des Hauses:
    die Röstihüs-Karte (Röstis, Cordon bleus, Dessert, Raclette), Wein und Apéro, die Preisliste, Zuschläge und Kinder, das Spa im Partnerhotel. Die Karte ist ein Baum aus dem Satz (satz/satz.js, gesetzt von satz_bau.py
    aus den Daten des Hauses, karten_lesen.py); Einträge, Rubriken und Texte erkennt SATZ.art(), die Felder eines Eintrags SATZ.felder(). Zwei Wege «Einfach»
    (Liste und Fenster) und «Fortgeschritten» (direkt in der Karte schreiben), jede Änderung zuerst als Entwurf, Veröffentlichen druckt PDF und prüft
@@ -30,10 +30,10 @@ const fotoKlein = z => `/_werkzeuge/carte/bilder/z/${FOTO[z] || FOTO_STD}.webp`;
 const fotoGross = z => `/_werkzeuge/carte/bilder/g/${FOTO[z] || FOTO_STD}.webp`;
 const ROLLEN = { kueche: 'Küche', service: 'Service', direktion: 'Direktion' };   // wie im Stamm
 /* Namen der Werkzeuge nur aus kleid/montemoro.js (WO_HAUS.namen, eine Stelle); der Ersatz nur, falls das Kleid nicht lädt */
-const NAME = (window.WO && WO.name('karten')) || 'Das Kartenbrett', STUBE = (window.WO && WO.name('zentrale')) || 'Das Hotelbüro', SCHREIBTISCH = (window.WO && WO.name('website')) || 'Das Schaufenster';   // Namen nur aus kleid/montemoro.js
-const klein = n => n.replace(/^(Das|Die|Der) /, a => a.toLowerCase());   // Name mitten im Satz: «arbeitet das Kartenbrett für sich»
+const NAME = (window.WO && WO.name('karten')) || 'Karten & Preislisten', STUBE = (window.WO && WO.name('zentrale')) || 'Kontrollpanel', SCHREIBTISCH = (window.WO && WO.name('website')) || 'Website bearbeiten';   // Namen nur aus kleid/montemoro.js
+const klein = n => n.replace(/^(Das|Die|Der) /, a => a.toLowerCase());   // Name mitten im Satz: «arbeitet Karten & Preislisten für sich»
 /* Die Website und die anderen Werkzeuge des Hauses: die Werkzeuge je auf ihrem Port (WO_HAUS.ports, Zentrale 9381 …), immer 127.0.0.1
-   (Fehlerbuch 10a). Die Website liest das Kartenbrett über seinen eigenen Server (serve.py liefert die Seiten der Website nur lesend aus), lokal
+   (Fehlerbuch 10a). Die Website liest Karten & Preislisten über seinen eigenen Server (serve.py liefert die Seiten der Website nur lesend aus), lokal
    wie online auf derselben Adresse: so ist «Website ansehen» auch erreichbar, wenn der Website-Server nicht läuft. */
 const PORTE = (window.WO_HAUS && WO_HAUS.ports) || { zentrale: 9381, website: 9382, karten: 9383, gaeste: 9384, marke: 9385, besuche: 9386, druck: 9387, werkbank: 9388, website_lokal: 8947 };
 const HAUS = '/';
@@ -50,9 +50,9 @@ let WEBSEITE = 'roestihues.html';
 const webAdresse = z => `${HAUS}${SEITE_DER_KARTE[z] || 'roestihues.html'}`;
 /* Bildzeichen an Gerichten führt die Karte des Hauses nicht */
 const SYMBOLE = [];
-/* Die Website verlinkt die ganze Speisekarte des Hauses (assets/pdf/speisekarte.pdf); die Karten des Kartenbretts haben eigene PDFs */
+/* Die Website verlinkt die ganze Speisekarte des Hauses (assets/pdf/speisekarte.pdf); die Karten Karten & Preislisten haben eigene PDFs */
 const PDF_DER_WEBSITE = {};
-/* Wege der Oberfläche: lokal liegen das Hotelbüro, das Schaufenster und die anderen Werkzeuge je auf ihrem Prüfserver */
+/* Wege der Oberfläche: lokal liegen Kontrollpanel, Website bearbeiten und die anderen Werkzeuge je auf ihrem Prüfserver */
 if (window.WO && WO.haus && WO.haus.wege && location.port) Object.keys(WO.haus.wege).forEach(k => { if (k !== 'karten' && PORT_WERKZEUG[k] && /^\//.test(WO.haus.wege[k])) WO.haus.wege[k] = location.protocol + '//127.0.0.1:' + PORT_WERKZEUG[k] + WO.haus.wege[k]; });
 
 let NEU_KARTE = false, ANSICHT = 'karte';
@@ -486,7 +486,7 @@ function entf(id) {   // Entf: Einträge gehen von der Karte (wie «Ausblenden»
 }
 function abwaehlen() { WAHLID = null; WAHLINFO = null; GST_OFFEN = false; seitenleiste(); const f = $('#vf'); if (f && f.contentWindow) f.contentWindow.postMessage({ carte: 'abwaehlen' }, location.origin); }
 
-/* Seitenleiste «Gestalten» (Stamm: «Schriftarten, Schriftgrösse und Textart ändern … so ein kleines Side-Menü»), Begriffe wie in der Hausdruckerei */
+/* Seitenleiste «Gestalten» (Stamm: «Schriftarten, Schriftgrösse und Textart ändern … so ein kleines Side-Menü»), Begriffe wie in Drucksachen & Feed */
 const SCHRIFTEN = [['titel', 'Fjalla One'], ['lauf', 'Instrument Sans'], ['mono', 'DM Mono']];
 const TEXTART = [['normal', 'Normal'], ['versal', 'Versalien']];   // nie fett, nie kursiv (Kleid des Hauses)
 const AUSR = [['links', 'Links'], ['mitte', 'Mitte'], ['rechts', 'Rechts']];

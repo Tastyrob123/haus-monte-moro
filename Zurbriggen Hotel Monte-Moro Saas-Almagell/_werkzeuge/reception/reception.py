@@ -26,7 +26,7 @@ except ImportError:
 HIER = os.path.dirname(os.path.abspath(__file__))
 WEB = os.path.join(os.path.dirname(os.path.dirname(HIER)), 'website')   # die Website des Hauses (nur gelesen)
 DATEN = os.environ.get('RECEPTION_DATEN') or os.environ.get('REZEPTION_DATEN') or os.path.join(HIER, 'daten')
-def _name(teil='gaeste', standard='Die Rezeption'):
+def _name(teil='gaeste', standard='Anfragen & Chat'):
     """Name eines Werkzeugs aus der einen Stelle (_werkzeuge/oberflaeche/kleid/montemoro.js › namen), nie fest im Code."""
     try:
         s = open(os.path.join(os.path.dirname(HIER), 'oberflaeche', 'kleid', 'montemoro.js'), encoding='utf-8').read()

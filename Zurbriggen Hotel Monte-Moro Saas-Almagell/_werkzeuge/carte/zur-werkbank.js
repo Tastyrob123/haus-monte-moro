@@ -1,4 +1,4 @@
-/* Das Kartenbrett · Hotel Monte-Moro, Saas-Almagell (08.11.2026, Kopie aus dem Stamm der Häuser) (dort Kopie von studio/zur-werkbank.js,
+/* Karten & Preislisten · Hotel Monte-Moro, Saas-Almagell (08.11.2026, Kopie aus dem Stamm der Häuser) (dort Kopie von studio/zur-werkbank.js,
    16.10.2026), Schlüssel des Hauses «montemoro-wb». Die Wurzel des Hauses wird auch aus _werkzeuge/carte/zur-werkbank.js erkannt. */
 /* «Zur Werkbank» (Robert 12.10.2026): ein Knopf unten links auf jeder Seite, die man aus der Werkbank heraus öffnet.
    Eine Datei für alle Seiten, sie bringt Aussehen und Verhalten selbst mit (eigener Schattenbaum, kein Stylesheet der Seite greift hinein).
@@ -6,7 +6,7 @@
    In der Werkbank selbst (werkbank/, werkbank/en/ …) zeigt sie nichts, sondern hängt an jeden Link, der hinausführt, die Herkunft:
    ?wb=<Sprache>.<Abschnitt>. Die Zielseite merkt sich das für die Sitzung (sessionStorage «montemoro-wb»), nimmt den Zusatz wieder aus der Adresse
    und zeigt den Knopf, auch über alle weiteren Klicks. Ohne diese Herkunft erscheint nichts: ein Gast des Hauses sieht den Knopf nie.
-   Eingebettet (Laptop der Werkbank, Vorschau im Schaufenster) erscheint er auch nicht.
+   Eingebettet (Laptop der Werkbank, Vorschau in Website bearbeiten) erscheint er auch nicht.
 
    Verhalten wie die Sprachleiste unten links: weg beim Hinunterscrollen, zurück beim Hochscrollen, nur transform und opacity.
    Auf den Seiten der Website folgt er der Leiste oben (Klasse «weg» an .nav), sonst zählt er selbst (auch in Werkzeugen, die innen scrollen).
@@ -15,7 +15,7 @@
    data-z="…" hebt ihn über Flächen der Seite, die selbst weit oben liegen (Chat der Zimmermappe).
 
    Einbinden: <script src="…/assets/js/zur-werkbank.js" defer></script>   (zur_werkbank.py trägt das überall ein)
-   Auf fremder Adresse (Hausdruckerei): data-fremd am Skript-Tag, die Werkbank-Adresse kommt dann aus dem Link (wbo). */
+   Auf fremder Adresse (Drucksachen & Feed): data-fremd am Skript-Tag, die Werkbank-Adresse kommt dann aus dem Link (wbo). */
 /* Bild noch einmal holen (14.10.2026): Bleibt ein Bild beim ersten Versuch aus (kurzer Aussetzer der Leitung oder des Netzes von Vercel beim
    Umschalten einer Auslieferung), holt die Seite es einmal nach 1,5 s mit einem Zusatz an der Adresse neu, damit der Browser nicht die
    gescheiterte Antwort wiederverwendet. Gilt für jedes <img> der Seite, läuft nur einmal je Bild. */
@@ -37,7 +37,7 @@
   window.addEventListener('load', nachsehen);
 })();
 
-/* Besuche der Website zählt die Besucherliste. */
+/* Besuche der Website zählt Besucher. */
 
 (function () {
   'use strict';
@@ -47,9 +47,9 @@
   var TEXT = { de: 'Zur Werkbank', en: 'To the workbench', fr: 'Vers l’atelier',   /* 17.10.2026: für das Haus heisst die Werkbank so */
                 zh: '前往工作台', ko: '작업대로', ar: 'إلى منضدة العمل' };
   var OHNE_SPRACHE = /^(control|_werkzeuge|studio|mission-control|reception|marke|maison|imprimerie|mails|werkbank\/anleitung)\/|^mappe/;   // gibt es nur deutsch: Sprache der Werkbank gilt
-  var FREMD_ZIEL = /^https:\/\/[a-z0-9-]+-analyse\.tastystudios\.ch$|^https:\/\/drucksachen-studio\.vercel\.app$|^http:\/\/(127\.0\.0\.1|localhost):8963$/;   // Hausdruckerei auf eigener Adresse
+  var FREMD_ZIEL = /^https:\/\/[a-z0-9-]+-analyse\.tastystudios\.ch$|^https:\/\/drucksachen-studio\.vercel\.app$|^http:\/\/(127\.0\.0\.1|localhost):8963$/;   // Drucksachen & Feed auf eigener Adresse
   var HERKUNFT = /^https:\/\/[a-z0-9-]+\.tastystudios\.ch$|^https:\/\/[a-z0-9-]+\.vercel\.app$|^http:\/\/(127\.0\.0\.1|localhost):\d{2,5}$/;   // von wo eine Werkbank herkommen darf
-  var SCHL = 'montemoro-wb';   // Schlüssel des Hauses, gleich in allen Werkzeugen und das Hotelbüro
+  var SCHL = 'montemoro-wb';   // Schlüssel des Hauses, gleich in allen Werkzeugen und Kontrollpanel
 
   var tag = document.currentScript || document.querySelector('script[src*="zur-werkbank.js"]');
   var src = tag && tag.src || '';
@@ -119,7 +119,7 @@
 
   var basis = fremd ? (von.o ? von.o + '/' : (/^\/imprimerie\//.test(location.pathname) ? location.origin + '/' : '')) : (von.o ? von.o + '/' : WURZEL);
   if (!basis) return;
-  /* Demo-Check 21.10.2026: lokal läuft das Kartenbrett auf eigenem Port (9383), die Werkbank auf ihrem Prüfserver (9388, WO_HAUS.ports.werkbank); kam man mit wbo= aus einer Werkbank, geht es dorthin zurück */
+  /* Demo-Check 21.10.2026: lokal läuft Karten & Preislisten auf eigenem Port (9383), die Werkbank auf ihrem Prüfserver (9388, WO_HAUS.ports.werkbank); kam man mit wbo= aus einer Werkbank, geht es dorthin zurück */
   if (!fremd && !von.o && location.port && /\/_werkzeuge\/carte\//.test(location.pathname)) basis = location.protocol + '//127.0.0.1:' + (((window.WO_HAUS || {}).ports || {}).werkbank || 9388) + '/';
 
   /* Sprache: die der Seite, wo es Sprachfassungen gibt; bei den Werkzeugen (nur deutsch) die der Werkbank, aus der man kam */
@@ -159,7 +159,7 @@
     [['position', 'fixed'], ['z-index', String(parseInt(tag && tag.getAttribute('data-z'), 10) || 61)], ['left', 'clamp(14px,2vw,32px)'], ['bottom', 'clamp(14px,2vw,32px)'],
      ['top', 'auto'], ['right', 'auto'], ['width', 'auto'], ['height', 'auto'], ['margin', '0'], ['padding', '0'], ['border', '0'], ['background', 'none'], ['float', 'none'],
      ['visibility', 'visible'], ['filter', 'none'], ['clip-path', 'none'], ['direction', 'ltr'], ['line-height', 'normal'],
-     /* Regeln der Seite, die jedes Kind von body hereinschweben lassen (Hausdruckerei: Animation «auf»), dürfen den Knopf nicht festhalten:
+     /* Regeln der Seite, die jedes Kind von body hereinschweben lassen (Drucksachen & Feed: Animation «auf»), dürfen den Knopf nicht festhalten:
         in Safari überstimmt eine zu Ende gelaufene Animation sonst Deckkraft und Lage */
      ['animation', 'none'], ['translate', 'none'], ['rotate', 'none'], ['scale', 'none'], ['mask', 'none'], ['mix-blend-mode', 'normal'],
      ['max-width', 'none'], ['min-width', '0'], ['max-height', 'none'], ['min-height', '0'], ['overflow', 'visible'], ['box-shadow', 'none'], ['outline', '0'],
@@ -233,7 +233,7 @@
         var o;
         if (c.position === 'fixed' && c.bottom !== 'auto') o = parseFloat(c.bottom) + el.offsetHeight;
         else if (c.position === 'fixed' || c.position === 'sticky') o = r.bottom > H - unten - hoehe ? H - r.top : 0;
-        else {   // Inhalt, der mitscrollt (Eingabefeld der Zimmermappe, erste Tür des Hotelbüros): zählt, solange er gerade in der Zeile des Knopfs steht
+        else {   // Inhalt, der mitscrollt (Eingabefeld der Zimmermappe, erste Tür Kontrollpanel): zählt, solange er gerade in der Zeile des Knopfs steht
           lebend = true;
           o = r.bottom > H - unten - hoehe && r.top < H - unten ? H - r.top : 0;
           if (o > H * 0.4) o = 0;

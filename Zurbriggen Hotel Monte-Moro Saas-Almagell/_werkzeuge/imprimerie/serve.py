@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Die Hausdruckerei · Hotel Monte-Moro, Saas-Almagell, eigener Prüfserver:  python3 serve.py [port]   (Standard 9387) → http://127.0.0.1:9387/_werkzeuge/imprimerie/
-Bildet die Wege des Hauses nach (Vorlage: Prüfserver der Hausdruckerei des Stammhauses), damit Die Hausdruckerei hier genau so läuft wie unter /_werkzeuge/imprimerie/
+"""Drucksachen & Feed · Hotel Monte-Moro, Saas-Almagell, eigener Prüfserver:  python3 serve.py [port]   (Standard 9387) → http://127.0.0.1:9387/_werkzeuge/imprimerie/
+Bildet die Wege des Hauses nach (Vorlage: Prüfserver Drucksachen & Feed des Stammhauses), damit Drucksachen & Feed hier genau so läuft wie unter /_werkzeuge/imprimerie/
 und online (/werkzeuge/imprimerie/): das Markenbuch liegt daneben unter /_werkzeuge/livre/, die Fotos der Website unter /assets/img/, das Oberflächen-Paket unter
 /assets/oberflaeche/ (_werkzeuge/oberflaeche/, Chat «montemoro-maison»), Schriften und Zeichen der Website unter /assets/schrift/ und /assets/zeichen/. Alles nur lesend, nur diese Wege.
 
@@ -327,5 +327,5 @@ class H(SimpleHTTPRequestHandler):
 
 if __name__ == '__main__':
     port = int(sys.argv[1]) if len(sys.argv) > 1 else 9387
-    print(f'Die Hausdruckerei · Hotel Monte-Moro, Saas-Almagell: http://127.0.0.1:{port}{WEG}  (KI: {"echt" if KI else "Probe, ohne Kosten"})')
+    print(f'Drucksachen & Feed · Hotel Monte-Moro, Saas-Almagell: http://127.0.0.1:{port}{WEG}  (KI: {"echt" if KI else "Probe, ohne Kosten"})')
     ThreadingHTTPServer(('127.0.0.1', port), H).serve_forever()

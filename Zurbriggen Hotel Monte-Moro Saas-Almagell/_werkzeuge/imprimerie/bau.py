@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Die Hausdruckerei · Hotel Monte-Moro, Saas-Almagell: legt die Marke des Hauses für die Druckerei an (nichts abgetippt, alles aus dem Projekt gelesen).
+"""Drucksachen & Feed · Hotel Monte-Moro, Saas-Almagell: legt die Marke des Hauses für die Druckerei an (nichts abgetippt, alles aus dem Projekt gelesen).
    python3 bau.py   → haeuser/montemoro/ (marke.json, schriften, tapete, bilder, mini, kopf, mail, motive.json, druck, druck.json) + api/_daten/montemoro.json
 Quellen (nur gelesen):
   Hauswerte   website/inhalt/daten.py (HAUS, ROESTI_SATZ …), als Daten gelesen (ast), nie abgetippt.

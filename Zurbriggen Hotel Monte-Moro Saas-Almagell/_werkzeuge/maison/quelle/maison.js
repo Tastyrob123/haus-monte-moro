@@ -1,4 +1,4 @@
-/* Das Hotelbüro · Hotel Monte-Moro, Saas-Almagell (mm-maison 08.11.2026), Kopie der abgenommenen Zentrale des Stamms. Quelle für bau.py, nicht die Ausgabe. Vorlage: La Maison der Häuser.
+/* Kontrollpanel · Hotel Monte-Moro, Saas-Almagell (mm-maison 08.11.2026), Kopie der abgenommenen Zentrale des Stamms. Quelle für bau.py, nicht die Ausgabe. Vorlage: La Maison der Häuser.
    Gruss, Datum, Empfang mit fünf Fenstern (M23), Auftritte, Leiste und der Stand je Werkzeug.
    Stand nur aus den Werkzeugen selbst (nichts geschätzt): Wege als Daten in der Seite (#maison-wege); ein Weg darf eine Liste sein
    (antwortet der erste nicht, gilt der nächste). Werte gehen nur als Zahl in die Seite. Antwortet ein Werkzeug nicht: Satz ohne Zahl. */
@@ -76,7 +76,7 @@
   if (tafel) tafel.addEventListener('pointerleave', function (e) { if (e.pointerType !== 'touch') zeige('ruhe'); });
   Z.forEach(function (z, i) {
     z.addEventListener('pointerenter', function (e) { if (e.pointerType !== 'touch') zeige(i); });
-    if (tafel && !tafel.contains(z)) z.addEventListener('pointerleave', function (e) { if (e.pointerType !== 'touch') zeige('ruhe'); });   /* Besucherliste in der Zahlenzeile liegt ausserhalb der Tafel */
+    if (tafel && !tafel.contains(z)) z.addEventListener('pointerleave', function (e) { if (e.pointerType !== 'touch') zeige('ruhe'); });   /* Besucher in der Zahlenzeile liegt ausserhalb der Tafel */
     z.addEventListener('focus', function () { zeige(i); });
     z.addEventListener('blur', function () { setTimeout(function () { if (!tafel.contains(document.activeElement)) zeige('ruhe'); }, 0); });
   });
@@ -198,12 +198,12 @@
   /* L’Imprimerie: Liste der Vorlagen [{art, zahl}] (M17) */
   hole('imprimerie').then(function (l) {
     var liste = Array.isArray(l) ? l : Array.isArray(l.vorlagen) ? l.vorlagen : null; if (!liste || !liste.length) throw new Error('leer');
-    var z = 0, arten = {}, gruppiert = false; liste.forEach(function (x) { z += ganz(x && x.zahl) || 1; var g = x && (x.gruppe || x.art); if (g) arten[String(g)] = 1; if (x && x.gruppe) gruppiert = true; });   /* Arten nach «gruppe» (Hausdruckerei, Stamm 30.10.2026), sonst nach «art» */
+    var z = 0, arten = {}, gruppiert = false; liste.forEach(function (x) { z += ganz(x && x.zahl) || 1; var g = x && (x.gruppe || x.art); if (g) arten[String(g)] = 1; if (x && x.gruppe) gruppiert = true; });   /* Arten nach «gruppe» (Drucksachen & Feed, Stamm 30.10.2026), sonst nach «art» */
     var a = Object.keys(arten).length;
     var text = function (n) { return z + '\u00a0Vorlagen' + (n ? ' in ' + n + (n === 1 ? '\u00a0Art' : '\u00a0Arten') : ''); };
     setze('imprimerie-kurz', text(a));
-    /* 30.10.2026 (Tor, Oberchef): die Zahl der Arten wie in der Ansicht der Hausdruckerei. Sie legt kleine Arten zu Gruppen zusammen (GRUPPE in start.js);
-       das Hotelbüro liest Arten und Gruppen dort mit, damit die Zahl nie von der Hausdruckerei abweicht. */
+    /* 30.10.2026 (Tor, Oberchef): die Zahl der Arten wie in der Ansicht Drucksachen & Feed. Sie legt kleine Arten zu Gruppen zusammen (GRUPPE in start.js);
+       Kontrollpanel liest Arten und Gruppen dort mit, damit die Zahl nie von Drucksachen & Feed abweicht. */
     var weg = [].concat(WEGE.imprimerie || [])[0] || '';
     var quelle = weg.replace(/haeuser\/.*$/, 'start.js');
     if (gruppiert || !quelle || quelle === weg) return;   /* trägt die Liste schon «gruppe», gilt sie allein */
@@ -250,9 +250,9 @@
     if (m.beispiel) { var kb = $('.rw-kopf__bsp'); if (kb) kb.hidden = false; }   /* «Beispiel» leise in der Datumszeile des Kopfs, nie mitten in den Zahlen (29.10.2026) */
     setze('registre-kurz', m.leer || !bs ? 'Noch keine Besuche gezählt' : n(bs) + (bs === 1 ? ' Besuch' : ' Besuche') + ' in ' + n(ganz(m.tage)) + ' Tagen');
     zahl('reg-besuche', bs ? n(bs) : '–'); zahl('reg-seiten', ganz(u.seiten) ? n(u.seiten) : '–'); zahl('reg-laender', ganz(u.laender) ? n(u.laender) : '–');
-    /* Der Weg zur Buchung (Weg des Gastes): Besuche → Zimmer oder Preise angesehen → Buchen oder Anfrage geöffnet → im Haus. Rechnung und Namen wie in der Besucherliste
+    /* Der Weg zur Buchung (Weg des Gastes): Besuche → Zimmer oder Preise angesehen → Buchen oder Anfrage geöffnet → im Haus. Rechnung und Namen wie in Besucher
        des Hauses (registre.js trichter, Fehlerbuch 10a): abbruch.von = erste Stufe, davon ohne Abbruch = zweite; booking.zahl = direkt gebucht */
-    /* Monte-Moro, wie die Besucherliste (registre.js trichter()): Stufe 2 = Aufrufe der Seiten aus #maison-stufe (Zimmer, Preise), höchstens die Besuche;
+    /* Monte-Moro, wie Besucher (registre.js trichter()): Stufe 2 = Aufrufe der Seiten aus #maison-stufe (Zimmer, Preise), höchstens die Besuche;
        Stufe 3 = zur Buchung (Buchen oder Anfrage geöffnet, summe.buchung, höchstens Stufe 2); Anteil je Stufe an der davor, nie über 100 % */
     var stufe = (function () { try { return [].concat(JSON.parse($('#maison-stufe').textContent)); } catch (e) { return ['zimmer.html', 'preise.html']; } })();
     var auf = (m.seiten || []).filter(function (x) { return x && stufe.indexOf(x.s) >= 0; }).reduce(function (a, x) { return a + ganz(x.n); }, 0), fen = Math.min(bs, auf), wei = Math.min(fen, ganz(u.buchung)), bk = 0;

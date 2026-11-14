@@ -1,6 +1,6 @@
-/* Die Hausdruckerei · Hotel Monte-Moro, Saas-Almagell: Kopie von _werkzeuge/maison/zur-werkbank.js (Baustein von La Maison), geschrieben von bau.py.
+/* Drucksachen & Feed · Hotel Monte-Moro, Saas-Almagell: Kopie von _werkzeuge/maison/zur-werkbank.js (Baustein von La Maison), geschrieben von bau.py.
    Änderungen: die Wurzel des Hauses wird auch aus _werkzeuge/imprimerie/ und werkzeuge/imprimerie/ erkannt (Master F78); der Prüfserver :9387 gilt als eigene Adresse. */
-/* «Zur Werkbank» (R19) · Die Hausdruckerei des Monte-Moro: Kopie des Bausteins der Häuser, Schlüssel des Hauses «montemoro-wb». Gebaut von bau.py. */
+/* «Zur Werkbank» (R19) · Drucksachen & Feed des Monte-Moro: Kopie des Bausteins der Häuser, Schlüssel des Hauses «montemoro-wb». Gebaut von bau.py. */
 /* «Zur Werkbank» (Robert 12.10.2026): ein Knopf unten links auf jeder Seite, die man aus der Werkbank heraus öffnet.
    Eine Datei für alle Seiten, sie bringt Aussehen und Verhalten selbst mit (eigener Schattenbaum, kein Stylesheet der Seite greift hinein).
 
@@ -16,7 +16,7 @@
    data-z="…" hebt ihn über Flächen der Seite, die selbst weit oben liegen (Chat der Zimmermappe).
 
    Einbinden: <script src="…/assets/js/zur-werkbank.js" defer></script>   (zur_werkbank.py trägt das überall ein)
-   Auf fremder Adresse (Die Hausdruckerei): data-fremd am Skript-Tag, die Werkbank-Adresse kommt dann aus dem Link (wbo). */
+   Auf fremder Adresse (Drucksachen & Feed): data-fremd am Skript-Tag, die Werkbank-Adresse kommt dann aus dem Link (wbo). */
 /* Bild noch einmal holen (14.10.2026): Bleibt ein Bild beim ersten Versuch aus (kurzer Aussetzer der Leitung oder des Netzes von Vercel beim
    Umschalten einer Auslieferung), holt die Seite es einmal nach 1,5 s mit einem Zusatz an der Adresse neu, damit der Browser nicht die
    gescheiterte Antwort wiederverwendet. Gilt für jedes <img> der Seite, läuft nur einmal je Bild. */
@@ -46,7 +46,7 @@
   var SPRACHEN = ['de', 'en', 'fr', 'zh', 'ko', 'ar'];
   var TEXT = { de: 'Zur Werkbank', en: 'To the workbench', fr: 'Vers l’atelier', zh: '前往工作台', ko: '작업대로', ar: 'إلى منضدة العمل' };
   var OHNE_SPRACHE = /^(control|_werkzeuge|studio|mission-control|reception|marke|maison|imprimerie|mails|werkbank\/anleitung)\/|^mappe/;   // gibt es nur deutsch: Sprache der Werkbank gilt
-  var FREMD_ZIEL = /^https:\/\/[a-z0-9-]+-analyse\.tastystudios\.ch$|^https:\/\/drucksachen-studio\.vercel\.app$|^http:\/\/(127\.0\.0\.1|localhost):(8963|9387)$/;   // Die Hausdruckerei auf eigener Adresse
+  var FREMD_ZIEL = /^https:\/\/[a-z0-9-]+-analyse\.tastystudios\.ch$|^https:\/\/drucksachen-studio\.vercel\.app$|^http:\/\/(127\.0\.0\.1|localhost):(8963|9387)$/;   // Drucksachen & Feed auf eigener Adresse
   var HERKUNFT = /^https:\/\/[a-z0-9-]+\.tastystudios\.ch$|^https:\/\/[a-z0-9-]+\.vercel\.app$|^http:\/\/(127\.0\.0\.1|localhost):\d{2,5}$/;   // von wo eine Werkbank herkommen darf
   var SCHL = 'montemoro-wb';
 
@@ -156,7 +156,7 @@
     [['position', 'fixed'], ['z-index', String(parseInt(tag && tag.getAttribute('data-z'), 10) || 61)], ['left', 'clamp(14px,2vw,32px)'], ['bottom', 'clamp(14px,2vw,32px)'],
      ['top', 'auto'], ['right', 'auto'], ['width', 'auto'], ['height', 'auto'], ['margin', '0'], ['padding', '0'], ['border', '0'], ['background', 'none'], ['float', 'none'],
      ['visibility', 'visible'], ['filter', 'none'], ['clip-path', 'none'], ['direction', 'ltr'], ['line-height', 'normal'],
-     /* Regeln der Seite, die jedes Kind von body hereinschweben lassen (Die Hausdruckerei: Animation «auf»), dürfen den Knopf nicht festhalten:
+     /* Regeln der Seite, die jedes Kind von body hereinschweben lassen (Drucksachen & Feed: Animation «auf»), dürfen den Knopf nicht festhalten:
         in Safari überstimmt eine zu Ende gelaufene Animation sonst Deckkraft und Lage */
      ['animation', 'none'], ['translate', 'none'], ['rotate', 'none'], ['scale', 'none'], ['mask', 'none'], ['mix-blend-mode', 'normal'],
      ['max-width', 'none'], ['min-width', '0'], ['max-height', 'none'], ['min-height', '0'], ['overflow', 'visible'], ['box-shadow', 'none'], ['outline', '0'],

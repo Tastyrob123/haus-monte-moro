@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Das Kartenbrett · Hotel Monte-Moro, Saas-Almagell: liest die Karten und Preislisten des Hauses einmal als Daten ein (08.11.2026, C17).
+"""Karten & Preislisten · Hotel Monte-Moro, Saas-Almagell: liest die Karten und Preislisten des Hauses einmal als Daten ein (08.11.2026, C17).
 Kopie von einlesen.py des Stamms.
 
 Nichts wird abgetippt. karten_lesen.py liest die Karten aus der Website (_daten/quelle/<karte>.json, gegen daten.py, die Speisekarte und die gebaute
@@ -23,7 +23,7 @@ QD = os.path.join(HIER, '_daten', 'quelle')
 DATEN = os.environ.get('CARTE_DATEN') or os.path.join(HIER, '_daten')
 sys.path.insert(0, HIER)
 
-# Karten, die das Kartenbrett pflegt: Kennung = Satz satz/u-<kennung>.html = Name der PDF (karten_lesen.py); Reihenfolge wie im Rand
+# Karten, die Karten & Preislisten pflegt: Kennung = Satz satz/u-<kennung>.html = Name der PDF (karten_lesen.py); Reihenfolge wie im Rand
 REIHE = ['roestihues', 'wein-apero', 'preisliste', 'zuschlaege', 'spa']
 KARTEN = {}
 for _z in REIHE + sorted(f[:-5] for f in os.listdir(QD) if f.endswith('.json') and f[:-5] not in REIHE + ['abend', 'pruefung']):

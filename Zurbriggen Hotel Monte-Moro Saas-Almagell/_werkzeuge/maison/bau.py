@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Das Hotelbüro (Zentrale, Arbeitsname La Maison) des Hotel Monte-Moro mit Restaurant Röstihüs, Saas-Almagell (mm-maison, 08.11.2026).
+"""Kontrollpanel (Zentrale, Arbeitsname La Maison) des Hotel Monte-Moro mit Restaurant Röstihüs, Saas-Almagell (mm-maison, 08.11.2026).
 Kopie der abgenommenen Zentrale des Stamms der Häuser (28.–30.10.2026, umgekleidet 31.10.2026): Funktion, Bedienung und Technik gleich
 (Master Werkzeug-Bau 4.1, M01 bis M27, R03, R04, R18, R19); Kleid und Inhalt aus diesem Haus (Nacht, Lärche, Messing, Papier; Fjalla One, Instrument Sans, DM Mono;
 Bergkamm und Logo aus dem Markenbuch).
@@ -10,7 +10,7 @@ Bergkamm und Logo aus dem Markenbuch).
   Bildschirme der Werkzeuge neu: bash _werkzeuge/maison/_bau/aufnahmen.sh (Stücke, Bildschirme, Bau in einem Lauf)
 
 Empfang: fünf hohe Fenster über den ganzen Schirm, je Werkzeug ein Foto des Hauses (das Haus von der Strasse, das Raclettestübli, die Gondel vor dem
-Röstihüs, der Empfang, die Rezeption mit dem Bergkamm), darüber in der Mitte das Logo, «Das Hotelbüro», Gruss, Datum und die Zahlenzeile der Besucherliste.
+Röstihüs, der Empfang, die Rezeption mit dem Bergkamm), darüber in der Mitte das Logo, «Kontrollpanel», Gruss, Datum und die Zahlenzeile Besucher.
 Darunter je Werkzeug ein Saal mit echten Bildschirmen und der Tafel «So geht’s». Was ein Werkzeug liefert (Bildschirm, Knopf-Namen), nimmt der Bau erst,
 wenn es im Revier des Werkzeugs liegt (_werkzeuge/<werkzeug>/index.html) und sein Bildschirm unter roh/ liegt (aufgenommen mit schirme.js).
 Hauswerte (Name, Ort, Telefon, Satz, Fotos) nur aus der Website gelesen (website/inhalt/daten.py HAUS, website/inhalt/bilder.py BILDER), nie abgetippt."""
@@ -28,7 +28,7 @@ try:
     GERAET_J = json.load(open(os.path.join(WEB, '_werkbank', '_werkbank', 'geraete', 'laptop.json'), encoding='utf-8'))
 except (OSError, ValueError):
     GERAET_J = {'groesse': [2000, 1673], 'schirm': [0.097242, 0.020296, 0.805516, 0.623256]}
-PORT = 9381                                             # Prüfserver des Hotelbüros (server.py)
+PORT = 9381                                             # Prüfserver Kontrollpanel (server.py)
 PF = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>'
 
 
@@ -194,7 +194,7 @@ SCHIRME = {'bureau': ['bureau', 'bureau-2'], 'carte': ['carte'], 'imprimerie': [
 
 
 # Empfang wie in der Zentrale des Stamms (Robert 29.10.2026): fünf hohe Fenster, je Werkzeug ein Foto des Hauses über die ganze Höhe,
-# Die Besucherliste als Zahlenzeile unter dem Titel. Je Foto: Lage am Desktop (hohe Säule) und am Handy (flaches Band), so gewählt, dass das Motiv steht:
+# Besucher als Zahlenzeile unter dem Titel. Je Foto: Lage am Desktop (hohe Säule) und am Handy (flaches Band), so gewählt, dass das Motiv steht:
 # das Haus von der Strasse (Website = Schaufenster), das Raclettestübli des Röstihüs (Karte), die Gondel vor dem Röstihüs mit dem Logo auf dem Dach (Drucksachen),
 # der Empfang mit der Gastgeberin (Rezeption), die Rezeption mit dem grossen Bergkamm an der Wand (Markenbuch). Nur hohe Quellen (das Fenster schneidet 0,36 der Höhe).
 FENSTER = {'bureau': ('haus-ansicht', '46% 50%', '50% 40%'), 'carte': ('stuebli', '22% 50%', '50% 55%'), 'imprimerie': ('gondel', '30% 50%', '50% 45%'),
@@ -332,7 +332,7 @@ WM = re.sub(r'^\s*<symbol[^>]*>|</symbol>\s*$', '', re.sub(r'\s*<use[^>]*/>\s*$'
 _wmvb = re.search(r'<symbol[^>]*viewBox="([^"]+)"', open(os.path.join(WZ, 'oberflaeche', 'kleid', 'montemoro-marke.svg'), encoding='utf-8').read())
 if _wmvb:
     WM_VB = _wmvb.group(1)
-# Stufen des Wegs zur Buchung im Saal der Besucherliste: Namen wie in der Besucherliste des Hauses (Fehlerbuch 10a), sobald sie vorliegt
+# Stufen des Wegs zur Buchung im Saal Besucher: Namen wie in Besucher des Hauses (Fehlerbuch 10a), sobald sie vorliegt
 # (registre/stufen.json → maison); bis dahin die Wege der Website (Zimmer und Preise ansehen → buchen oder anfragen → im Haus).
 try:
     _st = json.load(open(os.path.join(WZ, 'registre', 'stufen.json'), encoding='utf-8'))
@@ -351,7 +351,7 @@ def lamm(c):
 
 
 def schirm(n, k, leiste, alt, i=0, sizes='(max-width:1000px) 92vw, 60vw', cls=''):
-    leiste = leiste.removeprefix(f'{ZENTRALE} · ')   # Abnahme-Tor 30.10.2026 (K2): man steht schon im Hotelbüro; Werkzeug · Bereich passt bei jeder Breite ganz in die Leiste
+    leiste = leiste.removeprefix(f'{ZENTRALE} · ')   # Abnahme-Tor 30.10.2026 (K2): man steht schon in Kontrollpanel; Werkzeug · Bereich passt bei jeder Breite ganz in die Leiste
     name = 'schirm-' + n
     if name not in BILDER:
         if Bau.online:
@@ -392,7 +392,7 @@ def stuecke(k):
         vor = 'karte-' if k == 'carte' else 'druck-'
         n = sorted(b for b in BILDER if b.startswith(vor))[:3]
         art = ['m-stueck--blatt', 'm-stueck--quer', 'm-stueck--blatt']
-        try:   # Namen der Stücke aus der Lieferung des Werkzeugs (roh/karten/namen.json aus /api/status des Kartenbretts, roh/druck/namen.json), nichts erfunden
+        try:   # Namen der Stücke aus der Lieferung des Werkzeugs (roh/karten/namen.json aus /api/status Karten & Preislisten, roh/druck/namen.json), nichts erfunden
             alt = json.load(open(os.path.join(ROH, 'karten' if k == 'carte' else 'druck', 'namen.json'), encoding='utf-8'))
         except (OSError, ValueError):
             alt = {}
@@ -591,8 +591,8 @@ def seite(online, v):
                 f'<div class="m-f5__t" id="f5-{k}"><span class="m-f5__w">{e(ROLLE_K[k])}</span><b>{e(W[k]["name"])}</b><small data-stand="{k}-kurz">{e(KURZ[k])}</small>'
                 f'<i class="m-f5__p" aria-hidden="true">{PF}</i></div></li>')   # Schrift als eigener Block (div): Etikett, Name und Stand sind Zeilen einer Tafel, kein Fliesstext des li (Tor WebKit 1000/1280)
 
-    # Empfang wie in der Zentrale des Stamms: die Fenster, darüber in der Mitte der Kopf (Logo · Haus · Ort, «Das Hotelbüro» gross, Gruss, Datum) und die
-    # Zahlenzeile der Besucherliste (Taste 6). Keine «x», getrennt mit «·»; «Beispiel» leise in der Datumszeile.
+    # Empfang wie in der Zentrale des Stamms: die Fenster, darüber in der Mitte der Kopf (Logo · Haus · Ort, «Kontrollpanel» gross, Gruss, Datum) und die
+    # Zahlenzeile Besucher (Taste 6). Keine «x», getrennt mit «·»; «Beispiel» leise in der Datumszeile.
     reg = auf['registre']
     zeile = (f'<div class="m-f5__zeile"><span>Heute</span><b data-stand="registre-heute">–</b>Besuche{pkt}<b data-stand="registre-buchung">–</b>zur Buchung{pkt}'
              + (f'<span class="hz-z"><a href="{e(reg)}" data-taste="6">{e(W["registre"]["name"])} öffnen{PF}</a></span>' if reg else f'<span class="hz-z"><a href="#registre" data-taste="6">{e(W["registre"]["name"])}{PF}</a></span>') + '</div>')   # Kennzahlen als Zeile (div): kein Lesetext
@@ -804,3 +804,6 @@ def baue():
 
 if __name__ == '__main__':
     baue()
+    # 14.11.2026: Säle wie La Maison des Rivage, kein Laptop/Gerät, nichts läuft mit (Robert: «ein PC, der mitgeht … niemals die Aufgabe»)
+    import subprocess
+    subprocess.run(['python3', os.path.expanduser('~/Desktop/Website-Projekte/_Werkzeuge/kontrollpanel_rivage.py'), HIER, os.path.join(os.path.dirname(os.path.dirname(HIER)), 'website/_werkbank/werkbank/img')])

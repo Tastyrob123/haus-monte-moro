@@ -9,7 +9,7 @@ const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const PF = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg>';
-// Schliessen ohne «×» (Robert 30.10.2026: kein X auf der Seite): der Zurück-Pfeil wie «Verwerfen» im Kartenbrett
+// Schliessen ohne «×» (Robert 30.10.2026: kein X auf der Seite): der Zurück-Pfeil wie «Verwerfen» in Karten & Preislisten
 const ZU = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 9.67 2.67 6.33 6 3M2.67 6.33h7.33a3.33 3.33 0 0 1 0 6.67h-2"/></svg>';
 const ZEICHEN = '<img class="zeichen-kamm" src="zeichen-haus.svg" width="3483" height="696" alt="">';   // der Bergkamm aus dem Logo (kleid/montemoro-zeichen.svg)
 /* Briefkopf = das Logo des Hauses «Monte Moro / Saas-Almagell» (wie kleid/montemoro-marke.svg), in Logo-Blau, ein einziges Logo je Brief, kein Siegel unten */

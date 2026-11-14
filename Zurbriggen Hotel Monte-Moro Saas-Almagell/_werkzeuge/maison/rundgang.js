@@ -1,4 +1,4 @@
-/* Rundgang (R18, M11): Kopie des Werkzeugs der Häuser, Gang für Das Hotelbüro von Hotel Monte-Moro; gebaut von _werkzeuge/maison/bau.py */
+/* Rundgang (R18, M11): Kopie des Werkzeugs der Häuser, Gang für Kontrollpanel von Hotel Monte-Moro; gebaut von _werkzeuge/maison/bau.py */
 /* Kurzer Rundgang beim ersten Öffnen eines Werkzeugs (Robert 16.10.2026: «einmal ganz kurz zeigen, hier kannst du das machen,
    da das, damit man weiss, wo man gelandet ist»). Ein Lichtkegel liegt auf dem echten Bedienelement, daneben eine Karte mit
    zwei, drei Sätzen. Je Werkzeug und Browser einmal; wieder aufrufen über «Kurzer Rundgang» im Rand oder ?rundgang.
@@ -12,11 +12,11 @@
 
   /* ziel: Liste von Wahlorten, der erste sichtbare gilt (Handy hat andere Flächen). */
   var GAENGE = {
-    maison: { name: 'Das Hotelbüro', schritte: [
-      { ziel: ['.m-f5__titel', '#oben'], oben: true, titel: 'Das ist das Hotelbüro',
+    maison: { name: 'Kontrollpanel', schritte: [
+      { ziel: ['.m-f5__titel', '#oben'], oben: true, titel: 'Das ist Kontrollpanel',
         text: 'Der Eingang zu allen Werkzeugen des Hauses. Von hier aus pflegen Sie die Website, die Karte des Röstihüs und die Preislisten, Aushänge, den Chat und die Marke selbst.' },
       { ziel: ['.hz-z:first-child a', '.hz-tafel'], titel: 'Ein Fenster je Werkzeug',
-        text: 'Das Schaufenster, das Kartenbrett, die Hausdruckerei, die Rezeption, das Markenbuch, die Besucherliste. Darunter steht, was dort gerade ansteht.' },
+        text: 'Website bearbeiten, Karten & Preislisten, Drucksachen & Feed, die Rezeption, das Markenbuch, Besucher. Darunter steht, was dort gerade ansteht.' },
       { ziel: ['.m-f5__zeile'], titel: 'Heute auf der Website',
         text: 'Wer heute auf der Website war und wer von dort weiter zur Buchung oder zur Anfrage ging. Ein Klick öffnet die ganze Liste.' },
       { ziel: ['.m-insel', '.m-oben'], oben: true, titel: 'Immer erreichbar',

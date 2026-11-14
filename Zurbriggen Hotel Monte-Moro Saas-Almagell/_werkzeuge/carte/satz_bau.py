@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Das Kartenbrett · Hotel Monte-Moro, Saas-Almagell — setzt die Karten und Preislisten des Hauses neu, im Satz des Hauses (08.11.2026, Vorlage:
+"""Karten & Preislisten · Hotel Monte-Moro, Saas-Almagell — setzt die Karten und Preislisten des Hauses neu, im Satz des Hauses (08.11.2026, Vorlage:
 satz_bau.py des Stamms).
 
 Grundlage ist die Machart des Hauses (Fehlerbuch 10a: das Original ist die Grundlage, nie schwächer): die Karte des Röstihüs auf der Website

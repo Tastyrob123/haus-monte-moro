@@ -1,4 +1,4 @@
-/* bureau.css · Das Schaufenster im Rahmen des Hotel Monte-Moro (08.11.2026; Vorlage: der Stamm der sieben Werkzeuge). Kein eigenes Kleid: alles Sichtbare kommt aus dem Paket
+/* bureau.css · Website bearbeiten im Rahmen des Hotel Monte-Moro (08.11.2026; Vorlage: der Stamm der sieben Werkzeuge). Kein eigenes Kleid: alles Sichtbare kommt aus dem Paket
    (/assets/oberflaeche/grund.css, rahmen-buehne.css, kleid/montemoro.css). Kein fester Farbwert: jeder Ton ist aus den Werten des Kleids gemischt
    (Fehlerbuch 10a: keine Farbe aus der Vorlage eines anderen Hauses). Hier stehen nur
    1. die Brücke: die Werte, mit denen die Arbeitsfläche des Stamm-Werkzeugs zeichnet (welt.css: --blatt, --tinte, Platte, Kuhle, Knöpfe …),
@@ -187,7 +187,7 @@ textarea.ws-langfeld{display:block;width:100%;box-sizing:border-box;resize:none;
 .ws-bloecke > button.ws-link{padding-inline:8px;margin-inline:-8px;max-width:calc(100% + 16px)}
 /* Messlauf 08.11.2026 (Kriterium 35): «inkl.» 1,0 px zu tief; Werte nur aus Kleinbuchstaben auf die x-Höhe zugeschnitten (festigkeit.js › klein) */
 .ws-zl__wert[data-klein="ja"]{text-box:trim-both ex alphabetic}
-/* Messlauf 08.11.2026 (Kriterium 15): zum Kartenbrett führt der Weg im Kopf (Werkzeuge des Hauses); die Gruppe «Karten» im Rand wäre ein zweiter Weg zum selben Ziel */
+/* Messlauf 08.11.2026 (Kriterium 15): zu Karten & Preislisten führt der Weg im Kopf (Werkzeuge des Hauses); die Gruppe «Karten» im Rand wäre ein zweiter Weg zum selben Ziel */
 #ws-rand .wo-rand__g:has(a.wo-re[href*="/_werkzeuge/carte/"]){display:none}
 
 /* Punkt 17 (Robert 09.11.2026): keine Schrift unter 13 px. Die Dateien des Stamms (welt.css, website.css) bleiben unverändert; hier im Haus gehoben, in jedem Zustand. */

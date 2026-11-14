@@ -1,4 +1,4 @@
-/* festigkeit.js · Das Schaufenster des Hotel Monte-Moro (08.11.2026): kleine Nachbesserungen am Werkzeug des Stamms (website.js), ohne dessen Datei zu ändern.
+/* festigkeit.js · Website bearbeiten des Hotel Monte-Moro (08.11.2026): kleine Nachbesserungen am Werkzeug des Stamms (website.js), ohne dessen Datei zu ändern.
    Aus der früheren Ansicht des Stamm-Rahmens übernommen (Abnahme-Tor 2, Messlauf 30.10.2026), Wortlaut auf das Hotel gestellt. Nach website.js laden. */
 (function () {
   /* Kacheltitel und -unterschriften der Übersicht ohne einzelnes Wort in der letzten Zeile (Kriterium 7): die letzten zwei Wörter bleiben zusammen
@@ -111,7 +111,7 @@
   function klein() {
     document.querySelectorAll('.ws-zl__wert:not([data-klein])').forEach(function (e) { e.setAttribute('data-klein', /^[a-zäöüß.,:;\s–-]+$/.test(e.textContent.trim()) ? 'ja' : 'nein'); });
   }
-  /* Zum Kartenbrett führt der Weg im Kopf (Werkzeuge des Hauses); die Gruppe «Karten», die der Stamm in den Rand setzt, wäre ein zweiter Weg zum selben Ziel (Kriterium 15) */
+  /* Zu Karten & Preislisten führt der Weg im Kopf (Werkzeuge des Hauses); die Gruppe «Karten», die der Stamm in den Rand setzt, wäre ein zweiter Weg zum selben Ziel (Kriterium 15) */
   function einWeg() {
     document.querySelectorAll('#ws-rand .wo-rand__g').forEach(function (g) { if (g.querySelector('a.wo-re[href*="/_werkzeuge/carte/"]')) g.remove(); });
   }

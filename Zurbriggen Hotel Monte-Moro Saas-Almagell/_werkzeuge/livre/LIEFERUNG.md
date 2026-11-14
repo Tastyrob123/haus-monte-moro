@@ -7,7 +7,7 @@ status: aktiv
 
 Aufbau und Funktionen aus dem Stamm (Markenbuch der Werkzeuge), Inhalt und Kleid des Hauses. Nichts online, nichts verschickt, keine KI-Aufrufe.
 
-**Adressen:** http://127.0.0.1:9385/_werkzeuge/livre/ · Hausregeln: http://127.0.0.1:9385/_werkzeuge/livre/buch.html · Anleitung: http://127.0.0.1:9385/_werkzeuge/livre/anleitung.html · Stand-Weg für das Hotelbüro: http://127.0.0.1:9385/marke/livre.json
+**Adressen:** http://127.0.0.1:9385/_werkzeuge/livre/ · Hausregeln: http://127.0.0.1:9385/_werkzeuge/livre/buch.html · Anleitung: http://127.0.0.1:9385/_werkzeuge/livre/anleitung.html · Stand-Weg für Kontrollpanel: http://127.0.0.1:9385/marke/livre.json
 
 Server: `python3 server.py 9385` im Ordner `_werkzeuge/livre` (Markenprüfung ohne Claude, Probe-Antwort). Neu bauen (nur mit `_quelle/` und laufendem Server 9385): `python3 bau.py && python3 buch.py`, Bilder der Anleitung `node anleitung_bilder.js && python3 anleitung_bau.py`.
 
@@ -22,7 +22,7 @@ Server: `python3 server.py 9385` im Ordner `_werkzeuge/livre` (Markenprüfung oh
 
 ## Wie geprüft (Chromium, 08.11.2026)
 
-- `tor-schnell` `--nur markenbuch` (16 Zustände), `markenbuch-buch` (6), `markenbuch-anleitung` (8), je 1440/1280/1000/390, mit dem umgestellten Stilblatt der Hausdruckerei: **0 Funde.**
+- `tor-schnell` `--nur markenbuch` (16 Zustände), `markenbuch-buch` (6), `markenbuch-anleitung` (8), je 1440/1280/1000/390, mit dem umgestellten Stilblatt Drucksachen & Feed: **0 Funde.**
 - Gegenprobe Oberchef: Lärche in Titeln nur im letzten Wort (Startbild «Guten Tag. Womit beginnen wir heute?», Hausregeln, Anleitung); Kachel Markenprüfung zeigt «13 Farben des Hauses» statt «ΔE 2000».
 - Messlauf alle drei Schlüssel, 1440/1280/1000/390: 0 Funde.
 - `oberflaeche_pruefen.js` auf `/_werkzeuge/livre/`: BESTANDEN.

@@ -1,6 +1,6 @@
 # Vorschlag für die Datenschutzerklärung des Hotel Monte-Moro (nur Vorschlag)
 
-Einfügen in `datenschutz.html` (Wortlaut des Hauses) als eigener Abschnitt, **erst wenn** die Besucherliste auf der Website zählt (messung.js online, auf Roberts Wort). Von Robert und dem Haus freizugeben; keine Rechtsberatung. Vorlage: Vorschlag der Besucherliste im Stamm der Häuser, angepasst an die Wege der Website des Monte-Moro und an Schweizer Recht (DSG) sowie die DSGVO für Gäste aus der EU. In eckigen Klammern steht, was das Haus prüfen muss.
+Einfügen in `datenschutz.html` (Wortlaut des Hauses) als eigener Abschnitt, **erst wenn** Besucher auf der Website zählt (messung.js online, auf Roberts Wort). Von Robert und dem Haus freizugeben; keine Rechtsberatung. Vorlage: Vorschlag Besucher im Stamm der Häuser, angepasst an die Wege der Website des Monte-Moro und an Schweizer Recht (DSG) sowie die DSGVO für Gäste aus der EU. In eckigen Klammern steht, was das Haus prüfen muss.
 
 **Besucherstatistik**
 Entwurf von Tasty Studios zur Datenschutzerklärung, vor dem Einsatz vom Haus zu prüfen.

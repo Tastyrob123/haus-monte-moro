@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Das Kartenbrett · Hotel Monte-Moro, Saas-Almagell — eigener Server (08.11.2026, Kopie aus dem Stamm der Häuser). python3 _werkzeuge/carte/serve.py [port]   (Standard 9383)
+"""Karten & Preislisten · Hotel Monte-Moro, Saas-Almagell — eigener Server (08.11.2026, Kopie aus dem Stamm der Häuser). python3 _werkzeuge/carte/serve.py [port]   (Standard 9383)
 
 Liefert das Werkzeug (/_werkzeuge/carte/, darin auch Satz, Schriften und Fotos der Karte; die Werkzeug-Oberfläche kommt aus dem Haus unter
 /assets/oberflaeche/), die Wege /_werkzeuge/carte/api/… (carte.py) und,
@@ -133,7 +133,7 @@ class Weg(BaseHTTPRequestHandler):
         with open(p, 'rb') as f:
             b = f.read()
         mehr = {'Cache-Control': 'no-cache', 'ETag': etag, 'Vary': 'Accept-Encoding'}
-        if WEBSEITE.match(rel):   # Seite der Website: ihre eigenen Skripte dürfen laufen, eingebettet nur beim Kartenbrett
+        if WEBSEITE.match(rel):   # Seite der Website: ihre eigenen Skripte dürfen laufen, eingebettet nur beim Karten & Preislisten
             mehr['Content-Security-Policy'] = "frame-ancestors 'self'"
         if (text or typ.startswith('font/ttf')) and len(b) > 800 and 'gzip' in (self.headers.get('Accept-Encoding') or ''):   # TTF der Karten-Schriften packen sich gut (Slow 4G)
             b = gzip.compress(b, 6)
@@ -200,7 +200,7 @@ class Weg(BaseHTTPRequestHandler):
 
     def _webseite(self, q):
         """Ansicht «Website» (C07): die Seite der Website, wie sie heute gebaut ist (roestihues.html zeigt die Karte des Röstihüs,
-        preise.html die Preisliste, spa.html die Tarife des Spa). Die Website liest das Kartenbrett erst mit dem Einbau von karten.json in ihren Bau (web.py, offen); bis dahin zeigt
+        preise.html die Preisliste, spa.html die Tarife des Spa). Die Website liest Karten & Preislisten erst mit dem Einbau von karten.json in ihren Bau (web.py, offen); bis dahin zeigt
         die Ansicht den Stand der Website, der Entwurf steht in der Ansicht «Karte»."""
         z, seite = (q.get('z') or [''])[0], (q.get('seite') or [''])[0]
         carte._ziel(z)
@@ -280,5 +280,5 @@ if __name__ == '__main__':
         carte.fehler_log(f'Sicherung beim Start: {e!r}')
     srv = ThreadingHTTPServer(('127.0.0.1', PORT), Weg)
     srv.daemon_threads = True
-    print(f'Das Kartenbrett · Hotel Monte-Moro: http://127.0.0.1:{PORT}/_werkzeuge/carte/', flush=True)
+    print(f'Karten & Preislisten · Hotel Monte-Moro: http://127.0.0.1:{PORT}/_werkzeuge/carte/', flush=True)
     srv.serve_forever()

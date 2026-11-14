@@ -1,12 +1,12 @@
-/* Kurzer Rundgang durch das Kartenbrett · Hotel Monte-Moro, Saas-Almagell (08.11.2026, Kopie aus dem Stamm der Häuser, data-werkzeug="carte").
+/* Kurzer Rundgang durch Karten & Preislisten · Hotel Monte-Moro, Saas-Almagell (08.11.2026, Kopie aus dem Stamm der Häuser, data-werkzeug="carte").
    Robert 16.10.2026: einmal ganz kurz zeigen, was wo geht, damit man weiss, wo man gelandet ist. Ein Lichtkegel liegt auf dem echten Bedienelement, daneben eine Karte mit zwei, drei Sätzen.
    Kein Start von selbst: unten rechts erscheint ein Schild «Kurzer Rundgang» (fünf Sekunden, die Maus darauf hält es), dann zieht es sich zurück.
    Wieder aufrufen: «Kurzer Rundgang» im Rand oder ?rundgang (startet direkt). Automatische Prüfungen (navigator.webdriver) und eingebettete Ansichten sehen nichts. */
 (function () {
   var Q = new URLSearchParams(location.search), ERZWINGEN = Q.has('rundgang');
   if (window.self !== window.top && !ERZWINGEN) return;
-  var G = { name: (window.WO && WO.name('karten')) || 'Das Kartenbrett', schritte: [
-    { ziel: ['#kopf'], titel: 'Das ist ' + ((window.WO && WO.name('karten')) || 'Das Kartenbrett').replace(/^(Das|Die|Der) /, function (a) { return a.toLowerCase(); }),
+  var G = { name: (window.WO && WO.name('karten')) || 'Karten & Preislisten', schritte: [
+    { ziel: ['#kopf'], titel: 'Das ist ' + ((window.WO && WO.name('karten')) || 'Karten & Preislisten').replace(/^(Das|Die|Der) /, function (a) { return a.toLowerCase(); }),
       text: 'Die Karten und Preislisten des Hauses: die Karte des Röstihüs, Wein und Apéro, die Preisliste, die Zuschläge und das Spa im Partnerhotel. Was auf dem Tisch und an der Rezeption liegt, entsteht hier, gesetzt in der Schrift und den Farben des Hauses.' },
     { ziel: ['#rand .karten', '#rand'], titel: 'Jede Karte an ihrem Platz',
       text: 'Oben die Karten des Röstihüs mit Röstis, Cordon bleus, Wein und Spritz. Darunter die Preislisten des Hotels: Zimmer, Zuschläge und Spa.' },
@@ -219,7 +219,7 @@
   /* «Kurzer Rundgang» als Weg im Rand, damit er sich jederzeit wieder öffnen lässt. */
   function weg_im_rand() {
     var wege = document.querySelector('#rand .wege');
-    if (!wege || wege.querySelector('.rdg-wieder') || wege.querySelector('[data-akt="rundgang"]')) return;   /* das Kartenbrett führt ihn schon im Rand */
+    if (!wege || wege.querySelector('.rdg-wieder') || wege.querySelector('[data-akt="rundgang"]')) return;   /* Karten & Preislisten führt ihn schon im Rand */
     var a = document.createElement('a'); a.href = '#'; a.className = 'rdg-wieder'; a.textContent = 'Kurzer Rundgang';
     a.onclick = function (e) { e.preventDefault(); starte(); };
     var haus = wege.querySelector('.rand__haus');

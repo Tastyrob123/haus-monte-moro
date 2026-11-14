@@ -1,4 +1,4 @@
-/* schweben.css · Das Schaufenster · Hotel Monte-Moro: Kopie aus dem Stamm der sieben Werkzeuge (08.11.2026), unverändert in der Wirkung. */
+/* schweben.css · Website bearbeiten · Hotel Monte-Moro: Kopie aus dem Stamm der sieben Werkzeuge (08.11.2026), unverändert in der Wirkung. */
 /* Schweben, Pulsieren, Zoom für die Werkzeuge (Gefühl der Carlton-Seiten, wie in Le Registre). Gehört zu schweben.js.
    Jedes Blatt trägt data-sw. Wo der Browser Scroll-Zeitachsen kann, wird es am Scrollen aus der Tiefe hochgeführt (sw-zug, gebunden an den Einzug
    entry 0% bis 100%, nichts bleibt am Seitenende hängen); im Bild (.sw-da) federt es zusätzlich nach der Uhr in seine Grösse (sw-puls).
