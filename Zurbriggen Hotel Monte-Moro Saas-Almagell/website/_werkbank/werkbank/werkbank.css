@@ -1413,3 +1413,12 @@ html.cv-alle main>section.fl:not(#brief){content-visibility:visible}
 @media(max-width:480px){.kn{max-width:100%;height:auto;min-height:54px;padding-top:9px;padding-bottom:9px;white-space:normal;line-height:1.35;text-align:left}.kn i{flex:none}.kn-reihe{max-width:100%}}
 .schluss .zt{text-shadow:0 1px 3px rgba(7,27,46,.45)}.schluss .lauf p,.schluss .kap span{text-shadow:0 1px 2px rgba(7,27,46,.55),0 2px 12px rgba(7,27,46,.35)}
 /* nur-bewegung */.glanz{animation:none!important;border:0!important;background:none!important;transition:transform .5s var(--e2)!important}.glanz::before{content:"";position:absolute;z-index:-2;left:50%;top:50%;width:260px;height:260px;margin:-130px 0 0 -130px;background:conic-gradient(transparent,var(--gold) 6%,#ffffff 12%,var(--taupe) 18%,transparent 24%);animation:glanzdreh 4s linear infinite;will-change:transform}.glanz::after{content:"";position:absolute;z-index:-1;inset:1px;border-radius:inherit;background:linear-gradient(180deg,#423e4c,#23212a)}@keyframes glanzdreh{to{transform:rotate(1turn)}}@media (prefers-reduced-motion:reduce){.glanz::before{animation:none}}
+
+/* ---------- Tapete nur punktuell (Robert 13.11.2026): das Muster bleibt im Auftakt und im Fuss, jede Kapitelfläche dazwischen ist glatt in ihrem Ton.
+   «Die muss punktuell eingesetzt werden, damit ein gewisser Effekt entsteht von einer edlen, luxuriösen Brand und nicht, dass sich das durch jeden Abschnitt jeder Werkbank zieht.»
+   Prüfpunkt 26 in _Werkzeuge/oberflaeche_pruefen.js (höchstens zwei Abschnitte mit Tapete). Steht am Ende, damit kein Haus-Stil die Tapete in die Kapitel zurückholt. ---------- */
+.fl,.fl .ag-blatt,.fl .lu{background-image:none!important}
+
+/* Nachzug 14.11.2026 (Prüfpunkt 21): die Stücke über «12 Untersetzer», «Elf Mails» … schweben auf kurzem Weg ein, damit sie beim Einflug
+   nie über der Überschrift darunter liegen (vorher 120 px von unten). */
+.pk__b [data-a="schweb"]:not(.da){transform:translateY(16px) rotate(var(--r0,0deg)) scale(.96)}

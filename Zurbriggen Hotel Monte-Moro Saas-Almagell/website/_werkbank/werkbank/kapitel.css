@@ -593,3 +593,10 @@ html.ins-ruhe :is(.stapel .tel,.runter i,.zeile__z,.namenzug div,.wb-band__zug,.
 
 @media(max-width:560px){.vt-gr li{grid-template-columns:72px minmax(0,1fr);align-items:center;row-gap:8px}.vt-gr li>.vt-gb{grid-row:1}.vt-gr li>span:not(.vt-gb){grid-column:1/-1}}   /* Robert 10.11.2026: am Handy Bild über dem Text, keine schmale Spalte */
 @media(max-width:560px){.fbz{grid-template-columns:minmax(0,1fr);row-gap:14px}}   /* Robert 10.11.2026: am Handy Bild über dem Text, keine schmale Spalte */
+
+/* Nachzug 14.11.2026 (Regeln 12./13.11., Vorbild Europäischer Hof): die sieben Reiter in einer vollen Reihe mittig über dem Laptop,
+   Markenbuch ganz rechts, Pfeile rechts aussen; schmaler gesetzt, damit die Reihe neben den Pfeilen Platz hat. Unter 1380 px stehen die Pfeile unter der Reihe. */
+@media(min-width:900px){.ins-leiste{position:relative;justify-content:center}.ins-reiter{justify-content:center;flex-wrap:nowrap;gap:7px}.ins-bruch{display:none!important}.ins-pf{position:absolute;right:0;top:50%;transform:translateY(-50%)}
+  .ins-r{padding:10px 15px 11px}.ins-r span{font-size:clamp(.9rem,1vw,1.04rem)}}
+@media(min-width:900px) and (max-width:1379px){.ins-leiste{flex-direction:column;gap:14px}.ins-pf{position:static;transform:none}.ins-reiter{max-width:100%;overflow-x:auto;scrollbar-width:none;justify-content:safe center;padding-inline:4px}}
+.ins-r--mb{order:9}

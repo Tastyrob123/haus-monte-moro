@@ -146,3 +146,11 @@
 .upaar{align-items:center}
 .ublatt--alt .ublatt__b{aspect-ratio:1/1.414!important}
 .ublatt--alt .ublatt__b img{width:100%;height:100%;object-fit:cover}
+
+@media (max-width:700px){.sk .haufen img{opacity:1;transform:none;transition:none}}   /* Handy: der Stapel im Kopf steht im ersten Bildschirm sofort da, keine Lücke darüber (Prüfpunkt 18, 09.11.2026) */
+
+@media (max-width:420px){.sk .t1{font-size:34px;letter-spacing:.08em}}   /* Handy: lange Wörter wie «Vierundzwanzig» passen ganz in die Zeile, nie getrennt (09.11.2026) */
+
+.dateien--2>li:last-child:nth-child(odd){grid-column:1/-1}   /* Raster voll: ungerade Zahl, das letzte Stück über beide Spalten (Prüfpunkt 13, 09.11.2026) */
+/* Nachzug 14.11.2026 (Prüfpunkt 20): am schmalen Handy eine Spalte, die Sätze unter den Stücken laufen über die ganze Breite */
+@media(max-width:440px){.etk{grid-template-columns:minmax(0,1fr)}.etk p{max-width:32ch}}
