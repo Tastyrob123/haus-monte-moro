@@ -1425,3 +1425,12 @@ html.cv-alle main>section.fl:not(#brief){content-visibility:visible}
 
 /* Tapete im Rhythmus, je Haus ausgezählt (Nachzug 14.11.2026, Robert 14.11.2026: «so alle 3 Abschnitte»): Auftakt, die genannten Abschnitte, Fuss */
 main>.fl:not(:nth-child(5),:nth-child(10),:nth-child(13),:nth-child(17),:nth-child(20),:nth-child(23)),main>.fl:not(:nth-child(5),:nth-child(10),:nth-child(13),:nth-child(17),:nth-child(20),:nth-child(23)) .ag-blatt,main>.fl:not(:nth-child(5),:nth-child(10),:nth-child(13),:nth-child(17),:nth-child(20),:nth-child(23)) .lu{background-image:none!important}
+/* titel-sofort-2026-11-14 */
+/* Hero-Titel sofort (Robert 14.11.2026): Zeilen liegen vor ihrem Auftritt ganz verdeckt, nichts lugt in der Hausfarbe hervor;
+   der Titel im Auftakt läuft beim ersten Bild los, ohne auf das Skript zu warten. */
+.z>span{transform:translateY(140%)}
+.da .z>span,.z.da>span{transform:none}
+.auftakt .zt .z>span{animation:zt-sofort 1.3s var(--e1) both;animation-delay:calc(var(--n,0)*120ms)}
+@keyframes zt-sofort{from{transform:translateY(140%)}to{transform:none}}
+@media(prefers-reduced-motion:reduce){.auftakt .zt .z>span{animation:none;transform:none}}
+@media print{.auftakt .zt .z>span{animation:none;transform:none}}
